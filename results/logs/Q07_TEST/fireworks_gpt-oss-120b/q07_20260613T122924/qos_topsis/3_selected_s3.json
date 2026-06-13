@@ -1,0 +1,76 @@
+[
+  {
+    "api_id": "post_paid_sms_send_sms",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 29,
+    "rag_score": 0.5239396095275879,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "post_paid_sms.json",
+      "_tool": "post_paid_sms",
+      "api_id": "post_paid_sms_send_sms",
+      "category": "Communication",
+      "description": "Send SMS ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send SMS",
+      "tool_description": "Use the Toku Post-Paid SMS API to send SMS and manage OTP requests programmatically.",
+      "tool_name": "Post-Paid SMS",
+      "toolbench_endpoint_description": "Send SMS",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "Send SMS",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send SMS",
+        "endpoint_url": "https://post-paid-sms.p.rapidapi.com/SMS",
+        "file_name": "post_paid_sms.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Use the Toku Post-Paid SMS API to send SMS and manage OTP requests programmatically.",
+        "tool_file_found": true,
+        "tool_name": "Post-Paid SMS",
+        "toolbench_relative_path": "Communication/post_paid_sms.json"
+      },
+      "toolbench_tool_description": "Use the Toku Post-Paid SMS API to send SMS and manage OTP requests programmatically.",
+      "toolbench_tool_name": "Post-Paid SMS",
+      "url": "https://post-paid-sms.p.rapidapi.com/SMS",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 3.135,
+        "tp_kbps": 623.9459999999999,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5899648911470861,
+    "topsis_rank": 1,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "3",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_topsis",
+      "subtask_id": "3",
+      "api_id": "post_paid_sms_send_sms",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.5899648911470861
+    }
+  }
+]

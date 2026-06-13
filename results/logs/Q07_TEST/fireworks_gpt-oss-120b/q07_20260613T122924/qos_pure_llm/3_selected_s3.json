@@ -1,0 +1,76 @@
+[
+  {
+    "api_id": "go_messenger_send_message",
+    "candidate_id": "C07",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 39,
+    "rag_score": 0.510758638381958,
+    "reason": "",
+    "service": {
+      "_file": "go_messenger.json",
+      "_tool": "go_messenger",
+      "api_id": "go_messenger_send_message",
+      "category": "SMS",
+      "description": "a simple body tag is all you need to send message.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send Message",
+      "tool_description": "\"Rev up your messaging game with the LightningChat API – the Usain Bolt of Golang APIs! 🚀 Send, receive, and manage SMS faster than ever before.",
+      "tool_name": "Go-Messenger",
+      "toolbench_endpoint_description": "a simple body tag is all you need to send message.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "a simple body tag is all you need to send message.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send Message",
+        "endpoint_url": "https://go-messenger.p.rapidapi.com/messages",
+        "file_name": "go_messenger.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "\"Rev up your messaging game with the LightningChat API – the Usain Bolt of Golang APIs! 🚀 Send, receive, and manage SMS faster than ever before.",
+        "tool_file_found": true,
+        "tool_name": "Go-Messenger",
+        "toolbench_relative_path": "SMS/go_messenger.json"
+      },
+      "toolbench_tool_description": "\"Rev up your messaging game with the LightningChat API – the Usain Bolt of Golang APIs! 🚀 Send, receive, and manage SMS faster than ever before.",
+      "toolbench_tool_name": "Go-Messenger",
+      "url": "https://go-messenger.p.rapidapi.com/messages",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.168,
+        "tp_kbps": 53.571,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 4,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "3",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_pure_llm",
+      "subtask_id": "3",
+      "api_id": "go_messenger_send_message",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

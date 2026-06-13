@@ -1,0 +1,105 @@
+You create sequential API workflows using only the provided candidates.
+
+Priority order:
+1) Respect the given subtask order.
+2) Functional correctness and step-to-step compatibility come first.
+
+QoS meanings:
+- rt_s = response time in seconds, lower is better
+- tp_kbps = throughput in kilobits per second (kbps), higher is better
+- availability = value out of 1, higher is better
+
+Input user goal:
+Build a service that fetches top news articles, summarizes them into an SMS-ready digest using an LLM/text-summarization API, and sends the digest via SMS on a daily schedule.
+
+Ordered subtasks:
+[{"id": 1, "description": "Fetch top news articles using a news API"}, {"id": 2, "description": "Summarize the fetched articles into an SMS-length digest using a language model API"}, {"id": 3, "description": "Send the SMS digest via an SMS messaging API"}]
+
+Planner candidate mode: fixed_one.
+- The selected APIs are fixed by the selection stage.
+- There is exactly one selected API per subtask.
+- Use that API for its subtask and preserve subtask order.
+- Do not replace, re-rank, or substitute APIs.
+- The planner only composes the fixed APIs into a coherent workflow.
+
+Candidate APIs:
+[{"api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default", "subtask_id": "1", "selection_order": 1, "service": {"api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default", "name": "Get all the top articles of the week by default", "category": "News_Media", "description": "It returns all the week's top articles", "tool_name": "dev-to-api", "tool_description": "API that fetches the latest blogs from dev.to website", "method": "GET", "url": "https://dev-to-api1.p.rapidapi.com/articles/top", "endpoint_details": {"required_parameters": [], "optional_parameters": []}, "qos": {"availability": 0.9941, "rt_s": 0.339, "tp_kbps": 5.899, "valid_qos": true}}}, {"api_id": "text_summarizer_api_summarizer", "subtask_id": "2", "selection_order": 1, "service": {"api_id": "text_summarizer_api_summarizer", "name": "Summarizer", "category": "Text_Analysis", "description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!", "tool_name": "Text Summarizer API", "tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.", "method": "POST", "url": "https://text-summarizer-api.p.rapidapi.com/summarizer", "endpoint_details": {"required_parameters": [{"default": "In the modern digital environment, content that is quick, comprehensible, and simple to read is essential. You want your material to be reader-friendly whether you are presenting a learning module for a class, writing about a product or service, or simply journaling your most recent exploits. Many individuals prefer things to be tidy, succinct, and straightforward. So, tools for paraphrasing can be useful in this situation.", "description": "The text string you want to summarize.", "name": "text", "type": "STRING"}, {"default": "40", "description": "Percent of the original text to be returned. Values range from 10 to 100", "name": "output_percent", "type": "STRING"}], "optional_parameters": []}, "qos": {"availability": 0.9794, "rt_s": 0.2475, "tp_kbps": 12.1205, "valid_qos": true}}}, {"api_id": "go_messenger_send_message", "subtask_id": "3", "selection_order": 1, "service": {"api_id": "go_messenger_send_message", "name": "Send Message", "category": "SMS", "description": "a simple body tag is all you need to send message.", "tool_name": "Go-Messenger", "tool_description": "\"Rev up your messaging game with the LightningChat API – the Usain Bolt of Golang APIs! 🚀 Send, receive, and manage SMS faster than ever before.", "method": "POST", "url": "https://go-messenger.p.rapidapi.com/messages", "endpoint_details": {"required_parameters": [], "optional_parameters": []}, "qos": {"availability": 0.9882, "rt_s": 0.168, "tp_kbps": 53.571, "valid_qos": true}}}]
+
+Rules:
+- Use only the provided candidates.
+- Candidates are already functionally filtered and QoS-ranked by the selection stage.
+- Keep workflows sequential.
+- Return exactly one primary plan.
+- Return a machine-readable execution workflow in addition to the human-readable primary plan.
+- The plan must follow the subtask order.
+- Preserve subtask order exactly; do not reorder subtasks.
+- Explain how each API connects to the next step.
+- Do not invent APIs or reorder subtasks.
+- Every step must use a non-empty "api_id" copied exactly from the provided Candidate APIs.
+- For each execution workflow step, copy method, url, required parameters, and optional parameters from the selected candidate's "service" object when available.
+- If endpoint_details.required_parameters or endpoint_details.optional_parameters are present, use them to populate required_parameters and optional_parameters.
+- In required_parameters and optional_parameters, include each parameter name and describe its source, such as "user_goal", "previous_step_output", "constant/default", or "unknown_needed_from_user".
+- Use depends_on to identify previous workflow step numbers needed before a step can run; use [] for the first independent step.
+- Use input_mapping and output_mapping to describe how values flow between steps.
+- execution_workflow.steps[*].input_mapping must always be a string. For the first step, use "none" or an empty string instead of null.
+- execution_workflow.steps[*].output_mapping must always be a string. Use "none" or an empty string if there is no output mapping.
+- Do not return null, objects, arrays, or nested JSON for execution_workflow input_mapping or output_mapping.
+- Never use null, "none", "internal", "local", or invented placeholders for "api_id".
+- Do not create internal-only, UI-only, formatting-only, or local-computation-only steps without an API.
+- If a subtask seems internal, describe the internal transformation inside the "action" of the closest selected API step or choose the closest suitable provided API for that subtask.
+- "input_from_previous_step" and "output_to_next_step" must be strings or null only; do not return objects, arrays, or nested JSON in these fields.
+- The top-level JSON must contain exactly these required fields: "primary_plan", "execution_workflow", "selected_api_ids", and "overall_rationale".
+- Put "plan_id", "summary", "steps", and "subtask_coverage" inside "primary_plan"; do not put "steps" at the top level.
+- Put "type" and "steps" inside "execution_workflow".
+- Functional correctness and subtask order come first.
+- For every selected API step, copy the selected candidate service.qos object into that step's "qos" field when available.
+- If service.qos is missing for a selected API, use "qos": null and explain the missing QoS in "why".
+
+Return JSON only:
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "...",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "action": "...",
+        "input_from_previous_step": "...",
+        "output_to_next_step": "...",
+        "why": "...",
+        "planner_override_reason": null,
+        "qos": {"rt_s": 0.123, "tp_kbps": 10.0, "availability": 0.99, "valid_qos": true}
+      }
+    ],
+    "subtask_coverage": [
+      {"subtask_id": 1, "description": "...", "steps": [1], "coverage": "full"}
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "method": "GET",
+        "url": "https://...",
+        "required_parameters": [
+          {"name": "...", "source": "user_goal", "value_hint": "..."}
+        ],
+        "optional_parameters": [
+          {"name": "...", "source": "constant/default", "value_hint": "..."}
+        ],
+        "depends_on": [],
+        "input_mapping": "...",
+        "output_mapping": "...",
+        "expected_output": "...",
+        "planner_override_reason": null
+      }
+    ]
+  },
+  "selected_api_ids": ["..."],
+  "overall_rationale": "..."
+}

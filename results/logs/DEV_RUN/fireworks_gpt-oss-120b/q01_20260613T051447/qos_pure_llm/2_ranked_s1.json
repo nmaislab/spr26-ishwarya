@@ -1,0 +1,2777 @@
+[
+  {
+    "api_id": "weather_change_live_get_weather_report",
+    "candidate_id": "C29",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 32,
+    "rag_score": 0.5657691955566406,
+    "reason": "",
+    "service": {
+      "_file": "weather_change_live.json",
+      "_tool": "weather_change_live",
+      "api_id": "weather_change_live_get_weather_report",
+      "category": "Weather",
+      "description": "Get all  weather report",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get weather report",
+      "tool_description": "API shows climate change around the world.",
+      "tool_name": "Weather Change Live",
+      "toolbench_endpoint_description": "Get all  weather report",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get all  weather report",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get weather report",
+        "endpoint_url": "https://weather-change-live.p.rapidapi.com/news",
+        "file_name": "weather_change_live.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API shows climate change around the world.",
+        "tool_file_found": true,
+        "tool_name": "Weather Change Live",
+        "toolbench_relative_path": "Weather/weather_change_live.json"
+      },
+      "toolbench_tool_description": "API shows climate change around the world.",
+      "toolbench_tool_name": "Weather Change Live",
+      "url": "https://weather-change-live.p.rapidapi.com/news",
+      "qos": {
+        "availability": 0.9705,
+        "rt_s": 0.896,
+        "tp_kbps": 619.899,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.92,
+    "qos_llm_rank": 1
+  },
+  {
+    "api_id": "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude",
+    "candidate_id": "C10",
+    "mode_rank": 2,
+    "llm_reported_rank": 2,
+    "retrieved_rank": 11,
+    "rag_score": 0.629827618598938,
+    "reason": "",
+    "service": {
+      "_file": "farmonaut_satellite_and_weather_data.json",
+      "_tool": "farmonaut_satellite_and_weather_data",
+      "api_id": "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude",
+      "category": "Monitoring",
+      "description": "Use this to get weather forecast for a latitude and longitude.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrieveweatherforecastdatalonglat",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Retrieve Weather Forecast Data from Latitude and Longitude",
+      "tool_description": "Get Your Unique ID and start using the API.",
+      "tool_name": "Farmonaut Satellite and Weather Data",
+      "toolbench_endpoint_description": "Use this to get weather forecast for a latitude and longitude.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrieveweatherforecastdatalonglat",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "Use this to get weather forecast for a latitude and longitude.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrieveweatherforecastdatalonglat",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Retrieve Weather Forecast Data from Latitude and Longitude",
+        "endpoint_url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getForecastWeatherFromLatLong",
+        "file_name": "farmonaut_satellite_and_weather_data.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get Your Unique ID and start using the API.",
+        "tool_file_found": true,
+        "tool_name": "Farmonaut Satellite and Weather Data",
+        "toolbench_relative_path": "Monitoring/farmonaut_satellite_and_weather_data.json"
+      },
+      "toolbench_tool_description": "Get Your Unique ID and start using the API.",
+      "toolbench_tool_name": "Farmonaut Satellite and Weather Data",
+      "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getForecastWeatherFromLatLong",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.12,
+        "tp_kbps": 33.333,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 6
+  },
+  {
+    "api_id": "weather_api_by_any_city_get_weather_updates",
+    "candidate_id": "C28",
+    "mode_rank": 3,
+    "llm_reported_rank": 3,
+    "retrieved_rank": 7,
+    "rag_score": 0.6494523882865906,
+    "reason": "",
+    "service": {
+      "_file": "weather_api_by_any_city.json",
+      "_tool": "weather_api_by_any_city",
+      "api_id": "weather_api_by_any_city_get_weather_updates",
+      "category": "Weather",
+      "description": "This endpoint get all necessary weather information",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "London",
+            "description": "",
+            "name": "city",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Weather Updates",
+      "tool_description": "The API provides current weather information for a specific city worldwide. It allows users to retrieve up-to-date information on weather conditions, such as temperature, humidity, wind speed, and precipitation, for a specified location.",
+      "tool_name": "Weather API - By Any City",
+      "toolbench_endpoint_description": "This endpoint get all necessary weather information",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "This endpoint get all necessary weather information",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Weather Updates",
+        "endpoint_url": "https://weather-api-by-any-city.p.rapidapi.com/weather/{city}",
+        "file_name": "weather_api_by_any_city.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The API provides current weather information for a specific city worldwide. It allows users to retrieve up-to-date information on weather conditions, such as temperature, humidity, wind speed, and precipitation, for a specified location.",
+        "tool_file_found": true,
+        "tool_name": "Weather API - By Any City",
+        "toolbench_relative_path": "Weather/weather_api_by_any_city.json"
+      },
+      "toolbench_tool_description": "The API provides current weather information for a specific city worldwide. It allows users to retrieve up-to-date information on weather conditions, such as temperature, humidity, wind speed, and precipitation, for a specified location.",
+      "toolbench_tool_name": "Weather API - By Any City",
+      "url": "https://weather-api-by-any-city.p.rapidapi.com/weather/{city}",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.193,
+        "tp_kbps": 41.45,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 8
+  },
+  {
+    "api_id": "weatherdl_weather_forecast",
+    "candidate_id": "C35",
+    "mode_rank": 4,
+    "llm_reported_rank": 4,
+    "retrieved_rank": 1,
+    "rag_score": 0.7019071578979492,
+    "reason": "",
+    "service": {
+      "_file": "weatherdl.json",
+      "_tool": "weatherdl",
+      "api_id": "weatherdl_weather_forecast",
+      "category": "Weather",
+      "description": "This endpoint takes a GET request as string of a location's coordinates (in lat and lon) and downloads the full weather forecast of that location as API response.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "-122.4194",
+            "description": "",
+            "name": "lon",
+            "type": "STRING"
+          },
+          {
+            "default": "37.7749",
+            "description": "",
+            "name": "lat",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Weather-forecast",
+      "tool_description": "This API downloads a full weather forecast of a given location.",
+      "tool_name": "Weatherdl",
+      "toolbench_endpoint_description": "This endpoint takes a GET request as string of a location's coordinates (in lat and lon) and downloads the full weather forecast of that location as API response.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "This endpoint takes a GET request as string of a location's coordinates (in lat and lon) and downloads the full weather forecast of that location as API response.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Weather-forecast",
+        "endpoint_url": "https://weatherdl.p.rapidapi.com/weather",
+        "file_name": "weatherdl.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API downloads a full weather forecast of a given location.",
+        "tool_file_found": true,
+        "tool_name": "Weatherdl",
+        "toolbench_relative_path": "Weather/weatherdl.json"
+      },
+      "toolbench_tool_description": "This API downloads a full weather forecast of a given location.",
+      "toolbench_tool_name": "Weatherdl",
+      "url": "https://weatherdl.p.rapidapi.com/weather",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1345,
+        "tp_kbps": 37.175,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 9
+  },
+  {
+    "api_id": "easy_weather_current_conditions_detailed",
+    "candidate_id": "C05",
+    "mode_rank": 5,
+    "llm_reported_rank": 5,
+    "retrieved_rank": 26,
+    "rag_score": 0.5803660750389099,
+    "reason": "",
+    "service": {
+      "_file": "easy_weather.json",
+      "_tool": "easy_weather",
+      "api_id": "easy_weather_current_conditions_detailed",
+      "category": "Weather",
+      "description": "Get (detailed) current conditions for the given latitude and longitude.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "2.29",
+            "description": "",
+            "name": "longitude",
+            "type": "STRING"
+          },
+          {
+            "default": "48.85",
+            "description": "",
+            "name": "latitude",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Current conditions (detailed)",
+      "tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+      "tool_name": "Easy Weather",
+      "toolbench_endpoint_description": "Get (detailed) current conditions for the given latitude and longitude.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get (detailed) current conditions for the given latitude and longitude.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Current conditions (detailed)",
+        "endpoint_url": "https://easy-weather1.p.rapidapi.com/current/detail",
+        "file_name": "easy_weather.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+        "tool_file_found": true,
+        "tool_name": "Easy Weather",
+        "toolbench_relative_path": "Weather/easy_weather.json"
+      },
+      "toolbench_tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+      "toolbench_tool_name": "Easy Weather",
+      "url": "https://easy-weather1.p.rapidapi.com/current/detail",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.2835,
+        "tp_kbps": 14.109,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 10
+  },
+  {
+    "api_id": "tomorrow_io_weather_forecast",
+    "candidate_id": "C27",
+    "mode_rank": 6,
+    "llm_reported_rank": 6,
+    "retrieved_rank": 19,
+    "rag_score": 0.5993334054946899,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_weather_forecast",
+      "category": "Weather",
+      "description": "Get Weather forecast for Core parameters",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "metric",
+            "description": "",
+            "name": "units",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "42.15, 82,1",
+            "description": "",
+            "name": "location",
+            "type": "STRING"
+          },
+          {
+            "default": "1h",
+            "description": "",
+            "name": "timesteps",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Weather Forecast",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "Get Weather forecast for Core parameters",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get Weather forecast for Core parameters",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Weather Forecast",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/weather/forecast",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/weather/forecast",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.204,
+        "tp_kbps": 9.803,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 12
+  },
+  {
+    "api_id": "farmonaut_satellite_and_weather_data_retrieve_present_weather_data",
+    "candidate_id": "C09",
+    "mode_rank": 7,
+    "llm_reported_rank": 7,
+    "retrieved_rank": 24,
+    "rag_score": 0.5859224200248718,
+    "reason": "",
+    "service": {
+      "_file": "farmonaut_satellite_and_weather_data.json",
+      "_tool": "farmonaut_satellite_and_weather_data",
+      "api_id": "farmonaut_satellite_and_weather_data_retrieve_present_weather_data",
+      "category": "Monitoring",
+      "description": "Use this to get weather data of the present day.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrievepresentweatherdata",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Retrieve Present Weather Data",
+      "tool_description": "Get Your Unique ID and start using the API.",
+      "tool_name": "Farmonaut Satellite and Weather Data",
+      "toolbench_endpoint_description": "Use this to get weather data of the present day.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrievepresentweatherdata",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "Use this to get weather data of the present day.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrievepresentweatherdata",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Retrieve Present Weather Data",
+        "endpoint_url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getPresentWeather",
+        "file_name": "farmonaut_satellite_and_weather_data.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get Your Unique ID and start using the API.",
+        "tool_file_found": true,
+        "tool_name": "Farmonaut Satellite and Weather Data",
+        "toolbench_relative_path": "Monitoring/farmonaut_satellite_and_weather_data.json"
+      },
+      "toolbench_tool_description": "Get Your Unique ID and start using the API.",
+      "toolbench_tool_name": "Farmonaut Satellite and Weather Data",
+      "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getPresentWeather",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.365,
+        "tp_kbps": 13.698,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 15
+  },
+  {
+    "api_id": "rapidweather_call_5_day_3_hour_forecast_data_by_city_id",
+    "candidate_id": "C14",
+    "mode_rank": 8,
+    "llm_reported_rank": 8,
+    "retrieved_rank": 37,
+    "rag_score": 0.5622052550315857,
+    "reason": "",
+    "service": {
+      "_file": "rapidweather.json",
+      "_tool": "rapidweather",
+      "api_id": "rapidweather_call_5_day_3_hour_forecast_data_by_city_id",
+      "category": "Weather",
+      "description": "You can search weather forecast for 5 days with data every 3 hours by city ID. We recommend to call API by city ID to get unambiguous result for your city.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "You can use the **lang **parameter to get the output in your language",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "A number of timestamps, which will be returned in the API response.",
+            "name": "cnt",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Units of measurement. **standard**, **metric **and **imperial **units are available. If you do not use the **units **parameter, **standard **units will be applied by default.",
+            "name": "units",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "524901",
+            "description": "City ID.",
+            "name": "id",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Call 5 day / 3 hour forecast data - By city ID",
+      "tool_description": "The proprietary convolutional neural network collects and processes wide range of data sources to cover any location and consider the local nuances of climate. We collect and process weather data from different sources such as global and local weather models, satellites, radars and vast network of w",
+      "tool_name": "RapidWeather",
+      "toolbench_endpoint_description": "You can search weather forecast for 5 days with data every 3 hours by city ID. We recommend to call API by city ID to get unambiguous result for your city.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "You can search weather forecast for 5 days with data every 3 hours by city ID. We recommend to call API by city ID to get unambiguous result for your city.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Call 5 day / 3 hour forecast data - By city ID",
+        "endpoint_url": "https://rapidweather.p.rapidapi.com/data/2.5/forecast",
+        "file_name": "rapidweather.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The proprietary convolutional neural network collects and processes wide range of data sources to cover any location and consider the local nuances of climate.\n\nWe collect and process weather data from different sources such as global and local weather models, satellites, radars and vast network of weather stations.\n\nFor each point on the globe, RapidWeather provides historical, current and forecasted weather data via light-speed APIs.",
+        "tool_file_found": true,
+        "tool_name": "RapidWeather",
+        "toolbench_relative_path": "Weather/rapidweather.json"
+      },
+      "toolbench_tool_description": "The proprietary convolutional neural network collects and processes wide range of data sources to cover any location and consider the local nuances of climate.\n\nWe collect and process weather data from different sources such as global and local weather models, satellites, radars and vast network of weather stations.\n\nFor each point on the globe, RapidWeather provides historical, current and forecasted weather data via light-speed APIs.",
+      "toolbench_tool_name": "RapidWeather",
+      "url": "https://rapidweather.p.rapidapi.com/data/2.5/forecast",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.389,
+        "tp_kbps": 10.282,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 16
+  },
+  {
+    "api_id": "tomorrow_io_retrievetimelinesbasic",
+    "candidate_id": "C23",
+    "mode_rank": 9,
+    "llm_reported_rank": 9,
+    "retrieved_rank": 30,
+    "rag_score": 0.5703945159912109,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_retrievetimelinesbasic",
+      "category": "Weather",
+      "description": "Get Timeline parameters",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Timezone of time values, according to IANA Timezone Names (defaults to UTC)",
+            "name": "timezone",
+            "type": "STRING"
+          },
+          {
+            "default": "Metric",
+            "description": "Units of field values, either \\\"metric\\\" or \\\"imperial\\\" (defaults to metric)",
+            "name": "units",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "now",
+            "description": "Start time in ISO 8601 format \\\"2019-03-20T14:09:50Z\\\" (defaults to now)",
+            "name": "startTime",
+            "type": "STRING"
+          },
+          {
+            "default": "42.13, 82,11",
+            "description": "(Required) ID of a pre-defined location or latlong string",
+            "name": "location",
+            "type": "STRING"
+          },
+          {
+            "default": "windSpeed",
+            "description": "(Required) Selected fields from our data layers (polygon/polyline default to Max, if not suffix is not specified)",
+            "name": "fields",
+            "type": "STRING"
+          },
+          {
+            "default": "nowPlus3h",
+            "description": "End time in ISO 8601 format \\\"2019-03-20T14:09:50Z\\\" ",
+            "name": "endTime",
+            "type": "STRING"
+          },
+          {
+            "default": "1h,1d",
+            "description": "Timesteps of the timelines: \\\"1m\\\", \\\"5m\\\", \\\"15m\\\", \\\"30m\\\", \\\"1h\\\", \\\"1d\\\", and \\\"current\\\"",
+            "name": "timesteps",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "retrieveTimelinesBasic",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "Get Timeline parameters",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get Timeline parameters",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "retrieveTimelinesBasic",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/timelines",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 5,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/timelines",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.287,
+        "tp_kbps": 10.452,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 18
+  },
+  {
+    "api_id": "weather_request_single_data",
+    "candidate_id": "C30",
+    "mode_rank": 10,
+    "llm_reported_rank": 10,
+    "retrieved_rank": 12,
+    "rag_score": 0.6180402040481567,
+    "reason": "",
+    "service": {
+      "_file": "weather_request.json",
+      "_tool": "weather_request",
+      "api_id": "weather_request_single_data",
+      "category": "Monitoring",
+      "description": "Using this endpoint u can get singular data, for example: if u type /weather/Serbia , the result would be a json data that gets information about city/cities in Serbia.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Serbia",
+            "description": "",
+            "name": "city_or_country_name",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Single Data",
+      "tool_description": "Restful API for getting weather information, city and country name, weather type, current date and time.",
+      "tool_name": "Weather Request",
+      "toolbench_endpoint_description": "Using this endpoint u can get singular data, for example: if u type /weather/Serbia , the result would be a json data that gets information about city/cities in Serbia.",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "Using this endpoint u can get singular data, for example: if u type /weather/Serbia , the result would be a json data that gets information about city/cities in Serbia.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Single Data",
+        "endpoint_url": "https://weather-request.p.rapidapi.com/weather/{city_or_country_name}",
+        "file_name": "weather_request.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Restful API for getting weather information, city and country name, weather type, current date and time.",
+        "tool_file_found": true,
+        "tool_name": "Weather Request",
+        "toolbench_relative_path": "Monitoring/weather_request.json"
+      },
+      "toolbench_tool_description": "Restful API for getting weather information, city and country name, weather type, current date and time.",
+      "toolbench_tool_name": "Weather Request",
+      "url": "https://weather-request.p.rapidapi.com/weather/{city_or_country_name}",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3195,
+        "tp_kbps": 15.6495,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 19
+  },
+  {
+    "api_id": "weatherapi_com_forecast_weather_api",
+    "candidate_id": "C31",
+    "mode_rank": 11,
+    "llm_reported_rank": 11,
+    "retrieved_rank": 5,
+    "rag_score": 0.6525902152061462,
+    "reason": "",
+    "service": {
+      "_file": "weatherapi_com.json",
+      "_tool": "weatherapi_com",
+      "api_id": "weatherapi_com_forecast_weather_api",
+      "category": "Weather",
+      "description": "Forecast weather API method returns upto next 14 day weather forecast and weather alert as json. It contains astronomy data, day weather forecast and hourly interval weather information for a given city.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "3",
+            "description": "Number of days of forecast required.",
+            "name": "days",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "If passing 'dt', it should be between today and next 10 day in yyyy-MM-dd format.",
+            "name": "dt",
+            "type": "DATE (YYYY-MM-DD)"
+          },
+          {
+            "default": "",
+            "description": "Returns 'condition:text' field in API in the desired language",
+            "name": "lang",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "London",
+            "description": "Query parameter based on which data is sent back. It could be following:\n\nLatitude and Longitude (Decimal degree) e.g: q=48.8567,2.3508\ncity name e.g.: q=Paris\nUS zip e.g.: q=10001\nUK postcode e.g: q=SW1\nCanada postal code e.g: q=G2J\nmetar:<metar code> e.g: q=metar:EGLL\niata:<3 digit airport code> e.g: q=iata:DXB\nauto:ip IP lookup e.g: q=auto:ip\nIP address (IPv4 and IPv6 supported) e.g: q=100.0.0.1",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Forecast Weather API",
+      "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "tool_name": "WeatherAPI.com",
+      "toolbench_endpoint_description": "Forecast weather API method returns upto next 14 day weather forecast and weather alert as json. It contains astronomy data, day weather forecast and hourly interval weather information for a given city.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Forecast weather API method returns upto next 14 day weather forecast and weather alert as json. It contains astronomy data, day weather forecast and hourly interval weather information for a given city.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Forecast Weather API",
+        "endpoint_url": "https://weatherapi-com.p.rapidapi.com/forecast.json",
+        "file_name": "weatherapi_com.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+        "tool_file_found": true,
+        "tool_name": "WeatherAPI.com",
+        "toolbench_relative_path": "Weather/weatherapi_com.json"
+      },
+      "toolbench_tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "toolbench_tool_name": "WeatherAPI.com",
+      "url": "https://weatherapi-com.p.rapidapi.com/forecast.json",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.307,
+        "tp_kbps": 6.514,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 20
+  },
+  {
+    "api_id": "world_weather_online_api_local_weather_api",
+    "candidate_id": "C37",
+    "mode_rank": 12,
+    "llm_reported_rank": 12,
+    "retrieved_rank": 10,
+    "rag_score": 0.6328077912330627,
+    "reason": "",
+    "service": {
+      "_file": "world_weather_online_api.json",
+      "_tool": "world_weather_online_api",
+      "api_id": "world_weather_online_api_local_weather_api",
+      "category": "Weather",
+      "description": "The Local Weather REST API (also called City and Town Weather API) method allows you to access current weather conditions, the next 14 days of accurate and reliable weather forecast, Air Quality Data, Weather Alerts and Monthly Climate Averages for over 4 million cities and towns worldwide. The Local Weather API returns weather elements such as temperature, precipitation (rainfall), weather description, weather icon, wind speed, etc.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "tp",
+            "type": "ENUM"
+          },
+          {
+            "default": "yes",
+            "description": "",
+            "name": "aqi",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "format",
+            "type": "ENUM"
+          },
+          {
+            "default": "en",
+            "description": "",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "no",
+            "description": "",
+            "name": "alerts",
+            "type": "STRING"
+          },
+          {
+            "default": "3",
+            "description": "",
+            "name": "num_of_days",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "40.73,-73",
+            "description": "",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Local Weather API",
+      "tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+      "tool_name": "World Weather Online API",
+      "toolbench_endpoint_description": "The Local Weather REST API (also called City and Town Weather API) method allows you to access current weather conditions, the next 14 days of accurate and reliable weather forecast, Air Quality Data, Weather Alerts and Monthly Climate Averages for over 4 million cities and towns worldwide. The Local Weather API returns weather elements such as temperature, precipitation (rainfall), weather description, weather icon, wind speed, etc.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "The Local Weather REST API (also called City and Town Weather API) method allows you to access current weather conditions, the next 14 days of accurate and reliable weather forecast, Air Quality Data, Weather Alerts and Monthly Climate Averages for over 4 million cities and towns worldwide. The Local Weather API returns weather elements such as temperature, precipitation (rainfall), weather description, weather icon, wind speed, etc.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Local Weather API",
+        "endpoint_url": "https://world-weather-online-api1.p.rapidapi.com/weather.ashx",
+        "file_name": "world_weather_online_api.json",
+        "optional_parameter_count": 6,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+        "tool_file_found": true,
+        "tool_name": "World Weather Online API",
+        "toolbench_relative_path": "Weather/world_weather_online_api.json"
+      },
+      "toolbench_tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+      "toolbench_tool_name": "World Weather Online API",
+      "url": "https://world-weather-online-api1.p.rapidapi.com/weather.ashx",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.355,
+        "tp_kbps": 8.45,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 21
+  },
+  {
+    "api_id": "cloud_cast_get_the_forecast",
+    "candidate_id": "C04",
+    "mode_rank": 13,
+    "llm_reported_rank": 13,
+    "retrieved_rank": 36,
+    "rag_score": 0.5627785325050354,
+    "reason": "",
+    "service": {
+      "_file": "cloud_cast.json",
+      "_tool": "cloud_cast",
+      "api_id": "cloud_cast_get_the_forecast",
+      "category": "Weather",
+      "description": "Get the forecast for the current city",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "New York",
+            "description": "",
+            "name": "city",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get the forecast",
+      "tool_description": "Cloudcast is a simple and efficient API built with Node.js and Express, designed to provide real-time weather information for any city in the world. It is able to fetch and deliver current weather conditions including temperature, humidity, wind speed, and other vital meteorological data.",
+      "tool_name": "Cloud Cast",
+      "toolbench_endpoint_description": "Get the forecast for the current city",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get the forecast for the current city",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get the forecast",
+        "endpoint_url": "https://cloud-cast.p.rapidapi.com/forecast/{city}",
+        "file_name": "cloud_cast.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Cloudcast is a simple and efficient API built with Node.js and Express, designed to provide real-time weather information for any city in the world. It is able to fetch and deliver current weather conditions including temperature, humidity, wind speed, and other vital meteorological data.",
+        "tool_file_found": true,
+        "tool_name": "Cloud Cast",
+        "toolbench_relative_path": "Weather/cloud_cast.json"
+      },
+      "toolbench_tool_description": "Cloudcast is a simple and efficient API built with Node.js and Express, designed to provide real-time weather information for any city in the world. It is able to fetch and deliver current weather conditions including temperature, humidity, wind speed, and other vital meteorological data.",
+      "toolbench_tool_name": "Cloud Cast",
+      "url": "https://cloud-cast.p.rapidapi.com/forecast/{city}",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.508,
+        "tp_kbps": 3.937,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 24
+  },
+  {
+    "api_id": "weatherstack_get",
+    "candidate_id": "C36",
+    "mode_rank": 14,
+    "llm_reported_rank": 14,
+    "retrieved_rank": 4,
+    "rag_score": 0.6574503779411316,
+    "reason": "",
+    "service": {
+      "_file": "weatherstack.json",
+      "_tool": "weatherstack",
+      "api_id": "weatherstack_get",
+      "category": "Weather",
+      "description": "exemple",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "get",
+      "tool_description": "Real-Time &amp; Historical World Weather Data API Retrieve instant, accurate weather information for any location in the world in lightweight JSON format",
+      "tool_name": "weatherstack",
+      "toolbench_endpoint_description": "exemple",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "exemple",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "get",
+        "endpoint_url": "https://weatherstack1.p.rapidapi.com/api.weatherstack.com/current",
+        "file_name": "weatherstack.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Real-Time &amp; Historical\nWorld Weather Data API\nRetrieve instant, accurate weather information for\nany location in the world in lightweight JSON format",
+        "tool_file_found": true,
+        "tool_name": "weatherstack",
+        "toolbench_relative_path": "Weather/weatherstack.json"
+      },
+      "toolbench_tool_description": "Real-Time &amp; Historical\nWorld Weather Data API\nRetrieve instant, accurate weather information for\nany location in the world in lightweight JSON format",
+      "toolbench_tool_name": "weatherstack",
+      "url": "https://weatherstack1.p.rapidapi.com/api.weatherstack.com/current",
+      "qos": {
+        "availability": 0.9558,
+        "rt_s": 0.36,
+        "tp_kbps": 8.333,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 29
+  },
+  {
+    "api_id": "world_weather_online_api_ski_weather_api",
+    "candidate_id": "C39",
+    "mode_rank": 15,
+    "llm_reported_rank": 15,
+    "retrieved_rank": 40,
+    "rag_score": 0.5598962306976318,
+    "reason": "",
+    "service": {
+      "_file": "world_weather_online_api.json",
+      "_tool": "world_weather_online_api",
+      "api_id": "world_weather_online_api_ski_weather_api",
+      "category": "Weather",
+      "description": "Ski Weather API provides worldwide ski and mountain weather forecast for upto 7-days.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "tp",
+            "type": "ENUM"
+          },
+          {
+            "default": "en",
+            "description": "",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "format",
+            "type": "ENUM"
+          },
+          {
+            "default": "1",
+            "description": "",
+            "name": "num_of_days",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "45.45,6.7",
+            "description": "",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Ski Weather API",
+      "tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+      "tool_name": "World Weather Online API",
+      "toolbench_endpoint_description": "Ski Weather API provides worldwide ski and mountain weather forecast for upto 7-days.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Ski Weather API provides worldwide ski and mountain weather forecast for upto 7-days.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Ski Weather API",
+        "endpoint_url": "https://world-weather-online-api1.p.rapidapi.com/ski.ashx",
+        "file_name": "world_weather_online_api.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+        "tool_file_found": true,
+        "tool_name": "World Weather Online API",
+        "toolbench_relative_path": "Weather/world_weather_online_api.json"
+      },
+      "toolbench_tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+      "toolbench_tool_name": "World Weather Online API",
+      "url": "https://world-weather-online-api1.p.rapidapi.com/ski.ashx",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.593,
+        "tp_kbps": 20.236,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 30
+  },
+  {
+    "api_id": "weatherapi_com_realtime_weather_api",
+    "candidate_id": "C33",
+    "mode_rank": 16,
+    "llm_reported_rank": 16,
+    "retrieved_rank": 3,
+    "rag_score": 0.6784622669219971,
+    "reason": "",
+    "service": {
+      "_file": "weatherapi_com.json",
+      "_tool": "weatherapi_com",
+      "api_id": "weatherapi_com_realtime_weather_api",
+      "category": "Weather",
+      "description": "Current weather or realtime weather API method allows a user to get up to date current weather information in json and xml. The data is returned as a Current Object.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "53.1,-0.13",
+            "description": "Query parameter based on which data is sent back. It could be following:  Latitude and Longitude (Decimal degree) e.g: q=48.8567,2.3508 city name e.g.: q=Paris US zip e.g.: q=10001 UK postcode e.g: q=SW1 Canada postal code e.g: q=G2J metar:<metar code> e.g: q=metar:EGLL iata:<3 digit airport code> e.g: q=iata:DXB auto:ip IP lookup e.g: q=auto:ip IP address (IPv4 and IPv6 supported) e.g: q=100.0.0.1",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Realtime Weather API",
+      "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "tool_name": "WeatherAPI.com",
+      "toolbench_endpoint_description": "Current weather or realtime weather API method allows a user to get up to date current weather information in json and xml. The data is returned as a Current Object.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Current weather or realtime weather API method allows a user to get up to date current weather information in json and xml. The data is returned as a Current Object.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Realtime Weather API",
+        "endpoint_url": "https://weatherapi-com.p.rapidapi.com/current.json",
+        "file_name": "weatherapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+        "tool_file_found": true,
+        "tool_name": "WeatherAPI.com",
+        "toolbench_relative_path": "Weather/weatherapi_com.json"
+      },
+      "toolbench_tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "toolbench_tool_name": "WeatherAPI.com",
+      "url": "https://weatherapi-com.p.rapidapi.com/current.json",
+      "qos": {
+        "availability": 0.9735,
+        "rt_s": 0.627,
+        "tp_kbps": 6.3795,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 32
+  },
+  {
+    "api_id": "easy_weather_hourly_forecast_240_hours",
+    "candidate_id": "C07",
+    "mode_rank": 17,
+    "llm_reported_rank": 17,
+    "retrieved_rank": 39,
+    "rag_score": 0.5606173872947693,
+    "reason": "",
+    "service": {
+      "_file": "easy_weather.json",
+      "_tool": "easy_weather",
+      "api_id": "easy_weather_hourly_forecast_240_hours",
+      "category": "Weather",
+      "description": "Get a 240-hour forecast for the given latitude and longitude.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "151.22",
+            "description": "",
+            "name": "longitude",
+            "type": "STRING"
+          },
+          {
+            "default": "-33.86",
+            "description": "",
+            "name": "latitude",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Hourly forecast (240 hours)",
+      "tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+      "tool_name": "Easy Weather",
+      "toolbench_endpoint_description": "Get a 240-hour forecast for the given latitude and longitude.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get a 240-hour forecast for the given latitude and longitude.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Hourly forecast (240 hours)",
+        "endpoint_url": "https://easy-weather1.p.rapidapi.com/hourly/full",
+        "file_name": "easy_weather.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+        "tool_file_found": true,
+        "tool_name": "Easy Weather",
+        "toolbench_relative_path": "Weather/easy_weather.json"
+      },
+      "toolbench_tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+      "toolbench_tool_name": "Easy Weather",
+      "url": "https://easy-weather1.p.rapidapi.com/hourly/full",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.944,
+        "tp_kbps": 11.652,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 35
+  },
+  {
+    "api_id": "tomorrow_io_retrievealocation",
+    "candidate_id": "C20",
+    "mode_rank": 18,
+    "llm_reported_rank": 18,
+    "retrieved_rank": 8,
+    "rag_score": 0.6419641375541687,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_retrievealocation",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "6183d156022c1b0008685cc6",
+            "description": "(Required) ID of a pre-defined location",
+            "name": "locationId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "retrieveALocation",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "retrieveALocation",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/locations/{locationid}",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/locations/{locationid}",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3385,
+        "tp_kbps": 163.6105,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.73,
+    "qos_llm_rank": 2
+  },
+  {
+    "api_id": "ai_weather_by_meteosource_astro",
+    "candidate_id": "C01",
+    "mode_rank": 19,
+    "llm_reported_rank": 19,
+    "retrieved_rank": 38,
+    "rag_score": 0.5611408948898315,
+    "reason": "",
+    "service": {
+      "_file": "ai_weather_by_meteosource.json",
+      "_tool": "ai_weather_by_meteosource",
+      "api_id": "ai_weather_by_meteosource_astro",
+      "category": "Weather",
+      "description": "Returns global **Sun and Moon information** (sunrise/sunset, moonrise/moonset and moon phase) for the next 30 days. Define your location using GPS coordinates or `place_id` from `Location endpoints`.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "-122.42282",
+            "description": "Longitude in format 12E, 12.3E, 12.3, or 13W, 13.2W, -13.4. **Alternatively, you can specify the location by parameter `place_id`.**",
+            "name": "lon",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Identifier of a place. To obtain the `place_id` for the location you want, please use `Location endpoints`. **Alternatively, you can specify the location by parameters `lat` and `lon`.**",
+            "name": "place_id",
+            "type": "STRING"
+          },
+          {
+            "default": "37.81021",
+            "description": "Latitude in format 12N, 12.3N, 12.3, or 13S, 13.2S, -13.4. **Alternatively, you can specify the location by parameter `place_id`.**",
+            "name": "lat",
+            "type": "STRING"
+          },
+          {
+            "default": "auto",
+            "description": "Timezone to be used for the date fields. If not specified, local timezone of the forecast location will be used. The format is according to the tzinfo database, so values like `Europe/Prague` or `UTC` can be used. Alternatively you may use the value `auto` in which case the local timezone of the location is used. The full list of valid timezone strings can be found [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List).\n",
+            "name": "timezone",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "astro",
+      "tool_description": "Accurate hyper-local weather forecasts, powered by our cutting-edge machine learning (ML) models. Historical weather, current weather, weather statistics , and hour-by-hour forecast - all weather data updated in real-time!",
+      "tool_name": "AI Weather by Meteosource",
+      "toolbench_endpoint_description": "Returns global **Sun and Moon information** (sunrise/sunset, moonrise/moonset and moon phase) for the next 30 days. Define your location using GPS coordinates or `place_id` from `Location endpoints`.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Returns global **Sun and Moon information** (sunrise/sunset, moonrise/moonset and moon phase) for the next 30 days. Define your location using GPS coordinates or `place_id` from `Location endpoints`.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "astro",
+        "endpoint_url": "https://ai-weather-by-meteosource.p.rapidapi.com/astro",
+        "file_name": "ai_weather_by_meteosource.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Accurate hyper-local weather forecasts, powered by our cutting-edge machine learning (ML) models. Historical weather, current weather, weather statistics , and hour-by-hour forecast - all weather data updated in real-time!",
+        "tool_file_found": true,
+        "tool_name": "AI Weather by Meteosource",
+        "toolbench_relative_path": "Weather/ai_weather_by_meteosource.json"
+      },
+      "toolbench_tool_description": "Accurate hyper-local weather forecasts, powered by our cutting-edge machine learning (ML) models. Historical weather, current weather, weather statistics , and hour-by-hour forecast - all weather data updated in real-time!",
+      "toolbench_tool_name": "AI Weather by Meteosource",
+      "url": "https://ai-weather-by-meteosource.p.rapidapi.com/astro",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.134,
+        "tp_kbps": 37.315,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 3
+  },
+  {
+    "api_id": "climate_news_weathertemp",
+    "candidate_id": "C03",
+    "mode_rank": 20,
+    "llm_reported_rank": 20,
+    "retrieved_rank": 34,
+    "rag_score": 0.5633558034896851,
+    "reason": "",
+    "service": {
+      "_file": "climate_news.json",
+      "_tool": "climate_news",
+      "api_id": "climate_news_weathertemp",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "weatherTemp",
+      "tool_description": "Climate News API : real-time temperature data from around the world and staying up-to-date with climate change news",
+      "tool_name": "Climate News",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "weatherTemp",
+        "endpoint_url": "https://climate-news27.p.rapidapi.com/weather/saudiarabia",
+        "file_name": "climate_news.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Climate News API :\nreal-time temperature data from around the world and staying up-to-date with climate change news",
+        "tool_file_found": true,
+        "tool_name": "Climate News",
+        "toolbench_relative_path": "Weather/climate_news.json"
+      },
+      "toolbench_tool_description": "Climate News API :\nreal-time temperature data from around the world and staying up-to-date with climate change news",
+      "toolbench_tool_name": "Climate News",
+      "url": "https://climate-news27.p.rapidapi.com/weather/saudiarabia",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.167,
+        "tp_kbps": 41.916,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 4
+  },
+  {
+    "api_id": "farmonaut_satellite_and_weather_data_retrieve_historical_weather_for_a_field",
+    "candidate_id": "C08",
+    "mode_rank": 21,
+    "llm_reported_rank": 21,
+    "retrieved_rank": 22,
+    "rag_score": 0.5877242088317871,
+    "reason": "",
+    "service": {
+      "_file": "farmonaut_satellite_and_weather_data.json",
+      "_tool": "farmonaut_satellite_and_weather_data",
+      "api_id": "farmonaut_satellite_and_weather_data_retrieve_historical_weather_for_a_field",
+      "category": "Monitoring",
+      "description": "Use this to get weather data of a past days.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrievehistoricalweather",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Retrieve Historical Weather for A Field",
+      "tool_description": "Get Your Unique ID and start using the API.",
+      "tool_name": "Farmonaut Satellite and Weather Data",
+      "toolbench_endpoint_description": "Use this to get weather data of a past days.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrievehistoricalweather",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "Use this to get weather data of a past days.\nFor more information visit: https://farmonaut.com/farmonaut-satellite-weather-api-developer-docs/#retrievehistoricalweather",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Retrieve Historical Weather for A Field",
+        "endpoint_url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getHistoricalFieldWeather",
+        "file_name": "farmonaut_satellite_and_weather_data.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get Your Unique ID and start using the API.",
+        "tool_file_found": true,
+        "tool_name": "Farmonaut Satellite and Weather Data",
+        "toolbench_relative_path": "Monitoring/farmonaut_satellite_and_weather_data.json"
+      },
+      "toolbench_tool_description": "Get Your Unique ID and start using the API.",
+      "toolbench_tool_name": "Farmonaut Satellite and Weather Data",
+      "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getHistoricalFieldWeather",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.12,
+        "tp_kbps": 25.0,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 5
+  },
+  {
+    "api_id": "tomorrow_io_activateanalert-2",
+    "candidate_id": "C16",
+    "mode_rank": 22,
+    "llm_reported_rank": 22,
+    "retrieved_rank": 27,
+    "rag_score": 0.5780931115150452,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_activateanalert-2",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "{{alertId}}",
+            "description": "(Required) ID of a pre-defined alert",
+            "name": "alertId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "activateAnAlert",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "activateAnAlert",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{{alertId}}/activate",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{{alertId}}/activate",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.123,
+        "tp_kbps": 24.39,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 7
+  },
+  {
+    "api_id": "history_hourlyweather",
+    "candidate_id": "C11",
+    "mode_rank": 23,
+    "llm_reported_rank": 23,
+    "retrieved_rank": 35,
+    "rag_score": 0.5630459785461426,
+    "reason": "",
+    "service": {
+      "_file": "history.json",
+      "_tool": "history",
+      "api_id": "history_hourlyweather",
+      "category": "Weather",
+      "description": "This endpoint returns the historical weather on hourly level for a given day for a given location (latitude and longitude)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "46.95828",
+            "description": "The latitude in decimal format of the requested point",
+            "name": "lat",
+            "type": "STRING"
+          },
+          {
+            "default": "weather",
+            "description": "Define the parameter, you wish to request. Allowed options are \\\"all\\\", \\\"air_quality\\\", \\\"anomaly\\\", \\\"astronomy\\\", \\\"weather\\\", \\\"signal\\\", \\\"pollen\\\"",
+            "name": "parameters",
+            "type": "STRING"
+          },
+          {
+            "default": "20210101",
+            "description": "The requested day in the format \\\"YYYYmmdd\\\"",
+            "name": "day",
+            "type": "STRING"
+          },
+          {
+            "default": "10.87152",
+            "description": "The longitude in decimal format of the requested point",
+            "name": "lng",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "hourlyWeather",
+      "tool_description": "Get 20 years historical weather data in Europe + Pollen + UV + Air Quality data",
+      "tool_name": "History",
+      "toolbench_endpoint_description": "This endpoint returns the historical weather on hourly level for a given day for a given location (latitude and longitude)",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "This endpoint returns the historical weather on hourly level for a given day for a given location (latitude and longitude)",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "hourlyWeather",
+        "endpoint_url": "https://history3.p.rapidapi.com/v0/hourly/{lng}/{lat}/{day}",
+        "file_name": "history.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 4,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get 20 years historical weather data in Europe + Pollen + UV + Air Quality data",
+        "tool_file_found": true,
+        "tool_name": "History",
+        "toolbench_relative_path": "Weather/history.json"
+      },
+      "toolbench_tool_description": "Get 20 years historical weather data in Europe + Pollen + UV + Air Quality data",
+      "toolbench_tool_name": "History",
+      "url": "https://history3.p.rapidapi.com/v0/hourly/{lng}/{lat}/{day}",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.247,
+        "tp_kbps": 12.145,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 11
+  },
+  {
+    "api_id": "yahoo_weather_search_by_woeid",
+    "candidate_id": "C40",
+    "mode_rank": 24,
+    "llm_reported_rank": 24,
+    "retrieved_rank": 29,
+    "rag_score": 0.5711204409599304,
+    "reason": "",
+    "service": {
+      "_file": "yahoo_weather.json",
+      "_tool": "yahoo_weather",
+      "api_id": "yahoo_weather_search_by_woeid",
+      "category": "Weather",
+      "description": "To find your woeid, browse or search for your city from Yahoo Weather page. The woeid is in the URL for the forecast page for that city. For example, if you \"Change location\" for Sunnyvale, the forecast page for that city is https://www.yahoo.com/news/weather/united-states/sunnyvale/sunnyvale-**2502265**. The woeid is 2502265",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "f",
+            "description": "f for Fahrenheit or c for Celsius, default is f",
+            "name": "u",
+            "type": "STRING"
+          },
+          {
+            "default": "json",
+            "description": "xml or json, default is json",
+            "name": "format",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "2502265",
+            "description": "",
+            "name": "woeid",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Search by woeid",
+      "tool_description": "Yahoo Free Weather APIs",
+      "tool_name": "Yahoo Weather",
+      "toolbench_endpoint_description": "To find your woeid, browse or search for your city from Yahoo Weather page. The woeid is in the URL for the forecast page for that city. For example, if you \"Change location\" for Sunnyvale, the forecast page for that city is https://www.yahoo.com/news/weather/united-states/sunnyvale/sunnyvale-**2502265**. The woeid is 2502265",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "To find your woeid, browse or search for your city from Yahoo Weather page. The woeid is in the URL for the forecast page for that city. For example, if you \"Change location\" for Sunnyvale, the forecast page for that city is https://www.yahoo.com/news/weather/united-states/sunnyvale/sunnyvale-**2502265**. The woeid is 2502265",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search by woeid",
+        "endpoint_url": "https://yahoo-weather5.p.rapidapi.com/weather",
+        "file_name": "yahoo_weather.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Yahoo Free Weather APIs",
+        "tool_file_found": true,
+        "tool_name": "Yahoo Weather",
+        "toolbench_relative_path": "Weather/yahoo_weather.json"
+      },
+      "toolbench_tool_description": "Yahoo Free Weather APIs",
+      "toolbench_tool_name": "Yahoo Weather",
+      "url": "https://yahoo-weather5.p.rapidapi.com/weather",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.313,
+        "tp_kbps": 12.779,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 13
+  },
+  {
+    "api_id": "climate_change_live_at_specific_source_weather_changes",
+    "candidate_id": "C02",
+    "mode_rank": 25,
+    "llm_reported_rank": 25,
+    "retrieved_rank": 13,
+    "rag_score": 0.6107082366943359,
+    "reason": "",
+    "service": {
+      "_file": "climate_change_live_at.json",
+      "_tool": "climate_change_live_at",
+      "api_id": "climate_change_live_at_specific_source_weather_changes",
+      "category": "Weather",
+      "description": "Get all weather news from a specific source.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "theguardian",
+            "description": "",
+            "name": "newspaperId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Specific Source Weather Changes",
+      "tool_description": "An API showing climate changes from all around the world",
+      "tool_name": "Climate Change Live _ AT",
+      "toolbench_endpoint_description": "Get all weather news from a specific source.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get all weather news from a specific source.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Specific Source Weather Changes",
+        "endpoint_url": "https://climate-change-live-_-at.p.rapidapi.com/news/{newspaperid}",
+        "file_name": "climate_change_live_at.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing climate changes from all around the world",
+        "tool_file_found": true,
+        "tool_name": "Climate Change Live _ AT",
+        "toolbench_relative_path": "Weather/climate_change_live_at.json"
+      },
+      "toolbench_tool_description": "An API showing climate changes from all around the world",
+      "toolbench_tool_name": "Climate Change Live _ AT",
+      "url": "https://climate-change-live-_-at.p.rapidapi.com/news/{newspaperid}",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.395,
+        "tp_kbps": 10.126,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 14
+  },
+  {
+    "api_id": "tomorrow_io_activateanalert",
+    "candidate_id": "C15",
+    "mode_rank": 26,
+    "llm_reported_rank": 26,
+    "retrieved_rank": 28,
+    "rag_score": 0.5780931115150452,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_activateanalert",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "{{alertId}}",
+            "description": "(Required) ID of a pre-defined alert",
+            "name": "alertId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "activateAnAlert",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "activateAnAlert",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}/activate",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}/activate",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.461,
+        "tp_kbps": 21.691,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 17
+  },
+  {
+    "api_id": "national_weather_service_stations_stationid_observations_recordid",
+    "candidate_id": "C13",
+    "mode_rank": 27,
+    "llm_reported_rank": 27,
+    "retrieved_rank": 21,
+    "rag_score": 0.5903851985931396,
+    "reason": "",
+    "service": {
+      "_file": "national_weather_service.json",
+      "_tool": "national_weather_service",
+      "api_id": "national_weather_service_stations_stationid_observations_recordid",
+      "category": "Weather",
+      "description": "Data for a specific observation.  NOTE! See note in /stations/{stationId}/observations for important details on observation data.  Example: /stations/KMKC/observations/2017-01-04T18:54:00+00:00",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "stationsId: Station id",
+            "name": "stationId",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "recordId, Record Id (ISO8601DateTime)",
+            "name": "recordId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/stations/{stationId}/observations/{recordId}",
+      "tool_description": "National Weather Service API (api.weather.gov) NOAA (National Oceanic and Atmospheric Administration) provides national weather data as well as past data.",
+      "tool_name": "National Weather Service",
+      "toolbench_endpoint_description": "Data for a specific observation.  NOTE! See note in /stations/{stationId}/observations for important details on observation data.  Example: /stations/KMKC/observations/2017-01-04T18:54:00+00:00",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Data for a specific observation.  NOTE! See note in /stations/{stationId}/observations for important details on observation data.  Example: /stations/KMKC/observations/2017-01-04T18:54:00+00:00",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/stations/{stationId}/observations/{recordId}",
+        "endpoint_url": "https://national-weather-service.p.rapidapi.com/stations/{stationId}/observations/{recordId}",
+        "file_name": "national_weather_service.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "National Weather Service API (api.weather.gov) NOAA (National Oceanic and Atmospheric Administration) provides national weather data as well as past data.",
+        "tool_file_found": true,
+        "tool_name": "National Weather Service",
+        "toolbench_relative_path": "Weather/national_weather_service.json"
+      },
+      "toolbench_tool_description": "National Weather Service API (api.weather.gov) NOAA (National Oceanic and Atmospheric Administration) provides national weather data as well as past data.",
+      "toolbench_tool_name": "National Weather Service",
+      "url": "https://national-weather-service.p.rapidapi.com/stations/{stationId}/observations/{recordId}",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.484,
+        "tp_kbps": 8.264,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.64,
+    "qos_llm_rank": 22
+  },
+  {
+    "api_id": "tomorrow_io_listinsights",
+    "candidate_id": "C19",
+    "mode_rank": 28,
+    "llm_reported_rank": 28,
+    "retrieved_rank": 25,
+    "rag_score": 0.5824112892150879,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_listinsights",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "listInsights",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "listInsights",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/insights",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/insights",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.4855,
+        "tp_kbps": 6.18,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.64,
+    "qos_llm_rank": 23
+  },
+  {
+    "api_id": "tomorrow_io_retrieveeventsbasic",
+    "candidate_id": "C22",
+    "mode_rank": 29,
+    "llm_reported_rank": 29,
+    "retrieved_rank": 20,
+    "rag_score": 0.594970166683197,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_retrieveeventsbasic",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "{{insights}}",
+            "description": "(Required) Pre-defined category names or custom insight IDs",
+            "name": "insights",
+            "type": "STRING"
+          },
+          {
+            "default": "{{location}}",
+            "description": "(Required) ID of a pre-defined location or latlong string",
+            "name": "location",
+            "type": "STRING"
+          },
+          {
+            "default": "{{buffer}}",
+            "description": "The buffer around locations, in case of pre-defined insight categories (in km)",
+            "name": "buffer",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "retrieveEventsBasic",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "retrieveEventsBasic",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/events",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/events",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.567,
+        "tp_kbps": 3.527,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 25
+  },
+  {
+    "api_id": "tomorrow_io_retrieveweatherrecenthisotry",
+    "candidate_id": "C24",
+    "mode_rank": 30,
+    "llm_reported_rank": 30,
+    "retrieved_rank": 2,
+    "rag_score": 0.6851678490638733,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_retrieveweatherrecenthisotry",
+      "category": "Weather",
+      "description": "Get recent historical weather of a location",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "metric",
+            "description": "",
+            "name": "units",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "1d",
+            "description": "",
+            "name": "timesteps",
+            "type": "STRING"
+          },
+          {
+            "default": "42.1, 82.51",
+            "description": "",
+            "name": "location",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "retrieveWeatherRecentHisotry",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "Get recent historical weather of a location",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get recent historical weather of a location",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "retrieveWeatherRecentHisotry",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/weather/history/recent",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/weather/history/recent",
+      "qos": {
+        "availability": 0.9735,
+        "rt_s": 0.6315,
+        "tp_kbps": 31.6735,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 26
+  },
+  {
+    "api_id": "tomorrow_io_unlinklocations",
+    "candidate_id": "C25",
+    "mode_rank": 31,
+    "llm_reported_rank": 31,
+    "retrieved_rank": 14,
+    "rag_score": 0.6073721647262573,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_unlinklocations",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "application/json",
+            "description": "",
+            "name": "Content-Type",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "{{alertId}}",
+            "description": "(Required) ID of a pre-defined alert",
+            "name": "alertId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "unlinkLocations",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "unlinkLocations",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}/locations/unlink",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}/locations/unlink",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.5025,
+        "tp_kbps": 7.96,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 27
+  },
+  {
+    "api_id": "tomorrow_io_unlinklocations-2",
+    "candidate_id": "C26",
+    "mode_rank": 32,
+    "llm_reported_rank": 32,
+    "retrieved_rank": 15,
+    "rag_score": 0.6073721647262573,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_unlinklocations-2",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "{{alertId}}",
+            "description": "(Required) ID of a pre-defined alert",
+            "name": "alertId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "unlinkLocations",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "unlinkLocations",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{{alertId}}/locations/unlink",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{{alertId}}/locations/unlink",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.503,
+        "tp_kbps": 3.976,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 28
+  },
+  {
+    "api_id": "easy_weather_historical_daily",
+    "candidate_id": "C06",
+    "mode_rank": 33,
+    "llm_reported_rank": 33,
+    "retrieved_rank": 33,
+    "rag_score": 0.564376175403595,
+    "reason": "",
+    "service": {
+      "_file": "easy_weather.json",
+      "_tool": "easy_weather",
+      "api_id": "easy_weather_historical_daily",
+      "category": "Weather",
+      "description": "Get a historical daily forecast for the given latitude, longitude, and start date/time.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "-79.99",
+            "description": "",
+            "name": "longitude",
+            "type": "STRING"
+          },
+          {
+            "default": "2022-01-01",
+            "description": "",
+            "name": "date",
+            "type": "STRING"
+          },
+          {
+            "default": "39.53",
+            "description": "",
+            "name": "latitude",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Historical (daily)",
+      "tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+      "tool_name": "Easy Weather",
+      "toolbench_endpoint_description": "Get a historical daily forecast for the given latitude, longitude, and start date/time.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get a historical daily forecast for the given latitude, longitude, and start date/time.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Historical (daily)",
+        "endpoint_url": "https://easy-weather1.p.rapidapi.com/historical/daily",
+        "file_name": "easy_weather.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+        "tool_file_found": true,
+        "tool_name": "Easy Weather",
+        "toolbench_relative_path": "Weather/easy_weather.json"
+      },
+      "toolbench_tool_description": "Detailed current conditions, hourly forecasts, daily forecasts, and weather alerts by latitude and longitude in JSON format.",
+      "toolbench_tool_name": "Easy Weather",
+      "url": "https://easy-weather1.p.rapidapi.com/historical/daily",
+      "qos": {
+        "availability": 0.9705,
+        "rt_s": 0.508,
+        "tp_kbps": 3.937,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 31
+  },
+  {
+    "api_id": "live_climate_updates_get_all_news_endpoint_related_to_climate_change",
+    "candidate_id": "C12",
+    "mode_rank": 34,
+    "llm_reported_rank": 34,
+    "retrieved_rank": 18,
+    "rag_score": 0.599923849105835,
+    "reason": "",
+    "service": {
+      "_file": "live_climate_updates.json",
+      "_tool": "live_climate_updates",
+      "api_id": "live_climate_updates_get_all_news_endpoint_related_to_climate_change",
+      "category": "Weather",
+      "description": "This endpoint will return all news about climate change from all over the world.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All News Endpoint Related To Climate Change",
+      "tool_description": "An API that allows you to query the latest climate change news around the world.",
+      "tool_name": "Live Climate Updates",
+      "toolbench_endpoint_description": "This endpoint will return all news about climate change from all over the world.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "This endpoint will return all news about climate change from all over the world.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All News Endpoint Related To Climate Change",
+        "endpoint_url": "https://live-climate-updates.p.rapidapi.com/news",
+        "file_name": "live_climate_updates.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API that allows you to query the latest climate change news around the world.",
+        "tool_file_found": true,
+        "tool_name": "Live Climate Updates",
+        "toolbench_relative_path": "Weather/live_climate_updates.json"
+      },
+      "toolbench_tool_description": "An API that allows you to query the latest climate change news around the world.",
+      "toolbench_tool_name": "Live Climate Updates",
+      "url": "https://live-climate-updates.p.rapidapi.com/news",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.8985000000000001,
+        "tp_kbps": 36.7275,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 33
+  },
+  {
+    "api_id": "weatherapi_com_sports_api",
+    "candidate_id": "C34",
+    "mode_rank": 35,
+    "llm_reported_rank": 35,
+    "retrieved_rank": 9,
+    "rag_score": 0.6398018002510071,
+    "reason": "",
+    "service": {
+      "_file": "weatherapi_com.json",
+      "_tool": "weatherapi_com",
+      "api_id": "weatherapi_com_sports_api",
+      "category": "Weather",
+      "description": "Sports API method allows a user to get listing of all upcoming sports events for football, cricket and golf in json.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "London",
+            "description": "",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Sports API",
+      "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "tool_name": "WeatherAPI.com",
+      "toolbench_endpoint_description": "Sports API method allows a user to get listing of all upcoming sports events for football, cricket and golf in json.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Sports API method allows a user to get listing of all upcoming sports events for football, cricket and golf in json.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Sports API",
+        "endpoint_url": "https://weatherapi-com.p.rapidapi.com/sports.json",
+        "file_name": "weatherapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+        "tool_file_found": true,
+        "tool_name": "WeatherAPI.com",
+        "toolbench_relative_path": "Weather/weatherapi_com.json"
+      },
+      "toolbench_tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "toolbench_tool_name": "WeatherAPI.com",
+      "url": "https://weatherapi-com.p.rapidapi.com/sports.json",
+      "qos": {
+        "availability": 0.7876,
+        "rt_s": 0.173,
+        "tp_kbps": 40.0,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 34
+  },
+  {
+    "api_id": "tomorrow_io_createanalert-2",
+    "candidate_id": "C17",
+    "mode_rank": 36,
+    "llm_reported_rank": 36,
+    "retrieved_rank": 31,
+    "rag_score": 0.5679394006729126,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_createanalert-2",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "application/json",
+            "description": "",
+            "name": "Content-Type",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "createAnAlert",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "createAnAlert",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts",
+      "qos": {
+        "availability": 0.9764,
+        "rt_s": 1.015,
+        "tp_kbps": 2.955,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 36
+  },
+  {
+    "api_id": "tomorrow_io_linklocations",
+    "candidate_id": "C18",
+    "mode_rank": 37,
+    "llm_reported_rank": 37,
+    "retrieved_rank": 17,
+    "rag_score": 0.6045342087745667,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_linklocations",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "application/json",
+            "description": "",
+            "name": "Content-Type",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "{{alertId}}",
+            "description": "(Required) ID of a pre-defined alert",
+            "name": "alertId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "linkLocations",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "linkLocations",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}/locations/link",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}/locations/link",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 1.7029999999999998,
+        "tp_kbps": 4.109999999999999,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.52,
+    "qos_llm_rank": 37
+  },
+  {
+    "api_id": "tomorrow_io_retrieveanalert",
+    "candidate_id": "C21",
+    "mode_rank": 38,
+    "llm_reported_rank": 38,
+    "retrieved_rank": 16,
+    "rag_score": 0.6048895716667175,
+    "reason": "",
+    "service": {
+      "_file": "tomorrow_io.json",
+      "_tool": "tomorrow_io",
+      "api_id": "tomorrow_io_retrieveanalert",
+      "category": "Weather",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "{{alertId}}",
+            "description": "(Required) ID of a pre-defined alert",
+            "name": "alertId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "retrieveAnAlert",
+      "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program. See why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "tool_name": "Tomorrow.io",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "retrieveAnAlert",
+        "endpoint_url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}",
+        "file_name": "tomorrow_io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+        "tool_file_found": true,
+        "tool_name": "Tomorrow.io",
+        "toolbench_relative_path": "Weather/tomorrow_io.json"
+      },
+      "toolbench_tool_description": "The Tomorrow.io Weather API delivers fast, reliable, and hyper-accurate weather data with the flexibility to integrate with any application, system, or program.\nSee why 40k developers currently use Tomorrow.io Weather API. Try it for free today here.",
+      "toolbench_tool_name": "Tomorrow.io",
+      "url": "https://tomorrow-io1.p.rapidapi.com/v4/alerts/{alertid}",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 1.972,
+        "tp_kbps": 1.014,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.5,
+    "qos_llm_rank": 38
+  },
+  {
+    "api_id": "world_weather_online_api_marine_history_weather_api",
+    "candidate_id": "C38",
+    "mode_rank": 39,
+    "llm_reported_rank": 39,
+    "retrieved_rank": 23,
+    "rag_score": 0.5868179202079773,
+    "reason": "",
+    "service": {
+      "_file": "world_weather_online_api.json",
+      "_tool": "world_weather_online_api",
+      "api_id": "world_weather_online_api_marine_history_weather_api",
+      "category": "Weather",
+      "description": "The Historical Marine Weather API method allows you to access marine data since 1st Jan, 2015 for a given longitude and latitude, as well as tide data. The Historical Marine Weather API returns weather elements such as temperature, precipitation (rainfall), weather description, weather icon, wind speed, Tide data, significant wave height, swell height, swell direction and swell period.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "2020-05-26",
+            "description": "",
+            "name": "enddate",
+            "type": "DATE (YYYY-MM-DD)"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "format",
+            "type": "ENUM"
+          },
+          {
+            "default": "no",
+            "description": "",
+            "name": "tide",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "tp",
+            "type": "ENUM"
+          },
+          {
+            "default": "en",
+            "description": "",
+            "name": "lang",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "49.597, -8.19",
+            "description": "",
+            "name": "q",
+            "type": "STRING"
+          },
+          {
+            "default": "2020-05-15",
+            "description": "",
+            "name": "date",
+            "type": "DATE (YYYY-MM-DD)"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Marine History Weather API",
+      "tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+      "tool_name": "World Weather Online API",
+      "toolbench_endpoint_description": "The Historical Marine Weather API method allows you to access marine data since 1st Jan, 2015 for a given longitude and latitude, as well as tide data. The Historical Marine Weather API returns weather elements such as temperature, precipitation (rainfall), weather description, weather icon, wind speed, Tide data, significant wave height, swell height, swell direction and swell period.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "The Historical Marine Weather API method allows you to access marine data since 1st Jan, 2015 for a given longitude and latitude, as well as tide data. The Historical Marine Weather API returns weather elements such as temperature, precipitation (rainfall), weather description, weather icon, wind speed, Tide data, significant wave height, swell height, swell direction and swell period.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Marine History Weather API",
+        "endpoint_url": "https://world-weather-online-api1.p.rapidapi.com/past-marine.ashx",
+        "file_name": "world_weather_online_api.json",
+        "optional_parameter_count": 5,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+        "tool_file_found": true,
+        "tool_name": "World Weather Online API",
+        "toolbench_relative_path": "Weather/world_weather_online_api.json"
+      },
+      "toolbench_tool_description": "Free Weather API and Geo API for worldwide locations, hourly weather, 14-day weather, historical weather, and Marine and Ski weather API for developers and businesses in XML and JSON format.",
+      "toolbench_tool_name": "World Weather Online API",
+      "url": "https://world-weather-online-api1.p.rapidapi.com/past-marine.ashx",
+      "qos": {
+        "availability": 0.0118,
+        "rt_s": 3.84,
+        "tp_kbps": 7.729,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.01,
+    "qos_llm_rank": 39
+  },
+  {
+    "api_id": "weatherapi_com_ip_lookup_api",
+    "candidate_id": "C32",
+    "mode_rank": 40,
+    "llm_reported_rank": 40,
+    "retrieved_rank": 6,
+    "rag_score": 0.6516047716140747,
+    "reason": "",
+    "service": {
+      "_file": "weatherapi_com.json",
+      "_tool": "weatherapi_com",
+      "api_id": "weatherapi_com_ip_lookup_api",
+      "category": "Weather",
+      "description": "IP Lookup API method allows a user to get up to date information for an IP address in json.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "e.g: q=auto:ip\n\nIP address (IPv4 and IPv6 supported) e.g: q=100.0.0.1",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "IP Lookup API",
+      "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "tool_name": "WeatherAPI.com",
+      "toolbench_endpoint_description": "IP Lookup API method allows a user to get up to date information for an IP address in json.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "IP Lookup API method allows a user to get up to date information for an IP address in json.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "IP Lookup API",
+        "endpoint_url": "https://weatherapi-com.p.rapidapi.com/ip.json",
+        "file_name": "weatherapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+        "tool_file_found": true,
+        "tool_name": "WeatherAPI.com",
+        "toolbench_relative_path": "Weather/weatherapi_com.json"
+      },
+      "toolbench_tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "toolbench_tool_name": "WeatherAPI.com",
+      "url": "https://weatherapi-com.p.rapidapi.com/ip.json",
+      "qos": {
+        "availability": 0.0,
+        "rt_s": null,
+        "tp_kbps": null,
+        "valid_qos": false
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.0,
+    "qos_llm_rank": 40
+  }
+]

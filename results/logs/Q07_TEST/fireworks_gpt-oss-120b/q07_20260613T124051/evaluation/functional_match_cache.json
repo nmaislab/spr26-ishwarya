@@ -1,0 +1,602 @@
+{
+  "q07_1_a_i_smartable_getpeoplebytopic": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "returns influencers, not news articles"
+  },
+  "q07_1_a_i_smartable_gettopics": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "provides topics only"
+  },
+  "q07_1_anime_news_net_get_details_of_a_news_item": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "anime‑specific news, not general top news"
+  },
+  "q07_1_article_api_extract-2": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "extracts article from URL, no news list"
+  },
+  "q07_1_biztoc_sources": {
+    "candidate_id": "C05",
+    "functional_match": 0,
+    "comment": "lists sources, does not fetch articles"
+  },
+  "q07_1_climate_change_api_v5_get_all_climate_change_news": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "climate‑change only, wrong domain"
+  },
+  "q07_1_climate_change_live_v27_get_all_climate_change_news": {
+    "candidate_id": "C07",
+    "functional_match": 0,
+    "comment": "climate‑change only, wrong domain"
+  },
+  "q07_1_climate_news_api_v2_get_all_climate_change_related_news": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "climate‑change only, wrong domain"
+  },
+  "q07_1_dev_to_api_get_all_the_top_articles_of_the_week_by_default": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "dev.to blogs, niche content"
+  },
+  "q07_1_dev_to_api_get_the_month_s_top_articles": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "dev.to blogs, niche content"
+  },
+  "q07_1_global_recession_live_get_all_global_recession_news": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "recession news only, domain specific"
+  },
+  "q07_1_global_recession_live_get_specific_news_articles_by_publication": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "recession news only, domain specific"
+  },
+  "q07_1_greek_news_in_english_get_all_sources": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "only lists sources"
+  },
+  "q07_1_guardian_searchcontent": {
+    "candidate_id": "C14",
+    "functional_match": 1,
+    "comment": "searches and returns news content"
+  },
+  "q07_1_ieee_spectrum_api_get_the_latest_30_news_from_ieee_spectrum": {
+    "candidate_id": "C15",
+    "functional_match": 1,
+    "comment": "returns latest news articles"
+  },
+  "q07_1_kubric_the_comprehensive_movie_news_api_advanced_search": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "movie news only"
+  },
+  "q07_1_latest_news_latest_news_api": {
+    "candidate_id": "C17",
+    "functional_match": 1,
+    "comment": "fetches latest news from many sources"
+  },
+  "q07_1_live_climate_change_news_v2_get_individual_news_articles_from_news_on_climate_change": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "climate‑change only"
+  },
+  "q07_1_malaysia_kini_get_article_by_sid": {
+    "candidate_id": "C19",
+    "functional_match": 1,
+    "comment": "retrieves news article by ID"
+  },
+  "q07_1_moka_news_by_source_new": {
+    "candidate_id": "C20",
+    "functional_match": 1,
+    "comment": "gets recent news items from source"
+  },
+  "q07_1_news_v3_all_articles": {
+    "candidate_id": "C21",
+    "functional_match": 1,
+    "comment": "returns all articles, usable for fetching news"
+  },
+  "q07_1_newscatcher_v1_aggregation": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "only provides article counts, no content"
+  },
+  "q07_1_newscatcher_v1_latest_headlines": {
+    "candidate_id": "C23",
+    "functional_match": 1,
+    "comment": "returns latest 100 articles, suitable"
+  },
+  "q07_1_newscatcher_v1_search_free": {
+    "candidate_id": "C24",
+    "functional_match": 1,
+    "comment": "search returns up to 100 articles"
+  },
+  "q07_1_newsdata_archive": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "provides historical archive, not current top"
+  },
+  "q07_1_newsdata_sources": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "lists sources only, no articles"
+  },
+  "q07_1_newsnow_news_powered_by_duck_duck_go": {
+    "candidate_id": "C27",
+    "functional_match": 1,
+    "comment": "real-time aggregation returns news articles"
+  },
+  "q07_1_newsnow_top_news_powered_by_duck_duck_go": {
+    "candidate_id": "C28",
+    "functional_match": 1,
+    "comment": "explicit top news endpoint"
+  },
+  "q07_1_pac_api_get_trump_articles_from_specific_newspaper": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "only Trump articles, not general news"
+  },
+  "q07_1_papercliff_history": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "gives article counts, not articles"
+  },
+  "q07_1_papercliff_timeline": {
+    "candidate_id": "C31",
+    "functional_match": 1,
+    "comment": "returns recent 100 articles, suitable"
+  },
+  "q07_1_specrom_news_api_classify_news_articles_using_smart_labels": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "classifies articles, does not fetch"
+  },
+  "q07_1_specrom_news_api_extract_all_social_media_handles_urls": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "extracts social handles, not news"
+  },
+  "q07_1_specrom_news_api_extract_email_address_by_url": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "extracts emails, not news"
+  },
+  "q07_1_specrom_news_api_fetch_parsed_news_article_by_url": {
+    "candidate_id": "C35",
+    "functional_match": 0,
+    "comment": "fetches single article by URL"
+  },
+  "q07_1_specrom_news_api_fetch_parsed_news_article_by_url_id": {
+    "candidate_id": "C36",
+    "functional_match": 0,
+    "comment": "fetches single article by id"
+  },
+  "q07_1_specrom_news_api_get_news_headlines_by_keyword_search": {
+    "candidate_id": "C37",
+    "functional_match": 0,
+    "comment": "searches headlines by keyword, not top list"
+  },
+  "q07_1_sri_lanka_news_api_get_news_from_one_news_source": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "limited to Sri Lankan source"
+  },
+  "q07_1_url_content_extractor_get_trending": {
+    "candidate_id": "C39",
+    "functional_match": 1,
+    "comment": "returns trending news articles"
+  },
+  "q07_1_websites_scrapper_scrap_website": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "scrapes based on query, not generic top"
+  },
+  "q07_2_a_i_smartable_gettopics": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "provides topics list, not summarization"
+  },
+  "q07_2_article_api_extract-2": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "extracts article content, not summarizing"
+  },
+  "q07_2_article_data_extraction_and_text_mining_v1_1_extract": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "extracts clean text, no summarization"
+  },
+  "q07_2_fast_language_detection_detect": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "detects language only"
+  },
+  "q07_2_financial_summarization_advanced_summarize": {
+    "candidate_id": "C05",
+    "functional_match": 0,
+    "comment": "financial summarization model, domain mismatch"
+  },
+  "q07_2_google_translate_text_detectlanguage": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "detects language, not summarization"
+  },
+  "q07_2_greek_news_in_english_get_all_sources": {
+    "candidate_id": "C07",
+    "functional_match": 0,
+    "comment": "lists news sources, not summarization"
+  },
+  "q07_2_guardian_searchcontent": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "searches content, does not summarize"
+  },
+  "q07_2_hadiths_api_search_for_hadiths_with_key_words": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "searches hadiths, unrelated"
+  },
+  "q07_2_isummar_article_summarizer_using_site_url": {
+    "candidate_id": "C10",
+    "functional_match": 1,
+    "comment": "summarizes article via URL, directly fits"
+  },
+  "q07_2_multilingual_translate_service_send_task_to_translation": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "translation task, not summarization"
+  },
+  "q07_2_multilingual_translate_service_send_task_to_translation-2": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "translation task, not summarization"
+  },
+  "q07_2_news_parser_article": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "extracts structured data, not summarization"
+  },
+  "q07_2_newscatcher_v1_aggregation": {
+    "candidate_id": "C14",
+    "functional_match": 0,
+    "comment": "aggregates article counts, not summarization"
+  },
+  "q07_2_newscatcher_v1_latest_headlines": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "returns latest articles, not summarization"
+  },
+  "q07_2_newscatcher_v1_search_free": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "searches articles, not summarization"
+  },
+  "q07_2_nobel_sms_get_sms_status": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "gets SMS status, unrelated"
+  },
+  "q07_2_phoenixink_introduction_with_challenge": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "generates intro, not summarization"
+  },
+  "q07_2_phoenixink_introduction_with_statement": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "generates intro, not summarization"
+  },
+  "q07_2_pluralsight_articles_get_data_with_articles_about_it_operations": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "provides IT articles, not summarization"
+  },
+  "q07_2_rapid_translate_multi_traduction_rapid_translate_long_text": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "translation API, not summarization"
+  },
+  "q07_2_riordanverse_api_get_character_by_id": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "character data retrieval"
+  },
+  "q07_2_rushtranslate_list_orders": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "order listing, unrelated"
+  },
+  "q07_2_semantic_text_analysis_entity_extraction_api": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "entity extraction, not summarization"
+  },
+  "q07_2_sms77io_get_contacts": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "retrieves contacts"
+  },
+  "q07_2_sms77io_get_status": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "delivery status lookup"
+  },
+  "q07_2_sms77io_replies": {
+    "candidate_id": "C27",
+    "functional_match": 0,
+    "comment": "message replies history"
+  },
+  "q07_2_smsapi_com_short_url_links_id": {
+    "candidate_id": "C28",
+    "functional_match": 0,
+    "comment": "short URL retrieval"
+  },
+  "q07_2_smsto_get_messages": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "fetches sent messages"
+  },
+  "q07_2_specrom_news_api_fetch_parsed_news_article_by_url": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "fetches article content only"
+  },
+  "q07_2_specrom_news_api_fetch_parsed_news_article_by_url_id": {
+    "candidate_id": "C31",
+    "functional_match": 0,
+    "comment": "fetches article by id"
+  },
+  "q07_2_specrom_news_api_get_news_headlines_by_keyword_search": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "searches headlines"
+  },
+  "q07_2_sri_lanka_news_api_get_news_from_one_news_source": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "news from specific source"
+  },
+  "q07_2_summarizen_extractive_text_summarization_get_a_text_s_key_sentences": {
+    "candidate_id": "C34",
+    "functional_match": 1,
+    "comment": "extractive text summarization"
+  },
+  "q07_2_text_summarizer_api_summarizer": {
+    "candidate_id": "C35",
+    "functional_match": 1,
+    "comment": "general text summarization API"
+  },
+  "q07_2_text_to_speech_for_28_languages_get_mp3_url": {
+    "candidate_id": "C36",
+    "functional_match": 0,
+    "comment": "text‑to‑speech conversion"
+  },
+  "q07_2_tldrthis_human_like_article_summarization": {
+    "candidate_id": "C37",
+    "functional_match": 1,
+    "comment": "abstractive article summarization"
+  },
+  "q07_2_translate_com_api_create_human_translation_order": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "human translation order"
+  },
+  "q07_2_virtual_number_view_sms_history": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "view received SMS"
+  },
+  "q07_2_youtube_summarizer_by_chatgpt_youtube_summarizer_v2": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "summarizes YouTube videos, not articles"
+  },
+  "q07_3_ai_messaging_receive_text": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "only receives incoming messages"
+  },
+  "q07_3_branded_sms_pakistan_send_message_to_multiple_numbers": {
+    "candidate_id": "C02",
+    "functional_match": 1,
+    "comment": "sends SMS to multiple recipients"
+  },
+  "q07_3_branded_sms_pakistan_short_code_sender_message_api": {
+    "candidate_id": "C03",
+    "functional_match": 1,
+    "comment": "sends SMS via short code"
+  },
+  "q07_3_bulksmssender_send": {
+    "candidate_id": "C04",
+    "functional_match": 1,
+    "comment": "sends bulk SMS messages"
+  },
+  "q07_3_easysendsms_check_balance": {
+    "candidate_id": "C05",
+    "functional_match": 0,
+    "comment": "checks account balance only"
+  },
+  "q07_3_easysendsms_sms_api": {
+    "candidate_id": "C06",
+    "functional_match": 1,
+    "comment": "provides SMS sending capability"
+  },
+  "q07_3_go_messenger_send_message": {
+    "candidate_id": "C07",
+    "functional_match": 1,
+    "comment": "sends SMS message"
+  },
+  "q07_3_hooksms_otp_verification": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "verifies OTP, not sending"
+  },
+  "q07_3_hooksms_send": {
+    "candidate_id": "C09",
+    "functional_match": 1,
+    "comment": "sends SMS messages"
+  },
+  "q07_3_post_paid_sms_send_sms": {
+    "candidate_id": "C10",
+    "functional_match": 1,
+    "comment": "sends SMS messages"
+  },
+  "q07_3_rapid_sms_api_send_sms": {
+    "candidate_id": "C11",
+    "functional_match": 1,
+    "comment": "sends text message via SMS"
+  },
+  "q07_3_reach_interactive_message_send": {
+    "candidate_id": "C12",
+    "functional_match": 1,
+    "comment": "creates and sends SMS messages"
+  },
+  "q07_3_send_sms_send_sms": {
+    "candidate_id": "C13",
+    "functional_match": 1,
+    "comment": "sends SMS"
+  },
+  "q07_3_sms77io_get_balance": {
+    "candidate_id": "C14",
+    "functional_match": 0,
+    "comment": "retrieves account balance"
+  },
+  "q07_3_sms77io_get_status": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "gets delivery status of SMS"
+  },
+  "q07_3_sms77io_send_voice_call": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "sends voice call, not SMS"
+  },
+  "q07_3_sms_app_send_sms": {
+    "candidate_id": "C17",
+    "functional_match": 1,
+    "comment": "sends SMS"
+  },
+  "q07_3_sms_exchange_send_sms": {
+    "candidate_id": "C18",
+    "functional_match": 1,
+    "comment": "sends SMS in France"
+  },
+  "q07_3_sms_gateway_sms_gateway": {
+    "candidate_id": "C19",
+    "functional_match": 1,
+    "comment": "sends SMS messages"
+  },
+  "q07_3_sms_receive_getupdates": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "receives incoming SMS only"
+  },
+  "q07_3_sms_receive_settag": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "only sets receive tag, not sending"
+  },
+  "q07_3_sms_receive_settag-2": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "only sets receive tag, not sending"
+  },
+  "q07_3_sms_voice_messages_voicemessage": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "sends voice, not SMS"
+  },
+  "q07_3_smsapi_com_profile_regional_settings_available_languages": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "retrieves language settings"
+  },
+  "q07_3_smsapi_com_short_url_links-2": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "creates short URL"
+  },
+  "q07_3_smsapi_com_short_url_links_id": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "retrieves short URL"
+  },
+  "q07_3_smsapi_com_sms_sendernames-2": {
+    "candidate_id": "C27",
+    "functional_match": 0,
+    "comment": "sets sender name only"
+  },
+  "q07_3_smsapi_com_subusers": {
+    "candidate_id": "C28",
+    "functional_match": 0,
+    "comment": "lists subusers"
+  },
+  "q07_3_smsapi_com_subusers_id_shares_sendernames": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "shares sender names"
+  },
+  "q07_3_smsguru_test_service_response_time": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "checks response time"
+  },
+  "q07_3_smsjet_send_2fa_token": {
+    "candidate_id": "C31",
+    "functional_match": 1,
+    "comment": "sends SMS 2FA token"
+  },
+  "q07_3_smsto_get_messages": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "fetches received messages"
+  },
+  "q07_3_smsto_schedule_sending_messages": {
+    "candidate_id": "C33",
+    "functional_match": 1,
+    "comment": "schedules SMS sending"
+  },
+  "q07_3_smsto_send_campaign_message": {
+    "candidate_id": "C34",
+    "functional_match": 1,
+    "comment": "sends SMS campaign"
+  },
+  "q07_3_smsto_send_campaign_message-2": {
+    "candidate_id": "C35",
+    "functional_match": 1,
+    "comment": "sends SMS campaign"
+  },
+  "q07_3_smsto_send_message_to_a_list_or_multiple_list_in_array": {
+    "candidate_id": "C36",
+    "functional_match": 1,
+    "comment": "sends SMS to list"
+  },
+  "q07_3_smsto_send_single_message": {
+    "candidate_id": "C37",
+    "functional_match": 1,
+    "comment": "sends single SMS"
+  },
+  "q07_3_smsway_app_devices_getdevice": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "gets device info"
+  },
+  "q07_3_smsway_app_messages_getreceived": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "gets received messages"
+  },
+  "q07_3_smsway_app_messages_getsent": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "gets sent messages"
+  }
+}

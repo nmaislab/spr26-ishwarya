@@ -1,0 +1,81 @@
+[
+  {
+    "api_id": "text_summarizer_api_summarizer",
+    "candidate_id": "C35",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 3,
+    "rag_score": 0.520296573638916,
+    "reason": "",
+    "service": {
+      "_file": "text_summarizer_api.json",
+      "_tool": "text_summarizer_api",
+      "api_id": "text_summarizer_api_summarizer",
+      "category": "Text_Analysis",
+      "description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "In the modern digital environment, content that is quick, comprehensible, and simple to read is essential. You want your material to be reader-friendly whether you are presenting a learning module for a class, writing about a product or service, or simply journaling your most recent exploits. Many individuals prefer things to be tidy, succinct, and straightforward. So, tools for paraphrasing can be useful in this situation.",
+            "description": "The text string you want to summarize.",
+            "name": "text",
+            "type": "STRING"
+          },
+          {
+            "default": "40",
+            "description": "Percent of the original text to be returned. Values range from 10 to 100",
+            "name": "output_percent",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Summarizer",
+      "tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.",
+      "tool_name": "Text Summarizer API",
+      "toolbench_endpoint_description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!",
+      "toolbench_enrichment": {
+        "category": "Text_Analysis",
+        "endpoint_description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Summarizer",
+        "endpoint_url": "https://text-summarizer-api.p.rapidapi.com/summarizer",
+        "file_name": "text_summarizer_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.",
+        "tool_file_found": true,
+        "tool_name": "Text Summarizer API",
+        "toolbench_relative_path": "Text_Analysis/text_summarizer_api.json"
+      },
+      "toolbench_tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.",
+      "toolbench_tool_name": "Text Summarizer API",
+      "url": "https://text-summarizer-api.p.rapidapi.com/summarizer"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "2",
+      "api_id": "text_summarizer_api_summarizer",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

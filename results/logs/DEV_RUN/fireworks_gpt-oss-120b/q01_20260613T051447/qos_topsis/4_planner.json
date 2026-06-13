@@ -1,0 +1,177 @@
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "Fetch weather data using Weather Change Live API and forward the information to SMSto API to send an SMS alert to the user.",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "weather_change_live_get_weather_report",
+        "subtask_id": "1",
+        "action": "Retrieve the latest weather report via the Weather Change Live GET endpoint.",
+        "input_from_previous_step": "none",
+        "output_to_next_step": "weather_report",
+        "why": "This API is the selected candidate for subtask 1 and provides a weather report that can be used for alerts.",
+        "planner_override_reason": null,
+        "qos": {
+          "availability": 0.9705,
+          "rt_s": 0.896,
+          "tp_kbps": 619.899,
+          "valid_qos": true
+        },
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.8856339259696399
+      },
+      {
+        "step": 2,
+        "api_id": "smsto_send_campaign_message",
+        "subtask_id": "2",
+        "action": "Send an SMS containing the weather report using the SMSto POST endpoint.",
+        "input_from_previous_step": "weather_report",
+        "output_to_next_step": "none",
+        "why": "This API is the selected candidate for subtask 2 and can deliver the weather alert via SMS.",
+        "planner_override_reason": null,
+        "qos": {
+          "availability": 0.1298,
+          "rt_s": 0.5635,
+          "tp_kbps": 241.015,
+          "valid_qos": true
+        },
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.7824394383369989
+      }
+    ],
+    "subtask_coverage": [
+      {
+        "subtask_id": 1,
+        "description": "Retrieve current or forecast weather for the user’s location using an external weather API",
+        "steps": [
+          1
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 2,
+        "description": "Send SMS alert with the weather information using an external messaging API",
+        "steps": [
+          2
+        ],
+        "coverage": "full"
+      }
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "weather_change_live_get_weather_report",
+        "subtask_id": "1",
+        "method": "GET",
+        "url": "https://weather-change-live.p.rapidapi.com/news",
+        "required_parameters": [],
+        "optional_parameters": [],
+        "depends_on": [],
+        "input_mapping": "none",
+        "output_mapping": "weather_report",
+        "expected_output": "JSON object containing the latest weather report (e.g., temperature, conditions).",
+        "planner_override_reason": null,
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.8856339259696399
+      },
+      {
+        "step": 2,
+        "api_id": "smsto_send_campaign_message",
+        "subtask_id": "2",
+        "method": "POST",
+        "url": "https://smsto.p.rapidapi.com/sms/send",
+        "required_parameters": [],
+        "optional_parameters": [],
+        "depends_on": [
+          1
+        ],
+        "input_mapping": "weather_report",
+        "output_mapping": "none",
+        "expected_output": "Confirmation response from SMSto indicating the SMS was queued/sent.",
+        "planner_override_reason": null,
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.7824394383369989
+      }
+    ]
+  },
+  "selected_api_ids": [
+    "weather_change_live_get_weather_report",
+    "smsto_send_campaign_message"
+  ],
+  "overall_rationale": "The plan follows the exact subtask order: first it obtains weather data using the pre‑selected Weather Change Live GET endpoint, then it passes that data to the SMSto POST endpoint to dispatch an SMS alert. Both APIs are the fixed selections for their respective subtasks, and their QoS metrics have been retained. No reordering or substitution of APIs was performed, ensuring functional alignment with the user’s goal.",
+  "planner_provenance": [
+    {
+      "mode": "qos_topsis",
+      "subtask_id": "1",
+      "api_id": "weather_change_live_get_weather_report",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.8856339259696399
+    },
+    {
+      "mode": "qos_topsis",
+      "subtask_id": "2",
+      "api_id": "smsto_send_campaign_message",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.7824394383369989
+    }
+  ],
+  "planner_override_attempted": false,
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "planner_candidates_per_subtask": {
+    "1": 1,
+    "2": 1
+  },
+  "planner_selected_api_ids": [
+    "weather_change_live_get_weather_report",
+    "smsto_send_campaign_message"
+  ],
+  "planner_selection_diagnostics": [
+    {
+      "subtask_id": "1",
+      "api_id": "weather_change_live_get_weather_report",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "weather_change_live_get_weather_report"
+      ]
+    },
+    {
+      "subtask_id": "2",
+      "api_id": "smsto_send_campaign_message",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "smsto_send_campaign_message"
+      ]
+    }
+  ]
+}

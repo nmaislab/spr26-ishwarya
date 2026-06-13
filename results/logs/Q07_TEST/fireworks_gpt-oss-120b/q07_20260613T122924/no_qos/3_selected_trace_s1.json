@@ -1,0 +1,23 @@
+{
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "planner_top_k": 1,
+  "planner_requested_top_k": 1,
+  "planner_top_k_source": "fixed_primary_api",
+  "retrieval_functional_match_k": null,
+  "fallback_used": false,
+  "available_ranked": 40,
+  "selected_count": 1,
+  "planner_candidates_per_subtask": 1,
+  "selected_api_ids": [
+    "newscatcher_v1_latest_headlines"
+  ],
+  "invalid_ranked_rows": 0,
+  "planner_candidate_api_ids": [
+    "newscatcher_v1_latest_headlines"
+  ],
+  "planner_selected_rank": 1,
+  "planner_override_rank1": false,
+  "planner_override_reason": null,
+  "planner_selected_api_id": "newscatcher_v1_latest_headlines"
+}

@@ -1,0 +1,162 @@
+{
+  "sms_voice_messages_voicemessage": {
+    "qos_llm_score": 0.72,
+    "qos_llm_rank": 1
+  },
+  "sms_receive_settag-2": {
+    "qos_llm_score": 0.7,
+    "qos_llm_rank": 2
+  },
+  "smsapi_com_sms_sendernames-2": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 3
+  },
+  "go_messenger_send_message": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 4
+  },
+  "sms_receive_settag": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 5
+  },
+  "smsto_send_campaign_message-2": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 6
+  },
+  "smsway_app_devices_getdevice": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 7
+  },
+  "smsway_app_messages_getsent": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 8
+  },
+  "branded_sms_pakistan_send_message_to_multiple_numbers": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 9
+  },
+  "sms77io_send_voice_call": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 10
+  },
+  "smsguru_test_service_response_time": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 11
+  },
+  "ai_messaging_receive_text": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 12
+  },
+  "post_paid_sms_send_sms": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 13
+  },
+  "send_sms_send_sms": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 14
+  },
+  "easysendsms_sms_api": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 15
+  },
+  "sms77io_get_balance": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 16
+  },
+  "smsapi_com_short_url_links-2": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 17
+  },
+  "smsapi_com_subusers": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 18
+  },
+  "smsapi_com_subusers_id_shares_sendernames": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 19
+  },
+  "smsto_schedule_sending_messages": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 20
+  },
+  "sms77io_get_status": {
+    "qos_llm_score": 0.64,
+    "qos_llm_rank": 21
+  },
+  "sms_receive_getupdates": {
+    "qos_llm_score": 0.64,
+    "qos_llm_rank": 22
+  },
+  "easysendsms_check_balance": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 23
+  },
+  "smsapi_com_profile_regional_settings_available_languages": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 24
+  },
+  "smsto_send_message_to_a_list_or_multiple_list_in_array": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 25
+  },
+  "branded_sms_pakistan_short_code_sender_message_api": {
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 26
+  },
+  "sms_gateway_sms_gateway": {
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 27
+  },
+  "hooksms_send": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 28
+  },
+  "smsway_app_messages_getreceived": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 29
+  },
+  "sms_app_send_sms": {
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 30
+  },
+  "hooksms_otp_verification": {
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 31
+  },
+  "smsapi_com_short_url_links_id": {
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 32
+  },
+  "smsjet_send_2fa_token": {
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 33
+  },
+  "rapid_sms_api_send_sms": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 34
+  },
+  "smsto_send_single_message": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 35
+  },
+  "sms_exchange_send_sms": {
+    "qos_llm_score": 0.55,
+    "qos_llm_rank": 36
+  },
+  "bulksmssender_send": {
+    "qos_llm_score": 0.49,
+    "qos_llm_rank": 37
+  },
+  "smsto_send_campaign_message": {
+    "qos_llm_score": 0.45,
+    "qos_llm_rank": 38
+  },
+  "reach_interactive_message_send": {
+    "qos_llm_score": 0.36,
+    "qos_llm_rank": 39
+  },
+  "smsto_get_messages": {
+    "qos_llm_score": 0.12,
+    "qos_llm_rank": 40
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "evaluation_dir": "evaluation",
+  "candidate_api_rankings_excel": "evaluation/query_q01_candidate_api_rankings.xlsx",
+  "candidate_api_rankings_rows_json": "evaluation/query_q01_candidate_api_rankings_rows.json",
+  "retrieval_functional_match_rows_json": "evaluation/query_q01_retrieval_functional_match_rows.json",
+  "duplicate_audit_json": "evaluation/query_q01_duplicate_audit.json",
+  "hallucination_audit_json": "evaluation/query_q01_hallucination_audit.json",
+  "ranking_anomaly_audit_json": "evaluation/query_q01_ranking_anomaly_audit.json",
+  "mode_anomaly_excel": "evaluation/query_q01_mode_anomalies.xlsx",
+  "cache_path": "evaluation/functional_match_cache.json",
+  "evaluation_agent": "EvaluationAgent",
+  "evaluation_agent_mode": "deterministic_adapter",
+  "planner_selection_k_summary_json": "evaluation/query_q01_planner_selection_k_summary.json",
+  "planner_selection_k_by_mode_subtask": {
+    "no_qos": {
+      "1": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "fixed_primary_api",
+        "retrieval_functional_match_k": null,
+        "fallback_used": false,
+        "available_ranked": 40,
+        "selected_count": 1,
+        "planner_candidates_per_subtask": 1,
+        "selected_api_ids": [
+          "cloud_cast_get_the_forecast"
+        ],
+        "invalid_ranked_rows": 0,
+        "planner_candidate_api_ids": [
+          "cloud_cast_get_the_forecast"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "cloud_cast_get_the_forecast"
+      },
+      "2": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "fixed_primary_api",
+        "retrieval_functional_match_k": null,
+        "fallback_used": false,
+        "available_ranked": 40,
+        "selected_count": 1,
+        "planner_candidates_per_subtask": 1,
+        "selected_api_ids": [
+          "sms_gateway_sms_gateway"
+        ],
+        "invalid_ranked_rows": 0,
+        "planner_candidate_api_ids": [
+          "sms_gateway_sms_gateway"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "sms_gateway_sms_gateway"
+      }
+    },
+    "qos_pure_llm": {
+      "1": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "fixed_primary_api",
+        "retrieval_functional_match_k": null,
+        "fallback_used": false,
+        "available_ranked": 40,
+        "selected_count": 1,
+        "planner_candidates_per_subtask": 1,
+        "selected_api_ids": [
+          "weather_change_live_get_weather_report"
+        ],
+        "invalid_ranked_rows": 0,
+        "planner_candidate_api_ids": [
+          "weather_change_live_get_weather_report"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "weather_change_live_get_weather_report"
+      },
+      "2": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "fixed_primary_api",
+        "retrieval_functional_match_k": null,
+        "fallback_used": false,
+        "available_ranked": 40,
+        "selected_count": 1,
+        "planner_candidates_per_subtask": 1,
+        "selected_api_ids": [
+          "smsto_send_campaign_message-2"
+        ],
+        "invalid_ranked_rows": 0,
+        "planner_candidate_api_ids": [
+          "smsto_send_campaign_message-2"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "smsto_send_campaign_message-2"
+      }
+    },
+    "qos_topsis": {
+      "1": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "fixed_primary_api",
+        "retrieval_functional_match_k": null,
+        "fallback_used": false,
+        "available_ranked": 40,
+        "selected_count": 1,
+        "planner_candidates_per_subtask": 1,
+        "selected_api_ids": [
+          "weather_change_live_get_weather_report"
+        ],
+        "invalid_ranked_rows": 0,
+        "planner_candidate_api_ids": [
+          "weather_change_live_get_weather_report"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "weather_change_live_get_weather_report"
+      },
+      "2": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "fixed_primary_api",
+        "retrieval_functional_match_k": null,
+        "fallback_used": false,
+        "available_ranked": 40,
+        "selected_count": 1,
+        "planner_candidates_per_subtask": 1,
+        "selected_api_ids": [
+          "smsto_send_campaign_message"
+        ],
+        "invalid_ranked_rows": 0,
+        "planner_candidate_api_ids": [
+          "smsto_send_campaign_message"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "smsto_send_campaign_message"
+      }
+    },
+    "qos_hybrid": {
+      "1": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "workflow_hybrid_selector",
+        "hybrid_workflow_selector": "relative_to_best",
+        "candidate_cap_per_subtask": 5,
+        "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+        "hybrid_no_functional_match_fallback": false,
+        "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+        "hybrid_pool_size_before_expansion": 17,
+        "hybrid_pool_size_after_expansion": 11,
+        "hybrid_pool_size_after_pareto": 4,
+        "pareto_filtered_count": 7,
+        "pareto_filter_fallback_used": false,
+        "available_ranked": 40,
+        "functional_candidate_count": 17,
+        "workflow_candidate_pool_count": 4,
+        "selected_count": 1,
+        "invalid_ranked_rows": 0,
+        "hybrid_total_combinations_before_cap": 12,
+        "hybrid_total_combinations_after_cap": 12,
+        "hybrid_max_workflow_combinations": 5000,
+        "hybrid_pool_trimmed": false,
+        "hybrid_pool_sizes_before_cap": {
+          "1": 4,
+          "2": 3
+        },
+        "hybrid_pool_sizes_after_cap": {
+          "1": 4,
+          "2": 3
+        },
+        "planner_candidates_per_subtask": 1,
+        "selected_api_id": "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude",
+        "selected_api_ids": [
+          "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude"
+        ],
+        "selected_by": "workflow_hybrid_selector",
+        "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+        "balanced_relative_qos_score": 0.684591,
+        "projected_composition_score": 0.913685,
+        "projected_normalized_qos_score": 0.712284,
+        "workflow_total_response_time": 0.2565,
+        "workflow_bottleneck_throughput": 33.333,
+        "workflow_average_availability": 0.99855,
+        "workflow_qos_score": 0.712284,
+        "workflow_topsis_score": null,
+        "workflow_topsis_weights": {
+          "response_time": 0.3333333333333333,
+          "throughput": 0.3333333333333333,
+          "availability": 0.3333333333333333
+        },
+        "workflow_topsis_rank": null,
+        "workflow_selector_fallback_used": false,
+        "planner_candidate_api_ids": [
+          "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude"
+      },
+      "2": {
+        "planner_candidate_mode": "fixed_one",
+        "planner_top_n_cap": 5,
+        "planner_top_k": 1,
+        "planner_requested_top_k": 1,
+        "planner_top_k_source": "workflow_hybrid_selector",
+        "hybrid_workflow_selector": "relative_to_best",
+        "candidate_cap_per_subtask": 5,
+        "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+        "hybrid_no_functional_match_fallback": false,
+        "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+        "hybrid_pool_size_before_expansion": 11,
+        "hybrid_pool_size_after_expansion": 8,
+        "hybrid_pool_size_after_pareto": 3,
+        "pareto_filtered_count": 5,
+        "pareto_filter_fallback_used": false,
+        "available_ranked": 40,
+        "functional_candidate_count": 11,
+        "workflow_candidate_pool_count": 3,
+        "selected_count": 1,
+        "invalid_ranked_rows": 0,
+        "hybrid_total_combinations_before_cap": 12,
+        "hybrid_total_combinations_after_cap": 12,
+        "hybrid_max_workflow_combinations": 5000,
+        "hybrid_pool_trimmed": false,
+        "hybrid_pool_sizes_before_cap": {
+          "1": 4,
+          "2": 3
+        },
+        "hybrid_pool_sizes_after_cap": {
+          "1": 4,
+          "2": 3
+        },
+        "planner_candidates_per_subtask": 1,
+        "selected_api_id": "smsto_send_campaign_message-2",
+        "selected_api_ids": [
+          "smsto_send_campaign_message-2"
+        ],
+        "selected_by": "workflow_hybrid_selector",
+        "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+        "balanced_relative_qos_score": 0.716361,
+        "projected_composition_score": 0.913685,
+        "projected_normalized_qos_score": 0.712284,
+        "workflow_total_response_time": 0.2565,
+        "workflow_bottleneck_throughput": 33.333,
+        "workflow_average_availability": 0.99855,
+        "workflow_qos_score": 0.712284,
+        "workflow_topsis_score": null,
+        "workflow_topsis_weights": {
+          "response_time": 0.3333333333333333,
+          "throughput": 0.3333333333333333,
+          "availability": 0.3333333333333333
+        },
+        "workflow_topsis_rank": null,
+        "workflow_selector_fallback_used": false,
+        "planner_candidate_api_ids": [
+          "smsto_send_campaign_message-2"
+        ],
+        "planner_selected_rank": 1,
+        "planner_override_rank1": false,
+        "planner_override_reason": null,
+        "planner_selected_api_id": "smsto_send_campaign_message-2"
+      }
+    }
+  },
+  "composition_qos_eval_rows_json": "evaluation/query_q01_composition_qos_eval_rows.json",
+  "composition_qos_eval_summary_json": "evaluation/query_q01_composition_qos_eval_summary.json",
+  "composition_qos_eval_excel": "evaluation/query_q01_composition_qos_eval.xlsx",
+  "composition_validity_issues_json": "evaluation/query_q01_composition_validity_issues.json",
+  "composition_validity_issues_log": "evaluation/query_q01_composition_validity_issues.log",
+  "composition_validity_summary": {
+    "valid_mode_count": 4,
+    "complete_mode_count": 4,
+    "invalid_mode_count": 0,
+    "invalid_modes": [],
+    "invalid_reason_counts": {},
+    "by_mode": {
+      "no_qos": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      },
+      "qos_pure_llm": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      },
+      "qos_topsis": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      },
+      "qos_hybrid": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      }
+    }
+  }
+}

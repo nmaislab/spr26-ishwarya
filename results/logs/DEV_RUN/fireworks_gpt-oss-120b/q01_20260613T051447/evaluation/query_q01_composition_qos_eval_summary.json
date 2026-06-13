@@ -1,0 +1,301 @@
+{
+  "query_id": "q01",
+  "rows_json": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q01_20260613T051447/evaluation/query_q01_composition_qos_eval_rows.json",
+  "excel": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q01_20260613T051447/evaluation/query_q01_composition_qos_eval.xlsx",
+  "composition_validity_issues_json": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q01_20260613T051447/evaluation/query_q01_composition_validity_issues.json",
+  "composition_validity_issues_log": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q01_20260613T051447/evaluation/query_q01_composition_validity_issues.log",
+  "candidate_api_rankings_rows_json": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q01_20260613T051447/evaluation/query_q01_candidate_api_rankings_rows.json",
+  "modes": [
+    "no_qos",
+    "qos_pure_llm",
+    "qos_topsis",
+    "qos_hybrid"
+  ],
+  "evaluated_modes": [
+    "no_qos",
+    "qos_pure_llm",
+    "qos_topsis",
+    "qos_hybrid"
+  ],
+  "scoring_formula": "QoS_Adjusted_Composition_Score = Composition_Completeness * (0.7 * Functional_Coverage + 0.3 * Normalized_QoS_Score). Composition_Completeness is binary; Composition_Validity is diagnostic only.",
+  "valid_mode_count": 4,
+  "complete_mode_count": 4,
+  "composition_validity_summary": {
+    "valid_mode_count": 4,
+    "complete_mode_count": 4,
+    "invalid_mode_count": 0,
+    "invalid_modes": [],
+    "invalid_reason_counts": {},
+    "by_mode": {
+      "no_qos": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      },
+      "qos_pure_llm": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      },
+      "qos_topsis": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      },
+      "qos_hybrid": {
+        "composition_validity": 1,
+        "invalid_reasons": [],
+        "planned_api_count": 2,
+        "covered_subtask_count": 2,
+        "total_subtask_count": 2,
+        "composition_completeness": 1.0,
+        "composition_completeness_gate": 1.0,
+        "functional_coverage": 1.0
+      }
+    }
+  },
+  "score_summary": {
+    "valid_mode_count": 4,
+    "complete_mode_count": 4,
+    "evaluated_modes": [
+      "no_qos",
+      "qos_pure_llm",
+      "qos_topsis",
+      "qos_hybrid"
+    ],
+    "scoring_formula": "QoS_Adjusted_Composition_Score = Composition_Completeness * (0.7 * Functional_Coverage + 0.3 * Normalized_QoS_Score). Composition_Completeness is binary; Composition_Validity is diagnostic only.",
+    "best_modes_by_qos_adjusted_composition_score": [
+      "qos_hybrid"
+    ],
+    "best_qos_adjusted_composition_score": 0.91383,
+    "is_qos_adjusted_composition_score_tie": false,
+    "best_mode_by_qos_adjusted_composition_score": {
+      "mode": "qos_hybrid",
+      "value": 0.91383,
+      "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+    },
+    "best_modes_by_functional_coverage": [
+      "no_qos",
+      "qos_pure_llm",
+      "qos_topsis",
+      "qos_hybrid"
+    ],
+    "best_functional_coverage": 1.0,
+    "is_functional_coverage_tie": true,
+    "best_mode_by_functional_coverage": {
+      "mode": "no_qos",
+      "value": 1.0,
+      "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+    },
+    "best_modes_by_normalized_qos_score": [
+      "qos_hybrid"
+    ],
+    "best_normalized_qos_score": 0.712768,
+    "is_normalized_qos_score_tie": false,
+    "best_mode_by_normalized_qos_score": {
+      "mode": "qos_hybrid",
+      "value": 0.712768,
+      "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+    },
+    "best_modes_by_total_response_time": [
+      "qos_hybrid"
+    ],
+    "best_total_response_time": 0.2565,
+    "is_total_response_time_tie": false,
+    "best_mode_by_total_response_time": {
+      "mode": "qos_hybrid",
+      "value": 0.2565,
+      "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+    },
+    "best_modes_by_bottleneck_throughput": [
+      "qos_topsis"
+    ],
+    "best_bottleneck_throughput": 241.015,
+    "is_bottleneck_throughput_tie": false,
+    "best_mode_by_bottleneck_throughput": {
+      "mode": "qos_topsis",
+      "value": 241.015,
+      "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+    },
+    "best_modes_by_average_workflow_availability": [
+      "qos_hybrid"
+    ],
+    "best_average_workflow_availability": 0.99855,
+    "is_average_workflow_availability_tie": false,
+    "best_mode_by_average_workflow_availability": {
+      "mode": "qos_hybrid",
+      "value": 0.99855,
+      "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+    },
+    "best_modes_by_composition_completeness": [
+      "no_qos",
+      "qos_pure_llm",
+      "qos_topsis",
+      "qos_hybrid"
+    ],
+    "best_composition_completeness": 1.0,
+    "is_composition_completeness_tie": true,
+    "best_mode_by_composition_completeness": {
+      "mode": "no_qos",
+      "value": 1.0,
+      "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+    }
+  },
+  "summary_rows": [
+    {
+      "Mode": "no_qos",
+      "Valid": "Yes",
+      "Complete": "Yes",
+      "QoS_Adjusted_Composition_Score": 0.825167,
+      "Rank_By_QoS_Adjusted_Score": 4,
+      "Functional_Coverage": 1.0,
+      "Normalized_QoS_Score": 0.417225,
+      "Total_Response_Time_s": 1.083,
+      "Bottleneck_Throughput_kbps": 3.937,
+      "Average_Workflow_Availability": 0.99705,
+      "Composition_Completeness": 1.0,
+      "Composition_Completeness_Gate": 1.0,
+      "Composition_Validity": 1,
+      "Short_Interpretation": "Strong functional coverage with moderate QoS"
+    },
+    {
+      "Mode": "qos_pure_llm",
+      "Valid": "Yes",
+      "Complete": "Yes",
+      "QoS_Adjusted_Composition_Score": 0.838564,
+      "Rank_By_QoS_Adjusted_Score": 3,
+      "Functional_Coverage": 1.0,
+      "Normalized_QoS_Score": 0.461879,
+      "Total_Response_Time_s": 1.0325,
+      "Bottleneck_Throughput_kbps": 36.63,
+      "Average_Workflow_Availability": 0.9838,
+      "Composition_Completeness": 1.0,
+      "Composition_Completeness_Gate": 1.0,
+      "Composition_Validity": 1,
+      "Short_Interpretation": "Strong functional coverage with moderate QoS"
+    },
+    {
+      "Mode": "qos_topsis",
+      "Valid": "Yes",
+      "Complete": "Yes",
+      "QoS_Adjusted_Composition_Score": 0.872669,
+      "Rank_By_QoS_Adjusted_Score": 2,
+      "Functional_Coverage": 1.0,
+      "Normalized_QoS_Score": 0.575565,
+      "Total_Response_Time_s": 1.4595,
+      "Bottleneck_Throughput_kbps": 241.015,
+      "Average_Workflow_Availability": 0.55015,
+      "Composition_Completeness": 1.0,
+      "Composition_Completeness_Gate": 1.0,
+      "Composition_Validity": 1,
+      "Short_Interpretation": "Strong functional coverage with moderate QoS"
+    },
+    {
+      "Mode": "qos_hybrid",
+      "Valid": "Yes",
+      "Complete": "Yes",
+      "QoS_Adjusted_Composition_Score": 0.91383,
+      "Rank_By_QoS_Adjusted_Score": 1,
+      "Functional_Coverage": 1.0,
+      "Normalized_QoS_Score": 0.712768,
+      "Total_Response_Time_s": 0.2565,
+      "Bottleneck_Throughput_kbps": 33.333,
+      "Average_Workflow_Availability": 0.99855,
+      "Composition_Completeness": 1.0,
+      "Composition_Completeness_Gate": 1.0,
+      "Composition_Validity": 1,
+      "Short_Interpretation": "Best overall composition score"
+    }
+  ],
+  "best_modes_by_qos_adjusted_composition_score": [
+    "qos_hybrid"
+  ],
+  "best_qos_adjusted_composition_score": 0.91383,
+  "is_qos_adjusted_composition_score_tie": false,
+  "best_mode_by_qos_adjusted_composition_score": {
+    "mode": "qos_hybrid",
+    "value": 0.91383,
+    "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+  },
+  "best_modes_by_functional_coverage": [
+    "no_qos",
+    "qos_pure_llm",
+    "qos_topsis",
+    "qos_hybrid"
+  ],
+  "best_functional_coverage": 1.0,
+  "is_functional_coverage_tie": true,
+  "best_mode_by_functional_coverage": {
+    "mode": "no_qos",
+    "value": 1.0,
+    "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+  },
+  "best_modes_by_normalized_qos_score": [
+    "qos_hybrid"
+  ],
+  "best_normalized_qos_score": 0.712768,
+  "is_normalized_qos_score_tie": false,
+  "best_mode_by_normalized_qos_score": {
+    "mode": "qos_hybrid",
+    "value": 0.712768,
+    "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+  },
+  "best_modes_by_total_response_time": [
+    "qos_hybrid"
+  ],
+  "best_total_response_time": 0.2565,
+  "is_total_response_time_tie": false,
+  "best_mode_by_total_response_time": {
+    "mode": "qos_hybrid",
+    "value": 0.2565,
+    "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+  },
+  "best_modes_by_bottleneck_throughput": [
+    "qos_topsis"
+  ],
+  "best_bottleneck_throughput": 241.015,
+  "is_bottleneck_throughput_tie": false,
+  "best_mode_by_bottleneck_throughput": {
+    "mode": "qos_topsis",
+    "value": 241.015,
+    "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+  },
+  "best_modes_by_average_workflow_availability": [
+    "qos_hybrid"
+  ],
+  "best_average_workflow_availability": 0.99855,
+  "is_average_workflow_availability_tie": false,
+  "best_mode_by_average_workflow_availability": {
+    "mode": "qos_hybrid",
+    "value": 0.99855,
+    "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+  },
+  "best_modes_by_composition_completeness": [
+    "no_qos",
+    "qos_pure_llm",
+    "qos_topsis",
+    "qos_hybrid"
+  ],
+  "best_composition_completeness": 1.0,
+  "is_composition_completeness_tie": true,
+  "best_mode_by_composition_completeness": {
+    "mode": "no_qos",
+    "value": 1.0,
+    "compatibility_note": "First best mode only; use best_modes_by_* fields for tie-aware reporting."
+  }
+}

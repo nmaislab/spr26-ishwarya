@@ -1,0 +1,2822 @@
+[
+  {
+    "api_id": "youtube_summarizer_by_chatgpt_youtube_summarizer_v2",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 32,
+    "rag_score": 0.45219653844833374,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "youtube_summarizer_by_chatgpt.json",
+      "_tool": "youtube_summarizer_by_chatgpt",
+      "api_id": "youtube_summarizer_by_chatgpt_youtube_summarizer_v2",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "description": "Insert a YouTube URL which has subtitles (captions) available. It will return a summary of the video (max 300 words). This API requires OpenAI API key (get here for free- https://platform.openai.com/account/api-keys)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "https://www.youtube.com/watch?v=zsSlkAFohL4",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Get ChatGPT API key (free): https://platform.openai.com/account/api-keys",
+            "name": "key",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "YouTube Summarizer v2",
+      "tool_description": "Summarize any YouTube Video in 300 words. A YouTube summarizer based on ChatGPT Update 31 May 2023: it's fixed & working.",
+      "tool_name": "YouTube Summarizer by ChatGPT",
+      "toolbench_endpoint_description": "Insert a YouTube URL which has subtitles (captions) available. It will return a summary of the video (max 300 words). This API requires OpenAI API key (get here for free- https://platform.openai.com/account/api-keys)",
+      "toolbench_enrichment": {
+        "category": "Artificial_Intelligence_Machine_Learning",
+        "endpoint_description": "Insert a YouTube URL which has subtitles (captions) available. It will return a summary of the video (max 300 words). This API requires OpenAI API key (get here for free- https://platform.openai.com/account/api-keys)",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "YouTube Summarizer v2",
+        "endpoint_url": "https://youtube-summarizer-by-chatgpt.p.rapidapi.com/ytsummary1/",
+        "file_name": "youtube_summarizer_by_chatgpt.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Summarize any YouTube Video in 300 words. A YouTube summarizer based on ChatGPT\nUpdate 31 May 2023: it's fixed & working.",
+        "tool_file_found": true,
+        "tool_name": "YouTube Summarizer by ChatGPT",
+        "toolbench_relative_path": "Artificial_Intelligence_Machine_Learning/youtube_summarizer_by_chatgpt.json"
+      },
+      "toolbench_tool_description": "Summarize any YouTube Video in 300 words. A YouTube summarizer based on ChatGPT\nUpdate 31 May 2023: it's fixed & working.",
+      "toolbench_tool_name": "YouTube Summarizer by ChatGPT",
+      "url": "https://youtube-summarizer-by-chatgpt.p.rapidapi.com/ytsummary1/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.118,
+        "tp_kbps": 709.359,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.999562284371755,
+    "topsis_rank": 1
+  },
+  {
+    "api_id": "nobel_sms_get_sms_status",
+    "candidate_id": "",
+    "mode_rank": 2,
+    "llm_reported_rank": null,
+    "retrieved_rank": 37,
+    "rag_score": 0.44258615374565125,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "nobel_sms.json",
+      "_tool": "nobel_sms",
+      "api_id": "nobel_sms_get_sms_status",
+      "category": "SMS",
+      "description": "Get SMS status using Message ID",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "message_id",
+            "type": "STRING"
+          },
+          {
+            "default": "2020-06-30 12:00:00:000",
+            "description": "",
+            "name": "end_date",
+            "type": "STRING"
+          },
+          {
+            "default": "2020-06-30 00:00:00:000",
+            "description": "",
+            "name": "start_date",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "GET_SMS_STATUS",
+      "tool_description": "Nobel SMS - High Performance Messaging Solution",
+      "tool_name": "Nobel SMS",
+      "toolbench_endpoint_description": "Get SMS status using Message ID",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get SMS status using Message ID",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET_SMS_STATUS",
+        "endpoint_url": "https://nobel-sms.p.rapidapi.com/edr",
+        "file_name": "nobel_sms.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Nobel SMS - High Performance Messaging Solution",
+        "tool_file_found": true,
+        "tool_name": "Nobel SMS",
+        "toolbench_relative_path": "SMS/nobel_sms.json"
+      },
+      "toolbench_tool_description": "Nobel SMS - High Performance Messaging Solution",
+      "toolbench_tool_name": "Nobel SMS",
+      "url": "https://nobel-sms.p.rapidapi.com/edr",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 1.2285,
+        "tp_kbps": 668.8365,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.7748928393838026,
+    "topsis_rank": 2
+  },
+  {
+    "api_id": "rushtranslate_list_orders",
+    "candidate_id": "",
+    "mode_rank": 3,
+    "llm_reported_rank": null,
+    "retrieved_rank": 17,
+    "rag_score": 0.47451621294021606,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "rushtranslate.json",
+      "_tool": "rushtranslate",
+      "api_id": "rushtranslate_list_orders",
+      "category": "Translation",
+      "description": "Get a paginated list of your orders sorted in descending order by received_at date.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "List Orders",
+      "tool_description": "Human powered document translation API.",
+      "tool_name": "RushTranslate",
+      "toolbench_endpoint_description": "Get a paginated list of your orders sorted in descending order by received_at date.",
+      "toolbench_enrichment": {
+        "category": "Translation",
+        "endpoint_description": "Get a paginated list of your orders sorted in descending order by received_at date.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "List Orders",
+        "endpoint_url": "https://rushtranslate.p.rapidapi.com/orders",
+        "file_name": "rushtranslate.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Human powered document translation API.",
+        "tool_file_found": true,
+        "tool_name": "RushTranslate",
+        "toolbench_relative_path": "Translation/rushtranslate.json"
+      },
+      "toolbench_tool_description": "Human powered document translation API.",
+      "toolbench_tool_name": "RushTranslate",
+      "url": "https://rushtranslate.p.rapidapi.com/orders",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.167,
+        "tp_kbps": 41.916,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4075777996044267,
+    "topsis_rank": 3
+  },
+  {
+    "api_id": "a_i_smartable_gettopics",
+    "candidate_id": "",
+    "mode_rank": 4,
+    "llm_reported_rank": null,
+    "retrieved_rank": 39,
+    "rag_score": 0.43853724002838135,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "a_i_smartable.json",
+      "_tool": "a_i_smartable",
+      "api_id": "a_i_smartable_gettopics",
+      "category": "News_Media",
+      "description": "Get artificial intelligence topics.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GetTopics",
+      "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+      "tool_name": "A.I. Smartable",
+      "toolbench_endpoint_description": "Get artificial intelligence topics.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get artificial intelligence topics.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GetTopics",
+        "endpoint_url": "https://a-i-smartable.p.rapidapi.com/topics/",
+        "file_name": "a_i_smartable.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+        "tool_file_found": true,
+        "tool_name": "A.I. Smartable",
+        "toolbench_relative_path": "News_Media/a_i_smartable.json"
+      },
+      "toolbench_tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+      "toolbench_tool_name": "A.I. Smartable",
+      "url": "https://a-i-smartable.p.rapidapi.com/topics/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.116,
+        "tp_kbps": 25.862,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4060641389633174,
+    "topsis_rank": 4
+  },
+  {
+    "api_id": "news_parser_article",
+    "candidate_id": "",
+    "mode_rank": 5,
+    "llm_reported_rank": null,
+    "retrieved_rank": 26,
+    "rag_score": 0.46415799856185913,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "news_parser.json",
+      "_tool": "news_parser",
+      "api_id": "news_parser_article",
+      "category": "Data",
+      "description": "Extract structured data from any news article published online.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "https://www.reuters.com/article/us-usa-election-china-reaction/china-holds-off-on-sending-congratulations-to-biden-idUSKBN27P0OY",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "ARTICLE",
+      "tool_description": "Turn any news article into a source of structured data",
+      "tool_name": "News Parser",
+      "toolbench_endpoint_description": "Extract structured data from any news article published online.",
+      "toolbench_enrichment": {
+        "category": "Data",
+        "endpoint_description": "Extract structured data from any news article published online.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "ARTICLE",
+        "endpoint_url": "https://news-parser1.p.rapidapi.com/article",
+        "file_name": "news_parser.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Turn any news article into a source of structured data",
+        "tool_file_found": true,
+        "tool_name": "News Parser",
+        "toolbench_relative_path": "Data/news_parser.json"
+      },
+      "toolbench_tool_description": "Turn any news article into a source of structured data",
+      "toolbench_tool_name": "News Parser",
+      "url": "https://news-parser1.p.rapidapi.com/article",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.13,
+        "tp_kbps": 23.076,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4037469313396032,
+    "topsis_rank": 5
+  },
+  {
+    "api_id": "fast_language_detection_detect",
+    "candidate_id": "",
+    "mode_rank": 6,
+    "llm_reported_rank": null,
+    "retrieved_rank": 15,
+    "rag_score": 0.48005905747413635,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "fast_language_detection.json",
+      "_tool": "fast_language_detection",
+      "api_id": "fast_language_detection_detect",
+      "category": "Translation",
+      "description": "This endpoint takes your text in a JSON body and tries to detect the language of the text.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Detect",
+      "tool_description": "Detect the language of your text fast! This API detects more than 160 languages and returns language code in ISO 639-1 format.",
+      "tool_name": "Fast Language Detection",
+      "toolbench_endpoint_description": "This endpoint takes your text in a JSON body and tries to detect the language of the text.",
+      "toolbench_enrichment": {
+        "category": "Translation",
+        "endpoint_description": "This endpoint takes your text in a JSON body and tries to detect the language of the text.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Detect",
+        "endpoint_url": "https://fast-language-detection.p.rapidapi.com/detect",
+        "file_name": "fast_language_detection.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Detect the language of your text fast! This API detects more than 160 languages and returns language code in ISO 639-1 format.",
+        "tool_file_found": true,
+        "tool_name": "Fast Language Detection",
+        "toolbench_relative_path": "Translation/fast_language_detection.json"
+      },
+      "toolbench_tool_description": "Detect the language of your text fast! This API detects more than 160 languages and returns language code in ISO 639-1 format.",
+      "toolbench_tool_name": "Fast Language Detection",
+      "url": "https://fast-language-detection.p.rapidapi.com/detect",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.147,
+        "tp_kbps": 20.408,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.40129371406607584,
+    "topsis_rank": 6
+  },
+  {
+    "api_id": "text_summarizer_api_summarizer",
+    "candidate_id": "",
+    "mode_rank": 7,
+    "llm_reported_rank": null,
+    "retrieved_rank": 3,
+    "rag_score": 0.520296573638916,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "text_summarizer_api.json",
+      "_tool": "text_summarizer_api",
+      "api_id": "text_summarizer_api_summarizer",
+      "category": "Text_Analysis",
+      "description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "In the modern digital environment, content that is quick, comprehensible, and simple to read is essential. You want your material to be reader-friendly whether you are presenting a learning module for a class, writing about a product or service, or simply journaling your most recent exploits. Many individuals prefer things to be tidy, succinct, and straightforward. So, tools for paraphrasing can be useful in this situation.",
+            "description": "The text string you want to summarize.",
+            "name": "text",
+            "type": "STRING"
+          },
+          {
+            "default": "40",
+            "description": "Percent of the original text to be returned. Values range from 10 to 100",
+            "name": "output_percent",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Summarizer",
+      "tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.",
+      "tool_name": "Text Summarizer API",
+      "toolbench_endpoint_description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!",
+      "toolbench_enrichment": {
+        "category": "Text_Analysis",
+        "endpoint_description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Summarizer",
+        "endpoint_url": "https://text-summarizer-api.p.rapidapi.com/summarizer",
+        "file_name": "text_summarizer_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.",
+        "tool_file_found": true,
+        "tool_name": "Text Summarizer API",
+        "toolbench_relative_path": "Text_Analysis/text_summarizer_api.json"
+      },
+      "toolbench_tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.",
+      "toolbench_tool_name": "Text Summarizer API",
+      "url": "https://text-summarizer-api.p.rapidapi.com/summarizer",
+      "qos": {
+        "availability": 0.9794,
+        "rt_s": 0.2475,
+        "tp_kbps": 12.1205,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.38838387362475824,
+    "topsis_rank": 7
+  },
+  {
+    "api_id": "article_data_extraction_and_text_mining_v1_1_extract",
+    "candidate_id": "",
+    "mode_rank": 8,
+    "llm_reported_rank": null,
+    "retrieved_rank": 31,
+    "rag_score": 0.4564281702041626,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "article_data_extraction_and_text_mining.json",
+      "_tool": "article_data_extraction_and_text_mining",
+      "api_id": "article_data_extraction_and_text_mining_v1_1_extract",
+      "category": "Media",
+      "description": "Article Extraction Endpoint",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "true",
+            "description": "extract media",
+            "name": "media",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "indicates whether to execute JavaScript or not. ",
+            "name": "js",
+            "type": "ENUM"
+          },
+          {
+            "default": "30",
+            "description": "when JavaScript is enabled, indicates how many seconds the API should wait for the JS interpreter before starting the extraction",
+            "name": "js_timeout",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "https://techcrunch.com/2022/09/07/twitter-will-let-you-edit-your-tweet-up-to-five-times/",
+            "description": "URL",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/v1.1/extract",
+      "tool_description": "Ujeebu Article Extraction API extracts clean text, and other structured data from news and blog articles.",
+      "tool_name": "Article Data Extraction and Text Mining",
+      "toolbench_endpoint_description": "Article Extraction Endpoint",
+      "toolbench_enrichment": {
+        "category": "Media",
+        "endpoint_description": "Article Extraction Endpoint",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1.1/extract",
+        "endpoint_url": "https://lexper.p.rapidapi.com/v1.1/extract",
+        "file_name": "article_data_extraction_and_text_mining.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Ujeebu Article Extraction API extracts clean text, and other structured data from news and blog articles.",
+        "tool_file_found": true,
+        "tool_name": "Article Data Extraction and Text Mining",
+        "toolbench_relative_path": "Media/article_data_extraction_and_text_mining.json"
+      },
+      "toolbench_tool_description": "Ujeebu Article Extraction API extracts clean text, and other structured data from news and blog articles.",
+      "toolbench_tool_name": "Article Data Extraction and Text Mining",
+      "url": "https://lexper.p.rapidapi.com/v1.1/extract",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.323,
+        "tp_kbps": 27.863,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.38732484468168504,
+    "topsis_rank": 8
+  },
+  {
+    "api_id": "multilingual_translate_service_send_task_to_translation",
+    "candidate_id": "",
+    "mode_rank": 9,
+    "llm_reported_rank": null,
+    "retrieved_rank": 30,
+    "rag_score": 0.45768195390701294,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "multilingual_translate_service.json",
+      "_tool": "multilingual_translate_service",
+      "api_id": "multilingual_translate_service_send_task_to_translation",
+      "category": "Translation",
+      "description": "Setting a transfer problem. The result of the execution is a json massive",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send Task To Translation",
+      "tool_description": "Multilingual API for translating large and small texts from $0.2 / per million characters",
+      "tool_name": "Multilingual Translate Service",
+      "toolbench_endpoint_description": "Setting a transfer problem. The result of the execution is a json massive",
+      "toolbench_enrichment": {
+        "category": "Translation",
+        "endpoint_description": "Setting a transfer problem. The result of the execution is a json massive",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send Task To Translation",
+        "endpoint_url": "https://multilingual-translate-service.p.rapidapi.com/Translation",
+        "file_name": "multilingual_translate_service.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Multilingual API for translating large and small texts from $0.2 / per million characters",
+        "tool_file_found": true,
+        "tool_name": "Multilingual Translate Service",
+        "toolbench_relative_path": "Translation/multilingual_translate_service.json"
+      },
+      "toolbench_tool_description": "Multilingual API for translating large and small texts from $0.2 / per million characters",
+      "toolbench_tool_name": "Multilingual Translate Service",
+      "url": "https://multilingual-translate-service.p.rapidapi.com/Translation",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3,
+        "tp_kbps": 10.0,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3831506583861888,
+    "topsis_rank": 9
+  },
+  {
+    "api_id": "sri_lanka_news_api_get_news_from_one_news_source",
+    "candidate_id": "",
+    "mode_rank": 10,
+    "llm_reported_rank": null,
+    "retrieved_rank": 22,
+    "rag_score": 0.46749037504196167,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "sri_lanka_news_api.json",
+      "_tool": "sri_lanka_news_api",
+      "api_id": "sri_lanka_news_api_get_news_from_one_news_source",
+      "category": "News_Media",
+      "description": "Get news from one news source passing {source} paramter value and {page} value.Each news soure different number of news count in one page.\n\n\n**News Sources\n--Lankadeepa.lk\n--Deshaya.lk\n--Ada.lk\n--BBCSinhala.com\n--Mawbima.lk",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": 1,
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "Ada.lk",
+            "description": "",
+            "name": "source",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get news from one news source",
+      "tool_description": "A simple API that allows you to obtain the most recent news from Sri Lankan media sites in Sinhala.",
+      "tool_name": "Sri Lanka News Api",
+      "toolbench_endpoint_description": "Get news from one news source passing {source} paramter value and {page} value.Each news soure different number of news count in one page.\n\n\n**News Sources\n--Lankadeepa.lk\n--Deshaya.lk\n--Ada.lk\n--BBCSinhala.com\n--Mawbima.lk",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get news from one news source passing {source} paramter value and {page} value.Each news soure different number of news count in one page.\n\n\n**News Sources\n--Lankadeepa.lk\n--Deshaya.lk\n--Ada.lk\n--BBCSinhala.com\n--Mawbima.lk",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get news from one news source",
+        "endpoint_url": "https://sri-lanka-news-api.p.rapidapi.com/news/sinhala/Ada.lk/data/1",
+        "file_name": "sri_lanka_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A simple API that allows you to obtain the most recent news from Sri Lankan media sites in Sinhala.",
+        "tool_file_found": true,
+        "tool_name": "Sri Lanka News Api",
+        "toolbench_relative_path": "News_Media/sri_lanka_news_api.json"
+      },
+      "toolbench_tool_description": "A simple API that allows you to obtain the most recent news from Sri Lankan media sites in Sinhala.",
+      "toolbench_tool_name": "Sri Lanka News Api",
+      "url": "https://sri-lanka-news-api.p.rapidapi.com/news/sinhala/Ada.lk/data/1",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3215,
+        "tp_kbps": 12.383,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.38189135531073376,
+    "topsis_rank": 10
+  },
+  {
+    "api_id": "phoenixink_introduction_with_challenge",
+    "candidate_id": "",
+    "mode_rank": 11,
+    "llm_reported_rank": null,
+    "retrieved_rank": 8,
+    "rag_score": 0.501846432685852,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "phoenixink.json",
+      "_tool": "phoenixink",
+      "api_id": "phoenixink_introduction_with_challenge",
+      "category": "Text_Analysis",
+      "description": "By using this method, you will get an introduction, starting with challenge.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "introduction_with_challenge",
+      "tool_description": "Rebirth your articles with impeccable structure and flow. It has OpenI API support in the background. Look no further than PhoenixInk, the transformative API designed to help you achieve remarkable articles with flawless structure and seamless flow. As the legendary phoenix rises from its ashes, Pho",
+      "tool_name": "PhoenixInk",
+      "toolbench_endpoint_description": "By using this method, you will get an introduction, starting with challenge.",
+      "toolbench_enrichment": {
+        "category": "Text_Analysis",
+        "endpoint_description": "By using this method, you will get an introduction, starting with challenge.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "introduction_with_challenge",
+        "endpoint_url": "https://phoenixink1.p.rapidapi.com/introduction_with_challenge",
+        "file_name": "phoenixink.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Rebirth your articles with impeccable structure and flow. It has OpenI API support in the background.\nLook no further than PhoenixInk, the transformative API designed to help you achieve remarkable articles with flawless structure and seamless flow. \nAs the legendary phoenix rises from its ashes, PhoenixInk empowers you to resurrect your writing, infusing it with captivating elegance and clarity.",
+        "tool_file_found": true,
+        "tool_name": "PhoenixInk",
+        "toolbench_relative_path": "Text_Analysis/phoenixink.json"
+      },
+      "toolbench_tool_description": "Rebirth your articles with impeccable structure and flow. It has OpenI API support in the background.\nLook no further than PhoenixInk, the transformative API designed to help you achieve remarkable articles with flawless structure and seamless flow. \nAs the legendary phoenix rises from its ashes, PhoenixInk empowers you to resurrect your writing, infusing it with captivating elegance and clarity.",
+      "toolbench_tool_name": "PhoenixInk",
+      "url": "https://phoenixink1.p.rapidapi.com/introduction_with_challenge",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.311,
+        "tp_kbps": 6.43,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3809448852249672,
+    "topsis_rank": 11
+  },
+  {
+    "api_id": "specrom_news_api_fetch_parsed_news_article_by_url",
+    "candidate_id": "",
+    "mode_rank": 12,
+    "llm_reported_rank": null,
+    "retrieved_rank": 12,
+    "rag_score": 0.4879661798477173,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_fetch_parsed_news_article_by_url",
+      "category": "News_Media",
+      "description": "Just use an URL as an input and get back the full_text, title, author, main image etc. from the news article.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Fetch Parsed News Article by URL",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just use an URL as an input and get back the full_text, title, author, main image etc. from the news article.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just use an URL as an input and get back the full_text, title, author, main image etc. from the news article.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Fetch Parsed News Article by URL",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.327,
+        "tp_kbps": 9.174,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3803277123590619,
+    "topsis_rank": 12
+  },
+  {
+    "api_id": "virtual_number_view_sms_history",
+    "candidate_id": "",
+    "mode_rank": 13,
+    "llm_reported_rank": null,
+    "retrieved_rank": 34,
+    "rag_score": 0.44785386323928833,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "virtual_number.json",
+      "_tool": "virtual_number",
+      "api_id": "virtual_number_view_sms_history",
+      "category": "SMS",
+      "description": "View All received SMS for the given number and country id",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "79034134722",
+            "description": "",
+            "name": "number",
+            "type": "STRING"
+          },
+          {
+            "default": "7",
+            "description": "",
+            "name": "countryId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "View SMS history",
+      "tool_description": "Receive SMS for phone verification",
+      "tool_name": "Virtual Number",
+      "toolbench_endpoint_description": "View All received SMS for the given number and country id",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "View All received SMS for the given number and country id",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "View SMS history",
+        "endpoint_url": "https://virtual-number.p.rapidapi.com/api/v1/e-sim/view-messages",
+        "file_name": "virtual_number.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Receive SMS for phone verification",
+        "tool_file_found": true,
+        "tool_name": "Virtual Number",
+        "toolbench_relative_path": "SMS/virtual_number.json"
+      },
+      "toolbench_tool_description": "Receive SMS for phone verification",
+      "toolbench_tool_name": "Virtual Number",
+      "url": "https://virtual-number.p.rapidapi.com/api/v1/e-sim/view-messages",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3325,
+        "tp_kbps": 9.0225,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3792509576376498,
+    "topsis_rank": 13
+  },
+  {
+    "api_id": "semantic_text_analysis_entity_extraction_api",
+    "candidate_id": "",
+    "mode_rank": 14,
+    "llm_reported_rank": null,
+    "retrieved_rank": 18,
+    "rag_score": 0.47359904646873474,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "semantic_text_analysis.json",
+      "_tool": "semantic_text_analysis",
+      "api_id": "semantic_text_analysis_entity_extraction_api",
+      "category": "Media",
+      "description": "The Entity Extraction API is a named entity extraction & linking API that performs greatly even on short texts, something that many other similar services cannot do. With this API you will be able to automatically tag your texts, extract Wikipedia entities and enrich your data.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "en",
+            "description": "The language of the text to be annotated; currently English, French, German, Italian and Portuguese are supported. Leave this parameter out to let the Entity Extraction API automatically detect the language for you. [de | en | fr | it | pt | auto]",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "2",
+            "description": "Removes from the output entities having a spot shorter than the specified minimum length. [2 .. +inf]",
+            "name": "min_length",
+            "type": "STRING"
+          },
+          {
+            "default": "types, categories, abstract, lod, image, alternate_labels",
+            "description": "Returns more information on annotated entities. \"types\": adds type information from DBpedia. Types are extracted from the DBpedia of the language specified by the lang parameter. Please notice that different DBpedia instances may contain different types for the same resource. \"categories\": adds category information from DBpedia/Wikipedia. \"abstract\": adds the text of the Wikipedia abstract. \"image\": adds a link to an image depicting the tagged entity, as well as a link to the image thumbnail, served by Wikimedia. Please check the licensing terms of each image on Wikimedia before using it in your app. \"lod\": adds links to equivalent (sameAs) entities in Linked Open Data repositories or other websites. It currently only supports DBpedia and Wikipedia. \"alternate_labels\": adds some other names used when referring to the entity.",
+            "name": "include",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Enables special hashtag parsing to correctly analyze tweets and facebook posts.",
+            "name": "social.hashtag",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "The doctor says an apple is better than an orange",
+            "description": "The text you want to annotate. One of (text|html|url|html_fragment) is mandatory.",
+            "name": "text",
+            "type": "STRING"
+          },
+          {
+            "default": "0.6",
+            "description": "The threshold for the confidence value; entities with a confidence value below this threshold will be discarded. Confidence is a numeric estimation of the quality of the annotation, which ranges between 0 and 1. A higher threshold means you will get less but more precise annotations. A lower value means you will get more annotations but also more erroneous ones.",
+            "name": "min_confidence",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "With this parameter you enable special mention parsing to correctly analyze tweets and facebook posts.",
+            "name": "social.mention",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "This parameter specifies the country which we assume VAT and telephone numbers to be coming from. This is important to get correct results, as different countries may adopt different formats. [AD, AE, AM, AO, AQ, AR, AU, BB, BR, BS, BY, CA, CH, CL, CN, CX, DE, FR, GB, HU, IT, JP, KR, MX, NZ, PG, PL, RE, SE, SG, US, YT, ZW]",
+            "name": "country",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Returns more information on annotated entities: \"phone\" enables matching of phone numbers; \"vat\" enables matching of VAT IDs (Italian only). Note that these parameters require the country parameter to be set, and VAT IDs will work only for Italy. [phone, vat]",
+            "name": "extra_types",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "An URL from which the Entity Extraction API will extract the main content to annotate. The Entity Extraction API will fetch the URL for you, and use an AI algorithm to extract the relevant part of the document to work on; in this case, the main content will also be returned by the API to allow you to properly use the annotation offsets. One of (text|html|url|html_fragment) is mandatory.",
+            "name": "url",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "An HTML snippet from which the Entity Extraction API will remove all HTML tags before analyzing it. One of (text|html|url|html_fragment) is mandatory.",
+            "name": "html_fragment",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "An HTML document from which the Entity Extraction API will extract the main content to annotate, as described in the \"url\" parameter above.  One of (text|html|url|html_fragment) is mandatory.",
+            "name": "html",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Entity Extraction API",
+      "tool_description": "Dandelion API is a set of semantic APIs to extract meaning and insights from texts in several languages (Italian, English, French, German and Portuguese). It's optimized to perform text mining and text analytics for short texts, such as tweets and other social media. Dandelion API extracts entities ",
+      "tool_name": "Semantic-Text-Analysis",
+      "toolbench_endpoint_description": "The Entity Extraction API is a named entity extraction & linking API that performs greatly even on short texts, something that many other similar services cannot do. With this API you will be able to automatically tag your texts, extract Wikipedia entities and enrich your data.",
+      "toolbench_enrichment": {
+        "category": "Media",
+        "endpoint_description": "The Entity Extraction API is a named entity extraction & linking API that performs greatly even on short texts, something that many other similar services cannot do. With this API you will be able to automatically tag your texts, extract Wikipedia entities and enrich your data.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Entity Extraction API",
+        "endpoint_url": "https://dandelion-datatxt.p.rapidapi.com/nex/v1/",
+        "file_name": "semantic_text_analysis.json",
+        "optional_parameter_count": 12,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Dandelion API is a set of semantic APIs to extract meaning and insights from texts in several languages (Italian, English, French, German and Portuguese). \r\nIt's optimized to perform text mining and text analytics for short texts, such as tweets and other social media. \r\nDandelion API extracts entities (such as persons, places and events), categorizes and classifies documents in user-defined categories, augments the text with tags and links to external knowledge graphs and more. \r\n\r\nDandelion API easily scales to support billions of queries per day and can be adapted on demand to support custom and user-defined vocabularies. Additional languages are available on demand.",
+        "tool_file_found": true,
+        "tool_name": "Semantic-Text-Analysis",
+        "toolbench_relative_path": "Media/semantic_text_analysis.json"
+      },
+      "toolbench_tool_description": "Dandelion API is a set of semantic APIs to extract meaning and insights from texts in several languages (Italian, English, French, German and Portuguese). \r\nIt's optimized to perform text mining and text analytics for short texts, such as tweets and other social media. \r\nDandelion API extracts entities (such as persons, places and events), categorizes and classifies documents in user-defined categories, augments the text with tags and links to external knowledge graphs and more. \r\n\r\nDandelion API easily scales to support billions of queries per day and can be adapted on demand to support custom and user-defined vocabularies. Additional languages are available on demand.",
+      "toolbench_tool_name": "Semantic-Text-Analysis",
+      "url": "https://dandelion-datatxt.p.rapidapi.com/nex/v1/",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.354,
+        "tp_kbps": 8.474,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3773316836258695,
+    "topsis_rank": 14
+  },
+  {
+    "api_id": "financial_summarization_advanced_summarize",
+    "candidate_id": "",
+    "mode_rank": 15,
+    "llm_reported_rank": null,
+    "retrieved_rank": 21,
+    "rag_score": 0.4711076617240906,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "financial_summarization_advanced.json",
+      "_tool": "financial_summarization_advanced",
+      "api_id": "financial_summarization_advanced_summarize",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "summarize",
+      "tool_description": "From the team that built the original financial summarization model on Hugging Face (&gt;45K downloads on April 2023) here comes the advanced version with even greater performance! Use it and build your personal or commercial apps quickly summarizing thousands of articles!",
+      "tool_name": "Financial Summarization Advanced",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Artificial_Intelligence_Machine_Learning",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "summarize",
+        "endpoint_url": "https://financial-summarization-advanced.p.rapidapi.com/summarize",
+        "file_name": "financial_summarization_advanced.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "From the team that built the original financial summarization model on Hugging Face (&gt;45K downloads on April 2023) here comes the advanced version with even greater performance! Use it and build your personal or commercial apps quickly summarizing thousands of articles!",
+        "tool_file_found": true,
+        "tool_name": "Financial Summarization Advanced",
+        "toolbench_relative_path": "Artificial_Intelligence_Machine_Learning/financial_summarization_advanced.json"
+      },
+      "toolbench_tool_description": "From the team that built the original financial summarization model on Hugging Face (&gt;45K downloads on April 2023) here comes the advanced version with even greater performance! Use it and build your personal or commercial apps quickly summarizing thousands of articles!",
+      "toolbench_tool_name": "Financial Summarization Advanced",
+      "url": "https://financial-summarization-advanced.p.rapidapi.com/summarize",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.352,
+        "tp_kbps": 5.681,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.37618216782585023,
+    "topsis_rank": 15
+  },
+  {
+    "api_id": "sms77io_get_status",
+    "candidate_id": "",
+    "mode_rank": 16,
+    "llm_reported_rank": null,
+    "retrieved_rank": 35,
+    "rag_score": 0.44661760330200195,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "sms77io.json",
+      "_tool": "sms77io",
+      "api_id": "sms77io_get_status",
+      "category": "SMS",
+      "description": "Get a delivery report for a message ID sent with your API key.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The message ID of the SMS.\nCan be obtained by setting parameter *JSON*, *return_msg_id* or *details* to **1** when sending SMS via the API.\nAlternatively it can be retrieved from the message journal in the user area.",
+            "name": "msg_id",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "API Key",
+            "name": "p",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Status",
+      "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "tool_name": "sms77io",
+      "toolbench_endpoint_description": "Get a delivery report for a message ID sent with your API key.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get a delivery report for a message ID sent with your API key.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Status",
+        "endpoint_url": "https://sms77io.p.rapidapi.com/status",
+        "file_name": "sms77io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+        "tool_file_found": true,
+        "tool_name": "sms77io",
+        "toolbench_relative_path": "SMS/sms77io.json"
+      },
+      "toolbench_tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "toolbench_tool_name": "sms77io",
+      "url": "https://sms77io.p.rapidapi.com/status",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.371,
+        "tp_kbps": 10.781,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.37593844847151087,
+    "topsis_rank": 16
+  },
+  {
+    "api_id": "rapid_translate_multi_traduction_rapid_translate_long_text",
+    "candidate_id": "",
+    "mode_rank": 17,
+    "llm_reported_rank": null,
+    "retrieved_rank": 28,
+    "rag_score": 0.46095219254493713,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "rapid_translate_multi_traduction.json",
+      "_tool": "rapid_translate_multi_traduction",
+      "api_id": "rapid_translate_multi_traduction_rapid_translate_long_text",
+      "category": "Text_Analysis",
+      "description": "Rapid Translate Long Text without html tags",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Rapid Translate Long Text",
+      "tool_description": "We developed a NEW RAPID MULTI TRANSLATE API that allow you translate multi texts in one fast query, wish help you improve response time and your service quality. The Unlimited Multi Translate API makes advantage of Google's neural machine translation technology to translate html, text, words, phras",
+      "tool_name": "Rapid Translate Multi Traduction",
+      "toolbench_endpoint_description": "Rapid Translate Long Text without html tags",
+      "toolbench_enrichment": {
+        "category": "Text_Analysis",
+        "endpoint_description": "Rapid Translate Long Text without html tags",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Rapid Translate Long Text",
+        "endpoint_url": "https://rapid-translate-multi-traduction.p.rapidapi.com/t",
+        "file_name": "rapid_translate_multi_traduction.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "We developed a NEW RAPID MULTI TRANSLATE API that allow you translate multi texts in one fast query, wish help you improve response time and your service quality. \tThe Unlimited Multi Translate API makes advantage of Google's neural machine translation technology to translate html, text, words, phrases, and paragraphs in real time across more than +100 languages. Example: https://codepen.io/oussamasibari/pen/JjLLxxv",
+        "tool_file_found": true,
+        "tool_name": "Rapid Translate Multi Traduction",
+        "toolbench_relative_path": "Text_Analysis/rapid_translate_multi_traduction.json"
+      },
+      "toolbench_tool_description": "We developed a NEW RAPID MULTI TRANSLATE API that allow you translate multi texts in one fast query, wish help you improve response time and your service quality. \tThe Unlimited Multi Translate API makes advantage of Google's neural machine translation technology to translate html, text, words, phrases, and paragraphs in real time across more than +100 languages. Example: https://codepen.io/oussamasibari/pen/JjLLxxv",
+      "toolbench_tool_name": "Rapid Translate Multi Traduction",
+      "url": "https://rapid-translate-multi-traduction.p.rapidapi.com/t",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.362,
+        "tp_kbps": 5.5245,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3751366287849894,
+    "topsis_rank": 17
+  },
+  {
+    "api_id": "specrom_news_api_get_news_headlines_by_keyword_search",
+    "candidate_id": "",
+    "mode_rank": 18,
+    "llm_reported_rank": null,
+    "retrieved_rank": 9,
+    "rag_score": 0.5009167194366455,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_get_news_headlines_by_keyword_search",
+      "category": "News_Media",
+      "description": "Just specify the keyword or keyphrase to search and get latest news headlines and a url_id. Use the other endpoint to fetch the full_text of the news articles.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Get News Headlines By Keyword Search",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just specify the keyword or keyphrase to search and get latest news headlines and a url_id. Use the other endpoint to fetch the full_text of the news articles.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just specify the keyword or keyphrase to search and get latest news headlines and a url_id. Use the other endpoint to fetch the full_text of the news articles.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Get News Headlines By Keyword Search",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3895,
+        "tp_kbps": 12.837,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3749001480891008,
+    "topsis_rank": 18
+  },
+  {
+    "api_id": "google_translate_text_detectlanguage",
+    "candidate_id": "",
+    "mode_rank": 19,
+    "llm_reported_rank": null,
+    "retrieved_rank": 38,
+    "rag_score": 0.44072872400283813,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "google_translate_text.json",
+      "_tool": "google_translate_text",
+      "api_id": "google_translate_text_detectlanguage",
+      "category": "Translation",
+      "description": "Get language from text",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "bonjour, comment ca va",
+            "description": "",
+            "name": "text",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "detectLanguage",
+      "tool_description": "Translate, detect language, and text-to-speech capabilities for seamless multilingual communication. This API is a lightweight version and can be used by simple translation applications For more features check out this API-&gt; https://rapidapi.com/biihezron1-5ghxDw6eSBV/api/linguatoolbox",
+      "tool_name": "Google Translate Text",
+      "toolbench_endpoint_description": "Get language from text",
+      "toolbench_enrichment": {
+        "category": "Translation",
+        "endpoint_description": "Get language from text",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "detectLanguage",
+        "endpoint_url": "https://google-translate-text.p.rapidapi.com/detectLanguage",
+        "file_name": "google_translate_text.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Translate, detect language, and text-to-speech capabilities for seamless multilingual communication.\nThis API is a lightweight version and can be used by simple translation applications\nFor more features check out this API-&gt; https://rapidapi.com/biihezron1-5ghxDw6eSBV/api/linguatoolbox",
+        "tool_file_found": true,
+        "tool_name": "Google Translate Text",
+        "toolbench_relative_path": "Translation/google_translate_text.json"
+      },
+      "toolbench_tool_description": "Translate, detect language, and text-to-speech capabilities for seamless multilingual communication.\nThis API is a lightweight version and can be used by simple translation applications\nFor more features check out this API-&gt; https://rapidapi.com/biihezron1-5ghxDw6eSBV/api/linguatoolbox",
+      "toolbench_tool_name": "Google Translate Text",
+      "url": "https://google-translate-text.p.rapidapi.com/detectLanguage",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3735,
+        "tp_kbps": 8.031500000000001,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3748419969693821,
+    "topsis_rank": 19
+  },
+  {
+    "api_id": "summarizen_extractive_text_summarization_get_a_text_s_key_sentences",
+    "candidate_id": "",
+    "mode_rank": 20,
+    "llm_reported_rank": null,
+    "retrieved_rank": 19,
+    "rag_score": 0.4729854166507721,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "summarizen_extractive_text_summarization.json",
+      "_tool": "summarizen_extractive_text_summarization",
+      "api_id": "summarizen_extractive_text_summarization_get_a_text_s_key_sentences",
+      "category": "Text_Analysis",
+      "description": "N/A",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Get a text's key sentences",
+      "tool_description": "Summarize articles, research papers, or even entire books using various extractive text summarization algorithms. Available in over a dozen languages (English, French, Spanish, etc.). The web application can be accessed here: https://summarizen.com/",
+      "tool_name": "Summarizen - Extractive Text Summarization",
+      "toolbench_endpoint_description": "N/A",
+      "toolbench_enrichment": {
+        "category": "Text_Analysis",
+        "endpoint_description": "N/A",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Get a text's key sentences",
+        "endpoint_url": "https://summarizen-extractive-text-summarization.p.rapidapi.com/key-sentences-text",
+        "file_name": "summarizen_extractive_text_summarization.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Summarize articles, research papers, or even entire books using various extractive text summarization algorithms. Available in over a dozen languages (English, French, Spanish, etc.). The web application can be accessed here: https://summarizen.com/",
+        "tool_file_found": true,
+        "tool_name": "Summarizen - Extractive Text Summarization",
+        "toolbench_relative_path": "Text_Analysis/summarizen_extractive_text_summarization.json"
+      },
+      "toolbench_tool_description": "Summarize articles, research papers, or even entire books using various extractive text summarization algorithms. Available in over a dozen languages (English, French, Spanish, etc.). The web application can be accessed here: https://summarizen.com/",
+      "toolbench_tool_name": "Summarizen - Extractive Text Summarization",
+      "url": "https://summarizen-extractive-text-summarization.p.rapidapi.com/key-sentences-text",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.404,
+        "tp_kbps": 7.425,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3720782656298534,
+    "topsis_rank": 20
+  },
+  {
+    "api_id": "article_api_extract-2",
+    "candidate_id": "",
+    "mode_rank": 21,
+    "llm_reported_rank": null,
+    "retrieved_rank": 6,
+    "rag_score": 0.5052714347839355,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "article_api.json",
+      "_tool": "article_api",
+      "api_id": "article_api_extract-2",
+      "category": "News_Media",
+      "description": "get readable content and metadata of aa url",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/extract",
+      "tool_description": "Normalize article from a url",
+      "tool_name": "article-api",
+      "toolbench_endpoint_description": "get readable content and metadata of aa url",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "get readable content and metadata of aa url",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/extract",
+        "endpoint_url": "https://article-api1.p.rapidapi.com/extract",
+        "file_name": "article_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Normalize article from a url",
+        "tool_file_found": true,
+        "tool_name": "article-api",
+        "toolbench_relative_path": "News_Media/article_api.json"
+      },
+      "toolbench_tool_description": "Normalize article from a url",
+      "toolbench_tool_name": "article-api",
+      "url": "https://article-api1.p.rapidapi.com/extract",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.405,
+        "tp_kbps": 4.938,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3706283949030334,
+    "topsis_rank": 21
+  },
+  {
+    "api_id": "guardian_searchcontent",
+    "candidate_id": "",
+    "mode_rank": 22,
+    "llm_reported_rank": null,
+    "retrieved_rank": 13,
+    "rag_score": 0.484363317489624,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "guardian.json",
+      "_tool": "guardian",
+      "api_id": "guardian_searchcontent",
+      "category": "News_Media",
+      "description": "You can find all parts of the content in the API",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Return only content published on or after that date. Example: 2014-02-16",
+            "name": "from-date",
+            "type": "DATEPICKER"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those IDs. Example: technology/2014/feb/17/flappy-bird-clones-apple-google",
+            "name": "ids",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Request content containing this free text. Supports AND, OR and NOT operators, and exact phrase queries using double quotes.",
+            "name": "query",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated media elements such as images and audio. Accepted values: audio,image,video,all",
+            "name": "show-elements",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Returns results in the specified order. Accepted values: newest, oldest, relevance",
+            "name": "order-by",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Add associated metadata section",
+            "name": "show-section",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those tags. Example: technology/apple",
+            "name": "tag",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those references. Example: isbn/9780718178949",
+            "name": "reference",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only the result set from a particular page. Example: 5",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Return only content in those languages. ISO language codes. Example: fr",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated rights. Accepted values: syndicatable, subscription-databases, all",
+            "name": "show-rights",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Add associated metadata tags. Example: publication",
+            "name": "show-tags",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content from those production offices. Example: aus",
+            "name": "production-office",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Modify the number of items displayed per page. Accepted values: 1 to 50",
+            "name": "page-size",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Add fields associated with the content",
+            "name": "show-fields",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated reference data such as ISBNs",
+            "name": "show-references",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those rights. Example: syndicatable",
+            "name": "rights",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content in those sections. Example: football",
+            "name": "section",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with references of those types. Example: isbn",
+            "name": "reference-type",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with a given star rating. From 1 to 5",
+            "name": "star-rating",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Add associated blocks",
+            "name": "show-blocks",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Returns results in the specified order. Accepted values: published, newspaper-edition, last-modified",
+            "name": "order-date",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Return only content published on or before that date. Example: 2014-02-17",
+            "name": "to-date",
+            "type": "DATEPICKER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The api key obtained from Guardian",
+            "name": "apiKey",
+            "type": "CREDENTIALS"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "searchContent",
+      "tool_description": "Query and download data from this publication's database.",
+      "tool_name": "Guardian",
+      "toolbench_endpoint_description": "You can find all parts of the content in the API",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "You can find all parts of the content in the API",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "searchContent",
+        "endpoint_url": "https://Guardianmikilior1V1.p.rapidapi.com/searchContent",
+        "file_name": "guardian.json",
+        "optional_parameter_count": 23,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Query and download data from this publication's database.",
+        "tool_file_found": true,
+        "tool_name": "Guardian",
+        "toolbench_relative_path": "News_Media/guardian.json"
+      },
+      "toolbench_tool_description": "Query and download data from this publication's database.",
+      "toolbench_tool_name": "Guardian",
+      "url": "https://Guardianmikilior1V1.p.rapidapi.com/searchContent",
+      "qos": {
+        "availability": 0.9705,
+        "rt_s": 0.466,
+        "tp_kbps": 6.437,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.36436003082652074,
+    "topsis_rank": 22
+  },
+  {
+    "api_id": "sms77io_replies",
+    "candidate_id": "",
+    "mode_rank": 23,
+    "llm_reported_rank": null,
+    "retrieved_rank": 24,
+    "rag_score": 0.4650118350982666,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "sms77io.json",
+      "_tool": "sms77io",
+      "api_id": "sms77io_replies",
+      "category": "SMS",
+      "description": "Retrieves message replies history.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Message ID",
+            "name": "id",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Start date for performed search",
+            "name": "date_from",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Receiver phone number in any format",
+            "name": "to",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "End date for performed search",
+            "name": "date_to",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Message status - e.g. *completed* / *failed* for **Voice** or *DELIVERED* / *NOTDELIVERED* for **SMS**",
+            "name": "state",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "API key from [Sms77.io](https://www.sms77.io)",
+            "name": "p",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Replies",
+      "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "tool_name": "sms77io",
+      "toolbench_endpoint_description": "Retrieves message replies history.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Retrieves message replies history.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Replies",
+        "endpoint_url": "https://sms77io.p.rapidapi.com/journal?type=replies",
+        "file_name": "sms77io.json",
+        "optional_parameter_count": 5,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+        "tool_file_found": true,
+        "tool_name": "sms77io",
+        "toolbench_relative_path": "SMS/sms77io.json"
+      },
+      "toolbench_tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "toolbench_tool_name": "sms77io",
+      "url": "https://sms77io.p.rapidapi.com/journal?type=replies",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.834,
+        "tp_kbps": 96.774,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.36333126535121407,
+    "topsis_rank": 23
+  },
+  {
+    "api_id": "translate_com_api_create_human_translation_order",
+    "candidate_id": "",
+    "mode_rank": 24,
+    "llm_reported_rank": null,
+    "retrieved_rank": 27,
+    "rag_score": 0.46113768219947815,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "translate_com_api.json",
+      "_tool": "translate_com_api",
+      "api_id": "translate_com_api_create_human_translation_order",
+      "category": "Translation",
+      "description": "The endpoint is designed to create a human translation order.\nThe result and status of the order can be tracked by the \"Get human translation order\" endpoint.\nYou can also pass the URL of your service to receive the translation result in the “callback_url” parameter",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "callback_url",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "Hello World!",
+            "description": "",
+            "name": "text",
+            "type": "STRING"
+          },
+          {
+            "default": "es",
+            "description": "",
+            "name": "translation_language",
+            "type": "STRING"
+          },
+          {
+            "default": "en",
+            "description": "",
+            "name": "source_language",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Create human translation order",
+      "tool_description": "The API is a simple way to translate anything you need. You can send content for human and machine translation, get price quotes, check project progress, and automatically receive translated content. Translate API advantages: User-friendly and easy to use Easily integrate with websites and 3rd party",
+      "tool_name": "Translate.com API",
+      "toolbench_endpoint_description": "The endpoint is designed to create a human translation order.\nThe result and status of the order can be tracked by the \"Get human translation order\" endpoint.\nYou can also pass the URL of your service to receive the translation result in the “callback_url” parameter",
+      "toolbench_enrichment": {
+        "category": "Translation",
+        "endpoint_description": "The endpoint is designed to create a human translation order.\nThe result and status of the order can be tracked by the \"Get human translation order\" endpoint.\nYou can also pass the URL of your service to receive the translation result in the “callback_url” parameter",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Create human translation order",
+        "endpoint_url": "https://translate-com-api.p.rapidapi.com/ht",
+        "file_name": "translate_com_api.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The API is a simple way to translate anything you need. You can send content for human and machine translation, get price quotes, check project progress, and automatically receive translated content. Translate API advantages: User-friendly and easy to use Easily integrate with websites and 3rd party products Automation of information flow translation Continuous translation 24/7 More than 90 language pairs in one place Affordable prices and a variety of payment options. So, if you are interest...",
+        "tool_file_found": true,
+        "tool_name": "Translate.com API",
+        "toolbench_relative_path": "Translation/translate_com_api.json"
+      },
+      "toolbench_tool_description": "The API is a simple way to translate anything you need. You can send content for human and machine translation, get price quotes, check project progress, and automatically receive translated content. Translate API advantages: User-friendly and easy to use Easily integrate with websites and 3rd party products Automation of information flow translation Continuous translation 24/7 More than 90 language pairs in one place Affordable prices and a variety of payment options. So, if you are interest...",
+      "toolbench_tool_name": "Translate.com API",
+      "url": "https://translate-com-api.p.rapidapi.com/ht",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.493,
+        "tp_kbps": 8.113,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.36264930917754634,
+    "topsis_rank": 24
+  },
+  {
+    "api_id": "multilingual_translate_service_send_task_to_translation-2",
+    "candidate_id": "",
+    "mode_rank": 25,
+    "llm_reported_rank": null,
+    "retrieved_rank": 29,
+    "rag_score": 0.45768195390701294,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "multilingual_translate_service.json",
+      "_tool": "multilingual_translate_service",
+      "api_id": "multilingual_translate_service_send_task_to_translation-2",
+      "category": "Translation",
+      "description": "Setting a transfer problem. The result of the execution is a json massive",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send Task To Translation",
+      "tool_description": "Multilingual API for translating large and small texts from $0.2 / per million characters",
+      "tool_name": "Multilingual Translate Service",
+      "toolbench_endpoint_description": "Setting a transfer problem. The result of the execution is a json massive",
+      "toolbench_enrichment": {
+        "category": "Translation",
+        "endpoint_description": "Setting a transfer problem. The result of the execution is a json massive",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send Task To Translation",
+        "endpoint_url": "https://multilingual-translate-service.p.rapidapi.com/Translation",
+        "file_name": "multilingual_translate_service.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Multilingual API for translating large and small texts from $0.2 / per million characters",
+        "tool_file_found": true,
+        "tool_name": "Multilingual Translate Service",
+        "toolbench_relative_path": "Translation/multilingual_translate_service.json"
+      },
+      "toolbench_tool_description": "Multilingual API for translating large and small texts from $0.2 / per million characters",
+      "toolbench_tool_name": "Multilingual Translate Service",
+      "url": "https://multilingual-translate-service.p.rapidapi.com/Translation",
+      "qos": {
+        "availability": 0.9764,
+        "rt_s": 0.489,
+        "tp_kbps": 6.134,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.36207750770925107,
+    "topsis_rank": 25
+  },
+  {
+    "api_id": "tldrthis_human_like_article_summarization",
+    "candidate_id": "",
+    "mode_rank": 26,
+    "llm_reported_rank": null,
+    "retrieved_rank": 10,
+    "rag_score": 0.49540600180625916,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "tldrthis.json",
+      "_tool": "tldrthis",
+      "api_id": "tldrthis_human_like_article_summarization",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "description": "Use one of the world's most advanced abstractive summarization models to extract the most important sentences from a given article URL.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Human-like Article Summarization",
+      "tool_description": "Summarize any URL or text using state-of-the-art abstractive and extractive summarization models.",
+      "tool_name": "TLDRThis",
+      "toolbench_endpoint_description": "Use one of the world's most advanced abstractive summarization models to extract the most important sentences from a given article URL.",
+      "toolbench_enrichment": {
+        "category": "Artificial_Intelligence_Machine_Learning",
+        "endpoint_description": "Use one of the world's most advanced abstractive summarization models to extract the most important sentences from a given article URL.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Human-like Article Summarization",
+        "endpoint_url": "https://tldrthis.p.rapidapi.com/v1/model/abstractive/summarize-url/",
+        "file_name": "tldrthis.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Summarize any URL or text using state-of-the-art abstractive and extractive summarization models.",
+        "tool_file_found": true,
+        "tool_name": "TLDRThis",
+        "toolbench_relative_path": "Artificial_Intelligence_Machine_Learning/tldrthis.json"
+      },
+      "toolbench_tool_description": "Summarize any URL or text using state-of-the-art abstractive and extractive summarization models.",
+      "toolbench_tool_name": "TLDRThis",
+      "url": "https://tldrthis.p.rapidapi.com/v1/model/abstractive/summarize-url/",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.587,
+        "tp_kbps": 3.407,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.35124078968123307,
+    "topsis_rank": 26
+  },
+  {
+    "api_id": "newscatcher_v1_aggregation",
+    "candidate_id": "",
+    "mode_rank": 27,
+    "llm_reported_rank": null,
+    "retrieved_rank": 14,
+    "rag_score": 0.48036080598831177,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newscatcher.json",
+      "_tool": "newscatcher",
+      "api_id": "newscatcher_v1_aggregation",
+      "category": "News_Media",
+      "description": "Searches as `/v1/search` but returns the articles count per hour or day instead of articles' data",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "The country to which you want to narrow your search. This parameter is [experimental]. We advise you to use it in conjunction with the `lang` parameter. Accepts any [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes",
+            "name": "country",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The topic to which you want to restrict the articles of your choice. This parameter is [experimental]. Accepted values are `news`, `sport`, `tech`, `world`, `finance`, `politics`, `business`, `economics`, `entertainment`,`beauty`,`travel`,`music`,`food`,`science`\n- `news` usually means a general news feed (main headlines of a website).\n> Important: this parameter is [experimental]. Not all news articles are assigned with a `topic`, therefore, we cannot guarantee that 100% of topics talking about technology will be assigned a `tech` label.\n> One topic at a time, for example, `topic=sport`",
+            "name": "topic",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "One or more news resources to filter your search. It should be the normal form of the URL, for example, **[nytimes.com](http://nytimes.com/)**, **[theguardian.com](http://theguardian.com/)**\n> Comma separated string, for example `sources=nytimes.com,cnn.com,wsj.com`",
+            "name": "sources",
+            "type": "STRING"
+          },
+          {
+            "default": "day",
+            "description": "- `day` — default option. Aggregate results by day. No more than 100 days \n- `hour` — Aggregate results by hour. No more than 100 hours",
+            "name": "agg_by",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Upper boundary of the rank of news website to filter by",
+            "name": "to_rank",
+            "type": "NUMBER"
+          },
+          {
+            "default": "True",
+            "description": "Adds to the output of the call two more variables: `media` and `media_content`\n\nMedia - the main image published with an article \n\nmedia_content  - a comma-separated string of all images used in an article",
+            "name": "media",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Specifies the language of the search.  Allowed values are:\n`af`, `ar`, `bg`, `bn`, `ca`,`cn`, `cs`, `cy`, `da`, `de`, `el`, `en`, `es`, `et`, `fa`, `fi`, `fr`, `gu`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `kn`, `ko`, `lt`, `lv`, `mk`, `ml`, `mr`, `ne`, `nl`, `no`, `pa`, `pl`, `pt`, `ro`, `ru`, `sk`, `sl`, `so`, `sq`, `sv`, `sw`, `ta`, `te`, `th`, `tl`, `tr`,`tw`, `uk`, `ur`, `vi`. \nSpecifying the language will make your search more relevant",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "One or more sources to be excluded from the search. \n> Comma separated string, for example, `not_sources=nytimes.com,cnn.com,wsj.com`",
+            "name": "not_sources",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Until which point in time to search for. The default timezone is UTC",
+            "name": "to",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Limit the search only for the sources which are in top 1 million online websites. Defaults to `True` (`False` if you want to turn it off). Unranked sources are assigned a rank that equals to `999999`",
+            "name": "ranked_only",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "From which point in time to start the search. No specific format is required. E.g. (`2020/05/01`, `2020-05-01` ,`2020-05-01 12:54:14`, `2020-05-01 4:15am`, `yesterday 2:02 am`, `2020/05/01 12:55 EST`) Default timezone is UTC. **\nThe default is set to one week ago at midnight UTC.** ",
+            "name": "from",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "By default, we search what you specified in `q` in both `title` and `summary` of the article. However, you can limit this to either `title` or `summary`",
+            "name": "search_in",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Lowest boundary of the rank of news website to filter by. **Important**: lower rank means that a source is more popular",
+            "name": "from_rank",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "Apple",
+            "description": "String to search for. Has to be [URL-encoded](https://en.wikipedia.org/wiki/Percent-encoding). ",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/v1/aggregation",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "tool_name": "Newscatcher",
+      "toolbench_endpoint_description": "Searches as `/v1/search` but returns the articles count per hour or day instead of articles' data",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Searches as `/v1/search` but returns the articles count per hour or day instead of articles' data",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/aggregation",
+        "endpoint_url": "https://newscatcher.p.rapidapi.com/v1/aggregation",
+        "file_name": "newscatcher.json",
+        "optional_parameter_count": 13,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+        "tool_file_found": true,
+        "tool_name": "Newscatcher",
+        "toolbench_relative_path": "News_Media/newscatcher.json"
+      },
+      "toolbench_tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "toolbench_tool_name": "Newscatcher",
+      "url": "https://newscatcher.p.rapidapi.com/v1/aggregation",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.6285000000000001,
+        "tp_kbps": 12.728,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3501806719610747,
+    "topsis_rank": 27
+  },
+  {
+    "api_id": "hadiths_api_search_for_hadiths_with_key_words",
+    "candidate_id": "",
+    "mode_rank": 28,
+    "llm_reported_rank": null,
+    "retrieved_rank": 20,
+    "rag_score": 0.4723176062107086,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "hadiths_api.json",
+      "_tool": "hadiths_api",
+      "api_id": "hadiths_api_search_for_hadiths_with_key_words",
+      "category": "Education",
+      "description": "Searching for hadiths. Just enter the keyword, example searching for food, the request will look like this https://hadiths-api.vercel.app/api/hadiths?search=food\n\nAnd limit can be added to reduce the amount of data received, by default the limit is 10.\nPage number by default is page1, but it can be changed as you want.\nNB: The %20 in the example query is just an empty space as the name of the collection is Sahih Bukhari in the database.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Search for hadiths  with key words",
+      "tool_description": "A collection of hadiths API in one place, Sahih Bukhari, Sahih muslim, Ibn majah, Abu Dawud. working on compiling timidhi and nezai insha Allah.",
+      "tool_name": "Hadiths API",
+      "toolbench_endpoint_description": "Searching for hadiths. Just enter the keyword, example searching for food, the request will look like this https://hadiths-api.vercel.app/api/hadiths?search=food\n\nAnd limit can be added to reduce the amount of data received, by default the limit is 10.\nPage number by default is page1, but it can be changed as you want.\nNB: The %20 in the example query is just an empty space as the name of the collection is Sahih Bukhari in the database.",
+      "toolbench_enrichment": {
+        "category": "Education",
+        "endpoint_description": "Searching for hadiths. Just enter the keyword, example searching for food, the request will look like this https://hadiths-api.vercel.app/api/hadiths?search=food\n\nAnd limit can be added to reduce the amount of data received, by default the limit is 10.\nPage number by default is page1, but it can be changed as you want.\nNB: The %20 in the example query is just an empty space as the name of the collection is Sahih Bukhari in the database.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search for hadiths  with key words",
+        "endpoint_url": "https://hadiths-api.p.rapidapi.com/hadiths?search=food",
+        "file_name": "hadiths_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A collection of hadiths API in one place, Sahih Bukhari, Sahih muslim, Ibn majah, Abu Dawud. working on compiling timidhi and nezai insha Allah.",
+        "tool_file_found": true,
+        "tool_name": "Hadiths API",
+        "toolbench_relative_path": "Education/hadiths_api.json"
+      },
+      "toolbench_tool_description": "A collection of hadiths API in one place, Sahih Bukhari, Sahih muslim, Ibn majah, Abu Dawud. working on compiling timidhi and nezai insha Allah.",
+      "toolbench_tool_name": "Hadiths API",
+      "url": "https://hadiths-api.p.rapidapi.com/hadiths?search=food",
+      "qos": {
+        "availability": 0.8909,
+        "rt_s": 0.597,
+        "tp_kbps": 5.008,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.34689285059540936,
+    "topsis_rank": 28
+  },
+  {
+    "api_id": "text_to_speech_for_28_languages_get_mp3_url",
+    "candidate_id": "",
+    "mode_rank": 29,
+    "llm_reported_rank": null,
+    "retrieved_rank": 36,
+    "rag_score": 0.44405290484428406,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "text_to_speech_for_28_languages.json",
+      "_tool": "text_to_speech_for_28_languages",
+      "api_id": "text_to_speech_for_28_languages_get_mp3_url",
+      "category": "Media",
+      "description": "Input limit: 3,000 characters / Don't forget to turn on your speakers :-)\nHint: If you finish a sentence, leave a space after the dot before the next one starts for better pronunciation.\n\n1. Arabic: For Arabic, use \"Zeina\" as the value for the \"lang\" field.\n2. Australian English: Choose between \"Russell\" or \"Nicole\" as the value for the \"lang\" field.\n3. Brazilian Portuguese: Select either \"Vitória,\" \"Camila,\" or \"Ricardo\" as the value for the \"lang\" field.\n4. British English: Use either \"Emma,\" \"Brian,\" or \"Amy\" as the value for the \"lang\" field.\n5. Canadian French: Set \"Chantal\" as the value for the \"lang\" field.\n6. Castilian Spanish: Choose between \"Conchita,\" \"Lucia,\" or \"Enrique\" as the value for the \"lang\" field.\n7. Chinese Mandarin: Use \"Zhiyu\" as the value for the \"lang\" field.\n8. Danish: Select either \"Naja\" or \"Mads\" as the value for the \"lang\" field.\n9. Dutch: Use either \"Ruben\" or \"Lotte\" as the value for the \"lang\" field.\n10. French: Choose between \"Céline,\" \"Léa,\" or \"Mathieu\" as the value for the \"lang\" field.\n11. German: Select either \"Hans,\" \"Vicki,\" or \"Marlene\" as the value for the \"lang\" field.\n12. Icelandic: Use either \"Dóra\" or \"Karl\" as the value for the \"lang\" field.\n13. Indian English: Set either \"Aditi\" or \"Raveena\" as the value for the \"lang\" field.\n14. Italian: Choose between \"Bianca,\" \"Carla,\" or \"Giorgio\" as the value for the \"lang\" field.\n15. Japanese: Use either \"Takumi\" or \"Mizuki\" as the value for the \"lang\" field.\n16. Korean: Set \"Seoyeon\" as the value for the \"lang\" field.\n17. Mexican Spanish: Use \"Mia\" as the value for the \"lang\" field.\n18. Norwegian: Set \"Liv\" as the value for the \"lang\" field.\n19. Polish: Choose between \"Jacek,\" \"Jan,\" \"Maja,\" or \"Ewa\" as the value for the \"lang\" field.\n20. Portuguese: Select either \"Cristiano\" or \"Inês\" as the value for the \"lang\" field.\n21. Romanian: Use \"Carmen\" as the value for the \"lang\" field.\n22. Russian: Choose between \"Maxim\" or \"Tatyana\" as the value for the \"lang\" field.\n23. Swedish: Set \"Astrid\" as the value for the \"lang\" field.\n24. Turkish: Use \"Filiz\" as the value for the \"lang\" field.\n25. US English: Select any of \"Salli,\" \"Ivy,\" \"Joey,\" \"Matthew,\" \"Kimberly,\" \"Kendra,\" \"Justin,\" or \"Joanna\" as the value for the \"lang\" field.\n26. US Spanish: Choose between \"Lupe,\" \"Penélope,\" or \"Miguel\" as the value for the \"lang\" field.\n27. Welsh: Use \"Gwyneth\" as the value for the \"lang\" field.\n28. Welsh English: Set \"Geraint\" as the value for the \"lang\" field.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Salli",
+            "description": "\n1. Arabic: For Arabic, use \"Zeina\" as the value for the \"lang\" field.\n2. Australian English: Choose between \"Russell\" or \"Nicole\" as the value for the \"lang\" field.\n3. Brazilian Portuguese: Select either \"Vitória,\" \"Camila,\" or \"Ricardo\" as the value for the \"lang\" field.\n4. British English: Use either \"Emma,\" \"Brian,\" or \"Amy\" as the value for the \"lang\" field.\n5. Canadian French: Set \"Chantal\" as the value for the \"lang\" field.\n6. Castilian Spanish: Choose between \"Conchita,\" \"Lucia,\" or \"Enrique\" as the value for the \"lang\" field.\n7. Chinese Mandarin: Use \"Zhiyu\" as the value for the \"lang\" field.\n8. Danish: Select either \"Naja\" or \"Mads\" as the value for the \"lang\" field.\n9. Dutch: Use either \"Ruben\" or \"Lotte\" as the value for the \"lang\" field.\n10. French: Choose between \"Céline,\" \"Léa,\" or \"Mathieu\" as the value for the \"lang\" field.\n11. German: Select either \"Hans,\" \"Vicki,\" or \"Marlene\" as the value for the \"lang\" field.\n12. Icelandic: Use either \"Dóra\" or \"Karl\" as the value for the \"lang\" field.\n13. Indian English: Set either \"Aditi\" or \"Raveena\" as the value for the \"lang\" field.\n14. Italian: Choose between \"Bianca,\" \"Carla,\" or \"Giorgio\" as the value for the \"lang\" field.\n15. Japanese: Use either \"Takumi\" or \"Mizuki\" as the value for the \"lang\" field.\n16. Korean: Set \"Seoyeon\" as the value for the \"lang\" field.\n17. Mexican Spanish: Use \"Mia\" as the value for the \"lang\" field.\n18. Norwegian: Set \"Liv\" as the value for the \"lang\" field.\n19. Polish: Choose between \"Jacek,\" \"Jan,\" \"Maja,\" or \"Ewa\" as the value for the \"lang\" field.\n20. Portuguese: Select either \"Cristiano\" or \"Inês\" as the value for the \"lang\" field.\n21. Romanian: Use \"Carmen\" as the value for the \"lang\" field.\n22. Russian: Choose between \"Maxim\" or \"Tatyana\" as the value for the \"lang\" field.\n23. Swedish: Set \"Astrid\" as the value for the \"lang\" field.\n24. Turkish: Use \"Filiz\" as the value for the \"lang\" field.\n25. US English: Select any of \"Salli,\" \"Ivy,\" \"Joey,\" \"Matthew,\" \"Kimberly,\" \"Kendra,\" \"Justin,\" or \"Joanna\" as the value for the \"lang\" field.\n26. US Spanish: Choose between \"Lupe,\" \"Penélope,\" or \"Miguel\" as the value for the \"lang\" field.\n27. Welsh: Use \"Gwyneth\" as the value for the \"lang\" field.\n28. Welsh English: Set \"Geraint\" as the value for the \"lang\" field.",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "ttsmp3",
+            "description": "",
+            "name": "source",
+            "type": "STRING"
+          },
+          {
+            "default": "Now is the winter of our discontent <break time=\"2s\"/> Made glorious summer by this sun of York; And all the clouds that lour'd upon our house In the deep bosom of the ocean buried.",
+            "description": "",
+            "name": "msg",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Get Mp3 URL",
+      "tool_description": "Text to speech with amazing features like pauses, emphasising words, speed, pitch, effects, conversations and much more, use these features and download as mp3 with the url provided in the response",
+      "tool_name": "Text To Speech for 28+ languages",
+      "toolbench_endpoint_description": "Input limit: 3,000 characters / Don't forget to turn on your speakers :-)\nHint: If you finish a sentence, leave a space after the dot before the next one starts for better pronunciation.\n\n1. Arabic: For Arabic, use \"Zeina\" as the value for the \"lang\" field.\n2. Australian English: Choose between \"Russell\" or \"Nicole\" as the value for the \"lang\" field.\n3. Brazilian Portuguese: Select either \"Vitória,\" \"Camila,\" or \"Ricardo\" as the value for the \"lang\" field.\n4. British English: Use either \"Emma,\" \"Brian,\" or \"Amy\" as the value for the \"lang\" field.\n5. Canadian French: Set \"Chantal\" as the value for the \"lang\" field.\n6. Castilian Spanish: Choose between \"Conchita,\" \"Lucia,\" or \"Enrique\" as the value for the \"lang\" field.\n7. Chinese Mandarin: Use \"Zhiyu\" as the value for the \"lang\" field.\n8. Danish: Select either \"Naja\" or \"Mads\" as the value for the \"lang\" field.\n9. Dutch: Use either \"Ruben\" or \"Lotte\" as the value for the \"lang\" field.\n10. French: Choose between \"Céline,\" \"Léa,\" or \"Mathieu\" as the value for the \"lang\" field.\n11. German: Select either \"Hans,\" \"Vicki,\" or \"Marlene\" as the value for the \"lang\" field.\n12. Icelandic: Use either \"Dóra\" or \"Karl\" as the value for the \"lang\" field.\n13. Indian English: Set either \"Aditi\" or \"Raveena\" as the value for the \"lang\" field.\n14. Italian: Choose between \"Bianca,\" \"Carla,\" or \"Giorgio\" as the value for the \"lang\" field.\n15. Japanese: Use either \"Takumi\" or \"Mizuki\" as the value for the \"lang\" field.\n16. Korean: Set \"Seoyeon\" as the value for the \"lang\" field.\n17. Mexican Spanish: Use \"Mia\" as the value for the \"lang\" field.\n18. Norwegian: Set \"Liv\" as the value for the \"lang\" field.\n19. Polish: Choose between \"Jacek,\" \"Jan,\" \"Maja,\" or \"Ewa\" as the value for the \"lang\" field.\n20. Portuguese: Select either \"Cristiano\" or \"Inês\" as the value for the \"lang\" field.\n21. Romanian: Use \"Carmen\" as the value for the \"lang\" field.\n22. Russian: Choose between \"Maxim\" or \"Tatyana\" as the value for the \"lang\" field.\n23. Swedish: Set \"Astrid\" as the value for the \"lang\" field.\n24. Turkish: Use \"Filiz\" as the value for the \"lang\" field.\n25. US English: Select any of \"Salli,\" \"Ivy,\" \"Joey,\" \"Matthew,\" \"Kimberly,\" \"Kendra,\" \"Justin,\" or \"Joanna\" as the value for the \"lang\" field.\n26. US Spanish: Choose between \"Lupe,\" \"Penélope,\" or \"Miguel\" as the value for the \"lang\" field.\n27. Welsh: Use \"Gwyneth\" as the value for the \"lang\" field.\n28. Welsh English: Set \"Geraint\" as the value for the \"lang\" field.",
+      "toolbench_enrichment": {
+        "category": "Media",
+        "endpoint_description": "Input limit: 3,000 characters / Don't forget to turn on your speakers :-)\nHint: If you finish a sentence, leave a space after the dot before the next one starts for better pronunciation.\n\n1. Arabic: For Arabic, use \"Zeina\" as the value for the \"lang\" field.\n2. Australian English: Choose between \"Russell\" or \"Nicole\" as the value for the \"lang\" field.\n3. Brazilian Portuguese: Select either \"Vitória,\" \"Camila,\" or \"Ricardo\" as the value for the \"lang\" field.\n4. British English: Use either \"Emma,\" \"Brian,\" or \"Amy\" as the value for the \"lang\" field.\n5. Canadian French: Set \"Chantal\" as the value for the \"lang\" field.\n6. Castilian Spanish: Choose between \"Conchita,\" \"Lucia,\" or \"Enrique\" as the value for the \"lang\" field.\n7. Chinese Mandarin: Use \"Zhiyu\" as the value for the \"lang\" field.\n8. Danish: Select either \"Naja\" or \"Mads\" as the value for the \"lang\" field.\n9. Dutch: Use either \"Ruben\" or \"Lotte\" as the value for the \"lang\" field.\n10. French: Choose between \"Céline,\" \"Léa,\" or \"Mathieu\" as the value for the \"lang\" field.\n11. German: Select either \"Hans,\" \"Vicki,\" or \"Marlene\" as the value for the \"lang\" field.\n12. Icelandic: Use either \"Dóra\" or \"Karl\" as the value for the \"lang\" field.\n13. Indian English: Set either \"Aditi\" or \"Raveena\" as the value for the \"lang\" field.\n14. Italian: Choose between \"Bianca,\" \"Carla,\" or \"Giorgio\" as the value for the \"lang\" field.\n15. Japanese: Use either \"Takumi\" or \"Mizuki\" as the value for the \"lang\" field.\n16. Korean: Set \"Seoyeon\" as the value for the \"lang\" field.\n17. Mexican Spanish: Use \"Mia\" as the value for the \"lang\" field.\n18. Norwegian: Set \"Liv\" as the value for the \"lang\" field.\n19. Polish: Choose between \"Jacek,\" \"Jan,\" \"Maja,\" or \"Ewa\" as the value for the \"lang\" field.\n20. Portuguese: Select either \"Cristiano\" or \"Inês\" as the value for the \"lang\" field.\n21. Romanian: Use \"Carmen\" as the value for the \"lang\" field.\n22. Russian: Choose between \"Maxim\" or \"Tatyana\" as the value for the \"lang\" field.\n23. Swedish: Set \"Astrid\" as the value for the \"lang\" field.\n24. Turkish: Use \"Filiz\" as the value for the \"lang\" field.\n25. US English: Select any of \"Salli,\" \"Ivy,\" \"Joey,\" \"Matthew,\" \"Kimberly,\" \"Kendra,\" \"Justin,\" or \"Joanna\" as the value for the \"lang\" field.\n26. US Spanish: Choose between \"Lupe,\" \"Penélope,\" or \"Miguel\" as the value for the \"lang\" field.\n27. Welsh: Use \"Gwyneth\" as the value for the \"lang\" field.\n28. Welsh English: Set \"Geraint\" as the value for the \"lang\" field.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Get Mp3 URL",
+        "endpoint_url": "https://text-to-speech-for-28-languages.p.rapidapi.com/",
+        "file_name": "text_to_speech_for_28_languages.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Text to speech with amazing features like pauses, emphasising words, speed, pitch, effects, conversations and much more, use these features and download as mp3 with the url provided in the response",
+        "tool_file_found": true,
+        "tool_name": "Text To Speech for 28+ languages",
+        "toolbench_relative_path": "Media/text_to_speech_for_28_languages.json"
+      },
+      "toolbench_tool_description": "Text to speech with amazing features like pauses, emphasising words, speed, pitch, effects, conversations and much more, use these features and download as mp3 with the url provided in the response",
+      "toolbench_tool_name": "Text To Speech for 28+ languages",
+      "url": "https://text-to-speech-for-28-languages.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.691,
+        "tp_kbps": 5.788,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.34037298502453217,
+    "topsis_rank": 29
+  },
+  {
+    "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+    "candidate_id": "",
+    "mode_rank": 30,
+    "llm_reported_rank": null,
+    "retrieved_rank": 11,
+    "rag_score": 0.4949255883693695,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+      "category": "News_Media",
+      "description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Fetch Parsed News Article by url_id",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Fetch Parsed News Article by url_id",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.897,
+        "tp_kbps": 51.535,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3336330608256031,
+    "topsis_rank": 30
+  },
+  {
+    "api_id": "phoenixink_introduction_with_statement",
+    "candidate_id": "",
+    "mode_rank": 31,
+    "llm_reported_rank": null,
+    "retrieved_rank": 4,
+    "rag_score": 0.5153684616088867,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "phoenixink.json",
+      "_tool": "phoenixink",
+      "api_id": "phoenixink_introduction_with_statement",
+      "category": "Text_Analysis",
+      "description": "By using this method, you will get an introduction, starting with statement.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "introduction_with_statement",
+      "tool_description": "Rebirth your articles with impeccable structure and flow. It has OpenI API support in the background. Look no further than PhoenixInk, the transformative API designed to help you achieve remarkable articles with flawless structure and seamless flow. As the legendary phoenix rises from its ashes, Pho",
+      "tool_name": "PhoenixInk",
+      "toolbench_endpoint_description": "By using this method, you will get an introduction, starting with statement.",
+      "toolbench_enrichment": {
+        "category": "Text_Analysis",
+        "endpoint_description": "By using this method, you will get an introduction, starting with statement.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "introduction_with_statement",
+        "endpoint_url": "https://phoenixink1.p.rapidapi.com/introduction_with_statement",
+        "file_name": "phoenixink.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Rebirth your articles with impeccable structure and flow. It has OpenI API support in the background.\nLook no further than PhoenixInk, the transformative API designed to help you achieve remarkable articles with flawless structure and seamless flow. \nAs the legendary phoenix rises from its ashes, PhoenixInk empowers you to resurrect your writing, infusing it with captivating elegance and clarity.",
+        "tool_file_found": true,
+        "tool_name": "PhoenixInk",
+        "toolbench_relative_path": "Text_Analysis/phoenixink.json"
+      },
+      "toolbench_tool_description": "Rebirth your articles with impeccable structure and flow. It has OpenI API support in the background.\nLook no further than PhoenixInk, the transformative API designed to help you achieve remarkable articles with flawless structure and seamless flow. \nAs the legendary phoenix rises from its ashes, PhoenixInk empowers you to resurrect your writing, infusing it with captivating elegance and clarity.",
+      "toolbench_tool_name": "PhoenixInk",
+      "url": "https://phoenixink1.p.rapidapi.com/introduction_with_statement",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.784,
+        "tp_kbps": 5.1015,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3303299819557454,
+    "topsis_rank": 31
+  },
+  {
+    "api_id": "sms77io_get_contacts",
+    "candidate_id": "",
+    "mode_rank": 32,
+    "llm_reported_rank": null,
+    "retrieved_rank": 40,
+    "rag_score": 0.4381648898124695,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "sms77io.json",
+      "_tool": "sms77io",
+      "api_id": "sms77io_get_contacts",
+      "category": "SMS",
+      "description": "Retrieves all contacts for a given API key.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Decides whether to return response as JSON or CSV (default).",
+            "name": "json",
+            "type": "ENUM"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "API Key from [Sms77.io](https://sms77.io).",
+            "name": "p",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Contacts",
+      "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "tool_name": "sms77io",
+      "toolbench_endpoint_description": "Retrieves all contacts for a given API key.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Retrieves all contacts for a given API key.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Contacts",
+        "endpoint_url": "https://sms77io.p.rapidapi.com/contacts",
+        "file_name": "sms77io.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+        "tool_file_found": true,
+        "tool_name": "sms77io",
+        "toolbench_relative_path": "SMS/sms77io.json"
+      },
+      "toolbench_tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "toolbench_tool_name": "sms77io",
+      "url": "https://sms77io.p.rapidapi.com/contacts",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.837,
+        "tp_kbps": 4.778,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.32429149764956633,
+    "topsis_rank": 32
+  },
+  {
+    "api_id": "smsapi_com_short_url_links_id",
+    "candidate_id": "",
+    "mode_rank": 33,
+    "llm_reported_rank": null,
+    "retrieved_rank": 23,
+    "rag_score": 0.4663912057876587,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "smsapi_com.json",
+      "_tool": "smsapi_com",
+      "api_id": "smsapi_com_short_url_links_id",
+      "category": "SMS",
+      "description": "Get short URL.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Short URL ID",
+            "name": "id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/short_url/links/{id}",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "tool_name": "SMSAPI.com",
+      "toolbench_endpoint_description": "Get short URL.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get short URL.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/short_url/links/{id}",
+        "endpoint_url": "https://smsapi-com3.p.rapidapi.com/short_url/links/{id}",
+        "file_name": "smsapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Powerful and easy SMS communication at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "SMSAPI.com",
+        "toolbench_relative_path": "SMS/smsapi_com.json"
+      },
+      "toolbench_tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "toolbench_tool_name": "SMSAPI.com",
+      "url": "https://smsapi-com3.p.rapidapi.com/short_url/links/{id}",
+      "qos": {
+        "availability": 0.9705,
+        "rt_s": 0.845,
+        "tp_kbps": 4.733,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.32193991953039214,
+    "topsis_rank": 33
+  },
+  {
+    "api_id": "riordanverse_api_get_character_by_id",
+    "candidate_id": "",
+    "mode_rank": 34,
+    "llm_reported_rank": null,
+    "retrieved_rank": 33,
+    "rag_score": 0.4520900547504425,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "riordanverse_api.json",
+      "_tool": "riordanverse_api",
+      "api_id": "riordanverse_api_get_character_by_id",
+      "category": "Media",
+      "description": "Get individual character by ID\nOptions:\n\n- Limit → Limit amount of responses received\n- Step → Skip amount of characters",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "id",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Character By ID",
+      "tool_description": "An API for RiordanVerse",
+      "tool_name": "riordanverse-api",
+      "toolbench_endpoint_description": "Get individual character by ID\nOptions:\n\n- Limit → Limit amount of responses received\n- Step → Skip amount of characters",
+      "toolbench_enrichment": {
+        "category": "Media",
+        "endpoint_description": "Get individual character by ID\nOptions:\n\n- Limit → Limit amount of responses received\n- Step → Skip amount of characters",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Character By ID",
+        "endpoint_url": "https://riordanverse-api.p.rapidapi.com/api/characters/{id}",
+        "file_name": "riordanverse_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API for RiordanVerse",
+        "tool_file_found": true,
+        "tool_name": "riordanverse-api",
+        "toolbench_relative_path": "Media/riordanverse_api.json"
+      },
+      "toolbench_tool_description": "An API for RiordanVerse",
+      "toolbench_tool_name": "riordanverse-api",
+      "url": "https://riordanverse-api.p.rapidapi.com/api/characters/{id}",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.864,
+        "tp_kbps": 2.314,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3204226230713894,
+    "topsis_rank": 34
+  },
+  {
+    "api_id": "newscatcher_v1_latest_headlines",
+    "candidate_id": "",
+    "mode_rank": 35,
+    "llm_reported_rank": null,
+    "retrieved_rank": 5,
+    "rag_score": 0.5140154361724854,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newscatcher.json",
+      "_tool": "newscatcher",
+      "api_id": "newscatcher_v1_latest_headlines",
+      "category": "News_Media",
+      "description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "en",
+            "description": "Specifies the language of the search.  Allowed values are:\n`af`, `ar`, `bg`, `bn`, `ca`,`cn`, `cs`, `cy`, `da`, `de`, `el`, `en`, `es`, `et`, `fa`, `fi`, `fr`, `gu`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `kn`, `ko`, `lt`, `lv`, `mk`, `ml`, `mr`, `ne`, `nl`, `no`, `pa`, `pl`, `pt`, `ro`, `ru`, `sk`, `sl`, `so`, `sq`, `sv`, `sw`, `ta`, `te`, `th`, `tl`, `tr`,`tw`, `uk`, `ur`, `vi`. \n Specifying the language will make your search more relevant",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The topic to which you want to restrict the articles of your choice. This parameter is [experimental]. Accepted values are `news`, `sport`, `tech`, `world`, `finance`, `politics`, `business`, `economics`, `entertainment`,`beauty`,`travel`,`music`,`food`,`science`\n- `news` usually means a general news feed (main headlines of a website).\n> Important: this parameter is [experimental]. Not all news articles are assigned with a `topic`, therefore, we cannot guarantee that 100% of topics talking about technology will be assigned a `tech` label.\n> One topic at a time, for example `topic=sport`",
+            "name": "topic",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The country to which you want to narrow your search. This parameter is [experimental]. We advise you to use it in conjunction with the `lang` parameter. Accepts any [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes",
+            "name": "country",
+            "type": "STRING"
+          },
+          {
+            "default": "True",
+            "description": "Adds to the output of the call two more variables: `media` and `media_content`\n\nMedia - the main image published with an article \n\nmedia_content  - a comma-separated string of all images used in an article",
+            "name": "media",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "/v1/latest_headlines",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "tool_name": "Newscatcher",
+      "toolbench_endpoint_description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/latest_headlines",
+        "endpoint_url": "https://newscatcher.p.rapidapi.com/v1/latest_headlines",
+        "file_name": "newscatcher.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+        "tool_file_found": true,
+        "tool_name": "Newscatcher",
+        "toolbench_relative_path": "News_Media/newscatcher.json"
+      },
+      "toolbench_tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "toolbench_tool_name": "Newscatcher",
+      "url": "https://newscatcher.p.rapidapi.com/v1/latest_headlines",
+      "qos": {
+        "availability": 0.9676,
+        "rt_s": 0.8654999999999999,
+        "tp_kbps": 2.3105,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3186723393599304,
+    "topsis_rank": 35
+  },
+  {
+    "api_id": "greek_news_in_english_get_all_sources",
+    "candidate_id": "",
+    "mode_rank": 36,
+    "llm_reported_rank": null,
+    "retrieved_rank": 7,
+    "rag_score": 0.504050612449646,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "greek_news_in_english.json",
+      "_tool": "greek_news_in_english",
+      "api_id": "greek_news_in_english_get_all_sources",
+      "category": "News_Media",
+      "description": "Get All Sources' names and ids",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Sources",
+      "tool_description": "An API showing all the latest Greek news in English",
+      "tool_name": "Greek News in English",
+      "toolbench_endpoint_description": "Get All Sources' names and ids",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get All Sources' names and ids",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Sources",
+        "endpoint_url": "https://greek-news-in-english.p.rapidapi.com/api/sources",
+        "file_name": "greek_news_in_english.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing all the latest Greek news  in English",
+        "tool_file_found": true,
+        "tool_name": "Greek News in English",
+        "toolbench_relative_path": "News_Media/greek_news_in_english.json"
+      },
+      "toolbench_tool_description": "An API showing all the latest Greek news  in English",
+      "toolbench_tool_name": "Greek News in English",
+      "url": "https://greek-news-in-english.p.rapidapi.com/api/sources",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.98,
+        "tp_kbps": 4.081,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3065347888506848,
+    "topsis_rank": 36
+  },
+  {
+    "api_id": "isummar_article_summarizer_using_site_url",
+    "candidate_id": "",
+    "mode_rank": 37,
+    "llm_reported_rank": null,
+    "retrieved_rank": 1,
+    "rag_score": 0.570310115814209,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "isummar.json",
+      "_tool": "isummar",
+      "api_id": "isummar_article_summarizer_using_site_url",
+      "category": "Text_Analysis",
+      "description": "This endpoint gets url and length from users",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "length",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Article summarizer using site url",
+      "tool_description": "The paragraphs and articles you enter are summarised using this API. Simply enter the URL of the website you want to get a summary of as input and get the quick summary of your lengthy paragraphs to save your time.",
+      "tool_name": "Isummar",
+      "toolbench_endpoint_description": "This endpoint gets url and length from users",
+      "toolbench_enrichment": {
+        "category": "Text_Analysis",
+        "endpoint_description": "This endpoint gets url and length from users",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Article summarizer using site url",
+        "endpoint_url": "https://isummar.p.rapidapi.com/url/",
+        "file_name": "isummar.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The paragraphs and articles you enter are summarised using this API. Simply enter the URL of the website you want to get a summary of as input and get the  quick summary of your lengthy paragraphs to save your time.",
+        "tool_file_found": true,
+        "tool_name": "Isummar",
+        "toolbench_relative_path": "Text_Analysis/isummar.json"
+      },
+      "toolbench_tool_description": "The paragraphs and articles you enter are summarised using this API. Simply enter the URL of the website you want to get a summary of as input and get the  quick summary of your lengthy paragraphs to save your time.",
+      "toolbench_tool_name": "Isummar",
+      "url": "https://isummar.p.rapidapi.com/url/",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 1.0465,
+        "tp_kbps": 2.8665000000000003,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.29851684146468843,
+    "topsis_rank": 37
+  },
+  {
+    "api_id": "pluralsight_articles_get_data_with_articles_about_it_operations",
+    "candidate_id": "",
+    "mode_rank": 38,
+    "llm_reported_rank": null,
+    "retrieved_rank": 25,
+    "rag_score": 0.4648468792438507,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "pluralsight_articles.json",
+      "_tool": "pluralsight_articles",
+      "api_id": "pluralsight_articles_get_data_with_articles_about_it_operations",
+      "category": "Education",
+      "description": "This endpoint will return back data with around 100 articles from Pluralsight's \"it-ops\" section.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "it-ops",
+            "description": "",
+            "name": "pathId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get data with articles about IT Operations",
+      "tool_description": "An API for a huge amount of articles for the newest software techologies, development and much more...",
+      "tool_name": "Pluralsight Articles",
+      "toolbench_endpoint_description": "This endpoint will return back data with around 100 articles from Pluralsight's \"it-ops\" section.",
+      "toolbench_enrichment": {
+        "category": "Education",
+        "endpoint_description": "This endpoint will return back data with around 100 articles from Pluralsight's \"it-ops\" section.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get data with articles about IT Operations",
+        "endpoint_url": "https://pluralsight-articles.p.rapidapi.com/articles/{pathid}",
+        "file_name": "pluralsight_articles.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API for a huge amount of articles for  the newest software techologies,  development and much more...",
+        "tool_file_found": true,
+        "tool_name": "Pluralsight Articles",
+        "toolbench_relative_path": "Education/pluralsight_articles.json"
+      },
+      "toolbench_tool_description": "An API for a huge amount of articles for  the newest software techologies,  development and much more...",
+      "toolbench_tool_name": "Pluralsight Articles",
+      "url": "https://pluralsight-articles.p.rapidapi.com/articles/{pathid}",
+      "qos": {
+        "availability": 0.8525,
+        "rt_s": 2.259,
+        "tp_kbps": 3.541,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.1489494471764679,
+    "topsis_rank": 38
+  },
+  {
+    "api_id": "smsto_get_messages",
+    "candidate_id": "",
+    "mode_rank": 39,
+    "llm_reported_rank": null,
+    "retrieved_rank": 16,
+    "rag_score": 0.47537216544151306,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_get_messages",
+      "category": "SMS",
+      "description": "Fetch paginated messages.\n\nPlease note that the messages will be sorted by the date of creating (sending) - latest first.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "2022-08-19",
+            "description": "Filter by created at",
+            "name": "created_at",
+            "type": "STRING"
+          },
+          {
+            "default": "created_at",
+            "description": "Field to sort by",
+            "name": "order_by",
+            "type": "STRING"
+          },
+          {
+            "default": "+3579865333",
+            "description": "Filter by recipient number",
+            "name": "to",
+            "type": "STRING"
+          },
+          {
+            "default": "desc",
+            "description": "Sort messages.",
+            "name": "order_direction",
+            "type": "STRING"
+          },
+          {
+            "default": "REJECTED",
+            "description": "Filter by status",
+            "name": "status",
+            "type": "STRING"
+          },
+          {
+            "default": "15",
+            "description": "The number of messages per page.",
+            "name": "limit",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get messages",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Fetch paginated messages.\n\nPlease note that the messages will be sorted by the date of creating (sending) - latest first.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Fetch paginated messages.\n\nPlease note that the messages will be sorted by the date of creating (sending) - latest first.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get messages",
+        "endpoint_url": "https://smsto.p.rapidapi.com/messages",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 6,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/messages",
+      "qos": {
+        "availability": 0.0147,
+        "rt_s": 2.014,
+        "tp_kbps": 2.979,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.09668637866814768,
+    "topsis_rank": 39
+  },
+  {
+    "api_id": "newscatcher_v1_search_free",
+    "candidate_id": "",
+    "mode_rank": 40,
+    "llm_reported_rank": null,
+    "retrieved_rank": 2,
+    "rag_score": 0.5240206122398376,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newscatcher.json",
+      "_tool": "newscatcher",
+      "api_id": "newscatcher_v1_search_free",
+      "category": "News_Media",
+      "description": "**Up to 100 articles per 1 API call even with free Basic Plan.**\nFree search. Only the language filter is allowed.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "True",
+            "description": "Adds to the output of the call two more variables: `media` and `media_content`\n\nMedia - the main image published with an article \n\nmedia_content  - a comma-separated string of all images used in an article",
+            "name": "media",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The number of the page. Use it to scroll through the results. Defaults to 1",
+            "name": "page",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Limit the search only for the sources which are in top 1 million online websites. Defaults to `True` (`False` if you want to turn it off). Unranked sources are assigned a rank that equals to `999999`",
+            "name": "ranked_only",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "How many articles to return per page. Defaults to 50, max is 100",
+            "name": "page_size",
+            "type": "STRING"
+          },
+          {
+            "default": "en",
+            "description": "Specifies the language of the search.  Allowed values are:\n`af`, `ar`, `bg`, `bn`, `ca`,`cn`, `cs`, `cy`, `da`, `de`, `el`, `en`, `es`, `et`, `fa`, `fi`, `fr`, `gu`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `kn`, `ko`, `lt`, `lv`, `mk`, `ml`, `mr`, `ne`, `nl`, `no`, `pa`, `pl`, `pt`, `ro`, `ru`, `sk`, `sl`, `so`, `sq`, `sv`, `sw`, `ta`, `te`, `th`, `tl`, `tr`,`tw`, `uk`, `ur`, `vi`. \nSpecifying the language will make your search more relevant",
+            "name": "lang",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "Elon Musk",
+            "description": "String to search for. Has to be [URL-encoded](https://en.wikipedia.org/wiki/Percent-encoding)",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/v1/search_free",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "tool_name": "Newscatcher",
+      "toolbench_endpoint_description": "**Up to 100 articles per 1 API call even with free Basic Plan.**\nFree search. Only the language filter is allowed.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "**Up to 100 articles per 1 API call even with free Basic Plan.**\nFree search. Only the language filter is allowed.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/search_free",
+        "endpoint_url": "https://newscatcher.p.rapidapi.com/v1/search_free",
+        "file_name": "newscatcher.json",
+        "optional_parameter_count": 5,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+        "tool_file_found": true,
+        "tool_name": "Newscatcher",
+        "toolbench_relative_path": "News_Media/newscatcher.json"
+      },
+      "toolbench_tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "toolbench_tool_name": "Newscatcher",
+      "url": "https://newscatcher.p.rapidapi.com/v1/search_free",
+      "qos": {
+        "availability": 0.1298,
+        "rt_s": 2.4779999999999998,
+        "tp_kbps": 0.8360000000000001,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.021611717551805215,
+    "topsis_rank": 40
+  }
+]

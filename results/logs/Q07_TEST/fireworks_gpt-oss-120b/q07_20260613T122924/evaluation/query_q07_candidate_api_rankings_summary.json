@@ -1,0 +1,7 @@
+{
+  "query_id": "q07",
+  "excel": "results/logs/Q07_TEST/fireworks_gpt-oss-120b/q07_20260613T122924/evaluation/query_q07_candidate_api_rankings.xlsx",
+  "rows_json": "results/logs/Q07_TEST/fireworks_gpt-oss-120b/q07_20260613T122924/evaluation/query_q07_candidate_api_rankings_rows.json",
+  "source": "retrieval_stage_functional_refinement",
+  "cache": "results/logs/Q07_TEST/fireworks_gpt-oss-120b/q07_20260613T122924/evaluation/functional_match_cache.json"
+}

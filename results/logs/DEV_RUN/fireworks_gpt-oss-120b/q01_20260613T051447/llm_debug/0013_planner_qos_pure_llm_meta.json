@@ -1,0 +1,23 @@
+{
+  "call_id": "0013_planner_qos_pure_llm",
+  "started_at": "2026-06-13T05:17:28-07:00",
+  "status": "completed",
+  "role_name": "planner_qos_pure_llm",
+  "provider": "fireworks",
+  "model": "accounts/fireworks/models/gpt-oss-120b",
+  "temperature": 0.0,
+  "force_json": true,
+  "max_tokens": null,
+  "timeout_seconds": 180,
+  "system_chars": 161,
+  "prompt_chars": 6407,
+  "metadata": {
+    "source": "run_autogen_pipeline",
+    "gateway": "autogen_gateway",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/gpt-oss-120b"
+  },
+  "response_chars": 3082,
+  "ended_at": "2026-06-13T05:17:34-07:00",
+  "duration_seconds": 5.92
+}

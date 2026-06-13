@@ -1,0 +1,402 @@
+{
+  "q01_1_ai_weather_by_meteosource_astro": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "provides only sun/moon data, not weather conditions"
+  },
+  "q01_1_climate_change_live_at_specific_source_weather_changes": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "returns weather news, not current/forecast data"
+  },
+  "q01_1_climate_news_weathertemp": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "offers generic temperature news, not location-specific weather"
+  },
+  "q01_1_cloud_cast_get_the_forecast": {
+    "candidate_id": "C04",
+    "functional_match": 1,
+    "comment": "returns forecast for current city"
+  },
+  "q01_1_easy_weather_current_conditions_detailed": {
+    "candidate_id": "C05",
+    "functional_match": 1,
+    "comment": "provides detailed current conditions for given coordinates"
+  },
+  "q01_1_easy_weather_historical_daily": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "historical data only, not current/forecast"
+  },
+  "q01_1_easy_weather_hourly_forecast_240_hours": {
+    "candidate_id": "C07",
+    "functional_match": 1,
+    "comment": "provides 240‑hour forecast data"
+  },
+  "q01_1_farmonaut_satellite_and_weather_data_retrieve_historical_weather_for_a_field": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "historical field weather, not current/forecast"
+  },
+  "q01_1_farmonaut_satellite_and_weather_data_retrieve_present_weather_data": {
+    "candidate_id": "C09",
+    "functional_match": 1,
+    "comment": "returns present day weather data"
+  },
+  "q01_1_farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude": {
+    "candidate_id": "C10",
+    "functional_match": 1,
+    "comment": "provides forecast for given latitude/longitude"
+  },
+  "q01_1_history_hourlyweather": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "historical hourly data only"
+  },
+  "q01_1_live_climate_updates_get_all_news_endpoint_related_to_climate_change": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "climate change news, not weather data"
+  },
+  "q01_1_national_weather_service_stations_stationid_observations_recordid": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "specific observation record, not general location forecast"
+  },
+  "q01_1_rapidweather_call_5_day_3_hour_forecast_data_by_city_id": {
+    "candidate_id": "C14",
+    "functional_match": 1,
+    "comment": "5‑day forecast by city ID"
+  },
+  "q01_1_tomorrow_io_activateanalert": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "activates alert, not weather retrieval"
+  },
+  "q01_1_tomorrow_io_activateanalert-2": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "activates alert, not weather retrieval"
+  },
+  "q01_1_tomorrow_io_createanalert-2": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "creates alert, not weather retrieval"
+  },
+  "q01_1_tomorrow_io_linklocations": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "links locations, not weather data"
+  },
+  "q01_1_tomorrow_io_listinsights": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "lists insights, not weather retrieval"
+  },
+  "q01_1_tomorrow_io_retrievealocation": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "retrieves location info, not weather"
+  },
+  "q01_1_tomorrow_io_retrieveanalert": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "retrieves predefined alert, not weather data"
+  },
+  "q01_1_tomorrow_io_retrieveeventsbasic": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "returns events, not direct current/forecast weather"
+  },
+  "q01_1_tomorrow_io_retrievetimelinesbasic": {
+    "candidate_id": "C23",
+    "functional_match": 1,
+    "comment": "provides timeline weather data for location"
+  },
+  "q01_1_tomorrow_io_retrieveweatherrecenthisotry": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "only historical weather, not current/forecast"
+  },
+  "q01_1_tomorrow_io_unlinklocations": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "unrelated location unlink operation"
+  },
+  "q01_1_tomorrow_io_unlinklocations-2": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "unrelated location unlink operation"
+  },
+  "q01_1_tomorrow_io_weather_forecast": {
+    "candidate_id": "C27",
+    "functional_match": 1,
+    "comment": "returns weather forecast data"
+  },
+  "q01_1_weather_api_by_any_city_get_weather_updates": {
+    "candidate_id": "C28",
+    "functional_match": 1,
+    "comment": "gives current weather for city"
+  },
+  "q01_1_weather_change_live_get_weather_report": {
+    "candidate_id": "C29",
+    "functional_match": 1,
+    "comment": "generic weather report endpoint"
+  },
+  "q01_1_weather_request_single_data": {
+    "candidate_id": "C30",
+    "functional_match": 1,
+    "comment": "single city weather information"
+  },
+  "q01_1_weatherapi_com_forecast_weather_api": {
+    "candidate_id": "C31",
+    "functional_match": 1,
+    "comment": "forecast up to 14 days"
+  },
+  "q01_1_weatherapi_com_ip_lookup_api": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "IP lookup, no weather"
+  },
+  "q01_1_weatherapi_com_realtime_weather_api": {
+    "candidate_id": "C33",
+    "functional_match": 1,
+    "comment": "current realtime weather data"
+  },
+  "q01_1_weatherapi_com_sports_api": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "sports data, unrelated"
+  },
+  "q01_1_weatherdl_weather_forecast": {
+    "candidate_id": "C35",
+    "functional_match": 1,
+    "comment": "downloads full forecast"
+  },
+  "q01_1_weatherstack_get": {
+    "candidate_id": "C36",
+    "functional_match": 1,
+    "comment": "real-time weather info"
+  },
+  "q01_1_world_weather_online_api_local_weather_api": {
+    "candidate_id": "C37",
+    "functional_match": 1,
+    "comment": "current and forecast weather"
+  },
+  "q01_1_world_weather_online_api_marine_history_weather_api": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "marine historical data only"
+  },
+  "q01_1_world_weather_online_api_ski_weather_api": {
+    "candidate_id": "C39",
+    "functional_match": 1,
+    "comment": "ski weather forecast data"
+  },
+  "q01_1_yahoo_weather_search_by_woeid": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "searches woeid, not weather"
+  },
+  "q01_2_ai_messaging_receive_text": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "receives messages only"
+  },
+  "q01_2_ambee_air_quality_weather": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "provides weather data, not SMS"
+  },
+  "q01_2_bulksmssender_send": {
+    "candidate_id": "C03",
+    "functional_match": 1,
+    "comment": "sends bulk SMS messages"
+  },
+  "q01_2_easysendsms_check_balance": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "checks account balance only"
+  },
+  "q01_2_easysendsms_sms_api": {
+    "candidate_id": "C05",
+    "functional_match": 1,
+    "comment": "sends SMS messages"
+  },
+  "q01_2_green_api_getgroupdata": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "WhatsApp group data, not SMS"
+  },
+  "q01_2_green_api_setdisappearingchat": {
+    "candidate_id": "C07",
+    "functional_match": 0,
+    "comment": "WhatsApp chat setting, not SMS"
+  },
+  "q01_2_green_api_setprofilepicture": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "WhatsApp profile picture, not SMS"
+  },
+  "q01_2_hooksms_send": {
+    "candidate_id": "C09",
+    "functional_match": 1,
+    "comment": "sends SMS via simple POST"
+  },
+  "q01_2_infobip_sms_synchronous_request": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "number validation request, not SMS"
+  },
+  "q01_2_rapid_sms_api_send_sms": {
+    "candidate_id": "C11",
+    "functional_match": 1,
+    "comment": "sends SMS messages"
+  },
+  "q01_2_reach_interactive_message_send": {
+    "candidate_id": "C12",
+    "functional_match": 1,
+    "comment": "creates and sends SMS messages"
+  },
+  "q01_2_sms77io_get_status": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "retrieves delivery status only"
+  },
+  "q01_2_sms_gateway_sms_gateway": {
+    "candidate_id": "C14",
+    "functional_match": 1,
+    "comment": "sends SMS with body and destination"
+  },
+  "q01_2_sms_receive_getupdates": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "receives incoming SMS updates"
+  },
+  "q01_2_sms_receive_settag": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "sets tag, not sending"
+  },
+  "q01_2_sms_receive_settag-2": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "sets tag, not sending"
+  },
+  "q01_2_sms_voice_messages_voicemessage": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "sends voice messages, not SMS"
+  },
+  "q01_2_smsapi_com_profile_regional_settings_available_languages": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "profile settings, not SMS"
+  },
+  "q01_2_smsapi_com_sms_sendernames-2": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "sets sender name, not sending"
+  },
+  "q01_2_smsapi_com_subusers": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "retrieves subusers, not sending SMS"
+  },
+  "q01_2_smsapi_com_subusers_id_shares_sendernames": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "gets sender names, not sending"
+  },
+  "q01_2_smsguru_test_service_response_time": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "only tests response time"
+  },
+  "q01_2_smsto_schedule_sending_messages": {
+    "candidate_id": "C24",
+    "functional_match": 1,
+    "comment": "schedules SMS messages for later"
+  },
+  "q01_2_smsto_send_campaign_message": {
+    "candidate_id": "C25",
+    "functional_match": 1,
+    "comment": "sends SMS campaign to many"
+  },
+  "q01_2_smsto_send_campaign_message-2": {
+    "candidate_id": "C26",
+    "functional_match": 1,
+    "comment": "sends SMS campaign to many"
+  },
+  "q01_2_smsto_send_message_to_a_list_or_multiple_list_in_array": {
+    "candidate_id": "C27",
+    "functional_match": 1,
+    "comment": "sends SMS to list/array"
+  },
+  "q01_2_smsto_send_single_message": {
+    "candidate_id": "C28",
+    "functional_match": 1,
+    "comment": "sends single SMS message"
+  },
+  "q01_2_smsto_send_viber_message-2": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "sends Viber, not SMS"
+  },
+  "q01_2_smsway_app_addressbook_createcontact": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "creates contact, not sending"
+  },
+  "q01_2_smsway_app_addressbook_createcontact-2": {
+    "candidate_id": "C31",
+    "functional_match": 0,
+    "comment": "creates contact, not sending"
+  },
+  "q01_2_smsway_app_messages_getreceived": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "retrieves received messages"
+  },
+  "q01_2_smsway_app_messages_getsent": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "retrieves sent messages list"
+  },
+  "q01_2_thingscale_iot_message_broker_create_a_new_event-2": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "IoT event creation, unrelated"
+  },
+  "q01_2_thingscale_iot_message_broker_update_an_event": {
+    "candidate_id": "C35",
+    "functional_match": 0,
+    "comment": "IoT event update, unrelated"
+  },
+  "q01_2_weather_api_by_any_city_get_weather_updates": {
+    "candidate_id": "C36",
+    "functional_match": 0,
+    "comment": "provides weather data only"
+  },
+  "q01_2_weatherapi_com_forecast_weather_api": {
+    "candidate_id": "C37",
+    "functional_match": 0,
+    "comment": "provides forecast data only"
+  },
+  "q01_2_weatherapi_com_ip_lookup_api": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "provides IP lookup only"
+  },
+  "q01_2_weatherapi_com_realtime_weather_api": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "provides realtime weather only"
+  },
+  "q01_2_weatherstack_get": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "provides weather data only"
+  }
+}

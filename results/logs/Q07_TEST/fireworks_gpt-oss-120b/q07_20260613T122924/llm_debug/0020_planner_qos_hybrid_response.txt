@@ -1,0 +1,146 @@
+{
+"primary_plan": {
+"plan_id": 1,
+"summary": "Fetch the latest news from a source, summarize the articles into an SMS‑sized digest, and send the digest via SMS on a daily schedule.",
+"steps": [
+{
+"step": 1,
+"api_id": "moka_news_by_source_new",
+"subtask_id": 1,
+"action": "Retrieve the most recent 50 news items from the default source (cnn) using the Moka News API.",
+"input_from_previous_step": "none",
+"output_to_next_step": "news_articles",
+"why": "Provides fresh news content required for the digest; low latency and high availability.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.12,
+"tp_kbps": 33.333,
+"availability": 1.0,
+"valid_qos": true
+}
+},
+{
+"step": 2,
+"api_id": "text_summarizer_api_summarizer",
+"subtask_id": 2,
+"action": "Summarize the fetched news articles into a short text (≈40% of original length) suitable for an SMS message.",
+"input_from_previous_step": "news_articles",
+"output_to_next_step": "sms_digest",
+"why": "Transforms potentially long news content into a concise digest; QoS is acceptable for text processing.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.2475,
+"tp_kbps": 12.1205,
+"availability": 0.9794,
+"valid_qos": true
+}
+},
+{
+"step": 3,
+"api_id": "smsto_send_campaign_message-2",
+"subtask_id": 3,
+"action": "Send the summarized digest as an SMS to the configured recipients using the SMSto API.",
+"input_from_previous_step": "sms_digest",
+"output_to_next_step": "sms_sent_confirmation",
+"why": "Delivers the final digest to users via SMS; highest availability and fast response.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.1365,
+"tp_kbps": 36.63,
+"availability": 0.9971,
+"valid_qos": true
+}
+}
+],
+"subtask_coverage": [
+{
+"subtask_id": 1,
+"description": "Fetch top news articles using a news API",
+"steps": [1],
+"coverage": "full"
+},
+{
+"subtask_id": 2,
+"description": "Summarize the fetched articles into an SMS-length digest using a language model API",
+"steps": [2],
+"coverage": "full"
+},
+{
+"subtask_id": 3,
+"description": "Send the SMS digest via an SMS messaging API",
+"steps": [3],
+"coverage": "full"
+}
+]
+},
+"execution_workflow": {
+"type": "sequential",
+"steps": [
+{
+"step": 1,
+"api_id": "moka_news_by_source_new",
+"subtask_id": 1,
+"method": "GET",
+"url": "https://moka-news.p.rapidapi.com/source.php",
+"required_parameters": [
+{
+"name": "source",
+"source": "constant/default",
+"value_hint": "cnn"
+}
+],
+"optional_parameters": [],
+"depends_on": [],
+"input_mapping": "none",
+"output_mapping": "news_articles",
+"expected_output": "JSON array of the latest 50 news items from the selected source.",
+"planner_override_reason": null
+},
+{
+"step": 2,
+"api_id": "text_summarizer_api_summarizer",
+"subtask_id": 2,
+"method": "POST",
+"url": "https://text-summarizer-api.p.rapidapi.com/summarizer",
+"required_parameters": [
+{
+"name": "text",
+"source": "previous_step_output",
+"value_hint": "news_articles"
+},
+{
+"name": "output_percent",
+"source": "constant/default",
+"value_hint": "40"
+}
+],
+"optional_parameters": [],
+"depends_on": [1],
+"input_mapping": "news_articles",
+"output_mapping": "sms_digest",
+"expected_output": "A concise summary (≈40% of original length) suitable for an SMS message.",
+"planner_override_reason": null
+},
+{
+"step": 3,
+"api_id": "smsto_send_campaign_message-2",
+"subtask_id": 3,
+"method": "POST",
+"url": "https://smsto.p.rapidapi.com/sms/send",
+"required_parameters": [],
+"optional_parameters": [],
+"depends_on": [2],
+"input_mapping": "sms_digest",
+"output_mapping": "sms_sent_confirmation",
+"expected_output": "Confirmation that the SMS containing the digest was sent to the recipients.",
+"planner_override_reason": null
+}
+]
+},
+"selected_api_ids": [
+"moka_news_by_source_new",
+"text_summarizer_api_summarizer",
+"smsto_send_campaign_message-2"
+],
+"overall_rationale": "The three selected APIs directly map to the ordered subtasks: Moka News provides fresh articles, the Text Summarizer condenses them to an SMS‑friendly length, and SMSto reliably dispatches the digest via SMS. All APIs have high availability (>0.97) and low response times, ensuring the daily workflow runs quickly and consistently. The workflow preserves the required sequence, passes data from one step to the next through clearly defined input/output mappings, and respects the fixed_one planning mode by using exactly one API per subtask."
+}

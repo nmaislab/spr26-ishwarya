@@ -1,0 +1,1082 @@
+[
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C22",
+    "Selected_API": "newscatcher_v1_aggregation",
+    "Functional Match (0/1)": 0,
+    "Comments": "only provides article counts, no content"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C09",
+    "Selected_API": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+    "Functional Match (0/1)": 1,
+    "Comments": "fetches dev.to weekly top articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C23",
+    "Selected_API": "newscatcher_v1_latest_headlines",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns latest 100 articles, suitable"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C17",
+    "Selected_API": "latest_news_latest_news_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "searches 20k sources, fetches latest news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C37",
+    "Selected_API": "specrom_news_api_get_news_headlines_by_keyword_search",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches headlines by keyword, not top list"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C10",
+    "Selected_API": "dev_to_api_get_the_month_s_top_articles",
+    "Functional Match (0/1)": 1,
+    "Comments": "fetches dev.to monthly top articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C36",
+    "Selected_API": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches single article by id"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C24",
+    "Selected_API": "newscatcher_v1_search_free",
+    "Functional Match (0/1)": 1,
+    "Comments": "search returns up to 100 articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C38",
+    "Selected_API": "sri_lanka_news_api_get_news_from_one_news_source",
+    "Functional Match (0/1)": 0,
+    "Comments": "limited to Sri Lankan source"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C21",
+    "Selected_API": "news_v3_all_articles",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns all articles, usable for fetching news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C20",
+    "Selected_API": "moka_news_by_source_new",
+    "Functional Match (0/1)": 1,
+    "Comments": "gets recent 50 items from a source"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C35",
+    "Selected_API": "specrom_news_api_fetch_parsed_news_article_by_url",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches single article by URL"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C25",
+    "Selected_API": "newsdata_archive",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides historical archive, not current top"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C40",
+    "Selected_API": "websites_scrapper_scrap_website",
+    "Functional Match (0/1)": 0,
+    "Comments": "scrapes based on query, not generic top"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C12",
+    "Selected_API": "global_recession_live_get_specific_news_articles_by_publication",
+    "Functional Match (0/1)": 0,
+    "Comments": "specific recession publication, not general news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C27",
+    "Selected_API": "newsnow_news_powered_by_duck_duck_go",
+    "Functional Match (0/1)": 1,
+    "Comments": "real-time aggregation returns news articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C18",
+    "Selected_API": "live_climate_change_news_v2_get_individual_news_articles_from_news_on_climate_change",
+    "Functional Match (0/1)": 0,
+    "Comments": "climate change specific article, wrong domain"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C26",
+    "Selected_API": "newsdata_sources",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists sources only, no articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C15",
+    "Selected_API": "ieee_spectrum_api_get_the_latest_30_news_from_ieee_spectrum",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns latest 30 IEEE Spectrum news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C29",
+    "Selected_API": "pac_api_get_trump_articles_from_specific_newspaper",
+    "Functional Match (0/1)": 0,
+    "Comments": "only Trump articles, not general news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C28",
+    "Selected_API": "newsnow_top_news_powered_by_duck_duck_go",
+    "Functional Match (0/1)": 1,
+    "Comments": "explicit top news endpoint"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C30",
+    "Selected_API": "papercliff_history",
+    "Functional Match (0/1)": 0,
+    "Comments": "gives article counts, not articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C11",
+    "Selected_API": "global_recession_live_get_all_global_recession_news",
+    "Functional Match (0/1)": 0,
+    "Comments": "only recession news, domain-specific"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C13",
+    "Selected_API": "greek_news_in_english_get_all_sources",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists Greek news sources, no articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C33",
+    "Selected_API": "specrom_news_api_extract_all_social_media_handles_urls",
+    "Functional Match (0/1)": 0,
+    "Comments": "extracts social handles, not news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C03",
+    "Selected_API": "anime_news_net_get_details_of_a_news_item",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets details of one item, not list"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C32",
+    "Selected_API": "specrom_news_api_classify_news_articles_using_smart_labels",
+    "Functional Match (0/1)": 0,
+    "Comments": "classifies articles, does not fetch"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C14",
+    "Selected_API": "guardian_searchcontent",
+    "Functional Match (0/1)": 1,
+    "Comments": "searches Guardian content, can retrieve news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C31",
+    "Selected_API": "papercliff_timeline",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns recent 100 articles, suitable"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C04",
+    "Selected_API": "article_api_extract-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "extracts article from URL, not fetches news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C08",
+    "Selected_API": "climate_news_api_v2_get_all_climate_change_related_news",
+    "Functional Match (0/1)": 0,
+    "Comments": "only climate change news, wrong domain"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C19",
+    "Selected_API": "malaysia_kini_get_article_by_sid",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches single Malaysia Kini article"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C02",
+    "Selected_API": "a_i_smartable_gettopics",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides topics only, no articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C01",
+    "Selected_API": "a_i_smartable_getpeoplebytopic",
+    "Functional Match (0/1)": 0,
+    "Comments": "returns influencers, not news articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C05",
+    "Selected_API": "biztoc_sources",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists sources, does not return articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C07",
+    "Selected_API": "climate_change_live_v27_get_all_climate_change_news",
+    "Functional Match (0/1)": 0,
+    "Comments": "only climate change news, wrong domain"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C06",
+    "Selected_API": "climate_change_api_v5_get_all_climate_change_news",
+    "Functional Match (0/1)": 0,
+    "Comments": "only climate change news, wrong domain"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C34",
+    "Selected_API": "specrom_news_api_extract_email_address_by_url",
+    "Functional Match (0/1)": 0,
+    "Comments": "extracts emails, not news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C16",
+    "Selected_API": "kubric_the_comprehensive_movie_news_api_advanced_search",
+    "Functional Match (0/1)": 0,
+    "Comments": "movie news only, not general top news"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "1",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C39",
+    "Selected_API": "url_content_extractor_get_trending",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns trending news articles"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C10",
+    "Selected_API": "isummar_article_summarizer_using_site_url",
+    "Functional Match (0/1)": 1,
+    "Comments": "summarizes article via URL, matches task"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C16",
+    "Selected_API": "newscatcher_v1_search_free",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches articles, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C35",
+    "Selected_API": "text_summarizer_api_summarizer",
+    "Functional Match (0/1)": 1,
+    "Comments": "text summarization with configurable length"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C19",
+    "Selected_API": "phoenixink_introduction_with_statement",
+    "Functional Match (0/1)": 0,
+    "Comments": "generates intro, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C15",
+    "Selected_API": "newscatcher_v1_latest_headlines",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves latest articles, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C02",
+    "Selected_API": "article_api_extract-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "extracts article content, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C07",
+    "Selected_API": "greek_news_in_english_get_all_sources",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists news sources, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C18",
+    "Selected_API": "phoenixink_introduction_with_challenge",
+    "Functional Match (0/1)": 0,
+    "Comments": "generates intro, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C32",
+    "Selected_API": "specrom_news_api_get_news_headlines_by_keyword_search",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches headlines, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C37",
+    "Selected_API": "tldrthis_human_like_article_summarization",
+    "Functional Match (0/1)": 1,
+    "Comments": "abstractive article summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C31",
+    "Selected_API": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches article by id, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C30",
+    "Selected_API": "specrom_news_api_fetch_parsed_news_article_by_url",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches article text, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C08",
+    "Selected_API": "guardian_searchcontent",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches content, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C14",
+    "Selected_API": "newscatcher_v1_aggregation",
+    "Functional Match (0/1)": 0,
+    "Comments": "aggregates article counts, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C04",
+    "Selected_API": "fast_language_detection_detect",
+    "Functional Match (0/1)": 0,
+    "Comments": "detects language only"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C29",
+    "Selected_API": "smsto_get_messages",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches sent messages, unrelated"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C23",
+    "Selected_API": "rushtranslate_list_orders",
+    "Functional Match (0/1)": 0,
+    "Comments": "order listing, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C24",
+    "Selected_API": "semantic_text_analysis_entity_extraction_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "entity extraction, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C34",
+    "Selected_API": "summarizen_extractive_text_summarization_get_a_text_s_key_sentences",
+    "Functional Match (0/1)": 1,
+    "Comments": "extractive summarization of text"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C09",
+    "Selected_API": "hadiths_api_search_for_hadiths_with_key_words",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches hadiths, unrelated"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C05",
+    "Selected_API": "financial_summarization_advanced_summarize",
+    "Functional Match (0/1)": 0,
+    "Comments": "financial summarization, domain mismatch"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C33",
+    "Selected_API": "sri_lanka_news_api_get_news_from_one_news_source",
+    "Functional Match (0/1)": 0,
+    "Comments": "news source fetch, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C28",
+    "Selected_API": "smsapi_com_short_url_links_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "short URL retrieval, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C27",
+    "Selected_API": "sms77io_replies",
+    "Functional Match (0/1)": 0,
+    "Comments": "SMS replies history, unrelated"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C20",
+    "Selected_API": "pluralsight_articles_get_data_with_articles_about_it_operations",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides IT articles, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C13",
+    "Selected_API": "news_parser_article",
+    "Functional Match (0/1)": 0,
+    "Comments": "extracts structured data, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C38",
+    "Selected_API": "translate_com_api_create_human_translation_order",
+    "Functional Match (0/1)": 0,
+    "Comments": "human translation order, unrelated"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C21",
+    "Selected_API": "rapid_translate_multi_traduction_rapid_translate_long_text",
+    "Functional Match (0/1)": 0,
+    "Comments": "translation service, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C12",
+    "Selected_API": "multilingual_translate_service_send_task_to_translation-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "translation task, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C11",
+    "Selected_API": "multilingual_translate_service_send_task_to_translation",
+    "Functional Match (0/1)": 0,
+    "Comments": "translation task, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C03",
+    "Selected_API": "article_data_extraction_and_text_mining_v1_1_extract",
+    "Functional Match (0/1)": 0,
+    "Comments": "extracts clean text, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C40",
+    "Selected_API": "youtube_summarizer_by_chatgpt_youtube_summarizer_v2",
+    "Functional Match (0/1)": 0,
+    "Comments": "video summarization, not article text"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C22",
+    "Selected_API": "riordanverse_api_get_character_by_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "character info, unrelated"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C39",
+    "Selected_API": "virtual_number_view_sms_history",
+    "Functional Match (0/1)": 0,
+    "Comments": "view SMS history, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C26",
+    "Selected_API": "sms77io_get_status",
+    "Functional Match (0/1)": 0,
+    "Comments": "delivery status, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C36",
+    "Selected_API": "text_to_speech_for_28_languages_get_mp3_url",
+    "Functional Match (0/1)": 0,
+    "Comments": "text-to-speech, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C17",
+    "Selected_API": "nobel_sms_get_sms_status",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets SMS status, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C06",
+    "Selected_API": "google_translate_text_detectlanguage",
+    "Functional Match (0/1)": 0,
+    "Comments": "detects language, not summarizing"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C01",
+    "Selected_API": "a_i_smartable_gettopics",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides topics list, not summarization"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "2",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C25",
+    "Selected_API": "sms77io_get_contacts",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves contacts, unrelated"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C12",
+    "Selected_API": "reach_interactive_message_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "creates and sends SMS messages"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C29",
+    "Selected_API": "smsapi_com_subusers_id_shares_sendernames",
+    "Functional Match (0/1)": 0,
+    "Comments": "shares sender names"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C40",
+    "Selected_API": "smsway_app_messages_getsent",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets sent messages"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C09",
+    "Selected_API": "hooksms_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "outbound SMS send endpoint"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C23",
+    "Selected_API": "sms_voice_messages_voicemessage",
+    "Functional Match (0/1)": 0,
+    "Comments": "sends voice, not SMS"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C11",
+    "Selected_API": "rapid_sms_api_send_sms",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends a text message"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C39",
+    "Selected_API": "smsway_app_messages_getreceived",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets received messages"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C31",
+    "Selected_API": "smsjet_send_2fa_token",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS 2FA token"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C27",
+    "Selected_API": "smsapi_com_sms_sendernames-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "sets sender name only"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C05",
+    "Selected_API": "easysendsms_check_balance",
+    "Functional Match (0/1)": 0,
+    "Comments": "balance query, not sending"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C25",
+    "Selected_API": "smsapi_com_short_url_links-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates short URL"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C21",
+    "Selected_API": "sms_receive_settag",
+    "Functional Match (0/1)": 0,
+    "Comments": "only sets receive tag, not sending"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C22",
+    "Selected_API": "sms_receive_settag-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "only sets receive tag, not sending"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C14",
+    "Selected_API": "sms77io_get_balance",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves account balance"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C26",
+    "Selected_API": "smsapi_com_short_url_links_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves short URL"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C28",
+    "Selected_API": "smsapi_com_subusers",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists subusers"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C30",
+    "Selected_API": "smsguru_test_service_response_time",
+    "Functional Match (0/1)": 0,
+    "Comments": "checks response time"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C06",
+    "Selected_API": "easysendsms_sms_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "general SMS sending API"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C03",
+    "Selected_API": "branded_sms_pakistan_short_code_sender_message_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS via short code"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C32",
+    "Selected_API": "smsto_get_messages",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches received messages"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C20",
+    "Selected_API": "sms_receive_getupdates",
+    "Functional Match (0/1)": 0,
+    "Comments": "receives incoming SMS updates"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C18",
+    "Selected_API": "sms_exchange_send_sms",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS in France"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C17",
+    "Selected_API": "sms_app_send_sms",
+    "Functional Match (0/1)": 1,
+    "Comments": "SMS sending capability"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C08",
+    "Selected_API": "hooksms_otp_verification",
+    "Functional Match (0/1)": 0,
+    "Comments": "OTP verification, not sending"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C19",
+    "Selected_API": "sms_gateway_sms_gateway",
+    "Functional Match (0/1)": 1,
+    "Comments": "SMS sending via gateway"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C15",
+    "Selected_API": "sms77io_get_status",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets delivery status"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C13",
+    "Selected_API": "send_sms_send_sms",
+    "Functional Match (0/1)": 1,
+    "Comments": "basic SMS send function"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C01",
+    "Selected_API": "ai_messaging_receive_text",
+    "Functional Match (0/1)": 0,
+    "Comments": "receives messages only"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C10",
+    "Selected_API": "post_paid_sms_send_sms",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS messages"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C02",
+    "Selected_API": "branded_sms_pakistan_send_message_to_multiple_numbers",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends branded SMS to multiple numbers"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C37",
+    "Selected_API": "smsto_send_single_message",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends single SMS"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C33",
+    "Selected_API": "smsto_schedule_sending_messages",
+    "Functional Match (0/1)": 1,
+    "Comments": "schedules SMS sending"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C04",
+    "Selected_API": "bulksmssender_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "bulk SMS sending endpoint"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C38",
+    "Selected_API": "smsway_app_devices_getdevice",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets device info"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C36",
+    "Selected_API": "smsto_send_message_to_a_list_or_multiple_list_in_array",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS to list"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C24",
+    "Selected_API": "smsapi_com_profile_regional_settings_available_languages",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves language settings"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C34",
+    "Selected_API": "smsto_send_campaign_message",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS campaign"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C35",
+    "Selected_API": "smsto_send_campaign_message-2",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS campaign"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C07",
+    "Selected_API": "go_messenger_send_message",
+    "Functional Match (0/1)": 1,
+    "Comments": "simple SMS send endpoint"
+  },
+  {
+    "Query_ID": "q07",
+    "Sub Task": "3",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C16",
+    "Selected_API": "sms77io_send_voice_call",
+    "Functional Match (0/1)": 0,
+    "Comments": "voice call, not SMS"
+  }
+]

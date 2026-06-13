@@ -1,0 +1,162 @@
+{
+  "sms_voice_messages_voicemessage": {
+    "qos_llm_score": 0.81,
+    "qos_llm_rank": 1
+  },
+  "sms_receive_settag-2": {
+    "qos_llm_score": 0.75,
+    "qos_llm_rank": 2
+  },
+  "smsapi_com_sms_sendernames-2": {
+    "qos_llm_score": 0.73,
+    "qos_llm_rank": 3
+  },
+  "smsto_send_campaign_message-2": {
+    "qos_llm_score": 0.71,
+    "qos_llm_rank": 4
+  },
+  "smsway_app_messages_getsent": {
+    "qos_llm_score": 0.7,
+    "qos_llm_rank": 5
+  },
+  "sms_receive_settag": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 6
+  },
+  "weather_api_by_any_city_get_weather_updates": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 7
+  },
+  "smsguru_test_service_response_time": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 8
+  },
+  "thingscale_iot_message_broker_create_a_new_event-2": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 9
+  },
+  "ai_messaging_receive_text": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 10
+  },
+  "smsto_send_viber_message-2": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 11
+  },
+  "easysendsms_sms_api": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 12
+  },
+  "smsapi_com_subusers": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 13
+  },
+  "smsapi_com_subusers_id_shares_sendernames": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 14
+  },
+  "smsto_schedule_sending_messages": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 15
+  },
+  "weatherapi_com_forecast_weather_api": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 16
+  },
+  "green_api_getgroupdata": {
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 17
+  },
+  "ambee_air_quality_weather": {
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 18
+  },
+  "infobip_sms_synchronous_request": {
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 19
+  },
+  "sms77io_get_status": {
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 20
+  },
+  "sms_receive_getupdates": {
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 21
+  },
+  "smsway_app_addressbook_createcontact-2": {
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 22
+  },
+  "weatherstack_get": {
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 23
+  },
+  "smsapi_com_profile_regional_settings_available_languages": {
+    "qos_llm_score": 0.57,
+    "qos_llm_rank": 24
+  },
+  "easysendsms_check_balance": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 25
+  },
+  "green_api_setprofilepicture": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 26
+  },
+  "smsto_send_campaign_message": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 27
+  },
+  "smsto_send_message_to_a_list_or_multiple_list_in_array": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 28
+  },
+  "thingscale_iot_message_broker_update_an_event": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 29
+  },
+  "smsway_app_addressbook_createcontact": {
+    "qos_llm_score": 0.55,
+    "qos_llm_rank": 30
+  },
+  "sms_gateway_sms_gateway": {
+    "qos_llm_score": 0.51,
+    "qos_llm_rank": 31
+  },
+  "smsway_app_messages_getreceived": {
+    "qos_llm_score": 0.51,
+    "qos_llm_rank": 32
+  },
+  "bulksmssender_send": {
+    "qos_llm_score": 0.49,
+    "qos_llm_rank": 33
+  },
+  "hooksms_send": {
+    "qos_llm_score": 0.49,
+    "qos_llm_rank": 34
+  },
+  "weatherapi_com_realtime_weather_api": {
+    "qos_llm_score": 0.49,
+    "qos_llm_rank": 35
+  },
+  "rapid_sms_api_send_sms": {
+    "qos_llm_score": 0.36,
+    "qos_llm_rank": 36
+  },
+  "smsto_send_single_message": {
+    "qos_llm_score": 0.35,
+    "qos_llm_rank": 37
+  },
+  "green_api_setdisappearingchat": {
+    "qos_llm_score": 0.33,
+    "qos_llm_rank": 38
+  },
+  "reach_interactive_message_send": {
+    "qos_llm_score": 0.32,
+    "qos_llm_rank": 39
+  },
+  "weatherapi_com_ip_lookup_api": {
+    "qos_llm_score": 0.0,
+    "qos_llm_rank": 40
+  }
+}

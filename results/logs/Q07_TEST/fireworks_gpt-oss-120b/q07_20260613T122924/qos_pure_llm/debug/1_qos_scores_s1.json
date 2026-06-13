@@ -1,0 +1,162 @@
+{
+  "specrom_news_api_extract_email_address_by_url": {
+    "qos_llm_score": 0.989,
+    "qos_llm_rank": 1
+  },
+  "live_climate_change_news_v2_get_individual_news_articles_from_news_on_climate_change": {
+    "qos_llm_score": 0.807,
+    "qos_llm_rank": 2
+  },
+  "newsnow_news_powered_by_duck_duck_go": {
+    "qos_llm_score": 0.799,
+    "qos_llm_rank": 3
+  },
+  "climate_news_api_v2_get_all_climate_change_related_news": {
+    "qos_llm_score": 0.692,
+    "qos_llm_rank": 4
+  },
+  "moka_news_by_source_new": {
+    "qos_llm_score": 0.689,
+    "qos_llm_rank": 5
+  },
+  "specrom_news_api_classify_news_articles_using_smart_labels": {
+    "qos_llm_score": 0.688,
+    "qos_llm_rank": 6
+  },
+  "news_v3_all_articles": {
+    "qos_llm_score": 0.684,
+    "qos_llm_rank": 7
+  },
+  "newsdata_sources": {
+    "qos_llm_score": 0.683,
+    "qos_llm_rank": 8
+  },
+  "a_i_smartable_gettopics": {
+    "qos_llm_score": 0.682,
+    "qos_llm_rank": 9
+  },
+  "climate_change_live_v27_get_all_climate_change_news": {
+    "qos_llm_score": 0.682,
+    "qos_llm_rank": 10
+  },
+  "global_recession_live_get_all_global_recession_news": {
+    "qos_llm_score": 0.681,
+    "qos_llm_rank": 11
+  },
+  "papercliff_timeline": {
+    "qos_llm_score": 0.681,
+    "qos_llm_rank": 12
+  },
+  "climate_change_api_v5_get_all_climate_change_news": {
+    "qos_llm_score": 0.674,
+    "qos_llm_rank": 13
+  },
+  "dev_to_api_get_the_month_s_top_articles": {
+    "qos_llm_score": 0.674,
+    "qos_llm_rank": 14
+  },
+  "latest_news_latest_news_api": {
+    "qos_llm_score": 0.674,
+    "qos_llm_rank": 15
+  },
+  "global_recession_live_get_specific_news_articles_by_publication": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 16
+  },
+  "a_i_smartable_getpeoplebytopic": {
+    "qos_llm_score": 0.646,
+    "qos_llm_rank": 17
+  },
+  "papercliff_history": {
+    "qos_llm_score": 0.646,
+    "qos_llm_rank": 18
+  },
+  "sri_lanka_news_api_get_news_from_one_news_source": {
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 19
+  },
+  "newsdata_archive": {
+    "qos_llm_score": 0.643,
+    "qos_llm_rank": 20
+  },
+  "specrom_news_api_fetch_parsed_news_article_by_url": {
+    "qos_llm_score": 0.643,
+    "qos_llm_rank": 21
+  },
+  "dev_to_api_get_all_the_top_articles_of_the_week_by_default": {
+    "qos_llm_score": 0.637,
+    "qos_llm_rank": 22
+  },
+  "anime_news_net_get_details_of_a_news_item": {
+    "qos_llm_score": 0.635,
+    "qos_llm_rank": 23
+  },
+  "kubric_the_comprehensive_movie_news_api_advanced_search": {
+    "qos_llm_score": 0.633,
+    "qos_llm_rank": 24
+  },
+  "url_content_extractor_get_trending": {
+    "qos_llm_score": 0.632,
+    "qos_llm_rank": 25
+  },
+  "specrom_news_api_get_news_headlines_by_keyword_search": {
+    "qos_llm_score": 0.631,
+    "qos_llm_rank": 26
+  },
+  "biztoc_sources": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 27
+  },
+  "article_api_extract-2": {
+    "qos_llm_score": 0.624,
+    "qos_llm_rank": 28
+  },
+  "pac_api_get_trump_articles_from_specific_newspaper": {
+    "qos_llm_score": 0.624,
+    "qos_llm_rank": 29
+  },
+  "malaysia_kini_get_article_by_sid": {
+    "qos_llm_score": 0.619,
+    "qos_llm_rank": 30
+  },
+  "guardian_searchcontent": {
+    "qos_llm_score": 0.611,
+    "qos_llm_rank": 31
+  },
+  "newscatcher_v1_aggregation": {
+    "qos_llm_score": 0.602,
+    "qos_llm_rank": 32
+  },
+  "specrom_news_api_extract_all_social_media_handles_urls": {
+    "qos_llm_score": 0.588,
+    "qos_llm_rank": 33
+  },
+  "specrom_news_api_fetch_parsed_news_article_by_url_id": {
+    "qos_llm_score": 0.587,
+    "qos_llm_rank": 34
+  },
+  "newscatcher_v1_latest_headlines": {
+    "qos_llm_score": 0.551,
+    "qos_llm_rank": 35
+  },
+  "greek_news_in_english_get_all_sources": {
+    "qos_llm_score": 0.542,
+    "qos_llm_rank": 36
+  },
+  "ieee_spectrum_api_get_the_latest_30_news_from_ieee_spectrum": {
+    "qos_llm_score": 0.439,
+    "qos_llm_rank": 37
+  },
+  "websites_scrapper_scrap_website": {
+    "qos_llm_score": 0.372,
+    "qos_llm_rank": 38
+  },
+  "newsnow_top_news_powered_by_duck_duck_go": {
+    "qos_llm_score": 0.146,
+    "qos_llm_rank": 39
+  },
+  "newscatcher_v1_search_free": {
+    "qos_llm_score": 0.041,
+    "qos_llm_rank": 40
+  }
+}

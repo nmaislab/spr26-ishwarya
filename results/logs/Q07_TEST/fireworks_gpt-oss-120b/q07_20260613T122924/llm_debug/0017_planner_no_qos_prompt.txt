@@ -1,0 +1,97 @@
+You create sequential API workflows using only the provided candidates.
+
+Priority order:
+1) Respect the given subtask order.
+2) Functional correctness and step-to-step compatibility come first.
+
+Input user goal:
+Build a service that fetches top news articles, summarizes them into an SMS-ready digest using an LLM/text-summarization API, and sends the digest via SMS on a daily schedule.
+
+Ordered subtasks:
+[{"id": 1, "description": "Fetch top news articles using a news API"}, {"id": 2, "description": "Summarize the fetched articles into an SMS-length digest using a language model API"}, {"id": 3, "description": "Send the SMS digest via an SMS messaging API"}]
+
+Planner candidate mode: fixed_one.
+- The selected APIs are fixed by the selection stage.
+- There is exactly one selected API per subtask.
+- Use that API for its subtask and preserve subtask order.
+- Do not replace, re-rank, or substitute APIs.
+- The planner only composes the fixed APIs into a coherent workflow.
+
+Candidate APIs:
+[{"api_id": "newscatcher_v1_latest_headlines", "subtask_id": "1", "selection_order": 1, "service": {"api_id": "newscatcher_v1_latest_headlines", "name": "/v1/latest_headlines", "category": "News_Media", "description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined", "tool_name": "Newscatcher", "tool_description": "API to find news articles by any topic, country, language, website, or keyword", "method": "GET", "url": "https://newscatcher.p.rapidapi.com/v1/latest_headlines", "endpoint_details": {"required_parameters": [], "optional_parameters": [{"default": "en", "description": "Specifies the language of the search.  Allowed values are:\n`af`, `ar`, `bg`, `bn`, `ca`,`cn`, `cs`, `cy`, `da`, `de`, `el`, `en`, `es`, `et`, `fa`, `fi`, `fr`, `gu`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `kn`, `ko`, `lt`, `lv`, `mk`, `ml`, `mr`, `ne`, `nl`, `no`, `pa`, `pl`, `pt`, `ro`, `ru`, `sk`, `sl`, `so`, `sq`, `sv`, `sw`, `ta`, `te`, `th`, `tl`, `tr`,`tw`, `uk`, `ur`, `vi`. \n Specifying the language will make your search more relevant", "name": "lang", "type": "STRING"}, {"default": "", "description": "The topic to which you want to restrict the articles of your choice. This parameter is [experimental]. Accepted values are `news`, `sport`, `tech`, `world`, `finance`, `politics`, `business`, `economics`, `entertainment`,`beauty`,`travel`,`music`,`food`,`science`\n- `news` usually means a general news feed (main headlines of a website).\n> Important: this parameter is [experimental]. Not all news articles are assigned with a `topic`, therefore, we cannot guarantee that 100% of topics talking about technology will be assigned a `tech` label.\n> One topic at a time, for example `topic=sport`", "name": "topic", "type": "STRING"}, {"default": "", "description": "The country to which you want to narrow your search. This parameter is [experimental]. We advise you to use it in conjunction with the `lang` parameter. Accepts any [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes", "name": "country", "type": "STRING"}, {"default": "True", "description": "Adds to the output of the call two more variables: `media` and `media_content`\n\nMedia - the main image published with an article \n\nmedia_content  - a comma-separated string of all images used in an article", "name": "media", "type": "STRING"}]}}}, {"api_id": "text_summarizer_api_summarizer", "subtask_id": "2", "selection_order": 1, "service": {"api_id": "text_summarizer_api_summarizer", "name": "Summarizer", "category": "Text_Analysis", "description": "With this Endpoint, you will be able to summarize your text. Select what percentage of the words you want to summarize, and you will be retrieved with the general idea of your text or article!", "tool_name": "Text Summarizer API", "tool_description": "The Text Summarizer API is a tool that automatically creates brief, condensed versions of the original text. This API can be used in various applications such as news aggregation, content curation, and educational materials.", "method": "POST", "url": "https://text-summarizer-api.p.rapidapi.com/summarizer", "endpoint_details": {"required_parameters": [{"default": "In the modern digital environment, content that is quick, comprehensible, and simple to read is essential. You want your material to be reader-friendly whether you are presenting a learning module for a class, writing about a product or service, or simply journaling your most recent exploits. Many individuals prefer things to be tidy, succinct, and straightforward. So, tools for paraphrasing can be useful in this situation.", "description": "The text string you want to summarize.", "name": "text", "type": "STRING"}, {"default": "40", "description": "Percent of the original text to be returned. Values range from 10 to 100", "name": "output_percent", "type": "STRING"}], "optional_parameters": []}}}, {"api_id": "branded_sms_pakistan_send_message_to_multiple_numbers", "subtask_id": "3", "selection_order": 1, "service": {"api_id": "branded_sms_pakistan_send_message_to_multiple_numbers", "name": "Send Message to Multiple Numbers", "category": "SMS", "description": "This API is useful to send a branded sms to multiple numbers", "tool_name": "Branded SMS Pakistan", "tool_description": "Branded SMS Pakistan provide Mask or Short Code Messaging Gateway in Pakistan", "method": "GET", "url": "https://branded-sms-pakistan.p.rapidapi.com/send", "endpoint_details": {"required_parameters": [{"default": "923151231015, 923151231016", "description": "Destination Number (Default Format) 923151231016", "name": "to", "type": "STRING"}, {"default": "6014c421fd3dc1185d2b0603b41", "description": "Account API Key", "name": "key", "type": "STRING"}, {"default": "H3 TEST SMS", "description": "Masking (Branded Name)", "name": "mask", "type": "STRING"}, {"default": "hello@brandedsmspakistan.com", "description": "Account Email Address", "name": "email", "type": "STRING"}, {"default": "Hello I am sending test message", "description": "Message Limited to 640 characters", "name": "message", "type": "STRING"}], "optional_parameters": [{"default": "", "description": "Return Message ID", "name": "status", "type": "BOOLEAN"}]}}}]
+
+Rules:
+- Use only the provided candidates.
+- Keep workflows sequential.
+- Return exactly one primary plan.
+- Return a machine-readable execution workflow in addition to the human-readable primary plan.
+- The plan must follow the subtask order.
+- Preserve subtask order exactly; do not reorder subtasks.
+- Explain how each API connects to the next step.
+- Do not invent APIs or reorder subtasks.
+- Every step must use a non-empty "api_id" copied exactly from the provided Candidate APIs.
+- For each execution workflow step, copy method, url, required parameters, and optional parameters from the selected candidate's "service" object when available.
+- If endpoint_details.required_parameters or endpoint_details.optional_parameters are present, use them to populate required_parameters and optional_parameters.
+- In required_parameters and optional_parameters, include each parameter name and describe its source, such as "user_goal", "previous_step_output", "constant/default", or "unknown_needed_from_user".
+- Use depends_on to identify previous workflow step numbers needed before a step can run; use [] for the first independent step.
+- Use input_mapping and output_mapping to describe how values flow between steps.
+- execution_workflow.steps[*].input_mapping must always be a string. For the first step, use "none" or an empty string instead of null.
+- execution_workflow.steps[*].output_mapping must always be a string. Use "none" or an empty string if there is no output mapping.
+- Do not return null, objects, arrays, or nested JSON for execution_workflow input_mapping or output_mapping.
+- Never use null, "none", "internal", "local", or invented placeholders for "api_id".
+- Do not create internal-only, UI-only, formatting-only, or local-computation-only steps without an API.
+- If a subtask seems internal, describe the internal transformation inside the "action" of the closest selected API step or choose the closest suitable provided API for that subtask.
+- "input_from_previous_step" and "output_to_next_step" must be strings or null only; do not return objects, arrays, or nested JSON in these fields.
+- The top-level JSON must contain exactly these required fields: "primary_plan", "execution_workflow", "selected_api_ids", and "overall_rationale".
+- Put "plan_id", "summary", "steps", and "subtask_coverage" inside "primary_plan"; do not put "steps" at the top level.
+- Put "type" and "steps" inside "execution_workflow".
+- This is the no-QoS planning mode. Generate the workflow using only functional suitability, subtask coverage, parameter compatibility, and selected API order. Do not optimize using QoS or quality-related attributes. Keep "qos": null for every workflow step.
+
+Return JSON only:
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "...",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "action": "...",
+        "input_from_previous_step": "...",
+        "output_to_next_step": "...",
+        "why": "...",
+        "planner_override_reason": null,
+        "qos": null
+      }
+    ],
+    "subtask_coverage": [
+      {"subtask_id": 1, "description": "...", "steps": [1], "coverage": "full"}
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "method": "GET",
+        "url": "https://...",
+        "required_parameters": [
+          {"name": "...", "source": "user_goal", "value_hint": "..."}
+        ],
+        "optional_parameters": [
+          {"name": "...", "source": "constant/default", "value_hint": "..."}
+        ],
+        "depends_on": [],
+        "input_mapping": "...",
+        "output_mapping": "...",
+        "expected_output": "...",
+        "planner_override_reason": null
+      }
+    ]
+  },
+  "selected_api_ids": ["..."],
+  "overall_rationale": "..."
+}

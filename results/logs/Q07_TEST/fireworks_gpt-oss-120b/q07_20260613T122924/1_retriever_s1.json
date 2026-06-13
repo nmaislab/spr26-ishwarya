@@ -1,0 +1,602 @@
+[
+  {
+    "api_id": "newscatcher_v1_aggregation",
+    "rag_score": 0.6716352701187134,
+    "compressed": {
+      "api_id": "newscatcher_v1_aggregation",
+      "name": "/v1/aggregation",
+      "description": "Searches as `/v1/search` but returns the articles count per hour or day instead of articles' data",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://newscatcher.p.rapidapi.com/v1/aggregation",
+      "tool_name": "Newscatcher",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword"
+    },
+    "retrieved_rank": 1
+  },
+  {
+    "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+    "rag_score": 0.6624929904937744,
+    "compressed": {
+      "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+      "name": "Get all the top articles of the week by default",
+      "description": "It returns all the week's top articles",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://dev-to-api1.p.rapidapi.com/articles/top",
+      "tool_name": "dev-to-api",
+      "tool_description": "API that fetches the latest blogs from dev.to website"
+    },
+    "retrieved_rank": 2
+  },
+  {
+    "api_id": "newscatcher_v1_latest_headlines",
+    "rag_score": 0.6592348217964172,
+    "compressed": {
+      "api_id": "newscatcher_v1_latest_headlines",
+      "name": "/v1/latest_headlines",
+      "description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://newscatcher.p.rapidapi.com/v1/latest_headlines",
+      "tool_name": "Newscatcher",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword"
+    },
+    "retrieved_rank": 3
+  },
+  {
+    "api_id": "latest_news_latest_news_api",
+    "rag_score": 0.6541427969932556,
+    "compressed": {
+      "api_id": "latest_news_latest_news_api",
+      "name": "Latest News API",
+      "description": "Specrom Analytics’ News API let’s you query for news by either mentioning query keyword in title, main content, or fetch all news by domain address or news topic.",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://latest-news1.p.rapidapi.com/",
+      "tool_name": "Latest News",
+      "tool_description": "search and fetch latest news articles from 20,000 news sources."
+    },
+    "retrieved_rank": 4
+  },
+  {
+    "api_id": "specrom_news_api_get_news_headlines_by_keyword_search",
+    "rag_score": 0.6515032052993774,
+    "compressed": {
+      "api_id": "specrom_news_api_get_news_headlines_by_keyword_search",
+      "name": "Get News Headlines By Keyword Search",
+      "description": "Just specify the keyword or keyphrase to search and get latest news headlines and a url_id. Use the other endpoint to fetch the full_text of the news articles.",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "tool_name": "Specrom News API",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world"
+    },
+    "retrieved_rank": 5
+  },
+  {
+    "api_id": "dev_to_api_get_the_month_s_top_articles",
+    "rag_score": 0.6329551935195923,
+    "compressed": {
+      "api_id": "dev_to_api_get_the_month_s_top_articles",
+      "name": "Get the month's top articles",
+      "description": "It returns the month's top articles from dev.to website.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://dev-to-api1.p.rapidapi.com/articles/top/month",
+      "tool_name": "dev-to-api",
+      "tool_description": "API that fetches the latest blogs from dev.to website"
+    },
+    "retrieved_rank": 6
+  },
+  {
+    "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+    "rag_score": 0.625199019908905,
+    "compressed": {
+      "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+      "name": "Fetch Parsed News Article by url_id",
+      "description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "tool_name": "Specrom News API",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world"
+    },
+    "retrieved_rank": 7
+  },
+  {
+    "api_id": "newscatcher_v1_search_free",
+    "rag_score": 0.622026801109314,
+    "compressed": {
+      "api_id": "newscatcher_v1_search_free",
+      "name": "/v1/search_free",
+      "description": "**Up to 100 articles per 1 API call even with free Basic Plan.**\nFree search. Only the language filter is allowed.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://newscatcher.p.rapidapi.com/v1/search_free",
+      "tool_name": "Newscatcher",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword"
+    },
+    "retrieved_rank": 8
+  },
+  {
+    "api_id": "sri_lanka_news_api_get_news_from_one_news_source",
+    "rag_score": 0.6122905611991882,
+    "compressed": {
+      "api_id": "sri_lanka_news_api_get_news_from_one_news_source",
+      "name": "Get news from one news source",
+      "description": "Get news from one news source passing {source} paramter value and {page} value.Each news soure different number of news count in one page.\n\n\n**News Sources\n--Lankadeepa.lk\n--Deshaya.lk\n--Ada.lk\n--BBCS",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://sri-lanka-news-api.p.rapidapi.com/news/sinhala/Ada.lk/data/1",
+      "tool_name": "Sri Lanka News Api",
+      "tool_description": "A simple API that allows you to obtain the most recent news from Sri Lankan media sites in Sinhala."
+    },
+    "retrieved_rank": 9
+  },
+  {
+    "api_id": "news_v3_all_articles",
+    "rag_score": 0.604710578918457,
+    "compressed": {
+      "api_id": "news_v3_all_articles",
+      "name": "All Articles",
+      "description": "Fetch all articles",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://news175.p.rapidapi.com/articles",
+      "tool_name": "News_v3",
+      "tool_description": "News Scrapper"
+    },
+    "retrieved_rank": 10
+  },
+  {
+    "api_id": "moka_news_by_source_new",
+    "rag_score": 0.6009790897369385,
+    "compressed": {
+      "api_id": "moka_news_by_source_new",
+      "name": "By Source (New)",
+      "description": "Use this endpoint to get the recent 50 news items from a specific source from Sources list",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://moka-news.p.rapidapi.com/source.php",
+      "tool_name": "Moka News",
+      "tool_description": "A scrapper / scraper API to get latest news every minute from more than 30 sources all over the world as a start ( sources will be increased with time to be hundreds of different sources of live news )"
+    },
+    "retrieved_rank": 11
+  },
+  {
+    "api_id": "specrom_news_api_fetch_parsed_news_article_by_url",
+    "rag_score": 0.5968358516693115,
+    "compressed": {
+      "api_id": "specrom_news_api_fetch_parsed_news_article_by_url",
+      "name": "Fetch Parsed News Article by URL",
+      "description": "Just use an URL as an input and get back the full_text, title, author, main image etc. from the news article.",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "tool_name": "Specrom News API",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world"
+    },
+    "retrieved_rank": 12
+  },
+  {
+    "api_id": "newsdata_archive",
+    "rag_score": 0.5965967774391174,
+    "compressed": {
+      "api_id": "newsdata_archive",
+      "name": "archive",
+      "description": "The news archive endpoint provides access to the old news data for a country, for a specific category in a country, or for a single or multiple domains.\n\nRetrieving a piece of old news allows you to g",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://newsdata2.p.rapidapi.com/archive",
+      "tool_name": "NewsData",
+      "tool_description": "Best News API To Search And Collect Worldwide News"
+    },
+    "retrieved_rank": 13
+  },
+  {
+    "api_id": "websites_scrapper_scrap_website",
+    "rag_score": 0.5898564457893372,
+    "compressed": {
+      "api_id": "websites_scrapper_scrap_website",
+      "name": "Scrap website",
+      "description": "POST /news\nFetches articles from multiple newspapers based on the provided search query.\n\nRequest body:\n\nnewspapers (array): An array of newspaper objects containing \"name\", \"address\", and \"base\" prop",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://websites-scrapper.p.rapidapi.com/news",
+      "tool_name": "Websites scrapper",
+      "tool_description": "This API allows you to fetch articles from a list of sites based on a search query."
+    },
+    "retrieved_rank": 14
+  },
+  {
+    "api_id": "global_recession_live_get_specific_news_articles_by_publication",
+    "rag_score": 0.5769047141075134,
+    "compressed": {
+      "api_id": "global_recession_live_get_specific_news_articles_by_publication",
+      "name": "Get Specific News Articles By Publication",
+      "description": "This endpoint will return the latest articles from a specific publication.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://global-recession-live.p.rapidapi.com/news/theguardian",
+      "tool_name": "Global Recession Live",
+      "tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico."
+    },
+    "retrieved_rank": 15
+  },
+  {
+    "api_id": "newsnow_news_powered_by_duck_duck_go",
+    "rag_score": 0.557134747505188,
+    "compressed": {
+      "api_id": "newsnow_news_powered_by_duck_duck_go",
+      "name": "News (Powered By Duck Duck Go)",
+      "description": "NewsNow API: Real-time news aggregation and delivery service, providing developers and businesses with global news articles and headlines, offering extensive coverage, flexible querying, and easy inte",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://newsnow.p.rapidapi.com/",
+      "tool_name": "NewsNow",
+      "tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central "
+    },
+    "retrieved_rank": 16
+  },
+  {
+    "api_id": "live_climate_change_news_v2_get_individual_news_articles_from_news_on_climate_change",
+    "rag_score": 0.556835412979126,
+    "compressed": {
+      "api_id": "live_climate_change_news_v2_get_individual_news_articles_from_news_on_climate_change",
+      "name": "Get Individual news articles from News on Climate Change",
+      "description": "Get a news article from specific News resource on Climate Change.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://live-climate-change-news2.p.rapidapi.com/news/guardian",
+      "tool_name": "Live Climate Change News_v2",
+      "tool_description": "An API to get all the latest news on Climate Change around the world."
+    },
+    "retrieved_rank": 17
+  },
+  {
+    "api_id": "newsdata_sources",
+    "rag_score": 0.5524349212646484,
+    "compressed": {
+      "api_id": "newsdata_sources",
+      "name": "sources",
+      "description": "News sources endpoint provides access to the subsets of news publishers that the latest news is available from.\n\nIt's mainly a convenience endpoint that you can use to keep track of the publishers ava",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://newsdata2.p.rapidapi.com/sources",
+      "tool_name": "NewsData",
+      "tool_description": "Best News API To Search And Collect Worldwide News"
+    },
+    "retrieved_rank": 18
+  },
+  {
+    "api_id": "ieee_spectrum_api_get_the_latest_30_news_from_ieee_spectrum",
+    "rag_score": 0.5464706420898438,
+    "compressed": {
+      "api_id": "ieee_spectrum_api_get_the_latest_30_news_from_ieee_spectrum",
+      "name": "Get the latest 30 News from IEEE Spectrum",
+      "description": "This endpoint will return back the latest 30 news from IEEE Spectrum website as JSON objects with 6 data elements. These will be the Title, URL, DatePublished, Section, Image source and how much time ",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://ieee-spectrum-api.p.rapidapi.com/api",
+      "tool_name": "IEEE Spectrum API",
+      "tool_description": "The IEEE Spectrum News API is a simple HTTP-based API that allows developers and students to access the latest news and articles from the IEEE Spectrum website as well as integrate them as data into their own websites web applications or mobile apps. The API uses \"REST-Like\" operations over HTTP GET"
+    },
+    "retrieved_rank": 19
+  },
+  {
+    "api_id": "pac_api_get_trump_articles_from_specific_newspaper",
+    "rag_score": 0.5444772839546204,
+    "compressed": {
+      "api_id": "pac_api_get_trump_articles_from_specific_newspaper",
+      "name": "Get Trump articles from specific newspaper",
+      "description": "This endpoint returns all articles for Trump from a specific newspaper",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://pac-api.p.rapidapi.com/trump/boston_globe,new_york_times,cnn,washington_post,los_angeles_times,chicago_tribute",
+      "tool_name": "PAC API",
+      "tool_description": "An API for collecting political articles for Biden and Trump"
+    },
+    "retrieved_rank": 20
+  },
+  {
+    "api_id": "newsnow_top_news_powered_by_duck_duck_go",
+    "rag_score": 0.541834831237793,
+    "compressed": {
+      "api_id": "newsnow_top_news_powered_by_duck_duck_go",
+      "name": "Top News (Powered By Duck Duck Go)",
+      "description": "Get Top News",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://newsnow.p.rapidapi.com/",
+      "tool_name": "NewsNow",
+      "tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central "
+    },
+    "retrieved_rank": 21
+  },
+  {
+    "api_id": "papercliff_history",
+    "rag_score": 0.5374675989151001,
+    "compressed": {
+      "api_id": "papercliff_history",
+      "name": "History",
+      "description": "Returns the number of articles published daily during the last week and the number of corresponding news agencies that created those articles",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://papercliff.p.rapidapi.com/history",
+      "tool_name": "papercliff",
+      "tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords"
+    },
+    "retrieved_rank": 22
+  },
+  {
+    "api_id": "global_recession_live_get_all_global_recession_news",
+    "rag_score": 0.5368838310241699,
+    "compressed": {
+      "api_id": "global_recession_live_get_all_global_recession_news",
+      "name": "Get All Global Recession News",
+      "description": "This endpoint will return the latest articles from 7 publications about worldwide recession news.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://global-recession-live.p.rapidapi.com/news",
+      "tool_name": "Global Recession Live",
+      "tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico."
+    },
+    "retrieved_rank": 23
+  },
+  {
+    "api_id": "greek_news_in_english_get_all_sources",
+    "rag_score": 0.5362391471862793,
+    "compressed": {
+      "api_id": "greek_news_in_english_get_all_sources",
+      "name": "Get All Sources",
+      "description": "Get All Sources' names and ids",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://greek-news-in-english.p.rapidapi.com/api/sources",
+      "tool_name": "Greek News in English",
+      "tool_description": "An API showing all the latest Greek news  in English"
+    },
+    "retrieved_rank": 24
+  },
+  {
+    "api_id": "specrom_news_api_extract_all_social_media_handles_urls",
+    "rag_score": 0.5272421836853027,
+    "compressed": {
+      "api_id": "specrom_news_api_extract_all_social_media_handles_urls",
+      "name": "Extract All Social Media Handles & URLs",
+      "description": "Get all the social media handles and URLs on a webpage by simply entering the URL.",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "tool_name": "Specrom News API",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world"
+    },
+    "retrieved_rank": 25
+  },
+  {
+    "api_id": "anime_news_net_get_details_of_a_news_item",
+    "rag_score": 0.5244852304458618,
+    "compressed": {
+      "api_id": "anime_news_net_get_details_of_a_news_item",
+      "name": "Get details of a news item",
+      "description": "Get the details of each news item, such as the title, an image and the body of the news item, in addition to other properties",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://anime-news-net.p.rapidapi.com/api/news/details/2023-03-17/mai-nishikata-game-between-the-suits-manga-resumes-after-2-years/.196030",
+      "tool_name": "Anime News Net",
+      "tool_description": "This anime news API allows users to get details about the latest anime news, including the news headline, category, publication date and a brief introduction. It also provides an image relevant to the news item and the full content of the news item. Users can use this API to stay updated on the late"
+    },
+    "retrieved_rank": 26
+  },
+  {
+    "api_id": "specrom_news_api_classify_news_articles_using_smart_labels",
+    "rag_score": 0.5226534008979797,
+    "compressed": {
+      "api_id": "specrom_news_api_classify_news_articles_using_smart_labels",
+      "name": "Classify News Articles Using Smart Labels",
+      "description": "Almost all news domains including major outlets such as New York Times publish lots of articles that are not hard news, but rather clickbaits. \n\nUse our smart labels to identify and filter out such ne",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "tool_name": "Specrom News API",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world"
+    },
+    "retrieved_rank": 27
+  },
+  {
+    "api_id": "guardian_searchcontent",
+    "rag_score": 0.522045373916626,
+    "compressed": {
+      "api_id": "guardian_searchcontent",
+      "name": "searchContent",
+      "description": "You can find all parts of the content in the API",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://Guardianmikilior1V1.p.rapidapi.com/searchContent",
+      "tool_name": "Guardian",
+      "tool_description": "Query and download data from this publication's database."
+    },
+    "retrieved_rank": 28
+  },
+  {
+    "api_id": "papercliff_timeline",
+    "rag_score": 0.5187748670578003,
+    "compressed": {
+      "api_id": "papercliff_timeline",
+      "name": "Timeline",
+      "description": "Returns the 100 most recent articles and their keywords",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://papercliff.p.rapidapi.com/timeline",
+      "tool_name": "papercliff",
+      "tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords"
+    },
+    "retrieved_rank": 29
+  },
+  {
+    "api_id": "article_api_extract-2",
+    "rag_score": 0.5185682773590088,
+    "compressed": {
+      "api_id": "article_api_extract-2",
+      "name": "/extract",
+      "description": "get readable content and metadata of aa url",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://article-api1.p.rapidapi.com/extract",
+      "tool_name": "article-api",
+      "tool_description": "Normalize article from a url"
+    },
+    "retrieved_rank": 30
+  },
+  {
+    "api_id": "climate_news_api_v2_get_all_climate_change_related_news",
+    "rag_score": 0.5149719715118408,
+    "compressed": {
+      "api_id": "climate_news_api_v2_get_all_climate_change_related_news",
+      "name": "Get All Climate Change Related News",
+      "description": "This endpoint will return all news about Climate change from all around the world.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://climate-news-api3.p.rapidapi.com/scrap/news",
+      "tool_name": "Climate News API_v2",
+      "tool_description": "An API showing all the Climate change related news around the world."
+    },
+    "retrieved_rank": 31
+  },
+  {
+    "api_id": "malaysia_kini_get_article_by_sid",
+    "rag_score": 0.5140929818153381,
+    "compressed": {
+      "api_id": "malaysia_kini_get_article_by_sid",
+      "name": "Get Article by SID",
+      "description": "Return news article content based on sid stated in **Get Latest Article List** method.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://malaysia-kini.p.rapidapi.com/get_article/565154",
+      "tool_name": "Malaysia Kini",
+      "tool_description": "Live News by Malaysia Kini"
+    },
+    "retrieved_rank": 32
+  },
+  {
+    "api_id": "a_i_smartable_gettopics",
+    "rag_score": 0.5083085298538208,
+    "compressed": {
+      "api_id": "a_i_smartable_gettopics",
+      "name": "GetTopics",
+      "description": "Get artificial intelligence topics.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://a-i-smartable.p.rapidapi.com/topics/",
+      "tool_name": "A.I. Smartable",
+      "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information."
+    },
+    "retrieved_rank": 33
+  },
+  {
+    "api_id": "a_i_smartable_getpeoplebytopic",
+    "rag_score": 0.5022333860397339,
+    "compressed": {
+      "api_id": "a_i_smartable_getpeoplebytopic",
+      "name": "GetPeopleByTopic",
+      "description": "Get artificial intelligence influencers, entrepreneurs and top researchers by topic.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://a-i-smartable.p.rapidapi.com/",
+      "tool_name": "A.I. Smartable",
+      "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information."
+    },
+    "retrieved_rank": 34
+  },
+  {
+    "api_id": "biztoc_sources",
+    "rag_score": 0.5014775991439819,
+    "compressed": {
+      "api_id": "biztoc_sources",
+      "name": "Sources",
+      "description": "Lists all currently available `{source_id}`s. Equivalent of news blocks on biztoc.com. Note that certain proprietary blocks like Twitter or Stock Tickers are not available.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://biztoc.p.rapidapi.com/sources",
+      "tool_name": "BizToc",
+      "tool_description": "Official BizToc.com API — The Web's most comprehensive hub for business & finance news."
+    },
+    "retrieved_rank": 35
+  },
+  {
+    "api_id": "climate_change_live_v27_get_all_climate_change_news",
+    "rag_score": 0.4988262355327606,
+    "compressed": {
+      "api_id": "climate_change_live_v27_get_all_climate_change_news",
+      "name": "Get all climate change news",
+      "description": "This endpoint will return back all news about Climate Change from all over the world.",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://climate-change-live408.p.rapidapi.com/news",
+      "tool_name": "Climate Change Live_v27",
+      "tool_description": "An API showing all the latest climate change news around the world"
+    },
+    "retrieved_rank": 36
+  },
+  {
+    "api_id": "climate_change_api_v5_get_all_climate_change_news",
+    "rag_score": 0.4940795600414276,
+    "compressed": {
+      "api_id": "climate_change_api_v5_get_all_climate_change_news",
+      "name": "Get All Climate Change News",
+      "description": "This endpoint will return back all news about climate change from all over the world",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://climate-change-api18.p.rapidapi.com/news",
+      "tool_name": "Climate Change API_v5",
+      "tool_description": "An API showing all the latest climate change news around the world"
+    },
+    "retrieved_rank": 37
+  },
+  {
+    "api_id": "specrom_news_api_extract_email_address_by_url",
+    "rag_score": 0.4904634952545166,
+    "compressed": {
+      "api_id": "specrom_news_api_extract_email_address_by_url",
+      "name": "Extract Email Address By URL",
+      "description": "Just input the URL and our email extractor will return all the email addresses on that webpage.",
+      "category": "News_Media",
+      "method": "POST",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "tool_name": "Specrom News API",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world"
+    },
+    "retrieved_rank": 38
+  },
+  {
+    "api_id": "kubric_the_comprehensive_movie_news_api_advanced_search",
+    "rag_score": 0.48997393250465393,
+    "compressed": {
+      "api_id": "kubric_the_comprehensive_movie_news_api_advanced_search",
+      "name": "Advanced Search",
+      "description": "The `/news/advanced/search` endpoint allows you to search for movie news articles by applying various filters such as date, source, type, and sentiment. It offers a versatile and customizable way to e",
+      "category": "News_Media",
+      "method": "GET",
+      "url": "https://kubric-the-comprehensive-movie-news-api.p.rapidapi.com/news/advanced/search",
+      "tool_name": "Kubric: The Comprehensive Movie News API",
+      "tool_description": "Stay up-to-date with Kubric, your ultimate movie news API. Access top sources, search by title or keyword, and experience visually engaging cinema updates and insights."
+    },
+    "retrieved_rank": 39
+  },
+  {
+    "api_id": "url_content_extractor_get_trending",
+    "rag_score": 0.48593470454216003,
+    "compressed": {
+      "api_id": "url_content_extractor_get_trending",
+      "name": "Get Trending",
+      "description": "This will return a list of news articles that are trending.",
+      "category": "Tools",
+      "method": "GET",
+      "url": "https://url-content-extractor.p.rapidapi.com/trending",
+      "tool_name": "URL Content Extractor",
+      "tool_description": "Provide a URL and get the content in return"
+    },
+    "retrieved_rank": 40
+  }
+]

@@ -1,0 +1,221 @@
+{
+  "overall": {
+    "root_dir": "results/logs/Q07_TEST/fireworks_gpt-oss-120b/q07_20260613T122924",
+    "run_count": 1,
+    "group_count": 12,
+    "groups_with_duplicates": 0,
+    "duplicate_api_count": 0,
+    "duplicate_row_count": 0,
+    "missing_runs": []
+  },
+  "summary_rows": [
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "1",
+      "Mode": "no_qos",
+      "Subtask_Purpose": "Fetch top news articles using a news API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "1",
+      "Mode": "qos_pure_llm",
+      "Subtask_Purpose": "Fetch top news articles using a news API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "1",
+      "Mode": "qos_topsis",
+      "Subtask_Purpose": "Fetch top news articles using a news API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "1",
+      "Mode": "qos_hybrid",
+      "Subtask_Purpose": "Fetch top news articles using a news API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "2",
+      "Mode": "no_qos",
+      "Subtask_Purpose": "Summarize the fetched articles into an SMS-length digest using a language model API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "2",
+      "Mode": "qos_pure_llm",
+      "Subtask_Purpose": "Summarize the fetched articles into an SMS-length digest using a language model API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "2",
+      "Mode": "qos_topsis",
+      "Subtask_Purpose": "Summarize the fetched articles into an SMS-length digest using a language model API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "2",
+      "Mode": "qos_hybrid",
+      "Subtask_Purpose": "Summarize the fetched articles into an SMS-length digest using a language model API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "3",
+      "Mode": "no_qos",
+      "Subtask_Purpose": "Send the SMS digest via an SMS messaging API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "3",
+      "Mode": "qos_pure_llm",
+      "Subtask_Purpose": "Send the SMS digest via an SMS messaging API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "3",
+      "Mode": "qos_topsis",
+      "Subtask_Purpose": "Send the SMS digest via an SMS messaging API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    },
+    {
+      "Run_Dir": "q07_20260613T122924",
+      "Query_ID": "q07",
+      "Sub_Task": "3",
+      "Mode": "qos_hybrid",
+      "Subtask_Purpose": "Send the SMS digest via an SMS messaging API",
+      "Candidate_Count": 40,
+      "Unique_API_Count": 40,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0,
+      "Max_Repeat_Count": 1,
+      "Has_Duplicates": "N",
+      "Duplicated_APIs": ""
+    }
+  ],
+  "duplicate_rows": [],
+  "query_overview": [
+    {
+      "Key": "q07",
+      "Groups_Checked": 12,
+      "Groups_With_Duplicates": 0,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0
+    }
+  ],
+  "mode_overview": [
+    {
+      "Key": "no_qos",
+      "Groups_Checked": 3,
+      "Groups_With_Duplicates": 0,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0
+    },
+    {
+      "Key": "qos_pure_llm",
+      "Groups_Checked": 3,
+      "Groups_With_Duplicates": 0,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0
+    },
+    {
+      "Key": "qos_topsis",
+      "Groups_Checked": 3,
+      "Groups_With_Duplicates": 0,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0
+    },
+    {
+      "Key": "qos_hybrid",
+      "Groups_Checked": 3,
+      "Groups_With_Duplicates": 0,
+      "Duplicate_API_Count": 0,
+      "Duplicate_Row_Count": 0
+    }
+  ]
+}

@@ -1,0 +1,722 @@
+[
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C35",
+    "Selected_API": "weatherdl_weather_forecast",
+    "Functional Match (0/1)": 1,
+    "Comments": "downloads full forecast"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C24",
+    "Selected_API": "tomorrow_io_retrieveweatherrecenthisotry",
+    "Functional Match (0/1)": 0,
+    "Comments": "only historical weather, not current/forecast"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C33",
+    "Selected_API": "weatherapi_com_realtime_weather_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "current realtime weather data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C36",
+    "Selected_API": "weatherstack_get",
+    "Functional Match (0/1)": 1,
+    "Comments": "real-time weather info"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C31",
+    "Selected_API": "weatherapi_com_forecast_weather_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "forecast up to 14 days"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C32",
+    "Selected_API": "weatherapi_com_ip_lookup_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "IP lookup, no weather"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C28",
+    "Selected_API": "weather_api_by_any_city_get_weather_updates",
+    "Functional Match (0/1)": 1,
+    "Comments": "gives current weather for city"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C20",
+    "Selected_API": "tomorrow_io_retrievealocation",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves location info, not weather"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C34",
+    "Selected_API": "weatherapi_com_sports_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "sports data, unrelated"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C37",
+    "Selected_API": "world_weather_online_api_local_weather_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "current and forecast weather"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C10",
+    "Selected_API": "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude",
+    "Functional Match (0/1)": 1,
+    "Comments": "provides forecast for given latitude/longitude"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C30",
+    "Selected_API": "weather_request_single_data",
+    "Functional Match (0/1)": 1,
+    "Comments": "single city weather information"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C02",
+    "Selected_API": "climate_change_live_at_specific_source_weather_changes",
+    "Functional Match (0/1)": 0,
+    "Comments": "returns weather news, not current/forecast data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C25",
+    "Selected_API": "tomorrow_io_unlinklocations",
+    "Functional Match (0/1)": 0,
+    "Comments": "unrelated location unlink operation"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C26",
+    "Selected_API": "tomorrow_io_unlinklocations-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "unrelated location unlink operation"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C21",
+    "Selected_API": "tomorrow_io_retrieveanalert",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves predefined alert, not weather data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C18",
+    "Selected_API": "tomorrow_io_linklocations",
+    "Functional Match (0/1)": 0,
+    "Comments": "links locations, not weather data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C12",
+    "Selected_API": "live_climate_updates_get_all_news_endpoint_related_to_climate_change",
+    "Functional Match (0/1)": 0,
+    "Comments": "climate change news, not weather data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C27",
+    "Selected_API": "tomorrow_io_weather_forecast",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns weather forecast data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C22",
+    "Selected_API": "tomorrow_io_retrieveeventsbasic",
+    "Functional Match (0/1)": 0,
+    "Comments": "returns events, not direct current/forecast weather"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C13",
+    "Selected_API": "national_weather_service_stations_stationid_observations_recordid",
+    "Functional Match (0/1)": 0,
+    "Comments": "specific observation record, not general location forecast"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C08",
+    "Selected_API": "farmonaut_satellite_and_weather_data_retrieve_historical_weather_for_a_field",
+    "Functional Match (0/1)": 0,
+    "Comments": "historical field weather, not current/forecast"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C38",
+    "Selected_API": "world_weather_online_api_marine_history_weather_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "marine historical data only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C09",
+    "Selected_API": "farmonaut_satellite_and_weather_data_retrieve_present_weather_data",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns present day weather data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C19",
+    "Selected_API": "tomorrow_io_listinsights",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists insights, not weather retrieval"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C05",
+    "Selected_API": "easy_weather_current_conditions_detailed",
+    "Functional Match (0/1)": 1,
+    "Comments": "provides detailed current conditions for given coordinates"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C16",
+    "Selected_API": "tomorrow_io_activateanalert-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "activates alert, not weather retrieval"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C15",
+    "Selected_API": "tomorrow_io_activateanalert",
+    "Functional Match (0/1)": 0,
+    "Comments": "activates alert, not weather retrieval"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C40",
+    "Selected_API": "yahoo_weather_search_by_woeid",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches woeid, not weather"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C23",
+    "Selected_API": "tomorrow_io_retrievetimelinesbasic",
+    "Functional Match (0/1)": 1,
+    "Comments": "provides timeline weather data for location"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C17",
+    "Selected_API": "tomorrow_io_createanalert-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates alert, not weather retrieval"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C29",
+    "Selected_API": "weather_change_live_get_weather_report",
+    "Functional Match (0/1)": 1,
+    "Comments": "generic weather report endpoint"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C06",
+    "Selected_API": "easy_weather_historical_daily",
+    "Functional Match (0/1)": 0,
+    "Comments": "historical data only, not current/forecast"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C03",
+    "Selected_API": "climate_news_weathertemp",
+    "Functional Match (0/1)": 0,
+    "Comments": "offers generic temperature news, not location-specific weather"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C11",
+    "Selected_API": "history_hourlyweather",
+    "Functional Match (0/1)": 0,
+    "Comments": "historical hourly data only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C04",
+    "Selected_API": "cloud_cast_get_the_forecast",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns forecast for current city"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C14",
+    "Selected_API": "rapidweather_call_5_day_3_hour_forecast_data_by_city_id",
+    "Functional Match (0/1)": 1,
+    "Comments": "5‑day forecast by city ID"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C01",
+    "Selected_API": "ai_weather_by_meteosource_astro",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides only sun/moon data, not weather conditions"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C07",
+    "Selected_API": "easy_weather_hourly_forecast_240_hours",
+    "Functional Match (0/1)": 1,
+    "Comments": "provides 240‑hour forecast data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "1",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C39",
+    "Selected_API": "world_weather_online_api_ski_weather_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "ski weather forecast data"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C09",
+    "Selected_API": "hooksms_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS via simple POST"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C11",
+    "Selected_API": "rapid_sms_api_send_sms",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS messages"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C12",
+    "Selected_API": "reach_interactive_message_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "creates and sends SMS messages"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C23",
+    "Selected_API": "smsguru_test_service_response_time",
+    "Functional Match (0/1)": 0,
+    "Comments": "only tests response time"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C33",
+    "Selected_API": "smsway_app_messages_getsent",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves sent messages list"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C15",
+    "Selected_API": "sms_receive_getupdates",
+    "Functional Match (0/1)": 0,
+    "Comments": "receives incoming SMS updates"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C22",
+    "Selected_API": "smsapi_com_subusers_id_shares_sendernames",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets sender names, not sending"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C32",
+    "Selected_API": "smsway_app_messages_getreceived",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves received messages"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C05",
+    "Selected_API": "easysendsms_sms_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS messages"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C01",
+    "Selected_API": "ai_messaging_receive_text",
+    "Functional Match (0/1)": 0,
+    "Comments": "receives messages only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C18",
+    "Selected_API": "sms_voice_messages_voicemessage",
+    "Functional Match (0/1)": 0,
+    "Comments": "sends voice messages, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C03",
+    "Selected_API": "bulksmssender_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends bulk SMS messages"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C24",
+    "Selected_API": "smsto_schedule_sending_messages",
+    "Functional Match (0/1)": 1,
+    "Comments": "schedules SMS messages for later"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C07",
+    "Selected_API": "green_api_setdisappearingchat",
+    "Functional Match (0/1)": 0,
+    "Comments": "WhatsApp chat setting, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C39",
+    "Selected_API": "weatherapi_com_realtime_weather_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides realtime weather only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C10",
+    "Selected_API": "infobip_sms_synchronous_request",
+    "Functional Match (0/1)": 0,
+    "Comments": "number validation request, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C20",
+    "Selected_API": "smsapi_com_sms_sendernames-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "sets sender name, not sending"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C40",
+    "Selected_API": "weatherstack_get",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides weather data only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C29",
+    "Selected_API": "smsto_send_viber_message-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "sends Viber, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C19",
+    "Selected_API": "smsapi_com_profile_regional_settings_available_languages",
+    "Functional Match (0/1)": 0,
+    "Comments": "profile settings, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C37",
+    "Selected_API": "weatherapi_com_forecast_weather_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides forecast data only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C38",
+    "Selected_API": "weatherapi_com_ip_lookup_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides IP lookup only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C25",
+    "Selected_API": "smsto_send_campaign_message",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS campaign to many"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C26",
+    "Selected_API": "smsto_send_campaign_message-2",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS campaign to many"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C27",
+    "Selected_API": "smsto_send_message_to_a_list_or_multiple_list_in_array",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS to list/array"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C06",
+    "Selected_API": "green_api_getgroupdata",
+    "Functional Match (0/1)": 0,
+    "Comments": "WhatsApp group data, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C14",
+    "Selected_API": "sms_gateway_sms_gateway",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS with body and destination"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C04",
+    "Selected_API": "easysendsms_check_balance",
+    "Functional Match (0/1)": 0,
+    "Comments": "checks account balance only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C34",
+    "Selected_API": "thingscale_iot_message_broker_create_a_new_event-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "IoT event creation, unrelated"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C28",
+    "Selected_API": "smsto_send_single_message",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends single SMS message"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C35",
+    "Selected_API": "thingscale_iot_message_broker_update_an_event",
+    "Functional Match (0/1)": 0,
+    "Comments": "IoT event update, unrelated"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C16",
+    "Selected_API": "sms_receive_settag",
+    "Functional Match (0/1)": 0,
+    "Comments": "sets tag, not sending"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C17",
+    "Selected_API": "sms_receive_settag-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "sets tag, not sending"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C08",
+    "Selected_API": "green_api_setprofilepicture",
+    "Functional Match (0/1)": 0,
+    "Comments": "WhatsApp profile picture, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C36",
+    "Selected_API": "weather_api_by_any_city_get_weather_updates",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides weather data only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C21",
+    "Selected_API": "smsapi_com_subusers",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves subusers, not sending SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C02",
+    "Selected_API": "ambee_air_quality_weather",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides weather data, not SMS"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C13",
+    "Selected_API": "sms77io_get_status",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves delivery status only"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C30",
+    "Selected_API": "smsway_app_addressbook_createcontact",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates contact, not sending"
+  },
+  {
+    "Query_ID": "q01",
+    "Sub Task": "2",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C31",
+    "Selected_API": "smsway_app_addressbook_createcontact-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates contact, not sending"
+  }
+]

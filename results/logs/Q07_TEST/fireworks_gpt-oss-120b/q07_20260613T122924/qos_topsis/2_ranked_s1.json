@@ -1,0 +1,2674 @@
+[
+  {
+    "api_id": "specrom_news_api_extract_email_address_by_url",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 38,
+    "rag_score": 0.4904634952545166,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_extract_email_address_by_url",
+      "category": "News_Media",
+      "description": "Just input the URL and our email extractor will return all the email addresses on that webpage.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Extract Email Address By URL",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just input the URL and our email extractor will return all the email addresses on that webpage.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just input the URL and our email extractor will return all the email addresses on that webpage.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Extract Email Address By URL",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.182,
+        "tp_kbps": 484.581,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9826745888723689,
+    "topsis_rank": 1
+  },
+  {
+    "api_id": "live_climate_change_news_v2_get_individual_news_articles_from_news_on_climate_change",
+    "candidate_id": "",
+    "mode_rank": 2,
+    "llm_reported_rank": null,
+    "retrieved_rank": 17,
+    "rag_score": 0.556835412979126,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "live_climate_change_news_v2.json",
+      "_tool": "live_climate_change_news_v2",
+      "api_id": "live_climate_change_news_v2_get_individual_news_articles_from_news_on_climate_change",
+      "category": "News_Media",
+      "description": "Get a news article from specific News resource on Climate Change.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "guardian",
+            "description": "",
+            "name": "newsPaperId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Individual news articles from News on Climate Change",
+      "tool_description": "An API to get all the latest news on Climate Change around the world.",
+      "tool_name": "Live Climate Change News_v2",
+      "toolbench_endpoint_description": "Get a news article from specific News resource on Climate Change.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get a news article from specific News resource on Climate Change.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Individual news articles from News on Climate Change",
+        "endpoint_url": "https://live-climate-change-news2.p.rapidapi.com/news/guardian",
+        "file_name": "live_climate_change_news_v2.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API to get all the latest news on Climate Change around the world.",
+        "tool_file_found": true,
+        "tool_name": "Live Climate Change News_v2",
+        "toolbench_relative_path": "News_Media/live_climate_change_news_v2.json"
+      },
+      "toolbench_tool_description": "An API to get all the latest news on Climate Change around the world.",
+      "toolbench_tool_name": "Live Climate Change News_v2",
+      "url": "https://live-climate-change-news2.p.rapidapi.com/news/guardian",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.708,
+        "tp_kbps": 325.966,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.7079318904418873,
+    "topsis_rank": 2
+  },
+  {
+    "api_id": "newsnow_news_powered_by_duck_duck_go",
+    "candidate_id": "",
+    "mode_rank": 3,
+    "llm_reported_rank": null,
+    "retrieved_rank": 16,
+    "rag_score": 0.557134747505188,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newsnow.json",
+      "_tool": "newsnow",
+      "api_id": "newsnow_news_powered_by_duck_duck_go",
+      "category": "News_Media",
+      "description": "NewsNow API: Real-time news aggregation and delivery service, providing developers and businesses with global news articles and headlines, offering extensive coverage, flexible querying, and easy integration.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "News (Powered By Duck Duck Go)",
+      "tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central ",
+      "tool_name": "NewsNow",
+      "toolbench_endpoint_description": "NewsNow API: Real-time news aggregation and delivery service, providing developers and businesses with global news articles and headlines, offering extensive coverage, flexible querying, and easy integration.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "NewsNow API: Real-time news aggregation and delivery service, providing developers and businesses with global news articles and headlines, offering extensive coverage, flexible querying, and easy integration.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "News (Powered By Duck Duck Go)",
+        "endpoint_url": "https://newsnow.p.rapidapi.com/",
+        "file_name": "newsnow.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central Television (CCTV) , ESPN, Bleacher NBA ,The Sydney Morning Herald,NHK World ,The Categories- Economist, Breaking News, World Events, Politics, Technology, Health, Science, Business, Crypto Stock Ma...",
+        "tool_file_found": true,
+        "tool_name": "NewsNow",
+        "toolbench_relative_path": "News_Media/newsnow.json"
+      },
+      "toolbench_tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central Television (CCTV) , ESPN, Bleacher NBA ,The Sydney Morning Herald,NHK World ,The Categories- Economist, Breaking News, World Events, Politics, Technology, Health, Science, Business, Crypto Stock Ma...",
+      "toolbench_tool_name": "NewsNow",
+      "url": "https://newsnow.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.343,
+        "tp_kbps": 247.813,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.6510350234366086,
+    "topsis_rank": 3
+  },
+  {
+    "api_id": "climate_news_api_v2_get_all_climate_change_related_news",
+    "candidate_id": "",
+    "mode_rank": 4,
+    "llm_reported_rank": null,
+    "retrieved_rank": 31,
+    "rag_score": 0.5149719715118408,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "climate_news_api_v2.json",
+      "_tool": "climate_news_api_v2",
+      "api_id": "climate_news_api_v2_get_all_climate_change_related_news",
+      "category": "News_Media",
+      "description": "This endpoint will return all news about Climate change from all around the world.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Climate Change Related News",
+      "tool_description": "An API showing all the Climate change related news around the world.",
+      "tool_name": "Climate News API_v2",
+      "toolbench_endpoint_description": "This endpoint will return all news about Climate change from all around the world.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "This endpoint will return all news about Climate change from all around the world.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Climate Change Related News",
+        "endpoint_url": "https://climate-news-api3.p.rapidapi.com/scrap/news",
+        "file_name": "climate_news_api_v2.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing all the Climate change related news around the world.",
+        "tool_file_found": true,
+        "tool_name": "Climate News API_v2",
+        "toolbench_relative_path": "News_Media/climate_news_api_v2.json"
+      },
+      "toolbench_tool_description": "An API showing all the Climate change related news around the world.",
+      "toolbench_tool_name": "Climate News API_v2",
+      "url": "https://climate-news-api3.p.rapidapi.com/scrap/news",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.151,
+        "tp_kbps": 46.364999999999995,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.48143211265091784,
+    "topsis_rank": 4
+  },
+  {
+    "api_id": "news_v3_all_articles",
+    "candidate_id": "",
+    "mode_rank": 5,
+    "llm_reported_rank": null,
+    "retrieved_rank": 10,
+    "rag_score": 0.604710578918457,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "news_v3.json",
+      "_tool": "news_v3",
+      "api_id": "news_v3_all_articles",
+      "category": "News_Media",
+      "description": "Fetch all articles",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "All Articles",
+      "tool_description": "News Scrapper",
+      "tool_name": "News_v3",
+      "toolbench_endpoint_description": "Fetch all articles",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Fetch all articles",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "All Articles",
+        "endpoint_url": "https://news175.p.rapidapi.com/articles",
+        "file_name": "news_v3.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "News Scrapper",
+        "tool_file_found": true,
+        "tool_name": "News_v3",
+        "toolbench_relative_path": "News_Media/news_v3.json"
+      },
+      "toolbench_tool_description": "News Scrapper",
+      "toolbench_tool_name": "News_v3",
+      "url": "https://news175.p.rapidapi.com/articles",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.165,
+        "tp_kbps": 42.424,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.47737238456498976,
+    "topsis_rank": 5
+  },
+  {
+    "api_id": "newsdata_sources",
+    "candidate_id": "",
+    "mode_rank": 6,
+    "llm_reported_rank": null,
+    "retrieved_rank": 18,
+    "rag_score": 0.5524349212646484,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newsdata.json",
+      "_tool": "newsdata",
+      "api_id": "newsdata_sources",
+      "category": "News_Media",
+      "description": "News sources endpoint provides access to the subsets of news publishers that the latest news is available from.\n\nIt's mainly a convenience endpoint that you can use to keep track of the publishers available on the API, and you can pipe it straight through to your users",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Find sources that display news in a specific country. Possible Options: us gb in jp ae sa au ca sg",
+            "name": "country",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Find sources that display news in a specific language. Possible Options: en ar jp in es fr",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Find sources that display news of this category. Possible Options: top business science technology sports health entertainment",
+            "name": "category",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "sources",
+      "tool_description": "Best News API To Search And Collect Worldwide News",
+      "tool_name": "NewsData",
+      "toolbench_endpoint_description": "News sources endpoint provides access to the subsets of news publishers that the latest news is available from.\n\nIt's mainly a convenience endpoint that you can use to keep track of the publishers available on the API, and you can pipe it straight through to your users",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "News sources endpoint provides access to the subsets of news publishers that the latest news is available from.\n\nIt's mainly a convenience endpoint that you can use to keep track of the publishers available on the API, and you can pipe it straight through to your users",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "sources",
+        "endpoint_url": "https://newsdata2.p.rapidapi.com/sources",
+        "file_name": "newsdata.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Best News API To Search And Collect Worldwide News",
+        "tool_file_found": true,
+        "tool_name": "NewsData",
+        "toolbench_relative_path": "News_Media/newsdata.json"
+      },
+      "toolbench_tool_description": "Best News API To Search And Collect Worldwide News",
+      "toolbench_tool_name": "NewsData",
+      "url": "https://newsdata2.p.rapidapi.com/sources",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.167,
+        "tp_kbps": 41.916,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4767984410250373,
+    "topsis_rank": 6
+  },
+  {
+    "api_id": "moka_news_by_source_new",
+    "candidate_id": "",
+    "mode_rank": 7,
+    "llm_reported_rank": null,
+    "retrieved_rank": 11,
+    "rag_score": 0.6009790897369385,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "moka_news.json",
+      "_tool": "moka_news",
+      "api_id": "moka_news_by_source_new",
+      "category": "News_Media",
+      "description": "Use this endpoint to get the recent 50 news items from a specific source from Sources list",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "cnn",
+            "description": "",
+            "name": "source",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "By Source (New)",
+      "tool_description": "A scrapper / scraper API to get latest news every minute from more than 30 sources all over the world as a start ( sources will be increased with time to be hundreds of different sources of live news )",
+      "tool_name": "Moka News",
+      "toolbench_endpoint_description": "Use this endpoint to get the recent 50 news items from a specific source from Sources list",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Use this endpoint to get the recent 50 news items from a specific source from Sources list",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "By Source (New)",
+        "endpoint_url": "https://moka-news.p.rapidapi.com/source.php",
+        "file_name": "moka_news.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A scrapper / scraper API to get latest news every minute from more than 30 sources all over the world as a start ( sources will be increased with time to be hundreds of different sources of live news )",
+        "tool_file_found": true,
+        "tool_name": "Moka News",
+        "toolbench_relative_path": "News_Media/moka_news.json"
+      },
+      "toolbench_tool_description": "A scrapper / scraper API to get latest news every minute from more than 30 sources all over the world as a start ( sources will be increased with time to be hundreds of different sources of live news )",
+      "toolbench_tool_name": "Moka News",
+      "url": "https://moka-news.p.rapidapi.com/source.php",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.12,
+        "tp_kbps": 33.333,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.47646819853728223,
+    "topsis_rank": 7
+  },
+  {
+    "api_id": "specrom_news_api_classify_news_articles_using_smart_labels",
+    "candidate_id": "",
+    "mode_rank": 8,
+    "llm_reported_rank": null,
+    "retrieved_rank": 27,
+    "rag_score": 0.5226534008979797,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_classify_news_articles_using_smart_labels",
+      "category": "News_Media",
+      "description": "Almost all news domains including major outlets such as New York Times publish lots of articles that are not hard news, but rather clickbaits. \n\nUse our smart labels to identify and filter out such news articles by using headline and meta_description text as input.\n\nThe labels are below:\n\nNon-News: This category includes articles that are often referred to as \"soft news.\" Unlike traditional news articles that report on a specific event or breaking news, non-news articles focus on evergreen topics that are not time-sensitive. Examples of non-news articles include how-to guides, tips, reviews, and general profiles. These articles may be more feature-like in nature, and can often be enjoyed by readers at any time.\n\nOpinion: This category includes articles that express a strong point of view, such as editorials, opinion pieces, letters to the editor, or other content that may be subjective in nature.\n\nPaid News: This category includes articles that are sponsored or paid for by a brand or advertiser, often in the form of advertorials. The goal of these articles is typically to promote a product, service, or brand.\n\nPop Culture: This category covers articles related to entertainment and popular culture, such as stories about celebrities, movies, TV shows, music, fashion, and other trends.\n\nFact Check: This category includes articles that seek to verify the validity of rumors or questionable claims, with the goal of combating misinformation. Fact-checking articles typically provide evidence-based information and sources to support their claims.\n\nRoundup: This category includes articles that summarize multiple stories or provide a collection of concepts, takeaways, data analysis, or lists. Roundup articles can be useful for readers who want to quickly get up-to-speed on a particular topic or trend.\n\nPress Release: This category includes official statements or announcements, typically published by wire services and authored by organizations or PR professionals. Press releases may cover a variety of topics, such as new products, partnerships, or other news related to the organization.\n\nNews: This category includes traditional news articles that report on a specific event or breaking news. These articles are typically objective in nature and report on facts related to the event or news story.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Classify News Articles Using Smart Labels",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Almost all news domains including major outlets such as New York Times publish lots of articles that are not hard news, but rather clickbaits. \n\nUse our smart labels to identify and filter out such news articles by using headline and meta_description text as input.\n\nThe labels are below:\n\nNon-News: This category includes articles that are often referred to as \"soft news.\" Unlike traditional news articles that report on a specific event or breaking news, non-news articles focus on evergreen topics that are not time-sensitive. Examples of non-news articles include how-to guides, tips, reviews, and general profiles. These articles may be more feature-like in nature, and can often be enjoyed by readers at any time.\n\nOpinion: This category includes articles that express a strong point of view, such as editorials, opinion pieces, letters to the editor, or other content that may be subjective in nature.\n\nPaid News: This category includes articles that are sponsored or paid for by a brand or advertiser, often in the form of advertorials. The goal of these articles is typically to promote a product, service, or brand.\n\nPop Culture: This category covers articles related to entertainment and popular culture, such as stories about celebrities, movies, TV shows, music, fashion, and other trends.\n\nFact Check: This category includes articles that seek to verify the validity of rumors or questionable claims, with the goal of combating misinformation. Fact-checking articles typically provide evidence-based information and sources to support their claims.\n\nRoundup: This category includes articles that summarize multiple stories or provide a collection of concepts, takeaways, data analysis, or lists. Roundup articles can be useful for readers who want to quickly get up-to-speed on a particular topic or trend.\n\nPress Release: This category includes official statements or announcements, typically published by wire services and authored by organizations or PR professionals. Press releases may cover a variety of topics, such as new products, partnerships, or other news related to the organization.\n\nNews: This category includes traditional news articles that report on a specific event or breaking news. These articles are typically objective in nature and report on facts related to the event or news story.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Almost all news domains including major outlets such as New York Times publish lots of articles that are not hard news, but rather clickbaits. \n\nUse our smart labels to identify and filter out such news articles by using headline and meta_description text as input.\n\nThe labels are below:\n\nNon-News: This category includes articles that are often referred to as \"soft news.\" Unlike traditional news articles that report on a specific event or breaking news, non-news articles focus on evergreen topics that are not time-sensitive. Examples of non-news articles include how-to guides, tips, reviews, and general profiles. These articles may be more feature-like in nature, and can often be enjoyed by readers at any time.\n\nOpinion: This category includes articles that express a strong point of view, such as editorials, opinion pieces, letters to the editor, or other content that may be subjective in nature.\n\nPaid News: This category includes articles that are sponsored or paid for by a brand or advertiser, often in the form of advertorials. The goal of these articles is typically to promote a product, service, or brand.\n\nPop Culture: This category covers articles related to entertainment and popular culture, such as stories about celebrities, movies, TV shows, music, fashion, and other trends.\n\nFact Check: This category includes articles that seek to verify the validity of rumors or questionable claims, with the goal of combating misinformation. Fact-checking articles typically provide evidence-based information and sources to support their claims.\n\nRoundup: This category includes articles that summarize multiple stories or provide a collection of concepts, takeaways, data analysis, or lists. Roundup articles can be useful for readers who want to quickly get up-to-speed on a particular topic or trend.\n\nPress Release: This category includes official statements or announcements, typically published by wire services and authored by organizations or PR professionals. Press releases may cover a variety of topics, such as new products, partnerships, or other news related to the organization.\n\nNews: This category includes traditional news articles that report on a specific event or breaking news. These articles are typically objective in nature and report on facts related to the event or news story.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Classify News Articles Using Smart Labels",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.121,
+        "tp_kbps": 33.057,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.47620472820898035,
+    "topsis_rank": 8
+  },
+  {
+    "api_id": "climate_change_api_v5_get_all_climate_change_news",
+    "candidate_id": "",
+    "mode_rank": 9,
+    "llm_reported_rank": null,
+    "retrieved_rank": 37,
+    "rag_score": 0.4940795600414276,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "climate_change_api_v5.json",
+      "_tool": "climate_change_api_v5",
+      "api_id": "climate_change_api_v5_get_all_climate_change_news",
+      "category": "News_Media",
+      "description": "This endpoint will return back all news about climate change from all over the world",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Climate Change News",
+      "tool_description": "An API showing all the latest climate change news around the world",
+      "tool_name": "Climate Change API_v5",
+      "toolbench_endpoint_description": "This endpoint will return back all news about climate change from all over the world",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "This endpoint will return back all news about climate change from all over the world",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Climate Change News",
+        "endpoint_url": "https://climate-change-api18.p.rapidapi.com/news",
+        "file_name": "climate_change_api_v5.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing all the latest climate change news around the world",
+        "tool_file_found": true,
+        "tool_name": "Climate Change API_v5",
+        "toolbench_relative_path": "News_Media/climate_change_api_v5.json"
+      },
+      "toolbench_tool_description": "An API showing all the latest climate change news around the world",
+      "toolbench_tool_name": "Climate Change API_v5",
+      "url": "https://climate-change-api18.p.rapidapi.com/news",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.4485,
+        "tp_kbps": 84.07,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.47514549843114856,
+    "topsis_rank": 9
+  },
+  {
+    "api_id": "a_i_smartable_gettopics",
+    "candidate_id": "",
+    "mode_rank": 10,
+    "llm_reported_rank": null,
+    "retrieved_rank": 33,
+    "rag_score": 0.5083085298538208,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "a_i_smartable.json",
+      "_tool": "a_i_smartable",
+      "api_id": "a_i_smartable_gettopics",
+      "category": "News_Media",
+      "description": "Get artificial intelligence topics.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GetTopics",
+      "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+      "tool_name": "A.I. Smartable",
+      "toolbench_endpoint_description": "Get artificial intelligence topics.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get artificial intelligence topics.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GetTopics",
+        "endpoint_url": "https://a-i-smartable.p.rapidapi.com/topics/",
+        "file_name": "a_i_smartable.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+        "tool_file_found": true,
+        "tool_name": "A.I. Smartable",
+        "toolbench_relative_path": "News_Media/a_i_smartable.json"
+      },
+      "toolbench_tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+      "toolbench_tool_name": "A.I. Smartable",
+      "url": "https://a-i-smartable.p.rapidapi.com/topics/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.116,
+        "tp_kbps": 25.862,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.47234076567510436,
+    "topsis_rank": 10
+  },
+  {
+    "api_id": "climate_change_live_v27_get_all_climate_change_news",
+    "candidate_id": "",
+    "mode_rank": 11,
+    "llm_reported_rank": null,
+    "retrieved_rank": 36,
+    "rag_score": 0.4988262355327606,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "climate_change_live_v27.json",
+      "_tool": "climate_change_live_v27",
+      "api_id": "climate_change_live_v27_get_all_climate_change_news",
+      "category": "News_Media",
+      "description": "This endpoint will return back all news about Climate Change from all over the world.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get all climate change news",
+      "tool_description": "An API showing all the latest climate change news around the world",
+      "tool_name": "Climate Change Live_v27",
+      "toolbench_endpoint_description": "This endpoint will return back all news about Climate Change from all over the world.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "This endpoint will return back all news about Climate Change from all over the world.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get all climate change news",
+        "endpoint_url": "https://climate-change-live408.p.rapidapi.com/news",
+        "file_name": "climate_change_live_v27.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing all the latest climate change news around the world",
+        "tool_file_found": true,
+        "tool_name": "Climate Change Live_v27",
+        "toolbench_relative_path": "News_Media/climate_change_live_v27.json"
+      },
+      "toolbench_tool_description": "An API showing all the latest climate change news around the world",
+      "toolbench_tool_name": "Climate Change Live_v27",
+      "url": "https://climate-change-live408.p.rapidapi.com/news",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.138,
+        "tp_kbps": 28.9865,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4720584181023888,
+    "topsis_rank": 11
+  },
+  {
+    "api_id": "papercliff_timeline",
+    "candidate_id": "",
+    "mode_rank": 12,
+    "llm_reported_rank": null,
+    "retrieved_rank": 29,
+    "rag_score": 0.5187748670578003,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "papercliff.json",
+      "_tool": "papercliff",
+      "api_id": "papercliff_timeline",
+      "category": "News_Media",
+      "description": "Returns the 100 most recent articles and their keywords",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Narrows down the results to articles published after the provided date-time in UTC. The format should be `yyyy-MM-dd'T'HH:mm`. Example value: `2022-09-18T13:45`. Date-times older than a week do not affect the result.",
+            "name": "from",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Narrows down the results to articles that contain all the provided keywords. The terms should consist of one to three words separated by a dash.  Example value: `election-campaign`.",
+            "name": "terms",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Omits a number of articles",
+            "name": "offset",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Narrows down the results to articles published before the provided date-time in UTC. The format should be `yyyy-MM-dd'T'HH:mm`. Example value: `2022-09-18T15:30`. Date-times of the future do not affect the result.",
+            "name": "to",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Timeline",
+      "tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords",
+      "tool_name": "papercliff",
+      "toolbench_endpoint_description": "Returns the 100 most recent articles and their keywords",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Returns the 100 most recent articles and their keywords",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Timeline",
+        "endpoint_url": "https://papercliff.p.rapidapi.com/timeline",
+        "file_name": "papercliff.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords",
+        "tool_file_found": true,
+        "tool_name": "papercliff",
+        "toolbench_relative_path": "News_Media/papercliff.json"
+      },
+      "toolbench_tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords",
+      "toolbench_tool_name": "papercliff",
+      "url": "https://papercliff.p.rapidapi.com/timeline",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.125,
+        "tp_kbps": 24.0,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.47048971708904586,
+    "topsis_rank": 12
+  },
+  {
+    "api_id": "global_recession_live_get_all_global_recession_news",
+    "candidate_id": "",
+    "mode_rank": 13,
+    "llm_reported_rank": null,
+    "retrieved_rank": 23,
+    "rag_score": 0.5368838310241699,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "global_recession_live.json",
+      "_tool": "global_recession_live",
+      "api_id": "global_recession_live_get_all_global_recession_news",
+      "category": "News_Media",
+      "description": "This endpoint will return the latest articles from 7 publications about worldwide recession news.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Global Recession News",
+      "tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico.",
+      "tool_name": "Global Recession Live",
+      "toolbench_endpoint_description": "This endpoint will return the latest articles from 7 publications about worldwide recession news.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "This endpoint will return the latest articles from 7 publications about worldwide recession news.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Global Recession News",
+        "endpoint_url": "https://global-recession-live.p.rapidapi.com/news",
+        "file_name": "global_recession_live.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico.",
+        "tool_file_found": true,
+        "tool_name": "Global Recession Live",
+        "toolbench_relative_path": "News_Media/global_recession_live.json"
+      },
+      "toolbench_tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico.",
+      "toolbench_tool_name": "Global Recession Live",
+      "url": "https://global-recession-live.p.rapidapi.com/news",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.126,
+        "tp_kbps": 23.809,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.47028162826178793,
+    "topsis_rank": 13
+  },
+  {
+    "api_id": "dev_to_api_get_the_month_s_top_articles",
+    "candidate_id": "",
+    "mode_rank": 14,
+    "llm_reported_rank": null,
+    "retrieved_rank": 6,
+    "rag_score": 0.6329551935195923,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "dev_to_api.json",
+      "_tool": "dev_to_api",
+      "api_id": "dev_to_api_get_the_month_s_top_articles",
+      "category": "News_Media",
+      "description": "It returns the month's top articles from dev.to website.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get the month's top articles",
+      "tool_description": "API that fetches the latest blogs from dev.to website",
+      "tool_name": "dev-to-api",
+      "toolbench_endpoint_description": "It returns the month's top articles from dev.to website.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "It returns the month's top articles from dev.to website.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get the month's top articles",
+        "endpoint_url": "https://dev-to-api1.p.rapidapi.com/articles/top/month",
+        "file_name": "dev_to_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API that fetches the latest blogs from dev.to website",
+        "tool_file_found": true,
+        "tool_name": "dev-to-api",
+        "toolbench_relative_path": "News_Media/dev_to_api.json"
+      },
+      "toolbench_tool_description": "API that fetches the latest blogs from dev.to website",
+      "toolbench_tool_name": "dev-to-api",
+      "url": "https://dev-to-api1.p.rapidapi.com/articles/top/month",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.132,
+        "tp_kbps": 22.727,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4687484890517721,
+    "topsis_rank": 14
+  },
+  {
+    "api_id": "latest_news_latest_news_api",
+    "candidate_id": "",
+    "mode_rank": 15,
+    "llm_reported_rank": null,
+    "retrieved_rank": 4,
+    "rag_score": 0.6541427969932556,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "latest_news.json",
+      "_tool": "latest_news",
+      "api_id": "latest_news_latest_news_api",
+      "category": "News_Media",
+      "description": "Specrom Analytics’ News API let’s you query for news by either mentioning query keyword in title, main content, or fetch all news by domain address or news topic.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Latest News API",
+      "tool_description": "search and fetch latest news articles from 20,000 news sources.",
+      "tool_name": "Latest News",
+      "toolbench_endpoint_description": "Specrom Analytics’ News API let’s you query for news by either mentioning query keyword in title, main content, or fetch all news by domain address or news topic.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Specrom Analytics’ News API let’s you query for news by either mentioning query keyword in title, main content, or fetch all news by domain address or news topic.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Latest News API",
+        "endpoint_url": "https://latest-news1.p.rapidapi.com/",
+        "file_name": "latest_news.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "search and fetch latest news articles from 20,000 news sources.",
+        "tool_file_found": true,
+        "tool_name": "Latest News",
+        "toolbench_relative_path": "News_Media/latest_news.json"
+      },
+      "toolbench_tool_description": "search and fetch latest news articles from 20,000 news sources.",
+      "toolbench_tool_name": "Latest News",
+      "url": "https://latest-news1.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.146,
+        "tp_kbps": 20.547,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.46633319099927323,
+    "topsis_rank": 15
+  },
+  {
+    "api_id": "global_recession_live_get_specific_news_articles_by_publication",
+    "candidate_id": "",
+    "mode_rank": 16,
+    "llm_reported_rank": null,
+    "retrieved_rank": 15,
+    "rag_score": 0.5769047141075134,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "global_recession_live.json",
+      "_tool": "global_recession_live",
+      "api_id": "global_recession_live_get_specific_news_articles_by_publication",
+      "category": "News_Media",
+      "description": "This endpoint will return the latest articles from a specific publication.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "theguardian",
+            "description": "",
+            "name": "newspaperId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Specific News Articles By Publication",
+      "tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico.",
+      "tool_name": "Global Recession Live",
+      "toolbench_endpoint_description": "This endpoint will return the latest articles from a specific publication.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "This endpoint will return the latest articles from a specific publication.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Specific News Articles By Publication",
+        "endpoint_url": "https://global-recession-live.p.rapidapi.com/news/theguardian",
+        "file_name": "global_recession_live.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico.",
+        "tool_file_found": true,
+        "tool_name": "Global Recession Live",
+        "toolbench_relative_path": "News_Media/global_recession_live.json"
+      },
+      "toolbench_tool_description": "An API showing all the latest recession news around the world, collected from The New York Times, The Guardian, World Economic Forum, The Economist, AP News, Reuters, and Politico.",
+      "toolbench_tool_name": "Global Recession Live",
+      "url": "https://global-recession-live.p.rapidapi.com/news/theguardian",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.736,
+        "tp_kbps": 103.98349999999999,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4539222513217406,
+    "topsis_rank": 16
+  },
+  {
+    "api_id": "papercliff_history",
+    "candidate_id": "",
+    "mode_rank": 17,
+    "llm_reported_rank": null,
+    "retrieved_rank": 22,
+    "rag_score": 0.5374675989151001,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "papercliff.json",
+      "_tool": "papercliff",
+      "api_id": "papercliff_history",
+      "category": "News_Media",
+      "description": "Returns the number of articles published daily during the last week and the number of corresponding news agencies that created those articles",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Narrows down the results to articles that contain all the provided keywords. The terms should consist of one to three words separated by a dash.  Example value: `election-campaign`.",
+            "name": "terms",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "History",
+      "tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords",
+      "tool_name": "papercliff",
+      "toolbench_endpoint_description": "Returns the number of articles published daily during the last week and the number of corresponding news agencies that created those articles",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Returns the number of articles published daily during the last week and the number of corresponding news agencies that created those articles",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "History",
+        "endpoint_url": "https://papercliff.p.rapidapi.com/history",
+        "file_name": "papercliff.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords",
+        "tool_file_found": true,
+        "tool_name": "papercliff",
+        "toolbench_relative_path": "News_Media/papercliff.json"
+      },
+      "toolbench_tool_description": "Papercliff looks at the world's largest news agencies, reads articles, identifies and shares keywords",
+      "toolbench_tool_name": "papercliff",
+      "url": "https://papercliff.p.rapidapi.com/history",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.297,
+        "tp_kbps": 10.033,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4448118500310997,
+    "topsis_rank": 17
+  },
+  {
+    "api_id": "a_i_smartable_getpeoplebytopic",
+    "candidate_id": "",
+    "mode_rank": 18,
+    "llm_reported_rank": null,
+    "retrieved_rank": 34,
+    "rag_score": 0.5022333860397339,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "a_i_smartable.json",
+      "_tool": "a_i_smartable",
+      "api_id": "a_i_smartable_getpeoplebytopic",
+      "category": "News_Media",
+      "description": "Get artificial intelligence influencers, entrepreneurs and top researchers by topic.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GetPeopleByTopic",
+      "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+      "tool_name": "A.I. Smartable",
+      "toolbench_endpoint_description": "Get artificial intelligence influencers, entrepreneurs and top researchers by topic.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get artificial intelligence influencers, entrepreneurs and top researchers by topic.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GetPeopleByTopic",
+        "endpoint_url": "https://a-i-smartable.p.rapidapi.com/",
+        "file_name": "a_i_smartable.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+        "tool_file_found": true,
+        "tool_name": "A.I. Smartable",
+        "toolbench_relative_path": "News_Media/a_i_smartable.json"
+      },
+      "toolbench_tool_description": "The A.I. Smartable API offers the artificial intelligence news, learning resources, companies, influencers, events and other information.",
+      "toolbench_tool_name": "A.I. Smartable",
+      "url": "https://a-i-smartable.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.374,
+        "tp_kbps": 24.064,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.44400911993751224,
+    "topsis_rank": 18
+  },
+  {
+    "api_id": "sri_lanka_news_api_get_news_from_one_news_source",
+    "candidate_id": "",
+    "mode_rank": 19,
+    "llm_reported_rank": null,
+    "retrieved_rank": 9,
+    "rag_score": 0.6122905611991882,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "sri_lanka_news_api.json",
+      "_tool": "sri_lanka_news_api",
+      "api_id": "sri_lanka_news_api_get_news_from_one_news_source",
+      "category": "News_Media",
+      "description": "Get news from one news source passing {source} paramter value and {page} value.Each news soure different number of news count in one page.\n\n\n**News Sources\n--Lankadeepa.lk\n--Deshaya.lk\n--Ada.lk\n--BBCSinhala.com\n--Mawbima.lk",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": 1,
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "Ada.lk",
+            "description": "",
+            "name": "source",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get news from one news source",
+      "tool_description": "A simple API that allows you to obtain the most recent news from Sri Lankan media sites in Sinhala.",
+      "tool_name": "Sri Lanka News Api",
+      "toolbench_endpoint_description": "Get news from one news source passing {source} paramter value and {page} value.Each news soure different number of news count in one page.\n\n\n**News Sources\n--Lankadeepa.lk\n--Deshaya.lk\n--Ada.lk\n--BBCSinhala.com\n--Mawbima.lk",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get news from one news source passing {source} paramter value and {page} value.Each news soure different number of news count in one page.\n\n\n**News Sources\n--Lankadeepa.lk\n--Deshaya.lk\n--Ada.lk\n--BBCSinhala.com\n--Mawbima.lk",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get news from one news source",
+        "endpoint_url": "https://sri-lanka-news-api.p.rapidapi.com/news/sinhala/Ada.lk/data/1",
+        "file_name": "sri_lanka_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A simple API that allows you to obtain the most recent news from Sri Lankan media sites in Sinhala.",
+        "tool_file_found": true,
+        "tool_name": "Sri Lanka News Api",
+        "toolbench_relative_path": "News_Media/sri_lanka_news_api.json"
+      },
+      "toolbench_tool_description": "A simple API that allows you to obtain the most recent news from Sri Lankan media sites in Sinhala.",
+      "toolbench_tool_name": "Sri Lanka News Api",
+      "url": "https://sri-lanka-news-api.p.rapidapi.com/news/sinhala/Ada.lk/data/1",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3215,
+        "tp_kbps": 12.383,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.44337424634603395,
+    "topsis_rank": 19
+  },
+  {
+    "api_id": "websites_scrapper_scrap_website",
+    "candidate_id": "",
+    "mode_rank": 20,
+    "llm_reported_rank": null,
+    "retrieved_rank": 14,
+    "rag_score": 0.5898564457893372,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "websites_scrapper.json",
+      "_tool": "websites_scrapper",
+      "api_id": "websites_scrapper_scrap_website",
+      "category": "News_Media",
+      "description": "POST /news\nFetches articles from multiple newspapers based on the provided search query.\n\nRequest body:\n\nnewspapers (array): An array of newspaper objects containing \"name\", \"address\", and \"base\" properties.\nsearchText (string): The search query to filter articles.\nResponse: A JSON array of articles containing the title, url, and source of each article.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Scrap website",
+      "tool_description": "This API allows you to fetch articles from a list of sites based on a search query.",
+      "tool_name": "Websites scrapper",
+      "toolbench_endpoint_description": "POST /news\nFetches articles from multiple newspapers based on the provided search query.\n\nRequest body:\n\nnewspapers (array): An array of newspaper objects containing \"name\", \"address\", and \"base\" properties.\nsearchText (string): The search query to filter articles.\nResponse: A JSON array of articles containing the title, url, and source of each article.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "POST /news\nFetches articles from multiple newspapers based on the provided search query.\n\nRequest body:\n\nnewspapers (array): An array of newspaper objects containing \"name\", \"address\", and \"base\" properties.\nsearchText (string): The search query to filter articles.\nResponse: A JSON array of articles containing the title, url, and source of each article.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Scrap website",
+        "endpoint_url": "https://websites-scrapper.p.rapidapi.com/news",
+        "file_name": "websites_scrapper.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API allows you to fetch articles from a list of sites based on a search query.",
+        "tool_file_found": true,
+        "tool_name": "Websites scrapper",
+        "toolbench_relative_path": "News_Media/websites_scrapper.json"
+      },
+      "toolbench_tool_description": "This API allows you to fetch articles from a list of sites based on a search query.",
+      "toolbench_tool_name": "Websites scrapper",
+      "url": "https://websites-scrapper.p.rapidapi.com/news",
+      "qos": {
+        "availability": 0.1298,
+        "rt_s": 0.1995,
+        "tp_kbps": 15.0535,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.44313918489788007,
+    "topsis_rank": 20
+  },
+  {
+    "api_id": "newsdata_archive",
+    "candidate_id": "",
+    "mode_rank": 21,
+    "llm_reported_rank": null,
+    "retrieved_rank": 13,
+    "rag_score": 0.5965967774391174,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newsdata.json",
+      "_tool": "newsdata",
+      "api_id": "newsdata_archive",
+      "category": "News_Media",
+      "description": "The news archive endpoint provides access to the old news data for a country, for a specific category in a country, or for a single or multiple domains.\n\nRetrieving a piece of old news allows you to get the past news data for research and analysis purposes.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "A comma separated string of domains (maximum 5) to restrict the search to. Use the /domains endpoint to find top sources id.",
+            "name": "domain",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Keywords or phrases to search for in the news title and content. The value must be URL-encoded\nPlease note: You can't use AND and OR in the same query.",
+            "name": "q",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Keywords or phrases to search for in the news title only.\n\nPlease note: This parameter can't be used with q parameter in the same query.",
+            "name": "qintitle",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "A comma separated string of categories (maximum 5) to restrict the search to. Possible Options: top business science technology sports health entertainment",
+            "name": "category",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "A date and optional time for the oldest article allowed. This should be in ISO 8601 format ",
+            "name": "from_date",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "A comma separated string of languages (maximum 5) to restrict the search to. Possible Options: en ar jp in es fr",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Use this to page through the results if the total results found is greater than the page size.\n",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "A date and optional time for the newest article allowed. This should be in ISO 8601 format ",
+            "name": "to_date",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "A comma separated string of 2-letter ISO 3166-1 countries (maximum 5) to restrict the search to. Possible Options: us gb in jp ae sa au ca",
+            "name": "country",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "archive",
+      "tool_description": "Best News API To Search And Collect Worldwide News",
+      "tool_name": "NewsData",
+      "toolbench_endpoint_description": "The news archive endpoint provides access to the old news data for a country, for a specific category in a country, or for a single or multiple domains.\n\nRetrieving a piece of old news allows you to get the past news data for research and analysis purposes.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "The news archive endpoint provides access to the old news data for a country, for a specific category in a country, or for a single or multiple domains.\n\nRetrieving a piece of old news allows you to get the past news data for research and analysis purposes.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "archive",
+        "endpoint_url": "https://newsdata2.p.rapidapi.com/archive",
+        "file_name": "newsdata.json",
+        "optional_parameter_count": 9,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Best News API To Search And Collect Worldwide News",
+        "tool_file_found": true,
+        "tool_name": "NewsData",
+        "toolbench_relative_path": "News_Media/newsdata.json"
+      },
+      "toolbench_tool_description": "Best News API To Search And Collect Worldwide News",
+      "toolbench_tool_name": "NewsData",
+      "url": "https://newsdata2.p.rapidapi.com/archive",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.309,
+        "tp_kbps": 6.472,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4416743683927819,
+    "topsis_rank": 21
+  },
+  {
+    "api_id": "specrom_news_api_fetch_parsed_news_article_by_url",
+    "candidate_id": "",
+    "mode_rank": 22,
+    "llm_reported_rank": null,
+    "retrieved_rank": 12,
+    "rag_score": 0.5968358516693115,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_fetch_parsed_news_article_by_url",
+      "category": "News_Media",
+      "description": "Just use an URL as an input and get back the full_text, title, author, main image etc. from the news article.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Fetch Parsed News Article by URL",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just use an URL as an input and get back the full_text, title, author, main image etc. from the news article.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just use an URL as an input and get back the full_text, title, author, main image etc. from the news article.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Fetch Parsed News Article by URL",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.327,
+        "tp_kbps": 9.174,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.44110733832463445,
+    "topsis_rank": 22
+  },
+  {
+    "api_id": "kubric_the_comprehensive_movie_news_api_advanced_search",
+    "candidate_id": "",
+    "mode_rank": 23,
+    "llm_reported_rank": null,
+    "retrieved_rank": 39,
+    "rag_score": 0.48997393250465393,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "kubric_the_comprehensive_movie_news_api.json",
+      "_tool": "kubric_the_comprehensive_movie_news_api",
+      "api_id": "kubric_the_comprehensive_movie_news_api_advanced_search",
+      "category": "News_Media",
+      "description": "The `/news/advanced/search` endpoint allows you to search for movie news articles by applying various filters such as date, source, type, and sentiment. It offers a versatile and customizable way to explore the latest news and updates in the movie industry.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "postive",
+            "description": "",
+            "name": "sentiment",
+            "type": "STRING"
+          },
+          {
+            "default": "05/08/2023",
+            "description": "",
+            "name": "maxDate",
+            "type": "STRING"
+          },
+          {
+            "default": "01/01/2023",
+            "description": "",
+            "name": "minDate",
+            "type": "STRING"
+          },
+          {
+            "default": "Article",
+            "description": "",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "default": "0",
+            "description": "",
+            "name": "offset",
+            "type": "NUMBER"
+          },
+          {
+            "default": "10",
+            "description": "",
+            "name": "limit",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "Superman",
+            "description": "",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Advanced Search",
+      "tool_description": "Stay up-to-date with Kubric, your ultimate movie news API. Access top sources, search by title or keyword, and experience visually engaging cinema updates and insights.",
+      "tool_name": "Kubric: The Comprehensive Movie News API",
+      "toolbench_endpoint_description": "The `/news/advanced/search` endpoint allows you to search for movie news articles by applying various filters such as date, source, type, and sentiment. It offers a versatile and customizable way to explore the latest news and updates in the movie industry.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "The `/news/advanced/search` endpoint allows you to search for movie news articles by applying various filters such as date, source, type, and sentiment. It offers a versatile and customizable way to explore the latest news and updates in the movie industry.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Advanced Search",
+        "endpoint_url": "https://kubric-the-comprehensive-movie-news-api.p.rapidapi.com/news/advanced/search",
+        "file_name": "kubric_the_comprehensive_movie_news_api.json",
+        "optional_parameter_count": 6,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Stay up-to-date with Kubric, your ultimate movie news API. Access top sources, search by title or keyword, and experience visually engaging cinema updates and insights.",
+        "tool_file_found": true,
+        "tool_name": "Kubric: The Comprehensive Movie News API",
+        "toolbench_relative_path": "News_Media/kubric_the_comprehensive_movie_news_api.json"
+      },
+      "toolbench_tool_description": "Stay up-to-date with Kubric, your ultimate movie news API. Access top sources, search by title or keyword, and experience visually engaging cinema updates and insights.",
+      "toolbench_tool_name": "Kubric: The Comprehensive Movie News API",
+      "url": "https://kubric-the-comprehensive-movie-news-api.p.rapidapi.com/news/advanced/search",
+      "qos": {
+        "availability": 0.9764,
+        "rt_s": 0.349,
+        "tp_kbps": 11.461,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4393559937723211,
+    "topsis_rank": 23
+  },
+  {
+    "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+    "candidate_id": "",
+    "mode_rank": 24,
+    "llm_reported_rank": null,
+    "retrieved_rank": 2,
+    "rag_score": 0.6624929904937744,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "dev_to_api.json",
+      "_tool": "dev_to_api",
+      "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+      "category": "News_Media",
+      "description": "It returns all the week's top articles",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get all the top articles of the week by default",
+      "tool_description": "API that fetches the latest blogs from dev.to website",
+      "tool_name": "dev-to-api",
+      "toolbench_endpoint_description": "It returns all the week's top articles",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "It returns all the week's top articles",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get all the top articles of the week by default",
+        "endpoint_url": "https://dev-to-api1.p.rapidapi.com/articles/top",
+        "file_name": "dev_to_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API that fetches the latest blogs from dev.to website",
+        "tool_file_found": true,
+        "tool_name": "dev-to-api",
+        "toolbench_relative_path": "News_Media/dev_to_api.json"
+      },
+      "toolbench_tool_description": "API that fetches the latest blogs from dev.to website",
+      "toolbench_tool_name": "dev-to-api",
+      "url": "https://dev-to-api1.p.rapidapi.com/articles/top",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.339,
+        "tp_kbps": 5.899,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4379233065705526,
+    "topsis_rank": 24
+  },
+  {
+    "api_id": "biztoc_sources",
+    "candidate_id": "",
+    "mode_rank": 25,
+    "llm_reported_rank": null,
+    "retrieved_rank": 35,
+    "rag_score": 0.5014775991439819,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "biztoc.json",
+      "_tool": "biztoc",
+      "api_id": "biztoc_sources",
+      "category": "News_Media",
+      "description": "Lists all currently available `{source_id}`s. Equivalent of news blocks on biztoc.com. Note that certain proprietary blocks like Twitter or Stock Tickers are not available.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Sources",
+      "tool_description": "Official BizToc.com API — The Web's most comprehensive hub for business & finance news.",
+      "tool_name": "BizToc",
+      "toolbench_endpoint_description": "Lists all currently available `{source_id}`s. Equivalent of news blocks on biztoc.com. Note that certain proprietary blocks like Twitter or Stock Tickers are not available.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Lists all currently available `{source_id}`s. Equivalent of news blocks on biztoc.com. Note that certain proprietary blocks like Twitter or Stock Tickers are not available.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Sources",
+        "endpoint_url": "https://biztoc.p.rapidapi.com/sources",
+        "file_name": "biztoc.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Official BizToc.com API — The Web's most comprehensive hub for business & finance news.",
+        "tool_file_found": true,
+        "tool_name": "BizToc",
+        "toolbench_relative_path": "News_Media/biztoc.json"
+      },
+      "toolbench_tool_description": "Official BizToc.com API — The Web's most comprehensive hub for business & finance news.",
+      "toolbench_tool_name": "BizToc",
+      "url": "https://biztoc.p.rapidapi.com/sources",
+      "qos": {
+        "availability": 0.9794,
+        "rt_s": 0.441,
+        "tp_kbps": 24.942999999999998,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.43619093655674357,
+    "topsis_rank": 25
+  },
+  {
+    "api_id": "specrom_news_api_get_news_headlines_by_keyword_search",
+    "candidate_id": "",
+    "mode_rank": 26,
+    "llm_reported_rank": null,
+    "retrieved_rank": 5,
+    "rag_score": 0.6515032052993774,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_get_news_headlines_by_keyword_search",
+      "category": "News_Media",
+      "description": "Just specify the keyword or keyphrase to search and get latest news headlines and a url_id. Use the other endpoint to fetch the full_text of the news articles.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Get News Headlines By Keyword Search",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just specify the keyword or keyphrase to search and get latest news headlines and a url_id. Use the other endpoint to fetch the full_text of the news articles.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just specify the keyword or keyphrase to search and get latest news headlines and a url_id. Use the other endpoint to fetch the full_text of the news articles.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Get News Headlines By Keyword Search",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3895,
+        "tp_kbps": 12.837,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.43565623340925597,
+    "topsis_rank": 26
+  },
+  {
+    "api_id": "anime_news_net_get_details_of_a_news_item",
+    "candidate_id": "",
+    "mode_rank": 27,
+    "llm_reported_rank": null,
+    "retrieved_rank": 26,
+    "rag_score": 0.5244852304458618,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "anime_news_net.json",
+      "_tool": "anime_news_net",
+      "api_id": "anime_news_net_get_details_of_a_news_item",
+      "category": "News_Media",
+      "description": "Get the details of each news item, such as the title, an image and the body of the news item, in addition to other properties",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": ".196030",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "default": "mai-nishikata-game-between-the-suits-manga-resumes-after-2-years",
+            "description": "",
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "default": "2023-03-17",
+            "description": "",
+            "name": "date",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get details of a news item",
+      "tool_description": "This anime news API allows users to get details about the latest anime news, including the news headline, category, publication date and a brief introduction. It also provides an image relevant to the news item and the full content of the news item. Users can use this API to stay updated on the late",
+      "tool_name": "Anime News Net",
+      "toolbench_endpoint_description": "Get the details of each news item, such as the title, an image and the body of the news item, in addition to other properties",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get the details of each news item, such as the title, an image and the body of the news item, in addition to other properties",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get details of a news item",
+        "endpoint_url": "https://anime-news-net.p.rapidapi.com/api/news/details/2023-03-17/mai-nishikata-game-between-the-suits-manga-resumes-after-2-years/.196030",
+        "file_name": "anime_news_net.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This anime news API allows users to get details about the latest anime news, including the news headline, category, publication date and a brief introduction. It also provides an image relevant to the news item and the full content of the news item. Users can use this API to stay updated on the latest anime news easily and quickly",
+        "tool_file_found": true,
+        "tool_name": "Anime News Net",
+        "toolbench_relative_path": "News_Media/anime_news_net.json"
+      },
+      "toolbench_tool_description": "This anime news API allows users to get details about the latest anime news, including the news headline, category, publication date and a brief introduction. It also provides an image relevant to the news item and the full content of the news item. Users can use this API to stay updated on the latest anime news easily and quickly",
+      "toolbench_tool_name": "Anime News Net",
+      "url": "https://anime-news-net.p.rapidapi.com/api/news/details/2023-03-17/mai-nishikata-game-between-the-suits-manga-resumes-after-2-years/.196030",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.363,
+        "tp_kbps": 5.509,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.43514523095448565,
+    "topsis_rank": 27
+  },
+  {
+    "api_id": "url_content_extractor_get_trending",
+    "candidate_id": "",
+    "mode_rank": 28,
+    "llm_reported_rank": null,
+    "retrieved_rank": 40,
+    "rag_score": 0.48593470454216003,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "url_content_extractor.json",
+      "_tool": "url_content_extractor",
+      "api_id": "url_content_extractor_get_trending",
+      "category": "Tools",
+      "description": "This will return a list of news articles that are trending.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get Trending",
+      "tool_description": "Provide a URL and get the content in return",
+      "tool_name": "URL Content Extractor",
+      "toolbench_endpoint_description": "This will return a list of news articles that are trending.",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "This will return a list of news articles that are trending.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Trending",
+        "endpoint_url": "https://url-content-extractor.p.rapidapi.com/trending",
+        "file_name": "url_content_extractor.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Provide a URL and get the content in return",
+        "tool_file_found": true,
+        "tool_name": "URL Content Extractor",
+        "toolbench_relative_path": "Tools/url_content_extractor.json"
+      },
+      "toolbench_tool_description": "Provide a URL and get the content in return",
+      "toolbench_tool_name": "URL Content Extractor",
+      "url": "https://url-content-extractor.p.rapidapi.com/trending",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.382,
+        "tp_kbps": 5.235,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.432839026477914,
+    "topsis_rank": 28
+  },
+  {
+    "api_id": "article_api_extract-2",
+    "candidate_id": "",
+    "mode_rank": 29,
+    "llm_reported_rank": null,
+    "retrieved_rank": 30,
+    "rag_score": 0.5185682773590088,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "article_api.json",
+      "_tool": "article_api",
+      "api_id": "article_api_extract-2",
+      "category": "News_Media",
+      "description": "get readable content and metadata of aa url",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/extract",
+      "tool_description": "Normalize article from a url",
+      "tool_name": "article-api",
+      "toolbench_endpoint_description": "get readable content and metadata of aa url",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "get readable content and metadata of aa url",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/extract",
+        "endpoint_url": "https://article-api1.p.rapidapi.com/extract",
+        "file_name": "article_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Normalize article from a url",
+        "tool_file_found": true,
+        "tool_name": "article-api",
+        "toolbench_relative_path": "News_Media/article_api.json"
+      },
+      "toolbench_tool_description": "Normalize article from a url",
+      "toolbench_tool_name": "article-api",
+      "url": "https://article-api1.p.rapidapi.com/extract",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.405,
+        "tp_kbps": 4.938,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.42970478056467404,
+    "topsis_rank": 29
+  },
+  {
+    "api_id": "pac_api_get_trump_articles_from_specific_newspaper",
+    "candidate_id": "",
+    "mode_rank": 30,
+    "llm_reported_rank": null,
+    "retrieved_rank": 20,
+    "rag_score": 0.5444772839546204,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "pac_api.json",
+      "_tool": "pac_api",
+      "api_id": "pac_api_get_trump_articles_from_specific_newspaper",
+      "category": "News_Media",
+      "description": "This endpoint returns all articles for Trump from a specific newspaper",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "boston_globe,new_york_times,cnn,washington_post,los_angeles_times,chicago_tribute",
+            "description": "",
+            "name": "newspaper",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Trump articles from specific newspaper",
+      "tool_description": "An API for collecting political articles for Biden and Trump",
+      "tool_name": "PAC API",
+      "toolbench_endpoint_description": "This endpoint returns all articles for Trump from a specific newspaper",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "This endpoint returns all articles for Trump from a specific newspaper",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Trump articles from specific newspaper",
+        "endpoint_url": "https://pac-api.p.rapidapi.com/trump/boston_globe,new_york_times,cnn,washington_post,los_angeles_times,chicago_tribute",
+        "file_name": "pac_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API for collecting political articles for Biden and Trump",
+        "tool_file_found": true,
+        "tool_name": "PAC API",
+        "toolbench_relative_path": "News_Media/pac_api.json"
+      },
+      "toolbench_tool_description": "An API for collecting political articles for Biden and Trump",
+      "toolbench_tool_name": "PAC API",
+      "url": "https://pac-api.p.rapidapi.com/trump/boston_globe,new_york_times,cnn,washington_post,los_angeles_times,chicago_tribute",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.438,
+        "tp_kbps": 6.849,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.42701998328821406,
+    "topsis_rank": 30
+  },
+  {
+    "api_id": "malaysia_kini_get_article_by_sid",
+    "candidate_id": "",
+    "mode_rank": 31,
+    "llm_reported_rank": null,
+    "retrieved_rank": 32,
+    "rag_score": 0.5140929818153381,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "malaysia_kini.json",
+      "_tool": "malaysia_kini",
+      "api_id": "malaysia_kini_get_article_by_sid",
+      "category": "News_Media",
+      "description": "Return news article content based on sid stated in **Get Latest Article List** method.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "565154",
+            "description": "Article id number return by **Get Latest Article List** method (stated as **sid**)",
+            "name": "sid",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Article by SID",
+      "tool_description": "Live News by Malaysia Kini",
+      "tool_name": "Malaysia Kini",
+      "toolbench_endpoint_description": "Return news article content based on sid stated in **Get Latest Article List** method.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Return news article content based on sid stated in **Get Latest Article List** method.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Article by SID",
+        "endpoint_url": "https://malaysia-kini.p.rapidapi.com/get_article/565154",
+        "file_name": "malaysia_kini.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Live News by Malaysia Kini",
+        "tool_file_found": true,
+        "tool_name": "Malaysia Kini",
+        "toolbench_relative_path": "News_Media/malaysia_kini.json"
+      },
+      "toolbench_tool_description": "Live News by Malaysia Kini",
+      "toolbench_tool_name": "Malaysia Kini",
+      "url": "https://malaysia-kini.p.rapidapi.com/get_article/565154",
+      "qos": {
+        "availability": 0.9794,
+        "rt_s": 0.438,
+        "tp_kbps": 6.849,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.42668074307618126,
+    "topsis_rank": 31
+  },
+  {
+    "api_id": "guardian_searchcontent",
+    "candidate_id": "",
+    "mode_rank": 32,
+    "llm_reported_rank": null,
+    "retrieved_rank": 28,
+    "rag_score": 0.522045373916626,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "guardian.json",
+      "_tool": "guardian",
+      "api_id": "guardian_searchcontent",
+      "category": "News_Media",
+      "description": "You can find all parts of the content in the API",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Return only content published on or after that date. Example: 2014-02-16",
+            "name": "from-date",
+            "type": "DATEPICKER"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those IDs. Example: technology/2014/feb/17/flappy-bird-clones-apple-google",
+            "name": "ids",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Request content containing this free text. Supports AND, OR and NOT operators, and exact phrase queries using double quotes.",
+            "name": "query",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated media elements such as images and audio. Accepted values: audio,image,video,all",
+            "name": "show-elements",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Returns results in the specified order. Accepted values: newest, oldest, relevance",
+            "name": "order-by",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Add associated metadata section",
+            "name": "show-section",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those tags. Example: technology/apple",
+            "name": "tag",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those references. Example: isbn/9780718178949",
+            "name": "reference",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only the result set from a particular page. Example: 5",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Return only content in those languages. ISO language codes. Example: fr",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated rights. Accepted values: syndicatable, subscription-databases, all",
+            "name": "show-rights",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Add associated metadata tags. Example: publication",
+            "name": "show-tags",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content from those production offices. Example: aus",
+            "name": "production-office",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Modify the number of items displayed per page. Accepted values: 1 to 50",
+            "name": "page-size",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Add fields associated with the content",
+            "name": "show-fields",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated reference data such as ISBNs",
+            "name": "show-references",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those rights. Example: syndicatable",
+            "name": "rights",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content in those sections. Example: football",
+            "name": "section",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with references of those types. Example: isbn",
+            "name": "reference-type",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with a given star rating. From 1 to 5",
+            "name": "star-rating",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Add associated blocks",
+            "name": "show-blocks",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Returns results in the specified order. Accepted values: published, newspaper-edition, last-modified",
+            "name": "order-date",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Return only content published on or before that date. Example: 2014-02-17",
+            "name": "to-date",
+            "type": "DATEPICKER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The api key obtained from Guardian",
+            "name": "apiKey",
+            "type": "CREDENTIALS"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "searchContent",
+      "tool_description": "Query and download data from this publication's database.",
+      "tool_name": "Guardian",
+      "toolbench_endpoint_description": "You can find all parts of the content in the API",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "You can find all parts of the content in the API",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "searchContent",
+        "endpoint_url": "https://Guardianmikilior1V1.p.rapidapi.com/searchContent",
+        "file_name": "guardian.json",
+        "optional_parameter_count": 23,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Query and download data from this publication's database.",
+        "tool_file_found": true,
+        "tool_name": "Guardian",
+        "toolbench_relative_path": "News_Media/guardian.json"
+      },
+      "toolbench_tool_description": "Query and download data from this publication's database.",
+      "toolbench_tool_name": "Guardian",
+      "url": "https://Guardianmikilior1V1.p.rapidapi.com/searchContent",
+      "qos": {
+        "availability": 0.9705,
+        "rt_s": 0.466,
+        "tp_kbps": 6.437,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.42291387790608,
+    "topsis_rank": 32
+  },
+  {
+    "api_id": "ieee_spectrum_api_get_the_latest_30_news_from_ieee_spectrum",
+    "candidate_id": "",
+    "mode_rank": 33,
+    "llm_reported_rank": null,
+    "retrieved_rank": 19,
+    "rag_score": 0.5464706420898438,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "ieee_spectrum_api.json",
+      "_tool": "ieee_spectrum_api",
+      "api_id": "ieee_spectrum_api_get_the_latest_30_news_from_ieee_spectrum",
+      "category": "News_Media",
+      "description": "This endpoint will return back the latest 30 news from IEEE Spectrum website as JSON objects with 6 data elements. These will be the Title, URL, DatePublished, Section, Image source and how much time it takes to read the article.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get the latest 30 News from IEEE Spectrum",
+      "tool_description": "The IEEE Spectrum News API is a simple HTTP-based API that allows developers and students to access the latest news and articles from the IEEE Spectrum website as well as integrate them as data into their own websites web applications or mobile apps. The API uses \"REST-Like\" operations over HTTP GET",
+      "tool_name": "IEEE Spectrum API",
+      "toolbench_endpoint_description": "This endpoint will return back the latest 30 news from IEEE Spectrum website as JSON objects with 6 data elements. These will be the Title, URL, DatePublished, Section, Image source and how much time it takes to read the article.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "This endpoint will return back the latest 30 news from IEEE Spectrum website as JSON objects with 6 data elements. These will be the Title, URL, DatePublished, Section, Image source and how much time it takes to read the article.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get the latest 30 News from IEEE Spectrum",
+        "endpoint_url": "https://ieee-spectrum-api.p.rapidapi.com/api",
+        "file_name": "ieee_spectrum_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The IEEE Spectrum News API is a simple HTTP-based API that allows developers and students to access the latest news and articles from the IEEE Spectrum website as well as integrate them as data into their own websites web applications or mobile apps. The API uses \"REST-Like\" operations over HTTP GET requests with parameters Header encoded into the request and its response encoded in JSON format.This API has been created for bringing the latest technology news provided by the  IEEE Spectrum Ne...",
+        "tool_file_found": true,
+        "tool_name": "IEEE Spectrum API",
+        "toolbench_relative_path": "News_Media/ieee_spectrum_api.json"
+      },
+      "toolbench_tool_description": "The IEEE Spectrum News API is a simple HTTP-based API that allows developers and students to access the latest news and articles from the IEEE Spectrum website as well as integrate them as data into their own websites web applications or mobile apps. The API uses \"REST-Like\" operations over HTTP GET requests with parameters Header encoded into the request and its response encoded in JSON format.This API has been created for bringing the latest technology news provided by the  IEEE Spectrum Ne...",
+      "toolbench_tool_name": "IEEE Spectrum API",
+      "url": "https://ieee-spectrum-api.p.rapidapi.com/api",
+      "qos": {
+        "availability": 0.4277,
+        "rt_s": 0.412,
+        "tp_kbps": 9.708,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.41999806659932637,
+    "topsis_rank": 33
+  },
+  {
+    "api_id": "newscatcher_v1_aggregation",
+    "candidate_id": "",
+    "mode_rank": 34,
+    "llm_reported_rank": null,
+    "retrieved_rank": 1,
+    "rag_score": 0.6716352701187134,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newscatcher.json",
+      "_tool": "newscatcher",
+      "api_id": "newscatcher_v1_aggregation",
+      "category": "News_Media",
+      "description": "Searches as `/v1/search` but returns the articles count per hour or day instead of articles' data",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "The country to which you want to narrow your search. This parameter is [experimental]. We advise you to use it in conjunction with the `lang` parameter. Accepts any [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes",
+            "name": "country",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The topic to which you want to restrict the articles of your choice. This parameter is [experimental]. Accepted values are `news`, `sport`, `tech`, `world`, `finance`, `politics`, `business`, `economics`, `entertainment`,`beauty`,`travel`,`music`,`food`,`science`\n- `news` usually means a general news feed (main headlines of a website).\n> Important: this parameter is [experimental]. Not all news articles are assigned with a `topic`, therefore, we cannot guarantee that 100% of topics talking about technology will be assigned a `tech` label.\n> One topic at a time, for example, `topic=sport`",
+            "name": "topic",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "One or more news resources to filter your search. It should be the normal form of the URL, for example, **[nytimes.com](http://nytimes.com/)**, **[theguardian.com](http://theguardian.com/)**\n> Comma separated string, for example `sources=nytimes.com,cnn.com,wsj.com`",
+            "name": "sources",
+            "type": "STRING"
+          },
+          {
+            "default": "day",
+            "description": "- `day` — default option. Aggregate results by day. No more than 100 days \n- `hour` — Aggregate results by hour. No more than 100 hours",
+            "name": "agg_by",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Upper boundary of the rank of news website to filter by",
+            "name": "to_rank",
+            "type": "NUMBER"
+          },
+          {
+            "default": "True",
+            "description": "Adds to the output of the call two more variables: `media` and `media_content`\n\nMedia - the main image published with an article \n\nmedia_content  - a comma-separated string of all images used in an article",
+            "name": "media",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Specifies the language of the search.  Allowed values are:\n`af`, `ar`, `bg`, `bn`, `ca`,`cn`, `cs`, `cy`, `da`, `de`, `el`, `en`, `es`, `et`, `fa`, `fi`, `fr`, `gu`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `kn`, `ko`, `lt`, `lv`, `mk`, `ml`, `mr`, `ne`, `nl`, `no`, `pa`, `pl`, `pt`, `ro`, `ru`, `sk`, `sl`, `so`, `sq`, `sv`, `sw`, `ta`, `te`, `th`, `tl`, `tr`,`tw`, `uk`, `ur`, `vi`. \nSpecifying the language will make your search more relevant",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "One or more sources to be excluded from the search. \n> Comma separated string, for example, `not_sources=nytimes.com,cnn.com,wsj.com`",
+            "name": "not_sources",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Until which point in time to search for. The default timezone is UTC",
+            "name": "to",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Limit the search only for the sources which are in top 1 million online websites. Defaults to `True` (`False` if you want to turn it off). Unranked sources are assigned a rank that equals to `999999`",
+            "name": "ranked_only",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "From which point in time to start the search. No specific format is required. E.g. (`2020/05/01`, `2020-05-01` ,`2020-05-01 12:54:14`, `2020-05-01 4:15am`, `yesterday 2:02 am`, `2020/05/01 12:55 EST`) Default timezone is UTC. **\nThe default is set to one week ago at midnight UTC.** ",
+            "name": "from",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "By default, we search what you specified in `q` in both `title` and `summary` of the article. However, you can limit this to either `title` or `summary`",
+            "name": "search_in",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Lowest boundary of the rank of news website to filter by. **Important**: lower rank means that a source is more popular",
+            "name": "from_rank",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "Apple",
+            "description": "String to search for. Has to be [URL-encoded](https://en.wikipedia.org/wiki/Percent-encoding). ",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/v1/aggregation",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "tool_name": "Newscatcher",
+      "toolbench_endpoint_description": "Searches as `/v1/search` but returns the articles count per hour or day instead of articles' data",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Searches as `/v1/search` but returns the articles count per hour or day instead of articles' data",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/aggregation",
+        "endpoint_url": "https://newscatcher.p.rapidapi.com/v1/aggregation",
+        "file_name": "newscatcher.json",
+        "optional_parameter_count": 13,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+        "tool_file_found": true,
+        "tool_name": "Newscatcher",
+        "toolbench_relative_path": "News_Media/newscatcher.json"
+      },
+      "toolbench_tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "toolbench_tool_name": "Newscatcher",
+      "url": "https://newscatcher.p.rapidapi.com/v1/aggregation",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.6285000000000001,
+        "tp_kbps": 12.728,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4064203722851202,
+    "topsis_rank": 34
+  },
+  {
+    "api_id": "specrom_news_api_extract_all_social_media_handles_urls",
+    "candidate_id": "",
+    "mode_rank": 35,
+    "llm_reported_rank": null,
+    "retrieved_rank": 25,
+    "rag_score": 0.5272421836853027,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_extract_all_social_media_handles_urls",
+      "category": "News_Media",
+      "description": "Get all the social media handles and URLs on a webpage by simply entering the URL.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Extract All Social Media Handles & URLs",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Get all the social media handles and URLs on a webpage by simply entering the URL.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get all the social media handles and URLs on a webpage by simply entering the URL.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Extract All Social Media Handles & URLs",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.692,
+        "tp_kbps": 4.335,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3938687284054049,
+    "topsis_rank": 35
+  },
+  {
+    "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+    "candidate_id": "",
+    "mode_rank": 36,
+    "llm_reported_rank": null,
+    "retrieved_rank": 7,
+    "rag_score": 0.625199019908905,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+      "category": "News_Media",
+      "description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Fetch Parsed News Article by url_id",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Fetch Parsed News Article by url_id",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.897,
+        "tp_kbps": 51.535,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3909049321463636,
+    "topsis_rank": 36
+  },
+  {
+    "api_id": "newscatcher_v1_latest_headlines",
+    "candidate_id": "",
+    "mode_rank": 37,
+    "llm_reported_rank": null,
+    "retrieved_rank": 3,
+    "rag_score": 0.6592348217964172,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newscatcher.json",
+      "_tool": "newscatcher",
+      "api_id": "newscatcher_v1_latest_headlines",
+      "category": "News_Media",
+      "description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "en",
+            "description": "Specifies the language of the search.  Allowed values are:\n`af`, `ar`, `bg`, `bn`, `ca`,`cn`, `cs`, `cy`, `da`, `de`, `el`, `en`, `es`, `et`, `fa`, `fi`, `fr`, `gu`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `kn`, `ko`, `lt`, `lv`, `mk`, `ml`, `mr`, `ne`, `nl`, `no`, `pa`, `pl`, `pt`, `ro`, `ru`, `sk`, `sl`, `so`, `sq`, `sv`, `sw`, `ta`, `te`, `th`, `tl`, `tr`,`tw`, `uk`, `ur`, `vi`. \n Specifying the language will make your search more relevant",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The topic to which you want to restrict the articles of your choice. This parameter is [experimental]. Accepted values are `news`, `sport`, `tech`, `world`, `finance`, `politics`, `business`, `economics`, `entertainment`,`beauty`,`travel`,`music`,`food`,`science`\n- `news` usually means a general news feed (main headlines of a website).\n> Important: this parameter is [experimental]. Not all news articles are assigned with a `topic`, therefore, we cannot guarantee that 100% of topics talking about technology will be assigned a `tech` label.\n> One topic at a time, for example `topic=sport`",
+            "name": "topic",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The country to which you want to narrow your search. This parameter is [experimental]. We advise you to use it in conjunction with the `lang` parameter. Accepts any [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes",
+            "name": "country",
+            "type": "STRING"
+          },
+          {
+            "default": "True",
+            "description": "Adds to the output of the call two more variables: `media` and `media_content`\n\nMedia - the main image published with an article \n\nmedia_content  - a comma-separated string of all images used in an article",
+            "name": "media",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "/v1/latest_headlines",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "tool_name": "Newscatcher",
+      "toolbench_endpoint_description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Always returns the latest 100 articles for any `topic`, `country`, `lang`, or any of those combined",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/latest_headlines",
+        "endpoint_url": "https://newscatcher.p.rapidapi.com/v1/latest_headlines",
+        "file_name": "newscatcher.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+        "tool_file_found": true,
+        "tool_name": "Newscatcher",
+        "toolbench_relative_path": "News_Media/newscatcher.json"
+      },
+      "toolbench_tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "toolbench_tool_name": "Newscatcher",
+      "url": "https://newscatcher.p.rapidapi.com/v1/latest_headlines",
+      "qos": {
+        "availability": 0.9676,
+        "rt_s": 0.8654999999999999,
+        "tp_kbps": 2.3105,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3677712070540399,
+    "topsis_rank": 37
+  },
+  {
+    "api_id": "greek_news_in_english_get_all_sources",
+    "candidate_id": "",
+    "mode_rank": 38,
+    "llm_reported_rank": null,
+    "retrieved_rank": 24,
+    "rag_score": 0.5362391471862793,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "greek_news_in_english.json",
+      "_tool": "greek_news_in_english",
+      "api_id": "greek_news_in_english_get_all_sources",
+      "category": "News_Media",
+      "description": "Get All Sources' names and ids",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Sources",
+      "tool_description": "An API showing all the latest Greek news in English",
+      "tool_name": "Greek News in English",
+      "toolbench_endpoint_description": "Get All Sources' names and ids",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get All Sources' names and ids",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Sources",
+        "endpoint_url": "https://greek-news-in-english.p.rapidapi.com/api/sources",
+        "file_name": "greek_news_in_english.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API showing all the latest Greek news  in English",
+        "tool_file_found": true,
+        "tool_name": "Greek News in English",
+        "toolbench_relative_path": "News_Media/greek_news_in_english.json"
+      },
+      "toolbench_tool_description": "An API showing all the latest Greek news  in English",
+      "toolbench_tool_name": "Greek News in English",
+      "url": "https://greek-news-in-english.p.rapidapi.com/api/sources",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.98,
+        "tp_kbps": 4.081,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3523058244035085,
+    "topsis_rank": 38
+  },
+  {
+    "api_id": "newsnow_top_news_powered_by_duck_duck_go",
+    "candidate_id": "",
+    "mode_rank": 39,
+    "llm_reported_rank": null,
+    "retrieved_rank": 21,
+    "rag_score": 0.541834831237793,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newsnow.json",
+      "_tool": "newsnow",
+      "api_id": "newsnow_top_news_powered_by_duck_duck_go",
+      "category": "News_Media",
+      "description": "Get Top News",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Top News (Powered By Duck Duck Go)",
+      "tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central ",
+      "tool_name": "NewsNow",
+      "toolbench_endpoint_description": "Get Top News",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get Top News",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Top News (Powered By Duck Duck Go)",
+        "endpoint_url": "https://newsnow.p.rapidapi.com/",
+        "file_name": "newsnow.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central Television (CCTV) , ESPN, Bleacher NBA ,The Sydney Morning Herald,NHK World ,The Categories- Economist, Breaking News, World Events, Politics, Technology, Health, Science, Business, Crypto Stock Ma...",
+        "tool_file_found": true,
+        "tool_name": "NewsNow",
+        "toolbench_relative_path": "News_Media/newsnow.json"
+      },
+      "toolbench_tool_description": "Google news , Bing news , BBC, CNN, Yahoo news ,MSN, CNN, New York Times, The Washington Post, Wall Street Journal, USA Today, Reuters, Fox News, HuffPost, NBC News, ABC News, India Today, BBC News ,The Guardian , Al Jazeera CNBC ,Associated Press ,Fox News ,Le Monde , Deutsche Welle ,China Central Television (CCTV) , ESPN, Bleacher NBA ,The Sydney Morning Herald,NHK World ,The Categories- Economist, Breaking News, World Events, Politics, Technology, Health, Science, Business, Crypto Stock Ma...",
+      "toolbench_tool_name": "NewsNow",
+      "url": "https://newsnow.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.0088,
+        "rt_s": 1.458,
+        "tp_kbps": 3.429,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.23937225477273935,
+    "topsis_rank": 39
+  },
+  {
+    "api_id": "newscatcher_v1_search_free",
+    "candidate_id": "",
+    "mode_rank": 40,
+    "llm_reported_rank": null,
+    "retrieved_rank": 8,
+    "rag_score": 0.622026801109314,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "newscatcher.json",
+      "_tool": "newscatcher",
+      "api_id": "newscatcher_v1_search_free",
+      "category": "News_Media",
+      "description": "**Up to 100 articles per 1 API call even with free Basic Plan.**\nFree search. Only the language filter is allowed.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "True",
+            "description": "Adds to the output of the call two more variables: `media` and `media_content`\n\nMedia - the main image published with an article \n\nmedia_content  - a comma-separated string of all images used in an article",
+            "name": "media",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The number of the page. Use it to scroll through the results. Defaults to 1",
+            "name": "page",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Limit the search only for the sources which are in top 1 million online websites. Defaults to `True` (`False` if you want to turn it off). Unranked sources are assigned a rank that equals to `999999`",
+            "name": "ranked_only",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "How many articles to return per page. Defaults to 50, max is 100",
+            "name": "page_size",
+            "type": "STRING"
+          },
+          {
+            "default": "en",
+            "description": "Specifies the language of the search.  Allowed values are:\n`af`, `ar`, `bg`, `bn`, `ca`,`cn`, `cs`, `cy`, `da`, `de`, `el`, `en`, `es`, `et`, `fa`, `fi`, `fr`, `gu`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `kn`, `ko`, `lt`, `lv`, `mk`, `ml`, `mr`, `ne`, `nl`, `no`, `pa`, `pl`, `pt`, `ro`, `ru`, `sk`, `sl`, `so`, `sq`, `sv`, `sw`, `ta`, `te`, `th`, `tl`, `tr`,`tw`, `uk`, `ur`, `vi`. \nSpecifying the language will make your search more relevant",
+            "name": "lang",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "Elon Musk",
+            "description": "String to search for. Has to be [URL-encoded](https://en.wikipedia.org/wiki/Percent-encoding)",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/v1/search_free",
+      "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "tool_name": "Newscatcher",
+      "toolbench_endpoint_description": "**Up to 100 articles per 1 API call even with free Basic Plan.**\nFree search. Only the language filter is allowed.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "**Up to 100 articles per 1 API call even with free Basic Plan.**\nFree search. Only the language filter is allowed.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/search_free",
+        "endpoint_url": "https://newscatcher.p.rapidapi.com/v1/search_free",
+        "file_name": "newscatcher.json",
+        "optional_parameter_count": 5,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+        "tool_file_found": true,
+        "tool_name": "Newscatcher",
+        "toolbench_relative_path": "News_Media/newscatcher.json"
+      },
+      "toolbench_tool_description": "API to find news articles by any topic, country, language, website, or keyword",
+      "toolbench_tool_name": "Newscatcher",
+      "url": "https://newscatcher.p.rapidapi.com/v1/search_free",
+      "qos": {
+        "availability": 0.1298,
+        "rt_s": 2.4779999999999998,
+        "tp_kbps": 0.8360000000000001,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.0207708397020692,
+    "topsis_rank": 40
+  }
+]

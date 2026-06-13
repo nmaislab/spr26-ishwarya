@@ -1,0 +1,245 @@
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "Fetch top news articles, summarize them into an SMS‑length digest, and send the digest via SMS on a daily schedule.",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+        "subtask_id": "1",
+        "action": "Retrieve the week's top news articles from dev.to.",
+        "input_from_previous_step": "none",
+        "output_to_next_step": "articles_json",
+        "why": "Provides raw article content needed for summarization.",
+        "planner_override_reason": null,
+        "qos": {
+          "rt_s": 0.339,
+          "tp_kbps": 5.899,
+          "availability": 0.9941,
+          "valid_qos": true
+        },
+        "mode": "qos_pure_llm",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 2,
+        "api_id": "text_summarizer_api_summarizer",
+        "subtask_id": "2",
+        "action": "Summarize the fetched articles into a concise digest suitable for SMS (≈160 characters).",
+        "input_from_previous_step": "articles_json",
+        "output_to_next_step": "summary_text",
+        "why": "Transforms lengthy articles into a short, SMS‑ready digest.",
+        "planner_override_reason": null,
+        "qos": {
+          "rt_s": 0.2475,
+          "tp_kbps": 12.1205,
+          "availability": 0.9794,
+          "valid_qos": true
+        },
+        "mode": "qos_pure_llm",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 3,
+        "api_id": "go_messenger_send_message",
+        "subtask_id": "3",
+        "action": "Send the digest as an SMS message using Go‑Messenger.",
+        "input_from_previous_step": "summary_text",
+        "output_to_next_step": "none",
+        "why": "Delivers the digest to the end‑user via SMS.",
+        "planner_override_reason": null,
+        "qos": {
+          "rt_s": 0.168,
+          "tp_kbps": 53.571,
+          "availability": 0.9882,
+          "valid_qos": true
+        },
+        "mode": "qos_pure_llm",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      }
+    ],
+    "subtask_coverage": [
+      {
+        "subtask_id": 1,
+        "description": "Fetch top news articles using a news API",
+        "steps": [
+          1
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 2,
+        "description": "Summarize the fetched articles into an SMS‑length digest using a language model API",
+        "steps": [
+          2
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 3,
+        "description": "Send the SMS digest via an SMS messaging API",
+        "steps": [
+          3
+        ],
+        "coverage": "full"
+      }
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+        "subtask_id": "1",
+        "method": "GET",
+        "url": "https://dev-to-api1.p.rapidapi.com/articles/top",
+        "required_parameters": [],
+        "optional_parameters": [],
+        "depends_on": [],
+        "input_mapping": "none",
+        "output_mapping": "articles_json",
+        "expected_output": "JSON array containing the week's top articles (title, url, content, etc.)",
+        "planner_override_reason": null,
+        "mode": "qos_pure_llm",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 2,
+        "api_id": "text_summarizer_api_summarizer",
+        "subtask_id": "2",
+        "method": "POST",
+        "url": "https://text-summarizer-api.p.rapidapi.com/summarizer",
+        "required_parameters": [
+          {
+            "name": "text",
+            "source": "previous_step_output",
+            "value_hint": "Full article text (or concatenated texts) from step 1"
+          },
+          {
+            "name": "output_percent",
+            "source": "constant/default",
+            "value_hint": "40"
+          }
+        ],
+        "optional_parameters": [],
+        "depends_on": [
+          1
+        ],
+        "input_mapping": "articles_json",
+        "output_mapping": "summary_text",
+        "expected_output": "Summarized text string, short enough to fit in a single SMS (≈160 characters)",
+        "planner_override_reason": null,
+        "mode": "qos_pure_llm",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 3,
+        "api_id": "go_messenger_send_message",
+        "subtask_id": "3",
+        "method": "POST",
+        "url": "https://go-messenger.p.rapidapi.com/messages",
+        "required_parameters": [],
+        "optional_parameters": [],
+        "depends_on": [
+          2
+        ],
+        "input_mapping": "summary_text",
+        "output_mapping": "none",
+        "expected_output": "Response confirming SMS delivery (status, message ID, etc.)",
+        "planner_override_reason": null,
+        "mode": "qos_pure_llm",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      }
+    ]
+  },
+  "selected_api_ids": [
+    "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+    "text_summarizer_api_summarizer",
+    "go_messenger_send_message"
+  ],
+  "overall_rationale": "The plan follows the exact subtask order required by the user: first fetch the latest top articles, then pass the raw article content to the summarizer to create an SMS‑sized digest, and finally deliver that digest via the SMS API. Each selected API is the one pre‑chosen for its subtask, and the data flow is explicitly mapped through the output and input fields of consecutive steps. QoS metrics are retained for transparency, and no additional or placeholder APIs are introduced, ensuring functional correctness and adherence to the fixed_one selection mode.",
+  "planner_provenance": [
+    {
+      "mode": "qos_pure_llm",
+      "subtask_id": "1",
+      "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    },
+    {
+      "mode": "qos_pure_llm",
+      "subtask_id": "2",
+      "api_id": "text_summarizer_api_summarizer",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    },
+    {
+      "mode": "qos_pure_llm",
+      "subtask_id": "3",
+      "api_id": "go_messenger_send_message",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  ],
+  "planner_override_attempted": false,
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "planner_candidates_per_subtask": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+  },
+  "planner_selected_api_ids": [
+    "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+    "text_summarizer_api_summarizer",
+    "go_messenger_send_message"
+  ],
+  "planner_selection_diagnostics": [
+    {
+      "subtask_id": "1",
+      "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "dev_to_api_get_all_the_top_articles_of_the_week_by_default"
+      ]
+    },
+    {
+      "subtask_id": "2",
+      "api_id": "text_summarizer_api_summarizer",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "text_summarizer_api_summarizer"
+      ]
+    },
+    {
+      "subtask_id": "3",
+      "api_id": "go_messenger_send_message",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "go_messenger_send_message"
+      ]
+    }
+  ]
+}

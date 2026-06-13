@@ -1,0 +1,76 @@
+[
+  {
+    "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+    "candidate_id": "C09",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 2,
+    "rag_score": 0.6624929904937744,
+    "reason": "",
+    "service": {
+      "_file": "dev_to_api.json",
+      "_tool": "dev_to_api",
+      "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+      "category": "News_Media",
+      "description": "It returns all the week's top articles",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get all the top articles of the week by default",
+      "tool_description": "API that fetches the latest blogs from dev.to website",
+      "tool_name": "dev-to-api",
+      "toolbench_endpoint_description": "It returns all the week's top articles",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "It returns all the week's top articles",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get all the top articles of the week by default",
+        "endpoint_url": "https://dev-to-api1.p.rapidapi.com/articles/top",
+        "file_name": "dev_to_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API that fetches the latest blogs from dev.to website",
+        "tool_file_found": true,
+        "tool_name": "dev-to-api",
+        "toolbench_relative_path": "News_Media/dev_to_api.json"
+      },
+      "toolbench_tool_description": "API that fetches the latest blogs from dev.to website",
+      "toolbench_tool_name": "dev-to-api",
+      "url": "https://dev-to-api1.p.rapidapi.com/articles/top",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.339,
+        "tp_kbps": 5.899,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.637,
+    "qos_llm_rank": 22,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_pure_llm",
+      "subtask_id": "1",
+      "api_id": "dev_to_api_get_all_the_top_articles_of_the_week_by_default",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

@@ -1,0 +1,2626 @@
+[
+  {
+    "api_id": "smsto_send_campaign_message",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 23,
+    "rag_score": 0.48742759227752686,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 1.",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_send_campaign_message",
+      "category": "SMS",
+      "description": "Send message to multiple recipients (phone numbers)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send campaign message",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Send message to multiple recipients (phone numbers)",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Send message to multiple recipients (phone numbers)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send campaign message",
+        "endpoint_url": "https://smsto.p.rapidapi.com/sms/send",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "qos": {
+        "availability": 0.1298,
+        "rt_s": 0.5635,
+        "tp_kbps": 241.015,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.7824394383369989,
+    "topsis_rank": 1
+  },
+  {
+    "api_id": "smsto_send_campaign_message-2",
+    "candidate_id": "",
+    "mode_rank": 2,
+    "llm_reported_rank": null,
+    "retrieved_rank": 24,
+    "rag_score": 0.48742759227752686,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 6.",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_send_campaign_message-2",
+      "category": "SMS",
+      "description": "Send message to multiple recipients (phone numbers)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send campaign message",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Send message to multiple recipients (phone numbers)",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Send message to multiple recipients (phone numbers)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send campaign message",
+        "endpoint_url": "https://smsto.p.rapidapi.com/sms/send",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1365,
+        "tp_kbps": 36.63,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.37234983643388153,
+    "topsis_rank": 6
+  },
+  {
+    "api_id": "bulksmssender_send",
+    "candidate_id": "",
+    "mode_rank": 3,
+    "llm_reported_rank": null,
+    "retrieved_rank": 12,
+    "rag_score": 0.5081617832183838,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 13.",
+    "service": {
+      "_file": "bulksmssender.json",
+      "_tool": "bulksmssender",
+      "api_id": "bulksmssender_send",
+      "category": "SMS",
+      "description": "Sends bulk SMSes",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send",
+      "tool_description": "The Bulk SMS Sender API empowers developers and businesses to efficiently send SMS messages in bulk to multiple recipients. This API is designed for backend applications and integrates seamlessly with Twilio, a leading SMS messaging platform, to ensure reliable and secure message delivery.",
+      "tool_name": "BulkSMSSender",
+      "toolbench_endpoint_description": "Sends bulk SMSes",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Sends bulk SMSes",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send",
+        "endpoint_url": "https://bulksmssender.p.rapidapi.com/",
+        "file_name": "bulksmssender.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Bulk SMS Sender API empowers developers and businesses to efficiently send SMS messages in bulk to multiple recipients. This API is designed for backend applications and integrates seamlessly with Twilio, a leading SMS messaging platform, to ensure reliable and secure message delivery.",
+        "tool_file_found": true,
+        "tool_name": "BulkSMSSender",
+        "toolbench_relative_path": "SMS/bulksmssender.json"
+      },
+      "toolbench_tool_description": "The Bulk SMS Sender API empowers developers and businesses to efficiently send SMS messages in bulk to multiple recipients. This API is designed for backend applications and integrates seamlessly with Twilio, a leading SMS messaging platform, to ensure reliable and secure message delivery.",
+      "toolbench_tool_name": "BulkSMSSender",
+      "url": "https://bulksmssender.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.4602,
+        "rt_s": 0.1625,
+        "tp_kbps": 18.4625,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.321811368186617,
+    "topsis_rank": 13
+  },
+  {
+    "api_id": "smsto_schedule_sending_messages",
+    "candidate_id": "",
+    "mode_rank": 4,
+    "llm_reported_rank": null,
+    "retrieved_rank": 13,
+    "rag_score": 0.5009475946426392,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 14.",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_schedule_sending_messages",
+      "category": "SMS",
+      "description": "Schedule messages to send later\n\nThis is the same as Send personalized messages, but scheduled_for and timezone parameters are additionally specified.\n\nPlease note that if you do not provide the timezone parameter, then timezone from your SMS.to account settings will be used.\n\nIf you did not set the timezone (on your account settings and as a parameter), then the UTC timezone will be used by default.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Schedule sending messages",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Schedule messages to send later\n\nThis is the same as Send personalized messages, but scheduled_for and timezone parameters are additionally specified.\n\nPlease note that if you do not provide the timezone parameter, then timezone from your SMS.to account settings will be used.\n\nIf you did not set the timezone (on your account settings and as a parameter), then the UTC timezone will be used by default.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Schedule messages to send later\n\nThis is the same as Send personalized messages, but scheduled_for and timezone parameters are additionally specified.\n\nPlease note that if you do not provide the timezone parameter, then timezone from your SMS.to account settings will be used.\n\nIf you did not set the timezone (on your account settings and as a parameter), then the UTC timezone will be used by default.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Schedule sending messages",
+        "endpoint_url": "https://smsto.p.rapidapi.com/sms/send",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.31,
+        "tp_kbps": 12.903,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.30363289694025897,
+    "topsis_rank": 14
+  },
+  {
+    "api_id": "easysendsms_sms_api",
+    "candidate_id": "",
+    "mode_rank": 5,
+    "llm_reported_rank": null,
+    "retrieved_rank": 9,
+    "rag_score": 0.5120456218719482,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 17.",
+    "service": {
+      "_file": "easysendsms.json",
+      "_tool": "easysendsms",
+      "api_id": "easysendsms_sms_api",
+      "category": "SMS",
+      "description": "This page provides a reference for all features available to you via the HTTP interface for sending SMS.\r\n\r\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP protocol to send SMS. HTTPS is also supported for secure transactions using SSL encryption.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Hello World",
+            "description": "",
+            "name": "text",
+            "type": "STRING"
+          },
+          {
+            "default": "12345678900",
+            "description": "",
+            "name": "to",
+            "type": "STRING"
+          },
+          {
+            "default": "password",
+            "description": "",
+            "name": "password",
+            "type": "STRING"
+          },
+          {
+            "default": "0",
+            "description": "",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "default": "test",
+            "description": "",
+            "name": "from",
+            "type": "STRING"
+          },
+          {
+            "default": "username",
+            "description": "",
+            "name": "username",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "SMS API",
+      "tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS.",
+      "tool_name": "EasySendSMS",
+      "toolbench_endpoint_description": "This page provides a reference for all features available to you via the HTTP interface for sending SMS.\r\n\r\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP protocol to send SMS. HTTPS is also supported for secure transactions using SSL encryption.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "This page provides a reference for all features available to you via the HTTP interface for sending SMS.\r\n\r\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP protocol to send SMS. HTTPS is also supported for secure transactions using SSL encryption.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "SMS API",
+        "endpoint_url": "https://easysendsms.p.rapidapi.com/bulksms",
+        "file_name": "easysendsms.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 6,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS.",
+        "tool_file_found": true,
+        "tool_name": "EasySendSMS",
+        "toolbench_relative_path": "SMS/easysendsms.json"
+      },
+      "toolbench_tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS.",
+      "toolbench_tool_name": "EasySendSMS",
+      "url": "https://easysendsms.p.rapidapi.com/bulksms",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.327,
+        "tp_kbps": 12.232,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.2992212211380983,
+    "topsis_rank": 17
+  },
+  {
+    "api_id": "reach_interactive_message_send",
+    "candidate_id": "",
+    "mode_rank": 6,
+    "llm_reported_rank": null,
+    "retrieved_rank": 3,
+    "rag_score": 0.5406427979469299,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 28.",
+    "service": {
+      "_file": "reach_interactive.json",
+      "_tool": "reach_interactive",
+      "api_id": "reach_interactive_message_send",
+      "category": "SMS",
+      "description": "Creates a new message object. We return an array of each Id generated. Per request, a max of 50 recipients can be entered.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Message Send",
+      "tool_description": "Our secure SMS API is the only tool you'll need to schedule, send and receive messages from your existing systems. It's robust too - even the most demanding applications see high message throughputs using our API.",
+      "tool_name": "Reach Interactive",
+      "toolbench_endpoint_description": "Creates a new message object. We return an array of each Id generated. Per request, a max of 50 recipients can be entered.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Creates a new message object. We return an array of each Id generated. Per request, a max of 50 recipients can be entered.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Message Send",
+        "endpoint_url": "https://reach-interactive.p.rapidapi.com/sms/message",
+        "file_name": "reach_interactive.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our secure SMS API is the only tool you'll need to schedule, send and receive messages from your existing systems. It's robust too - even the most demanding applications see high message throughputs using our API.",
+        "tool_file_found": true,
+        "tool_name": "Reach Interactive",
+        "toolbench_relative_path": "SMS/reach_interactive.json"
+      },
+      "toolbench_tool_description": "Our secure SMS API is the only tool you'll need to schedule, send and receive messages from your existing systems. It's robust too - even the most demanding applications see high message throughputs using our API.",
+      "toolbench_tool_name": "Reach Interactive",
+      "url": "https://reach-interactive.p.rapidapi.com/sms/message",
+      "qos": {
+        "availability": 0.1268,
+        "rt_s": 0.303,
+        "tp_kbps": 9.9,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.2723462383360283,
+    "topsis_rank": 28
+  },
+  {
+    "api_id": "smsto_send_message_to_a_list_or_multiple_list_in_array",
+    "candidate_id": "",
+    "mode_rank": 7,
+    "llm_reported_rank": null,
+    "retrieved_rank": 25,
+    "rag_score": 0.48698291182518005,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 31.",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_send_message_to_a_list_or_multiple_list_in_array",
+      "category": "SMS",
+      "description": "Send Message to a list or multiple list in array",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send Message to a list or multiple list in array",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Send Message to a list or multiple list in array",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Send Message to a list or multiple list in array",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send Message to a list or multiple list in array",
+        "endpoint_url": "https://smsto.p.rapidapi.com/sms/send",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.442,
+        "tp_kbps": 6.787,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.26739929863219547,
+    "topsis_rank": 31
+  },
+  {
+    "api_id": "sms_gateway_sms_gateway",
+    "candidate_id": "",
+    "mode_rank": 8,
+    "llm_reported_rank": null,
+    "retrieved_rank": 27,
+    "rag_score": 0.4853067696094513,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 33.",
+    "service": {
+      "_file": "sms_gateway.json",
+      "_tool": "sms_gateway",
+      "api_id": "sms_gateway_sms_gateway",
+      "category": "Communication",
+      "description": "",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "268431687",
+            "description": "Unique reference, if this parameter is absent, no status report is sent.",
+            "name": "reference",
+            "type": "STRING"
+          },
+          {
+            "default": "201308020025",
+            "description": "The date on which the message needs to be sent.",
+            "name": "timestamp",
+            "type": "NUMBER"
+          },
+          {
+            "default": "checked",
+            "description": "Replace non GSM-7 characters by appropriate valid GSM-7 characters.",
+            "name": "replacechars",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "normal",
+            "description": "When sending a message, you can specify what type of message it is. You can send messages in 3 types (normal / binary / flash).",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The UDH parameter is required if you want to send a binary SMS. This parameter needs to contain the \"header\" of the SMS message.",
+            "name": "udh",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "If test is TRUE, then the message is not actually sent or scheduled, and there will be no credits deducted. Validation of the message will take place, and you will also receive a normal response back from the API.",
+            "name": "test",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "http://www.example.com/dlr-messagebird.php",
+            "description": "If you want a dlr notification of the message send to another url then that you have set on the web site, you can use this parameter.",
+            "name": "dlr_url",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "MessageBird",
+            "description": "Sender of the message. Can be numeric or alphanumeric.",
+            "name": "sender",
+            "type": "STRING"
+          },
+          {
+            "default": "This is a gsm 7-bit test message.",
+            "description": "The message that needs to be sent. If the body contains signs that are not listed in the GSM-7 table, it is considered UTF-8.",
+            "name": "body",
+            "type": "STRING"
+          },
+          {
+            "default": "31600000001,31600000002",
+            "description": "One or several receivers, separated by a comma.",
+            "name": "destination",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "SMS Gateway",
+      "tool_description": "MessageBird provides a simple and fast API for sending and receiving text messages (SMS) all over the world. Other related services are HLR-Lookup (network query) and sending and receiving Premium SMS messages.",
+      "tool_name": "SMS Gateway",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "SMS Gateway",
+        "endpoint_url": "https://messagebird-sms-gateway.p.rapidapi.com/sms",
+        "file_name": "sms_gateway.json",
+        "optional_parameter_count": 7,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "MessageBird provides a simple and fast API for sending and receiving text messages (SMS) all over the world. Other related services are HLR-Lookup (network query) and sending and receiving Premium SMS messages.",
+        "tool_file_found": true,
+        "tool_name": "SMS Gateway",
+        "toolbench_relative_path": "Communication/sms_gateway.json"
+      },
+      "toolbench_tool_description": "MessageBird provides a simple and fast API for sending and receiving text messages (SMS) all over the world. Other related services are HLR-Lookup (network query) and sending and receiving Premium SMS messages.",
+      "toolbench_tool_name": "SMS Gateway",
+      "url": "https://messagebird-sms-gateway.p.rapidapi.com/sms",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.575,
+        "tp_kbps": 5.208,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.23654558106136692,
+    "topsis_rank": 33
+  },
+  {
+    "api_id": "hooksms_send",
+    "candidate_id": "",
+    "mode_rank": 9,
+    "llm_reported_rank": null,
+    "retrieved_rank": 1,
+    "rag_score": 0.5500848293304443,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 35.",
+    "service": {
+      "_file": "hooksms.json",
+      "_tool": "hooksms",
+      "api_id": "hooksms_send",
+      "category": "SMS",
+      "description": "The only endpoint you'll ever need.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Hello World!",
+            "description": "",
+            "name": "text",
+            "type": "STRING"
+          },
+          {
+            "default": "13142222222",
+            "description": "",
+            "name": "phone",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Send",
+      "tool_description": "Quickly integrate outbound SMS with a simple post request or our npm package.",
+      "tool_name": "HookSMS",
+      "toolbench_endpoint_description": "The only endpoint you'll ever need.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "The only endpoint you'll ever need.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send",
+        "endpoint_url": "https://hooksms.p.rapidapi.com/send",
+        "file_name": "hooksms.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Quickly integrate outbound SMS with a simple post request or our npm package.",
+        "tool_file_found": true,
+        "tool_name": "HookSMS",
+        "toolbench_relative_path": "SMS/hooksms.json"
+      },
+      "toolbench_tool_description": "Quickly integrate outbound SMS with a simple post request or our npm package.",
+      "toolbench_tool_name": "HookSMS",
+      "url": "https://hooksms.p.rapidapi.com/send",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.62,
+        "tp_kbps": 4.838,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.22510052067535574,
+    "topsis_rank": 35
+  },
+  {
+    "api_id": "smsto_send_single_message",
+    "candidate_id": "",
+    "mode_rank": 10,
+    "llm_reported_rank": null,
+    "retrieved_rank": 30,
+    "rag_score": 0.48269182443618774,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 37.",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_send_single_message",
+      "category": "SMS",
+      "description": "Send a single message to a number",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send single message",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Send a single message to a number",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Send a single message to a number",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send single message",
+        "endpoint_url": "https://smsto.p.rapidapi.com/sms/send",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "qos": {
+        "availability": 0.9735,
+        "rt_s": 1.0295,
+        "tp_kbps": 7.7705,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.15471996281957684,
+    "topsis_rank": 37
+  },
+  {
+    "api_id": "rapid_sms_api_send_sms",
+    "candidate_id": "",
+    "mode_rank": 11,
+    "llm_reported_rank": null,
+    "retrieved_rank": 2,
+    "rag_score": 0.5410140752792358,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 38.",
+    "service": {
+      "_file": "rapid_sms_api.json",
+      "_tool": "rapid_sms_api",
+      "api_id": "rapid_sms_api_send_sms",
+      "category": "SMS",
+      "description": "An endpoint for sending a text message.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send SMS",
+      "tool_description": "A simple SMS api for sending messages all over the world. Find out more at www.rapidapisms.com",
+      "tool_name": "Rapid SMS API",
+      "toolbench_endpoint_description": "An endpoint for sending a text message.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "An endpoint for sending a text message.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send SMS",
+        "endpoint_url": "https://rapid-sms-api.p.rapidapi.com/sms",
+        "file_name": "rapid_sms_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A simple SMS api for sending messages all over the world. Find out more at www.rapidapisms.com",
+        "tool_file_found": true,
+        "tool_name": "Rapid SMS API",
+        "toolbench_relative_path": "SMS/rapid_sms_api.json"
+      },
+      "toolbench_tool_description": "A simple SMS api for sending messages all over the world. Find out more at www.rapidapisms.com",
+      "toolbench_tool_name": "Rapid SMS API",
+      "url": "https://rapid-sms-api.p.rapidapi.com/sms",
+      "qos": {
+        "availability": 0.9499,
+        "rt_s": 0.9804999999999999,
+        "tp_kbps": 3.992,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.15351325230522694,
+    "topsis_rank": 38
+  },
+  {
+    "api_id": "sms_voice_messages_voicemessage",
+    "candidate_id": "",
+    "mode_rank": 12,
+    "llm_reported_rank": null,
+    "retrieved_rank": 11,
+    "rag_score": 0.5108243227005005,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 2.",
+    "service": {
+      "_file": "sms_voice_messages.json",
+      "_tool": "sms_voice_messages",
+      "api_id": "sms_voice_messages_voicemessage",
+      "category": "SMS",
+      "description": "Send voice messages to phone number",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The WAV sound file that will be played if the phone  is answered",
+            "name": "soundfile",
+            "type": "BINARY"
+          },
+          {
+            "default": "",
+            "description": "The phone number tocall to.",
+            "name": "to_number",
+            "type": "string"
+          },
+          {
+            "default": "+12167101101",
+            "description": "The phone number to call from.",
+            "name": "from_number",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "VoiceMessage",
+      "tool_description": "Send SMS messages and voice messages using a simple to use API.",
+      "tool_name": "SMS & Voice Messages",
+      "toolbench_endpoint_description": "Send voice messages to phone number",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Send voice messages to phone number",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "VoiceMessage",
+        "endpoint_url": "https://sms-voice-messages.p.rapidapi.com/call/+12167101101/{to_number}",
+        "file_name": "sms_voice_messages.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send SMS messages and voice messages using a simple to use API.",
+        "tool_file_found": true,
+        "tool_name": "SMS & Voice Messages",
+        "toolbench_relative_path": "SMS/sms_voice_messages.json"
+      },
+      "toolbench_tool_description": "Send SMS messages and voice messages using a simple to use API.",
+      "toolbench_tool_name": "SMS & Voice Messages",
+      "url": "https://sms-voice-messages.p.rapidapi.com/call/+12167101101/{to_number}",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.142,
+        "tp_kbps": 112.676,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5534663921941615,
+    "topsis_rank": 2
+  },
+  {
+    "api_id": "sms_receive_settag-2",
+    "candidate_id": "",
+    "mode_rank": 13,
+    "llm_reported_rank": null,
+    "retrieved_rank": 33,
+    "rag_score": 0.4812796115875244,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 3.",
+    "service": {
+      "_file": "sms_receive.json",
+      "_tool": "sms_receive",
+      "api_id": "sms_receive_settag-2",
+      "category": "SMS",
+      "description": "Change the current tag.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The value of the new tag with a maximum of 16 characters.",
+            "name": "tag",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/SetTag",
+      "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages. For a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+      "tool_name": "SMS Receive",
+      "toolbench_endpoint_description": "Change the current tag.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Change the current tag.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/SetTag",
+        "endpoint_url": "https://sms-receive.p.rapidapi.com/SetTag",
+        "file_name": "sms_receive.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+        "tool_file_found": true,
+        "tool_name": "SMS Receive",
+        "toolbench_relative_path": "SMS/sms_receive.json"
+      },
+      "toolbench_tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+      "toolbench_tool_name": "SMS Receive",
+      "url": "https://sms-receive.p.rapidapi.com/SetTag",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3475,
+        "tp_kbps": 119.82900000000001,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5484165014671435,
+    "topsis_rank": 3
+  },
+  {
+    "api_id": "smsapi_com_sms_sendernames-2",
+    "candidate_id": "",
+    "mode_rank": 14,
+    "llm_reported_rank": null,
+    "retrieved_rank": 17,
+    "rag_score": 0.4964459240436554,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 4.",
+    "service": {
+      "_file": "smsapi_com.json",
+      "_tool": "smsapi_com",
+      "api_id": "smsapi_com_sms_sendernames-2",
+      "category": "SMS",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Sendername",
+            "name": "sender",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "/sms/sendernames",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "tool_name": "SMSAPI.com",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/sms/sendernames",
+        "endpoint_url": "https://smsapi-com3.p.rapidapi.com/sms/sendernames",
+        "file_name": "smsapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Powerful and easy SMS communication at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "SMSAPI.com",
+        "toolbench_relative_path": "SMS/smsapi_com.json"
+      },
+      "toolbench_tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "toolbench_tool_name": "SMSAPI.com",
+      "url": "https://smsapi-com3.p.rapidapi.com/sms/sendernames",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.154,
+        "tp_kbps": 56.6595,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.40709834101978426,
+    "topsis_rank": 4
+  },
+  {
+    "api_id": "ai_messaging_receive_text",
+    "candidate_id": "",
+    "mode_rank": 15,
+    "llm_reported_rank": null,
+    "retrieved_rank": 10,
+    "rag_score": 0.5117963552474976,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 5.",
+    "service": {
+      "_file": "ai_messaging.json",
+      "_tool": "ai_messaging",
+      "api_id": "ai_messaging_receive_text",
+      "category": "SMS",
+      "description": "This endpoint allows users to receive text messages.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "This endpoint allows users to receive text messages.",
+            "name": "receive-text",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "receive-text",
+      "tool_description": "This API allows users to send text messages and images from the app to phone numbers.",
+      "tool_name": "AI Messaging",
+      "toolbench_endpoint_description": "This endpoint allows users to receive text messages.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "This endpoint allows users to receive text messages.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "receive-text",
+        "endpoint_url": "https://ai-messaging.p.rapidapi.com/receive-text",
+        "file_name": "ai_messaging.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API allows users to send text messages and images from the app to phone numbers.",
+        "tool_file_found": true,
+        "tool_name": "AI Messaging",
+        "toolbench_relative_path": "SMS/ai_messaging.json"
+      },
+      "toolbench_tool_description": "This API allows users to send text messages and images from the app to phone numbers.",
+      "toolbench_tool_name": "AI Messaging",
+      "url": "https://ai-messaging.p.rapidapi.com/receive-text",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.4405,
+        "tp_kbps": 72.645,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3914584326322251,
+    "topsis_rank": 5
+  },
+  {
+    "api_id": "weather_api_by_any_city_get_weather_updates",
+    "candidate_id": "",
+    "mode_rank": 16,
+    "llm_reported_rank": null,
+    "retrieved_rank": 35,
+    "rag_score": 0.48076263070106506,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 7.",
+    "service": {
+      "_file": "weather_api_by_any_city.json",
+      "_tool": "weather_api_by_any_city",
+      "api_id": "weather_api_by_any_city_get_weather_updates",
+      "category": "Weather",
+      "description": "This endpoint get all necessary weather information",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "London",
+            "description": "",
+            "name": "city",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Weather Updates",
+      "tool_description": "The API provides current weather information for a specific city worldwide. It allows users to retrieve up-to-date information on weather conditions, such as temperature, humidity, wind speed, and precipitation, for a specified location.",
+      "tool_name": "Weather API - By Any City",
+      "toolbench_endpoint_description": "This endpoint get all necessary weather information",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "This endpoint get all necessary weather information",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Weather Updates",
+        "endpoint_url": "https://weather-api-by-any-city.p.rapidapi.com/weather/{city}",
+        "file_name": "weather_api_by_any_city.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The API provides current weather information for a specific city worldwide. It allows users to retrieve up-to-date information on weather conditions, such as temperature, humidity, wind speed, and precipitation, for a specified location.",
+        "tool_file_found": true,
+        "tool_name": "Weather API - By Any City",
+        "toolbench_relative_path": "Weather/weather_api_by_any_city.json"
+      },
+      "toolbench_tool_description": "The API provides current weather information for a specific city worldwide. It allows users to retrieve up-to-date information on weather conditions, such as temperature, humidity, wind speed, and precipitation, for a specified location.",
+      "toolbench_tool_name": "Weather API - By Any City",
+      "url": "https://weather-api-by-any-city.p.rapidapi.com/weather/{city}",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.193,
+        "tp_kbps": 41.45,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.36975240965862916,
+    "topsis_rank": 7
+  },
+  {
+    "api_id": "smsway_app_messages_getsent",
+    "candidate_id": "",
+    "mode_rank": 17,
+    "llm_reported_rank": null,
+    "retrieved_rank": 5,
+    "rag_score": 0.5260056257247925,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 8.",
+    "service": {
+      "_file": "smsway_app.json",
+      "_tool": "smsway_app",
+      "api_id": "smsway_app_messages_getsent",
+      "category": "SMS",
+      "description": "Get the list of sent messages on your account",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "\"{{page}}\"",
+            "description": "Pagination number to navigate result sets (Optional)",
+            "name": "page",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{priority}}\"",
+            "description": "Only get prioritized sent messages (Optional)\n1 = Yes\n0 = No (Default)",
+            "name": "priority",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{api}}\"",
+            "description": "Only get sent messages by API (Optional)\n1 = Yes\n0 = No (Default)",
+            "name": "api",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{device}}\"",
+            "description": "Get messages only from specific device (Optional)",
+            "name": "device",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{limit}}\"",
+            "description": "Number of results to return, default is 10 (Optional)",
+            "name": "limit",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{API_KEY}}\"",
+            "description": "The api key you copied from the [SMSWAY APP](https://smswayapp.com) (Tools -> API Keys) page",
+            "name": "key",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Messages-GetSent",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "tool_name": "SMSWAY APP",
+      "toolbench_endpoint_description": "Get the list of sent messages on your account",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get the list of sent messages on your account",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Messages-GetSent",
+        "endpoint_url": "https://smsway-app.p.rapidapi.com/api/get/sent?key=",
+        "file_name": "smsway_app.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 6,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+        "tool_file_found": true,
+        "tool_name": "SMSWAY APP",
+        "toolbench_relative_path": "SMS/smsway_app.json"
+      },
+      "toolbench_tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "toolbench_tool_name": "SMSWAY APP",
+      "url": "https://smsway-app.p.rapidapi.com/api/get/sent?key=",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1185,
+        "tp_kbps": 25.3205,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3583779660954585,
+    "topsis_rank": 8
+  },
+  {
+    "api_id": "sms_receive_settag",
+    "candidate_id": "",
+    "mode_rank": 18,
+    "llm_reported_rank": null,
+    "retrieved_rank": 32,
+    "rag_score": 0.4812796115875244,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 9.",
+    "service": {
+      "_file": "sms_receive.json",
+      "_tool": "sms_receive",
+      "api_id": "sms_receive_settag",
+      "category": "SMS",
+      "description": "Change the current tag.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The value of the new tag with a maximum of 16 characters.",
+            "name": "tag",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/SetTag",
+      "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages. For a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+      "tool_name": "SMS Receive",
+      "toolbench_endpoint_description": "Change the current tag.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Change the current tag.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/SetTag",
+        "endpoint_url": "https://sms-receive.p.rapidapi.com/SetTag",
+        "file_name": "sms_receive.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+        "tool_file_found": true,
+        "tool_name": "SMS Receive",
+        "toolbench_relative_path": "SMS/sms_receive.json"
+      },
+      "toolbench_tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+      "toolbench_tool_name": "SMS Receive",
+      "url": "https://sms-receive.p.rapidapi.com/SetTag",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.123,
+        "tp_kbps": 24.39,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3563315924098085,
+    "topsis_rank": 9
+  },
+  {
+    "api_id": "smsguru_test_service_response_time",
+    "candidate_id": "",
+    "mode_rank": 19,
+    "llm_reported_rank": null,
+    "retrieved_rank": 4,
+    "rag_score": 0.5309948325157166,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 10.",
+    "service": {
+      "_file": "smsguru.json",
+      "_tool": "smsguru",
+      "api_id": "smsguru_test_service_response_time",
+      "category": "SMS",
+      "description": "Check the service response time.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Test service response time",
+      "tool_description": "An all around sms API for sending messages all over the world www.smsapiguru.com",
+      "tool_name": "SmsGuru",
+      "toolbench_endpoint_description": "Check the service response time.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Check the service response time.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Test service response time",
+        "endpoint_url": "https://smsguru1.p.rapidapi.com/check-service",
+        "file_name": "smsguru.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An all around sms API for sending messages all over the world www.smsapiguru.com",
+        "tool_file_found": true,
+        "tool_name": "SmsGuru",
+        "toolbench_relative_path": "SMS/smsguru.json"
+      },
+      "toolbench_tool_description": "An all around sms API for sending messages all over the world www.smsapiguru.com",
+      "toolbench_tool_name": "SmsGuru",
+      "url": "https://smsguru1.p.rapidapi.com/check-service",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.134,
+        "tp_kbps": 22.389000000000003,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.35087134314164997,
+    "topsis_rank": 10
+  },
+  {
+    "api_id": "thingscale_iot_message_broker_create_a_new_event-2",
+    "candidate_id": "",
+    "mode_rank": 20,
+    "llm_reported_rank": null,
+    "retrieved_rank": 29,
+    "rag_score": 0.48320472240448,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 11.",
+    "service": {
+      "_file": "thingscale_iot_message_broker.json",
+      "_tool": "thingscale_iot_message_broker",
+      "api_id": "thingscale_iot_message_broker_create_a_new_event-2",
+      "category": "Devices",
+      "description": "Event service is by setting a threshold for the stream of the channel, make the notification to the email or an external system.\nBefore Event service use, please make sure that the stream to the channel is stored.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Some()",
+            "description": "",
+            "name": "event_id",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Create a New Event",
+      "tool_description": "ThingScale provides a messaging system for IoT connected devices. The API is used to retrieve events, users, devices, sessions, and channels in JSON format. ThingScale supports TLS payload encryption, scheme-less and cyclic data sampling, and trigger-based notifications. MQTT is the preferred messag",
+      "tool_name": "ThingScale IoT message broker",
+      "toolbench_endpoint_description": "Event service is by setting a threshold for the stream of the channel, make the notification to the email or an external system.\nBefore Event service use, please make sure that the stream to the channel is stored.",
+      "toolbench_enrichment": {
+        "category": "Devices",
+        "endpoint_description": "Event service is by setting a threshold for the stream of the channel, make the notification to the email or an external system.\nBefore Event service use, please make sure that the stream to the channel is stored.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Create a New Event",
+        "endpoint_url": "https://sensinics_tmura-thingscale-iot-message-broker-v1.p.rapidapi.com/event/Some()",
+        "file_name": "thingscale_iot_message_broker.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "ThingScale provides a messaging system for IoT connected devices. The API is used to retrieve events, users, devices, sessions, and channels in JSON format. ThingScale supports TLS payload encryption, scheme-less and cyclic data sampling, and trigger-based notifications. MQTT is the preferred messaging protocol.",
+        "tool_file_found": true,
+        "tool_name": "ThingScale IoT message broker",
+        "toolbench_relative_path": "Devices/thingscale_iot_message_broker.json"
+      },
+      "toolbench_tool_description": "ThingScale provides a messaging system for IoT connected devices. The API is used to retrieve events, users, devices, sessions, and channels in JSON format. ThingScale supports TLS payload encryption, scheme-less and cyclic data sampling, and trigger-based notifications. MQTT is the preferred messaging protocol.",
+      "toolbench_tool_name": "ThingScale IoT message broker",
+      "url": "https://sensinics_tmura-thingscale-iot-message-broker-v1.p.rapidapi.com/event/Some()",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1865,
+        "tp_kbps": 16.0865,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3329320901609961,
+    "topsis_rank": 11
+  },
+  {
+    "api_id": "smsto_send_viber_message-2",
+    "candidate_id": "",
+    "mode_rank": 21,
+    "llm_reported_rank": null,
+    "retrieved_rank": 19,
+    "rag_score": 0.4958122968673706,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 12.",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_send_viber_message-2",
+      "category": "SMS",
+      "description": "Send viber message to a number",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send viber message",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Send viber message to a number",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Send viber message to a number",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send viber message",
+        "endpoint_url": "https://smsto.p.rapidapi.com/viber/send",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/viber/send",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.1955,
+        "tp_kbps": 15.344999999999999,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3296980756673473,
+    "topsis_rank": 12
+  },
+  {
+    "api_id": "smsapi_com_subusers_id_shares_sendernames",
+    "candidate_id": "",
+    "mode_rank": 22,
+    "llm_reported_rank": null,
+    "retrieved_rank": 7,
+    "rag_score": 0.5178011655807495,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 15.",
+    "service": {
+      "_file": "smsapi_com.json",
+      "_tool": "smsapi_com",
+      "api_id": "smsapi_com_subusers_id_shares_sendernames",
+      "category": "SMS",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/subusers/{id}/shares/sendernames",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "tool_name": "SMSAPI.com",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/subusers/{id}/shares/sendernames",
+        "endpoint_url": "https://smsapi-com3.p.rapidapi.com/subusers/{id}/shares/sendernames",
+        "file_name": "smsapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Powerful and easy SMS communication at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "SMSAPI.com",
+        "toolbench_relative_path": "SMS/smsapi_com.json"
+      },
+      "toolbench_tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "toolbench_tool_name": "SMSAPI.com",
+      "url": "https://smsapi-com3.p.rapidapi.com/subusers/{id}/shares/sendernames",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.297,
+        "tp_kbps": 10.101,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3027748666631213,
+    "topsis_rank": 15
+  },
+  {
+    "api_id": "smsapi_com_subusers",
+    "candidate_id": "",
+    "mode_rank": 23,
+    "llm_reported_rank": null,
+    "retrieved_rank": 36,
+    "rag_score": 0.4803103804588318,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 16.",
+    "service": {
+      "_file": "smsapi_com.json",
+      "_tool": "smsapi_com",
+      "api_id": "smsapi_com_subusers",
+      "category": "SMS",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "/subusers",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "tool_name": "SMSAPI.com",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/subusers",
+        "endpoint_url": "https://smsapi-com3.p.rapidapi.com/subusers",
+        "file_name": "smsapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Powerful and easy SMS communication at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "SMSAPI.com",
+        "toolbench_relative_path": "SMS/smsapi_com.json"
+      },
+      "toolbench_tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "toolbench_tool_name": "SMSAPI.com",
+      "url": "https://smsapi-com3.p.rapidapi.com/subusers",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.299,
+        "tp_kbps": 10.033,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.3022755223327488,
+    "topsis_rank": 16
+  },
+  {
+    "api_id": "weatherapi_com_forecast_weather_api",
+    "candidate_id": "",
+    "mode_rank": 24,
+    "llm_reported_rank": null,
+    "retrieved_rank": 21,
+    "rag_score": 0.4900970757007599,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 18.",
+    "service": {
+      "_file": "weatherapi_com.json",
+      "_tool": "weatherapi_com",
+      "api_id": "weatherapi_com_forecast_weather_api",
+      "category": "Weather",
+      "description": "Forecast weather API method returns upto next 14 day weather forecast and weather alert as json. It contains astronomy data, day weather forecast and hourly interval weather information for a given city.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "3",
+            "description": "Number of days of forecast required.",
+            "name": "days",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "If passing 'dt', it should be between today and next 10 day in yyyy-MM-dd format.",
+            "name": "dt",
+            "type": "DATE (YYYY-MM-DD)"
+          },
+          {
+            "default": "",
+            "description": "Returns 'condition:text' field in API in the desired language",
+            "name": "lang",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "London",
+            "description": "Query parameter based on which data is sent back. It could be following:\n\nLatitude and Longitude (Decimal degree) e.g: q=48.8567,2.3508\ncity name e.g.: q=Paris\nUS zip e.g.: q=10001\nUK postcode e.g: q=SW1\nCanada postal code e.g: q=G2J\nmetar:<metar code> e.g: q=metar:EGLL\niata:<3 digit airport code> e.g: q=iata:DXB\nauto:ip IP lookup e.g: q=auto:ip\nIP address (IPv4 and IPv6 supported) e.g: q=100.0.0.1",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Forecast Weather API",
+      "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "tool_name": "WeatherAPI.com",
+      "toolbench_endpoint_description": "Forecast weather API method returns upto next 14 day weather forecast and weather alert as json. It contains astronomy data, day weather forecast and hourly interval weather information for a given city.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Forecast weather API method returns upto next 14 day weather forecast and weather alert as json. It contains astronomy data, day weather forecast and hourly interval weather information for a given city.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Forecast Weather API",
+        "endpoint_url": "https://weatherapi-com.p.rapidapi.com/forecast.json",
+        "file_name": "weatherapi_com.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+        "tool_file_found": true,
+        "tool_name": "WeatherAPI.com",
+        "toolbench_relative_path": "Weather/weatherapi_com.json"
+      },
+      "toolbench_tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "toolbench_tool_name": "WeatherAPI.com",
+      "url": "https://weatherapi-com.p.rapidapi.com/forecast.json",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.307,
+        "tp_kbps": 6.514,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.29769629872421915,
+    "topsis_rank": 18
+  },
+  {
+    "api_id": "green_api_getgroupdata",
+    "candidate_id": "",
+    "mode_rank": 25,
+    "llm_reported_rank": null,
+    "retrieved_rank": 26,
+    "rag_score": 0.4856208264827728,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 19.",
+    "service": {
+      "_file": "green_api.json",
+      "_tool": "green_api",
+      "api_id": "green_api_getgroupdata",
+      "category": "Communication",
+      "description": "Документация [GetGroupData](https://green-api.com/docs/api/groups/GetGroupData/)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "waInstanceidInstance",
+            "description": "",
+            "name": "waInstanceidInstance",
+            "type": "STRING"
+          },
+          {
+            "default": "apiTokenInstance",
+            "description": "",
+            "name": "apiTokenInstance",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Getgroupdata",
+      "tool_description": "Send and receive messages throue your own WhtasApp number for free. Use for CRM, Chat-Bots and etc.....",
+      "tool_name": "GREEN-API",
+      "toolbench_endpoint_description": "Документация [GetGroupData](https://green-api.com/docs/api/groups/GetGroupData/)",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "Документация [GetGroupData](https://green-api.com/docs/api/groups/GetGroupData/)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Getgroupdata",
+        "endpoint_url": "https://green-api2.p.rapidapi.com/waInstance{idInstance}/getGroupData/apiTokenInstance",
+        "file_name": "green_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send and receive messages throue your own WhtasApp number for free.\nUse for CRM, Chat-Bots and etc.....",
+        "tool_file_found": true,
+        "tool_name": "GREEN-API",
+        "toolbench_relative_path": "Communication/green_api.json"
+      },
+      "toolbench_tool_description": "Send and receive messages throue your own WhtasApp number for free.\nUse for CRM, Chat-Bots and etc.....",
+      "toolbench_tool_name": "GREEN-API",
+      "url": "https://green-api2.p.rapidapi.com/waInstance{idInstance}/getGroupData/apiTokenInstance",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3435,
+        "tp_kbps": 8.735,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.291823733851644,
+    "topsis_rank": 19
+  },
+  {
+    "api_id": "infobip_sms_synchronous_request",
+    "candidate_id": "",
+    "mode_rank": 26,
+    "llm_reported_rank": null,
+    "retrieved_rank": 16,
+    "rag_score": 0.4965566098690033,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 20.",
+    "service": {
+      "_file": "infobip_sms.json",
+      "_tool": "infobip_sms",
+      "api_id": "infobip_sms_synchronous_request",
+      "category": "Business",
+      "description": "his method gives you the ability to make a synchronous Number Context request over HTTP. Number Context response is returned immediately thus eliminating the need for the call back server.  http://dev.infobip.com/docs/sending-synchronous-request",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Synchronous request",
+      "tool_description": "Quickly integrate SMS messaging services into various solutions by using Infobip HTTP application programming interface (HTTP API). The HTTP API can be used for sending SMS messages, collecting delivery reports, making Number Context (number validation) requests and receiving inbound SMS messages se",
+      "tool_name": "Infobip SMS",
+      "toolbench_endpoint_description": "his method gives you the ability to make a synchronous Number Context request over HTTP. Number Context response is returned immediately thus eliminating the need for the call back server.  http://dev.infobip.com/docs/sending-synchronous-request",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "his method gives you the ability to make a synchronous Number Context request over HTTP. Number Context response is returned immediately thus eliminating the need for the call back server.  http://dev.infobip.com/docs/sending-synchronous-request",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Synchronous request",
+        "endpoint_url": "https://infobip.p.rapidapi.com/number/1/query",
+        "file_name": "infobip_sms.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Quickly integrate SMS messaging services into various solutions by using Infobip HTTP application programming interface (HTTP API). The HTTP API can be used for sending SMS messages, collecting delivery reports, making Number Context (number validation) requests and receiving inbound SMS messages sent from mobile phones.",
+        "tool_file_found": true,
+        "tool_name": "Infobip SMS",
+        "toolbench_relative_path": "Business/infobip_sms.json"
+      },
+      "toolbench_tool_description": "Quickly integrate SMS messaging services into various solutions by using Infobip HTTP application programming interface (HTTP API). The HTTP API can be used for sending SMS messages, collecting delivery reports, making Number Context (number validation) requests and receiving inbound SMS messages sent from mobile phones.",
+      "toolbench_tool_name": "Infobip SMS",
+      "url": "https://infobip.p.rapidapi.com/number/1/query",
+      "qos": {
+        "availability": 0.9735,
+        "rt_s": 0.3325,
+        "tp_kbps": 6.006,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.29029780104775743,
+    "topsis_rank": 20
+  },
+  {
+    "api_id": "sms_receive_getupdates",
+    "candidate_id": "",
+    "mode_rank": 27,
+    "llm_reported_rank": null,
+    "retrieved_rank": 6,
+    "rag_score": 0.5204150080680847,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 21.",
+    "service": {
+      "_file": "sms_receive.json",
+      "_tool": "sms_receive",
+      "api_id": "sms_receive_getupdates",
+      "category": "SMS",
+      "description": "Get updates about newly received messages.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "A time-out (in seconds) indicating how long the server should wait for an imcomming message before returning.",
+            "name": "time_out",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "0",
+            "description": "The ID of the last received message plus one. Set to zero for the first call.",
+            "name": "start_id",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/GetUpdates",
+      "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages. For a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+      "tool_name": "SMS Receive",
+      "toolbench_endpoint_description": "Get updates about newly received messages.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get updates about newly received messages.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/GetUpdates",
+        "endpoint_url": "https://sms-receive.p.rapidapi.com/GetUpdates",
+        "file_name": "sms_receive.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+        "tool_file_found": true,
+        "tool_name": "SMS Receive",
+        "toolbench_relative_path": "SMS/sms_receive.json"
+      },
+      "toolbench_tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/",
+      "toolbench_tool_name": "SMS Receive",
+      "url": "https://sms-receive.p.rapidapi.com/GetUpdates",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.3455,
+        "tp_kbps": 5.7885,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.2882512842658485,
+    "topsis_rank": 21
+  },
+  {
+    "api_id": "ambee_air_quality_weather",
+    "candidate_id": "",
+    "mode_rank": 28,
+    "llm_reported_rank": null,
+    "retrieved_rank": 37,
+    "rag_score": 0.4797230660915375,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 22.",
+    "service": {
+      "_file": "ambee_air_quality.json",
+      "_tool": "ambee_air_quality",
+      "api_id": "ambee_air_quality_weather",
+      "category": "Weather",
+      "description": "Get weather data for any place based on coordinates",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "10",
+            "description": "The number of rows to be returned",
+            "name": "limit",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "12",
+            "description": "Latitude of the coordinate to get the weather",
+            "name": "lat",
+            "type": "NUMBER"
+          },
+          {
+            "default": "77",
+            "description": "Longitude of the coordinate to find the weather",
+            "name": "lng",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Weather",
+      "tool_description": "Global hyperlocal real-time air quality API for 1M+ postcodes. Test an API call. Get accurate & actionable air quality data.",
+      "tool_name": "Ambee Air Quality",
+      "toolbench_endpoint_description": "Get weather data for any place based on coordinates",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get weather data for any place based on coordinates",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Weather",
+        "endpoint_url": "https://ambee-air-quality.p.rapidapi.com/weather/by-lat-lng",
+        "file_name": "ambee_air_quality.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Global hyperlocal real-time air quality API for 1M+ postcodes. Test an API call. Get accurate & actionable air quality data.",
+        "tool_file_found": true,
+        "tool_name": "Ambee Air Quality",
+        "toolbench_relative_path": "Weather/ambee_air_quality.json"
+      },
+      "toolbench_tool_description": "Global hyperlocal real-time air quality API for 1M+ postcodes. Test an API call. Get accurate & actionable air quality data.",
+      "toolbench_tool_name": "Ambee Air Quality",
+      "url": "https://ambee-air-quality.p.rapidapi.com/weather/by-lat-lng",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.348,
+        "tp_kbps": 5.747,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.28816800660689984,
+    "topsis_rank": 22
+  },
+  {
+    "api_id": "sms77io_get_status",
+    "candidate_id": "",
+    "mode_rank": 29,
+    "llm_reported_rank": null,
+    "retrieved_rank": 38,
+    "rag_score": 0.4794663190841675,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 23.",
+    "service": {
+      "_file": "sms77io.json",
+      "_tool": "sms77io",
+      "api_id": "sms77io_get_status",
+      "category": "SMS",
+      "description": "Get a delivery report for a message ID sent with your API key.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The message ID of the SMS.\nCan be obtained by setting parameter *JSON*, *return_msg_id* or *details* to **1** when sending SMS via the API.\nAlternatively it can be retrieved from the message journal in the user area.",
+            "name": "msg_id",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "API Key",
+            "name": "p",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Status",
+      "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "tool_name": "sms77io",
+      "toolbench_endpoint_description": "Get a delivery report for a message ID sent with your API key.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get a delivery report for a message ID sent with your API key.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Status",
+        "endpoint_url": "https://sms77io.p.rapidapi.com/status",
+        "file_name": "sms77io.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+        "tool_file_found": true,
+        "tool_name": "sms77io",
+        "toolbench_relative_path": "SMS/sms77io.json"
+      },
+      "toolbench_tool_description": "Send SMS & text-to-speech messages, perform phone number lookups and much more via seven.io.",
+      "toolbench_tool_name": "sms77io",
+      "url": "https://sms77io.p.rapidapi.com/status",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.371,
+        "tp_kbps": 10.781,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.2870090178627942,
+    "topsis_rank": 23
+  },
+  {
+    "api_id": "smsway_app_addressbook_createcontact-2",
+    "candidate_id": "",
+    "mode_rank": 30,
+    "llm_reported_rank": null,
+    "retrieved_rank": 40,
+    "rag_score": 0.477836936712265,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 24.",
+    "service": {
+      "_file": "smsway_app.json",
+      "_tool": "smsway_app",
+      "api_id": "smsway_app_addressbook_createcontact-2",
+      "category": "SMS",
+      "description": "Create and save a new contact to your account",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "\"{{API_KEY}}\"",
+            "description": "",
+            "name": "key",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "\"{{phone}}\"",
+            "description": "Contact mobile number, it must satisfy \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"E164\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" format",
+            "name": "phone",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{group}}\"",
+            "description": "ID of contact group where you want to save this contact",
+            "name": "group",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{API_KEY}}\"",
+            "description": "The api key you copied from [SMS WAY APP](https://smswayapp.com) (Tools -> API Keys) page",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{name}}\"",
+            "description": "Contact name",
+            "name": "name",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "AddressBook-CreateContact",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "tool_name": "SMSWAY APP",
+      "toolbench_endpoint_description": "Create and save a new contact to your account",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Create and save a new contact to your account",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "AddressBook-CreateContact",
+        "endpoint_url": "https://smsway-app.p.rapidapi.com/api/create/contact?key=",
+        "file_name": "smsway_app.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 4,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+        "tool_file_found": true,
+        "tool_name": "SMSWAY APP",
+        "toolbench_relative_path": "SMS/smsway_app.json"
+      },
+      "toolbench_tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "toolbench_tool_name": "SMSWAY APP",
+      "url": "https://smsway-app.p.rapidapi.com/api/create/contact?key=",
+      "qos": {
+        "availability": 0.9617,
+        "rt_s": 0.4125,
+        "tp_kbps": 19.37,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.28645965476071883,
+    "topsis_rank": 24
+  },
+  {
+    "api_id": "weatherstack_get",
+    "candidate_id": "",
+    "mode_rank": 31,
+    "llm_reported_rank": null,
+    "retrieved_rank": 18,
+    "rag_score": 0.49594202637672424,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 25.",
+    "service": {
+      "_file": "weatherstack.json",
+      "_tool": "weatherstack",
+      "api_id": "weatherstack_get",
+      "category": "Weather",
+      "description": "exemple",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "get",
+      "tool_description": "Real-Time &amp; Historical World Weather Data API Retrieve instant, accurate weather information for any location in the world in lightweight JSON format",
+      "tool_name": "weatherstack",
+      "toolbench_endpoint_description": "exemple",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "exemple",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "get",
+        "endpoint_url": "https://weatherstack1.p.rapidapi.com/api.weatherstack.com/current",
+        "file_name": "weatherstack.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Real-Time &amp; Historical\nWorld Weather Data API\nRetrieve instant, accurate weather information for\nany location in the world in lightweight JSON format",
+        "tool_file_found": true,
+        "tool_name": "weatherstack",
+        "toolbench_relative_path": "Weather/weatherstack.json"
+      },
+      "toolbench_tool_description": "Real-Time &amp; Historical\nWorld Weather Data API\nRetrieve instant, accurate weather information for\nany location in the world in lightweight JSON format",
+      "toolbench_tool_name": "weatherstack",
+      "url": "https://weatherstack1.p.rapidapi.com/api.weatherstack.com/current",
+      "qos": {
+        "availability": 0.9558,
+        "rt_s": 0.36,
+        "tp_kbps": 8.333,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.28545914910226633,
+    "topsis_rank": 25
+  },
+  {
+    "api_id": "easysendsms_check_balance",
+    "candidate_id": "",
+    "mode_rank": 32,
+    "llm_reported_rank": null,
+    "retrieved_rank": 28,
+    "rag_score": 0.4850812554359436,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 26.",
+    "service": {
+      "_file": "easysendsms.json",
+      "_tool": "easysendsms",
+      "api_id": "easysendsms_check_balance",
+      "category": "SMS",
+      "description": "This API available to you via the HTTP interface for Balance query.\n\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP protocol to request and check your account balance. HTTPS is also supported for secure transactions using SSL encryption.\n\nThe Client issues either a GET or POST request to the EasySendSMS HTTP API supplying a list of required parameters. Our system issues back a HTTP response as text format which indicates the balance of the account.\n\nThis call will fetch the current credit in your account",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Username",
+            "description": "",
+            "name": "username",
+            "type": "STRING"
+          },
+          {
+            "default": "Password",
+            "description": "",
+            "name": "password",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Check Balance",
+      "tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS.",
+      "tool_name": "EasySendSMS",
+      "toolbench_endpoint_description": "This API available to you via the HTTP interface for Balance query.\n\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP protocol to request and check your account balance. HTTPS is also supported for secure transactions using SSL encryption.\n\nThe Client issues either a GET or POST request to the EasySendSMS HTTP API supplying a list of required parameters. Our system issues back a HTTP response as text format which indicates the balance of the account.\n\nThis call will fetch the current credit in your account",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "This API available to you via the HTTP interface for Balance query.\n\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP protocol to request and check your account balance. HTTPS is also supported for secure transactions using SSL encryption.\n\nThe Client issues either a GET or POST request to the EasySendSMS HTTP API supplying a list of required parameters. Our system issues back a HTTP response as text format which indicates the balance of the account.\n\nThis call will fetch the current credit in your account",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Check Balance",
+        "endpoint_url": "https://easysendsms.p.rapidapi.com/balance",
+        "file_name": "easysendsms.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS.",
+        "tool_file_found": true,
+        "tool_name": "EasySendSMS",
+        "toolbench_relative_path": "SMS/easysendsms.json"
+      },
+      "toolbench_tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS.",
+      "toolbench_tool_name": "EasySendSMS",
+      "url": "https://easysendsms.p.rapidapi.com/balance",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.566,
+        "tp_kbps": 33.568,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.276197009219548,
+    "topsis_rank": 26
+  },
+  {
+    "api_id": "green_api_setprofilepicture",
+    "candidate_id": "",
+    "mode_rank": 33,
+    "llm_reported_rank": null,
+    "retrieved_rank": 34,
+    "rag_score": 0.48077577352523804,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 27.",
+    "service": {
+      "_file": "green_api.json",
+      "_tool": "green_api",
+      "api_id": "green_api_setprofilepicture",
+      "category": "Communication",
+      "description": "Документация [SetProfilePicture](https://green-api.com/docs/api/account/SetProfilePicture/)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "file",
+            "type": "BINARY"
+          },
+          {
+            "default": "waInstanceidInstance",
+            "description": "",
+            "name": "waInstanceidInstance",
+            "type": "STRING"
+          },
+          {
+            "default": "apiTokenInstance",
+            "description": "",
+            "name": "apiTokenInstance",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Setprofilepicture",
+      "tool_description": "Send and receive messages throue your own WhtasApp number for free. Use for CRM, Chat-Bots and etc.....",
+      "tool_name": "GREEN-API",
+      "toolbench_endpoint_description": "Документация [SetProfilePicture](https://green-api.com/docs/api/account/SetProfilePicture/)",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "Документация [SetProfilePicture](https://green-api.com/docs/api/account/SetProfilePicture/)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Setprofilepicture",
+        "endpoint_url": "https://green-api2.p.rapidapi.com/waInstance{idInstance}/setProfilePicture/apiTokenInstance",
+        "file_name": "green_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send and receive messages throue your own WhtasApp number for free.\nUse for CRM, Chat-Bots and etc.....",
+        "tool_file_found": true,
+        "tool_name": "GREEN-API",
+        "toolbench_relative_path": "Communication/green_api.json"
+      },
+      "toolbench_tool_description": "Send and receive messages throue your own WhtasApp number for free.\nUse for CRM, Chat-Bots and etc.....",
+      "toolbench_tool_name": "GREEN-API",
+      "url": "https://green-api2.p.rapidapi.com/waInstance{idInstance}/setProfilePicture/apiTokenInstance",
+      "qos": {
+        "availability": 0.9764,
+        "rt_s": 0.491,
+        "tp_kbps": 22.403,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.27351300544290624,
+    "topsis_rank": 27
+  },
+  {
+    "api_id": "smsapi_com_profile_regional_settings_available_languages",
+    "candidate_id": "",
+    "mode_rank": 34,
+    "llm_reported_rank": null,
+    "retrieved_rank": 20,
+    "rag_score": 0.49463340640068054,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 29.",
+    "service": {
+      "_file": "smsapi_com.json",
+      "_tool": "smsapi_com",
+      "api_id": "smsapi_com_profile_regional_settings_available_languages",
+      "category": "SMS",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "/profile/regional_settings/available_languages",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "tool_name": "SMSAPI.com",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/profile/regional_settings/available_languages",
+        "endpoint_url": "https://smsapi-com3.p.rapidapi.com/profile/regional_settings/available_languages",
+        "file_name": "smsapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Powerful and easy SMS communication at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "SMSAPI.com",
+        "toolbench_relative_path": "SMS/smsapi_com.json"
+      },
+      "toolbench_tool_description": "Powerful and easy SMS communication at your fingertips!",
+      "toolbench_tool_name": "SMSAPI.com",
+      "url": "https://smsapi-com3.p.rapidapi.com/profile/regional_settings/available_languages",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.43,
+        "tp_kbps": 6.976,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.2712216481879753,
+    "topsis_rank": 29
+  },
+  {
+    "api_id": "thingscale_iot_message_broker_update_an_event",
+    "candidate_id": "",
+    "mode_rank": 35,
+    "llm_reported_rank": null,
+    "retrieved_rank": 31,
+    "rag_score": 0.48183006048202515,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 30.",
+    "service": {
+      "_file": "thingscale_iot_message_broker.json",
+      "_tool": "thingscale_iot_message_broker",
+      "api_id": "thingscale_iot_message_broker_update_an_event",
+      "category": "Devices",
+      "description": "Event service is by setting a threshold for the stream of the channel, make the notification to the email or an external system.\nBefore Event service use, please make sure that the stream to the channel is stored.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Some()",
+            "description": "",
+            "name": "body",
+            "type": "NUMBER"
+          },
+          {
+            "default": "Some()",
+            "description": "The ID of the event.",
+            "name": "event_id",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "PUT",
+      "name": "Update an Event",
+      "tool_description": "ThingScale provides a messaging system for IoT connected devices. The API is used to retrieve events, users, devices, sessions, and channels in JSON format. ThingScale supports TLS payload encryption, scheme-less and cyclic data sampling, and trigger-based notifications. MQTT is the preferred messag",
+      "tool_name": "ThingScale IoT message broker",
+      "toolbench_endpoint_description": "Event service is by setting a threshold for the stream of the channel, make the notification to the email or an external system.\nBefore Event service use, please make sure that the stream to the channel is stored.",
+      "toolbench_enrichment": {
+        "category": "Devices",
+        "endpoint_description": "Event service is by setting a threshold for the stream of the channel, make the notification to the email or an external system.\nBefore Event service use, please make sure that the stream to the channel is stored.",
+        "endpoint_found": true,
+        "endpoint_method": "PUT",
+        "endpoint_name": "Update an Event",
+        "endpoint_url": "https://sensinics_tmura-thingscale-iot-message-broker-v1.p.rapidapi.com/event/{event_id}",
+        "file_name": "thingscale_iot_message_broker.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "ThingScale provides a messaging system for IoT connected devices. The API is used to retrieve events, users, devices, sessions, and channels in JSON format. ThingScale supports TLS payload encryption, scheme-less and cyclic data sampling, and trigger-based notifications. MQTT is the preferred messaging protocol.",
+        "tool_file_found": true,
+        "tool_name": "ThingScale IoT message broker",
+        "toolbench_relative_path": "Devices/thingscale_iot_message_broker.json"
+      },
+      "toolbench_tool_description": "ThingScale provides a messaging system for IoT connected devices. The API is used to retrieve events, users, devices, sessions, and channels in JSON format. ThingScale supports TLS payload encryption, scheme-less and cyclic data sampling, and trigger-based notifications. MQTT is the preferred messaging protocol.",
+      "toolbench_tool_name": "ThingScale IoT message broker",
+      "url": "https://sensinics_tmura-thingscale-iot-message-broker-v1.p.rapidapi.com/event/{event_id}",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.435,
+        "tp_kbps": 6.896,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.26926346365304993,
+    "topsis_rank": 30
+  },
+  {
+    "api_id": "smsway_app_addressbook_createcontact",
+    "candidate_id": "",
+    "mode_rank": 36,
+    "llm_reported_rank": null,
+    "retrieved_rank": 39,
+    "rag_score": 0.477836936712265,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 32.",
+    "service": {
+      "_file": "smsway_app.json",
+      "_tool": "smsway_app",
+      "api_id": "smsway_app_addressbook_createcontact",
+      "category": "SMS",
+      "description": "Create and save a new contact to your account",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "\"{{API_KEY}}\"",
+            "description": "",
+            "name": "key",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "\"{{phone}}\"",
+            "description": "Contact mobile number, it must satisfy \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"E164\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" format",
+            "name": "phone",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{group}}\"",
+            "description": "ID of contact group where you want to save this contact",
+            "name": "group",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{API_KEY}}\"",
+            "description": "The api key you copied from [SMS WAY APP](https://smswayapp.com) (Tools -> API Keys) page",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{name}}\"",
+            "description": "Contact name",
+            "name": "name",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "AddressBook-CreateContact",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "tool_name": "SMSWAY APP",
+      "toolbench_endpoint_description": "Create and save a new contact to your account",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Create and save a new contact to your account",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "AddressBook-CreateContact",
+        "endpoint_url": "https://smsway-app.p.rapidapi.com/api/create/contact?key=",
+        "file_name": "smsway_app.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 4,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+        "tool_file_found": true,
+        "tool_name": "SMSWAY APP",
+        "toolbench_relative_path": "SMS/smsway_app.json"
+      },
+      "toolbench_tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "toolbench_tool_name": "SMSWAY APP",
+      "url": "https://smsway-app.p.rapidapi.com/api/create/contact?key=",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.458,
+        "tp_kbps": 4.366,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.26230531684883457,
+    "topsis_rank": 32
+  },
+  {
+    "api_id": "smsway_app_messages_getreceived",
+    "candidate_id": "",
+    "mode_rank": 37,
+    "llm_reported_rank": null,
+    "retrieved_rank": 8,
+    "rag_score": 0.5165959596633911,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 34.",
+    "service": {
+      "_file": "smsway_app.json",
+      "_tool": "smsway_app",
+      "api_id": "smsway_app_messages_getreceived",
+      "category": "SMS",
+      "description": "Get the list of received messages on your account",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "\"{{page}}\"",
+            "description": "Pagination number to navigate result sets (Optional)",
+            "name": "page",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{API_KEY}}\"",
+            "description": "The api key you copied from the [SMSWAY APP](https://smswayapp.com) (Tools -> API Keys) page",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{device}}\"",
+            "description": "Get messages only from specific device (Optional)",
+            "name": "device",
+            "type": "STRING"
+          },
+          {
+            "default": "\"{{limit}}\"",
+            "description": "Number of results to return, default is 10 (Optional)",
+            "name": "limit",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Messages-GetReceived",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "tool_name": "SMSWAY APP",
+      "toolbench_endpoint_description": "Get the list of received messages on your account",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get the list of received messages on your account",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Messages-GetReceived",
+        "endpoint_url": "https://smsway-app.p.rapidapi.com/api/get/received?key=",
+        "file_name": "smsway_app.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 4,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+        "tool_file_found": true,
+        "tool_name": "SMSWAY APP",
+        "toolbench_relative_path": "SMS/smsway_app.json"
+      },
+      "toolbench_tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)",
+      "toolbench_tool_name": "SMSWAY APP",
+      "url": "https://smsway-app.p.rapidapi.com/api/get/received?key=",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.578,
+        "tp_kbps": 5.19,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.23513290337456422,
+    "topsis_rank": 34
+  },
+  {
+    "api_id": "weatherapi_com_realtime_weather_api",
+    "candidate_id": "",
+    "mode_rank": 38,
+    "llm_reported_rank": null,
+    "retrieved_rank": 15,
+    "rag_score": 0.49790212512016296,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 36.",
+    "service": {
+      "_file": "weatherapi_com.json",
+      "_tool": "weatherapi_com",
+      "api_id": "weatherapi_com_realtime_weather_api",
+      "category": "Weather",
+      "description": "Current weather or realtime weather API method allows a user to get up to date current weather information in json and xml. The data is returned as a Current Object.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "53.1,-0.13",
+            "description": "Query parameter based on which data is sent back. It could be following:  Latitude and Longitude (Decimal degree) e.g: q=48.8567,2.3508 city name e.g.: q=Paris US zip e.g.: q=10001 UK postcode e.g: q=SW1 Canada postal code e.g: q=G2J metar:<metar code> e.g: q=metar:EGLL iata:<3 digit airport code> e.g: q=iata:DXB auto:ip IP lookup e.g: q=auto:ip IP address (IPv4 and IPv6 supported) e.g: q=100.0.0.1",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Realtime Weather API",
+      "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "tool_name": "WeatherAPI.com",
+      "toolbench_endpoint_description": "Current weather or realtime weather API method allows a user to get up to date current weather information in json and xml. The data is returned as a Current Object.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Current weather or realtime weather API method allows a user to get up to date current weather information in json and xml. The data is returned as a Current Object.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Realtime Weather API",
+        "endpoint_url": "https://weatherapi-com.p.rapidapi.com/current.json",
+        "file_name": "weatherapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+        "tool_file_found": true,
+        "tool_name": "WeatherAPI.com",
+        "toolbench_relative_path": "Weather/weatherapi_com.json"
+      },
+      "toolbench_tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "toolbench_tool_name": "WeatherAPI.com",
+      "url": "https://weatherapi-com.p.rapidapi.com/current.json",
+      "qos": {
+        "availability": 0.9735,
+        "rt_s": 0.627,
+        "tp_kbps": 6.3795,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.22392978148172463,
+    "topsis_rank": 36
+  },
+  {
+    "api_id": "green_api_setdisappearingchat",
+    "candidate_id": "",
+    "mode_rank": 39,
+    "llm_reported_rank": null,
+    "retrieved_rank": 14,
+    "rag_score": 0.498757541179657,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 39.",
+    "service": {
+      "_file": "green_api.json",
+      "_tool": "green_api",
+      "api_id": "green_api_setdisappearingchat",
+      "category": "Communication",
+      "description": "Документация [GetContacts](https://green-api.com/docs/api/service/GetContacts/)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "apiTokenInstance",
+            "description": "",
+            "name": "apiTokenInstance",
+            "type": "STRING"
+          },
+          {
+            "default": "waInstanceidInstance",
+            "description": "",
+            "name": "waInstanceidInstance",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "SetDisappearingChat",
+      "tool_description": "Send and receive messages throue your own WhtasApp number for free. Use for CRM, Chat-Bots and etc.....",
+      "tool_name": "GREEN-API",
+      "toolbench_endpoint_description": "Документация [GetContacts](https://green-api.com/docs/api/service/GetContacts/)",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "Документация [GetContacts](https://green-api.com/docs/api/service/GetContacts/)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "SetDisappearingChat",
+        "endpoint_url": "https://green-api2.p.rapidapi.com/waInstance{idInstance}/setDisappearingChat/apiTokenInstance",
+        "file_name": "green_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send and receive messages throue your own WhtasApp number for free.\nUse for CRM, Chat-Bots and etc.....",
+        "tool_file_found": true,
+        "tool_name": "GREEN-API",
+        "toolbench_relative_path": "Communication/green_api.json"
+      },
+      "toolbench_tool_description": "Send and receive messages throue your own WhtasApp number for free.\nUse for CRM, Chat-Bots and etc.....",
+      "toolbench_tool_name": "GREEN-API",
+      "url": "https://green-api2.p.rapidapi.com/waInstance{idInstance}/setDisappearingChat/apiTokenInstance",
+      "qos": {
+        "availability": 0.9764,
+        "rt_s": 1.101,
+        "tp_kbps": 3.633,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.1492360700436786,
+    "topsis_rank": 39
+  },
+  {
+    "api_id": "weatherapi_com_ip_lookup_api",
+    "candidate_id": "",
+    "mode_rank": 40,
+    "llm_reported_rank": null,
+    "retrieved_rank": 22,
+    "rag_score": 0.48964202404022217,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 40.",
+    "service": {
+      "_file": "weatherapi_com.json",
+      "_tool": "weatherapi_com",
+      "api_id": "weatherapi_com_ip_lookup_api",
+      "category": "Weather",
+      "description": "IP Lookup API method allows a user to get up to date information for an IP address in json.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "e.g: q=auto:ip\n\nIP address (IPv4 and IPv6 supported) e.g: q=100.0.0.1",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "IP Lookup API",
+      "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "tool_name": "WeatherAPI.com",
+      "toolbench_endpoint_description": "IP Lookup API method allows a user to get up to date information for an IP address in json.",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "IP Lookup API method allows a user to get up to date information for an IP address in json.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "IP Lookup API",
+        "endpoint_url": "https://weatherapi-com.p.rapidapi.com/ip.json",
+        "file_name": "weatherapi_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+        "tool_file_found": true,
+        "tool_name": "WeatherAPI.com",
+        "toolbench_relative_path": "Weather/weatherapi_com.json"
+      },
+      "toolbench_tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.",
+      "toolbench_tool_name": "WeatherAPI.com",
+      "url": "https://weatherapi-com.p.rapidapi.com/ip.json",
+      "qos": {
+        "availability": 0.0,
+        "rt_s": null,
+        "tp_kbps": null,
+        "valid_qos": false
+      }
+    },
+    "topsis_score": null,
+    "topsis_rank": 40
+  }
+]

@@ -1,0 +1,16 @@
+{
+"subtasks": [
+{
+"id": 1,
+"description": "Fetch top news articles using a news API"
+},
+{
+"id": 2,
+"description": "Summarize the fetched articles into an SMS-length digest using a language model API"
+},
+{
+"id": 3,
+"description": "Send the SMS digest via an SMS messaging API"
+}
+]
+}

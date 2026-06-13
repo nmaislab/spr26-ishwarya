@@ -1,0 +1,106 @@
+[
+  {
+    "api_id": "branded_sms_pakistan_send_message_to_multiple_numbers",
+    "candidate_id": "C02",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 30,
+    "rag_score": 0.5223180055618286,
+    "reason": "",
+    "service": {
+      "_file": "branded_sms_pakistan.json",
+      "_tool": "branded_sms_pakistan",
+      "api_id": "branded_sms_pakistan_send_message_to_multiple_numbers",
+      "category": "SMS",
+      "description": "This API is useful to send a branded sms to multiple numbers",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Return Message ID",
+            "name": "status",
+            "type": "BOOLEAN"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "923151231015, 923151231016",
+            "description": "Destination Number (Default Format) 923151231016",
+            "name": "to",
+            "type": "STRING"
+          },
+          {
+            "default": "6014c421fd3dc1185d2b0603b41",
+            "description": "Account API Key",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "H3 TEST SMS",
+            "description": "Masking (Branded Name)",
+            "name": "mask",
+            "type": "STRING"
+          },
+          {
+            "default": "hello@brandedsmspakistan.com",
+            "description": "Account Email Address",
+            "name": "email",
+            "type": "STRING"
+          },
+          {
+            "default": "Hello I am sending test message",
+            "description": "Message Limited to 640 characters",
+            "name": "message",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Send Message to Multiple Numbers",
+      "tool_description": "Branded SMS Pakistan provide Mask or Short Code Messaging Gateway in Pakistan",
+      "tool_name": "Branded SMS Pakistan",
+      "toolbench_endpoint_description": "This API is useful to send a branded sms to multiple numbers",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "This API is useful to send a branded sms to multiple numbers",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Send Message to Multiple Numbers",
+        "endpoint_url": "https://branded-sms-pakistan.p.rapidapi.com/send",
+        "file_name": "branded_sms_pakistan.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 5,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Branded SMS Pakistan provide Mask or Short Code Messaging Gateway in Pakistan",
+        "tool_file_found": true,
+        "tool_name": "Branded SMS Pakistan",
+        "toolbench_relative_path": "SMS/branded_sms_pakistan.json"
+      },
+      "toolbench_tool_description": "Branded SMS Pakistan provide Mask or Short Code Messaging Gateway in Pakistan",
+      "toolbench_tool_name": "Branded SMS Pakistan",
+      "url": "https://branded-sms-pakistan.p.rapidapi.com/send"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "3",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "3",
+      "api_id": "branded_sms_pakistan_send_message_to_multiple_numbers",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

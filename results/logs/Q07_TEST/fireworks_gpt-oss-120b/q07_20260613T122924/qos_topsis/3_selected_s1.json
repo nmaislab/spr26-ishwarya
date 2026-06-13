@@ -1,0 +1,76 @@
+[
+  {
+    "api_id": "specrom_news_api_extract_email_address_by_url",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 38,
+    "rag_score": 0.4904634952545166,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_extract_email_address_by_url",
+      "category": "News_Media",
+      "description": "Just input the URL and our email extractor will return all the email addresses on that webpage.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Extract Email Address By URL",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just input the URL and our email extractor will return all the email addresses on that webpage.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just input the URL and our email extractor will return all the email addresses on that webpage.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Extract Email Address By URL",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.182,
+        "tp_kbps": 484.581,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9826745888723689,
+    "topsis_rank": 1,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_topsis",
+      "subtask_id": "1",
+      "api_id": "specrom_news_api_extract_email_address_by_url",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9826745888723689
+    }
+  }
+]

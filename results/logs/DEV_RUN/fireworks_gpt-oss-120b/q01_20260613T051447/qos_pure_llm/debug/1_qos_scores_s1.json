@@ -1,0 +1,162 @@
+{
+  "weather_change_live_get_weather_report": {
+    "qos_llm_score": 0.92,
+    "qos_llm_rank": 1
+  },
+  "tomorrow_io_retrievealocation": {
+    "qos_llm_score": 0.73,
+    "qos_llm_rank": 2
+  },
+  "ai_weather_by_meteosource_astro": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 3
+  },
+  "climate_news_weathertemp": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 4
+  },
+  "farmonaut_satellite_and_weather_data_retrieve_historical_weather_for_a_field": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 5
+  },
+  "farmonaut_satellite_and_weather_data_retrieve_weather_forecast_data_from_latitude_and_longitude": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 6
+  },
+  "tomorrow_io_activateanalert-2": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 7
+  },
+  "weather_api_by_any_city_get_weather_updates": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 8
+  },
+  "weatherdl_weather_forecast": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 9
+  },
+  "easy_weather_current_conditions_detailed": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 10
+  },
+  "history_hourlyweather": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 11
+  },
+  "tomorrow_io_weather_forecast": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 12
+  },
+  "yahoo_weather_search_by_woeid": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 13
+  },
+  "climate_change_live_at_specific_source_weather_changes": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 14
+  },
+  "farmonaut_satellite_and_weather_data_retrieve_present_weather_data": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 15
+  },
+  "rapidweather_call_5_day_3_hour_forecast_data_by_city_id": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 16
+  },
+  "tomorrow_io_activateanalert": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 17
+  },
+  "tomorrow_io_retrievetimelinesbasic": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 18
+  },
+  "weather_request_single_data": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 19
+  },
+  "weatherapi_com_forecast_weather_api": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 20
+  },
+  "world_weather_online_api_local_weather_api": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 21
+  },
+  "national_weather_service_stations_stationid_observations_recordid": {
+    "qos_llm_score": 0.64,
+    "qos_llm_rank": 22
+  },
+  "tomorrow_io_listinsights": {
+    "qos_llm_score": 0.64,
+    "qos_llm_rank": 23
+  },
+  "cloud_cast_get_the_forecast": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 24
+  },
+  "tomorrow_io_retrieveeventsbasic": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 25
+  },
+  "tomorrow_io_retrieveweatherrecenthisotry": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 26
+  },
+  "tomorrow_io_unlinklocations": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 27
+  },
+  "tomorrow_io_unlinklocations-2": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 28
+  },
+  "weatherstack_get": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 29
+  },
+  "world_weather_online_api_ski_weather_api": {
+    "qos_llm_score": 0.63,
+    "qos_llm_rank": 30
+  },
+  "easy_weather_historical_daily": {
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 31
+  },
+  "weatherapi_com_realtime_weather_api": {
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 32
+  },
+  "live_climate_updates_get_all_news_endpoint_related_to_climate_change": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 33
+  },
+  "weatherapi_com_sports_api": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 34
+  },
+  "easy_weather_hourly_forecast_240_hours": {
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 35
+  },
+  "tomorrow_io_createanalert-2": {
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 36
+  },
+  "tomorrow_io_linklocations": {
+    "qos_llm_score": 0.52,
+    "qos_llm_rank": 37
+  },
+  "tomorrow_io_retrieveanalert": {
+    "qos_llm_score": 0.5,
+    "qos_llm_rank": 38
+  },
+  "world_weather_online_api_marine_history_weather_api": {
+    "qos_llm_score": 0.01,
+    "qos_llm_rank": 39
+  },
+  "weatherapi_com_ip_lookup_api": {
+    "qos_llm_score": 0.0,
+    "qos_llm_rank": 40
+  }
+}

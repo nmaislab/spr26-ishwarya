@@ -1,0 +1,130 @@
+[
+  {
+    "api_id": "sms_gateway_sms_gateway",
+    "candidate_id": "C14",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 27,
+    "rag_score": 0.4853067696094513,
+    "reason": "",
+    "service": {
+      "_file": "sms_gateway.json",
+      "_tool": "sms_gateway",
+      "api_id": "sms_gateway_sms_gateway",
+      "category": "Communication",
+      "description": "",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "268431687",
+            "description": "Unique reference, if this parameter is absent, no status report is sent.",
+            "name": "reference",
+            "type": "STRING"
+          },
+          {
+            "default": "201308020025",
+            "description": "The date on which the message needs to be sent.",
+            "name": "timestamp",
+            "type": "NUMBER"
+          },
+          {
+            "default": "checked",
+            "description": "Replace non GSM-7 characters by appropriate valid GSM-7 characters.",
+            "name": "replacechars",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "normal",
+            "description": "When sending a message, you can specify what type of message it is. You can send messages in 3 types (normal / binary / flash).",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The UDH parameter is required if you want to send a binary SMS. This parameter needs to contain the \"header\" of the SMS message.",
+            "name": "udh",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "If test is TRUE, then the message is not actually sent or scheduled, and there will be no credits deducted. Validation of the message will take place, and you will also receive a normal response back from the API.",
+            "name": "test",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "http://www.example.com/dlr-messagebird.php",
+            "description": "If you want a dlr notification of the message send to another url then that you have set on the web site, you can use this parameter.",
+            "name": "dlr_url",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "MessageBird",
+            "description": "Sender of the message. Can be numeric or alphanumeric.",
+            "name": "sender",
+            "type": "STRING"
+          },
+          {
+            "default": "This is a gsm 7-bit test message.",
+            "description": "The message that needs to be sent. If the body contains signs that are not listed in the GSM-7 table, it is considered UTF-8.",
+            "name": "body",
+            "type": "STRING"
+          },
+          {
+            "default": "31600000001,31600000002",
+            "description": "One or several receivers, separated by a comma.",
+            "name": "destination",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "SMS Gateway",
+      "tool_description": "MessageBird provides a simple and fast API for sending and receiving text messages (SMS) all over the world. Other related services are HLR-Lookup (network query) and sending and receiving Premium SMS messages.",
+      "tool_name": "SMS Gateway",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "SMS Gateway",
+        "endpoint_url": "https://messagebird-sms-gateway.p.rapidapi.com/sms",
+        "file_name": "sms_gateway.json",
+        "optional_parameter_count": 7,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "MessageBird provides a simple and fast API for sending and receiving text messages (SMS) all over the world. Other related services are HLR-Lookup (network query) and sending and receiving Premium SMS messages.",
+        "tool_file_found": true,
+        "tool_name": "SMS Gateway",
+        "toolbench_relative_path": "Communication/sms_gateway.json"
+      },
+      "toolbench_tool_description": "MessageBird provides a simple and fast API for sending and receiving text messages (SMS) all over the world. Other related services are HLR-Lookup (network query) and sending and receiving Premium SMS messages.",
+      "toolbench_tool_name": "SMS Gateway",
+      "url": "https://messagebird-sms-gateway.p.rapidapi.com/sms"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "2",
+      "api_id": "sms_gateway_sms_gateway",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

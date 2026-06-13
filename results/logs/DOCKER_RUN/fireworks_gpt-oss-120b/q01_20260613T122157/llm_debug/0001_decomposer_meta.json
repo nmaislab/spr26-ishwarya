@@ -1,0 +1,23 @@
+{
+  "call_id": "0001_decomposer",
+  "started_at": "2026-06-13T12:21:57+00:00",
+  "status": "failed",
+  "role_name": "decomposer",
+  "provider": "fireworks",
+  "model": "accounts/fireworks/models/gpt-oss-120b",
+  "temperature": 0.0,
+  "force_json": true,
+  "max_tokens": null,
+  "timeout_seconds": 300,
+  "system_chars": 263,
+  "prompt_chars": 9725,
+  "metadata": {
+    "source": "run_autogen_pipeline",
+    "gateway": "autogen_gateway",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/gpt-oss-120b"
+  },
+  "ended_at": "2026-06-13T12:21:58+00:00",
+  "duration_seconds": 0.416,
+  "error": "Error code: 401 - {'error': {'message': 'The API key you provided is invalid.', 'param': None, 'code': 'UNAUTHORIZED', 'type': 'error'}, 'request_id': 'chatcmpl-16ed892e480c414099d2993129626ad7'}"
+}

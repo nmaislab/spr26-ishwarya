@@ -1,0 +1,12 @@
+{
+"subtasks": [
+{
+"id": 1,
+"description": "Retrieve current or forecast weather for the user’s location using an external weather API"
+},
+{
+"id": 2,
+"description": "Send SMS alert with the weather information using an external messaging API"
+}
+]
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "api_id": "youtube_summarizer_by_chatgpt_youtube_summarizer_v2",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 32,
+    "rag_score": 0.45219653844833374,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "youtube_summarizer_by_chatgpt.json",
+      "_tool": "youtube_summarizer_by_chatgpt",
+      "api_id": "youtube_summarizer_by_chatgpt_youtube_summarizer_v2",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "description": "Insert a YouTube URL which has subtitles (captions) available. It will return a summary of the video (max 300 words). This API requires OpenAI API key (get here for free- https://platform.openai.com/account/api-keys)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "https://www.youtube.com/watch?v=zsSlkAFohL4",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Get ChatGPT API key (free): https://platform.openai.com/account/api-keys",
+            "name": "key",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "YouTube Summarizer v2",
+      "tool_description": "Summarize any YouTube Video in 300 words. A YouTube summarizer based on ChatGPT Update 31 May 2023: it's fixed & working.",
+      "tool_name": "YouTube Summarizer by ChatGPT",
+      "toolbench_endpoint_description": "Insert a YouTube URL which has subtitles (captions) available. It will return a summary of the video (max 300 words). This API requires OpenAI API key (get here for free- https://platform.openai.com/account/api-keys)",
+      "toolbench_enrichment": {
+        "category": "Artificial_Intelligence_Machine_Learning",
+        "endpoint_description": "Insert a YouTube URL which has subtitles (captions) available. It will return a summary of the video (max 300 words). This API requires OpenAI API key (get here for free- https://platform.openai.com/account/api-keys)",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "YouTube Summarizer v2",
+        "endpoint_url": "https://youtube-summarizer-by-chatgpt.p.rapidapi.com/ytsummary1/",
+        "file_name": "youtube_summarizer_by_chatgpt.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Summarize any YouTube Video in 300 words. A YouTube summarizer based on ChatGPT\nUpdate 31 May 2023: it's fixed & working.",
+        "tool_file_found": true,
+        "tool_name": "YouTube Summarizer by ChatGPT",
+        "toolbench_relative_path": "Artificial_Intelligence_Machine_Learning/youtube_summarizer_by_chatgpt.json"
+      },
+      "toolbench_tool_description": "Summarize any YouTube Video in 300 words. A YouTube summarizer based on ChatGPT\nUpdate 31 May 2023: it's fixed & working.",
+      "toolbench_tool_name": "YouTube Summarizer by ChatGPT",
+      "url": "https://youtube-summarizer-by-chatgpt.p.rapidapi.com/ytsummary1/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.118,
+        "tp_kbps": 709.359,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.999562284371755,
+    "topsis_rank": 1,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_topsis",
+      "subtask_id": "2",
+      "api_id": "youtube_summarizer_by_chatgpt_youtube_summarizer_v2",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.999562284371755
+    }
+  }
+]

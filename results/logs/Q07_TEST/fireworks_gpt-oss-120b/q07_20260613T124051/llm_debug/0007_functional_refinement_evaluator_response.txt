@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":0,"reason":"only sets receive tag, not sending"},
+{"candidate_id":"C22","label":0,"reason":"only sets receive tag, not sending"},
+{"candidate_id":"C23","label":0,"reason":"sends voice, not SMS"},
+{"candidate_id":"C24","label":0,"reason":"retrieves language settings"},
+{"candidate_id":"C25","label":0,"reason":"creates short URL"},
+{"candidate_id":"C26","label":0,"reason":"retrieves short URL"},
+{"candidate_id":"C27","label":0,"reason":"sets sender name only"},
+{"candidate_id":"C28","label":0,"reason":"lists subusers"},
+{"candidate_id":"C29","label":0,"reason":"shares sender names"},
+{"candidate_id":"C30","label":0,"reason":"checks response time"},
+{"candidate_id":"C31","label":1,"reason":"sends SMS 2FA token"},
+{"candidate_id":"C32","label":0,"reason":"fetches received messages"},
+{"candidate_id":"C33","label":1,"reason":"schedules SMS sending"},
+{"candidate_id":"C34","label":1,"reason":"sends SMS campaign"},
+{"candidate_id":"C35","label":1,"reason":"sends SMS campaign"},
+{"candidate_id":"C36","label":1,"reason":"sends SMS to list"},
+{"candidate_id":"C37","label":1,"reason":"sends single SMS"},
+{"candidate_id":"C38","label":0,"reason":"gets device info"},
+{"candidate_id":"C39","label":0,"reason":"gets received messages"},
+{"candidate_id":"C40","label":0,"reason":"gets sent messages"}
+]
+}

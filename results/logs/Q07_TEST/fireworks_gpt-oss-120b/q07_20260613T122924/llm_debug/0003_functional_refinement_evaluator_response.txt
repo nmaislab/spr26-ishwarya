@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":1,"reason":"returns all articles, usable for fetching news"},
+{"candidate_id":"C22","label":0,"reason":"only provides article counts, no content"},
+{"candidate_id":"C23","label":1,"reason":"returns latest 100 articles, suitable"},
+{"candidate_id":"C24","label":1,"reason":"search returns up to 100 articles"},
+{"candidate_id":"C25","label":0,"reason":"provides historical archive, not current top"},
+{"candidate_id":"C26","label":0,"reason":"lists sources only, no articles"},
+{"candidate_id":"C27","label":1,"reason":"real-time aggregation returns news articles"},
+{"candidate_id":"C28","label":1,"reason":"explicit top news endpoint"},
+{"candidate_id":"C29","label":0,"reason":"only Trump articles, not general news"},
+{"candidate_id":"C30","label":0,"reason":"gives article counts, not articles"},
+{"candidate_id":"C31","label":1,"reason":"returns recent 100 articles, suitable"},
+{"candidate_id":"C32","label":0,"reason":"classifies articles, does not fetch"},
+{"candidate_id":"C33","label":0,"reason":"extracts social handles, not news"},
+{"candidate_id":"C34","label":0,"reason":"extracts emails, not news"},
+{"candidate_id":"C35","label":0,"reason":"fetches single article by URL"},
+{"candidate_id":"C36","label":0,"reason":"fetches single article by id"},
+{"candidate_id":"C37","label":0,"reason":"searches headlines by keyword, not top list"},
+{"candidate_id":"C38","label":0,"reason":"limited to Sri Lankan source"},
+{"candidate_id":"C39","label":1,"reason":"returns trending news articles"},
+{"candidate_id":"C40","label":0,"reason":"scrapes based on query, not generic top"}
+]
+}

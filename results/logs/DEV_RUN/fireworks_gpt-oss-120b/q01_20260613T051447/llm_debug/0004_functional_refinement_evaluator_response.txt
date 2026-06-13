@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C01","label":0,"reason":"receives messages only"},
+{"candidate_id":"C02","label":0,"reason":"provides weather data, not SMS"},
+{"candidate_id":"C03","label":1,"reason":"sends bulk SMS messages"},
+{"candidate_id":"C04","label":0,"reason":"checks account balance only"},
+{"candidate_id":"C05","label":1,"reason":"sends SMS messages"},
+{"candidate_id":"C06","label":0,"reason":"WhatsApp group data, not SMS"},
+{"candidate_id":"C07","label":0,"reason":"WhatsApp chat setting, not SMS"},
+{"candidate_id":"C08","label":0,"reason":"WhatsApp profile picture, not SMS"},
+{"candidate_id":"C09","label":1,"reason":"sends SMS via simple POST"},
+{"candidate_id":"C10","label":0,"reason":"number validation request, not SMS"},
+{"candidate_id":"C11","label":1,"reason":"sends SMS messages"},
+{"candidate_id":"C12","label":1,"reason":"creates and sends SMS messages"},
+{"candidate_id":"C13","label":0,"reason":"retrieves delivery status only"},
+{"candidate_id":"C14","label":1,"reason":"sends SMS with body and destination"},
+{"candidate_id":"C15","label":0,"reason":"receives incoming SMS updates"},
+{"candidate_id":"C16","label":0,"reason":"sets tag, not sending"},
+{"candidate_id":"C17","label":0,"reason":"sets tag, not sending"},
+{"candidate_id":"C18","label":0,"reason":"sends voice messages, not SMS"},
+{"candidate_id":"C19","label":0,"reason":"profile settings, not SMS"},
+{"candidate_id":"C20","label":0,"reason":"sets sender name, not sending"}
+]
+}

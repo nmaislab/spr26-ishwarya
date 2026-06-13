@@ -1,0 +1,75 @@
+[
+  {
+    "api_id": "cloud_cast_get_the_forecast",
+    "candidate_id": "C04",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 36,
+    "rag_score": 0.5627785325050354,
+    "reason": "",
+    "service": {
+      "_file": "cloud_cast.json",
+      "_tool": "cloud_cast",
+      "api_id": "cloud_cast_get_the_forecast",
+      "category": "Weather",
+      "description": "Get the forecast for the current city",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "New York",
+            "description": "",
+            "name": "city",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get the forecast",
+      "tool_description": "Cloudcast is a simple and efficient API built with Node.js and Express, designed to provide real-time weather information for any city in the world. It is able to fetch and deliver current weather conditions including temperature, humidity, wind speed, and other vital meteorological data.",
+      "tool_name": "Cloud Cast",
+      "toolbench_endpoint_description": "Get the forecast for the current city",
+      "toolbench_enrichment": {
+        "category": "Weather",
+        "endpoint_description": "Get the forecast for the current city",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get the forecast",
+        "endpoint_url": "https://cloud-cast.p.rapidapi.com/forecast/{city}",
+        "file_name": "cloud_cast.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Cloudcast is a simple and efficient API built with Node.js and Express, designed to provide real-time weather information for any city in the world. It is able to fetch and deliver current weather conditions including temperature, humidity, wind speed, and other vital meteorological data.",
+        "tool_file_found": true,
+        "tool_name": "Cloud Cast",
+        "toolbench_relative_path": "Weather/cloud_cast.json"
+      },
+      "toolbench_tool_description": "Cloudcast is a simple and efficient API built with Node.js and Express, designed to provide real-time weather information for any city in the world. It is able to fetch and deliver current weather conditions including temperature, humidity, wind speed, and other vital meteorological data.",
+      "toolbench_tool_name": "Cloud Cast",
+      "url": "https://cloud-cast.p.rapidapi.com/forecast/{city}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "1",
+      "api_id": "cloud_cast_get_the_forecast",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]
