@@ -243,6 +243,77 @@ The evaluation folder can contain:
 - `query_<id>_composition_qos_eval.xlsx`
 - composition validity issue JSON/log outputs when applicable
 
+## Streamlit Dashboard
+
+The interactive dashboard lives in `src/ui/` and is the recommended way to
+inspect completed runs, compare ranking/composition outputs, and launch small
+interactive experiments from the same codebase.
+
+Start the full dashboard from the repository root:
+
+```bash
+source .venv/bin/activate
+streamlit run src/ui/ranking_eval_app.py --server.port 8501
+```
+
+If port `8501` is already in use, choose another port:
+
+```bash
+streamlit run src/ui/ranking_eval_app.py --server.port 8502
+```
+
+Then open:
+
+```text
+http://localhost:8501
+```
+
+The dashboard expects run-parent folders shaped like:
+
+```text
+results/logs/<run_tag>/<provider_model>/
+|-- q01_<timestamp>/
+|-- q02_<timestamp>/
+`-- ...
+```
+
+This checkout includes local example artifacts that can be used immediately:
+
+```bash
+RUN_DIR="results/logs/DEV_RUN/fireworks_gpt-oss-120b"
+```
+
+Dashboard pages:
+
+- `Live Demo Deep Dive`: defense-oriented single-query walkthrough with
+  decomposed subtasks, retrieved/ranked candidates, selected plans, QoS scores,
+  and raw artifact inspection.
+- `Ranking Evaluation`: computes Spearman, average-overlap, RBO, and Jaccard
+  agreement across ranking modes for a selected run folder.
+- `Composition Visualizations`: compares mode-level planned workflows, QoS
+  components, bottlenecks, and recommended modes from completed evaluation
+  artifacts.
+- `Run Experiments`: launches `src.driver.run_autogen_pipeline` in the
+  background. This requires the same `.env` provider keys as CLI runs.
+- `Completed Runs`: browses finished or still-running query folders and shows
+  logs, stage status, Excel/JSON reports, and planner outputs.
+
+The dashboard discovers available run folders under `results/logs/` and prefers
+the most complete artifact set when duplicate timestamped folders exist for the
+same query. If a page reports that no `qXX_*` folders were found, select the
+provider-model folder that directly contains timestamped query directories, for
+example `results/logs/DEV_RUN/fireworks_gpt-oss-120b`.
+
+Useful dashboard verification commands:
+
+```bash
+python -c "import src.ui.ranking_eval_app as app; print('import ok')"
+python -m pytest tests/test_live_demo_loader.py tests/test_composition_visualization_recommendation.py tests/test_ranking_metrics.py
+curl -I http://localhost:8501
+```
+
+Run the `curl` check only while the Streamlit server is active.
+
 ## Post-Experiment Analysis
 
 The deterministic scripts in `scripts/` operate on completed parent run folders
@@ -251,7 +322,7 @@ that contain one directory per query, named `qXX_*`.
 Example run folder:
 
 ```bash
-RUN_DIR="results/logs/RUNS_MAY_31_NEW_5/fireworks_gpt-oss-120b"
+RUN_DIR="results/logs/DEV_RUN/fireworks_gpt-oss-120b"
 ```
 
 Recommended order:
@@ -288,16 +359,17 @@ guards.
 Run the full unit test suite:
 
 ```bash
-python -m unittest discover -s tests
+python -m pytest tests
 ```
 
 Run focused tests while changing a subsystem:
 
 ```bash
-python -m unittest tests.test_json_parsing tests.test_output_schemas
-python -m unittest tests.test_ranker_parser
-python -m unittest tests.test_composition_qos_eval
-python -m unittest tests.test_fireworks_model_selection tests.test_groq_failover_backend
+python -m pytest tests/test_json_parsing.py tests/test_output_schemas.py
+python -m pytest tests/test_ranker_parser.py
+python -m pytest tests/test_composition_qos_eval.py
+python -m pytest tests/test_fireworks_model_selection.py tests/test_groq_failover_backend.py
+python -m pytest tests/test_live_demo_loader.py tests/test_composition_visualization_recommendation.py
 ```
 
 For a quick syntax check:

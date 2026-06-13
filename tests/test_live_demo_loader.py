@@ -8,51 +8,55 @@ from src.ui import live_demo_loader as loader
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-RUN_DIR = PROJECT_ROOT / "results/logs/RUNS_MAY_31_NEW_5/fireworks_gpt-oss-120b"
+RUN_DIR = PROJECT_ROOT / "results/logs/DEV_RUN/fireworks_gpt-oss-120b"
+Q07_DUPLICATE_RUN_DIR = PROJECT_ROOT / "results/logs/Q07_TEST/fireworks_gpt-oss-120b"
 
 
-def test_scan_run_folder_discovers_dynamic_queries() -> None:
-    scan = loader.scan_run_folder(str(RUN_DIR))
+def test_scan_run_folder_discovers_dynamic_queries_and_prefers_complete_duplicate() -> None:
+    dev_scan = loader.scan_run_folder(str(RUN_DIR))
+    q07_scan = loader.scan_run_folder(str(Q07_DUPLICATE_RUN_DIR))
 
-    query_ids = {row["query_id"] for row in scan["queries"]}
+    dev_query_ids = {row["query_id"] for row in dev_scan["queries"]}
+    q07_row = next(row for row in q07_scan["queries"] if row["query_id"] == "q07")
 
-    assert "q07" in query_ids
-    assert "q14" in query_ids
-    assert all("query_dir" in row for row in scan["queries"])
+    assert "q01" in dev_query_ids
+    assert all("query_dir" in row for row in dev_scan["queries"])
+    assert q07_row["folder_name"] == "q07_20260613T122924"
+    assert any("more complete artifact set" in warning for warning in q07_scan["warnings"])
 
 
 def test_live_demo_query_loads_scores_and_selected_paths() -> None:
-    bundle = loader.load_live_demo_query(str(RUN_DIR), "q07")
+    bundle = loader.load_live_demo_query(str(RUN_DIR), "q01")
 
     rows = {row["Mode"]: row for row in bundle["composition_rows"]}
     paths = bundle["selected_paths"]
 
     assert bundle["available"] is True
-    assert float(rows["qos_pure_llm"]["QoS_Adjusted_Composition_Score"]) > float(rows["no_qos"]["QoS_Adjusted_Composition_Score"])
+    assert float(rows["qos_hybrid"]["QoS_Adjusted_Composition_Score"]) > float(rows["no_qos"]["QoS_Adjusted_Composition_Score"])
     assert paths["no_qos"]
-    assert paths["qos_pure_llm"]
+    assert paths["qos_hybrid"]
     assert any(row["selected_for_planner"] == "Yes" for row in bundle["ranking_rows"] if row["mode"] == "qos_pure_llm")
     assert any(row["subtask_id"] == "1" for row in bundle["retrieval_rows"])
 
 
 def test_live_demo_query_enriches_retrieval_and_ranking_rows() -> None:
-    bundle = loader.load_live_demo_query(str(RUN_DIR), "q07")
+    bundle = loader.load_live_demo_query(str(RUN_DIR), "q01")
 
-    retrieval_row = next(row for row in bundle["retrieval_rows"] if row["api_id"] == "newscatcher_v1_aggregation")
+    retrieval_row = next(row for row in bundle["retrieval_rows"] if row["api_id"] == "weatherdl_weather_forecast")
     ranking_row = next(
         row
         for row in bundle["ranking_rows"]
-        if row["mode"] == "qos_pure_llm" and row["api_id"] == "newsnow_news_powered_by_duck_duck_go"
+        if row["mode"] == "qos_pure_llm" and row["api_id"] == "weather_change_live_get_weather_report"
     )
-    selected_retrieval_row = next(row for row in bundle["retrieval_rows"] if row["api_id"] == "newsnow_news_powered_by_duck_duck_go")
+    selected_retrieval_row = next(row for row in bundle["retrieval_rows"] if row["api_id"] == "weather_change_live_get_weather_report")
 
     assert retrieval_row["display_name"]
-    assert retrieval_row["category"] == "News_Media"
+    assert retrieval_row["category"] == "Weather"
     assert ranking_row["selected_for_planner"] == "Yes"
-    assert ranking_row["category"] == "News_Media"
+    assert ranking_row["category"] == "Weather"
     assert "QoS-Pure-LLM" in selected_retrieval_row["selected_by_modes"]
-    assert bundle["query_category"] == "News and Media"
-    assert bundle["query_domain"] == "News summarization and SMS briefing"
+    assert bundle["query_category"] == "Weather"
+    assert bundle["query_domain"] == "Weather alert notification"
 
 
 def test_official_query_aggregate_averages_scores_across_loaded_queries(tmp_path: Path) -> None:

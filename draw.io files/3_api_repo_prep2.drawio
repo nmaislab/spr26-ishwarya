@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="OpenAI">
+  <diagram id="api-repo-qos-pipeline" name="Page-1">
+    <mxGraphModel dx="1163" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;ToolBench API Metadata&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;full ToolBench endpoint metadata&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#EAF2FF;strokeColor=#5577A3;" vertex="1" parent="1">
+          <mxGeometry x="130" y="70" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;Sampled API Catalog&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;api_repo.tooldesc.jsonl, 5,559 functional API records&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#EEF7F1;strokeColor=#5F8B68;" vertex="1" parent="1">
+          <mxGeometry x="130" y="162" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;ToolBench Enrichment&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;adds tool name, description, method, URL, parameters&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#FFF5E8;strokeColor=#B9833F;" vertex="1" parent="1">
+          <mxGeometry x="130" y="254" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;Enriched API Records&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;api_repo.enriched.jsonl&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#F4EEFF;strokeColor=#7E6AA8;" vertex="1" parent="1">
+          <mxGeometry x="130" y="346" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;WS-DREAM QoS Assignment&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;assigns rt_s, tp_kbps, availability&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#EAF7F8;strokeColor=#4F96A0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="438" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;QoS-Enriched Catalog&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;api_repo.enriched.jsonl + api_qos.jsonl, merged by api_id&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#FDEEEF;strokeColor=#B56A76;" vertex="1" parent="1">
+          <mxGeometry x="130" y="530" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;Functional-Text Embedding&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;embeds category, tool name, descriptions, endpoint name, method&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#EEF2FF;strokeColor=#6471A8;" vertex="1" parent="1">
+          <mxGeometry x="130" y="622" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="&lt;div&gt;&lt;span style=&quot;font-size:13px&quot;&gt;&lt;b&gt;FAISS Index&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#374151&quot;&gt;shared_no_qos/faiss.index, 5,559 vectors, 384 dimensions&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=12;fontColor=#1F2937;strokeWidth=1.5;shadow=0;fillColor=#F0F7E9;strokeColor=#718B57;" vertex="1" parent="1">
+          <mxGeometry x="130" y="714" width="520" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="&lt;div&gt;&lt;span style=&quot;font-size:11px;color:#334155&quot;&gt;QoS values are excluded from retrieval embeddings.&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;dashed=1;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontSize=11;fontColor=#334155;fillColor=#F8FAFC;strokeColor=#94A3B8;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="527" width="145" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.35;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#94A3B8;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;exitX=0;exitY=0.72;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

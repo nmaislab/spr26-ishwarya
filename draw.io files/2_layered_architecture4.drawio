@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" agent="OpenAI">
+  <diagram id="autollmcompose-layered-architecture-research-grade-no-icons" name="Page-1">
+    <mxGraphModel dx="1163" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="frame" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeColor=#CBD5E1;strokeWidth=1.5;fillColor=#FBFCFE;fontFamily=Helvetica;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="25" y="20" width="800" height="1015"/>
+        </mxCell>
+        <mxCell id="title" value="&lt;b&gt;AutoLLMCompose Layered Architecture&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="42" width="730" height="28"/>
+        </mxCell>
+        <mxCell id="user_layer" value="&lt;b&gt;User Request Layer&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.4;fontStyle=1;fontSize=13;align=center;verticalAlign=top;spacingTop=10;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#7AA2D6;fillColor=#EFF6FF;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="90" width="730" height="115"/>
+        </mxCell>
+        <mxCell id="user_request" value="&lt;b&gt;User Goal / Natural Language Request&lt;/b&gt;&lt;br&gt;CLI or JSONL query input loaded and passed to run_autogen_once" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.4;fontSize=11;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#3B82F6;fillColor=#DBEAFE;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="170" y="130" width="510" height="55"/>
+        </mxCell>
+        <mxCell id="orch_layer" value="&lt;b&gt;Multi-Agent Orchestration Layer&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.4;fontStyle=1;fontSize=13;align=center;verticalAlign=top;spacingTop=10;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#76A98B;fillColor=#F0FDF4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="235" width="730" height="190"/>
+        </mxCell>
+        <mxCell id="decomposer" value="&lt;b&gt;Decomposer&lt;/b&gt;&lt;br&gt;ordered subtasks" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#D97706;fillColor=#FEF3C7;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="305" width="95" height="72"/>
+        </mxCell>
+        <mxCell id="retriever" value="&lt;b&gt;Retriever&lt;/b&gt;&lt;br&gt;FAISS RAG&lt;br&gt;retrieval" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#16A34A;fillColor=#DCFCE7;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="185" y="305" width="95" height="72"/>
+        </mxCell>
+        <mxCell id="refiner" value="&lt;b&gt;Functional&lt;br&gt;Refiner&lt;/b&gt;&lt;br&gt;binary suitability&lt;br&gt;labels" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#7C3AED;fillColor=#EDE9FE;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="290" y="305" width="120" height="72"/>
+        </mxCell>
+        <mxCell id="ranker" value="&lt;b&gt;Ranker&lt;/b&gt;&lt;br&gt;candidate ranking&lt;br&gt;no_qos | qos_pure_llm&lt;br&gt;qos_topsis | qos_hybrid" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#0F766E;fillColor=#CCFBF1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="420" y="305" width="120" height="72"/>
+        </mxCell>
+        <mxCell id="selector" value="&lt;b&gt;Selector&lt;/b&gt;&lt;br&gt;deterministic&lt;br&gt;planner-input&lt;br&gt;selection" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#DB2777;fillColor=#FCE7F3;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="305" width="95" height="72"/>
+        </mxCell>
+        <mxCell id="planner" value="&lt;b&gt;Planner&lt;/b&gt;&lt;br&gt;workflow plan" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#0284C7;fillColor=#E0F2FE;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="655" y="305" width="110" height="72"/>
+        </mxCell>
+        <mxCell id="support_layer" value="&lt;b&gt;Supporting Knowledge and QoS Decision Layers&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.4;fontStyle=1;fontSize=13;align=center;verticalAlign=top;spacingTop=10;fontFamily=Helvetica;fontColor=#1F2937;align=left;spacingLeft=18;strokeColor=#C4B5FD;fillColor=#FAF9FF;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="455" width="730" height="215"/>
+        </mxCell>
+        <mxCell id="api_layer" value="&lt;b&gt;API Knowledge Layer&lt;/b&gt;&lt;br&gt;FAISS index: data/index/AutoLLMCompose_v3/shared_no_qos&lt;br&gt;API catalog: api_repo.tooldesc.jsonl&lt;br&gt;ToolBench metadata: api_repo.enriched.jsonl&lt;br&gt;QoS overlay: api_qos.jsonl" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.4;fontSize=10;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;spacingTop=8;spacingBottom=8;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#D97706;fillColor=#FFFBEB;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="515" width="315" height="120"/>
+        </mxCell>
+        <mxCell id="qos_layer" value="&lt;b&gt;QoS Decision Layer&lt;/b&gt;&lt;br&gt;LLM QoS scoring&lt;br&gt;TOPSIS scoring&lt;br&gt;Hybrid functional-first QoS ranking&lt;br&gt;Workflow-level QoS selection&lt;br&gt;Metrics: response time, throughput, availability&lt;br&gt;QoS_Adjusted_Composition_Score =&lt;br&gt;Composition_Completeness ×&lt;br&gt;(0.7 × Functional_Coverage + 0.3 × Normalized_QoS_Score)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.4;fontSize=10;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;spacingTop=8;spacingBottom=8;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#7C3AED;fillColor=#F5F3FF;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="450" y="490" width="315" height="160"/>
+        </mxCell>
+        <mxCell id="output_layer" value="&lt;b&gt;Composition Output Layer&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeWidth=1.4;fontStyle=1;fontSize=13;align=center;verticalAlign=top;spacingTop=10;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#94A3B8;fillColor=#F8FAFC;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="700" width="730" height="155"/>
+        </mxCell>
+        <mxCell id="ranked" value="&lt;b&gt;Ranked APIs&lt;/b&gt;&lt;br&gt;&amp;lt;mode&amp;gt;/2_ranked_s&amp;lt;id&amp;gt;.json" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#0284C7;fillColor=#F0F9FF;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="755" width="125" height="65"/>
+        </mxCell>
+        <mxCell id="selected" value="&lt;b&gt;Selected APIs&lt;/b&gt;&lt;br&gt;&amp;lt;mode&amp;gt;/3_selected_s&amp;lt;id&amp;gt;.json" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#059669;fillColor=#ECFDF5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="215" y="755" width="135" height="65"/>
+        </mxCell>
+        <mxCell id="primary_plan" value="&lt;b&gt;Primary Plan&lt;/b&gt;&lt;br&gt;&amp;lt;mode&amp;gt;/4_planner.json" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#4F46E5;fillColor=#EEF2FF;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="755" width="120" height="65"/>
+        </mxCell>
+        <mxCell id="exec_workflow" value="&lt;b&gt;Execution Workflow&lt;/b&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#C026D3;fillColor=#FDF4FF;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="490" y="755" width="105" height="65"/>
+        </mxCell>
+        <mxCell id="reports" value="&lt;b&gt;Evaluation Reports&lt;/b&gt;&lt;br&gt;evaluation_result.json&lt;br&gt;composition_qos_eval.xlsx" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;strokeWidth=1.3;fontSize=10;align=center;verticalAlign=middle;spacing=7;fontFamily=Helvetica;fontColor=#1F2937;strokeColor=#475569;fillColor=#F8FAFC;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="605" y="750" width="160" height="75"/>
+        </mxCell>
+        <mxCell id="logging" value="&lt;b&gt;Observability / Logging&lt;/b&gt;&lt;br&gt;meta.json &amp;nbsp; | &amp;nbsp; run.log &amp;nbsp; | &amp;nbsp; model_usage.json &amp;nbsp; | &amp;nbsp; warnings.log&lt;br&gt;errors.log &amp;nbsp; | &amp;nbsp; retry_outcomes.log &amp;nbsp; | &amp;nbsp; llm_debug/" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#64748B;strokeWidth=1.3;dashed=1;fillColor=#F8FAFC;fontSize=11;align=center;verticalAlign=middle;spacing=8;fontFamily=Helvetica;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="885" width="730" height="105"/>
+        </mxCell>
+        <mxCell id="e_user_orch" edge="1" parent="1" value="" source="user_request" target="orch_layer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" value="" source="decomposer" target="retriever" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" value="" source="retriever" target="refiner" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" value="" source="refiner" target="ranker" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" value="" source="ranker" target="selector" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" value="" source="selector" target="planner" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e_api_orch" edge="1" parent="1" value="" source="api_layer" target="orch_layer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.2;endArrow=open;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="50" y="575"/>
+              <mxPoint x="50" y="435"/>
+              <mxPoint x="242" y="435"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_qos_orch" edge="1" parent="1" value="" source="qos_layer" target="orch_layer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.2;endArrow=open;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="800" y="570"/>
+              <mxPoint x="800" y="435"/>
+              <mxPoint x="607" y="435"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_orch_output" edge="1" parent="1" value="" source="orch_layer" target="output_layer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="425" y="675"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_out1" edge="1" parent="1" value="" source="ranked" target="selected" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e_out2" edge="1" parent="1" value="" source="selected" target="primary_plan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e_out3" edge="1" parent="1" value="" source="primary_plan" target="exec_workflow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e_out4" edge="1" parent="1" value="" source="exec_workflow" target="reports" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.4;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e_output_log" edge="1" parent="1" value="" source="output_layer" target="logging" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1"/>
+        </mxCell>
+        <mxCell id="e_orch_log" edge="1" parent="1" value="" source="orch_layer" target="logging" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="810" y="330"/>
+              <mxPoint x="810" y="938"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

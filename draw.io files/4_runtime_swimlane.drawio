@@ -1,0 +1,155 @@
+<mxfile host="app.diagrams.net" modified="2026-05-31T00:00:00.000Z" agent="OpenAI" version="24.7.17" editor="draw.io">
+  <diagram id="section-3-5-runtime-swimlane" name="Page-1">
+    <mxGraphModel dx="1300" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Shared runtime swimlane -->
+        <mxCell id="2" value="&lt;b&gt;Shared Runtime (performed once per query)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontStyle=1;fontSize=12;align=left;verticalAlign=top;spacingTop=6;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="35" y="40" width="780" height="210" as="geometry" />
+        </mxCell>
+
+        <mxCell id="3" value="&lt;b&gt;User Query&lt;/b&gt;&#xa;Input query / goal&#xa;CLI or data/queries/&#xa;all_user_query.jsonl" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="55" y="115" width="100" height="74" as="geometry" />
+        </mxCell>
+
+        <mxCell id="4" value="&lt;b&gt;Decomposition Agent&lt;/b&gt;&#xa;LLM decomposes query&#xa;into ordered subtasks&#xa;Output: 0_decomposer.json&#xa;Subtasks processed independently" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="175" y="102" width="132" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="5" value="&lt;b&gt;Shared Top-40 Retrieval&lt;/b&gt;&#xa;RAG Retriever: FAISS semantic&#xa;search per subtask&#xa;rag_top_k = 40&#xa;Output: 1_retriever_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="330" y="96" width="145" height="112" as="geometry" />
+        </mxCell>
+
+        <mxCell id="6" value="&lt;b&gt;Functional Refiner&lt;/b&gt;&#xa;LLM binary functional-match&#xa;labeling&#xa;Functional Match = 0/1&#xa;Outputs: retrieval_functional_match_rows.json&#xa;and functional_match_cache.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="500" y="88" width="180" height="128" as="geometry" />
+        </mxCell>
+
+        <mxCell id="7" value="&lt;b&gt;FAISS index + API catalog&lt;/b&gt;&#xa;Shared retrieval data store" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="330" y="205" width="145" height="34" as="geometry" />
+        </mxCell>
+
+        <mxCell id="8" value="If zero positive matches,&#xa;recheck / optional retrieval retry" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;dashed=1;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="690" y="110" width="110" height="62" as="geometry" />
+        </mxCell>
+
+        <!-- Shared flow arrows -->
+        <mxCell id="9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="4" target="5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="5" target="6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="7" target="5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="6" target="8"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="8" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="225" />
+              <mxPoint x="402" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Selection note -->
+        <mxCell id="15" value="&lt;b&gt;Planner candidate selection note&lt;/b&gt;&#xa;Default: K = 1 because planner_candidate_mode = fixed_one&#xa;Optional top-N ablation: up to planner_top_n_cap = 5" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;dashed=1;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="360" y="255" width="290" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Mode swimlanes -->
+        <mxCell id="20" value="&lt;b&gt;Mode: no_qos&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontStyle=1;fontSize=11;align=left;verticalAlign=top;spacingTop=6;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="35" y="320" width="780" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="LLM ranker using&#xa;functional API evidence only&#xa;Output: &amp;lt;mode&amp;gt;/2_ranked_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="120" y="350" width="175" height="50" as="geometry" /></mxCell>
+        <mxCell id="22" value="Select planner candidates&#xa;Outputs: &amp;lt;mode&amp;gt;/3_selected_s&amp;lt;subtask_id&amp;gt;.json&#xa;&amp;lt;mode&amp;gt;/3_selected_trace_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="320" y="342" width="175" height="66" as="geometry" /></mxCell>
+        <mxCell id="23" value="LLM planner composes selected APIs&#xa;Planner cannot invent or replace APIs&#xa;Output: &amp;lt;mode&amp;gt;/4_planner.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="520" y="342" width="155" height="66" as="geometry" /></mxCell>
+        <mxCell id="24" value="primary_plan.steps&#xa;execution_workflow.type = sequential&#xa;execution_workflow.steps&#xa;selected_api_ids" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="695" y="345" width="105" height="60" as="geometry" /></mxCell>
+        <mxCell id="25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="21" target="22"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="22" target="23"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="23" target="24"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="30" value="&lt;b&gt;Mode: qos_pure_llm&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontStyle=1;fontSize=11;align=left;verticalAlign=top;spacingTop=6;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="35" y="435" width="780" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="LLM QoS scorer, then&#xa;QoS-aware LLM ranker&#xa;Output: &amp;lt;mode&amp;gt;/2_ranked_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="120" y="465" width="175" height="50" as="geometry" /></mxCell>
+        <mxCell id="32" value="Select planner candidates&#xa;Outputs: &amp;lt;mode&amp;gt;/3_selected_s&amp;lt;subtask_id&amp;gt;.json&#xa;&amp;lt;mode&amp;gt;/3_selected_trace_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="320" y="457" width="175" height="66" as="geometry" /></mxCell>
+        <mxCell id="33" value="LLM planner composes selected APIs&#xa;Planner cannot invent or replace APIs&#xa;Output: &amp;lt;mode&amp;gt;/4_planner.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="520" y="457" width="155" height="66" as="geometry" /></mxCell>
+        <mxCell id="34" value="primary_plan.steps&#xa;execution_workflow.type = sequential&#xa;execution_workflow.steps&#xa;selected_api_ids" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="695" y="460" width="105" height="60" as="geometry" /></mxCell>
+        <mxCell id="35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="31" target="32"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="32" target="33"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="33" target="34"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="40" value="&lt;b&gt;Mode: qos_topsis&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontStyle=1;fontSize=11;align=left;verticalAlign=top;spacingTop=6;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="35" y="550" width="780" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="Deterministic TOPSIS ranking&#xa;from QoS metrics&#xa;Output: &amp;lt;mode&amp;gt;/2_ranked_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="120" y="580" width="175" height="50" as="geometry" /></mxCell>
+        <mxCell id="42" value="Select planner candidates&#xa;Outputs: &amp;lt;mode&amp;gt;/3_selected_s&amp;lt;subtask_id&amp;gt;.json&#xa;&amp;lt;mode&amp;gt;/3_selected_trace_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="320" y="572" width="175" height="66" as="geometry" /></mxCell>
+        <mxCell id="43" value="LLM planner composes selected APIs&#xa;Planner cannot invent or replace APIs&#xa;Output: &amp;lt;mode&amp;gt;/4_planner.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="520" y="572" width="155" height="66" as="geometry" /></mxCell>
+        <mxCell id="44" value="primary_plan.steps&#xa;execution_workflow.type = sequential&#xa;execution_workflow.steps&#xa;selected_api_ids" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="695" y="575" width="105" height="60" as="geometry" /></mxCell>
+        <mxCell id="45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="41" target="42"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="42" target="43"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="43" target="44"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="50" value="&lt;b&gt;Mode: qos_hybrid&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontStyle=1;fontSize=11;align=left;verticalAlign=top;spacingTop=6;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="35" y="665" width="780" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="Functional-match-first ranking,&#xa;then TOPSIS ordering&#xa;Output: &amp;lt;mode&amp;gt;/2_ranked_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="120" y="695" width="175" height="50" as="geometry" /></mxCell>
+        <mxCell id="52" value="Select planner candidates&#xa;Outputs: &amp;lt;mode&amp;gt;/3_selected_s&amp;lt;subtask_id&amp;gt;.json&#xa;&amp;lt;mode&amp;gt;/3_selected_trace_s&amp;lt;subtask_id&amp;gt;.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="320" y="687" width="175" height="66" as="geometry" /></mxCell>
+        <mxCell id="53" value="LLM planner composes selected APIs&#xa;Planner cannot invent or replace APIs&#xa;Output: &amp;lt;mode&amp;gt;/4_planner.json" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="520" y="687" width="155" height="66" as="geometry" /></mxCell>
+        <mxCell id="54" value="primary_plan.steps&#xa;execution_workflow.type = sequential&#xa;execution_workflow.steps&#xa;selected_api_ids" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=9;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="695" y="690" width="105" height="60" as="geometry" /></mxCell>
+        <mxCell id="55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="51" target="52"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="52" target="53"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="53" target="54"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Branching from functional refiner to ranking rows -->
+        <mxCell id="60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="6" target="21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="590" y="330" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="6" target="31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="610" y="445" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="6" target="41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="630" y="560" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="6" target="51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="650" y="675" /></Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Evaluation and logs sink -->
+        <mxCell id="70" value="&lt;b&gt;Evaluation And Logs&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontStyle=1;fontSize=12;align=left;verticalAlign=top;spacingTop=6;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="35" y="790" width="780" height="210" as="geometry" />
+        </mxCell>
+
+        <mxCell id="71" value="&lt;b&gt;Ranking / audit artifacts&lt;/b&gt;&#xa;Some reports are generated after ranking and before planner.&#xa;evaluation/query_&amp;lt;id&amp;gt;_candidate_api_rankings.xlsx&#xa;duplicate, hallucination, ranking-anomaly, and mode-anomaly reports" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="835" width="330" height="110" as="geometry" />
+        </mxCell>
+
+        <mxCell id="72" value="&lt;b&gt;Run, plan, and evaluation artifacts&lt;/b&gt;&#xa;evaluation_result.json&#xa;meta.json&#xa;run.log&#xa;model_usage.json&#xa;llm_debug/&#xa;evaluation/query_&amp;lt;id&amp;gt;_composition_qos_eval.xlsx" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=10;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="415" y="828" width="365" height="125" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows to sinks -->
+        <mxCell id="73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="21" target="71"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="31" target="71"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="41" target="71"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="51" target="71"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="24" target="72"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="34" target="72"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="44" target="72"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;endArrow=open;endFill=0;" edge="1" parent="1" source="54" target="72"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Caption -->
+        <mxCell id="81" value="&lt;i&gt;End-to-end AutoLLMCompose runtime process from user query to sequential API composition plan and evaluation artifacts. The diagram emphasizes execution order: shared decomposition and retrieval are performed once per query, ranking is branched by mode, and each mode produces its own selected APIs and planner output.&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1020" width="740" height="58" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
