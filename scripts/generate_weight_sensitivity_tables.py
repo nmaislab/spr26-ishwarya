@@ -6,10 +6,17 @@ import csv
 import json
 import math
 import re
+import sys
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from path_utils import PROJECT_ROOT, resolve_existing_path, resolve_output_path
 
 
 MODE_ORDER = ("no_qos", "qos_pure_llm", "qos_topsis", "qos_hybrid")
@@ -156,11 +163,7 @@ def weight_label(alpha_percent: int, beta_percent: int) -> str:
 
 
 def source_root_from_run(run_dir: Path) -> Path:
-    current = run_dir.resolve()
-    for parent in (current, *current.parents):
-        if parent.name == "AutoLLMCompose":
-            return parent
-    return current.parent
+    return PROJECT_ROOT
 
 
 def resolve_run_relative_path(run_dir: Path, relative_path: str) -> Path:
@@ -627,11 +630,11 @@ def write_markdown(output_dir: Path, table52: list[dict[str, Any]], table53: lis
 
 def main() -> None:
     args = parse_args()
-    run_dir = args.run_dir.expanduser().resolve()
-    if not run_dir.exists() or not run_dir.is_dir():
-        raise FileNotFoundError(f"Run directory does not exist: {run_dir}")
+    run_dir = resolve_existing_path(args.run_dir, kind="run directory")
+    if not run_dir.is_dir():
+        raise FileNotFoundError(f"Run directory is not a directory: {run_dir}")
     output_dir = (
-        args.output_dir.expanduser().resolve()
+        resolve_output_path(args.output_dir)
         if args.output_dir is not None
         else run_dir / "weigh_sensitivity"
     )

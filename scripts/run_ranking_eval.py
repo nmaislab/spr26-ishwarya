@@ -7,10 +7,10 @@ from pathlib import Path
 import sys
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
+from path_utils import PROJECT_ROOT, resolve_existing_path, resolve_output_path  # noqa: E402
 from ranking_metrics import (  # noqa: E402
     DEFAULT_RBO_P,
     DEFAULT_INCLUSION_POLICY,
@@ -21,12 +21,7 @@ from ranking_metrics import (  # noqa: E402
 
 
 def _resolve_existing_path(path: Path, cwd: Path) -> Path:
-    candidates = [path] if path.is_absolute() else [cwd / path, PROJECT_ROOT / path]
-    for candidate in candidates:
-        if candidate.exists():
-            return candidate.resolve()
-
-    raise FileNotFoundError(f"Missing experiment run folder: {path}")
+    return resolve_existing_path(path, base_dir=cwd, kind="experiment run folder")
 
 
 def _evaluation_path(path: Path) -> Path:
@@ -114,7 +109,7 @@ def main() -> None:
     if output_dir is None:
         output_dir = parent_runs_dir / "ranking_eval"
     elif not output_dir.is_absolute():
-        output_dir = (invocation_cwd / output_dir).resolve()
+        output_dir = resolve_output_path(output_dir, base_dir=invocation_cwd)
 
     eval_parent_runs_dir = _evaluation_path(parent_runs_dir)
     os.chdir(PROJECT_ROOT)

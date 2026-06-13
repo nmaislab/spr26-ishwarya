@@ -21,7 +21,14 @@ import math
 import re
 import statistics
 from pathlib import Path
+import sys
 from typing import Any, Iterable, Sequence
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from path_utils import resolve_existing_path
 
 
 MODE_ORDER = ("no_qos", "qos_hybrid", "qos_pure_llm", "qos_topsis")
@@ -166,10 +173,10 @@ def read_json(path: Path) -> Any:
 
 
 def resolve_run_root(value: str | Path) -> Path:
-    path = Path(value).expanduser()
-    if not path.exists() or not path.is_dir():
-        raise FileNotFoundError(f"Run folder does not exist or is not a directory: {path}")
-    return path.resolve()
+    path = resolve_existing_path(value, kind="run folder")
+    if not path.is_dir():
+        raise FileNotFoundError(f"Run folder is not a directory: {path}")
+    return path
 
 
 def resolve_output_dir(run_root: Path, output_dir: str | Path | None) -> Path:
