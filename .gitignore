@@ -1,0 +1,73 @@
+# macOS system files
+.DS_Store
+*/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.venv/
+env/
+venv/
+*.log
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VSCode and IDEs
+.vscode/
+.idea/
+
+# Local environment files
+.env
+*.env
+PROJECT_CONTEXT.md
+
+# Build & cache directories
+__pycache__/
+.cache/
+dist/
+build/
+
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# OS-specific metadata
+Icon?
+Thumbs.db
+data/raw/toolbench/
+
+# Ignore test files
+test_endpoint.ipynb
+
+# Zipped files
+*.zip
+
+# Local scripts and figures
+/thesis_figures/
+
+# outputs
+results/*
+runs/
+
+
+# data + artifacts
+*.pt
+*.bin
+*.safetensors
+*.faiss
+*.index
+data/index/*
+
+# Commit the default shared retrieval index so fresh clones can run the pipeline.
+!data/index/AutoLLMCompose_v3/
+!data/index/AutoLLMCompose_v3/shared_no_qos/
+!data/index/AutoLLMCompose_v3/shared_no_qos/config.json
+!data/index/AutoLLMCompose_v3/shared_no_qos/meta.jsonl
+!data/index/AutoLLMCompose_v3/shared_no_qos/faiss.index
