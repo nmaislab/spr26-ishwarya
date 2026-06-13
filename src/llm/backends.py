@@ -35,6 +35,9 @@ DEFAULT_FIREWORKS_MODELS = [
     "accounts/fireworks/models/gpt-oss-120b",
     "accounts/fireworks/models/deepseek-v4-pro",
 ]
+FIREWORKS_EXPERIMENT_MODEL_OPTIONS = [
+    "accounts/fireworks/models/gpt-oss-120b",
+]
 _FIREWORKS_MODEL_ALIASES = {
     "deepseek-v4": "accounts/fireworks/models/deepseek-v4-pro",
     "deepseek-v4-pro": "accounts/fireworks/models/deepseek-v4-pro",
@@ -372,8 +375,16 @@ def fireworks_model_options() -> list[str]:
     if primary_model:
         models = [primary_model, *models]
 
+    allowed = {
+        _resolve_fireworks_model_name(model_name)
+        for model_name in FIREWORKS_EXPERIMENT_MODEL_OPTIONS
+    }
     resolved: list[str] = []
     for model_name in models:
+        normalized = _resolve_fireworks_model_name(model_name)
+        if normalized and normalized in allowed and normalized not in resolved:
+            resolved.append(normalized)
+    for model_name in FIREWORKS_EXPERIMENT_MODEL_OPTIONS:
         normalized = _resolve_fireworks_model_name(model_name)
         if normalized and normalized not in resolved:
             resolved.append(normalized)

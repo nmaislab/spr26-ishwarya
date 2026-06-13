@@ -100,9 +100,22 @@ class FireworksModelSelectionTests(unittest.TestCase):
 
     def test_fireworks_defaults_do_not_include_known_unavailable_deepseek_v32(self) -> None:
         with patch.dict(os.environ, {}, clear=True):
+            self.assertEqual(fireworks_model_options(), ["accounts/fireworks/models/gpt-oss-120b"])
+            self.assertNotIn("accounts/fireworks/models/deepseek-v4-pro", fireworks_model_options())
             self.assertNotIn("accounts/fireworks/models/deepseek-v3p2", fireworks_model_options())
             self.assertNotIn("accounts/fireworks/models/deepseek-v3p1", fireworks_model_options())
             self.assertNotIn("accounts/fireworks/models/llama-v3p1-8b-instruct", fireworks_model_options())
+
+    def test_fireworks_options_ignore_unapproved_env_models(self) -> None:
+        with patch.dict(
+            os.environ,
+            {
+                "FIREWORKS_MODEL": "deepseek-v4-pro",
+                "FIREWORKS_MODELS": "deepseek-v4-pro,accounts/fireworks/models/deepseek-v3p2",
+            },
+            clear=True,
+        ):
+            self.assertEqual(fireworks_model_options(), ["accounts/fireworks/models/gpt-oss-120b"])
 
     def test_make_backend_uses_only_explicit_fireworks_model(self) -> None:
         with patch.dict(

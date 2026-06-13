@@ -7,6 +7,7 @@ harden_scientific_runtime()
 import argparse
 import json
 import math
+import os
 import re
 import time
 from datetime import datetime
@@ -36,9 +37,7 @@ from src.core.retry import call_with_backoff
 from src.eval.topsis_eval import _extract_qos, _run_topsis_pydecision
 from src.llm.autogen_gateway import call_autogen_gateway
 from src.llm.backends import (
-    GROQ_MULTI_MODEL_SENTINEL,
     fireworks_model_options,
-    groq_experiment_model_pool,
     make_backend,
 )
 from src.tools.fetch_services import catalog_path, fetch_services
@@ -72,6 +71,7 @@ TOPSIS_METADATA_MODES = {"qos_topsis", "qos_hybrid"}
 ALL_QUERIES_PATH = Path("data/queries/all_user_query.jsonl")
 PLANNER_CANDIDATE_MODES = {"fixed_one", "top_n_ablation"}
 HYBRID_WORKFLOW_SELECTORS = {"workflow_topsis", "relative_to_best"}
+MISTRAL_EXPERIMENT_MODEL = "mistral-small-latest"
 WORKFLOW_TOPSIS_WEIGHTS = {
     "response_time": 1.0 / 3.0,
     "throughput": 1.0 / 3.0,
@@ -204,11 +204,8 @@ def choose_queries_interactive(queries: List[Dict[str, Any]]) -> List[Dict[str, 
 
 def choose_provider_interactive() -> str:
     options = [
-        ("mistral", "Mistral"),
-        ("groq", "Groq"),
         ("fireworks", "Fireworks AI"),
-        ("lmstudio", "LM Studio (local, meta-llama-3.1-8b-instruct)"),
-        ("lmstudio_qwen", "LM Studio Qwen (local, qwen2.5-3b-instruct.gguf)"),
+        ("mistral", "Mistral"),
     ]
     print("\nSelect model provider:")
     for i, (_, label) in enumerate(options, start=1):
@@ -219,25 +216,6 @@ def choose_provider_interactive() -> str:
             provider = options[int(choice) - 1][0]
             print(f"Selected: {options[int(choice) - 1][1]}\n")
             return provider
-        print("Invalid choice. Try again.")
-
-
-def choose_groq_model_interactive() -> str:
-    models = groq_experiment_model_pool()
-    print("Select Groq model mode:")
-    print("  1) Multi-model failover (recommended)")
-    for idx, model_name in enumerate(models, start=2):
-        print(f"  {idx}) Single model: {model_name}")
-    while True:
-        choice = input("Enter choice number: ").strip()
-        if choice.isdigit() and 1 <= int(choice) <= len(models) + 1:
-            selected = int(choice)
-            if selected == 1:
-                print(f"Selected: Groq multi-model failover ({', '.join(models)})\n")
-                return GROQ_MULTI_MODEL_SENTINEL
-            model_name = models[selected - 2]
-            print(f"Selected: Groq single model {model_name}\n")
-            return model_name
         print("Invalid choice. Try again.")
 
 
@@ -257,10 +235,11 @@ def choose_fireworks_model_interactive() -> str:
 
 def choose_provider_and_model_interactive() -> tuple[str, str | None]:
     provider = choose_provider_interactive()
-    if provider == "groq":
-        return provider, choose_groq_model_interactive()
     if provider in {"fireworks", "fireworks_ai"}:
         return provider, choose_fireworks_model_interactive()
+    if provider == "mistral":
+        print(f"Selected: Mistral model {MISTRAL_EXPERIMENT_MODEL}\n")
+        return provider, MISTRAL_EXPERIMENT_MODEL
     return provider, None
 
 
@@ -282,6 +261,16 @@ def _select_queries_by_ids(queries: List[Dict[str, Any]], raw_ids: str) -> List[
     return [lookup[query_id] for query_id in query_ids]
 
 
+def _experiment_default_model(provider: str | None) -> str | None:
+    normalized = (provider or "").strip().lower()
+    if normalized == "mistral":
+        return MISTRAL_EXPERIMENT_MODEL
+    if normalized in {"fireworks", "fireworks_ai"}:
+        options = fireworks_model_options()
+        return options[0] if options else None
+    return None
+
+
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run AutoLLMCompose query-level pipeline experiments.")
     parser.add_argument(
@@ -289,8 +278,8 @@ def _parse_args() -> argparse.Namespace:
         help="Comma-separated query ids to run, such as q01,q03. If omitted, interactive selection is used.",
     )
     parser.add_argument("--query-id", action="append", help="Query id to run. Can be passed multiple times.")
-    parser.add_argument("--provider", help="LLM provider, such as mistral, fireworks, groq, lmstudio, or lmstudio_qwen.")
-    parser.add_argument("--model", help="Model name for the selected provider.")
+    parser.add_argument("--provider", help="Experiment LLM provider option: fireworks or mistral.")
+    parser.add_argument("--model", help="Experiment model option, such as accounts/fireworks/models/gpt-oss-120b or mistral-small-latest.")
     parser.add_argument("--run-tag", help="Optional folder under results/logs for this batch.")
     parser.add_argument("--queries-path", default=str(ALL_QUERIES_PATH), help="Path to JSONL query file.")
     return parser.parse_args()
@@ -303,8 +292,8 @@ def _run_from_args(args: argparse.Namespace) -> None:
         raw_query_ids = ",".join(args.query_id if raw_query_ids is None else [raw_query_ids, *args.query_id])
 
     selected_queries = _select_queries_by_ids(queries, raw_query_ids or "")
-    provider = args.provider
-    model = args.model
+    provider = args.provider or os.getenv("LLM_PROVIDER")
+    model = args.model or _experiment_default_model(provider)
     for i, q in enumerate(selected_queries, start=1):
         goal = q.get("goal", "")
         qid = q.get("id", f"q{i:02d}")

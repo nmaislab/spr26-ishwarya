@@ -87,79 +87,33 @@ Create a local `.env` file in the repository root. The code loads this file
 automatically. Do not commit it.
 
 Set `LLM_PROVIDER` to your default provider, or pass `--provider` when running
-the pipeline. If neither is set, the backend defaults to `azure`.
+the pipeline. The experiment runner exposes only the current thesis model
+options: Fireworks AI `accounts/fireworks/models/gpt-oss-120b` and Mistral
+`mistral-small-latest`. Other backend providers remain in code for explicit
+manual use.
 
 ```bash
 # Provider selection
 LLM_PROVIDER=fireworks
 
-# Azure OpenAI
-AZURE_OPENAI_API_KEY=
-AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
-AZURE_OPENAI_API_VERSION=2024-05-01-preview
-AZURE_OPENAI_DEPLOYMENT=gpt-4o-dspy
-
 # Mistral
 MISTRAL_API_KEY=
-MISTRAL_MODEL=mistral-large-latest
-
-# Groq
-GROQ_API_KEY=
-GROQ_MODEL=llama-3.3-70b-versatile
-GROQ_MULTI_MODEL_MODE=false
-GROQ_MULTI_MODELS=llama-3.3-70b-versatile,openai/gpt-oss-120b,openai/gpt-oss-20b,llama-3.1-8b-instant,qwen/qwen3-32b
-GROQ_MULTI_SAME_MODEL_RETRIES=2
-GROQ_MULTI_COMPLETION_TOKEN_RESERVE=2500
+MISTRAL_MODEL=mistral-small-latest
 
 # Fireworks AI
 FIREWORKS_API_KEY=
 FIREWORKS_BASE_URL=https://api.fireworks.ai/inference/v1
 FIREWORKS_MODEL=accounts/fireworks/models/gpt-oss-120b
-FIREWORKS_MODELS=accounts/fireworks/models/gpt-oss-120b,accounts/fireworks/models/deepseek-v4-pro
+FIREWORKS_MODELS=accounts/fireworks/models/gpt-oss-120b
 FIREWORKS_TIMEOUT_SECONDS=180
-
-# Together AI
-TOGETHER_API_KEY=
-TOGETHER_BASE_URL=https://api.together.xyz/v1
-TOGETHER_MODEL=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
-
-# Gemini
-GEMINI_API_KEY=
-GEMINI_MODEL=gemini-2.5-flash
-
-# Azure AI Foundry
-AZURE_FOUNDRY_API_KEY=
-AZURE_FOUNDRY_ENDPOINT=https://your-resource.services.ai.azure.com/models
-AZURE_FOUNDRY_API_VERSION=2024-05-01-preview
-AZURE_FOUNDRY_MODEL=DeepSeek-R1-0528
-AZURE_FOUNDRY_TIMEOUT_SECONDS=300
-
-# LM Studio, OpenAI-compatible local server
-LMSTUDIO_BASE_URL=http://127.0.0.1:1234/v1
-LMSTUDIO_MODEL=meta-llama-3.1-8b-instruct
-LMSTUDIO_API_KEY=lmstudio
-
-# LM Studio native chat endpoint
-LMSTUDIO_QWEN_CHAT_URL=http://localhost:1234/api/v1/chat
-LMSTUDIO_QWEN_MODEL=qwen2.5-3b-instruct.gguf
 ```
 
-Accepted provider names and aliases:
+Experiment runner provider options:
 
 ```text
-azure
-mistral
-groq
 fireworks, fireworks_ai
-together, together_ai
-google, gemini
-azure_foundry, foundry, azure-deepseek, deepseek
-lmstudio, local
-lmstudio_qwen, lmstudio_native, local_qwen
+mistral
 ```
-
-For Groq, pass `--model multi` or set `GROQ_MULTI_MODEL_MODE=true` to enable
-multi-model failover across `GROQ_MULTI_MODELS`.
 
 ## Runtime Data
 
@@ -197,9 +151,9 @@ Run multiple queries:
 ```bash
 python -m src.driver.run_autogen_pipeline \
   --query-ids q01,q02,q03 \
-  --provider groq \
-  --model multi \
-  --run-tag GROQ_DEV
+  --provider fireworks \
+  --model accounts/fireworks/models/gpt-oss-120b \
+  --run-tag FIREWORKS_DEV
 ```
 
 You can also pass repeated query IDs:
@@ -208,7 +162,8 @@ You can also pass repeated query IDs:
 python -m src.driver.run_autogen_pipeline \
   --query-id q01 \
   --query-id q05 \
-  --provider mistral
+  --provider mistral \
+  --model mistral-small-latest
 ```
 
 Use a custom query file with the same `id`, `title`, and `goal` fields:
@@ -401,27 +356,7 @@ data/index/faiss_no_qos/config.json
 Provider key errors such as `FIREWORKS_API_KEY missing`
 
 Add the required key to `.env`, pass a different provider with `--provider`, or
-use a running LM Studio server.
-
-Groq prompt-size or rate-limit failures
-
-Use Groq failover mode:
-
-```bash
-python -m src.driver.run_autogen_pipeline \
-  --query-ids q01 \
-  --provider groq \
-  --model multi
-```
-
-LM Studio timeouts or connection errors
-
-Start the LM Studio local server and verify the configured URL:
-
-```bash
-LMSTUDIO_BASE_URL=http://127.0.0.1:1234/v1
-LMSTUDIO_QWEN_CHAT_URL=http://localhost:1234/api/v1/chat
-```
+use the other exposed experiment provider option.
 
 No services loaded from catalog
 
