@@ -314,6 +314,112 @@ curl -I http://localhost:8501
 
 Run the `curl` check only while the Streamlit server is active.
 
+## Running The Streamlit UI With Docker
+
+The Docker setup runs the existing Streamlit dashboard entry point:
+`src/ui/ranking_eval_app.py`. That dashboard imports and launches the existing
+backend Python modules in this repository, including `src.driver`,
+`src.eval`, `src.llm`, and `src.ui`. There is no separate backend API service
+in the current app, so `docker-compose.yml` defines one service:
+`streamlit-ui`.
+
+The container starts only the UI. It does not automatically run experiments;
+experiments start only when the dashboard's `Run Experiments` page launches
+`src.driver.run_autogen_pipeline`.
+
+Create a local environment file before running the container:
+
+```bash
+cp .env.example .env
+```
+
+Required settings for serving the UI:
+
+```bash
+STREAMLIT_SERVER_PORT=8501
+STREAMLIT_SERVER_ADDRESS=0.0.0.0
+STREAMLIT_HOST_PORT=8501
+MAOF_RUNTIME_CACHE_DIR=/tmp/maof_runtime_cache
+```
+
+Provider keys such as `FIREWORKS_API_KEY` or `MISTRAL_API_KEY` are required
+only when launching new experiments from the UI. Browsing already-mounted run
+artifacts does not call a model provider.
+
+Build and run with Docker:
+
+```bash
+docker build -t autollmcompose-streamlit-ui .
+mkdir -p results/logs
+docker run --rm \
+  --name autollmcompose-streamlit-ui \
+  --env-file .env \
+  -p 8501:8501 \
+  -v "$(pwd)/results/logs:/app/results/logs" \
+  autollmcompose-streamlit-ui
+```
+
+Build and run with Docker Compose:
+
+```bash
+docker compose build streamlit-ui
+docker compose up streamlit-ui
+```
+
+For detached VM use:
+
+```bash
+docker compose up -d streamlit-ui
+```
+
+Then open:
+
+```text
+http://localhost:8501
+```
+
+On a VM, keep `STREAMLIT_SERVER_ADDRESS=0.0.0.0` and open inbound TCP port
+`8501`, or put a reverse proxy in front of the container and proxy to
+`http://127.0.0.1:8501`. If the host port is already in use, set
+`STREAMLIT_HOST_PORT=8502` in `.env` and open `http://localhost:8502`.
+
+The image includes the committed runtime code and data needed by the dashboard:
+`src/`, `prompts/`, `data/queries`, `data/processed`, and `data/index`.
+Experiment outputs are intentionally not baked into the image. Compose mounts
+the host path `./results/logs` at `/app/results/logs` so the dashboard can read
+existing runs and write new UI-launched run logs.
+
+Stop the UI:
+
+```bash
+docker compose down
+```
+
+Or, for the direct `docker run` command:
+
+```bash
+docker stop autollmcompose-streamlit-ui
+```
+
+Troubleshooting:
+
+- Missing provider keys show up when starting an experiment, for example
+  `FIREWORKS_API_KEY missing`. Add the key to `.env` or select a provider with
+  configured credentials.
+- Empty dashboard pages usually mean no query run folders are mounted under
+  `results/logs/`. Keep completed runs under
+  `results/logs/<run_tag>/<provider_model>/qXX_<timestamp>/`.
+- Missing catalog or FAISS files mean the runtime data was not included or
+  pulled. Verify `data/processed/api_catalog_sample_balanced/` and
+  `data/index/faiss_no_qos/` exist before building.
+- Port conflicts can be handled by changing `STREAMLIT_HOST_PORT` for Compose
+  or using a different host mapping such as `-p 8502:8501` with `docker run`.
+- The macOS native folder picker is unavailable inside the Linux container.
+  Use the mounted `/app/results/logs` layout for run discovery.
+- If using LM Studio on the host, `127.0.0.1` points at the container itself.
+  Use a host-reachable address such as `host.docker.internal` on Docker
+  Desktop, or the VM host/bridge IP on Linux.
+
 ## Post-Experiment Analysis
 
 The deterministic scripts in `scripts/` operate on completed parent run folders

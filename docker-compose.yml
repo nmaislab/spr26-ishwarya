@@ -1,0 +1,17 @@
+services:
+  streamlit-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: autollmcompose-streamlit-ui:latest
+    env_file:
+      - .env
+    environment:
+      STREAMLIT_SERVER_ADDRESS: ${STREAMLIT_SERVER_ADDRESS:-0.0.0.0}
+      STREAMLIT_SERVER_PORT: ${STREAMLIT_SERVER_PORT:-8501}
+      MAOF_RUNTIME_CACHE_DIR: ${MAOF_RUNTIME_CACHE_DIR:-/tmp/maof_runtime_cache}
+    ports:
+      - "${STREAMLIT_HOST_PORT:-8501}:${STREAMLIT_SERVER_PORT:-8501}"
+    volumes:
+      - ./results/logs:/app/results/logs
+    restart: unless-stopped
