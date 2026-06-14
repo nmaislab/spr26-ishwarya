@@ -1,0 +1,2227 @@
+[
+  {
+    "api_id": "domain_checker_with_ai_domain_validation",
+    "candidate_id": "C13",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 1,
+    "rag_score": 0.5652371048927307,
+    "reason": "",
+    "service": {
+      "_file": "domain_checker_with_ai.json",
+      "_tool": "domain_checker_with_ai",
+      "api_id": "domain_checker_with_ai_domain_validation",
+      "category": "Tools",
+      "description": "This endpoint allows you to validate a domain name by checking if it is registered and has an IP address associated with it.\nTo use this endpoint, you need to send a GET request to the endpoint with the `domain` field in the query parameter. The value of this field should be the domain name you want to validate.\nThe endpoint will return a JSON response with a `status` field set to `'valid'` if the domain is valid, and an `'ip-address'` field containing the IP address of the domain. If the domain is not valid, the endpoint will return a `400 Bad Request` error with an `'error'` field set to `'invalid domain'`.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "www.google.com",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Domain Validation",
+      "tool_description": "Looking for the perfect domain name for your business or personal website? \"Domain Checker with AI\" has got you covered! This comprehensive tool uses advanced artificial intelligence to generate up to 1 million customizable domain suggestions in a single search. Simply enter your desired base words,",
+      "tool_name": "Domain Checker with AI",
+      "toolbench_endpoint_description": "This endpoint allows you to validate a domain name by checking if it is registered and has an IP address associated with it.\nTo use this endpoint, you need to send a GET request to the endpoint with the `domain` field in the query parameter. The value of this field should be the domain name you want to validate.\nThe endpoint will return a JSON response with a `status` field set to `'valid'` if the domain is valid, and an `'ip-address'` field containing the IP address of the domain. If the domain is not valid, the endpoint will return a `400 Bad Request` error with an `'error'` field set to `'invalid domain'`.",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "This endpoint allows you to validate a domain name by checking if it is registered and has an IP address associated with it.\nTo use this endpoint, you need to send a GET request to the endpoint with the `domain` field in the query parameter. The value of this field should be the domain name you want to validate.\nThe endpoint will return a JSON response with a `status` field set to `'valid'` if the domain is valid, and an `'ip-address'` field containing the IP address of the domain. If the domain is not valid, the endpoint will return a `400 Bad Request` error with an `'error'` field set to `'invalid domain'`.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Domain Validation",
+        "endpoint_url": "https://domain-checker-with-ai.p.rapidapi.com/domain/validate",
+        "file_name": "domain_checker_with_ai.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Looking for the perfect domain name for your business or personal website? \"Domain Checker with AI\" has got you covered! This comprehensive tool uses advanced artificial intelligence to generate up to 1 million customizable domain suggestions in a single search. Simply enter your desired base words, prefixes, or suffixes and let the AI do the rest. Our AI model has been trained on today's most popular domains and patterns, ensuring that you always receive accurate and relevant results. In add...",
+        "tool_file_found": true,
+        "tool_name": "Domain Checker with AI",
+        "toolbench_relative_path": "Tools/domain_checker_with_ai.json"
+      },
+      "toolbench_tool_description": "Looking for the perfect domain name for your business or personal website? \"Domain Checker with AI\" has got you covered! This comprehensive tool uses advanced artificial intelligence to generate up to 1 million customizable domain suggestions in a single search. Simply enter your desired base words, prefixes, or suffixes and let the AI do the rest. Our AI model has been trained on today's most popular domains and patterns, ensuring that you always receive accurate and relevant results. In add...",
+      "toolbench_tool_name": "Domain Checker with AI",
+      "url": "https://domain-checker-with-ai.p.rapidapi.com/domain/validate"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "useful_business_1001_functions_verifyadomain",
+    "candidate_id": "C34",
+    "mode_rank": 2,
+    "llm_reported_rank": 2,
+    "retrieved_rank": 9,
+    "rag_score": 0.4164247512817383,
+    "reason": "",
+    "service": {
+      "_file": "useful_business_1001_functions.json",
+      "_tool": "useful_business_1001_functions",
+      "api_id": "useful_business_1001_functions_verifyadomain",
+      "category": "Business",
+      "description": "This endpoint can be used to check if a `domain` is valid or not.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "VerifyaDomain",
+      "tool_description": "1001 Functions to enhance your business via API. Access a comprehensive API offering various business functions, including VAT rate lookup, geolocation, currency conversion, email validation, domain verification, BMI calculation, and more.",
+      "tool_name": "Useful Business 1001 Functions",
+      "toolbench_endpoint_description": "This endpoint can be used to check if a `domain` is valid or not.",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "This endpoint can be used to check if a `domain` is valid or not.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "VerifyaDomain",
+        "endpoint_url": "https://useful-business-1001-functions.p.rapidapi.com/business/verify/domain",
+        "file_name": "useful_business_1001_functions.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "1001 Functions to enhance your business via API. Access a comprehensive API offering various business functions, including VAT rate lookup, geolocation, currency conversion, email validation, domain verification, BMI calculation, and more.",
+        "tool_file_found": true,
+        "tool_name": "Useful Business 1001 Functions",
+        "toolbench_relative_path": "Business/useful_business_1001_functions.json"
+      },
+      "toolbench_tool_description": "1001 Functions to enhance your business via API. Access a comprehensive API offering various business functions, including VAT rate lookup, geolocation, currency conversion, email validation, domain verification, BMI calculation, and more.",
+      "toolbench_tool_name": "Useful Business 1001 Functions",
+      "url": "https://useful-business-1001-functions.p.rapidapi.com/business/verify/domain"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "bulk_domain_check_domain_check",
+    "candidate_id": "C05",
+    "mode_rank": 3,
+    "llm_reported_rank": 3,
+    "retrieved_rank": 6,
+    "rag_score": 0.4443064033985138,
+    "reason": "",
+    "service": {
+      "_file": "bulk_domain_check.json",
+      "_tool": "bulk_domain_check",
+      "api_id": "bulk_domain_check_domain_check",
+      "category": "Tools",
+      "description": "Returns domain availability status",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "domain name",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "foo.com,example.org,somefoobardomain.io",
+            "description": "Coma separated list of domains.",
+            "name": "domains",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/domain_check",
+      "tool_description": "Bulk Domain Availability Check. All tlds supported.",
+      "tool_name": "Bulk Domain Check",
+      "toolbench_endpoint_description": "Returns domain availability status",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Returns domain availability status",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/domain_check",
+        "endpoint_url": "https://pointsdb-bulk-domain-check-v1.p.rapidapi.com/domain_check",
+        "file_name": "bulk_domain_check.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Bulk Domain Availability Check. All tlds supported.",
+        "tool_file_found": true,
+        "tool_name": "Bulk Domain Check",
+        "toolbench_relative_path": "Tools/bulk_domain_check.json"
+      },
+      "toolbench_tool_description": "Bulk Domain Availability Check. All tlds supported.",
+      "toolbench_tool_name": "Bulk Domain Check",
+      "url": "https://pointsdb-bulk-domain-check-v1.p.rapidapi.com/domain_check"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "dns_lookup_api_soa_domain",
+    "candidate_id": "C12",
+    "mode_rank": 4,
+    "llm_reported_rank": 4,
+    "retrieved_rank": 3,
+    "rag_score": 0.46207737922668457,
+    "reason": "",
+    "service": {
+      "_file": "dns_lookup.json",
+      "_tool": "dns_lookup",
+      "api_id": "dns_lookup_api_soa_domain",
+      "category": "Communication",
+      "description": "Sample request:\r\nGET /api/soa/oxog.net",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "oxog.net",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/Api/soa/{domain}",
+      "tool_description": "API to programmatically perform DNS lookups.",
+      "tool_name": "DNS Lookup",
+      "toolbench_endpoint_description": "Sample request:\r\nGET /api/soa/oxog.net",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "Sample request:\r\nGET /api/soa/oxog.net",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/Api/soa/{domain}",
+        "endpoint_url": "https://dns-lookup2.p.rapidapi.com/Api/soa/{domain}",
+        "file_name": "dns_lookup.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to programmatically perform DNS lookups.",
+        "tool_file_found": true,
+        "tool_name": "DNS Lookup",
+        "toolbench_relative_path": "Communication/dns_lookup.json"
+      },
+      "toolbench_tool_description": "API to programmatically perform DNS lookups.",
+      "toolbench_tool_name": "DNS Lookup",
+      "url": "https://dns-lookup2.p.rapidapi.com/Api/soa/{domain}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "minecraft_checkdomaindns",
+    "candidate_id": "C26",
+    "mode_rank": 5,
+    "llm_reported_rank": 5,
+    "retrieved_rank": 17,
+    "rag_score": 0.39043399691581726,
+    "reason": "",
+    "service": {
+      "_file": "minecraft.json",
+      "_tool": "minecraft",
+      "api_id": "minecraft_checkdomaindns",
+      "category": "Gaming",
+      "description": "Check the DNS of a domain",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Domain to check the DNS of.",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "checkDomainDNS",
+      "tool_description": "Minecraft API Web Service",
+      "tool_name": "Minecraft",
+      "toolbench_endpoint_description": "Check the DNS of a domain",
+      "toolbench_enrichment": {
+        "category": "Gaming",
+        "endpoint_description": "Check the DNS of a domain",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "checkDomainDNS",
+        "endpoint_url": "https://Minecraftstefan-skliarovV1.p.rapidapi.com/checkDomainDNS",
+        "file_name": "minecraft.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Minecraft API Web Service",
+        "tool_file_found": true,
+        "tool_name": "Minecraft",
+        "toolbench_relative_path": "Gaming/minecraft.json"
+      },
+      "toolbench_tool_description": "Minecraft API Web Service",
+      "toolbench_tool_name": "Minecraft",
+      "url": "https://Minecraftstefan-skliarovV1.p.rapidapi.com/checkDomainDNS"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "vibrant_dns_get_dns_records",
+    "candidate_id": "C38",
+    "mode_rank": 6,
+    "llm_reported_rank": 6,
+    "retrieved_rank": 21,
+    "rag_score": 0.3755995035171509,
+    "reason": "",
+    "service": {
+      "_file": "vibrant_dns.json",
+      "_tool": "vibrant_dns",
+      "api_id": "vibrant_dns_get_dns_records",
+      "category": "Data",
+      "description": "Get a domains DNS records",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "a,mx",
+            "description": "Can be a comma seperated string with any of the following options:\na\nns\nmx\ntxt\ncname\n\nTo request multiple record types sample:\na,mx,cname",
+            "name": "record_type",
+            "type": "STRING"
+          },
+          {
+            "default": ",",
+            "description": "When response_type is set to target, you can set the response_type_seperator here. Default is \\\\\\\\\\\\\\\\n (newline) but you can do comma or pipe delimited if you want.",
+            "name": "response_type_seperator",
+            "type": "STRING"
+          },
+          {
+            "default": "target",
+            "description": "If response_type = target, will respond with either ip, txt or target of the requested dns record type. Useful when used in conjunction with response_type_seperator",
+            "name": "response_type",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "rapidapi.com",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get DNS Records",
+      "tool_description": "Get DNS record information",
+      "tool_name": "Vibrant DNS",
+      "toolbench_endpoint_description": "Get a domains DNS records",
+      "toolbench_enrichment": {
+        "category": "Data",
+        "endpoint_description": "Get a domains DNS records",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get DNS Records",
+        "endpoint_url": "https://vibrant-dns.p.rapidapi.com/dns/get",
+        "file_name": "vibrant_dns.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get DNS record information",
+        "tool_file_found": true,
+        "tool_name": "Vibrant DNS",
+        "toolbench_relative_path": "Data/vibrant_dns.json"
+      },
+      "toolbench_tool_description": "Get DNS record information",
+      "toolbench_tool_name": "Vibrant DNS",
+      "url": "https://vibrant-dns.p.rapidapi.com/dns/get"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "whois_lookup_service_whois_domain_lookup",
+    "candidate_id": "C40",
+    "mode_rank": 7,
+    "llm_reported_rank": 7,
+    "retrieved_rank": 22,
+    "rag_score": 0.37400585412979126,
+    "reason": "",
+    "service": {
+      "_file": "whois_lookup_service.json",
+      "_tool": "whois_lookup_service",
+      "api_id": "whois_lookup_service_whois_domain_lookup",
+      "category": "Tools",
+      "description": "Lookup WHOIS data by Domain Name",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "google.com",
+            "description": "Enter the base URL only. **Do not use the http:// in the domain name**",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "WHOIS Domain Lookup",
+      "tool_description": "WHOIS Lookup retrieves detailed registration information for domain names, IP addresses, or autonomous system numbers (ASNs). With this API, you can programmatically access WHOIS data, enabling you to obtain valuable insights about domain ownership, registration dates, contact details, and more.",
+      "tool_name": "WHOIS Lookup Service",
+      "toolbench_endpoint_description": "Lookup WHOIS data by Domain Name",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Lookup WHOIS data by Domain Name",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "WHOIS Domain Lookup",
+        "endpoint_url": "https://whois-lookup-service.p.rapidapi.com/v1/getwhois",
+        "file_name": "whois_lookup_service.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "WHOIS Lookup retrieves detailed registration information for domain names, IP addresses, or autonomous system numbers (ASNs). With this API, you can programmatically access WHOIS data, enabling you to obtain valuable insights about domain ownership, registration dates, contact details, and more.",
+        "tool_file_found": true,
+        "tool_name": "WHOIS Lookup Service",
+        "toolbench_relative_path": "Tools/whois_lookup_service.json"
+      },
+      "toolbench_tool_description": "WHOIS Lookup retrieves detailed registration information for domain names, IP addresses, or autonomous system numbers (ASNs). With this API, you can programmatically access WHOIS data, enabling you to obtain valuable insights about domain ownership, registration dates, contact details, and more.",
+      "toolbench_tool_name": "WHOIS Lookup Service",
+      "url": "https://whois-lookup-service.p.rapidapi.com/v1/getwhois"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "check_disposable_email_whois",
+    "candidate_id": "C07",
+    "mode_rank": 8,
+    "llm_reported_rank": 8,
+    "retrieved_rank": 10,
+    "rag_score": 0.41112613677978516,
+    "reason": "",
+    "service": {
+      "_file": "check_disposable_email.json",
+      "_tool": "check_disposable_email",
+      "api_id": "check_disposable_email_whois",
+      "category": "Commerce",
+      "description": "REST API to WhoIS lookup data",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "peekdomain.com",
+            "description": "domain name of WhoIS to be searched",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "whois",
+      "tool_description": "Easily check if a certain e-mail address is valid. Is it a valid domain? Is the e-mail a temporary/disposable e-mail? That’s a common indicator of spamming/trolling, so now there’s an API for you so you can easily block it!",
+      "tool_name": "Check Disposable Email",
+      "toolbench_endpoint_description": "REST API to WhoIS lookup data",
+      "toolbench_enrichment": {
+        "category": "Commerce",
+        "endpoint_description": "REST API to WhoIS lookup data",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "whois",
+        "endpoint_url": "https://check-disposable-email.p.rapidapi.com/api/whois",
+        "file_name": "check_disposable_email.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Easily check if a certain e-mail address is valid. Is it a valid domain? Is the e-mail a temporary/disposable e-mail? That’s a common indicator of spamming/trolling, so now there’s an API for you so you can easily block it!",
+        "tool_file_found": true,
+        "tool_name": "Check Disposable Email",
+        "toolbench_relative_path": "Commerce/check_disposable_email.json"
+      },
+      "toolbench_tool_description": "Easily check if a certain e-mail address is valid. Is it a valid domain? Is the e-mail a temporary/disposable e-mail? That’s a common indicator of spamming/trolling, so now there’s an API for you so you can easily block it!",
+      "toolbench_tool_name": "Check Disposable Email",
+      "url": "https://check-disposable-email.p.rapidapi.com/api/whois"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "pk_domain_information_lookup_pk_domain",
+    "candidate_id": "C31",
+    "mode_rank": 9,
+    "llm_reported_rank": 9,
+    "retrieved_rank": 29,
+    "rag_score": 0.35577431321144104,
+    "reason": "",
+    "service": {
+      "_file": "pk_domain_information.json",
+      "_tool": "pk_domain_information",
+      "api_id": "pk_domain_information_lookup_pk_domain",
+      "category": "Search",
+      "description": "Get information about .pk domain",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "google.com.pk",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Lookup .pk domain",
+      "tool_description": "Get whois information about any .pk domain",
+      "tool_name": "PK Domain Information",
+      "toolbench_endpoint_description": "Get information about .pk domain",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Get information about .pk domain",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Lookup .pk domain",
+        "endpoint_url": "https://pk-domain-information1.p.rapidapi.com/pknic/lookup/{domain}",
+        "file_name": "pk_domain_information.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get whois information about any .pk domain",
+        "tool_file_found": true,
+        "tool_name": "PK Domain Information",
+        "toolbench_relative_path": "Search/pk_domain_information.json"
+      },
+      "toolbench_tool_description": "Get whois information about any .pk domain",
+      "toolbench_tool_name": "PK Domain Information",
+      "url": "https://pk-domain-information1.p.rapidapi.com/pknic/lookup/{domain}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "certificate_transparency_scan_certificate_transparency_scan",
+    "candidate_id": "C06",
+    "mode_rank": 10,
+    "llm_reported_rank": 10,
+    "retrieved_rank": 8,
+    "rag_score": 0.43360722064971924,
+    "reason": "",
+    "service": {
+      "_file": "certificate_transparency_scan.json",
+      "_tool": "certificate_transparency_scan",
+      "api_id": "certificate_transparency_scan_certificate_transparency_scan",
+      "category": "Search",
+      "description": "Enter a domain to retrieve related subdomains using certificate transparency records",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "hailbytes.com",
+            "description": "Enter the domain you want to perform a certificate transparency scan for",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Certificate Transparency Scan",
+      "tool_description": "Check certificate transparency records for a domain to find other associated domains and IP addresses.",
+      "tool_name": "Certificate Transparency Scan",
+      "toolbench_endpoint_description": "Enter a domain to retrieve related subdomains using certificate transparency records",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Enter a domain to retrieve related subdomains using certificate transparency records",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Certificate Transparency Scan",
+        "endpoint_url": "https://certificate-transparency-scan.p.rapidapi.com/certificate-transparency-scan/",
+        "file_name": "certificate_transparency_scan.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check certificate transparency records for a domain to find other associated domains and IP addresses.",
+        "tool_file_found": true,
+        "tool_name": "Certificate Transparency Scan",
+        "toolbench_relative_path": "Search/certificate_transparency_scan.json"
+      },
+      "toolbench_tool_description": "Check certificate transparency records for a domain to find other associated domains and IP addresses.",
+      "toolbench_tool_name": "Certificate Transparency Scan",
+      "url": "https://certificate-transparency-scan.p.rapidapi.com/certificate-transparency-scan/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "domain_information_domain_information",
+    "candidate_id": "C14",
+    "mode_rank": 11,
+    "llm_reported_rank": 11,
+    "retrieved_rank": 12,
+    "rag_score": 0.4099579155445099,
+    "reason": "",
+    "service": {
+      "_file": "domain_information.json",
+      "_tool": "domain_information",
+      "api_id": "domain_information_domain_information",
+      "category": "Search",
+      "description": "This endpoint takes a 'GET' request with URL as a parameter and returns the domain's general information.\nDo not write 'https://' or 'http://' in the URL as it will make the API break.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Domain Information",
+      "tool_description": "This API takes a URL and returns its information on GoDaddy (e.g. Availability, Price, etc..).",
+      "tool_name": "Domain Information",
+      "toolbench_endpoint_description": "This endpoint takes a 'GET' request with URL as a parameter and returns the domain's general information.\nDo not write 'https://' or 'http://' in the URL as it will make the API break.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "This endpoint takes a 'GET' request with URL as a parameter and returns the domain's general information.\nDo not write 'https://' or 'http://' in the URL as it will make the API break.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Domain Information",
+        "endpoint_url": "https://domain-information.p.rapidapi.com/domain_api",
+        "file_name": "domain_information.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API takes a URL and returns its information on GoDaddy (e.g. Availability, Price, etc..).",
+        "tool_file_found": true,
+        "tool_name": "Domain Information",
+        "toolbench_relative_path": "Search/domain_information.json"
+      },
+      "toolbench_tool_description": "This API takes a URL and returns its information on GoDaddy (e.g. Availability, Price, etc..).",
+      "toolbench_tool_name": "Domain Information",
+      "url": "https://domain-information.p.rapidapi.com/domain_api"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "disposable_email_detect_domain",
+    "candidate_id": "C11",
+    "mode_rank": 12,
+    "llm_reported_rank": 12,
+    "retrieved_rank": 20,
+    "rag_score": 0.37747326493263245,
+    "reason": "",
+    "service": {
+      "_file": "disposable_email_detect.json",
+      "_tool": "disposable_email_detect",
+      "api_id": "disposable_email_detect_domain",
+      "category": "Email",
+      "description": "Verify by domain",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "example.com",
+            "description": "",
+            "name": "domain",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Domain",
+      "tool_description": "Check if domains are disposable.",
+      "tool_name": "Disposable Email Detect",
+      "toolbench_endpoint_description": "Verify by domain",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Verify by domain",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Domain",
+        "endpoint_url": "https://disposable-email-detect.p.rapidapi.com/domain/{domain}",
+        "file_name": "disposable_email_detect.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if domains are disposable.",
+        "tool_file_found": true,
+        "tool_name": "Disposable Email Detect",
+        "toolbench_relative_path": "Email/disposable_email_detect.json"
+      },
+      "toolbench_tool_description": "Check if domains are disposable.",
+      "toolbench_tool_name": "Disposable Email Detect",
+      "url": "https://disposable-email-detect.p.rapidapi.com/domain/{domain}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "address_validation_nl_api_v1_addresses-2",
+    "candidate_id": "C01",
+    "mode_rank": 13,
+    "llm_reported_rank": 13,
+    "retrieved_rank": 11,
+    "rag_score": 0.4108843207359314,
+    "reason": "",
+    "service": {
+      "_file": "address_validation_nl.json",
+      "_tool": "address_validation_nl",
+      "api_id": "address_validation_nl_api_v1_addresses-2",
+      "category": "Location",
+      "description": "Get Address",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "B",
+            "description": "",
+            "name": "HouseNumberSuffix",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "3021GS",
+            "description": "",
+            "name": "Postcode",
+            "type": "STRING"
+          },
+          {
+            "default": "288",
+            "description": "",
+            "name": "HouseNumber",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/api/v1/addresses",
+      "tool_description": "Address Validation NL API returns a valid Dutch address (street name and city/town) for a given postcode and house number",
+      "tool_name": "Address Validation NL",
+      "toolbench_endpoint_description": "Get Address",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "Get Address",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/api/v1/addresses",
+        "endpoint_url": "https://address-validation-nl1.p.rapidapi.com/api/v1/addresses",
+        "file_name": "address_validation_nl.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Address Validation NL API returns a valid Dutch address (street name and city/town) for a given postcode and house number",
+        "tool_file_found": true,
+        "tool_name": "Address Validation NL",
+        "toolbench_relative_path": "Location/address_validation_nl.json"
+      },
+      "toolbench_tool_description": "Address Validation NL API returns a valid Dutch address (street name and city/town) for a given postcode and house number",
+      "toolbench_tool_name": "Address Validation NL",
+      "url": "https://address-validation-nl1.p.rapidapi.com/api/v1/addresses"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "anything_domain_common_domains",
+    "candidate_id": "C02",
+    "mode_rank": 14,
+    "llm_reported_rank": 14,
+    "retrieved_rank": 2,
+    "rag_score": 0.49888676404953003,
+    "reason": "",
+    "service": {
+      "_file": "anything_domain.json",
+      "_tool": "anything_domain",
+      "api_id": "anything_domain_common_domains",
+      "category": "Tools",
+      "description": "This endpoint generates common domains accepting JSON post request. Same as the GET request. Choose which to use.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Common Domains",
+      "tool_description": "API to detect disposable domains to help companies reject disposable emails which has created LEAD GENERATION nightmare in recent times,detect fake email address, Generate common domain,unique domain names, generate custom email addresses using domain name, check whois of a domain and alot more.",
+      "tool_name": "Anything Domain",
+      "toolbench_endpoint_description": "This endpoint generates common domains accepting JSON post request. Same as the GET request. Choose which to use.",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "This endpoint generates common domains accepting JSON post request. Same as the GET request. Choose which to use.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Common Domains",
+        "endpoint_url": "https://anything-domain.p.rapidapi.com/domain",
+        "file_name": "anything_domain.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to detect disposable domains to help companies reject disposable emails which has created LEAD GENERATION nightmare in recent times,detect fake email address, Generate common domain,unique domain names, generate custom email addresses using domain name, check whois of a domain and alot more.",
+        "tool_file_found": true,
+        "tool_name": "Anything Domain",
+        "toolbench_relative_path": "Tools/anything_domain.json"
+      },
+      "toolbench_tool_description": "API to detect disposable domains to help companies reject disposable emails which has created LEAD GENERATION nightmare in recent times,detect fake email address, Generate common domain,unique domain names, generate custom email addresses using domain name, check whois of a domain and alot more.",
+      "toolbench_tool_name": "Anything Domain",
+      "url": "https://anything-domain.p.rapidapi.com/domain"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "anything_domain_prefix_domains-2",
+    "candidate_id": "C03",
+    "mode_rank": 15,
+    "llm_reported_rank": 15,
+    "retrieved_rank": 4,
+    "rag_score": 0.45247942209243774,
+    "reason": "",
+    "service": {
+      "_file": "anything_domain.json",
+      "_tool": "anything_domain",
+      "api_id": "anything_domain_prefix_domains-2",
+      "category": "Tools",
+      "description": "Endpoint to generate prefix domain names",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "gobe",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Prefix Domains",
+      "tool_description": "API to detect disposable domains to help companies reject disposable emails which has created LEAD GENERATION nightmare in recent times,detect fake email address, Generate common domain,unique domain names, generate custom email addresses using domain name, check whois of a domain and alot more.",
+      "tool_name": "Anything Domain",
+      "toolbench_endpoint_description": "Endpoint to generate prefix domain names",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Endpoint to generate prefix domain names",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Prefix Domains",
+        "endpoint_url": "https://anything-domain.p.rapidapi.com/prefix-domain/{id}",
+        "file_name": "anything_domain.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to detect disposable domains to help companies reject disposable emails which has created LEAD GENERATION nightmare in recent times,detect fake email address, Generate common domain,unique domain names, generate custom email addresses using domain name, check whois of a domain and alot more.",
+        "tool_file_found": true,
+        "tool_name": "Anything Domain",
+        "toolbench_relative_path": "Tools/anything_domain.json"
+      },
+      "toolbench_tool_description": "API to detect disposable domains to help companies reject disposable emails which has created LEAD GENERATION nightmare in recent times,detect fake email address, Generate common domain,unique domain names, generate custom email addresses using domain name, check whois of a domain and alot more.",
+      "toolbench_tool_name": "Anything Domain",
+      "url": "https://anything-domain.p.rapidapi.com/prefix-domain/{id}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "appraiser_validatelicense",
+    "candidate_id": "C04",
+    "mode_rank": 16,
+    "llm_reported_rank": 16,
+    "retrieved_rank": 27,
+    "rag_score": 0.35998186469078064,
+    "reason": "",
+    "service": {
+      "_file": "appraiser.json",
+      "_tool": "appraiser",
+      "api_id": "appraiser_validatelicense",
+      "category": "Business_Software",
+      "description": "Given Lastname, State, Appraiser License Number, API will evaluate and return if the license is valid or not based on the License Status and Expiration Date.\n\nResponse: valid=true when the License Expiration Date is still valid and License Status is active. Else, valid=false.\nThe response will include multiple licenses and the validity of each license of the same appraiser if any.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "ValidateLicense",
+      "tool_description": "Get details of an appraiser license. Validate an appraiser license given lastname, state, and license from 55 US States. Data set is updated periodically. This API assists Appraisal and Real Estate Software .exe applications, Web Apps and Mobile Apps. Built for software that serves Appraisers, Realt",
+      "tool_name": "Appraiser",
+      "toolbench_endpoint_description": "Given Lastname, State, Appraiser License Number, API will evaluate and return if the license is valid or not based on the License Status and Expiration Date.\n\nResponse: valid=true when the License Expiration Date is still valid and License Status is active. Else, valid=false.\nThe response will include multiple licenses and the validity of each license of the same appraiser if any.",
+      "toolbench_enrichment": {
+        "category": "Business_Software",
+        "endpoint_description": "Given Lastname, State, Appraiser License Number, API will evaluate and return if the license is valid or not based on the License Status and Expiration Date.\n\nResponse: valid=true when the License Expiration Date is still valid and License Status is active. Else, valid=false.\nThe response will include multiple licenses and the validity of each license of the same appraiser if any.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "ValidateLicense",
+        "endpoint_url": "https://appraiser.p.rapidapi.com/ValidateLicense",
+        "file_name": "appraiser.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get details of an appraiser license. Validate an appraiser license given lastname, state, and license from 55 US States. Data set is updated periodically. This API assists Appraisal and Real Estate Software .exe applications, Web Apps and Mobile Apps. Built for software that serves Appraisers, Realtors, Lending, Loan, Home Insurance Software Companies. Fast, less code, less load for your application and server. Save much more development time and for your software end-users.",
+        "tool_file_found": true,
+        "tool_name": "Appraiser",
+        "toolbench_relative_path": "Business_Software/appraiser.json"
+      },
+      "toolbench_tool_description": "Get details of an appraiser license. Validate an appraiser license given lastname, state, and license from 55 US States. Data set is updated periodically. This API assists Appraisal and Real Estate Software .exe applications, Web Apps and Mobile Apps. Built for software that serves Appraisers, Realtors, Lending, Loan, Home Insurance Software Companies. Fast, less code, less load for your application and server. Save much more development time and for your software end-users.",
+      "toolbench_tool_name": "Appraiser",
+      "url": "https://appraiser.p.rapidapi.com/ValidateLicense"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "checky_verify_phone_number_verify_batch",
+    "candidate_id": "C08",
+    "mode_rank": 17,
+    "llm_reported_rank": 17,
+    "retrieved_rank": 19,
+    "rag_score": 0.37780413031578064,
+    "reason": "",
+    "service": {
+      "_file": "checky_verify_phone_number.json",
+      "_tool": "checky_verify_phone_number",
+      "api_id": "checky_verify_phone_number_verify_batch",
+      "category": "Communication",
+      "description": "This endpoint accepts a POST request with JSON payload to verify the validity of a phone number and returns its type and national format.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Verify (Batch)",
+      "tool_description": "Determine in realtime if a given phone number is valid and the type of phone line it is connected to. Works for all countries!",
+      "tool_name": "Checky - Verify Phone Number",
+      "toolbench_endpoint_description": "This endpoint accepts a POST request with JSON payload to verify the validity of a phone number and returns its type and national format.",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "This endpoint accepts a POST request with JSON payload to verify the validity of a phone number and returns its type and national format.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Verify (Batch)",
+        "endpoint_url": "https://checky-verify-phone-number.p.rapidapi.com/verify/batch",
+        "file_name": "checky_verify_phone_number.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Determine in realtime if a given phone number is valid and the type of phone line it is connected to. Works for all countries!",
+        "tool_file_found": true,
+        "tool_name": "Checky - Verify Phone Number",
+        "toolbench_relative_path": "Communication/checky_verify_phone_number.json"
+      },
+      "toolbench_tool_description": "Determine in realtime if a given phone number is valid and the type of phone line it is connected to. Works for all countries!",
+      "toolbench_tool_name": "Checky - Verify Phone Number",
+      "url": "https://checky-verify-phone-number.p.rapidapi.com/verify/batch"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "d7_number_validator_validate_number",
+    "candidate_id": "C09",
+    "mode_rank": 18,
+    "llm_reported_rank": 18,
+    "retrieved_rank": 18,
+    "rag_score": 0.3902209997177124,
+    "reason": "",
+    "service": {
+      "_file": "d7_number_validator.json",
+      "_tool": "d7_number_validator",
+      "api_id": "d7_number_validator_validate_number",
+      "category": "SMS",
+      "description": "Using this endpoint get detailed information about the phone number, including the carrier name, country code, number type (landline or mobile), and other relevant details",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Validate Number",
+      "tool_description": "The D7 Number Lookup API allows you to retrieve various details associated with a given phone number, including the carrier name, country code, number type (landline or mobile), and other relevant information.",
+      "tool_name": "D7 Number Validator",
+      "toolbench_endpoint_description": "Using this endpoint get detailed information about the phone number, including the carrier name, country code, number type (landline or mobile), and other relevant details",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Using this endpoint get detailed information about the phone number, including the carrier name, country code, number type (landline or mobile), and other relevant details",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Validate Number",
+        "endpoint_url": "https://d7-number-validator.p.rapidapi.com/hlr/v1/lookup",
+        "file_name": "d7_number_validator.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The D7 Number Lookup API allows you to retrieve various details associated with a given phone number, including the carrier name, country code, number type (landline or mobile), and other relevant information.",
+        "tool_file_found": true,
+        "tool_name": "D7 Number Validator",
+        "toolbench_relative_path": "SMS/d7_number_validator.json"
+      },
+      "toolbench_tool_description": "The D7 Number Lookup API allows you to retrieve various details associated with a given phone number, including the carrier name, country code, number type (landline or mobile), and other relevant information.",
+      "toolbench_tool_name": "D7 Number Validator",
+      "url": "https://d7-number-validator.p.rapidapi.com/hlr/v1/lookup"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "debounce_email_validation_email",
+    "candidate_id": "C10",
+    "mode_rank": 19,
+    "llm_reported_rank": 19,
+    "retrieved_rank": 5,
+    "rag_score": 0.45112520456314087,
+    "reason": "",
+    "service": {
+      "_file": "debounce_email_validation.json",
+      "_tool": "debounce_email_validation",
+      "api_id": "debounce_email_validation_email",
+      "category": "Email",
+      "description": "Required parameters of the API Endpoint",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The email address you want to verify.",
+            "name": "email",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Email",
+      "tool_description": "The DeBounce email validation and verification API returns JSON data and supports HTTP methods to validate email addresses in real time. DeBounce validates DNS, detects disposable addresses, detects misspelled domains, verifies syntaxes, detects temporary availability, detects graylist, and checks S",
+      "tool_name": "DeBounce Email Validation",
+      "toolbench_endpoint_description": "Required parameters of the API Endpoint",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Required parameters of the API Endpoint",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Email",
+        "endpoint_url": "https://debounce-email-validation.p.rapidapi.com/v1/",
+        "file_name": "debounce_email_validation.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The DeBounce email validation and verification API returns JSON data and supports HTTP methods to validate email addresses in real time. DeBounce validates DNS, detects disposable addresses, detects misspelled domains, verifies syntaxes, detects temporary availability, detects graylist, and checks SMTP connection and availability.",
+        "tool_file_found": true,
+        "tool_name": "DeBounce Email Validation",
+        "toolbench_relative_path": "Email/debounce_email_validation.json"
+      },
+      "toolbench_tool_description": "The DeBounce email validation and verification API returns JSON data and supports HTTP methods to validate email addresses in real time. DeBounce validates DNS, detects disposable addresses, detects misspelled domains, verifies syntaxes, detects temporary availability, detects graylist, and checks SMTP connection and availability.",
+      "toolbench_tool_name": "DeBounce Email Validation",
+      "url": "https://debounce-email-validation.p.rapidapi.com/v1/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "email_api_check_free_email_providers-2",
+    "candidate_id": "C15",
+    "mode_rank": 20,
+    "llm_reported_rank": 20,
+    "retrieved_rank": 32,
+    "rag_score": 0.35020288825035095,
+    "reason": "",
+    "service": {
+      "_file": "email_api.json",
+      "_tool": "email_api",
+      "api_id": "email_api_check_free_email_providers-2",
+      "category": "Email",
+      "description": "Determine whether the email address is from a free email service provider or not. For example **gmail.com** is a free provider.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "email",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Check Free Email Providers",
+      "tool_description": "This Email API is helpful to validate email addresses(single or bulk, using txt and csv), detect temporary, get fake emails, check free emails, check MX records and identify free/paid email service providers.",
+      "tool_name": "Email API",
+      "toolbench_endpoint_description": "Determine whether the email address is from a free email service provider or not. For example **gmail.com** is a free provider.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Determine whether the email address is from a free email service provider or not. For example **gmail.com** is a free provider.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Check Free Email Providers",
+        "endpoint_url": "https://email-api8.p.rapidapi.com/check-free-email",
+        "file_name": "email_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This Email API is helpful to validate email addresses(single or bulk, using txt and csv), detect temporary, get fake emails, check free emails, check MX records and identify free/paid email service providers.",
+        "tool_file_found": true,
+        "tool_name": "Email API",
+        "toolbench_relative_path": "Email/email_api.json"
+      },
+      "toolbench_tool_description": "This Email API is helpful to validate email addresses(single or bulk, using txt and csv), detect temporary, get fake emails, check free emails, check MX records and identify free/paid email service providers.",
+      "toolbench_tool_name": "Email API",
+      "url": "https://email-api8.p.rapidapi.com/check-free-email"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "email_existence_validator_homepage_about_the_api",
+    "candidate_id": "C16",
+    "mode_rank": 21,
+    "llm_reported_rank": 21,
+    "retrieved_rank": 35,
+    "rag_score": 0.3459409177303314,
+    "reason": "",
+    "service": {
+      "_file": "email_existence_validator.json",
+      "_tool": "email_existence_validator",
+      "api_id": "email_existence_validator_homepage_about_the_api",
+      "category": "Email",
+      "description": "Display information of API used, developer name, Documentation page, server status page and other relevant informations.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Homepage | About the API",
+      "tool_description": "API which checks if email really exist on server or not. It check for different parameters for giving end results . Check for MX records, SMTP deliverability, Disposable check and many more.",
+      "tool_name": "Email Existence Validator",
+      "toolbench_endpoint_description": "Display information of API used, developer name, Documentation page, server status page and other relevant informations.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Display information of API used, developer name, Documentation page, server status page and other relevant informations.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Homepage | About the API",
+        "endpoint_url": "https://email-existence-validator.p.rapidapi.com/",
+        "file_name": "email_existence_validator.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API which checks if email really exist on server or not.\nIt check for different parameters for giving end results .\nCheck for MX records, SMTP deliverability, Disposable check and many more.",
+        "tool_file_found": true,
+        "tool_name": "Email Existence Validator",
+        "toolbench_relative_path": "Email/email_existence_validator.json"
+      },
+      "toolbench_tool_description": "API which checks if email really exist on server or not.\nIt check for different parameters for giving end results .\nCheck for MX records, SMTP deliverability, Disposable check and many more.",
+      "toolbench_tool_name": "Email Existence Validator",
+      "url": "https://email-existence-validator.p.rapidapi.com/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "email_validation_and_verification_email_validation_api",
+    "candidate_id": "C17",
+    "mode_rank": 22,
+    "llm_reported_rank": 22,
+    "retrieved_rank": 16,
+    "rag_score": 0.4047142267227173,
+    "reason": "",
+    "service": {
+      "_file": "email_validation_and_verification.json",
+      "_tool": "email_validation_and_verification",
+      "api_id": "email_validation_and_verification_email_validation_api",
+      "category": "Business",
+      "description": "Email Validation and Verification API requires only a single email.\nChecking a misspelled email.\nChecking a malformed email.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "You can chose to disable auto correct. To do so, just input  **false** for the auto correct param. By default, auto_correct is turned on.",
+            "name": "auto_correct",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "rapidapi@gmail.com",
+            "description": "The email address to validate.",
+            "name": "email",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Email Validation API",
+      "tool_description": "Improve your delivery rate and clean your email lists with our industry-leading email verification API",
+      "tool_name": "Email Validation and Verification",
+      "toolbench_endpoint_description": "Email Validation and Verification API requires only a single email.\nChecking a misspelled email.\nChecking a malformed email.",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "Email Validation and Verification API requires only a single email.\nChecking a misspelled email.\nChecking a malformed email.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Email Validation API",
+        "endpoint_url": "https://email-validation-and-verification4.p.rapidapi.com/v1",
+        "file_name": "email_validation_and_verification.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Improve your delivery rate and clean your email lists with our industry-leading email verification API",
+        "tool_file_found": true,
+        "tool_name": "Email Validation and Verification",
+        "toolbench_relative_path": "Business/email_validation_and_verification.json"
+      },
+      "toolbench_tool_description": "Improve your delivery rate and clean your email lists with our industry-leading email verification API",
+      "toolbench_tool_name": "Email Validation and Verification",
+      "url": "https://email-validation-and-verification4.p.rapidapi.com/v1"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "email_validator_validate_email",
+    "candidate_id": "C18",
+    "mode_rank": 23,
+    "llm_reported_rank": 23,
+    "retrieved_rank": 7,
+    "rag_score": 0.4399966597557068,
+    "reason": "",
+    "service": {
+      "_file": "email_validator.json",
+      "_tool": "email_validator",
+      "api_id": "email_validator_validate_email",
+      "category": "Cybersecurity",
+      "description": "Returns a boolean value indicating whether the email address is valid or not.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The email address to validate.",
+            "name": "email",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/validate-email",
+      "tool_description": "An api to validate if email is valid",
+      "tool_name": "Email Validator",
+      "toolbench_endpoint_description": "Returns a boolean value indicating whether the email address is valid or not.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Returns a boolean value indicating whether the email address is valid or not.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/validate-email",
+        "endpoint_url": "https://email-validator42.p.rapidapi.com/validate-email",
+        "file_name": "email_validator.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An api to validate if email is valid",
+        "tool_file_found": true,
+        "tool_name": "Email Validator",
+        "toolbench_relative_path": "Cybersecurity/email_validator.json"
+      },
+      "toolbench_tool_description": "An api to validate if email is valid",
+      "toolbench_tool_name": "Email Validator",
+      "url": "https://email-validator42.p.rapidapi.com/validate-email"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "emalidate_validateemailaddresswithtoken",
+    "candidate_id": "C19",
+    "mode_rank": 24,
+    "llm_reported_rank": 24,
+    "retrieved_rank": 23,
+    "rag_score": 0.3710739016532898,
+    "reason": "",
+    "service": {
+      "_file": "emalidate.json",
+      "_tool": "emalidate",
+      "api_id": "emalidate_validateemailaddresswithtoken",
+      "category": "Email",
+      "description": "Email syntax validation using authorization token",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Enter emalidate token in form \"Bearer emalidate_token_value\"",
+            "name": "Authorization",
+            "type": "STRING"
+          },
+          {
+            "default": "probe@emalidate.com",
+            "description": "Email address to be validated",
+            "name": "email",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "validateemailaddresswithtoken",
+      "tool_description": "Instantly verify emails entered at your site. Ensure that your customers didn’t mistype the address or forgot to enter part of the e-mail. Check MX records, disposable or free e-mails, catch-all addresses, etc. In compliance with GDPR emalidate does not store checked addresses at any point.",
+      "tool_name": "Emalidate",
+      "toolbench_endpoint_description": "Email syntax validation using authorization token",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Email syntax validation using authorization token",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "validateemailaddresswithtoken",
+        "endpoint_url": "https://emalidate1.p.rapidapi.com/validate",
+        "file_name": "emalidate.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Instantly verify emails entered at your site. Ensure that your customers didn’t mistype the address or forgot to enter part of the e-mail. Check MX records, disposable or free e-mails, catch-all addresses, etc. In compliance with GDPR emalidate does not store checked addresses at any point.",
+        "tool_file_found": true,
+        "tool_name": "Emalidate",
+        "toolbench_relative_path": "Email/emalidate.json"
+      },
+      "toolbench_tool_description": "Instantly verify emails entered at your site. Ensure that your customers didn’t mistype the address or forgot to enter part of the e-mail. Check MX records, disposable or free e-mails, catch-all addresses, etc. In compliance with GDPR emalidate does not store checked addresses at any point.",
+      "toolbench_tool_name": "Emalidate",
+      "url": "https://emalidate1.p.rapidapi.com/validate"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "geofencing_polygon",
+    "candidate_id": "C20",
+    "mode_rank": 25,
+    "llm_reported_rank": 25,
+    "retrieved_rank": 34,
+    "rag_score": 0.3462175130844116,
+    "reason": "",
+    "service": {
+      "_file": "geofencing.json",
+      "_tool": "geofencing",
+      "api_id": "geofencing_polygon",
+      "category": "Location",
+      "description": "This endpoint returns true or false whether a coordinate is inside a polygon.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Polygon",
+      "tool_description": "Geofencing API provides functionality used to detect whether a coordinate is inside a circle or polygon. Accept batch requests.",
+      "tool_name": "Geofencing",
+      "toolbench_endpoint_description": "This endpoint returns true or false whether a coordinate is inside a polygon.",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "This endpoint returns true or false whether a coordinate is inside a polygon.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Polygon",
+        "endpoint_url": "https://geofencing2.p.rapidapi.com/isInsidePolygon",
+        "file_name": "geofencing.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Geofencing API provides functionality used to detect whether a coordinate is inside a circle or polygon. Accept batch requests.",
+        "tool_file_found": true,
+        "tool_name": "Geofencing",
+        "toolbench_relative_path": "Location/geofencing.json"
+      },
+      "toolbench_tool_description": "Geofencing API provides functionality used to detect whether a coordinate is inside a circle or polygon. Accept batch requests.",
+      "toolbench_tool_name": "Geofencing",
+      "url": "https://geofencing2.p.rapidapi.com/isInsidePolygon"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "import_export_verification_import_export_verification",
+    "candidate_id": "C21",
+    "mode_rank": 26,
+    "llm_reported_rank": 26,
+    "retrieved_rank": 36,
+    "rag_score": 0.3400927186012268,
+    "reason": "",
+    "service": {
+      "_file": "import_export_verification.json",
+      "_tool": "import_export_verification",
+      "api_id": "import_export_verification_import_export_verification",
+      "category": "Business",
+      "description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.\n\nUse get call on the left and pass the request id to fetch api call results.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Import Export Verification",
+      "tool_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. With the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar ",
+      "tool_name": "Import Export Verification",
+      "toolbench_endpoint_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.\n\nUse get call on the left and pass the request id to fetch api call results.",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.\n\nUse get call on the left and pass the request id to fetch api call results.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Import Export Verification",
+        "endpoint_url": "https://import-export-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/roc_iec",
+        "file_name": "import_export_verification.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.",
+        "tool_file_found": true,
+        "tool_name": "Import Export Verification",
+        "toolbench_relative_path": "Business/import_export_verification.json"
+      },
+      "toolbench_tool_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.",
+      "toolbench_tool_name": "Import Export Verification",
+      "url": "https://import-export-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/roc_iec"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "import_export_verification_import_export_verification-2",
+    "candidate_id": "C22",
+    "mode_rank": 27,
+    "llm_reported_rank": 27,
+    "retrieved_rank": 37,
+    "rag_score": 0.3400927186012268,
+    "reason": "",
+    "service": {
+      "_file": "import_export_verification.json",
+      "_tool": "import_export_verification",
+      "api_id": "import_export_verification_import_export_verification-2",
+      "category": "Business",
+      "description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.\n\nUse get call on the left and pass the request id to fetch api call results.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Import Export Verification",
+      "tool_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. With the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar ",
+      "tool_name": "Import Export Verification",
+      "toolbench_endpoint_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.\n\nUse get call on the left and pass the request id to fetch api call results.",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.\n\nUse get call on the left and pass the request id to fetch api call results.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Import Export Verification",
+        "endpoint_url": "https://import-export-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/roc_iec",
+        "file_name": "import_export_verification.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.",
+        "tool_file_found": true,
+        "tool_name": "Import Export Verification",
+        "toolbench_relative_path": "Business/import_export_verification.json"
+      },
+      "toolbench_tool_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants by using their import export certification. \n\nWith the Import Export verification API, you can now confidently onboard merchants knowing that they are a genuine entity, registered under the Registrar of Companies, and are authorized to partake in the import and export of products.",
+      "toolbench_tool_name": "Import Export Verification",
+      "url": "https://import-export-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/roc_iec"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "ip_address_location_lookup_ip",
+    "candidate_id": "C23",
+    "mode_rank": 28,
+    "llm_reported_rank": 28,
+    "retrieved_rank": 40,
+    "rag_score": 0.33362847566604614,
+    "reason": "",
+    "service": {
+      "_file": "ip_address_location_lookup.json",
+      "_tool": "ip_address_location_lookup",
+      "api_id": "ip_address_location_lookup_ip",
+      "category": "Location",
+      "description": "It can accept any valid IP address.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "73.97.147.84",
+            "description": "",
+            "name": "ip",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "ip",
+      "tool_description": "This API can provide ip details such as host, network, isp, location, zip code, time zone, latitude and longitude.",
+      "tool_name": "IP Address Location Lookup",
+      "toolbench_endpoint_description": "It can accept any valid IP address.",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "It can accept any valid IP address.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "ip",
+        "endpoint_url": "https://ip-address-location-lookup.p.rapidapi.com/data",
+        "file_name": "ip_address_location_lookup.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API can provide ip details such as host, network, isp, location, zip code, time zone, latitude and longitude.",
+        "tool_file_found": true,
+        "tool_name": "IP Address Location Lookup",
+        "toolbench_relative_path": "Location/ip_address_location_lookup.json"
+      },
+      "toolbench_tool_description": "This API can provide ip details such as host, network, isp, location, zip code, time zone, latitude and longitude.",
+      "toolbench_tool_name": "IP Address Location Lookup",
+      "url": "https://ip-address-location-lookup.p.rapidapi.com/data"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "mailboxvalidator_com_disposable_email",
+    "candidate_id": "C24",
+    "mode_rank": 29,
+    "llm_reported_rank": 29,
+    "retrieved_rank": 33,
+    "rag_score": 0.3463575541973114,
+    "reason": "",
+    "service": {
+      "_file": "mailboxvalidator_com.json",
+      "_tool": "mailboxvalidator_com",
+      "api_id": "mailboxvalidator_com_disposable_email",
+      "category": "Email",
+      "description": "The Disposable Email API helps users to detect and block disposable emails from sign up.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "format",
+            "type": "ENUM"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "email",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Disposable Email",
+      "tool_description": "Secure and reliable email validation service to check for invalid email addresses.",
+      "tool_name": "MailboxValidator.com",
+      "toolbench_endpoint_description": "The Disposable Email API helps users to detect and block disposable emails from sign up.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "The Disposable Email API helps users to detect and block disposable emails from sign up.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Disposable Email",
+        "endpoint_url": "https://mailboxvalidator-com.p.rapidapi.com/email/disposable",
+        "file_name": "mailboxvalidator_com.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Secure and reliable email validation service to check for invalid email addresses.",
+        "tool_file_found": true,
+        "tool_name": "MailboxValidator.com",
+        "toolbench_relative_path": "Email/mailboxvalidator_com.json"
+      },
+      "toolbench_tool_description": "Secure and reliable email validation service to check for invalid email addresses.",
+      "toolbench_tool_name": "MailboxValidator.com",
+      "url": "https://mailboxvalidator-com.p.rapidapi.com/email/disposable"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "mailboxvalidator_mailboxvalidator_api",
+    "candidate_id": "C25",
+    "mode_rank": 30,
+    "llm_reported_rank": 30,
+    "retrieved_rank": 13,
+    "rag_score": 0.4064294099807739,
+    "reason": "",
+    "service": {
+      "_file": "mailboxvalidator.json",
+      "_tool": "mailboxvalidator",
+      "api_id": "mailboxvalidator_mailboxvalidator_api",
+      "category": "Business",
+      "description": "Email validation API",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Email address to validate.",
+            "name": "EMAIL",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "API license key.",
+            "name": "LICENSE",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "MailBoxValidator API",
+      "tool_description": "The MailBoxValidator Email Validation Web Service allows instant email address verification by using real time mail server connectivity and syntax checker. Sign up for free license key at http://www.fraudlabs.com/freelicense.aspx?PackageID=9 which allows up to 90 queries a month.",
+      "tool_name": "MailBoxValidator",
+      "toolbench_endpoint_description": "Email validation API",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "Email validation API",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "MailBoxValidator API",
+        "endpoint_url": "https://fraudlabs-mailboxvalidator-v1.p.rapidapi.com/mailboxvalidatorwebservice.asmx",
+        "file_name": "mailboxvalidator.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The MailBoxValidator Email Validation Web Service allows instant email address verification by using real time mail server connectivity and syntax checker.\r\n\r\nSign up for free license key at http://www.fraudlabs.com/freelicense.aspx?PackageID=9 which allows up to 90 queries a month.",
+        "tool_file_found": true,
+        "tool_name": "MailBoxValidator",
+        "toolbench_relative_path": "Business/mailboxvalidator.json"
+      },
+      "toolbench_tool_description": "The MailBoxValidator Email Validation Web Service allows instant email address verification by using real time mail server connectivity and syntax checker.\r\n\r\nSign up for free license key at http://www.fraudlabs.com/freelicense.aspx?PackageID=9 which allows up to 90 queries a month.",
+      "toolbench_tool_name": "MailBoxValidator",
+      "url": "https://fraudlabs-mailboxvalidator-v1.p.rapidapi.com/mailboxvalidatorwebservice.asmx"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "phone_verification_login_to_accuratecheckr",
+    "candidate_id": "C27",
+    "mode_rank": 31,
+    "llm_reported_rank": 31,
+    "retrieved_rank": 26,
+    "rag_score": 0.36797311902046204,
+    "reason": "",
+    "service": {
+      "_file": "phone_verification.json",
+      "_tool": "phone_verification",
+      "api_id": "phone_verification_login_to_accuratecheckr",
+      "category": "SMS",
+      "description": "Get access token from accuratecheckr.com for registered user and use this token in all future request.\n\nSuccessful execution of this methos returns bearer \"access_token\", which will be used in every API call in future.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Basic <authorization_key>",
+            "description": "Basic authorization header. Contact admin@accuratecheckr.com to get your key. The space between word Basic and authorization key is important.",
+            "name": "Authorization",
+            "type": "STRING"
+          },
+          {
+            "default": "welcome123",
+            "description": "Password of registered user",
+            "name": "password",
+            "type": "STRING"
+          },
+          {
+            "default": "password",
+            "description": "put the string \"password\"",
+            "name": "grant_type",
+            "type": "STRING"
+          },
+          {
+            "default": "tommorris@gmail.com",
+            "description": "email used when registering the user on accuratecheckr.com in api \"/api/v1/signup\"",
+            "name": "username",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Login to Accuratecheckr",
+      "tool_description": "Validate any phone number across the USA, in bulk or single. Use free and forever.",
+      "tool_name": "Phone verification",
+      "toolbench_endpoint_description": "Get access token from accuratecheckr.com for registered user and use this token in all future request.\n\nSuccessful execution of this methos returns bearer \"access_token\", which will be used in every API call in future.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Get access token from accuratecheckr.com for registered user and use this token in all future request.\n\nSuccessful execution of this methos returns bearer \"access_token\", which will be used in every API call in future.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Login to Accuratecheckr",
+        "endpoint_url": "https://phone-verification3.p.rapidapi.com/",
+        "file_name": "phone_verification.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 4,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Validate any phone number across the USA, in bulk or single. Use free and forever.",
+        "tool_file_found": true,
+        "tool_name": "Phone verification",
+        "toolbench_relative_path": "SMS/phone_verification.json"
+      },
+      "toolbench_tool_description": "Validate any phone number across the USA, in bulk or single. Use free and forever.",
+      "toolbench_tool_name": "Phone verification",
+      "url": "https://phone-verification3.p.rapidapi.com/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "phonenumber_validator_health",
+    "candidate_id": "C28",
+    "mode_rank": 32,
+    "llm_reported_rank": 32,
+    "retrieved_rank": 30,
+    "rag_score": 0.35469499230384827,
+    "reason": "",
+    "service": {
+      "_file": "phonenumber_validator.json",
+      "_tool": "phonenumber_validator",
+      "api_id": "phonenumber_validator_health",
+      "category": "Tools",
+      "description": "Status of the API",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Health",
+      "tool_description": "Une API pour valider, corriger et donner des informations sur les numéros de téléphone en Nouvelle-Calédonie",
+      "tool_name": "phonenumber-validator",
+      "toolbench_endpoint_description": "Status of the API",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Status of the API",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Health",
+        "endpoint_url": "https://phonenumber-validator.p.rapidapi.com/q/health",
+        "file_name": "phonenumber_validator.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Une API pour valider, corriger et donner des informations sur les numéros de téléphone en Nouvelle-Calédonie",
+        "tool_file_found": true,
+        "tool_name": "phonenumber-validator",
+        "toolbench_relative_path": "Tools/phonenumber_validator.json"
+      },
+      "toolbench_tool_description": "Une API pour valider, corriger et donner des informations sur les numéros de téléphone en Nouvelle-Calédonie",
+      "toolbench_tool_name": "phonenumber-validator",
+      "url": "https://phonenumber-validator.p.rapidapi.com/q/health"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "phonenumbervalidate_validate",
+    "candidate_id": "C29",
+    "mode_rank": 33,
+    "llm_reported_rank": 33,
+    "retrieved_rank": 25,
+    "rag_score": 0.3700181543827057,
+    "reason": "",
+    "service": {
+      "_file": "phonenumbervalidate.json",
+      "_tool": "phonenumbervalidate",
+      "api_id": "phonenumbervalidate_validate",
+      "category": "SMS",
+      "description": "Validate any phone number from any country.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "UY",
+            "description": "Format: ISO 3166-1 alpha-2 code\nRemark: in capital letters.\nOptional if the number parameter starts with the + symbol \n\nFormato: ISO 3166-1 alpha-2 code\nObservación: en mayúsculas.\nOpcional si el parametro number comienza con el símbolo +",
+            "name": "country",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "94887799",
+            "description": "1_ Option: local format (without prefix):\nExample: 94887799\n\n2_ Option: format E 164:\nRecommended: starting with symbol + followed by country prefix and number, without blank spaces\nRemark: the + symbol in a url is escaped for the text %2B leaving %2B59894887799\nExample: +59894887799 \n\n----\n\n1_ Opción: formato local (sin prefijo):\nEjemplo: 94887799\n\n2_ Opción: formato E 164:\nRecomendado: comenzando con símbolo + seguido de prefijo país y número, sin espacios en blanco\nObservación: el símbolo + en una url se escapea para el texto %2B quedando %2B59894887799\nEjemplo: +59894887799\n",
+            "name": "number",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Validate",
+      "tool_description": "Validate any phone number in any country",
+      "tool_name": "PhoneNumberValidate",
+      "toolbench_endpoint_description": "Validate any phone number from any country.",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Validate any phone number from any country.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Validate",
+        "endpoint_url": "https://phonenumbervalidate.p.rapidapi.com/ts_PhoneNumberValidate.jsp",
+        "file_name": "phonenumbervalidate.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Validate any phone number in any country",
+        "tool_file_found": true,
+        "tool_name": "PhoneNumberValidate",
+        "toolbench_relative_path": "SMS/phonenumbervalidate.json"
+      },
+      "toolbench_tool_description": "Validate any phone number in any country",
+      "toolbench_tool_name": "PhoneNumberValidate",
+      "url": "https://phonenumbervalidate.p.rapidapi.com/ts_PhoneNumberValidate.jsp"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "phonevalication_api_endpoint_1",
+    "candidate_id": "C30",
+    "mode_rank": 34,
+    "llm_reported_rank": 34,
+    "retrieved_rank": 38,
+    "rag_score": 0.3359719216823578,
+    "reason": "",
+    "service": {
+      "_file": "phonevalication.json",
+      "_tool": "phonevalication",
+      "api_id": "phonevalication_api_endpoint_1",
+      "category": "Business",
+      "description": "Give API results",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "API Endpoint 1",
+      "tool_description": "Verify Phone Number",
+      "tool_name": "PhoneValication",
+      "toolbench_endpoint_description": "Give API results",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "Give API results",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "API Endpoint 1",
+        "endpoint_url": "https://phonevalication.p.rapidapi.com/clientprojects.bwm.in/admin/phone_verify",
+        "file_name": "phonevalication.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Verify Phone Number",
+        "tool_file_found": true,
+        "tool_name": "PhoneValication",
+        "toolbench_relative_path": "Business/phonevalication.json"
+      },
+      "toolbench_tool_description": "Verify Phone Number",
+      "toolbench_tool_name": "PhoneValication",
+      "url": "https://phonevalication.p.rapidapi.com/clientprojects.bwm.in/admin/phone_verify"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "ssl_certificate_issuer",
+    "candidate_id": "C32",
+    "mode_rank": 35,
+    "llm_reported_rank": 35,
+    "retrieved_rank": 31,
+    "rag_score": 0.3528543710708618,
+    "reason": "",
+    "service": {
+      "_file": "ssl_certificate.json",
+      "_tool": "ssl_certificate",
+      "api_id": "ssl_certificate_issuer",
+      "category": "Monitoring",
+      "description": "Retrieve the associated domain issuer of the certificate.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "google.nl",
+            "description": "",
+            "name": "domain",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Issuer",
+      "tool_description": "Retrieve information about a domain's certificate.",
+      "tool_name": "SSL Certificate",
+      "toolbench_endpoint_description": "Retrieve the associated domain issuer of the certificate.",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "Retrieve the associated domain issuer of the certificate.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Issuer",
+        "endpoint_url": "https://ssl-certificate.p.rapidapi.com/issuer/{domain}",
+        "file_name": "ssl_certificate.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Retrieve information about a domain's certificate.",
+        "tool_file_found": true,
+        "tool_name": "SSL Certificate",
+        "toolbench_relative_path": "Monitoring/ssl_certificate.json"
+      },
+      "toolbench_tool_description": "Retrieve information about a domain's certificate.",
+      "toolbench_tool_name": "SSL Certificate",
+      "url": "https://ssl-certificate.p.rapidapi.com/issuer/{domain}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "testing_v3_validateemail",
+    "candidate_id": "C33",
+    "mode_rank": 36,
+    "llm_reported_rank": 36,
+    "retrieved_rank": 28,
+    "rag_score": 0.35748040676116943,
+    "reason": "",
+    "service": {
+      "_file": "testing_v3.json",
+      "_tool": "testing_v3",
+      "api_id": "testing_v3_validateemail",
+      "category": "Food",
+      "description": "When inviting a user this will first validate if the email input is valid and is not yet taken. Email must be unique.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "5f6e05f6fa6ba2260568f7e0",
+            "description": "",
+            "name": "account",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "mctangpuz%40startechup.com",
+            "description": "",
+            "name": "email",
+            "type": "STRING"
+          },
+          {
+            "default": "5e9570b894e3cf5486194fbb",
+            "description": "",
+            "name": "organization",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "ValidateEmail",
+      "tool_description": "test api",
+      "tool_name": "Testing_v3",
+      "toolbench_endpoint_description": "When inviting a user this will first validate if the email input is valid and is not yet taken. Email must be unique.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "When inviting a user this will first validate if the email input is valid and is not yet taken. Email must be unique.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "ValidateEmail",
+        "endpoint_url": "https://testing144.p.rapidapi.com/ms-securities/api/auth/validate-email",
+        "file_name": "testing_v3.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "test api",
+        "tool_file_found": true,
+        "tool_name": "Testing_v3",
+        "toolbench_relative_path": "Food/testing_v3.json"
+      },
+      "toolbench_tool_description": "test api",
+      "toolbench_tool_name": "Testing_v3",
+      "url": "https://testing144.p.rapidapi.com/ms-securities/api/auth/validate-email"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "validate_phone_by_api_ninjas_v1_validatephone",
+    "candidate_id": "C35",
+    "mode_rank": 37,
+    "llm_reported_rank": 37,
+    "retrieved_rank": 15,
+    "rag_score": 0.40539517998695374,
+    "reason": "",
+    "service": {
+      "_file": "validate_phone_by_api_ninjas.json",
+      "_tool": "validate_phone_by_api_ninjas",
+      "api_id": "validate_phone_by_api_ninjas_v1_validatephone",
+      "category": "Communication",
+      "description": "API Ninjas Validate Phone API endpoint. Returns metadata (including whether it is valid) for a given phone number.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "2-letter ISO-3166 country code the phone number belongs to.",
+            "name": "country",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "+12065550100",
+            "description": "phone number to check. If country is not set, the 3-digit country code prefix needs to be included.",
+            "name": "number",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/v1/validatephone",
+      "tool_description": "Check whether a phone number is valid and get its metadata. See more info at https://api-ninjas.com/api/validatephone.",
+      "tool_name": "Validate Phone by API-Ninjas",
+      "toolbench_endpoint_description": "API Ninjas Validate Phone API endpoint. Returns metadata (including whether it is valid) for a given phone number.",
+      "toolbench_enrichment": {
+        "category": "Communication",
+        "endpoint_description": "API Ninjas Validate Phone API endpoint. Returns metadata (including whether it is valid) for a given phone number.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/validatephone",
+        "endpoint_url": "https://validate-phone-by-api-ninjas.p.rapidapi.com/v1/validatephone",
+        "file_name": "validate_phone_by_api_ninjas.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check whether a phone number is valid and get its metadata. See more info at https://api-ninjas.com/api/validatephone.",
+        "tool_file_found": true,
+        "tool_name": "Validate Phone by API-Ninjas",
+        "toolbench_relative_path": "Communication/validate_phone_by_api_ninjas.json"
+      },
+      "toolbench_tool_description": "Check whether a phone number is valid and get its metadata. See more info at https://api-ninjas.com/api/validatephone.",
+      "toolbench_tool_name": "Validate Phone by API-Ninjas",
+      "url": "https://validate-phone-by-api-ninjas.p.rapidapi.com/v1/validatephone"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "validect_email_verification_v1_verify",
+    "candidate_id": "C36",
+    "mode_rank": 38,
+    "llm_reported_rank": 38,
+    "retrieved_rank": 14,
+    "rag_score": 0.40541917085647583,
+    "reason": "",
+    "service": {
+      "_file": "validect_email_verification.json",
+      "_tool": "validect_email_verification",
+      "api_id": "validect_email_verification_v1_verify",
+      "category": "Email",
+      "description": "#### Verify email address\n*We do bill only valid or invalid verification statuses.*\nPass the email as a GET parameter. Response properties description:\n```json\n{\n\"status\": \"valid\", // verification status of the email\n\"reason\": \"accepted_email\", // the reason of the status\n\"email\": \"example@gmail.com\",  // normalized email address\n\"user\": \"example\",  // The part before at-sign\n\"domain\": \"gmail.com\", // The part after at-sign\n\"public\": true, // Is address belongs to a publicly accessible email provider\n\"disposable\": false,  // Is address belongs to a disposable email service\n\"role\": false // Is address role based (e.g. abuse, admin, no-reply etc.)\n}\n```\nPossible verification statuses:\n-  `valid` - email address has been accepted by the mail server (safe to send)\n- `invalid` - email address is invalid, various reasons possible, see below (do not send)\n- `accept_all` - mail server accepts any email address (not recommended to send)\n- `unknown` - unable to verify email address (not recommended to send)\n\nPossible status reasons:\n- `accepted_email` - email address has been accepted by the mail server\n- `rejected_email` - email address has been rejected by the mail server\n- `invalid_syntax` - syntax of the email address is invalid according to RFC\n- `invalid_domain` - domain name of the email address does not exist\n- `no_mx_record` - mx record for the domain does not exist\n- `invalid_mx_record` - mx record of the domain is invalid\n- `dns_error` - error occurred while performing dns resolving of the domain\n- `smtp_error` - error occurred while performing smtp validation",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "example@gmail.com",
+            "description": "Email address to validate",
+            "name": "email",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/v1/verify",
+      "tool_description": "Email address validation API",
+      "tool_name": "Validect - Email Verification",
+      "toolbench_endpoint_description": "#### Verify email address\n*We do bill only valid or invalid verification statuses.*\nPass the email as a GET parameter. Response properties description:\n```json\n{\n\"status\": \"valid\", // verification status of the email\n\"reason\": \"accepted_email\", // the reason of the status\n\"email\": \"example@gmail.com\",  // normalized email address\n\"user\": \"example\",  // The part before at-sign\n\"domain\": \"gmail.com\", // The part after at-sign\n\"public\": true, // Is address belongs to a publicly accessible email provider\n\"disposable\": false,  // Is address belongs to a disposable email service\n\"role\": false // Is address role based (e.g. abuse, admin, no-reply etc.)\n}\n```\nPossible verification statuses:\n-  `valid` - email address has been accepted by the mail server (safe to send)\n- `invalid` - email address is invalid, various reasons possible, see below (do not send)\n- `accept_all` - mail server accepts any email address (not recommended to send)\n- `unknown` - unable to verify email address (not recommended to send)\n\nPossible status reasons:\n- `accepted_email` - email address has been accepted by the mail server\n- `rejected_email` - email address has been rejected by the mail server\n- `invalid_syntax` - syntax of the email address is invalid according to RFC\n- `invalid_domain` - domain name of the email address does not exist\n- `no_mx_record` - mx record for the domain does not exist\n- `invalid_mx_record` - mx record of the domain is invalid\n- `dns_error` - error occurred while performing dns resolving of the domain\n- `smtp_error` - error occurred while performing smtp validation",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "#### Verify email address\n*We do bill only valid or invalid verification statuses.*\nPass the email as a GET parameter. Response properties description:\n```json\n{\n\"status\": \"valid\", // verification status of the email\n\"reason\": \"accepted_email\", // the reason of the status\n\"email\": \"example@gmail.com\",  // normalized email address\n\"user\": \"example\",  // The part before at-sign\n\"domain\": \"gmail.com\", // The part after at-sign\n\"public\": true, // Is address belongs to a publicly accessible email provider\n\"disposable\": false,  // Is address belongs to a disposable email service\n\"role\": false // Is address role based (e.g. abuse, admin, no-reply etc.)\n}\n```\nPossible verification statuses:\n-  `valid` - email address has been accepted by the mail server (safe to send)\n- `invalid` - email address is invalid, various reasons possible, see below (do not send)\n- `accept_all` - mail server accepts any email address (not recommended to send)\n- `unknown` - unable to verify email address (not recommended to send)\n\nPossible status reasons:\n- `accepted_email` - email address has been accepted by the mail server\n- `rejected_email` - email address has been rejected by the mail server\n- `invalid_syntax` - syntax of the email address is invalid according to RFC\n- `invalid_domain` - domain name of the email address does not exist\n- `no_mx_record` - mx record for the domain does not exist\n- `invalid_mx_record` - mx record of the domain is invalid\n- `dns_error` - error occurred while performing dns resolving of the domain\n- `smtp_error` - error occurred while performing smtp validation",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/v1/verify",
+        "endpoint_url": "https://validect-email-verification-v1.p.rapidapi.com/v1/verify",
+        "file_name": "validect_email_verification.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Email address validation API",
+        "tool_file_found": true,
+        "tool_name": "Validect - Email Verification",
+        "toolbench_relative_path": "Email/validect_email_verification.json"
+      },
+      "toolbench_tool_description": "Email address validation API",
+      "toolbench_tool_name": "Validect - Email Verification",
+      "url": "https://validect-email-verification-v1.p.rapidapi.com/v1/verify"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "venue_validatecluster",
+    "candidate_id": "C37",
+    "mode_rank": 39,
+    "llm_reported_rank": 39,
+    "retrieved_rank": 39,
+    "rag_score": 0.33499908447265625,
+    "reason": "",
+    "service": {
+      "_file": "venue.json",
+      "_tool": "venue",
+      "api_id": "venue_validatecluster",
+      "category": "Food",
+      "description": "Validate venue cluster (batch of venues). Returns information if order can be made to those venues simultaneously. Currently only single venue is allowed.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "validateCluster",
+      "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "tool_name": "Venue",
+      "toolbench_endpoint_description": "Validate venue cluster (batch of venues). Returns information if order can be made to those venues simultaneously. Currently only single venue is allowed.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Validate venue cluster (batch of venues). Returns information if order can be made to those venues simultaneously. Currently only single venue is allowed.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "validateCluster",
+        "endpoint_url": "https://venue1.p.rapidapi.com/venue-api/api/venue/validateCluster",
+        "file_name": "venue.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+        "tool_file_found": true,
+        "tool_name": "Venue",
+        "toolbench_relative_path": "Food/venue.json"
+      },
+      "toolbench_tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "toolbench_tool_name": "Venue",
+      "url": "https://venue1.p.rapidapi.com/venue-api/api/venue/validateCluster"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "whatsapp_number_validators_bulk_validation",
+    "candidate_id": "C39",
+    "mode_rank": 40,
+    "llm_reported_rank": 40,
+    "retrieved_rank": 24,
+    "rag_score": 0.37079566717147827,
+    "reason": "",
+    "service": {
+      "_file": "whatsapp_number_validators.json",
+      "_tool": "whatsapp_number_validators",
+      "api_id": "whatsapp_number_validators_bulk_validation",
+      "category": "Tools",
+      "description": "Verify up to 25 numbers in once call. For each number, verify whether this number is registered on WhatsApp and determine if it belongs to WhatsApp Business. To obtain the status of these numbers, please provide all numbers along with the corresponding country code.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Bulk Validation",
+      "tool_description": "Enhance the effectiveness of your WhatsApp Marketing by utilizing our API to validate WhatsApp numbers in bulk validation or single validation call.",
+      "tool_name": "WhatsApp Number Validators",
+      "toolbench_endpoint_description": "Verify up to 25 numbers in once call. For each number, verify whether this number is registered on WhatsApp and determine if it belongs to WhatsApp Business. To obtain the status of these numbers, please provide all numbers along with the corresponding country code.",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Verify up to 25 numbers in once call. For each number, verify whether this number is registered on WhatsApp and determine if it belongs to WhatsApp Business. To obtain the status of these numbers, please provide all numbers along with the corresponding country code.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Bulk Validation",
+        "endpoint_url": "https://whatsapp-number-validators.p.rapidapi.com/v1/bulk_validate/wa_id",
+        "file_name": "whatsapp_number_validators.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Enhance the effectiveness of your WhatsApp Marketing by utilizing our API to validate WhatsApp numbers in bulk validation or single validation call.",
+        "tool_file_found": true,
+        "tool_name": "WhatsApp Number Validators",
+        "toolbench_relative_path": "Tools/whatsapp_number_validators.json"
+      },
+      "toolbench_tool_description": "Enhance the effectiveness of your WhatsApp Marketing by utilizing our API to validate WhatsApp numbers in bulk validation or single validation call.",
+      "toolbench_tool_name": "WhatsApp Number Validators",
+      "url": "https://whatsapp-number-validators.p.rapidapi.com/v1/bulk_validate/wa_id"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  }
+]

@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":0,"reason":"business merchant verification, not domain validation"},
+{"candidate_id":"C22","label":0,"reason":"business merchant verification, not domain validation"},
+{"candidate_id":"C23","label":0,"reason":"provides IP details, not domain validation"},
+{"candidate_id":"C24","label":0,"reason":"email disposable check, unrelated"},
+{"candidate_id":"C25","label":0,"reason":"email validation only"},
+{"candidate_id":"C26","label":1,"reason":"checks DNS of a domain"},
+{"candidate_id":"C27","label":0,"reason":"auth token retrieval, unrelated"},
+{"candidate_id":"C28","label":0,"reason":"phone validator status, unrelated"},
+{"candidate_id":"C29","label":0,"reason":"phone number validation, unrelated"},
+{"candidate_id":"C30","label":0,"reason":"phone verification, unrelated"},
+{"candidate_id":"C31","label":1,"reason":"whois info for .pk domain, can validate existence"},
+{"candidate_id":"C32","label":0,"reason":"retrieves SSL issuer, not domain validation"},
+{"candidate_id":"C33","label":0,"reason":"email validation, unrelated"},
+{"candidate_id":"C34","label":1,"reason":"checks if domain is valid"},
+{"candidate_id":"C35","label":0,"reason":"phone validation, unrelated"},
+{"candidate_id":"C36","label":0,"reason":"email verification, unrelated"},
+{"candidate_id":"C37","label":0,"reason":"venue cluster validation, unrelated"},
+{"candidate_id":"C38","label":1,"reason":"retrieves DNS records for domain"},
+{"candidate_id":"C39","label":0,"reason":"WhatsApp number validation, unrelated"},
+{"candidate_id":"C40","label":1,"reason":"WHOIS lookup for domain, validates existence"}
+]
+}

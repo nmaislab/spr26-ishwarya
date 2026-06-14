@@ -1,0 +1,231 @@
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "Validate each domain, scan URLs for malware or phishing risk, and send SMS alerts for high‑risk URLs.",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "domain_checker_with_ai_domain_validation",
+        "subtask_id": "1",
+        "action": "Validate the provided domain by calling the Domain Validation endpoint; obtain status and IP address.",
+        "input_from_previous_step": "none",
+        "output_to_next_step": "validation_result",
+        "why": "Ensures the domain exists and is reachable before performing threat intelligence checks.",
+        "planner_override_reason": null,
+        "qos": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 2,
+        "api_id": "malicious_urls_check_url",
+        "subtask_id": "2",
+        "action": "Check the URL (derived from the validated domain) for malware or phishing using the Check URL endpoint.",
+        "input_from_previous_step": "validation_result",
+        "output_to_next_step": "risk_assessment",
+        "why": "Identifies high‑risk URLs that require admin notification.",
+        "planner_override_reason": null,
+        "qos": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 3,
+        "api_id": "bulksmssender_send",
+        "subtask_id": "3",
+        "action": "Send an SMS alert to administrators if the risk assessment indicates a high‑risk URL.",
+        "input_from_previous_step": "risk_assessment",
+        "output_to_next_step": "none",
+        "why": "Notifies admins promptly about dangerous URLs.",
+        "planner_override_reason": null,
+        "qos": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      }
+    ],
+    "subtask_coverage": [
+      {
+        "subtask_id": 1,
+        "description": "Validate domains using an external domain validation or DNS lookup API",
+        "steps": [
+          1
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 2,
+        "description": "Scan URLs for malware or phishing risk using a threat intelligence API",
+        "steps": [
+          2
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 3,
+        "description": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+        "steps": [
+          3
+        ],
+        "coverage": "full"
+      }
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "domain_checker_with_ai_domain_validation",
+        "subtask_id": "1",
+        "method": "GET",
+        "url": "https://domain-checker-with-ai.p.rapidapi.com/domain/validate",
+        "required_parameters": [
+          {
+            "name": "domain",
+            "source": "user_goal",
+            "value_hint": "example.com"
+          }
+        ],
+        "optional_parameters": [],
+        "depends_on": [],
+        "input_mapping": "none",
+        "output_mapping": "validation_result",
+        "expected_output": "JSON with a 'status' field set to 'valid' and an 'ip-address' field when the domain is valid.",
+        "planner_override_reason": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 2,
+        "api_id": "malicious_urls_check_url",
+        "subtask_id": "2",
+        "method": "GET",
+        "url": "https://malicious-urls.p.rapidapi.com/check",
+        "required_parameters": [
+          {
+            "name": "url",
+            "source": "previous_step_output",
+            "value_hint": "https://example.com"
+          }
+        ],
+        "optional_parameters": [],
+        "depends_on": [
+          1
+        ],
+        "input_mapping": "validation_result",
+        "output_mapping": "risk_assessment",
+        "expected_output": "JSON indicating whether the URL is malicious, e.g., {\"malicious\": true} or {\"malicious\": false}.",
+        "planner_override_reason": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 3,
+        "api_id": "bulksmssender_send",
+        "subtask_id": "3",
+        "method": "POST",
+        "url": "https://bulksmssender.p.rapidapi.com/",
+        "required_parameters": [],
+        "optional_parameters": [],
+        "depends_on": [
+          2
+        ],
+        "input_mapping": "risk_assessment",
+        "output_mapping": "none",
+        "expected_output": "Confirmation response from the SMS service indicating successful dispatch (e.g., message ID).",
+        "planner_override_reason": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      }
+    ]
+  },
+  "selected_api_ids": [
+    "domain_checker_with_ai_domain_validation",
+    "malicious_urls_check_url",
+    "bulksmssender_send"
+  ],
+  "overall_rationale": "The workflow follows the exact subtask order required. Step 1 uses the Domain Validation API to ensure each domain is registered and reachable, providing a status and IP address that feed into Step 2. Step 2 leverages the Malicious URL check API, taking the validated domain (as a URL) to assess malware or phishing risk. The result of this risk assessment is then passed to Step 3, which uses the Bulk SMS Sender API to alert administrators only when a high‑risk URL is detected. All selected APIs are used as mandated, parameters are mapped between steps, and no additional or substituted services are introduced.",
+  "planner_provenance": [
+    {
+      "mode": "no_qos",
+      "subtask_id": "1",
+      "api_id": "domain_checker_with_ai_domain_validation",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    },
+    {
+      "mode": "no_qos",
+      "subtask_id": "2",
+      "api_id": "malicious_urls_check_url",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    },
+    {
+      "mode": "no_qos",
+      "subtask_id": "3",
+      "api_id": "bulksmssender_send",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  ],
+  "planner_override_attempted": false,
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "planner_candidates_per_subtask": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+  },
+  "planner_selected_api_ids": [
+    "domain_checker_with_ai_domain_validation",
+    "malicious_urls_check_url",
+    "bulksmssender_send"
+  ],
+  "planner_selection_diagnostics": [
+    {
+      "subtask_id": "1",
+      "api_id": "domain_checker_with_ai_domain_validation",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "domain_checker_with_ai_domain_validation"
+      ]
+    },
+    {
+      "subtask_id": "2",
+      "api_id": "malicious_urls_check_url",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "malicious_urls_check_url"
+      ]
+    },
+    {
+      "subtask_id": "3",
+      "api_id": "bulksmssender_send",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "bulksmssender_send"
+      ]
+    }
+  ]
+}

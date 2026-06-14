@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":0,"reason":"updates alias, not sending email"},
+{"candidate_id":"C22","label":0,"reason":"keyword suggestions unrelated"},
+{"candidate_id":"C23","label":0,"reason":"keyword suggestions unrelated"},
+{"candidate_id":"C24","label":0,"reason":"lists drafts, does not send email"},
+{"candidate_id":"C25","label":0,"reason":"lists campaign overviews, not send"},
+{"candidate_id":"C26","label":0,"reason":"movie data unrelated"},
+{"candidate_id":"C27","label":0,"reason":"creates mailing address, not email"},
+{"candidate_id":"C28","label":0,"reason":"restaurant management, no email send"},
+{"candidate_id":"C29","label":0,"reason":"retrieves reviews, not email"},
+{"candidate_id":"C30","label":1,"reason":"sends email directly"},
+{"candidate_id":"C31","label":0,"reason":"meal plan generation unrelated"},
+{"candidate_id":"C32","label":0,"reason":"meal plan generation unrelated"},
+{"candidate_id":"C33","label":0,"reason":"recipe autocomplete unrelated"},
+{"candidate_id":"C34","label":0,"reason":"email validation only"},
+{"candidate_id":"C35","label":0,"reason":"location list unrelated"},
+{"candidate_id":"C36","label":0,"reason":"restaurant filters unrelated"},
+{"candidate_id":"C37","label":0,"reason":"vegetarian restaurant list unrelated"},
+{"candidate_id":"C38","label":0,"reason":"deactivates venue, not email"},
+{"candidate_id":"C39","label":0,"reason":"validates venue cluster, not email"},
+{"candidate_id":"C40","label":0,"reason":"auto-complete suggestions unrelated"}
+]
+}

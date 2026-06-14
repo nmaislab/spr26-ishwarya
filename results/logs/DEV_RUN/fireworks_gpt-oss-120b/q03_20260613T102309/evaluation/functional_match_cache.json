@@ -1,0 +1,602 @@
+{
+  "q03_1_address_validation_nl_api_v1_addresses-2": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "provides postal address validation, not domain"
+  },
+  "q03_1_anything_domain_common_domains": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "generates domains, does not validate"
+  },
+  "q03_1_anything_domain_prefix_domains-2": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "generates prefix domains, not validation"
+  },
+  "q03_1_appraiser_validatelicense": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "validates appraiser licenses, unrelated"
+  },
+  "q03_1_bulk_domain_check_domain_check": {
+    "candidate_id": "C05",
+    "functional_match": 1,
+    "comment": "checks domain availability, validates existence"
+  },
+  "q03_1_certificate_transparency_scan_certificate_transparency_scan": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "scans certificates, not domain validation"
+  },
+  "q03_1_check_disposable_email_whois": {
+    "candidate_id": "C07",
+    "functional_match": 1,
+    "comment": "performs WHOIS lookup, can verify domain"
+  },
+  "q03_1_checky_verify_phone_number_verify_batch": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "verifies phone numbers, unrelated"
+  },
+  "q03_1_d7_number_validator_validate_number": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "retrieves phone number details, unrelated"
+  },
+  "q03_1_debounce_email_validation_email": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "validates emails, not domains"
+  },
+  "q03_1_disposable_email_detect_domain": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "detects disposable domains, not validation"
+  },
+  "q03_1_dns_lookup_api_soa_domain": {
+    "candidate_id": "C12",
+    "functional_match": 1,
+    "comment": "performs DNS lookup, validates domain"
+  },
+  "q03_1_domain_checker_with_ai_domain_validation": {
+    "candidate_id": "C13",
+    "functional_match": 1,
+    "comment": "validates domain registration and IP"
+  },
+  "q03_1_domain_information_domain_information": {
+    "candidate_id": "C14",
+    "functional_match": 1,
+    "comment": "returns domain info including availability"
+  },
+  "q03_1_email_api_check_free_email_providers-2": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "checks email provider type, unrelated"
+  },
+  "q03_1_email_existence_validator_homepage_about_the_api": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "displays API info, unrelated"
+  },
+  "q03_1_email_validation_and_verification_email_validation_api": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "email validation only"
+  },
+  "q03_1_email_validator_validate_email": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "email validity check"
+  },
+  "q03_1_emalidate_validateemailaddresswithtoken": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "email syntax validation"
+  },
+  "q03_1_geofencing_polygon": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "geofencing coordinates, unrelated"
+  },
+  "q03_1_import_export_verification_import_export_verification": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "business merchant verification, not domain validation"
+  },
+  "q03_1_import_export_verification_import_export_verification-2": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "business merchant verification, not domain validation"
+  },
+  "q03_1_ip_address_location_lookup_ip": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "provides IP details, not domain validation"
+  },
+  "q03_1_mailboxvalidator_com_disposable_email": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "email disposable check, unrelated"
+  },
+  "q03_1_mailboxvalidator_mailboxvalidator_api": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "email validation only"
+  },
+  "q03_1_minecraft_checkdomaindns": {
+    "candidate_id": "C26",
+    "functional_match": 1,
+    "comment": "checks DNS of a domain"
+  },
+  "q03_1_phone_verification_login_to_accuratecheckr": {
+    "candidate_id": "C27",
+    "functional_match": 0,
+    "comment": "auth token retrieval, unrelated"
+  },
+  "q03_1_phonenumber_validator_health": {
+    "candidate_id": "C28",
+    "functional_match": 0,
+    "comment": "phone validator status, unrelated"
+  },
+  "q03_1_phonenumbervalidate_validate": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "phone number validation, unrelated"
+  },
+  "q03_1_phonevalication_api_endpoint_1": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "phone verification, unrelated"
+  },
+  "q03_1_pk_domain_information_lookup_pk_domain": {
+    "candidate_id": "C31",
+    "functional_match": 1,
+    "comment": "whois info for .pk domain, can validate existence"
+  },
+  "q03_1_ssl_certificate_issuer": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "retrieves SSL issuer, not domain validation"
+  },
+  "q03_1_testing_v3_validateemail": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "email validation, unrelated"
+  },
+  "q03_1_useful_business_1001_functions_verifyadomain": {
+    "candidate_id": "C34",
+    "functional_match": 1,
+    "comment": "checks if domain is valid"
+  },
+  "q03_1_validate_phone_by_api_ninjas_v1_validatephone": {
+    "candidate_id": "C35",
+    "functional_match": 0,
+    "comment": "phone validation, unrelated"
+  },
+  "q03_1_validect_email_verification_v1_verify": {
+    "candidate_id": "C36",
+    "functional_match": 0,
+    "comment": "email verification, unrelated"
+  },
+  "q03_1_venue_validatecluster": {
+    "candidate_id": "C37",
+    "functional_match": 0,
+    "comment": "venue cluster validation, unrelated"
+  },
+  "q03_1_vibrant_dns_get_dns_records": {
+    "candidate_id": "C38",
+    "functional_match": 1,
+    "comment": "retrieves DNS records for domain"
+  },
+  "q03_1_whatsapp_number_validators_bulk_validation": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "WhatsApp number validation, unrelated"
+  },
+  "q03_1_whois_lookup_service_whois_domain_lookup": {
+    "candidate_id": "C40",
+    "functional_match": 1,
+    "comment": "WHOIS lookup for domain, validates existence"
+  },
+  "q03_2_ai_url_shortner_welcome": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "irrelevant welcome endpoint"
+  },
+  "q03_2_amazon_web_services_aws_guardduty_detector_detector_detectorid": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "updates GuardDuty detector config"
+  },
+  "q03_2_corbado_emaillinksend": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "creates email magic link"
+  },
+  "q03_2_corbado_webauthnassociatestart": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "starts passkey association"
+  },
+  "q03_2_domain_information_domain_information": {
+    "candidate_id": "C05",
+    "functional_match": 0,
+    "comment": "provides domain registration info"
+  },
+  "q03_2_exerra_phishing_check_get_stats": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "stats endpoint, not URL scan"
+  },
+  "q03_2_greip_asnlookup": {
+    "candidate_id": "C07",
+    "functional_match": 0,
+    "comment": "ASN lookup, not URL"
+  },
+  "q03_2_greip_validateemail": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "email validation only"
+  },
+  "q03_2_ics_cert_advisories_get_all_advisories": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "retrieves security advisories"
+  },
+  "q03_2_ip_threat_lookup_iplookup": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "IP threat lookup, not URL"
+  },
+  "q03_2_javascript_vulnerability_scan_analyzeurl": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "scans JS vulnerabilities, not threat intel"
+  },
+  "q03_2_loginllama_check_login": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "checks suspicious logins"
+  },
+  "q03_2_malicious_urls_check_url": {
+    "candidate_id": "C13",
+    "functional_match": 1,
+    "comment": "checks URL maliciousness directly"
+  },
+  "q03_2_netdetective_query": {
+    "candidate_id": "C14",
+    "functional_match": 0,
+    "comment": "IP info query"
+  },
+  "q03_2_netdetective_query-2": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "duplicate IP query"
+  },
+  "q03_2_pawscan_scan": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "domain vulnerability scan, not malware/phishing"
+  },
+  "q03_2_penteston_api_v1_add_target": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "adds target, no scanning"
+  },
+  "q03_2_penteston_api_v1_add_test": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "adds test, no scanning"
+  },
+  "q03_2_penteston_api_v1_start_scan": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "starts generic scan, not URL threat"
+  },
+  "q03_2_phishyscan_api_scan": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "scans email for phishing, not URL"
+  },
+  "q03_2_porn_filter_filter": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "checks adult content, not malware"
+  },
+  "q03_2_quantum_ready_check_checkquantum": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "checks quantum-safe key exchange, unrelated"
+  },
+  "q03_2_roco_api_get_rogues_by_name": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "gaming API, irrelevant"
+  },
+  "q03_2_seo_automations_extract_sitemap_xml_as_json": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "parses sitemap, not threat scan"
+  },
+  "q03_2_spamspy_comprehend": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "spam detection for content, not URL risk"
+  },
+  "q03_2_sus_guru_malicious_website_ai_detector_api_api_queue": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "only returns queue status, no scan"
+  },
+  "q03_2_sus_guru_malicious_website_ai_detector_api_api_report_report_id": {
+    "candidate_id": "C27",
+    "functional_match": 1,
+    "comment": "provides scan report, essential for risk result"
+  },
+  "q03_2_sus_guru_malicious_website_ai_detector_api_api_scan": {
+    "candidate_id": "C28",
+    "functional_match": 1,
+    "comment": "initiates URL malware/phishing scan"
+  },
+  "q03_2_sus_guru_malicious_website_ai_detector_api_api_scan-2": {
+    "candidate_id": "C29",
+    "functional_match": 1,
+    "comment": "initiates URL scan (duplicate)"
+  },
+  "q03_2_the_content_monitoring_api_create_detector": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "creates content change detector, not threat scan"
+  },
+  "q03_2_tweetfeed_v1": {
+    "candidate_id": "C31",
+    "functional_match": 1,
+    "comment": "threat feed lookup for malicious URLs"
+  },
+  "q03_2_url_shortener_track": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "tracks shortened URL info, unrelated"
+  },
+  "q03_2_urlchecker_decodelink": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "decodes shortened links, not scanning"
+  },
+  "q03_2_vortex_postregister": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "register endpoint, no scanning function"
+  },
+  "q03_2_weblasso_get_callback_url_status": {
+    "candidate_id": "C35",
+    "functional_match": 0,
+    "comment": "checks callback URL, not scanning"
+  },
+  "q03_2_weblasso_get_scan_id": {
+    "candidate_id": "C36",
+    "functional_match": 1,
+    "comment": "starts scan and returns scan ID"
+  },
+  "q03_2_weblasso_get_scan_results": {
+    "candidate_id": "C37",
+    "functional_match": 1,
+    "comment": "retrieves scan results, essential data"
+  },
+  "q03_2_weblasso_get_scan_status": {
+    "candidate_id": "C38",
+    "functional_match": 1,
+    "comment": "checks scan status, supports scanning"
+  },
+  "q03_2_webup_check_keyword": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "keyword detection, not malware"
+  },
+  "q03_2_xss_shield_get_detect": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "detects XSS in input, not URL threat"
+  },
+  "q03_3_ai_messaging_receive_text": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "receives messages only"
+  },
+  "q03_3_bulksmssender_send": {
+    "candidate_id": "C02",
+    "functional_match": 1,
+    "comment": "sends bulk SMS messages"
+  },
+  "q03_3_easysendsms_check_balance": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "only checks account balance"
+  },
+  "q03_3_easysendsms_sms_api": {
+    "candidate_id": "C04",
+    "functional_match": 1,
+    "comment": "provides SMS sending endpoint"
+  },
+  "q03_3_hooksms_send": {
+    "candidate_id": "C05",
+    "functional_match": 1,
+    "comment": "endpoint for sending SMS"
+  },
+  "q03_3_rapid_sms_api_send_sms": {
+    "candidate_id": "C06",
+    "functional_match": 1,
+    "comment": "sends a text message"
+  },
+  "q03_3_reach_interactive_message_send": {
+    "candidate_id": "C07",
+    "functional_match": 1,
+    "comment": "creates and sends messages"
+  },
+  "q03_3_redtie_create-2": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "unclear send function, no description"
+  },
+  "q03_3_redtie_info": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "retrieves info, not send"
+  },
+  "q03_3_rivet_sms_get_sender_id": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "gets sender IDs only"
+  },
+  "q03_3_sms_receive_getupdates": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "receives updates of incoming messages"
+  },
+  "q03_3_sms_receive_settag": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "sets tag, not send"
+  },
+  "q03_3_sms_receive_settag-2": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "sets tag, not send"
+  },
+  "q03_3_sms_voice_messages_voicemessage": {
+    "candidate_id": "C14",
+    "functional_match": 0,
+    "comment": "sends voice, not SMS"
+  },
+  "q03_3_smsapi_com_blacklist_phone_numbers-2": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "manages blacklist, not send"
+  },
+  "q03_3_smsapi_com_profile_regional_settings_available_languages": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "lists languages, not send"
+  },
+  "q03_3_smsapi_com_short_url_links-2": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "creates short URLs, not send"
+  },
+  "q03_3_smsapi_com_short_url_links_id": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "retrieves short URL, not send"
+  },
+  "q03_3_smsapi_com_sms_sendernames-2": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "creates sender names, not send"
+  },
+  "q03_3_smsapi_com_subusers": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "lists subusers, not send"
+  },
+  "q03_3_smsapi_com_subusers_id_shares_sendernames": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "retrieves sender names, not sending SMS"
+  },
+  "q03_3_smsguru_test_service_response_time": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "only tests service latency"
+  },
+  "q03_3_smsjet_send_2fa_token": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "sends only 2FA tokens, not generic alerts"
+  },
+  "q03_3_smsportal_subscribe_to_replies": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "registers webhook, does not send SMS"
+  },
+  "q03_3_smsto_estimate_campaign_message": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "estimates cost, does not send"
+  },
+  "q03_3_smsto_get_messages": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "fetches messages, not sending"
+  },
+  "q03_3_smsto_schedule_sending_messages": {
+    "candidate_id": "C27",
+    "functional_match": 1,
+    "comment": "schedules SMS messages for later delivery"
+  },
+  "q03_3_smsto_send_campaign_message": {
+    "candidate_id": "C28",
+    "functional_match": 1,
+    "comment": "sends SMS campaign to recipients"
+  },
+  "q03_3_smsto_send_campaign_message-2": {
+    "candidate_id": "C29",
+    "functional_match": 1,
+    "comment": "sends SMS campaign to recipients"
+  },
+  "q03_3_smsto_send_message_to_a_list_or_multiple_list_in_array": {
+    "candidate_id": "C30",
+    "functional_match": 1,
+    "comment": "sends SMS to list/array"
+  },
+  "q03_3_smsto_send_personalized_messages": {
+    "candidate_id": "C31",
+    "functional_match": 1,
+    "comment": "sends personalized SMS messages"
+  },
+  "q03_3_smsto_send_single_message": {
+    "candidate_id": "C32",
+    "functional_match": 1,
+    "comment": "sends single SMS message"
+  },
+  "q03_3_smsto_send_viber_message-2": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "sends Viber, not SMS"
+  },
+  "q03_3_smsway_app_addressbook_createcontact": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "creates contact, no sending"
+  },
+  "q03_3_smsway_app_addressbook_createcontact-2": {
+    "candidate_id": "C35",
+    "functional_match": 0,
+    "comment": "creates contact, no sending"
+  },
+  "q03_3_smsway_app_addressbook_creategroup-2": {
+    "candidate_id": "C36",
+    "functional_match": 0,
+    "comment": "creates group, no sending"
+  },
+  "q03_3_smsway_app_devices_getdevice": {
+    "candidate_id": "C37",
+    "functional_match": 0,
+    "comment": "gets device info, not sending"
+  },
+  "q03_3_smsway_app_messages_getreceived": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "retrieves received messages, not sending"
+  },
+  "q03_3_smsway_app_messages_getsent": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "retrieves sent messages, not sending"
+  },
+  "q03_3_tiktok_best_experience_hashtag_s_challenge_feed_by_name": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "TikTok data, unrelated to SMS"
+  }
+}

@@ -1,0 +1,2983 @@
+[
+  {
+    "api_id": "locationiq_limitbyviewbox",
+    "candidate_id": "C20",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 5,
+    "rag_score": 0.5287230014801025,
+    "reason": "",
+    "service": {
+      "_file": "locationiq.json",
+      "_tool": "locationiq",
+      "api_id": "locationiq_limitbyviewbox",
+      "category": "Mapping",
+      "description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "1",
+            "description": "Restrict result to items contained within the bounds specified in the viewbox parameter [0] [1]",
+            "name": "bounded",
+            "type": "NUMBER"
+          },
+          {
+            "default": "{{Your_API_Key}}",
+            "description": "Your API key",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "-132.84908,47.69382,-70.44674,30.82531",
+            "description": "The preferred area to find search results. Any two corner points of the box - max_lon,max_lat,min_lon,min_lat or min_lon,min_lat,max_lon,max_lat - are accepted in any order as long as they span a real box. Currently, this option in the Autocomplete API only increases weigtage of results inside the viewbox. It does not restrict results to this box.",
+            "name": "viewbox",
+            "type": "STRING"
+          },
+          {
+            "default": "Empire State",
+            "description": "Query string to search for",
+            "name": "q",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "limitByViewbox",
+      "tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+      "tool_name": "LocationIQ",
+      "toolbench_endpoint_description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+      "toolbench_enrichment": {
+        "category": "Mapping",
+        "endpoint_description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "limitByViewbox",
+        "endpoint_url": "https://locationiq2.p.rapidapi.com/v1/autocomplete",
+        "file_name": "locationiq.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+        "tool_file_found": true,
+        "tool_name": "LocationIQ",
+        "toolbench_relative_path": "Mapping/locationiq.json"
+      },
+      "toolbench_tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+      "toolbench_tool_name": "LocationIQ",
+      "url": "https://locationiq2.p.rapidapi.com/v1/autocomplete",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.151,
+        "tp_kbps": 13.245,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.668,
+    "qos_llm_rank": 11
+  },
+  {
+    "api_id": "foursquare_getsuggestedcompletion",
+    "candidate_id": "C15",
+    "mode_rank": 2,
+    "llm_reported_rank": 2,
+    "retrieved_rank": 9,
+    "rag_score": 0.5016539096832275,
+    "reason": "",
+    "service": {
+      "_file": "foursquare.json",
+      "_tool": "foursquare",
+      "api_id": "foursquare_getsuggestedcompletion",
+      "category": "Social",
+      "description": "Returns a list of mini-venues partially matching the search term, near the location.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Required unless location is provided:  A string naming a place in the world. If the near string is not geocodable, returns a failed_geocode error. Otherwise, searches within the bounds of the geocode. Adds a geocode object to the response. (Required for query searches)",
+            "name": "near",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Number of results to return, up to 100.",
+            "name": "limit",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Example: `44.3,37.2`. With northEast, limits results to the bounding quadrangle defined by the latitude and longitude given by sw as its south-west corner, and ne as its north-east corner. The bounding quadrangle is only supported for intent=browse searches. Not valid with ll or radius. Bounding quadrangles with an area up to approximately 10,000 square kilometers are supported.",
+            "name": "southWest",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Required unless near is provided: Latitude and longitude of the user's location. Format: `lat,lng`. Example: `40.7,-74`",
+            "name": "location",
+            "type": "MAP"
+          },
+          {
+            "default": "",
+            "description": "Accuracy of latitude and longitude, in meters. (Does not currently affect search results.)",
+            "name": "locationAccuracy",
+            "type": "FLOAT"
+          },
+          {
+            "default": "",
+            "description": "See `southWest`.",
+            "name": "northEast",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Limit results to venues within this many meters of the specified location. Defaults to a city-wide area. The maximum supported radius is currently 80,000 meters.",
+            "name": "radius",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "A search term to be applied against titles. Must be at least 3 characters long.",
+            "name": "query",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Application client id.",
+            "name": "clientId",
+            "type": "CREDENTIALS"
+          },
+          {
+            "default": "",
+            "description": "Application client secret key.",
+            "name": "clientSecret",
+            "type": "CREDENTIALS"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "getSuggestedCompletion",
+      "tool_description": "Get Foursquare data and enable user/merchant interactions.",
+      "tool_name": "Foursquare",
+      "toolbench_endpoint_description": "Returns a list of mini-venues partially matching the search term, near the location.",
+      "toolbench_enrichment": {
+        "category": "Social",
+        "endpoint_description": "Returns a list of mini-venues partially matching the search term, near the location.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "getSuggestedCompletion",
+        "endpoint_url": "https://Foursquareserg-osipchukV1.p.rapidapi.com/getSuggestedCompletion",
+        "file_name": "foursquare.json",
+        "optional_parameter_count": 7,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Get Foursquare data and enable user/merchant interactions.",
+        "tool_file_found": true,
+        "tool_name": "Foursquare",
+        "toolbench_relative_path": "Social/foursquare.json"
+      },
+      "toolbench_tool_description": "Get Foursquare data and enable user/merchant interactions.",
+      "toolbench_tool_name": "Foursquare",
+      "url": "https://Foursquareserg-osipchukV1.p.rapidapi.com/getSuggestedCompletion",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.26,
+        "tp_kbps": 7.692,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.651,
+    "qos_llm_rank": 13
+  },
+  {
+    "api_id": "worldwide_restaurants_search",
+    "candidate_id": "C40",
+    "mode_rank": 3,
+    "llm_reported_rank": 3,
+    "retrieved_rank": 13,
+    "rag_score": 0.4969088137149811,
+    "reason": "",
+    "service": {
+      "_file": "worldwide_restaurants.json",
+      "_tool": "worldwide_restaurants",
+      "api_id": "worldwide_restaurants_search",
+      "category": "Search",
+      "description": "Search Restaurants",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "Pagination",
+            "name": "offset",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "297704",
+            "description": "Location ID based on typeahead results",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "Standard ISO 4217 - https://en.wikipedia.org/wiki/ISO_4217",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "en_US",
+            "description": "Use the format ll_CC, where ll is a two-letter language code, and CC is a two-letter country code. For instance, en_US represents U.S. English",
+            "name": "language",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Search",
+      "tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+      "tool_name": "Worldwide Restaurants",
+      "toolbench_endpoint_description": "Search Restaurants",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Search Restaurants",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Search",
+        "endpoint_url": "https://worldwide-restaurants.p.rapidapi.com/search",
+        "file_name": "worldwide_restaurants.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+        "tool_file_found": true,
+        "tool_name": "Worldwide Restaurants",
+        "toolbench_relative_path": "Search/worldwide_restaurants.json"
+      },
+      "toolbench_tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+      "toolbench_tool_name": "Worldwide Restaurants",
+      "url": "https://worldwide-restaurants.p.rapidapi.com/search",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.5245,
+        "tp_kbps": 5.7195,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.614,
+    "qos_llm_rank": 28
+  },
+  {
+    "api_id": "veggie_me_restaurants",
+    "candidate_id": "C35",
+    "mode_rank": 4,
+    "llm_reported_rank": 4,
+    "retrieved_rank": 26,
+    "rag_score": 0.47530677914619446,
+    "reason": "",
+    "service": {
+      "_file": "veggie_me.json",
+      "_tool": "veggie_me",
+      "api_id": "veggie_me_restaurants",
+      "category": "Food",
+      "description": "Aggregates all vegetarian restaurants from Yelp from London,  Amsterdam, Berlin, Stockholm, Barcelona and Paris",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "restaurants",
+      "tool_description": "An API for aggregating vegetarian restaurants from Yelp from London, Amsterdam, Berlin, Stockholm, Barcelona and Paris.",
+      "tool_name": "Veggie Me",
+      "toolbench_endpoint_description": "Aggregates all vegetarian restaurants from Yelp from London,  Amsterdam, Berlin, Stockholm, Barcelona and Paris",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Aggregates all vegetarian restaurants from Yelp from London,  Amsterdam, Berlin, Stockholm, Barcelona and Paris",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "restaurants",
+        "endpoint_url": "https://veggie-me.p.rapidapi.com/restaurants",
+        "file_name": "veggie_me.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API for aggregating vegetarian restaurants from Yelp from London, Amsterdam, Berlin, Stockholm, Barcelona and Paris.",
+        "tool_file_found": true,
+        "tool_name": "Veggie Me",
+        "toolbench_relative_path": "Food/veggie_me.json"
+      },
+      "toolbench_tool_description": "An API for aggregating vegetarian restaurants from Yelp from London, Amsterdam, Berlin, Stockholm, Barcelona and Paris.",
+      "toolbench_tool_name": "Veggie Me",
+      "url": "https://veggie-me.p.rapidapi.com/restaurants",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1985,
+        "tp_kbps": 622.1315,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.951,
+    "qos_llm_rank": 2
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+    "candidate_id": "C14",
+    "mode_rank": 5,
+    "llm_reported_rank": 5,
+    "retrieved_rank": 2,
+    "rag_score": 0.5609453916549683,
+    "reason": "",
+    "service": {
+      "_file": "fast_food_restaurants_usa_top_50_chains.json",
+      "_tool": "fast_food_restaurants_usa_top_50_chains",
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+      "category": "Food",
+      "description": "**10 results per request. Use page number for Pagination.**",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "AZ",
+            "description": "",
+            "name": "state",
+            "type": "string"
+          },
+          {
+            "default": "Subway",
+            "description": "",
+            "name": "restaurantChainName",
+            "type": "string"
+          },
+          {
+            "default": "0",
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "GET all Restaurants by {Chain} & {State}",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence. Sign up now to get access!",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "toolbench_endpoint_description": "**10 results per request. Use page number for Pagination.**",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "**10 results per request. Use page number for Pagination.**",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET all Restaurants by {Chain} & {State}",
+        "endpoint_url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/{restaurantchainname}/location/state/{state}/{page}",
+        "file_name": "fast_food_restaurants_usa_top_50_chains.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+        "tool_file_found": true,
+        "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+        "toolbench_relative_path": "Food/fast_food_restaurants_usa_top_50_chains.json"
+      },
+      "toolbench_tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+      "toolbench_tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/{restaurantchainname}/location/state/{state}/{page}",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.46699999999999997,
+        "tp_kbps": 8.565000000000001,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.621,
+    "qos_llm_rank": 26
+  },
+  {
+    "api_id": "tripadvisor_search_restaurant_location",
+    "candidate_id": "C34",
+    "mode_rank": 6,
+    "llm_reported_rank": 6,
+    "retrieved_rank": 12,
+    "rag_score": 0.4971311390399933,
+    "reason": "",
+    "service": {
+      "_file": "tripadvisor.json",
+      "_tool": "tripadvisor",
+      "api_id": "tripadvisor_search_restaurant_location",
+      "category": "Travel",
+      "description": "-",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "mumbai",
+            "description": "Name of the location where the **Restaurant** is situated.",
+            "name": "query",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Search Restaurant Location",
+      "tool_description": "Tripadvisor API helps to query realtime Hotels search, Flights prices, Restaurants, Attracting locations, etc to create a travelling site.",
+      "tool_name": "Tripadvisor",
+      "toolbench_endpoint_description": "-",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "-",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search Restaurant Location",
+        "endpoint_url": "https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation",
+        "file_name": "tripadvisor.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Tripadvisor API helps to query realtime  Hotels search, Flights prices, Restaurants, Attracting locations, etc to create a travelling site.",
+        "tool_file_found": true,
+        "tool_name": "Tripadvisor",
+        "toolbench_relative_path": "Travel/tripadvisor.json"
+      },
+      "toolbench_tool_description": "Tripadvisor API helps to query realtime  Hotels search, Flights prices, Restaurants, Attracting locations, etc to create a travelling site.",
+      "toolbench_tool_name": "Tripadvisor",
+      "url": "https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.6695,
+        "tp_kbps": 7.469,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.595,
+    "qos_llm_rank": 32
+  },
+  {
+    "api_id": "restaurants_reviews",
+    "candidate_id": "C28",
+    "mode_rank": 7,
+    "llm_reported_rank": 7,
+    "retrieved_rank": 1,
+    "rag_score": 0.598673939704895,
+    "reason": "",
+    "service": {
+      "_file": "restaurants.json",
+      "_tool": "restaurants",
+      "api_id": "restaurants_reviews",
+      "category": "Search",
+      "description": "Restaurant Reviews",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "",
+            "name": "offset",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "en_US",
+            "description": "",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "15333482",
+            "description": "",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "",
+            "name": "currency",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, ",
+      "tool_name": "Restaurants",
+      "toolbench_endpoint_description": "Restaurant Reviews",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Restaurant Reviews",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://restaurants222.p.rapidapi.com/reviews",
+        "file_name": "restaurants.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+        "tool_file_found": true,
+        "tool_name": "Restaurants",
+        "toolbench_relative_path": "Search/restaurants.json"
+      },
+      "toolbench_tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+      "toolbench_tool_name": "Restaurants",
+      "url": "https://restaurants222.p.rapidapi.com/reviews",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.121,
+        "tp_kbps": 24.793,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.678,
+    "qos_llm_rank": 5
+  },
+  {
+    "api_id": "city_and_state_search_api_cities_search",
+    "candidate_id": "C12",
+    "mode_rank": 8,
+    "llm_reported_rank": 8,
+    "retrieved_rank": 33,
+    "rag_score": 0.46841707825660706,
+    "reason": "",
+    "service": {
+      "_file": "city_and_state_search_api.json",
+      "_tool": "city_and_state_search_api",
+      "api_id": "city_and_state_search_api_cities_search",
+      "category": "Search",
+      "description": "This endpoint allows you to search for specific cities by name. It returns a list of cities that match the specified search query.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "country_code",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "sortOrder",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "sortBy",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "country_name",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "country_id",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "limit",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "state_code",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "state_id",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "state_name",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "kan",
+            "description": "",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Cities Search",
+      "tool_description": "A easy-to-use API for search cities, states, and countries from around the world.",
+      "tool_name": "City and State Search API",
+      "toolbench_endpoint_description": "This endpoint allows you to search for specific cities by name. It returns a list of cities that match the specified search query.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "This endpoint allows you to search for specific cities by name. It returns a list of cities that match the specified search query.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Cities Search",
+        "endpoint_url": "https://city-and-state-search-api.p.rapidapi.com/cities/search",
+        "file_name": "city_and_state_search_api.json",
+        "optional_parameter_count": 10,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A easy-to-use API for search cities, states, and countries from around the world.",
+        "tool_file_found": true,
+        "tool_name": "City and State Search API",
+        "toolbench_relative_path": "Search/city_and_state_search_api.json"
+      },
+      "toolbench_tool_description": "A easy-to-use API for search cities, states, and countries from around the world.",
+      "toolbench_tool_name": "City and State Search API",
+      "url": "https://city-and-state-search-api.p.rapidapi.com/cities/search",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.216,
+        "tp_kbps": 55.555,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.675,
+    "qos_llm_rank": 7
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+    "candidate_id": "C13",
+    "mode_rank": 9,
+    "llm_reported_rank": 9,
+    "retrieved_rank": 3,
+    "rag_score": 0.5517017841339111,
+    "reason": "",
+    "service": {
+      "_file": "fast_food_restaurants_usa_top_50_chains.json",
+      "_tool": "fast_food_restaurants_usa_top_50_chains",
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+      "category": "Food",
+      "description": "GET all City names",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GET all {City} names",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence. Sign up now to get access!",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "toolbench_endpoint_description": "GET all City names",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "GET all City names",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET all {City} names",
+        "endpoint_url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/all-city",
+        "file_name": "fast_food_restaurants_usa_top_50_chains.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+        "tool_file_found": true,
+        "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+        "toolbench_relative_path": "Food/fast_food_restaurants_usa_top_50_chains.json"
+      },
+      "toolbench_tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+      "toolbench_tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/all-city",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1295,
+        "tp_kbps": 23.1655,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.675,
+    "qos_llm_rank": 8
+  },
+  {
+    "api_id": "the_fork_the_spoon_locations_v2_list",
+    "candidate_id": "C32",
+    "mode_rank": 10,
+    "llm_reported_rank": 10,
+    "retrieved_rank": 4,
+    "rag_score": 0.5396707653999329,
+    "reason": "",
+    "service": {
+      "_file": "the_fork_the_spoon.json",
+      "_tool": "the_fork_the_spoon",
+      "api_id": "the_fork_the_spoon_locations_v2_list",
+      "category": "Food",
+      "description": "List relating locations by Google place id",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "Roma, Metropolitan City of Rome, Italy",
+            "description": "The value of 'text' fields returned in .../locations/v2/auto-complete endpoint",
+            "name": "geo_text",
+            "type": "STRING"
+          },
+          {
+            "default": "false",
+            "description": "",
+            "name": "geo_ref",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "locality",
+            "description": "The value of 'type' fields returned in .../locations/v2/auto-complete",
+            "name": "geo_type",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "ChIJu46S-ZZhLxMROG5lkwZ3D7k",
+            "description": "The value of data/geolocation/id/id fields returned in …/locations/auto-complete endpoint",
+            "name": "google_place_id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "locations/v2/list",
+      "tool_description": "This API helps to query the best restaurant and meal around the world to create a traveling site/application such as thefork.com",
+      "tool_name": "The Fork The Spoon",
+      "toolbench_endpoint_description": "List relating locations by Google place id",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "List relating locations by Google place id",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "locations/v2/list",
+        "endpoint_url": "https://the-fork-the-spoon.p.rapidapi.com/locations/v2/list",
+        "file_name": "the_fork_the_spoon.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API helps to query the best restaurant and meal around the world to create a traveling site/application such as thefork.com",
+        "tool_file_found": true,
+        "tool_name": "The Fork The Spoon",
+        "toolbench_relative_path": "Food/the_fork_the_spoon.json"
+      },
+      "toolbench_tool_description": "This API helps to query the best restaurant and meal around the world to create a traveling site/application such as thefork.com",
+      "toolbench_tool_name": "The Fork The Spoon",
+      "url": "https://the-fork-the-spoon.p.rapidapi.com/locations/v2/list",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.433,
+        "tp_kbps": 27.713,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.635,
+    "qos_llm_rank": 23
+  },
+  {
+    "api_id": "travel_advisor_restaurant_filters_v2_list",
+    "candidate_id": "C33",
+    "mode_rank": 11,
+    "llm_reported_rank": 11,
+    "retrieved_rank": 15,
+    "rag_score": 0.49226218461990356,
+    "reason": "",
+    "service": {
+      "_file": "travel_advisor.json",
+      "_tool": "travel_advisor",
+      "api_id": "travel_advisor_restaurant_filters_v2_list",
+      "category": "Transportation",
+      "description": "Get available filters for listing restaurants",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "USD",
+            "description": "The currency code",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "km",
+            "description": "One of the followings : km|mi",
+            "name": "units",
+            "type": "STRING"
+          },
+          {
+            "default": "en_US",
+            "description": "The language code",
+            "name": "lang",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "restaurant-filters/v2/list",
+      "tool_description": "This API helps to query realtime Flights prices, Hotels booking, Restaurants, Attracting locations, etc… to create a travelling site like tripadvisor.com",
+      "tool_name": "Travel Advisor",
+      "toolbench_endpoint_description": "Get available filters for listing restaurants",
+      "toolbench_enrichment": {
+        "category": "Transportation",
+        "endpoint_description": "Get available filters for listing restaurants",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "restaurant-filters/v2/list",
+        "endpoint_url": "https://travel-advisor.p.rapidapi.com/restaurant-filters/v2/list",
+        "file_name": "travel_advisor.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API helps to query realtime Flights prices, Hotels booking, Restaurants, Attracting locations, etc… to create a travelling site like tripadvisor.com",
+        "tool_file_found": true,
+        "tool_name": "Travel Advisor",
+        "toolbench_relative_path": "Transportation/travel_advisor.json"
+      },
+      "toolbench_tool_description": "This API helps to query realtime Flights prices, Hotels booking, Restaurants, Attracting locations, etc… to create a travelling site like tripadvisor.com",
+      "toolbench_tool_name": "Travel Advisor",
+      "url": "https://travel-advisor.p.rapidapi.com/restaurant-filters/v2/list",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.515,
+        "tp_kbps": 11.65,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.613,
+    "qos_llm_rank": 29
+  },
+  {
+    "api_id": "quick_geo_location_search_location_by_name",
+    "candidate_id": "C25",
+    "mode_rank": 12,
+    "llm_reported_rank": 12,
+    "retrieved_rank": 21,
+    "rag_score": 0.4838075041770935,
+    "reason": "",
+    "service": {
+      "_file": "quick_geo_location.json",
+      "_tool": "quick_geo_location",
+      "api_id": "quick_geo_location_search_location_by_name",
+      "category": "Location",
+      "description": "You may quickly discover all the information about any location by using the Search Location By Name APIs. It returns an array containing iframes, geometry, properties, location, and addresses.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Search Location By Name",
+      "tool_description": "We offer eight distinct QUICK GEO LOCATION APIs that provide location data for different uses. A Simple Search for Any Location Specific Location information from the API, including nation, city, latitude, and longitude in a JSON response.",
+      "tool_name": "Quick Geo Location",
+      "toolbench_endpoint_description": "You may quickly discover all the information about any location by using the Search Location By Name APIs. It returns an array containing iframes, geometry, properties, location, and addresses.",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "You may quickly discover all the information about any location by using the Search Location By Name APIs. It returns an array containing iframes, geometry, properties, location, and addresses.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Search Location By Name",
+        "endpoint_url": "https://quick-geo-location.p.rapidapi.com/search-by-name",
+        "file_name": "quick_geo_location.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "We offer eight distinct QUICK GEO LOCATION APIs that provide location data for different uses. A Simple Search for Any Location Specific Location information from the API, including nation, city, latitude, and longitude in a JSON response.",
+        "tool_file_found": true,
+        "tool_name": "Quick Geo Location",
+        "toolbench_relative_path": "Location/quick_geo_location.json"
+      },
+      "toolbench_tool_description": "We offer eight distinct QUICK GEO LOCATION APIs that provide location data for different uses. A Simple Search for Any Location Specific Location information from the API, including nation, city, latitude, and longitude in a JSON response.",
+      "toolbench_tool_name": "Quick Geo Location",
+      "url": "https://quick-geo-location.p.rapidapi.com/search-by-name",
+      "qos": {
+        "availability": 0.9764,
+        "rt_s": 0.74,
+        "tp_kbps": 2.702,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.577,
+    "qos_llm_rank": 34
+  },
+  {
+    "api_id": "worldwide_restaurants_detail",
+    "candidate_id": "C39",
+    "mode_rank": 13,
+    "llm_reported_rank": 13,
+    "retrieved_rank": 14,
+    "rag_score": 0.4933009743690491,
+    "reason": "",
+    "service": {
+      "_file": "worldwide_restaurants.json",
+      "_tool": "worldwide_restaurants",
+      "api_id": "worldwide_restaurants_detail",
+      "category": "Search",
+      "description": "Restaurant Detail",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "USD",
+            "description": "Standard ISO 4217 - https://en.wikipedia.org/wiki/ISO_4217",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "en_US",
+            "description": "Use the format ll_CC, where ll is a two-letter language code, and CC is a two-letter country code. For instance, en_US represents U.S. English",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "15333482",
+            "description": "Location ID based on search results",
+            "name": "location_id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Detail",
+      "tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+      "tool_name": "Worldwide Restaurants",
+      "toolbench_endpoint_description": "Restaurant Detail",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Restaurant Detail",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Detail",
+        "endpoint_url": "https://worldwide-restaurants.p.rapidapi.com/detail",
+        "file_name": "worldwide_restaurants.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+        "tool_file_found": true,
+        "tool_name": "Worldwide Restaurants",
+        "toolbench_relative_path": "Search/worldwide_restaurants.json"
+      },
+      "toolbench_tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+      "toolbench_tool_name": "Worldwide Restaurants",
+      "url": "https://worldwide-restaurants.p.rapidapi.com/detail",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.794,
+        "tp_kbps": 3.7775,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.577,
+    "qos_llm_rank": 35
+  },
+  {
+    "api_id": "address_autosuggest_address_autosuggest",
+    "candidate_id": "C01",
+    "mode_rank": 14,
+    "llm_reported_rank": 14,
+    "retrieved_rank": 11,
+    "rag_score": 0.4977407455444336,
+    "reason": "",
+    "service": {
+      "_file": "address_autosuggest.json",
+      "_tool": "address_autosuggest",
+      "api_id": "address_autosuggest_address_autosuggest",
+      "category": "Location",
+      "description": "\"Address Autosuggest\" API buit to suggests address results for a given search term. This API provides a JSON interface to extract address suggestions for a complete or partial address query.\n\nThe Autocomplete API suggests partial address results for a given query.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Bridge",
+            "description": "",
+            "name": "query",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Address Autosuggest",
+      "tool_description": "\"Address Autosuggest\" API buit to suggests address results for a given search term. This API provides a JSON interface to extract address suggestions for a complete or partial address query.his API uses the latest PAF and Multiple Residence data from Royal Mail.",
+      "tool_name": "Address Autosuggest",
+      "toolbench_endpoint_description": "\"Address Autosuggest\" API buit to suggests address results for a given search term. This API provides a JSON interface to extract address suggestions for a complete or partial address query.\n\nThe Autocomplete API suggests partial address results for a given query.",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "\"Address Autosuggest\" API buit to suggests address results for a given search term. This API provides a JSON interface to extract address suggestions for a complete or partial address query.\n\nThe Autocomplete API suggests partial address results for a given query.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Address Autosuggest",
+        "endpoint_url": "https://address-autosuggest.p.rapidapi.com/v1/addresses/autocomplete",
+        "file_name": "address_autosuggest.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "\"Address Autosuggest\" API buit to suggests address results for a given search term. This API provides a JSON interface to extract address suggestions for a complete or partial address query.his API uses the latest PAF and Multiple Residence data from Royal Mail.",
+        "tool_file_found": true,
+        "tool_name": "Address Autosuggest",
+        "toolbench_relative_path": "Location/address_autosuggest.json"
+      },
+      "toolbench_tool_description": "\"Address Autosuggest\" API buit to suggests address results for a given search term. This API provides a JSON interface to extract address suggestions for a complete or partial address query.his API uses the latest PAF and Multiple Residence data from Royal Mail.",
+      "toolbench_tool_name": "Address Autosuggest",
+      "url": "https://address-autosuggest.p.rapidapi.com/v1/addresses/autocomplete",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 2.621,
+        "tp_kbps": 1.526,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.332,
+    "qos_llm_rank": 39
+  },
+  {
+    "api_id": "cannafinder_shops_in_radius_around_coordinates",
+    "candidate_id": "C11",
+    "mode_rank": 15,
+    "llm_reported_rank": 15,
+    "retrieved_rank": 22,
+    "rag_score": 0.4833466112613678,
+    "reason": "",
+    "service": {
+      "_file": "cannafinder.json",
+      "_tool": "cannafinder",
+      "api_id": "cannafinder_shops_in_radius_around_coordinates",
+      "category": "Location",
+      "description": "Find shops in input radius and coordinates. Returns multiple tags for every entry and distance in km.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "1000",
+            "description": "in meter. ",
+            "name": "radius",
+            "type": "NUMBER"
+          },
+          {
+            "default": "52.377075",
+            "description": "",
+            "name": "lat",
+            "type": "NUMBER"
+          },
+          {
+            "default": "4.902427",
+            "description": "",
+            "name": "lon",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/shops-in-radius-around-coordinates",
+      "tool_description": "Find cannabis, marijuana, dispensaries shop locations with additional data around you or the world. Try for free.",
+      "tool_name": "CannaFinder",
+      "toolbench_endpoint_description": "Find shops in input radius and coordinates. Returns multiple tags for every entry and distance in km.",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "Find shops in input radius and coordinates. Returns multiple tags for every entry and distance in km.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/shops-in-radius-around-coordinates",
+        "endpoint_url": "https://cannafinder.p.rapidapi.com/shops-in-radius-around-coordinates",
+        "file_name": "cannafinder.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Find cannabis, marijuana, dispensaries shop locations with additional data around you or the world.  Try for free.",
+        "tool_file_found": true,
+        "tool_name": "CannaFinder",
+        "toolbench_relative_path": "Location/cannafinder.json"
+      },
+      "toolbench_tool_description": "Find cannabis, marijuana, dispensaries shop locations with additional data around you or the world.  Try for free.",
+      "toolbench_tool_name": "CannaFinder",
+      "url": "https://cannafinder.p.rapidapi.com/shops-in-radius-around-coordinates",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.372,
+        "tp_kbps": 702.1345,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.966,
+    "qos_llm_rank": 1
+  },
+  {
+    "api_id": "bbc_good_food_api_collection_recipes",
+    "candidate_id": "C09",
+    "mode_rank": 16,
+    "llm_reported_rank": 16,
+    "retrieved_rank": 31,
+    "rag_score": 0.4694199562072754,
+    "reason": "",
+    "service": {
+      "_file": "bbc_good_food_api.json",
+      "_tool": "bbc_good_food_api",
+      "api_id": "bbc_good_food_api_collection_recipes",
+      "category": "Food",
+      "description": "Get collection of recipes by collection name ID",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Page number depending of results number 30 per page MAX result",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "breakfast-recipes",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Collection recipes",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes.. Note: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity s",
+      "tool_name": "BBC Good Food API",
+      "toolbench_endpoint_description": "Get collection of recipes by collection name ID",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get collection of recipes by collection name ID",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Collection recipes",
+        "endpoint_url": "https://bbc-good-food-api.p.rapidapi.com/collection/{id}/recipes/",
+        "file_name": "bbc_good_food_api.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+        "tool_file_found": true,
+        "tool_name": "BBC Good Food API",
+        "toolbench_relative_path": "Food/bbc_good_food_api.json"
+      },
+      "toolbench_tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+      "toolbench_tool_name": "BBC Good Food API",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/collection/{id}/recipes/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.18,
+        "tp_kbps": 564.971,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.925,
+    "qos_llm_rank": 3
+  },
+  {
+    "api_id": "priceline_com_provider_search_flights_locations",
+    "candidate_id": "C23",
+    "mode_rank": 17,
+    "llm_reported_rank": 17,
+    "retrieved_rank": 17,
+    "rag_score": 0.4880528748035431,
+    "reason": "",
+    "service": {
+      "_file": "priceline_com_provider.json",
+      "_tool": "priceline_com_provider",
+      "api_id": "priceline_com_provider_search_flights_locations",
+      "category": "Travel",
+      "description": "Search airports and locations by name",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Los",
+            "description": "Name",
+            "name": "name",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Search flights locations",
+      "tool_description": "priceline.com | Lets you search hotels, cars for rent, flights. **Support**: [tipsters@rapi.one](mailto:tipsters@rapi.one) / t.me/api_tipsters **Other travel api:** https://rapi.one",
+      "tool_name": "Priceline com Provider",
+      "toolbench_endpoint_description": "Search airports and locations by name",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "Search airports and locations by name",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search flights locations",
+        "endpoint_url": "https://priceline-com-provider.p.rapidapi.com/v1/flights/locations",
+        "file_name": "priceline_com_provider.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "priceline.com | Lets you search hotels, cars for rent, flights. **Support**:  [tipsters@rapi.one](mailto:tipsters@rapi.one) / t.me/api_tipsters **Other travel  api:** https://rapi.one",
+        "tool_file_found": true,
+        "tool_name": "Priceline com Provider",
+        "toolbench_relative_path": "Travel/priceline_com_provider.json"
+      },
+      "toolbench_tool_description": "priceline.com | Lets you search hotels, cars for rent, flights. **Support**:  [tipsters@rapi.one](mailto:tipsters@rapi.one) / t.me/api_tipsters **Other travel  api:** https://rapi.one",
+      "toolbench_tool_name": "Priceline com Provider",
+      "url": "https://priceline-com-provider.p.rapidapi.com/v1/flights/locations",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.571,
+        "tp_kbps": 187.074,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 4
+  },
+  {
+    "api_id": "airbnb_v2_get_type_of_place_filters",
+    "candidate_id": "C04",
+    "mode_rank": 18,
+    "llm_reported_rank": 18,
+    "retrieved_rank": 8,
+    "rag_score": 0.5079721212387085,
+    "reason": "",
+    "service": {
+      "_file": "airbnb_v2.json",
+      "_tool": "airbnb_v2",
+      "api_id": "airbnb_v2_get_type_of_place_filters",
+      "category": "Travel",
+      "description": "-",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Enter **LanguageId** if you want a response in the requested language. To get **LanguageId** call **getLanguages** API and pass in the Id.",
+            "name": "languageId",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get Type of Place Filters",
+      "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "tool_name": "Airbnb_v2",
+      "toolbench_endpoint_description": "-",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "-",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Type of Place Filters",
+        "endpoint_url": "https://airbnb19.p.rapidapi.com/api/v1/getTypeOfPlace",
+        "file_name": "airbnb_v2.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+        "tool_file_found": true,
+        "tool_name": "Airbnb_v2",
+        "toolbench_relative_path": "Travel/airbnb_v2.json"
+      },
+      "toolbench_tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "toolbench_tool_name": "Airbnb_v2",
+      "url": "https://airbnb19.p.rapidapi.com/api/v1/getTypeOfPlace",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.168,
+        "tp_kbps": 41.666,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.675,
+    "qos_llm_rank": 6
+  },
+  {
+    "api_id": "hotel_search_default",
+    "candidate_id": "C16",
+    "mode_rank": 19,
+    "llm_reported_rank": 19,
+    "retrieved_rank": 6,
+    "rag_score": 0.5155091881752014,
+    "reason": "",
+    "service": {
+      "_file": "hotel_search.json",
+      "_tool": "hotel_search",
+      "api_id": "hotel_search_default",
+      "category": "Search",
+      "description": "default endpoint",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "default",
+      "tool_description": "API search the holtel in an rectangle area provide by lat and long",
+      "tool_name": "Hotel Search",
+      "toolbench_endpoint_description": "default endpoint",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "default endpoint",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "default",
+        "endpoint_url": "https://hotel-search1.p.rapidapi.com/",
+        "file_name": "hotel_search.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API search the holtel in an rectangle area provide by lat and long",
+        "tool_file_found": true,
+        "tool_name": "Hotel Search",
+        "toolbench_relative_path": "Search/hotel_search.json"
+      },
+      "toolbench_tool_description": "API search the holtel in an rectangle area provide by lat and long",
+      "toolbench_tool_name": "Hotel Search",
+      "url": "https://hotel-search1.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.138,
+        "tp_kbps": 21.739,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.669,
+    "qos_llm_rank": 9
+  },
+  {
+    "api_id": "venue_deactivatevenue",
+    "candidate_id": "C36",
+    "mode_rank": 20,
+    "llm_reported_rank": 20,
+    "retrieved_rank": 37,
+    "rag_score": 0.46171605587005615,
+    "reason": "",
+    "service": {
+      "_file": "venue.json",
+      "_tool": "venue",
+      "api_id": "venue_deactivatevenue",
+      "category": "Food",
+      "description": "Deactivate venue by ID. Inactive venues cannot receive orders.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "venue",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "deactivateVenue",
+      "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "tool_name": "Venue",
+      "toolbench_endpoint_description": "Deactivate venue by ID. Inactive venues cannot receive orders.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Deactivate venue by ID. Inactive venues cannot receive orders.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "deactivateVenue",
+        "endpoint_url": "https://venue1.p.rapidapi.com/venue-api/api/venues/{venue}/deactivate",
+        "file_name": "venue.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+        "tool_file_found": true,
+        "tool_name": "Venue",
+        "toolbench_relative_path": "Food/venue.json"
+      },
+      "toolbench_tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "toolbench_tool_name": "Venue",
+      "url": "https://venue1.p.rapidapi.com/venue-api/api/venues/{venue}/deactivate",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.155,
+        "tp_kbps": 19.354,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.669,
+    "qos_llm_rank": 10
+  },
+  {
+    "api_id": "priceline_com_provider_download_cities_clusters",
+    "candidate_id": "C22",
+    "mode_rank": 21,
+    "llm_reported_rank": 21,
+    "retrieved_rank": 38,
+    "rag_score": 0.46054840087890625,
+    "reason": "",
+    "service": {
+      "_file": "priceline_com_provider.json",
+      "_tool": "priceline_com_provider",
+      "api_id": "priceline_com_provider_download_cities_clusters",
+      "category": "Travel",
+      "description": "Downloads a list of Hotel cities clusters",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": 100,
+            "description": "Limits the number of results from the response.",
+            "name": "limit",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Resume results from given ID.",
+            "name": "resume_key",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Download cities clusters",
+      "tool_description": "priceline.com | Lets you search hotels, cars for rent, flights. **Support**: [tipsters@rapi.one](mailto:tipsters@rapi.one) / t.me/api_tipsters **Other travel api:** https://rapi.one",
+      "tool_name": "Priceline com Provider",
+      "toolbench_endpoint_description": "Downloads a list of Hotel cities clusters",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "Downloads a list of Hotel cities clusters",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Download cities clusters",
+        "endpoint_url": "https://priceline-com-provider.p.rapidapi.com/v2/hotels/downloadCitiesClusters",
+        "file_name": "priceline_com_provider.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "priceline.com | Lets you search hotels, cars for rent, flights. **Support**:  [tipsters@rapi.one](mailto:tipsters@rapi.one) / t.me/api_tipsters **Other travel  api:** https://rapi.one",
+        "tool_file_found": true,
+        "tool_name": "Priceline com Provider",
+        "toolbench_relative_path": "Travel/priceline_com_provider.json"
+      },
+      "toolbench_tool_description": "priceline.com | Lets you search hotels, cars for rent, flights. **Support**:  [tipsters@rapi.one](mailto:tipsters@rapi.one) / t.me/api_tipsters **Other travel  api:** https://rapi.one",
+      "toolbench_tool_name": "Priceline com Provider",
+      "url": "https://priceline-com-provider.p.rapidapi.com/v2/hotels/downloadCitiesClusters",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.119,
+        "tp_kbps": null,
+        "valid_qos": false
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.666,
+    "qos_llm_rank": 12
+  },
+  {
+    "api_id": "apartments_com_reviews",
+    "candidate_id": "C07",
+    "mode_rank": 22,
+    "llm_reported_rank": 22,
+    "retrieved_rank": 39,
+    "rag_score": 0.4581483006477356,
+    "reason": "",
+    "service": {
+      "_file": "apartments_com.json",
+      "_tool": "apartments_com",
+      "api_id": "apartments_com_reviews",
+      "category": "Search",
+      "description": "Retrieve listing reviews.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensi",
+      "tool_name": "Apartments.com",
+      "toolbench_endpoint_description": "Retrieve listing reviews.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Retrieve listing reviews.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://apartments-com.p.rapidapi.com/reviews",
+        "file_name": "apartments_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "Apartments.com",
+        "toolbench_relative_path": "Search/apartments_com.json"
+      },
+      "toolbench_tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+      "toolbench_tool_name": "Apartments.com",
+      "url": "https://apartments-com.p.rapidapi.com/reviews",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3005,
+        "tp_kbps": 13.311,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.647,
+    "qos_llm_rank": 14
+  },
+  {
+    "api_id": "hotelapi_hotelsearch",
+    "candidate_id": "C17",
+    "mode_rank": 23,
+    "llm_reported_rank": 23,
+    "retrieved_rank": 32,
+    "rag_score": 0.4687727391719818,
+    "reason": "",
+    "service": {
+      "_file": "hotelapi.json",
+      "_tool": "hotelapi",
+      "api_id": "hotelapi_hotelsearch",
+      "category": "Search",
+      "description": "Search Hotel List",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "HotelTest",
+            "description": "Hotel Result",
+            "name": "HotelData",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "HotelSearch",
+      "tool_description": "Booking Hotel Api",
+      "tool_name": "HotelApi",
+      "toolbench_endpoint_description": "Search Hotel List",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Search Hotel List",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "HotelSearch",
+        "endpoint_url": "https://hotelapi.p.rapidapi.comHotelSearch",
+        "file_name": "hotelapi.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Booking Hotel Api",
+        "tool_file_found": true,
+        "tool_name": "HotelApi",
+        "toolbench_relative_path": "Search/hotelapi.json"
+      },
+      "toolbench_tool_description": "Booking Hotel Api",
+      "toolbench_tool_name": "HotelApi",
+      "url": "https://hotelapi.p.rapidapi.comHotelSearch",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3025,
+        "tp_kbps": 13.222999999999999,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.647,
+    "qos_llm_rank": 15
+  },
+  {
+    "api_id": "airbnb_v2_get_category",
+    "candidate_id": "C02",
+    "mode_rank": 24,
+    "llm_reported_rank": 24,
+    "retrieved_rank": 19,
+    "rag_score": 0.4864869713783264,
+    "reason": "",
+    "service": {
+      "_file": "airbnb_v2.json",
+      "_tool": "airbnb_v2",
+      "api_id": "airbnb_v2_get_category",
+      "category": "Travel",
+      "description": "-",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Enter **LanguageId** if you want a response in the requested language. To get **LanguageId** call **getLanguages** API and pass in the Id.",
+            "name": "languageId",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get Category",
+      "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "tool_name": "Airbnb_v2",
+      "toolbench_endpoint_description": "-",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "-",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Category",
+        "endpoint_url": "https://airbnb19.p.rapidapi.com/api/v1/getCategory",
+        "file_name": "airbnb_v2.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+        "tool_file_found": true,
+        "tool_name": "Airbnb_v2",
+        "toolbench_relative_path": "Travel/airbnb_v2.json"
+      },
+      "toolbench_tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "toolbench_tool_name": "Airbnb_v2",
+      "url": "https://airbnb19.p.rapidapi.com/api/v1/getCategory",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.314,
+        "tp_kbps": 12.738,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.646,
+    "qos_llm_rank": 16
+  },
+  {
+    "api_id": "skyscanner_v2_get_things_to_do",
+    "candidate_id": "C29",
+    "mode_rank": 25,
+    "llm_reported_rank": 25,
+    "retrieved_rank": 29,
+    "rag_score": 0.4709101617336273,
+    "reason": "",
+    "service": {
+      "_file": "skyscanner_v2.json",
+      "_tool": "skyscanner_v2",
+      "api_id": "skyscanner_v2_get_things_to_do",
+      "category": "Travel",
+      "description": "Use this API to get Thing  to do nearby the hotel selected.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "en-US",
+            "description": "The list of available **market** can be retrieved through the **Get Config** API in the **Config** collection.",
+            "name": "market",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "The list of available **currencies** can be retrieved through the **Get Config** API in the **Config** collection.",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "US",
+            "description": "The list of available **countryCode** can be retrieved through the **Get Config** API in the **Config** collection.",
+            "name": "countryCode",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "**entityId** can be retrieved from **Search Hotel** API in **Hotels** collection.",
+            "name": "entityId",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "**lat** can be retrieved from **Hotel Details** or **Search Hotel** API in **Hotels** collection as **latitude**.",
+            "name": "lat",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "**lng** can be retrieved from **Hotel Details** or **Search Hotel** API in **Hotels** collection as **longitude**.",
+            "name": "lng",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Things To Do",
+      "tool_description": "Skyscanner API allows users to search best flights and hotels with details and best price. This API has all needed by any developer to create a new application with some extended features.",
+      "tool_name": "Skyscanner_v2",
+      "toolbench_endpoint_description": "Use this API to get Thing  to do nearby the hotel selected.",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "Use this API to get Thing  to do nearby the hotel selected.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Things To Do",
+        "endpoint_url": "https://skyscanner50.p.rapidapi.com/api/v1/getThingsToDo",
+        "file_name": "skyscanner_v2.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Skyscanner API allows users to search best flights and hotels with details and best price. This API has all needed by any developer to create a new application with some extended features.",
+        "tool_file_found": true,
+        "tool_name": "Skyscanner_v2",
+        "toolbench_relative_path": "Travel/skyscanner_v2.json"
+      },
+      "toolbench_tool_description": "Skyscanner API allows users to search best flights and hotels with details and best price. This API has all needed by any developer to create a new application with some extended features.",
+      "toolbench_tool_name": "Skyscanner_v2",
+      "url": "https://skyscanner50.p.rapidapi.com/api/v1/getThingsToDo",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.31,
+        "tp_kbps": 12.903,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 17
+  },
+  {
+    "api_id": "world_cities_and_countries_searchcountries",
+    "candidate_id": "C37",
+    "mode_rank": 26,
+    "llm_reported_rank": 26,
+    "retrieved_rank": 27,
+    "rag_score": 0.47501492500305176,
+    "reason": "",
+    "service": {
+      "_file": "world_cities_and_countries.json",
+      "_tool": "world_cities_and_countries",
+      "api_id": "world_cities_and_countries_searchcountries",
+      "category": "Location",
+      "description": "API to search county based on the matching search keyword passed in url param.\nNOTE: This API is case insensitive.\ne.g. \n`/v1/locations/countries/uni`: This will return all the matching countries whose name starts from `uni` and their additional info.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "uni",
+            "description": "",
+            "name": "keyword",
+            "type": "string"
+          },
+          {
+            "default": 1,
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": 20,
+            "description": "",
+            "name": "limit",
+            "type": "NUMBER"
+          },
+          {
+            "default": "name:asc",
+            "description": "Valid format to sort is `field:order`\ne.g. `name:desc`, `alpha-2:asc`\nwhere `asc` for sorting in ascending order\n`desc` for sorting in descending order",
+            "name": "sortBy",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "SearchCountries",
+      "tool_description": "The fastest and most updated API with rich data that allow you search cities from more than 2 million records. Also allows to search country data with other additional info.",
+      "tool_name": "World Cities and Countries",
+      "toolbench_endpoint_description": "API to search county based on the matching search keyword passed in url param.\nNOTE: This API is case insensitive.\ne.g. \n`/v1/locations/countries/uni`: This will return all the matching countries whose name starts from `uni` and their additional info.",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "API to search county based on the matching search keyword passed in url param.\nNOTE: This API is case insensitive.\ne.g. \n`/v1/locations/countries/uni`: This will return all the matching countries whose name starts from `uni` and their additional info.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "SearchCountries",
+        "endpoint_url": "https://world-cities-and-countries.p.rapidapi.com/v1/locations/countries/uni",
+        "file_name": "world_cities_and_countries.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 4,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The fastest and most updated API with rich data that allow you search cities from more than 2 million records. Also allows to search country data with other additional info.",
+        "tool_file_found": true,
+        "tool_name": "World Cities and Countries",
+        "toolbench_relative_path": "Location/world_cities_and_countries.json"
+      },
+      "toolbench_tool_description": "The fastest and most updated API with rich data that allow you search cities from more than 2 million records. Also allows to search country data with other additional info.",
+      "toolbench_tool_name": "World Cities and Countries",
+      "url": "https://world-cities-and-countries.p.rapidapi.com/v1/locations/countries/uni",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.321,
+        "tp_kbps": 12.461,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 18
+  },
+  {
+    "api_id": "bbc_good_food_api_search_for_recipes",
+    "candidate_id": "C10",
+    "mode_rank": 27,
+    "llm_reported_rank": 27,
+    "retrieved_rank": 20,
+    "rag_score": 0.48463356494903564,
+    "reason": "",
+    "service": {
+      "_file": "bbc_good_food_api.json",
+      "_tool": "bbc_good_food_api",
+      "api_id": "bbc_good_food_api_search_for_recipes",
+      "category": "Food",
+      "description": "Search for recipes by keyword or full phrase",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Page number depend of the result number 30 result MAX per search",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "crab salad",
+            "description": "Search query for recipes",
+            "name": "query",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Search for recipes",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes.. Note: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity s",
+      "tool_name": "BBC Good Food API",
+      "toolbench_endpoint_description": "Search for recipes by keyword or full phrase",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Search for recipes by keyword or full phrase",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search for recipes",
+        "endpoint_url": "https://bbc-good-food-api.p.rapidapi.com/search",
+        "file_name": "bbc_good_food_api.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+        "tool_file_found": true,
+        "tool_name": "BBC Good Food API",
+        "toolbench_relative_path": "Food/bbc_good_food_api.json"
+      },
+      "toolbench_tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+      "toolbench_tool_name": "BBC Good Food API",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/search",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.322,
+        "tp_kbps": 9.316,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.643,
+    "qos_llm_rank": 19
+  },
+  {
+    "api_id": "stores_and_brands_api_get_stores_by_city",
+    "candidate_id": "C30",
+    "mode_rank": 28,
+    "llm_reported_rank": 28,
+    "retrieved_rank": 16,
+    "rag_score": 0.49168550968170166,
+    "reason": "",
+    "service": {
+      "_file": "stores_and_brands_api.json",
+      "_tool": "stores_and_brands_api",
+      "api_id": "stores_and_brands_api_get_stores_by_city",
+      "category": "Database",
+      "description": "Get all cities and store counts in a particular state\n    Use brand filter to get cities for the brand\n\nExample Payload\n {\n    \"api_key\":\"iopII2344_ADDDxxw1i1\",\n    \"state\":\"CA\",                    \n    \"brand_alias\": \"western-union\" (optional)\n }\nExample Response\n [{\n    \n    \"city\": \"Los Angeles\",\n    \"store_count\": 630,\n    \"state\",\"CA\"\n  },\n  {\n   \n    \"city\": \"Newyork\",\n    \"store_count\": 1200,\n    \"state\":\"NY\"\n  }]",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "brand_alias",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "state",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Stores By City",
+      "tool_description": "Find all stores and outlets list in the US.",
+      "tool_name": "Stores And Brands API",
+      "toolbench_endpoint_description": "Get all cities and store counts in a particular state\n    Use brand filter to get cities for the brand\n\nExample Payload\n {\n    \"api_key\":\"iopII2344_ADDDxxw1i1\",\n    \"state\":\"CA\",                    \n    \"brand_alias\": \"western-union\" (optional)\n }\nExample Response\n [{\n    \n    \"city\": \"Los Angeles\",\n    \"store_count\": 630,\n    \"state\",\"CA\"\n  },\n  {\n   \n    \"city\": \"Newyork\",\n    \"store_count\": 1200,\n    \"state\":\"NY\"\n  }]",
+      "toolbench_enrichment": {
+        "category": "Database",
+        "endpoint_description": "Get all cities and store counts in a particular state\n    Use brand filter to get cities for the brand\n\nExample Payload\n {\n    \"api_key\":\"iopII2344_ADDDxxw1i1\",\n    \"state\":\"CA\",                    \n    \"brand_alias\": \"western-union\" (optional)\n }\nExample Response\n [{\n    \n    \"city\": \"Los Angeles\",\n    \"store_count\": 630,\n    \"state\",\"CA\"\n  },\n  {\n   \n    \"city\": \"Newyork\",\n    \"store_count\": 1200,\n    \"state\":\"NY\"\n  }]",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Stores By City",
+        "endpoint_url": "https://stores-and-brands-api.p.rapidapi.com/cities/",
+        "file_name": "stores_and_brands_api.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Find all stores and outlets list in the US.",
+        "tool_file_found": true,
+        "tool_name": "Stores And Brands API",
+        "toolbench_relative_path": "Database/stores_and_brands_api.json"
+      },
+      "toolbench_tool_description": "Find all stores and outlets list in the US.",
+      "toolbench_tool_name": "Stores And Brands API",
+      "url": "https://stores-and-brands-api.p.rapidapi.com/cities/",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3415,
+        "tp_kbps": 11.7125,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.641,
+    "qos_llm_rank": 20
+  },
+  {
+    "api_id": "hotels_locations_v2_search_deprecated",
+    "candidate_id": "C19",
+    "mode_rank": 29,
+    "llm_reported_rank": 29,
+    "retrieved_rank": 25,
+    "rag_score": 0.4766276478767395,
+    "reason": "",
+    "service": {
+      "_file": "hotels.json",
+      "_tool": "hotels",
+      "api_id": "hotels_locations_v2_search_deprecated",
+      "category": "Travel",
+      "description": "Search for related locations and suggestions",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "en_US",
+            "description": "The language code",
+            "name": "locale",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "The currency code",
+            "name": "currency",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "new york",
+            "description": "Name of countries, cities, districts, places, etc...",
+            "name": "query",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "locations/v2/search (Deprecated)",
+      "tool_description": "This API helps to query rooms, price, facilities, policities, etc information from many hotels around the world to create a travelling site/application, such as : hotels.com",
+      "tool_name": "Hotels",
+      "toolbench_endpoint_description": "Search for related locations and suggestions",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "Search for related locations and suggestions",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "locations/v2/search (Deprecated)",
+        "endpoint_url": "https://hotels4.p.rapidapi.com/locations/v2/search",
+        "file_name": "hotels.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API helps to query rooms, price, facilities, policities, etc information from many hotels around the world to create a travelling site/application, such as : hotels.com",
+        "tool_file_found": true,
+        "tool_name": "Hotels",
+        "toolbench_relative_path": "Travel/hotels.json"
+      },
+      "toolbench_tool_description": "This API helps to query rooms, price, facilities, policities, etc information from many hotels around the world to create a travelling site/application, such as : hotels.com",
+      "toolbench_tool_name": "Hotels",
+      "url": "https://hotels4.p.rapidapi.com/locations/v2/search",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.338,
+        "tp_kbps": 8.875499999999999,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.636,
+    "qos_llm_rank": 21
+  },
+  {
+    "api_id": "airbnb_v2_get_property_type_filters",
+    "candidate_id": "C03",
+    "mode_rank": 30,
+    "llm_reported_rank": 30,
+    "retrieved_rank": 18,
+    "rag_score": 0.48711225390434265,
+    "reason": "",
+    "service": {
+      "_file": "airbnb_v2.json",
+      "_tool": "airbnb_v2",
+      "api_id": "airbnb_v2_get_property_type_filters",
+      "category": "Travel",
+      "description": "-",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Enter **LanguageId** if you want a response in the requested language. To get **LanguageId** call **getLanguages** API and pass in the Id.",
+            "name": "languageId",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get Property Type Filters",
+      "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "tool_name": "Airbnb_v2",
+      "toolbench_endpoint_description": "-",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "-",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Property Type Filters",
+        "endpoint_url": "https://airbnb19.p.rapidapi.com/api/v1/getPropertyType",
+        "file_name": "airbnb_v2.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+        "tool_file_found": true,
+        "tool_name": "Airbnb_v2",
+        "toolbench_relative_path": "Travel/airbnb_v2.json"
+      },
+      "toolbench_tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "toolbench_tool_name": "Airbnb_v2",
+      "url": "https://airbnb19.p.rapidapi.com/api/v1/getPropertyType",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.346,
+        "tp_kbps": 8.67,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.635,
+    "qos_llm_rank": 22
+  },
+  {
+    "api_id": "hotelgeo_default",
+    "candidate_id": "C18",
+    "mode_rank": 31,
+    "llm_reported_rank": 31,
+    "retrieved_rank": 10,
+    "rag_score": 0.4981602430343628,
+    "reason": "",
+    "service": {
+      "_file": "hotelgeo.json",
+      "_tool": "hotelgeo",
+      "api_id": "hotelgeo_default",
+      "category": "Search",
+      "description": "default endpoint",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "default",
+      "tool_description": "API search the holtel in an rectangle area provide by lat and long",
+      "tool_name": "hotelgeo",
+      "toolbench_endpoint_description": "default endpoint",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "default endpoint",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "default",
+        "endpoint_url": "https://hotelgeo.p.rapidapi.com/",
+        "file_name": "hotelgeo.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API search the holtel in an rectangle area provide by lat and long",
+        "tool_file_found": true,
+        "tool_name": "hotelgeo",
+        "toolbench_relative_path": "Search/hotelgeo.json"
+      },
+      "toolbench_tool_description": "API search the holtel in an rectangle area provide by lat and long",
+      "toolbench_tool_name": "hotelgeo",
+      "url": "https://hotelgeo.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.428,
+        "tp_kbps": 11.682,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.631,
+    "qos_llm_rank": 24
+  },
+  {
+    "api_id": "apartments_com_media",
+    "candidate_id": "C06",
+    "mode_rank": 32,
+    "llm_reported_rank": 32,
+    "retrieved_rank": 34,
+    "rag_score": 0.46791237592697144,
+    "reason": "",
+    "service": {
+      "_file": "apartments_com.json",
+      "_tool": "apartments_com",
+      "api_id": "apartments_com_media",
+      "category": "Search",
+      "description": "Retrieve listing media.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Media",
+      "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensi",
+      "tool_name": "Apartments.com",
+      "toolbench_endpoint_description": "Retrieve listing media.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Retrieve listing media.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Media",
+        "endpoint_url": "https://apartments-com.p.rapidapi.com/media",
+        "file_name": "apartments_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "Apartments.com",
+        "toolbench_relative_path": "Search/apartments_com.json"
+      },
+      "toolbench_tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+      "toolbench_tool_name": "Apartments.com",
+      "url": "https://apartments-com.p.rapidapi.com/media",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.46,
+        "tp_kbps": 13.043,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.622,
+    "qos_llm_rank": 25
+  },
+  {
+    "api_id": "apartments_com_walk_score",
+    "candidate_id": "C08",
+    "mode_rank": 33,
+    "llm_reported_rank": 33,
+    "retrieved_rank": 28,
+    "rag_score": 0.4737655520439148,
+    "reason": "",
+    "service": {
+      "_file": "apartments_com.json",
+      "_tool": "apartments_com",
+      "api_id": "apartments_com_walk_score",
+      "category": "Search",
+      "description": "Retrieve listing walk score.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Walk Score",
+      "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensi",
+      "tool_name": "Apartments.com",
+      "toolbench_endpoint_description": "Retrieve listing walk score.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Retrieve listing walk score.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Walk Score",
+        "endpoint_url": "https://apartments-com.p.rapidapi.com/walkscore",
+        "file_name": "apartments_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "Apartments.com",
+        "toolbench_relative_path": "Search/apartments_com.json"
+      },
+      "toolbench_tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+      "toolbench_tool_name": "Apartments.com",
+      "url": "https://apartments-com.p.rapidapi.com/walkscore",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.451,
+        "tp_kbps": 8.869,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 27
+  },
+  {
+    "api_id": "target_com_store_product_reviews_locations_data_target_store_location_search",
+    "candidate_id": "C31",
+    "mode_rank": 34,
+    "llm_reported_rank": 34,
+    "retrieved_rank": 24,
+    "rag_score": 0.4806656837463379,
+    "reason": "",
+    "service": {
+      "_file": "target_com_store_product_reviews_locations_data.json",
+      "_tool": "target_com_store_product_reviews_locations_data",
+      "api_id": "target_com_store_product_reviews_locations_data_target_store_location_search",
+      "category": "eCommerce",
+      "description": "The endpoint returns Target Store locations details\n\n- Only US **zip** codes are accepted\n- **radius** is in miles",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "100",
+            "description": "Radius of search\n\nRadius is in **miles**\n\nFor example: 100",
+            "name": "radius",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "11203",
+            "description": "US 5 digit zip code\n\nFor example: 11203",
+            "name": "zip",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Target Store Location Search",
+      "tool_description": "Real-time **Target.Com** data API. Get product, reviews and location details. Easy to use and reliable I'm on Telegram https://t.me/logicBuilder News and announcements Telegram Channel https://t.me/logicApi",
+      "tool_name": "Target.Com(Store) Product/Reviews/Locations Data",
+      "toolbench_endpoint_description": "The endpoint returns Target Store locations details\n\n- Only US **zip** codes are accepted\n- **radius** is in miles",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "The endpoint returns Target Store locations details\n\n- Only US **zip** codes are accepted\n- **radius** is in miles",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Target Store Location Search",
+        "endpoint_url": "https://target-com-store-product-reviews-locations-data.p.rapidapi.com/location/search",
+        "file_name": "target_com_store_product_reviews_locations_data.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Real-time **Target.Com** data API. Get product, reviews and location details. Easy to use and reliable\nI'm on Telegram https://t.me/logicBuilder\n News and announcements Telegram Channel https://t.me/logicApi",
+        "tool_file_found": true,
+        "tool_name": "Target.Com(Store) Product/Reviews/Locations Data",
+        "toolbench_relative_path": "eCommerce/target_com_store_product_reviews_locations_data.json"
+      },
+      "toolbench_tool_description": "Real-time **Target.Com** data API. Get product, reviews and location details. Easy to use and reliable\nI'm on Telegram https://t.me/logicBuilder\n News and announcements Telegram Channel https://t.me/logicApi",
+      "toolbench_tool_name": "Target.Com(Store) Product/Reviews/Locations Data",
+      "url": "https://target-com-store-product-reviews-locations-data.p.rapidapi.com/location/search",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.6255,
+        "tp_kbps": 38.338,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.612,
+    "qos_llm_rank": 30
+  },
+  {
+    "api_id": "priceline_com_hotel_city_nearby",
+    "candidate_id": "C21",
+    "mode_rank": 35,
+    "llm_reported_rank": 35,
+    "retrieved_rank": 36,
+    "rag_score": 0.46405845880508423,
+    "reason": "",
+    "service": {
+      "_file": "priceline_com.json",
+      "_tool": "priceline_com",
+      "api_id": "priceline_com_hotel_city_nearby",
+      "category": "Travel",
+      "description": "Search city id by geolocation",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "100",
+            "description": "",
+            "name": "radius",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "-122.40057774847898",
+            "description": "",
+            "name": "longitude",
+            "type": "string"
+          },
+          {
+            "default": "37.788719679657554",
+            "description": "",
+            "name": "latitude",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "hotel city nearby",
+      "tool_description": "Real time Priceline API: Car Rentals, Hotels, Flights.",
+      "tool_name": "Priceline.com",
+      "toolbench_endpoint_description": "Search city id by geolocation",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "Search city id by geolocation",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "hotel city nearby",
+        "endpoint_url": "https://priceline-com.p.rapidapi.com/hotels/city/nearby/{latitude}/{longitude}",
+        "file_name": "priceline_com.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Real time Priceline API: Car Rentals, Hotels, Flights.",
+        "tool_file_found": true,
+        "tool_name": "Priceline.com",
+        "toolbench_relative_path": "Travel/priceline_com.json"
+      },
+      "toolbench_tool_description": "Real time Priceline API: Car Rentals, Hotels, Flights.",
+      "toolbench_tool_name": "Priceline.com",
+      "url": "https://priceline-com.p.rapidapi.com/hotels/city/nearby/{latitude}/{longitude}",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.587,
+        "tp_kbps": 5.1105,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.603,
+    "qos_llm_rank": 31
+  },
+  {
+    "api_id": "quick_geo_location_get_directions_coordinates_by_lat_lan",
+    "candidate_id": "C24",
+    "mode_rank": 36,
+    "llm_reported_rank": 36,
+    "retrieved_rank": 35,
+    "rag_score": 0.46523600816726685,
+    "reason": "",
+    "service": {
+      "_file": "quick_geo_location.json",
+      "_tool": "quick_geo_location",
+      "api_id": "quick_geo_location_get_directions_coordinates_by_lat_lan",
+      "category": "Location",
+      "description": "You may quickly get all the directions coordinates to the required destinations by using the Get Directions Coordinates By Lat, Lan. It returns an location directions, distance, time, steps and signs",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "If mode = car, then only this option is optional or else not required.",
+            "name": "toll_avoid",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "If mode = car, then only this option is optional or else not required.",
+            "name": "motor_way",
+            "type": "BOOLEAN"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "mode",
+            "type": "ENUM"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Get Directions Coordinates By Lat, Lan",
+      "tool_description": "We offer eight distinct QUICK GEO LOCATION APIs that provide location data for different uses. A Simple Search for Any Location Specific Location information from the API, including nation, city, latitude, and longitude in a JSON response.",
+      "tool_name": "Quick Geo Location",
+      "toolbench_endpoint_description": "You may quickly get all the directions coordinates to the required destinations by using the Get Directions Coordinates By Lat, Lan. It returns an location directions, distance, time, steps and signs",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "You may quickly get all the directions coordinates to the required destinations by using the Get Directions Coordinates By Lat, Lan. It returns an location directions, distance, time, steps and signs",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Get Directions Coordinates By Lat, Lan",
+        "endpoint_url": "https://quick-geo-location.p.rapidapi.com/directions/coordinates",
+        "file_name": "quick_geo_location.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "We offer eight distinct QUICK GEO LOCATION APIs that provide location data for different uses. A Simple Search for Any Location Specific Location information from the API, including nation, city, latitude, and longitude in a JSON response.",
+        "tool_file_found": true,
+        "tool_name": "Quick Geo Location",
+        "toolbench_relative_path": "Location/quick_geo_location.json"
+      },
+      "toolbench_tool_description": "We offer eight distinct QUICK GEO LOCATION APIs that provide location data for different uses. A Simple Search for Any Location Specific Location information from the API, including nation, city, latitude, and longitude in a JSON response.",
+      "toolbench_tool_name": "Quick Geo Location",
+      "url": "https://quick-geo-location.p.rapidapi.com/directions/coordinates",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.796,
+        "tp_kbps": 2.512,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.577,
+    "qos_llm_rank": 33
+  },
+  {
+    "api_id": "reinspitpor_default",
+    "candidate_id": "C27",
+    "mode_rank": 37,
+    "llm_reported_rank": 37,
+    "retrieved_rank": 30,
+    "rag_score": 0.4698323607444763,
+    "reason": "",
+    "service": {
+      "_file": "reinspitpor.json",
+      "_tool": "reinspitpor",
+      "api_id": "reinspitpor_default",
+      "category": "Search",
+      "description": "default endpoint",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "default",
+      "tool_description": "API use to find house for rent/buy in Italy, Spain, Portugal",
+      "tool_name": "ReinSPITPOR",
+      "toolbench_endpoint_description": "default endpoint",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "default endpoint",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "default",
+        "endpoint_url": "https://reinspitpor.p.rapidapi.com/",
+        "file_name": "reinspitpor.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API use to find house for rent/buy in Italy, Spain, Portugal",
+        "tool_file_found": true,
+        "tool_name": "ReinSPITPOR",
+        "toolbench_relative_path": "Search/reinspitpor.json"
+      },
+      "toolbench_tool_description": "API use to find house for rent/buy in Italy, Spain, Portugal",
+      "toolbench_tool_name": "ReinSPITPOR",
+      "url": "https://reinspitpor.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.83,
+        "tp_kbps": 3.614,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.573,
+    "qos_llm_rank": 36
+  },
+  {
+    "api_id": "recipe_finder_diet_ingredient",
+    "candidate_id": "C26",
+    "mode_rank": 38,
+    "llm_reported_rank": 38,
+    "retrieved_rank": 40,
+    "rag_score": 0.45795947313308716,
+    "reason": "",
+    "service": {
+      "_file": "recipe_finder.json",
+      "_tool": "recipe_finder",
+      "api_id": "recipe_finder_diet_ingredient",
+      "category": "Food",
+      "description": "This API endpoint allows users to retrieve a random diet recipe that contains a specific ingredient. Users can make a GET request to the endpoint with the name of the ingredient as a query parameter, and the API will return a JSON response with the given recipe, including the name, list of ingredients, and instructions.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "ham",
+            "description": "",
+            "name": "ingredient",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "diet/ingredient",
+      "tool_description": "This recipe API allows users to search for recipes by ingredient. It returns a JSON response with the matching recipes, including the name, list of ingredients, and instructions.",
+      "tool_name": "Recipe Finder",
+      "toolbench_endpoint_description": "This API endpoint allows users to retrieve a random diet recipe that contains a specific ingredient. Users can make a GET request to the endpoint with the name of the ingredient as a query parameter, and the API will return a JSON response with the given recipe, including the name, list of ingredients, and instructions.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "This API endpoint allows users to retrieve a random diet recipe that contains a specific ingredient. Users can make a GET request to the endpoint with the name of the ingredient as a query parameter, and the API will return a JSON response with the given recipe, including the name, list of ingredients, and instructions.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "diet/ingredient",
+        "endpoint_url": "https://recipe-finder3.p.rapidapi.com/diet/recipes",
+        "file_name": "recipe_finder.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This recipe API allows users to search for recipes by ingredient. It returns a JSON response with the matching recipes, including the name, list of ingredients, and instructions.",
+        "tool_file_found": true,
+        "tool_name": "Recipe Finder",
+        "toolbench_relative_path": "Food/recipe_finder.json"
+      },
+      "toolbench_tool_description": "This recipe API allows users to search for recipes by ingredient. It returns a JSON response with the matching recipes, including the name, list of ingredients, and instructions.",
+      "toolbench_tool_name": "Recipe Finder",
+      "url": "https://recipe-finder3.p.rapidapi.com/diet/recipes",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 1.107,
+        "tp_kbps": 1.806,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.535,
+    "qos_llm_rank": 37
+  },
+  {
+    "api_id": "airbnb_v2_search_property",
+    "candidate_id": "C05",
+    "mode_rank": 39,
+    "llm_reported_rank": 39,
+    "retrieved_rank": 7,
+    "rag_score": 0.513554573059082,
+    "reason": "",
+    "service": {
+      "_file": "airbnb_v2.json",
+      "_tool": "airbnb_v2",
+      "api_id": "airbnb_v2_search_property",
+      "category": "Travel",
+      "description": "-",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "USD",
+            "description": "Default currency is **USD**. To get other available currency please call **Get Currency API**",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "10",
+            "description": "Total number of record per api call.**Max limit is 40**",
+            "name": "totalRecords",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Please pass offset value if you want to exclude number of record from top/starting.",
+            "name": "offset",
+            "type": "STRING"
+          },
+          {
+            "default": "TAB_8225",
+            "description": "Default category is all\nTo get other available category please call **Get Category API**",
+            "name": "category",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Number of infants (under 2 years)",
+            "name": "infants",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Number of children (2-12 years)",
+            "name": "children",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Minimum Beds",
+            "name": "minBeds",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Maximum Price",
+            "name": "priceMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Check-in date",
+            "name": "checkin",
+            "type": "DATE (YYYY-MM-DD)"
+          },
+          {
+            "default": "",
+            "description": "Minimum Bathrooms",
+            "name": "minBathrooms",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Minimum Price",
+            "name": "priceMin",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Number of pets",
+            "name": "pets",
+            "type": "NUMBER"
+          },
+          {
+            "default": "1",
+            "description": "Number of adult guests (13 years and over). Default is set to 1.",
+            "name": "adults",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Property Type is optional and if not passed then default is all.\nYou are retrieve available property_type from **Get Property Type Filter**",
+            "name": "property_type",
+            "type": "ARRAY"
+          },
+          {
+            "default": "",
+            "description": "Minimum Bedrooms",
+            "name": "minBedrooms",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Check-out date",
+            "name": "checkout",
+            "type": "DATE (YYYY-MM-DD)"
+          },
+          {
+            "default": "",
+            "description": "Host Languages is optional and if not passed then default is all.\nYou are retrieve available host_languages from **Get Host Language Filters**",
+            "name": "host_languages",
+            "type": "ARRAY"
+          },
+          {
+            "default": "",
+            "description": "Amenities is optional and if not passed then default is all.\nYou are retrieve available amenities from **Get Amenities Filters**",
+            "name": "amenities",
+            "type": "ARRAY"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "instant_book",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "self_check_in",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "super_host",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "Type of Place is optional and if not passed then default is all.\nYou are retrieve available type_of_place from **Get Type of Place Filter**",
+            "name": "type_of_place",
+            "type": "ARRAY"
+          },
+          {
+            "default": "",
+            "description": "Top Tier Stays is optional and if not passed then default is all.\nYou are retrieve available top_tier_stays from **Get Top Tier Stays Filter**",
+            "name": "top_tier_stays",
+            "type": "ARRAY"
+          },
+          {
+            "default": "",
+            "description": "Enter **LanguageId** if you want a response in the requested language. To get **LanguageId** call **getLanguages** API and pass in the Id.",
+            "name": "languageId",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Search Property",
+      "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "tool_name": "Airbnb_v2",
+      "toolbench_endpoint_description": "-",
+      "toolbench_enrichment": {
+        "category": "Travel",
+        "endpoint_description": "-",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search Property",
+        "endpoint_url": "https://airbnb19.p.rapidapi.com/api/v1/searchProperty",
+        "file_name": "airbnb_v2.json",
+        "optional_parameter_count": 24,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+        "tool_file_found": true,
+        "tool_name": "Airbnb_v2",
+        "toolbench_relative_path": "Travel/airbnb_v2.json"
+      },
+      "toolbench_tool_description": "Airbnb API allows users to search accommodations by location, place name, and GEO coordinates to find a place to rent. This API has all needed by any developer to create a new application with some extended features.",
+      "toolbench_tool_name": "Airbnb_v2",
+      "url": "https://airbnb19.p.rapidapi.com/api/v1/searchProperty",
+      "qos": {
+        "availability": 0.9794,
+        "rt_s": 1.0995,
+        "tp_kbps": 1.8185,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.529,
+    "qos_llm_rank": 38
+  },
+  {
+    "api_id": "worldwide_hotels_reviews",
+    "candidate_id": "C38",
+    "mode_rank": 40,
+    "llm_reported_rank": 40,
+    "retrieved_rank": 23,
+    "rag_score": 0.4824400246143341,
+    "reason": "",
+    "service": {
+      "_file": "worldwide_hotels.json",
+      "_tool": "worldwide_hotels",
+      "api_id": "worldwide_hotels_reviews",
+      "category": "Search",
+      "description": "Get reviews of hotel",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "",
+            "name": "offset",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "10301220",
+            "description": "",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "en_US",
+            "description": "",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "",
+            "name": "currency",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "The Worldwide Hotels API is a powerful and versatile tool that provides developers with seamless access to an extensive database of hotels from around the globe. With easy-to-use endpoints, this API enables users to retrieve detailed information about hotels, including their locations, amenities, ro",
+      "tool_name": "Worldwide Hotels",
+      "toolbench_endpoint_description": "Get reviews of hotel",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Get reviews of hotel",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://worldwide-hotels.p.rapidapi.com/reviews",
+        "file_name": "worldwide_hotels.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Worldwide Hotels API is a powerful and versatile tool that provides developers with seamless access to an extensive database of hotels from around the globe. With easy-to-use endpoints, this API enables users to retrieve detailed information about hotels, including their locations, amenities, room availability, pricing, and more. Whether you're building travel applications, booking platforms, or simply enhancing your services with hotel data, the Worldwide Hotels API offers a comprehensiv...",
+        "tool_file_found": true,
+        "tool_name": "Worldwide Hotels",
+        "toolbench_relative_path": "Search/worldwide_hotels.json"
+      },
+      "toolbench_tool_description": "The Worldwide Hotels API is a powerful and versatile tool that provides developers with seamless access to an extensive database of hotels from around the globe. With easy-to-use endpoints, this API enables users to retrieve detailed information about hotels, including their locations, amenities, room availability, pricing, and more. Whether you're building travel applications, booking platforms, or simply enhancing your services with hotel data, the Worldwide Hotels API offers a comprehensiv...",
+      "toolbench_tool_name": "Worldwide Hotels",
+      "url": "https://worldwide-hotels.p.rapidapi.com/reviews",
+      "qos": {
+        "availability": 0.0059,
+        "rt_s": 1.2690000000000001,
+        "tp_kbps": 4.94,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.182,
+    "qos_llm_rank": 40
+  }
+]

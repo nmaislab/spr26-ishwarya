@@ -434,6 +434,13 @@ RUN_DIR="results/logs/DEV_RUN/fireworks_gpt-oss-120b"
 Recommended order:
 
 ```bash
+python scripts/run_all_postprocessing.py "$RUN_DIR"
+```
+
+The wrapper above runs the full post-processing sequence. To run each step
+manually:
+
+```bash
 python scripts/consolidate_composition_results.py "$RUN_DIR"
 
 python scripts/run_ranking_eval.py "$RUN_DIR"

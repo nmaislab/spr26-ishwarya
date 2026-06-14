@@ -1,0 +1,162 @@
+{
+  "domain_checker_with_ai_domain_validation": {
+    "qos_llm_score": 0.995,
+    "qos_llm_rank": 1
+  },
+  "domain_information_domain_information": {
+    "qos_llm_score": 0.87,
+    "qos_llm_rank": 2
+  },
+  "import_export_verification_import_export_verification": {
+    "qos_llm_score": 0.854,
+    "qos_llm_rank": 3
+  },
+  "whatsapp_number_validators_bulk_validation": {
+    "qos_llm_score": 0.704,
+    "qos_llm_rank": 4
+  },
+  "checky_verify_phone_number_verify_batch": {
+    "qos_llm_score": 0.687,
+    "qos_llm_rank": 5
+  },
+  "ip_address_location_lookup_ip": {
+    "qos_llm_score": 0.687,
+    "qos_llm_rank": 6
+  },
+  "venue_validatecluster": {
+    "qos_llm_score": 0.684,
+    "qos_llm_rank": 7
+  },
+  "appraiser_validatelicense": {
+    "qos_llm_score": 0.683,
+    "qos_llm_rank": 8
+  },
+  "email_validator_validate_email": {
+    "qos_llm_score": 0.682,
+    "qos_llm_rank": 9
+  },
+  "validate_phone_by_api_ninjas_v1_validatephone": {
+    "qos_llm_score": 0.681,
+    "qos_llm_rank": 10
+  },
+  "anything_domain_common_domains": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 11
+  },
+  "testing_v3_validateemail": {
+    "qos_llm_score": 0.674,
+    "qos_llm_rank": 12
+  },
+  "mailboxvalidator_mailboxvalidator_api": {
+    "qos_llm_score": 0.672,
+    "qos_llm_rank": 13
+  },
+  "certificate_transparency_scan_certificate_transparency_scan": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 14
+  },
+  "email_api_check_free_email_providers-2": {
+    "qos_llm_score": 0.666,
+    "qos_llm_rank": 15
+  },
+  "minecraft_checkdomaindns": {
+    "qos_llm_score": 0.665,
+    "qos_llm_rank": 16
+  },
+  "debounce_email_validation_email": {
+    "qos_llm_score": 0.664,
+    "qos_llm_rank": 17
+  },
+  "phonenumber_validator_health": {
+    "qos_llm_score": 0.663,
+    "qos_llm_rank": 18
+  },
+  "check_disposable_email_whois": {
+    "qos_llm_score": 0.662,
+    "qos_llm_rank": 19
+  },
+  "validect_email_verification_v1_verify": {
+    "qos_llm_score": 0.662,
+    "qos_llm_rank": 20
+  },
+  "useful_business_1001_functions_verifyadomain": {
+    "qos_llm_score": 0.661,
+    "qos_llm_rank": 21
+  },
+  "emalidate_validateemailaddresswithtoken": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 22
+  },
+  "mailboxvalidator_com_disposable_email": {
+    "qos_llm_score": 0.659,
+    "qos_llm_rank": 23
+  },
+  "pk_domain_information_lookup_pk_domain": {
+    "qos_llm_score": 0.658,
+    "qos_llm_rank": 24
+  },
+  "phonenumbervalidate_validate": {
+    "qos_llm_score": 0.656,
+    "qos_llm_rank": 25
+  },
+  "phonevalication_api_endpoint_1": {
+    "qos_llm_score": 0.653,
+    "qos_llm_rank": 26
+  },
+  "d7_number_validator_validate_number": {
+    "qos_llm_score": 0.652,
+    "qos_llm_rank": 27
+  },
+  "email_validation_and_verification_email_validation_api": {
+    "qos_llm_score": 0.646,
+    "qos_llm_rank": 28
+  },
+  "dns_lookup_api_soa_domain": {
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 29
+  },
+  "geofencing_polygon": {
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 30
+  },
+  "ssl_certificate_issuer": {
+    "qos_llm_score": 0.644,
+    "qos_llm_rank": 31
+  },
+  "disposable_email_detect_domain": {
+    "qos_llm_score": 0.636,
+    "qos_llm_rank": 32
+  },
+  "bulk_domain_check_domain_check": {
+    "qos_llm_score": 0.635,
+    "qos_llm_rank": 33
+  },
+  "vibrant_dns_get_dns_records": {
+    "qos_llm_score": 0.564,
+    "qos_llm_rank": 34
+  },
+  "email_existence_validator_homepage_about_the_api": {
+    "qos_llm_score": 0.527,
+    "qos_llm_rank": 35
+  },
+  "address_validation_nl_api_v1_addresses-2": {
+    "qos_llm_score": 0.343,
+    "qos_llm_rank": 36
+  },
+  "import_export_verification_import_export_verification-2": {
+    "qos_llm_score": 0.341,
+    "qos_llm_rank": 37
+  },
+  "whois_lookup_service_whois_domain_lookup": {
+    "qos_llm_score": 0.329,
+    "qos_llm_rank": 38
+  },
+  "anything_domain_prefix_domains-2": {
+    "qos_llm_score": 0.273,
+    "qos_llm_rank": 39
+  },
+  "phone_verification_login_to_accuratecheckr": {
+    "qos_llm_score": 0.131,
+    "qos_llm_rank": 40
+  }
+}

@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C01","label":0,"reason":"provides postal address validation, not domain"},
+{"candidate_id":"C02","label":0,"reason":"generates domains, does not validate"},
+{"candidate_id":"C03","label":0,"reason":"generates prefix domains, not validation"},
+{"candidate_id":"C04","label":0,"reason":"validates appraiser licenses, unrelated"},
+{"candidate_id":"C05","label":1,"reason":"checks domain availability, validates existence"},
+{"candidate_id":"C06","label":0,"reason":"scans certificates, not domain validation"},
+{"candidate_id":"C07","label":1,"reason":"performs WHOIS lookup, can verify domain"},
+{"candidate_id":"C08","label":0,"reason":"verifies phone numbers, unrelated"},
+{"candidate_id":"C09","label":0,"reason":"retrieves phone number details, unrelated"},
+{"candidate_id":"C10","label":0,"reason":"validates emails, not domains"},
+{"candidate_id":"C11","label":0,"reason":"detects disposable domains, not validation"},
+{"candidate_id":"C12","label":1,"reason":"performs DNS lookup, validates domain"},
+{"candidate_id":"C13","label":1,"reason":"validates domain registration and IP"},
+{"candidate_id":"C14","label":1,"reason":"returns domain info including availability"},
+{"candidate_id":"C15","label":0,"reason":"checks email provider type, unrelated"},
+{"candidate_id":"C16","label":0,"reason":"displays API info, unrelated"},
+{"candidate_id":"C17","label":0,"reason":"email validation only"},
+{"candidate_id":"C18","label":0,"reason":"email validity check"},
+{"candidate_id":"C19","label":0,"reason":"email syntax validation"},
+{"candidate_id":"C20","label":0,"reason":"geofencing coordinates, unrelated"}
+]
+}

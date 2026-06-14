@@ -1,0 +1,2846 @@
+[
+  {
+    "api_id": "restaurants_reviews",
+    "candidate_id": "C24",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 1,
+    "rag_score": 0.6326276063919067,
+    "reason": "",
+    "service": {
+      "_file": "restaurants.json",
+      "_tool": "restaurants",
+      "api_id": "restaurants_reviews",
+      "category": "Search",
+      "description": "Restaurant Reviews",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "",
+            "name": "offset",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "en_US",
+            "description": "",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "15333482",
+            "description": "",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "",
+            "name": "currency",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, ",
+      "tool_name": "Restaurants",
+      "toolbench_endpoint_description": "Restaurant Reviews",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Restaurant Reviews",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://restaurants222.p.rapidapi.com/reviews",
+        "file_name": "restaurants.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+        "tool_file_found": true,
+        "tool_name": "Restaurants",
+        "toolbench_relative_path": "Search/restaurants.json"
+      },
+      "toolbench_tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+      "toolbench_tool_name": "Restaurants",
+      "url": "https://restaurants222.p.rapidapi.com/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "yelpapi_getbusinesses",
+    "candidate_id": "C35",
+    "mode_rank": 2,
+    "llm_reported_rank": 2,
+    "retrieved_rank": 20,
+    "rag_score": 0.47729575634002686,
+    "reason": "",
+    "service": {
+      "_file": "yelpapi.json",
+      "_tool": "yelpapi",
+      "api_id": "yelpapi_getbusinesses",
+      "category": "Food",
+      "description": "This endpoint returns up to 1000 businesses based on the provided search criteria. It has some basic information about the business.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Specify the locale to return the business information in.",
+            "name": "locale",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "An integer represending the Unix time in the same timezone of the search location. If specified, it will return business open at the given time. Notice that open_at and open_now cannot be used together.",
+            "name": "openAt",
+            "type": "DATEPICKER"
+          },
+          {
+            "default": "",
+            "description": "Required if either coordinate is not provided. Specifies the combination of \"address, neighborhood, city, state or zip, optional country\" to be used when searching for businesses.",
+            "name": "location",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Pricing levels to filter the search result with: 1 = $, 2 = $$, 3 = $$$, 4 = $$$$. The price filter can be a list of comma delimited pricing levels. For example, \"1, 2, 3\" will filter the results to show the ones that are $, $$, or $$$.",
+            "name": "price",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Search term (e.g. \"food\", \"restaurants\"). If term isn’t included we search everything. The term keyword also accepts business names such as \"Starbucks\".",
+            "name": "term",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Required if location is not provided. coordinate of the location you want to search near by coma separated.",
+            "name": "coordinate",
+            "type": "MAP"
+          },
+          {
+            "default": "",
+            "description": "Categories to filter the search results with. See the list of supported categories. The category filter can be a list of comma delimited categories. For example, \"bars,french\" will filter by Bars and French. The category identifier should be used (for example \"discgolf\", not \"Disc Golf\").",
+            "name": "categories",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Sort the results by one of the these modes: best_match, rating, review_count or distance. By default it's best_match. The rating sort is not strictly sorted by the rating value, but by an adjusted rating value that takes into account the number of ratings, similar to a bayesian average. This is so a business with 1 rating of 5 stars doesn’t immediately jump to the top.",
+            "name": "sortBy",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Search radius in meters. If the value is too large, a AREA_TOO_LARGE error may be returned. The max value is 40000 meters (25 miles).",
+            "name": "radius",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Search term (e.g. \"food\", \"restaurants\"). If term isn’t included we search everything. The term keyword also accepts business names such as \"Starbucks\".",
+            "name": "term",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Default to false. When set to true, only return the businesses open now. Notice that open_at and open_now cannot be used together.",
+            "name": "openNow",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "An integer represending the Unix time in the same timezone of the search location. If specified, it will return business open at the given time. Notice that open_at and open_now cannot be used together.",
+            "name": "openAt",
+            "type": "DATEPICKER"
+          },
+          {
+            "default": "",
+            "description": "Number of business results to return. By default, it will return 20. Maximum is 50.",
+            "name": "limit",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Offset the list of returned business results by this amount.",
+            "name": "offset",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Default to false. When set to true, only return the businesses open now. Notice that open_at and open_now cannot be used together.",
+            "name": "openNow",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Additional filters to restrict search results. Possible values are: hot_and_new, request_a_quote, waitlist_reservation, cashback, deals, gender_neutral_restrooms",
+            "name": "attributes",
+            "type": "LIST"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Your private API key.",
+            "name": "accessToken",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "getBusinesses",
+      "tool_description": "Access local businesses data from the Yelp database.",
+      "tool_name": "YelpAPI",
+      "toolbench_endpoint_description": "This endpoint returns up to 1000 businesses based on the provided search criteria. It has some basic information about the business.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "This endpoint returns up to 1000 businesses based on the provided search criteria. It has some basic information about the business.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "getBusinesses",
+        "endpoint_url": "https://YelpAPIserg-osipchukV1.p.rapidapi.com/getBusinesses",
+        "file_name": "yelpapi.json",
+        "optional_parameter_count": 16,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Access local businesses data from the Yelp database.",
+        "tool_file_found": true,
+        "tool_name": "YelpAPI",
+        "toolbench_relative_path": "Food/yelpapi.json"
+      },
+      "toolbench_tool_description": "Access local businesses data from the Yelp database.",
+      "toolbench_tool_name": "YelpAPI",
+      "url": "https://YelpAPIserg-osipchukV1.p.rapidapi.com/getBusinesses"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "yelpapi_getbusinessesbytransaction",
+    "candidate_id": "C36",
+    "mode_rank": 3,
+    "llm_reported_rank": 3,
+    "retrieved_rank": 23,
+    "rag_score": 0.47578221559524536,
+    "reason": "",
+    "service": {
+      "_file": "yelpapi.json",
+      "_tool": "yelpapi",
+      "api_id": "yelpapi_getbusinessesbytransaction",
+      "category": "Food",
+      "description": "This endpoint returns a list of businesses which support certain transactions.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Required if location is not provided. coordinate of the location you want to search near by coma separated.",
+            "name": "coordinate",
+            "type": "MAP"
+          },
+          {
+            "default": "",
+            "description": "Required when coordinate aren't provided. Address of the location you want to deliver to.",
+            "name": "location",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Valid values for transaction_type are: delivery.",
+            "name": "transactionType",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Your private API key.",
+            "name": "accessToken",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "getBusinessesByTransaction",
+      "tool_description": "Access local businesses data from the Yelp database.",
+      "tool_name": "YelpAPI",
+      "toolbench_endpoint_description": "This endpoint returns a list of businesses which support certain transactions.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "This endpoint returns a list of businesses which support certain transactions.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "getBusinessesByTransaction",
+        "endpoint_url": "https://YelpAPIserg-osipchukV1.p.rapidapi.com/getBusinessesByTransaction",
+        "file_name": "yelpapi.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Access local businesses data from the Yelp database.",
+        "tool_file_found": true,
+        "tool_name": "YelpAPI",
+        "toolbench_relative_path": "Food/yelpapi.json"
+      },
+      "toolbench_tool_description": "Access local businesses data from the Yelp database.",
+      "toolbench_tool_name": "YelpAPI",
+      "url": "https://YelpAPIserg-osipchukV1.p.rapidapi.com/getBusinessesByTransaction"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+    "candidate_id": "C17",
+    "mode_rank": 4,
+    "llm_reported_rank": 4,
+    "retrieved_rank": 4,
+    "rag_score": 0.5383996963500977,
+    "reason": "",
+    "service": {
+      "_file": "fast_food_restaurants_usa_top_50_chains.json",
+      "_tool": "fast_food_restaurants_usa_top_50_chains",
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+      "category": "Food",
+      "description": "**10 results per request. Use page number for Pagination.**",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "AZ",
+            "description": "",
+            "name": "state",
+            "type": "string"
+          },
+          {
+            "default": "Subway",
+            "description": "",
+            "name": "restaurantChainName",
+            "type": "string"
+          },
+          {
+            "default": "0",
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "GET all Restaurants by {Chain} & {State}",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence. Sign up now to get access!",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "toolbench_endpoint_description": "**10 results per request. Use page number for Pagination.**",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "**10 results per request. Use page number for Pagination.**",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET all Restaurants by {Chain} & {State}",
+        "endpoint_url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/{restaurantchainname}/location/state/{state}/{page}",
+        "file_name": "fast_food_restaurants_usa_top_50_chains.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+        "tool_file_found": true,
+        "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+        "toolbench_relative_path": "Food/fast_food_restaurants_usa_top_50_chains.json"
+      },
+      "toolbench_tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+      "toolbench_tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/{restaurantchainname}/location/state/{state}/{page}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+    "candidate_id": "C16",
+    "mode_rank": 5,
+    "llm_reported_rank": 5,
+    "retrieved_rank": 5,
+    "rag_score": 0.5091941356658936,
+    "reason": "",
+    "service": {
+      "_file": "fast_food_restaurants_usa_top_50_chains.json",
+      "_tool": "fast_food_restaurants_usa_top_50_chains",
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+      "category": "Food",
+      "description": "GET all City names",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GET all {City} names",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence. Sign up now to get access!",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "toolbench_endpoint_description": "GET all City names",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "GET all City names",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET all {City} names",
+        "endpoint_url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/all-city",
+        "file_name": "fast_food_restaurants_usa_top_50_chains.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+        "tool_file_found": true,
+        "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+        "toolbench_relative_path": "Food/fast_food_restaurants_usa_top_50_chains.json"
+      },
+      "toolbench_tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+      "toolbench_tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/all-city"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "amazon_data_scapper_get_product_reviews",
+    "candidate_id": "C01",
+    "mode_rank": 6,
+    "llm_reported_rank": 6,
+    "retrieved_rank": 26,
+    "rag_score": 0.4721417725086212,
+    "reason": "",
+    "service": {
+      "_file": "amazon_data_scapper.json",
+      "_tool": "amazon_data_scapper",
+      "api_id": "amazon_data_scapper_get_product_reviews",
+      "category": "Commerce",
+      "description": "Get the reviews of specific product using Product ID",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "835aa7a04fec5bfa30759801849905bb",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          },
+          {
+            "default": "B09JR8TX74",
+            "description": "",
+            "name": "productId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Product Reviews",
+      "tool_description": "Amazon Data Scapper is easiest way to get the product details from Amazon.in",
+      "tool_name": "Amazon Data Scapper",
+      "toolbench_endpoint_description": "Get the reviews of specific product using Product ID",
+      "toolbench_enrichment": {
+        "category": "Commerce",
+        "endpoint_description": "Get the reviews of specific product using Product ID",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Product Reviews",
+        "endpoint_url": "https://amazon-data-scapper.p.rapidapi.com/products/{productid}/reviews",
+        "file_name": "amazon_data_scapper.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Amazon Data Scapper is easiest way to get the product details from Amazon.in",
+        "tool_file_found": true,
+        "tool_name": "Amazon Data Scapper",
+        "toolbench_relative_path": "Commerce/amazon_data_scapper.json"
+      },
+      "toolbench_tool_description": "Amazon Data Scapper is easiest way to get the product details from Amazon.in",
+      "toolbench_tool_name": "Amazon Data Scapper",
+      "url": "https://amazon-data-scapper.p.rapidapi.com/products/{productid}/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "amazon_data_scraper_by_kgaur_get_amazon_product_reviews",
+    "candidate_id": "C02",
+    "mode_rank": 7,
+    "llm_reported_rank": 7,
+    "retrieved_rank": 3,
+    "rag_score": 0.5413727760314941,
+    "reason": "",
+    "service": {
+      "_file": "amazon_data_scraper_by_kgaur.json",
+      "_tool": "amazon_data_scraper_by_kgaur",
+      "api_id": "amazon_data_scraper_by_kgaur_get_amazon_product_reviews",
+      "category": "eCommerce",
+      "description": "use this to get all the reviews of any specific amazon product",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "B08G1QVK9D",
+            "description": "",
+            "name": "productId",
+            "type": "string"
+          },
+          {
+            "default": "c7288858cd87861249a9dc3f229ff709",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Amazon Product Reviews",
+      "tool_description": "This is a minimal api to get product details, reviews and search results.",
+      "tool_name": "Amazon Data Scraper by kGaur",
+      "toolbench_endpoint_description": "use this to get all the reviews of any specific amazon product",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "use this to get all the reviews of any specific amazon product",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Amazon Product Reviews",
+        "endpoint_url": "https://amazon-data-scraper-by-kgaur.p.rapidapi.com/products/{productid}/reviews",
+        "file_name": "amazon_data_scraper_by_kgaur.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This is a minimal api to get product details, reviews and search results.",
+        "tool_file_found": true,
+        "tool_name": "Amazon Data Scraper by kGaur",
+        "toolbench_relative_path": "eCommerce/amazon_data_scraper_by_kgaur.json"
+      },
+      "toolbench_tool_description": "This is a minimal api to get product details, reviews and search results.",
+      "toolbench_tool_name": "Amazon Data Scraper by kGaur",
+      "url": "https://amazon-data-scraper-by-kgaur.p.rapidapi.com/products/{productid}/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "amazon_data_scraper_v2_get_product_s_reviews",
+    "candidate_id": "C03",
+    "mode_rank": 8,
+    "llm_reported_rank": 8,
+    "retrieved_rank": 7,
+    "rag_score": 0.4986279308795929,
+    "reason": "",
+    "service": {
+      "_file": "amazon_data_scraper_v2.json",
+      "_tool": "amazon_data_scraper_v2",
+      "api_id": "amazon_data_scraper_v2_get_product_s_reviews",
+      "category": "eCommerce",
+      "description": "Get product's reviews",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "B00K3OM3PS",
+            "description": "",
+            "name": "productId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get product's reviews",
+      "tool_description": "Amazon Data Scraper is the easiest way to get access to products, price, sales and reviews data from amazon in JSON format",
+      "tool_name": "Amazon Data Scraper _v2",
+      "toolbench_endpoint_description": "Get product's reviews",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "Get product's reviews",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get product's reviews",
+        "endpoint_url": "https://amazon-data-scraper126.p.rapidapi.com/products/B00K3OM3PS/reviews",
+        "file_name": "amazon_data_scraper_v2.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Amazon Data Scraper is the easiest way to get access to products, price, sales and reviews data from amazon in JSON format",
+        "tool_file_found": true,
+        "tool_name": "Amazon Data Scraper _v2",
+        "toolbench_relative_path": "eCommerce/amazon_data_scraper_v2.json"
+      },
+      "toolbench_tool_description": "Amazon Data Scraper is the easiest way to get access to products, price, sales and reviews data from amazon in JSON format",
+      "toolbench_tool_name": "Amazon Data Scraper _v2",
+      "url": "https://amazon-data-scraper126.p.rapidapi.com/products/B00K3OM3PS/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "amazon_india_web_scraper_get_product_reviews",
+    "candidate_id": "C04",
+    "mode_rank": 9,
+    "llm_reported_rank": 9,
+    "retrieved_rank": 30,
+    "rag_score": 0.46879029273986816,
+    "reason": "",
+    "service": {
+      "_file": "amazon_india_web_scraper.json",
+      "_tool": "amazon_india_web_scraper",
+      "api_id": "amazon_india_web_scraper_get_product_reviews",
+      "category": "Commerce",
+      "description": "Get Product Reviews",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "5e807588161dda4445ec22b79036a4c0",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          },
+          {
+            "default": "B08QBCJWFX",
+            "description": "",
+            "name": "productId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Product Reviews",
+      "tool_description": "Amazon India Web Scraper is an API through which your can get product details, product reviews and product offers. You can also get search results for a particular keyword.",
+      "tool_name": "Amazon India Web Scraper",
+      "toolbench_endpoint_description": "Get Product Reviews",
+      "toolbench_enrichment": {
+        "category": "Commerce",
+        "endpoint_description": "Get Product Reviews",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Product Reviews",
+        "endpoint_url": "https://amazon-india-web-scraper.p.rapidapi.com/products/{productid}/reviews",
+        "file_name": "amazon_india_web_scraper.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Amazon India Web Scraper is an API through which your can get product details, product reviews and product offers. You can also get search results for a particular keyword.",
+        "tool_file_found": true,
+        "tool_name": "Amazon India Web Scraper",
+        "toolbench_relative_path": "Commerce/amazon_india_web_scraper.json"
+      },
+      "toolbench_tool_description": "Amazon India Web Scraper is an API through which your can get product details, product reviews and product offers. You can also get search results for a particular keyword.",
+      "toolbench_tool_name": "Amazon India Web Scraper",
+      "url": "https://amazon-india-web-scraper.p.rapidapi.com/products/{productid}/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "amazon_product_data_get_search_data",
+    "candidate_id": "C05",
+    "mode_rank": 10,
+    "llm_reported_rank": 10,
+    "retrieved_rank": 6,
+    "rag_score": 0.4995798170566559,
+    "reason": "",
+    "service": {
+      "_file": "amazon_product_data.json",
+      "_tool": "amazon_product_data",
+      "api_id": "amazon_product_data_get_search_data",
+      "category": "Commerce",
+      "description": "This endpoint provides you with all the search data related to a specific keyword",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "4440b8699e69623753fdb10b6f3998e0",
+            "description": "",
+            "name": "apiKey",
+            "type": "STRING"
+          },
+          {
+            "default": "Macbook Air",
+            "description": "",
+            "name": "searchQuery",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Search Data",
+      "tool_description": "This API is a quick way to get data about any product on amazon, including its reviews, offers, and overall description. You can also get search results using this API.",
+      "tool_name": "Amazon Product Data",
+      "toolbench_endpoint_description": "This endpoint provides you with all the search data related to a specific keyword",
+      "toolbench_enrichment": {
+        "category": "Commerce",
+        "endpoint_description": "This endpoint provides you with all the search data related to a specific keyword",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Search Data",
+        "endpoint_url": "https://amazon-product-data4.p.rapidapi.com/search/{searchquery}",
+        "file_name": "amazon_product_data.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API is a quick way to get data about any product on amazon, including its reviews, offers, and overall description. You can also get search results using this API.",
+        "tool_file_found": true,
+        "tool_name": "Amazon Product Data",
+        "toolbench_relative_path": "Commerce/amazon_product_data.json"
+      },
+      "toolbench_tool_description": "This API is a quick way to get data about any product on amazon, including its reviews, offers, and overall description. You can also get search results using this API.",
+      "toolbench_tool_name": "Amazon Product Data",
+      "url": "https://amazon-product-data4.p.rapidapi.com/search/{searchquery}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "amazon_store_scraper_get_amazon_product_reviews",
+    "candidate_id": "C06",
+    "mode_rank": 11,
+    "llm_reported_rank": 11,
+    "retrieved_rank": 14,
+    "rag_score": 0.4891957640647888,
+    "reason": "",
+    "service": {
+      "_file": "amazon_store_scraper.json",
+      "_tool": "amazon_store_scraper",
+      "api_id": "amazon_store_scraper_get_amazon_product_reviews",
+      "category": "eCommerce",
+      "description": "Get Reviews on a particular product. These reviews range from 1-5 according to product rating",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "B082RGJD7Y",
+            "description": "",
+            "name": "productId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Amazon Product Reviews",
+      "tool_description": "An API to help get data from Amazon for research, analytics, and machine learning purposes. This API will include reviews, prices, etc. It will also be updated regularly to cater for a variety of needs you might need it for.",
+      "tool_name": "Amazon Store Scraper",
+      "toolbench_endpoint_description": "Get Reviews on a particular product. These reviews range from 1-5 according to product rating",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "Get Reviews on a particular product. These reviews range from 1-5 according to product rating",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Amazon Product Reviews",
+        "endpoint_url": "https://amazon-store-scraper.p.rapidapi.com/products/{productid}/reviews",
+        "file_name": "amazon_store_scraper.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API to help get data from Amazon for research, analytics, and machine learning purposes. This API will include reviews, prices, etc. It will also be updated regularly to cater for a variety of needs you might need it for.",
+        "tool_file_found": true,
+        "tool_name": "Amazon Store Scraper",
+        "toolbench_relative_path": "eCommerce/amazon_store_scraper.json"
+      },
+      "toolbench_tool_description": "An API to help get data from Amazon for research, analytics, and machine learning purposes. This API will include reviews, prices, etc. It will also be updated regularly to cater for a variety of needs you might need it for.",
+      "toolbench_tool_name": "Amazon Store Scraper",
+      "url": "https://amazon-store-scraper.p.rapidapi.com/products/{productid}/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "apartments_com_reviews",
+    "candidate_id": "C07",
+    "mode_rank": 12,
+    "llm_reported_rank": 12,
+    "retrieved_rank": 27,
+    "rag_score": 0.47184792160987854,
+    "reason": "",
+    "service": {
+      "_file": "apartments_com.json",
+      "_tool": "apartments_com",
+      "api_id": "apartments_com_reviews",
+      "category": "Search",
+      "description": "Retrieve listing reviews.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensi",
+      "tool_name": "Apartments.com",
+      "toolbench_endpoint_description": "Retrieve listing reviews.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Retrieve listing reviews.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://apartments-com.p.rapidapi.com/reviews",
+        "file_name": "apartments_com.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+        "tool_file_found": true,
+        "tool_name": "Apartments.com",
+        "toolbench_relative_path": "Search/apartments_com.json"
+      },
+      "toolbench_tool_description": "Apartments.com Private API. Our versatile API enables you to effortlessly search for apartments, access detailed apartment information, retrieve apartment reviews, discover similar apartments, access apartment media, and obtain walk scores for various locations. Experience the power of a comprehensive apartment-related solution at your fingertips!",
+      "toolbench_tool_name": "Apartments.com",
+      "url": "https://apartments-com.p.rapidapi.com/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "bbc_good_food_api_recipe_by_name_id",
+    "candidate_id": "C08",
+    "mode_rank": 13,
+    "llm_reported_rank": 13,
+    "retrieved_rank": 37,
+    "rag_score": 0.46539193391799927,
+    "reason": "",
+    "service": {
+      "_file": "bbc_good_food_api.json",
+      "_tool": "bbc_good_food_api",
+      "api_id": "bbc_good_food_api_recipe_by_name_id",
+      "category": "Food",
+      "description": "Get recipe information by recipe name id",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "samphire-crab-salad",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Recipe by name id",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes.. Note: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity s",
+      "tool_name": "BBC Good Food API",
+      "toolbench_endpoint_description": "Get recipe information by recipe name id",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get recipe information by recipe name id",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Recipe by name id",
+        "endpoint_url": "https://bbc-good-food-api.p.rapidapi.com/recipe/{id}",
+        "file_name": "bbc_good_food_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+        "tool_file_found": true,
+        "tool_name": "BBC Good Food API",
+        "toolbench_relative_path": "Food/bbc_good_food_api.json"
+      },
+      "toolbench_tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+      "toolbench_tool_name": "BBC Good Food API",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/recipe/{id}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "bbs_amazon_data_scraper_get_amazon_search_results",
+    "candidate_id": "C09",
+    "mode_rank": 14,
+    "llm_reported_rank": 14,
+    "retrieved_rank": 25,
+    "rag_score": 0.473177969455719,
+    "reason": "",
+    "service": {
+      "_file": "bbs_amazon_data_scraper.json",
+      "_tool": "bbs_amazon_data_scraper",
+      "api_id": "bbs_amazon_data_scraper_get_amazon_search_results",
+      "category": "eCommerce",
+      "description": "Get Amazon Search Results",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "79f7ca501ec3381ed5d9182c6d23c8c2",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          },
+          {
+            "default": "MacBook Air",
+            "description": "",
+            "name": "searchQuery",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Amazon Search Results",
+      "tool_description": "Amazon Data Scraper is the easiest way to get access to product, price, sales, rank and reviews data from Amazon in JSON format",
+      "tool_name": "BBS Amazon Data Scraper",
+      "toolbench_endpoint_description": "Get Amazon Search Results",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "Get Amazon Search Results",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Amazon Search Results",
+        "endpoint_url": "https://bbs-amazon-data-scraper.p.rapidapi.com/search/{searchquery}",
+        "file_name": "bbs_amazon_data_scraper.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Amazon Data Scraper is the easiest way to get access to product, price, sales, rank and reviews data from Amazon in JSON format",
+        "tool_file_found": true,
+        "tool_name": "BBS Amazon Data Scraper",
+        "toolbench_relative_path": "eCommerce/bbs_amazon_data_scraper.json"
+      },
+      "toolbench_tool_description": "Amazon Data Scraper is the easiest way to get access to product, price, sales, rank and reviews data from Amazon in JSON format",
+      "toolbench_tool_name": "BBS Amazon Data Scraper",
+      "url": "https://bbs-amazon-data-scraper.p.rapidapi.com/search/{searchquery}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "beer_lover_get_the_top_50_beers",
+    "candidate_id": "C10",
+    "mode_rank": 15,
+    "llm_reported_rank": 15,
+    "retrieved_rank": 21,
+    "rag_score": 0.47625023126602173,
+    "reason": "",
+    "service": {
+      "_file": "beer_lover.json",
+      "_tool": "beer_lover",
+      "api_id": "beer_lover_get_the_top_50_beers",
+      "category": "Food",
+      "description": "Retrieve the top 50 beers with the highest score",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GET the top 50 beers",
+      "tool_description": "Beer Lover API list more than 30,000 unique beers with diverse information (score, brewery, country, etc.)",
+      "tool_name": "Beer Lover",
+      "toolbench_endpoint_description": "Retrieve the top 50 beers with the highest score",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Retrieve the top 50 beers with the highest score",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET the top 50 beers",
+        "endpoint_url": "https://beer-lover.p.rapidapi.com/top50",
+        "file_name": "beer_lover.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Beer Lover API list more than 30,000 unique beers with diverse information (score, brewery, country, etc.)",
+        "tool_file_found": true,
+        "tool_name": "Beer Lover",
+        "toolbench_relative_path": "Food/beer_lover.json"
+      },
+      "toolbench_tool_description": "Beer Lover API list more than 30,000 unique beers with diverse information (score, brewery, country, etc.)",
+      "toolbench_tool_name": "Beer Lover",
+      "url": "https://beer-lover.p.rapidapi.com/top50"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "bespoke_diet_generator_get_user_s_information",
+    "candidate_id": "C11",
+    "mode_rank": 16,
+    "llm_reported_rank": 16,
+    "retrieved_rank": 28,
+    "rag_score": 0.46902549266815186,
+    "reason": "",
+    "service": {
+      "_file": "bespoke_diet_generator.json",
+      "_tool": "bespoke_diet_generator",
+      "api_id": "bespoke_diet_generator_get_user_s_information",
+      "category": "Food",
+      "description": "Retrieve the information of the user with the matching user ID.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Id of an existing user.",
+            "name": "userId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get user's information",
+      "tool_description": "Our API generates a complete meal plan that is specific to the nutrition counseling world. We create fully detailed, personalized meal plans with specific ingredients / quantities and little cooking skill required. For better flexibility, our ingredient replacement algorithm creates a template where",
+      "tool_name": "Bespoke Diet Generator",
+      "toolbench_endpoint_description": "Retrieve the information of the user with the matching user ID.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Retrieve the information of the user with the matching user ID.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get user's information",
+        "endpoint_url": "https://bespoke-diet-generator.p.rapidapi.com/user/{userId}",
+        "file_name": "bespoke_diet_generator.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our API generates a complete meal plan that is specific to the nutrition counseling world. We create fully detailed, personalized meal plans with specific ingredients / quantities and little cooking skill required. For better flexibility, our ingredient replacement algorithm creates a template where users can adapt their menu even more to fit their desires.",
+        "tool_file_found": true,
+        "tool_name": "Bespoke Diet Generator",
+        "toolbench_relative_path": "Food/bespoke_diet_generator.json"
+      },
+      "toolbench_tool_description": "Our API generates a complete meal plan that is specific to the nutrition counseling world. We create fully detailed, personalized meal plans with specific ingredients / quantities and little cooking skill required. For better flexibility, our ingredient replacement algorithm creates a template where users can adapt their menu even more to fit their desires.",
+      "toolbench_tool_name": "Bespoke Diet Generator",
+      "url": "https://bespoke-diet-generator.p.rapidapi.com/user/{userId}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "bigoven_getreviewreplies",
+    "candidate_id": "C12",
+    "mode_rank": 17,
+    "llm_reported_rank": 17,
+    "retrieved_rank": 9,
+    "rag_score": 0.49579066038131714,
+    "reason": "",
+    "service": {
+      "_file": "bigoven.json",
+      "_tool": "bigoven",
+      "api_id": "bigoven_getreviewreplies",
+      "category": "Food",
+      "description": "Get a paged list of replies for a given review.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "The page (int), starting with 1.",
+            "name": "pageNumber",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Results per page (int).",
+            "name": "resultsPerPage",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Password of user.",
+            "name": "bigovenPassword",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Your API Key.",
+            "name": "apiKey",
+            "type": "CREDENTIALS"
+          },
+          {
+            "default": "",
+            "description": "Review identifier.",
+            "name": "reviewId",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Username of user.",
+            "name": "bigovenUsername",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "getReviewReplies",
+      "tool_description": "Access 350,000+ recipes, reviews and nutrition facts.",
+      "tool_name": "BigOven",
+      "toolbench_endpoint_description": "Get a paged list of replies for a given review.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get a paged list of replies for a given review.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "getReviewReplies",
+        "endpoint_url": "https://BigOvenvolodimir-kudriachenkoV1.p.rapidapi.com/getReviewReplies",
+        "file_name": "bigoven.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 4,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Access 350,000+ recipes, reviews and nutrition facts.",
+        "tool_file_found": true,
+        "tool_name": "BigOven",
+        "toolbench_relative_path": "Food/bigoven.json"
+      },
+      "toolbench_tool_description": "Access 350,000+ recipes, reviews and nutrition facts.",
+      "toolbench_tool_name": "BigOven",
+      "url": "https://BigOvenvolodimir-kudriachenkoV1.p.rapidapi.com/getReviewReplies"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "burgers_hub_get_specific_burger",
+    "candidate_id": "C13",
+    "mode_rank": 18,
+    "llm_reported_rank": 18,
+    "retrieved_rank": 15,
+    "rag_score": 0.48802411556243896,
+    "reason": "",
+    "service": {
+      "_file": "burgers_hub.json",
+      "_tool": "burgers_hub",
+      "api_id": "burgers_hub_get_specific_burger",
+      "category": "Food",
+      "description": "Get specific **Burger**  by there **ID**",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get Specific Burger",
+      "tool_description": "This api returns kinds of burgers with there name, image, price, ingeridients etc",
+      "tool_name": "Burgers Hub",
+      "toolbench_endpoint_description": "Get specific **Burger**  by there **ID**",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get specific **Burger**  by there **ID**",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Specific Burger",
+        "endpoint_url": "https://burgers-hub.p.rapidapi.com/burgers/1",
+        "file_name": "burgers_hub.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This api returns kinds of burgers with there name, image, price, ingeridients etc",
+        "tool_file_found": true,
+        "tool_name": "Burgers Hub",
+        "toolbench_relative_path": "Food/burgers_hub.json"
+      },
+      "toolbench_tool_description": "This api returns kinds of burgers with there name, image, price, ingeridients etc",
+      "toolbench_tool_name": "Burgers Hub",
+      "url": "https://burgers-hub.p.rapidapi.com/burgers/1"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "catalogapi_remove_item",
+    "candidate_id": "C14",
+    "mode_rank": 19,
+    "llm_reported_rank": 19,
+    "retrieved_rank": 40,
+    "rag_score": 0.4632878601551056,
+    "reason": "",
+    "service": {
+      "_file": "catalogapi.json",
+      "_tool": "catalogapi",
+      "api_id": "catalogapi_remove_item",
+      "category": "Business",
+      "description": "Removes items from the cart.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "The option_id of the item, if the item has options. This option_id must match the option_id the item already in the cart.",
+            "name": "option_id",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "UTC iso801",
+            "name": "creds_datetime",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "GUID",
+            "name": "creds_uuid",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "This is the socket that the item is in. You can find your available sockets by using the list_available_catalogs method.",
+            "name": "socket_id",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "checksum",
+            "name": "creds_checksum",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "This is an id from your system that identifies the user that the cart is for. It can contain alphanumeric characters, dashes and underscores.",
+            "name": "external_user_id",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The catalog_item_id of the item. This item must already exist in the cart.",
+            "name": "catalog_item_id",
+            "type": "STRING"
+          },
+          {
+            "default": "rest",
+            "description": "rest of restx",
+            "name": "format",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Remove Item",
+      "tool_description": "Catalog API is a service that ties your application to our catalog and order support department. With minimal integration, you can receive data feeds easily scoped to your demographics to provide exciting, up-to-date, and motivating catalogs. Your pa",
+      "tool_name": "CatalogAPI",
+      "toolbench_endpoint_description": "Removes items from the cart.",
+      "toolbench_enrichment": {
+        "category": "Business",
+        "endpoint_description": "Removes items from the cart.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Remove Item",
+        "endpoint_url": "https://kkollstedt-catalogapi.p.rapidapi.com/rest/cart_remove_item",
+        "file_name": "catalogapi.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 7,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Catalog API is a service that ties your application to our catalog and order support department. With minimal integration, you can receive data feeds easily scoped to your demographics to provide exciting, up-to-date, and motivating catalogs. Your pa",
+        "tool_file_found": true,
+        "tool_name": "CatalogAPI",
+        "toolbench_relative_path": "Business/catalogapi.json"
+      },
+      "toolbench_tool_description": "Catalog API is a service that ties your application to our catalog and order support department. With minimal integration, you can receive data feeds easily scoped to your demographics to provide exciting, up-to-date, and motivating catalogs. Your pa",
+      "toolbench_tool_name": "CatalogAPI",
+      "url": "https://kkollstedt-catalogapi.p.rapidapi.com/rest/cart_remove_item"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "edamam_food_and_grocery_database_api_food_database_v2_nutrients-2",
+    "candidate_id": "C15",
+    "mode_rank": 20,
+    "llm_reported_rank": 20,
+    "retrieved_rank": 10,
+    "rag_score": 0.49432840943336487,
+    "reason": "",
+    "service": {
+      "_file": "edamam_food_and_grocery_database.json",
+      "_tool": "edamam_food_and_grocery_database",
+      "api_id": "edamam_food_and_grocery_database_api_food_database_v2_nutrients-2",
+      "category": "Food",
+      "description": "In the response to your parser request you receive the a food ID for each database match. Using the food ID and the measure URI, which parser provides, you can make a request to the nutrients access point. The nutrients access points returns nutrition with diet and health labels for a given quantity of the food.\n \n <b>Access Point:</b> https://api.edamam.com/api/food-database/v2/nutrients",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/api/food-database/v2/nutrients",
+      "tool_description": "This API provides you with tools to find nutrition and diet data for generic foods, packaged foods and restaurant meals. In addition it employs NLP (Natural Language Processing) which allows for extraction of food entities from unstructured text. Covered Use Cases: -Search for a food by keyword, foo",
+      "tool_name": "Edamam Food and Grocery Database",
+      "toolbench_endpoint_description": "In the response to your parser request you receive the a food ID for each database match. Using the food ID and the measure URI, which parser provides, you can make a request to the nutrients access point. The nutrients access points returns nutrition with diet and health labels for a given quantity of the food.\n \n <b>Access Point:</b> https://api.edamam.com/api/food-database/v2/nutrients",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "In the response to your parser request you receive the a food ID for each database match. Using the food ID and the measure URI, which parser provides, you can make a request to the nutrients access point. The nutrients access points returns nutrition with diet and health labels for a given quantity of the food.\n \n <b>Access Point:</b> https://api.edamam.com/api/food-database/v2/nutrients",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/api/food-database/v2/nutrients",
+        "endpoint_url": "https://edamam-food-and-grocery-database.p.rapidapi.com/api/food-database/v2/nutrients",
+        "file_name": "edamam_food_and_grocery_database.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API provides you with tools to find nutrition and diet data for generic foods, packaged foods and restaurant meals. In addition it employs NLP (Natural Language Processing) which allows for extraction of food entities from unstructured text.   \n\nCovered Use Cases: \n    -Search for a food by keyword, food name or UPC/Barcode \n    -Sourcing of nutrition facts for a given food, including: macro and micro nutrients, allergen labels, lifestyle and health labels \n    -Search for a food by give...",
+        "tool_file_found": true,
+        "tool_name": "Edamam Food and Grocery Database",
+        "toolbench_relative_path": "Food/edamam_food_and_grocery_database.json"
+      },
+      "toolbench_tool_description": "This API provides you with tools to find nutrition and diet data for generic foods, packaged foods and restaurant meals. In addition it employs NLP (Natural Language Processing) which allows for extraction of food entities from unstructured text.   \n\nCovered Use Cases: \n    -Search for a food by keyword, food name or UPC/Barcode \n    -Sourcing of nutrition facts for a given food, including: macro and micro nutrients, allergen labels, lifestyle and health labels \n    -Search for a food by give...",
+      "toolbench_tool_name": "Edamam Food and Grocery Database",
+      "url": "https://edamam-food-and-grocery-database.p.rapidapi.com/api/food-database/v2/nutrients"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "favoritefoodapi_get_all_favorite_food",
+    "candidate_id": "C18",
+    "mode_rank": 21,
+    "llm_reported_rank": 21,
+    "retrieved_rank": 19,
+    "rag_score": 0.48225343227386475,
+    "reason": "",
+    "service": {
+      "_file": "favoritefoodapi.json",
+      "_tool": "favoritefoodapi",
+      "api_id": "favoritefoodapi_get_all_favorite_food",
+      "category": "Food",
+      "description": "This endpoint will return all my favorite Cameroonian dishes",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Favorite Food",
+      "tool_description": "This Api Holds some of the Favorite Dishes I fancy from Cameroon",
+      "tool_name": "favoriteFoodApi",
+      "toolbench_endpoint_description": "This endpoint will return all my favorite Cameroonian dishes",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "This endpoint will return all my favorite Cameroonian dishes",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Favorite Food",
+        "endpoint_url": "https://favoritefoodapi.p.rapidapi.com/food/api/v1/favorites",
+        "file_name": "favoritefoodapi.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This Api Holds some of the Favorite Dishes I fancy from Cameroon",
+        "tool_file_found": true,
+        "tool_name": "favoriteFoodApi",
+        "toolbench_relative_path": "Food/favoritefoodapi.json"
+      },
+      "toolbench_tool_description": "This Api Holds some of the Favorite Dishes I fancy from Cameroon",
+      "toolbench_tool_name": "favoriteFoodApi",
+      "url": "https://favoritefoodapi.p.rapidapi.com/food/api/v1/favorites"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "guardian_searchcontent",
+    "candidate_id": "C19",
+    "mode_rank": 22,
+    "llm_reported_rank": 22,
+    "retrieved_rank": 34,
+    "rag_score": 0.4669952690601349,
+    "reason": "",
+    "service": {
+      "_file": "guardian.json",
+      "_tool": "guardian",
+      "api_id": "guardian_searchcontent",
+      "category": "News_Media",
+      "description": "You can find all parts of the content in the API",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Return only content published on or after that date. Example: 2014-02-16",
+            "name": "from-date",
+            "type": "DATEPICKER"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those IDs. Example: technology/2014/feb/17/flappy-bird-clones-apple-google",
+            "name": "ids",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Request content containing this free text. Supports AND, OR and NOT operators, and exact phrase queries using double quotes.",
+            "name": "query",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated media elements such as images and audio. Accepted values: audio,image,video,all",
+            "name": "show-elements",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Returns results in the specified order. Accepted values: newest, oldest, relevance",
+            "name": "order-by",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Add associated metadata section",
+            "name": "show-section",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those tags. Example: technology/apple",
+            "name": "tag",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those references. Example: isbn/9780718178949",
+            "name": "reference",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only the result set from a particular page. Example: 5",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Return only content in those languages. ISO language codes. Example: fr",
+            "name": "lang",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated rights. Accepted values: syndicatable, subscription-databases, all",
+            "name": "show-rights",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Add associated metadata tags. Example: publication",
+            "name": "show-tags",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content from those production offices. Example: aus",
+            "name": "production-office",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Modify the number of items displayed per page. Accepted values: 1 to 50",
+            "name": "page-size",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Add fields associated with the content",
+            "name": "show-fields",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Add associated reference data such as ISBNs",
+            "name": "show-references",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with those rights. Example: syndicatable",
+            "name": "rights",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content in those sections. Example: football",
+            "name": "section",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with references of those types. Example: isbn",
+            "name": "reference-type",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Return only content with a given star rating. From 1 to 5",
+            "name": "star-rating",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Add associated blocks",
+            "name": "show-blocks",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Returns results in the specified order. Accepted values: published, newspaper-edition, last-modified",
+            "name": "order-date",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "Return only content published on or before that date. Example: 2014-02-17",
+            "name": "to-date",
+            "type": "DATEPICKER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The api key obtained from Guardian",
+            "name": "apiKey",
+            "type": "CREDENTIALS"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "searchContent",
+      "tool_description": "Query and download data from this publication's database.",
+      "tool_name": "Guardian",
+      "toolbench_endpoint_description": "You can find all parts of the content in the API",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "You can find all parts of the content in the API",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "searchContent",
+        "endpoint_url": "https://Guardianmikilior1V1.p.rapidapi.com/searchContent",
+        "file_name": "guardian.json",
+        "optional_parameter_count": 23,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Query and download data from this publication's database.",
+        "tool_file_found": true,
+        "tool_name": "Guardian",
+        "toolbench_relative_path": "News_Media/guardian.json"
+      },
+      "toolbench_tool_description": "Query and download data from this publication's database.",
+      "toolbench_tool_name": "Guardian",
+      "url": "https://Guardianmikilior1V1.p.rapidapi.com/searchContent"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "ind_nutrient_api_view_food_items_by_type",
+    "candidate_id": "C20",
+    "mode_rank": 23,
+    "llm_reported_rank": 23,
+    "retrieved_rank": 39,
+    "rag_score": 0.4638789892196655,
+    "reason": "",
+    "service": {
+      "_file": "ind_nutrient_api.json",
+      "_tool": "ind_nutrient_api",
+      "api_id": "ind_nutrient_api_view_food_items_by_type",
+      "category": "Health_and_Fitness",
+      "description": "This request allows clients to retrieve detailed information about a food item by filtering by query param `type`.\n\nAPI request sent to [https://indnutrientsapi.tech/food?type=non-vegetarian](https://indnutrientsapi.tech/food?type=non-vegetarian)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "View Food Items by Type",
+      "tool_description": "This API provides users with nutritional information for Indian foods. Users can retrieve a list of Indian dishes with their corresponding nutritional values, including the number of calories, the amount of protein, fat, and carbohydrates in grams. Base URL: Authorization-free integration: Follow th",
+      "tool_name": "Ind Nutrient API",
+      "toolbench_endpoint_description": "This request allows clients to retrieve detailed information about a food item by filtering by query param `type`.\n\nAPI request sent to [https://indnutrientsapi.tech/food?type=non-vegetarian](https://indnutrientsapi.tech/food?type=non-vegetarian)",
+      "toolbench_enrichment": {
+        "category": "Health_and_Fitness",
+        "endpoint_description": "This request allows clients to retrieve detailed information about a food item by filtering by query param `type`.\n\nAPI request sent to [https://indnutrientsapi.tech/food?type=non-vegetarian](https://indnutrientsapi.tech/food?type=non-vegetarian)",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "View Food Items by Type",
+        "endpoint_url": "https://ind-nutrient-api1.p.rapidapi.com/food?type=non-vegetarian",
+        "file_name": "ind_nutrient_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API provides users with nutritional information for Indian foods. Users can retrieve a list of Indian dishes with their corresponding nutritional values, including the number of calories, the amount of protein, fat, and carbohydrates in grams.\n\nBase URL: \n\nAuthorization-free integration: Follow the endpoint definitions to seamlessly integrate the Ind Nutrients API into your app for accessing Indian nutrient data without any authentication requirements.\n\nBase URL: https://indnutrientsapi....",
+        "tool_file_found": true,
+        "tool_name": "Ind Nutrient API",
+        "toolbench_relative_path": "Health_and_Fitness/ind_nutrient_api.json"
+      },
+      "toolbench_tool_description": "This API provides users with nutritional information for Indian foods. Users can retrieve a list of Indian dishes with their corresponding nutritional values, including the number of calories, the amount of protein, fat, and carbohydrates in grams.\n\nBase URL: \n\nAuthorization-free integration: Follow the endpoint definitions to seamlessly integrate the Ind Nutrients API into your app for accessing Indian nutrient data without any authentication requirements.\n\nBase URL: https://indnutrientsapi....",
+      "toolbench_tool_name": "Ind Nutrient API",
+      "url": "https://ind-nutrient-api1.p.rapidapi.com/food?type=non-vegetarian"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "jingdong_data_service_item_reviews_detailed",
+    "candidate_id": "C21",
+    "mode_rank": 24,
+    "llm_reported_rank": 24,
+    "retrieved_rank": 29,
+    "rag_score": 0.4689794182777405,
+    "reason": "",
+    "service": {
+      "_file": "jingdong_京东_data_service.json",
+      "_tool": "jingdong_data_service",
+      "api_id": "jingdong_data_service_item_reviews_detailed",
+      "category": "eCommerce",
+      "description": "Retrieves all item reviews information, but more detailed",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Number of results per page.",
+            "name": "size",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "The page number of the results to be retrieved. Default is 1.",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "The language of translation, list of all supported languages can be found [here](https://rapidapi.com/iamEvara/api/jingdong-Jing-Dong-data-service/tutorials/list-of-all-supported-languages).",
+            "name": "target_language",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Jingdong Item Identifier",
+            "name": "itemId",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Item Reviews Detailed",
+      "tool_description": "Our JD commodity data API provides you with easy access to valuable product, and seller data from the popular Chinese e-commerce platform. Our endpoints are designed to provide you with fast, accurate data without the need to create a scraper or subscribe to the official JD API. With easy-to-underst",
+      "tool_name": "Jingdong(京东) Data Service",
+      "toolbench_endpoint_description": "Retrieves all item reviews information, but more detailed",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "Retrieves all item reviews information, but more detailed",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Item Reviews Detailed",
+        "endpoint_url": "https://jingdong-Jing-Dong-data-service.p.rapidapi.com/item/itemReviewsDetailed",
+        "file_name": "jingdong_京东_data_service.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our JD commodity data API provides you with easy access to valuable product, and seller data from the popular Chinese e-commerce platform. Our endpoints are designed to provide you with fast, accurate data without the need to create a scraper or subscribe to the official JD API. With easy-to-understand documentation, error handling, and response status codes, our API is built to help you make the most of your data. Choose from our flexible pricing plans to suit your needs and start exploring ...",
+        "tool_file_found": true,
+        "tool_name": "Jingdong(京东) Data Service",
+        "toolbench_relative_path": "eCommerce/jingdong_京东_data_service.json"
+      },
+      "toolbench_tool_description": "Our JD commodity data API provides you with easy access to valuable product, and seller data from the popular Chinese e-commerce platform. Our endpoints are designed to provide you with fast, accurate data without the need to create a scraper or subscribe to the official JD API. With easy-to-understand documentation, error handling, and response status codes, our API is built to help you make the most of your data. Choose from our flexible pricing plans to suit your needs and start exploring ...",
+      "toolbench_tool_name": "Jingdong(京东) Data Service",
+      "url": "https://jingdong-Jing-Dong-data-service.p.rapidapi.com/item/itemReviewsDetailed"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "jumia_service_get_product_reviews",
+    "candidate_id": "C22",
+    "mode_rank": 25,
+    "llm_reported_rank": 25,
+    "retrieved_rank": 17,
+    "rag_score": 0.48449942469596863,
+    "reason": "",
+    "service": {
+      "_file": "jumia_service.json",
+      "_tool": "jumia_service",
+      "api_id": "jumia_service_get_product_reviews",
+      "category": "Commerce",
+      "description": "This endpoints return product reviews",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "samsung-galaxy-a12-blanc-4gb-ram-128gb-6.5-hd-5000mah-blanc-45397926",
+            "description": "",
+            "name": "product",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Product Reviews",
+      "tool_description": "Jumia Api allows you to select the specific data you want from the [https://www.jumia.ma/] Jumia website in a JSON format. This gives you easy access to search, products, prices, categories, sales, rankings, reviews and more.",
+      "tool_name": "Jumia Service",
+      "toolbench_endpoint_description": "This endpoints return product reviews",
+      "toolbench_enrichment": {
+        "category": "Commerce",
+        "endpoint_description": "This endpoints return product reviews",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Product Reviews",
+        "endpoint_url": "https://jumia-service.p.rapidapi.com/api/products/{product}/reviews",
+        "file_name": "jumia_service.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Jumia Api allows you to select the specific data you want from the [https://www.jumia.ma/] Jumia website in a JSON format. This gives you easy access to search, products, prices, categories, sales, rankings, reviews and more.",
+        "tool_file_found": true,
+        "tool_name": "Jumia Service",
+        "toolbench_relative_path": "Commerce/jumia_service.json"
+      },
+      "toolbench_tool_description": "Jumia Api allows you to select the specific data you want from the [https://www.jumia.ma/] Jumia website in a JSON format. This gives you easy access to search, products, prices, categories, sales, rankings, reviews and more.",
+      "toolbench_tool_name": "Jumia Service",
+      "url": "https://jumia-service.p.rapidapi.com/api/products/{product}/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "meteo_data_api_get_info",
+    "candidate_id": "C23",
+    "mode_rank": 26,
+    "llm_reported_rank": 26,
+    "retrieved_rank": 36,
+    "rag_score": 0.46623605489730835,
+    "reason": "",
+    "service": {
+      "_file": "meteo_data_api.json",
+      "_tool": "meteo_data_api",
+      "api_id": "meteo_data_api_get_info",
+      "category": "Advertising",
+      "description": "GET INFO DATA with location",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "RABAT",
+            "description": "",
+            "name": "location",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "GET INFO",
+      "tool_description": "API RETURN DATA METEO",
+      "tool_name": "METEO DATA API",
+      "toolbench_endpoint_description": "GET INFO DATA with location",
+      "toolbench_enrichment": {
+        "category": "Advertising",
+        "endpoint_description": "GET INFO DATA with location",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET INFO",
+        "endpoint_url": "https://meteo-data-api.p.rapidapi.com/weather",
+        "file_name": "meteo_data_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API RETURN DATA METEO",
+        "tool_file_found": true,
+        "tool_name": "METEO DATA API",
+        "toolbench_relative_path": "Advertising/meteo_data_api.json"
+      },
+      "toolbench_tool_description": "API RETURN DATA METEO",
+      "toolbench_tool_name": "METEO DATA API",
+      "url": "https://meteo-data-api.p.rapidapi.com/weather"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "shubhankar_amazon_data_scraper_get_product_details_related_amazon_com",
+    "candidate_id": "C25",
+    "mode_rank": 27,
+    "llm_reported_rank": 27,
+    "retrieved_rank": 24,
+    "rag_score": 0.4750370681285858,
+    "reason": "",
+    "service": {
+      "_file": "shubhankar_amazon_data_scraper.json",
+      "_tool": "shubhankar_amazon_data_scraper",
+      "api_id": "shubhankar_amazon_data_scraper_get_product_details_related_amazon_com",
+      "category": "eCommerce",
+      "description": "https://shubhankar-amazon-scraper.herokuapp.com/",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "03cb5068ac231f0ab12cbf2ee4afc455",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          },
+          {
+            "default": "B08N5M7S6K",
+            "description": "",
+            "name": "productId",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Product Details related amazon.com",
+      "tool_description": "This api helps you fetch details like product, prices, sales and reviews from amazon.com in json format.",
+      "tool_name": "SHUBHANKAR Amazon Data Scraper",
+      "toolbench_endpoint_description": "https://shubhankar-amazon-scraper.herokuapp.com/",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "https://shubhankar-amazon-scraper.herokuapp.com/",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Product Details related amazon.com",
+        "endpoint_url": "https://shubhankar-amazon-data-scraper.p.rapidapi.com/products/{productid}",
+        "file_name": "shubhankar_amazon_data_scraper.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This api helps you fetch details like product, prices, sales and reviews from amazon.com in json format.",
+        "tool_file_found": true,
+        "tool_name": "SHUBHANKAR Amazon Data Scraper",
+        "toolbench_relative_path": "eCommerce/shubhankar_amazon_data_scraper.json"
+      },
+      "toolbench_tool_description": "This api helps you fetch details like product, prices, sales and reviews from amazon.com in json format.",
+      "toolbench_tool_name": "SHUBHANKAR Amazon Data Scraper",
+      "url": "https://shubhankar-amazon-data-scraper.p.rapidapi.com/products/{productid}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "specrom_news_api_document_sentiments_score",
+    "candidate_id": "C26",
+    "mode_rank": 28,
+    "llm_reported_rank": 28,
+    "retrieved_rank": 18,
+    "rag_score": 0.48420438170433044,
+    "reason": "",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_document_sentiments_score",
+      "category": "News_Media",
+      "description": "Get a sentiments score for the entire document or text. This is in contrast to our another endpoint that will fetch aspect (or entity) level sentiments.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Document Sentiments Score",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Get a sentiments score for the entire document or text. This is in contrast to our another endpoint that will fetch aspect (or entity) level sentiments.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Get a sentiments score for the entire document or text. This is in contrast to our another endpoint that will fetch aspect (or entity) level sentiments.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Document Sentiments Score",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+    "candidate_id": "C27",
+    "mode_rank": 29,
+    "llm_reported_rank": 29,
+    "retrieved_rank": 35,
+    "rag_score": 0.46664902567863464,
+    "reason": "",
+    "service": {
+      "_file": "specrom_news_api.json",
+      "_tool": "specrom_news_api",
+      "api_id": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+      "category": "News_Media",
+      "description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Fetch Parsed News Article by url_id",
+      "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "tool_name": "Specrom News API",
+      "toolbench_endpoint_description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+      "toolbench_enrichment": {
+        "category": "News_Media",
+        "endpoint_description": "Just specify url_id (obtained by using our other endpoints) to fetch full_text, title, author etc. from the news article.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Fetch Parsed News Article by url_id",
+        "endpoint_url": "https://specrom-news-api.p.rapidapi.com/",
+        "file_name": "specrom_news_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+        "tool_file_found": true,
+        "tool_name": "Specrom News API",
+        "toolbench_relative_path": "News_Media/specrom_news_api.json"
+      },
+      "toolbench_tool_description": "A comprehensive news API that contains near real time news from over 100,000 news sources across the world",
+      "toolbench_tool_name": "Specrom News API",
+      "url": "https://specrom-news-api.p.rapidapi.com/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "steam_app_detail",
+    "candidate_id": "C28",
+    "mode_rank": 30,
+    "llm_reported_rank": 30,
+    "retrieved_rank": 11,
+    "rag_score": 0.4924910068511963,
+    "reason": "",
+    "service": {
+      "_file": "steam.json",
+      "_tool": "steam",
+      "api_id": "steam_app_detail",
+      "category": "Entertainment",
+      "description": "Get detailed info of the app",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "730",
+            "description": "",
+            "name": "appId",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "App Detail",
+      "tool_description": "Search, and get app/reviews/news data from store.steampowered.com",
+      "tool_name": "Steam",
+      "toolbench_endpoint_description": "Get detailed info of the app",
+      "toolbench_enrichment": {
+        "category": "Entertainment",
+        "endpoint_description": "Get detailed info of the app",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "App Detail",
+        "endpoint_url": "https://steam2.p.rapidapi.com/appDetail/{appid}",
+        "file_name": "steam.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Search, and get app/reviews/news data from store.steampowered.com",
+        "tool_file_found": true,
+        "tool_name": "Steam",
+        "toolbench_relative_path": "Entertainment/steam.json"
+      },
+      "toolbench_tool_description": "Search, and get app/reviews/news data from store.steampowered.com",
+      "toolbench_tool_name": "Steam",
+      "url": "https://steam2.p.rapidapi.com/appDetail/{appid}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "suggestic_generate_a_simple_meal_plan",
+    "candidate_id": "C29",
+    "mode_rank": 31,
+    "llm_reported_rank": 31,
+    "retrieved_rank": 32,
+    "rag_score": 0.4687052369117737,
+    "reason": "",
+    "service": {
+      "_file": "suggestic.json",
+      "_tool": "suggestic",
+      "api_id": "suggestic_generate_a_simple_meal_plan",
+      "category": "Health_and_Fitness",
+      "description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Bearer",
+            "description": "",
+            "name": "Authorization",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Generate a Simple Meal Plan",
+      "tool_description": "Suggestic Food & Meal Plan API",
+      "tool_name": "Suggestic",
+      "toolbench_endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "toolbench_enrichment": {
+        "category": "Health_and_Fitness",
+        "endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Generate a Simple Meal Plan",
+        "endpoint_url": "https://suggestic1.p.rapidapi.com/",
+        "file_name": "suggestic.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Suggestic Food & Meal Plan API",
+        "tool_file_found": true,
+        "tool_name": "Suggestic",
+        "toolbench_relative_path": "Health_and_Fitness/suggestic.json"
+      },
+      "toolbench_tool_description": "Suggestic Food & Meal Plan API",
+      "toolbench_tool_name": "Suggestic",
+      "url": "https://suggestic1.p.rapidapi.com/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "suggestic_generate_a_simple_meal_plan-2",
+    "candidate_id": "C30",
+    "mode_rank": 32,
+    "llm_reported_rank": 32,
+    "retrieved_rank": 31,
+    "rag_score": 0.4687052369117737,
+    "reason": "",
+    "service": {
+      "_file": "suggestic.json",
+      "_tool": "suggestic",
+      "api_id": "suggestic_generate_a_simple_meal_plan-2",
+      "category": "Health_and_Fitness",
+      "description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Bearer",
+            "description": "",
+            "name": "Authorization",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Generate a Simple Meal Plan",
+      "tool_description": "Suggestic Food & Meal Plan API",
+      "tool_name": "Suggestic",
+      "toolbench_endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "toolbench_enrichment": {
+        "category": "Health_and_Fitness",
+        "endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Generate a Simple Meal Plan",
+        "endpoint_url": "https://suggestic1.p.rapidapi.com/",
+        "file_name": "suggestic.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Suggestic Food & Meal Plan API",
+        "tool_file_found": true,
+        "tool_name": "Suggestic",
+        "toolbench_relative_path": "Health_and_Fitness/suggestic.json"
+      },
+      "toolbench_tool_description": "Suggestic Food & Meal Plan API",
+      "toolbench_tool_name": "Suggestic",
+      "url": "https://suggestic1.p.rapidapi.com/"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "target_com_store_product_reviews_locations_data_target_store_location_search",
+    "candidate_id": "C31",
+    "mode_rank": 33,
+    "llm_reported_rank": 33,
+    "retrieved_rank": 33,
+    "rag_score": 0.46801888942718506,
+    "reason": "",
+    "service": {
+      "_file": "target_com_store_product_reviews_locations_data.json",
+      "_tool": "target_com_store_product_reviews_locations_data",
+      "api_id": "target_com_store_product_reviews_locations_data_target_store_location_search",
+      "category": "eCommerce",
+      "description": "The endpoint returns Target Store locations details\n\n- Only US **zip** codes are accepted\n- **radius** is in miles",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "100",
+            "description": "Radius of search\n\nRadius is in **miles**\n\nFor example: 100",
+            "name": "radius",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "11203",
+            "description": "US 5 digit zip code\n\nFor example: 11203",
+            "name": "zip",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Target Store Location Search",
+      "tool_description": "Real-time **Target.Com** data API. Get product, reviews and location details. Easy to use and reliable I'm on Telegram https://t.me/logicBuilder News and announcements Telegram Channel https://t.me/logicApi",
+      "tool_name": "Target.Com(Store) Product/Reviews/Locations Data",
+      "toolbench_endpoint_description": "The endpoint returns Target Store locations details\n\n- Only US **zip** codes are accepted\n- **radius** is in miles",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "The endpoint returns Target Store locations details\n\n- Only US **zip** codes are accepted\n- **radius** is in miles",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Target Store Location Search",
+        "endpoint_url": "https://target-com-store-product-reviews-locations-data.p.rapidapi.com/location/search",
+        "file_name": "target_com_store_product_reviews_locations_data.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Real-time **Target.Com** data API. Get product, reviews and location details. Easy to use and reliable\nI'm on Telegram https://t.me/logicBuilder\n News and announcements Telegram Channel https://t.me/logicApi",
+        "tool_file_found": true,
+        "tool_name": "Target.Com(Store) Product/Reviews/Locations Data",
+        "toolbench_relative_path": "eCommerce/target_com_store_product_reviews_locations_data.json"
+      },
+      "toolbench_tool_description": "Real-time **Target.Com** data API. Get product, reviews and location details. Easy to use and reliable\nI'm on Telegram https://t.me/logicBuilder\n News and announcements Telegram Channel https://t.me/logicApi",
+      "toolbench_tool_name": "Target.Com(Store) Product/Reviews/Locations Data",
+      "url": "https://target-com-store-product-reviews-locations-data.p.rapidapi.com/location/search"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "the_recipes_search_by_website_or_blog",
+    "candidate_id": "C32",
+    "mode_rank": 34,
+    "llm_reported_rank": 34,
+    "retrieved_rank": 22,
+    "rag_score": 0.47580140829086304,
+    "reason": "",
+    "service": {
+      "_file": "the_recipes.json",
+      "_tool": "the_recipes",
+      "api_id": "the_recipes_search_by_website_or_blog",
+      "category": "Food",
+      "description": "this endpoint returns a list of recipes of a specific website or blog from the following :\n\n```\n[\n\t \"allrecipes\",\n     \"delish\",\n     \"tastyusa\",\n     \"tastychina\",\n     \"tastyitaly\",\n     \"tastyjapan\",\n     \"tastymexico\",\n     ];\n```",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "allrecipes",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Search by website or blog",
+      "tool_description": "A nice REST API to get delicious recipes from some websites and blogs.",
+      "tool_name": "The Recipes",
+      "toolbench_endpoint_description": "this endpoint returns a list of recipes of a specific website or blog from the following :\n\n```\n[\n\t \"allrecipes\",\n     \"delish\",\n     \"tastyusa\",\n     \"tastychina\",\n     \"tastyitaly\",\n     \"tastyjapan\",\n     \"tastymexico\",\n     ];\n```",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "this endpoint returns a list of recipes of a specific website or blog from the following :\n\n```\n[\n\t \"allrecipes\",\n     \"delish\",\n     \"tastyusa\",\n     \"tastychina\",\n     \"tastyitaly\",\n     \"tastyjapan\",\n     \"tastymexico\",\n     ];\n```",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search by website or blog",
+        "endpoint_url": "https://the-recipes.p.rapidapi.com/recipes/{id}",
+        "file_name": "the_recipes.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A nice REST API to get delicious recipes from some websites and blogs.",
+        "tool_file_found": true,
+        "tool_name": "The Recipes",
+        "toolbench_relative_path": "Food/the_recipes.json"
+      },
+      "toolbench_tool_description": "A nice REST API to get delicious recipes from some websites and blogs.",
+      "toolbench_tool_name": "The Recipes",
+      "url": "https://the-recipes.p.rapidapi.com/recipes/{id}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "unofficial_shein_reviews_list",
+    "candidate_id": "C33",
+    "mode_rank": 35,
+    "llm_reported_rank": 35,
+    "retrieved_rank": 13,
+    "rag_score": 0.4915284514427185,
+    "reason": "",
+    "service": {
+      "_file": "unofficial_shein.json",
+      "_tool": "unofficial_shein",
+      "api_id": "unofficial_shein_reviews_list",
+      "category": "eCommerce",
+      "description": "List reviews related to a product",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "One of the following : S|M|L|XL",
+            "name": "size",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Reviews must contain pictures, 0 or 1",
+            "name": "is_picture",
+            "type": "NUMBER"
+          },
+          {
+            "default": "1",
+            "description": "The page index, for paging purpose",
+            "name": "page",
+            "type": "NUMBER"
+          },
+          {
+            "default": "20",
+            "description": "The number of items per response, for paging purpose",
+            "name": "limit",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Filter comments by rank, from 1 to 5",
+            "name": "comment_rank",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "color_id",
+            "type": "STRING"
+          },
+          {
+            "default": "default",
+            "description": "One of the following : default|time_desc|time_asc",
+            "name": "sort",
+            "type": "STRING"
+          },
+          {
+            "default": "1980",
+            "description": "The value of cat&#95;id returned in .../products/list or .../products/search",
+            "name": "cat_id",
+            "type": "STRING"
+          },
+          {
+            "default": "m22022854841",
+            "description": "The value of 'productRelationID' returned in .../products/list or .../products/search",
+            "name": "goods_spu",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "The 3-letter currency code",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The value of 'goods_id' field returned in .../products/list or .../products/search endpoint",
+            "name": "goods_id",
+            "type": "STRING"
+          },
+          {
+            "default": "en",
+            "description": "The 2-letter language code",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "US",
+            "description": "The 2-letter country code",
+            "name": "country",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "reviews/list",
+      "tool_description": "This API helps to query for almost everything that you see PUBLICLY on SHEIN's sites",
+      "tool_name": "Unofficial SHEIN",
+      "toolbench_endpoint_description": "List reviews related to a product",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "List reviews related to a product",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "reviews/list",
+        "endpoint_url": "https://unofficial-shein.p.rapidapi.com/reviews/list",
+        "file_name": "unofficial_shein.json",
+        "optional_parameter_count": 13,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API helps to query for almost everything that you see PUBLICLY on SHEIN's sites",
+        "tool_file_found": true,
+        "tool_name": "Unofficial SHEIN",
+        "toolbench_relative_path": "eCommerce/unofficial_shein.json"
+      },
+      "toolbench_tool_description": "This API helps to query for almost everything that you see PUBLICLY on SHEIN's sites",
+      "toolbench_tool_name": "Unofficial SHEIN",
+      "url": "https://unofficial-shein.p.rapidapi.com/reviews/list"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "unofficial_trust_pilot_consumers_detail",
+    "candidate_id": "C34",
+    "mode_rank": 36,
+    "llm_reported_rank": 36,
+    "retrieved_rank": 8,
+    "rag_score": 0.4958841800689697,
+    "reason": "",
+    "service": {
+      "_file": "unofficial_trust_pilot.json",
+      "_tool": "unofficial_trust_pilot",
+      "api_id": "unofficial_trust_pilot_consumers_detail",
+      "category": "Data",
+      "description": "Get detailed information of a consumer",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "5f9c424654404f0019fb19fc",
+            "description": "The value of consumer->id field returned in .../business-units/get-reviews endpoint",
+            "name": "id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "consumers/detail",
+      "tool_description": "This API helps to query data relating to reviews and consumer reports to create a reviewing platform, such as : trustpilot.com",
+      "tool_name": "Unofficial Trust Pilot",
+      "toolbench_endpoint_description": "Get detailed information of a consumer",
+      "toolbench_enrichment": {
+        "category": "Data",
+        "endpoint_description": "Get detailed information of a consumer",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "consumers/detail",
+        "endpoint_url": "https://unofficial-trust-pilot.p.rapidapi.com/consumers/detail",
+        "file_name": "unofficial_trust_pilot.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API helps to query data relating to reviews and consumer reports to create a reviewing platform, such as : trustpilot.com",
+        "tool_file_found": true,
+        "tool_name": "Unofficial Trust Pilot",
+        "toolbench_relative_path": "Data/unofficial_trust_pilot.json"
+      },
+      "toolbench_tool_description": "This API helps to query data relating to reviews and consumer reports to create a reviewing platform, such as : trustpilot.com",
+      "toolbench_tool_name": "Unofficial Trust Pilot",
+      "url": "https://unofficial-trust-pilot.p.rapidapi.com/consumers/detail"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "yummly_feeds_auto_complete",
+    "candidate_id": "C37",
+    "mode_rank": 37,
+    "llm_reported_rank": 37,
+    "retrieved_rank": 16,
+    "rag_score": 0.48791220784187317,
+    "reason": "",
+    "service": {
+      "_file": "yummly.json",
+      "_tool": "yummly",
+      "api_id": "yummly_feeds_auto_complete",
+      "category": "Food",
+      "description": "Get auto complete suggestions by name or ingredients, etc...",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "chicken soup",
+            "description": "Food name or ingredient",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "feeds/auto-complete",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "tool_name": "Yummly",
+      "toolbench_endpoint_description": "Get auto complete suggestions by name or ingredients, etc...",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get auto complete suggestions by name or ingredients, etc...",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "feeds/auto-complete",
+        "endpoint_url": "https://yummly2.p.rapidapi.com/feeds/auto-complete",
+        "file_name": "yummly.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+        "tool_file_found": true,
+        "tool_name": "Yummly",
+        "toolbench_relative_path": "Food/yummly.json"
+      },
+      "toolbench_tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "toolbench_tool_name": "Yummly",
+      "url": "https://yummly2.p.rapidapi.com/feeds/auto-complete"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "yummly_feeds_list",
+    "candidate_id": "C38",
+    "mode_rank": 38,
+    "llm_reported_rank": 38,
+    "retrieved_rank": 12,
+    "rag_score": 0.49172499775886536,
+    "reason": "",
+    "service": {
+      "_file": "yummly.json",
+      "_tool": "yummly",
+      "api_id": "yummly_feeds_list",
+      "category": "Food",
+      "description": "List feeds by category",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "The value of browse-categories/display/tag returned in categories/list API",
+            "name": "tag",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "0",
+            "description": "The offset of items to be ignored in response for paging",
+            "name": "start",
+            "type": "NUMBER"
+          },
+          {
+            "default": "24",
+            "description": "Number of items returned per response",
+            "name": "limit",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "feeds/list",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "tool_name": "Yummly",
+      "toolbench_endpoint_description": "List feeds by category",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "List feeds by category",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "feeds/list",
+        "endpoint_url": "https://yummly2.p.rapidapi.com/feeds/list",
+        "file_name": "yummly.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+        "tool_file_found": true,
+        "tool_name": "Yummly",
+        "toolbench_relative_path": "Food/yummly.json"
+      },
+      "toolbench_tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "toolbench_tool_name": "Yummly",
+      "url": "https://yummly2.p.rapidapi.com/feeds/list"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "yummly_feeds_search-2",
+    "candidate_id": "C39",
+    "mode_rank": 39,
+    "llm_reported_rank": 39,
+    "retrieved_rank": 38,
+    "rag_score": 0.46446821093559265,
+    "reason": "",
+    "service": {
+      "_file": "yummly.json",
+      "_tool": "yummly",
+      "api_id": "yummly_feeds_search-2",
+      "category": "Food",
+      "description": "Search for recipes by name and option filters",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "FIBTGMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "CAMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Range from 0 to 1",
+            "name": "CHOLEMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "diet-lacto-vegetarian,diet-low-fodmap",
+            "description": "The value of id field returned in tags/list (separated by comma for multiple value)",
+            "name": "allowedAttribute",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "How much sweet the meal is, such as 0.8 (0 to 1)",
+            "name": "sweetMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "KMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "NAMax",
+            "type": "STRING"
+          },
+          {
+            "default": "chicken soup",
+            "description": "Food name or ingredient",
+            "name": "q",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Range from 0 to 1000",
+            "name": "ENERC_KCALMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "FEMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "1000",
+            "description": "Range from 0 to 1000",
+            "name": "FAT_KCALMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "7200",
+            "description": "the time (in seconds) it takes to complete the dish",
+            "name": "maxTotalTimeInSeconds",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much piquant the meal is, such as 0.8 (0 to 1)",
+            "name": "piquantMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "VITA_IUMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "VITCMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much meaty the meal is, such as 0.8 (0 to 1)",
+            "name": "meatyMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Range from 0 to 50",
+            "name": "FASATMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much sweet the meal is, such as 0.8 (0 to 1)",
+            "name": "sweetMin",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much piquant the meal is, such as 0.8 (0 to 1)",
+            "name": "piquantMin",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "FATMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much sour the meal is, such as 0.8 (0 to 1)",
+            "name": "sourMin",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much meaty the meal is, such as 0.2 (0 to 1)",
+            "name": "meatyMin",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much sour the meal is, such as 0.8 (0 to 1)",
+            "name": "sourMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Range from 0 to 100",
+            "name": "CHOCDFMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much salty the meal is, such as 0.8 (0 to 1)",
+            "name": "saltyMin",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "SUGARMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "PROCNTMax",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "How much salty the meal is, such as 0.8 (0 to 1)",
+            "name": "saltyMax",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "0",
+            "description": "The offset of items to be ignored in response for paging",
+            "name": "start",
+            "type": "NUMBER"
+          },
+          {
+            "default": "18",
+            "description": "Number of items returned per response",
+            "name": "maxResult",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "feeds/search",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "tool_name": "Yummly",
+      "toolbench_endpoint_description": "Search for recipes by name and option filters",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Search for recipes by name and option filters",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "feeds/search",
+        "endpoint_url": "https://yummly2.p.rapidapi.com/feeds/search",
+        "file_name": "yummly.json",
+        "optional_parameter_count": 28,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+        "tool_file_found": true,
+        "tool_name": "Yummly",
+        "toolbench_relative_path": "Food/yummly.json"
+      },
+      "toolbench_tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "toolbench_tool_name": "Yummly",
+      "url": "https://yummly2.p.rapidapi.com/feeds/search"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  },
+  {
+    "api_id": "yummly_reviews_list",
+    "candidate_id": "C40",
+    "mode_rank": 40,
+    "llm_reported_rank": 40,
+    "retrieved_rank": 2,
+    "rag_score": 0.5565955638885498,
+    "reason": "",
+    "service": {
+      "_file": "yummly.json",
+      "_tool": "yummly",
+      "api_id": "yummly_reviews_list",
+      "category": "Food",
+      "description": "List reviews, feedback from other users",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "0",
+            "description": "The offset of items to be ignored in response for paging",
+            "name": "offset",
+            "type": "NUMBER"
+          },
+          {
+            "default": "a8d6747a-bfaa-46a7-92fb-892e3f76b264",
+            "description": "The value of globalId field returned in feeds/list and feeds/search API",
+            "name": "globalId",
+            "type": "STRING"
+          },
+          {
+            "default": "20",
+            "description": "Number of items returned per response",
+            "name": "limit",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "reviews/list",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "tool_name": "Yummly",
+      "toolbench_endpoint_description": "List reviews, feedback from other users",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "List reviews, feedback from other users",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "reviews/list",
+        "endpoint_url": "https://yummly2.p.rapidapi.com/reviews/list",
+        "file_name": "yummly.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+        "tool_file_found": true,
+        "tool_name": "Yummly",
+        "toolbench_relative_path": "Food/yummly.json"
+      },
+      "toolbench_tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "toolbench_tool_name": "Yummly",
+      "url": "https://yummly2.p.rapidapi.com/reviews/list"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false
+  }
+]

@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":0,"reason":"checks adult content, not malware"},
+{"candidate_id":"C22","label":0,"reason":"checks quantum-safe key exchange, unrelated"},
+{"candidate_id":"C23","label":0,"reason":"gaming API, irrelevant"},
+{"candidate_id":"C24","label":0,"reason":"parses sitemap, not threat scan"},
+{"candidate_id":"C25","label":0,"reason":"spam detection for content, not URL risk"},
+{"candidate_id":"C26","label":0,"reason":"only returns queue status, no scan"},
+{"candidate_id":"C27","label":1,"reason":"provides scan report, essential for risk result"},
+{"candidate_id":"C28","label":1,"reason":"initiates URL malware/phishing scan"},
+{"candidate_id":"C29","label":1,"reason":"initiates URL scan (duplicate)"},
+{"candidate_id":"C30","label":0,"reason":"creates content change detector, not threat scan"},
+{"candidate_id":"C31","label":1,"reason":"threat feed lookup for malicious URLs"},
+{"candidate_id":"C32","label":0,"reason":"tracks shortened URL info, unrelated"},
+{"candidate_id":"C33","label":0,"reason":"decodes shortened links, not scanning"},
+{"candidate_id":"C34","label":0,"reason":"register endpoint, no scanning function"},
+{"candidate_id":"C35","label":0,"reason":"checks callback URL, not scanning"},
+{"candidate_id":"C36","label":1,"reason":"starts scan and returns scan ID"},
+{"candidate_id":"C37","label":1,"reason":"retrieves scan results, essential data"},
+{"candidate_id":"C38","label":1,"reason":"checks scan status, supports scanning"},
+{"candidate_id":"C39","label":0,"reason":"keyword detection, not malware"},
+{"candidate_id":"C40","label":0,"reason":"detects XSS in input, not URL threat"}
+]
+}

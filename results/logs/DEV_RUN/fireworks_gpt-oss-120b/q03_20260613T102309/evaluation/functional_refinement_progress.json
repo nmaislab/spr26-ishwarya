@@ -1,0 +1,15 @@
+{
+  "stage": "functional_refinement",
+  "query_id": "q03",
+  "provider": "fireworks",
+  "model": "fireworks:accounts/fireworks/models/gpt-oss-120b",
+  "active_model": "accounts/fireworks/models/gpt-oss-120b",
+  "multi_model_mode": false,
+  "model_pool": [
+    "accounts/fireworks/models/gpt-oss-120b"
+  ],
+  "chunk_size": 20,
+  "status": "completed",
+  "completed_api_items": 120,
+  "total_api_items": 120
+}

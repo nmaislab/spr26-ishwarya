@@ -1,0 +1,75 @@
+[
+  {
+    "api_id": "domain_checker_with_ai_domain_validation",
+    "candidate_id": "C13",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 1,
+    "rag_score": 0.5652371048927307,
+    "reason": "",
+    "service": {
+      "_file": "domain_checker_with_ai.json",
+      "_tool": "domain_checker_with_ai",
+      "api_id": "domain_checker_with_ai_domain_validation",
+      "category": "Tools",
+      "description": "This endpoint allows you to validate a domain name by checking if it is registered and has an IP address associated with it.\nTo use this endpoint, you need to send a GET request to the endpoint with the `domain` field in the query parameter. The value of this field should be the domain name you want to validate.\nThe endpoint will return a JSON response with a `status` field set to `'valid'` if the domain is valid, and an `'ip-address'` field containing the IP address of the domain. If the domain is not valid, the endpoint will return a `400 Bad Request` error with an `'error'` field set to `'invalid domain'`.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "www.google.com",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Domain Validation",
+      "tool_description": "Looking for the perfect domain name for your business or personal website? \"Domain Checker with AI\" has got you covered! This comprehensive tool uses advanced artificial intelligence to generate up to 1 million customizable domain suggestions in a single search. Simply enter your desired base words,",
+      "tool_name": "Domain Checker with AI",
+      "toolbench_endpoint_description": "This endpoint allows you to validate a domain name by checking if it is registered and has an IP address associated with it.\nTo use this endpoint, you need to send a GET request to the endpoint with the `domain` field in the query parameter. The value of this field should be the domain name you want to validate.\nThe endpoint will return a JSON response with a `status` field set to `'valid'` if the domain is valid, and an `'ip-address'` field containing the IP address of the domain. If the domain is not valid, the endpoint will return a `400 Bad Request` error with an `'error'` field set to `'invalid domain'`.",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "This endpoint allows you to validate a domain name by checking if it is registered and has an IP address associated with it.\nTo use this endpoint, you need to send a GET request to the endpoint with the `domain` field in the query parameter. The value of this field should be the domain name you want to validate.\nThe endpoint will return a JSON response with a `status` field set to `'valid'` if the domain is valid, and an `'ip-address'` field containing the IP address of the domain. If the domain is not valid, the endpoint will return a `400 Bad Request` error with an `'error'` field set to `'invalid domain'`.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Domain Validation",
+        "endpoint_url": "https://domain-checker-with-ai.p.rapidapi.com/domain/validate",
+        "file_name": "domain_checker_with_ai.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Looking for the perfect domain name for your business or personal website? \"Domain Checker with AI\" has got you covered! This comprehensive tool uses advanced artificial intelligence to generate up to 1 million customizable domain suggestions in a single search. Simply enter your desired base words, prefixes, or suffixes and let the AI do the rest. Our AI model has been trained on today's most popular domains and patterns, ensuring that you always receive accurate and relevant results. In add...",
+        "tool_file_found": true,
+        "tool_name": "Domain Checker with AI",
+        "toolbench_relative_path": "Tools/domain_checker_with_ai.json"
+      },
+      "toolbench_tool_description": "Looking for the perfect domain name for your business or personal website? \"Domain Checker with AI\" has got you covered! This comprehensive tool uses advanced artificial intelligence to generate up to 1 million customizable domain suggestions in a single search. Simply enter your desired base words, prefixes, or suffixes and let the AI do the rest. Our AI model has been trained on today's most popular domains and patterns, ensuring that you always receive accurate and relevant results. In add...",
+      "toolbench_tool_name": "Domain Checker with AI",
+      "url": "https://domain-checker-with-ai.p.rapidapi.com/domain/validate"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "1",
+      "api_id": "domain_checker_with_ai_domain_validation",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "api_id": "tweetfeed_v1",
+    "candidate_id": "C31",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 15,
+    "rag_score": 0.4607473909854889,
+    "reason": "",
+    "service": {
+      "_file": "tweetfeed.json",
+      "_tool": "tweetfeed",
+      "api_id": "tweetfeed_v1",
+      "category": "Cybersecurity",
+      "description": "Version 1 Endpoint.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "phishing",
+            "description": "Can be an specific user, type or tag:\n\nType → **url** / **domain** / **ip** / **sha256** / **md5**\nTag → **phishing** / **ransomware** / **CobaltStrike** ...\nUser → **@malwrhunterteam** / **@1ZRR4H** / **@MBThreatIntel** / ... (don't forget the @)",
+            "name": "filter1",
+            "type": "string"
+          },
+          {
+            "default": "url",
+            "description": "Can be an specific user, type or tag:\n\nType → **url** / **domain** / **ip** / **sha256** / **md5**\nTag → **phishing** / **ransomware** / **CobaltStrike** ...\nUser → **@malwrhunterteam** / **@1ZRR4H** / **@MBThreatIntel** / ... (don't forget the @)",
+            "name": "filter2",
+            "type": "string"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "today",
+            "description": "Select 1 of these timeframes:\n\n**today** - Today starting 00:00 UTC)\n**week** - Last 7 days\n**month** - Last 30 days\n**year** - Last 365 days",
+            "name": "time",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "v1",
+      "tool_description": "Free feed with IOCs - malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]",
+      "tool_name": "TweetFeed",
+      "toolbench_endpoint_description": "Version 1 Endpoint.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Version 1 Endpoint.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "v1",
+        "endpoint_url": "https://tweetfeed.p.rapidapi.com/v1/{time}/{filter1}/{filter2}",
+        "file_name": "tweetfeed.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Free feed with IOCs -  malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]",
+        "tool_file_found": true,
+        "tool_name": "TweetFeed",
+        "toolbench_relative_path": "Cybersecurity/tweetfeed.json"
+      },
+      "toolbench_tool_description": "Free feed with IOCs -  malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]",
+      "toolbench_tool_name": "TweetFeed",
+      "url": "https://tweetfeed.p.rapidapi.com/v1/{time}/{filter1}/{filter2}",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.154,
+        "tp_kbps": 19.48,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.676,
+    "qos_llm_rank": 13,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_pure_llm",
+      "subtask_id": "2",
+      "api_id": "tweetfeed_v1",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

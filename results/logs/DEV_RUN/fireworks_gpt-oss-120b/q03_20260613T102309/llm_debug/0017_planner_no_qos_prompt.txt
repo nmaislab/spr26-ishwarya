@@ -1,0 +1,97 @@
+You create sequential API workflows using only the provided candidates.
+
+Priority order:
+1) Respect the given subtask order.
+2) Functional correctness and step-to-step compatibility come first.
+
+Input user goal:
+Given a set of domains or URLs, validate each domain, scan the URL for malware or phishing risk using threat intelligence APIs, and send high-risk alerts to admins via SMS.
+
+Ordered subtasks:
+[{"id": 1, "description": "Validate domains using an external domain validation or DNS lookup API"}, {"id": 2, "description": "Scan URLs for malware or phishing risk using a threat intelligence API"}, {"id": 3, "description": "Send SMS alerts to admins for high‑risk URLs using an external messaging API"}]
+
+Planner candidate mode: fixed_one.
+- The selected APIs are fixed by the selection stage.
+- There is exactly one selected API per subtask.
+- Use that API for its subtask and preserve subtask order.
+- Do not replace, re-rank, or substitute APIs.
+- The planner only composes the fixed APIs into a coherent workflow.
+
+Candidate APIs:
+[{"api_id": "domain_checker_with_ai_domain_validation", "subtask_id": "1", "selection_order": 1, "service": {"api_id": "domain_checker_with_ai_domain_validation", "name": "Domain Validation", "category": "Tools", "description": "This endpoint allows you to validate a domain name by checking if it is registered and has an IP address associated with it.\nTo use this endpoint, you need to send a GET request to the endpoint with the `domain` field in the query parameter. The value of this field should be the domain name you want to validate.\nThe endpoint will return a JSON response with a `status` field set to `'valid'` if the domain is valid, and an `'ip-address'` field containing the IP address of the domain. If the domain is not valid, the endpoint will return a `400 Bad Request` error with an `'error'` field set to `'invalid domain'`.", "tool_name": "Domain Checker with AI", "tool_description": "Looking for the perfect domain name for your business or personal website? \"Domain Checker with AI\" has got you covered! This comprehensive tool uses advanced artificial intelligence to generate up to 1 million customizable domain suggestions in a single search. Simply enter your desired base words,", "method": "GET", "url": "https://domain-checker-with-ai.p.rapidapi.com/domain/validate", "endpoint_details": {"required_parameters": [{"default": "www.google.com", "description": "", "name": "domain", "type": "STRING"}], "optional_parameters": []}}}, {"api_id": "malicious_urls_check_url", "subtask_id": "2", "selection_order": 1, "service": {"api_id": "malicious_urls_check_url", "name": "Check URL", "category": "Tools", "description": "Endpoint to check URL is malicious or not", "tool_name": "Malicious Urls", "tool_description": "An API to check whether the given URL is malicious or not", "method": "GET", "url": "https://malicious-urls.p.rapidapi.com/check", "endpoint_details": {"required_parameters": [{"default": "google.com", "description": "", "name": "url", "type": "STRING"}], "optional_parameters": []}}}, {"api_id": "bulksmssender_send", "subtask_id": "3", "selection_order": 1, "service": {"api_id": "bulksmssender_send", "name": "Send", "category": "SMS", "description": "Sends bulk SMSes", "tool_name": "BulkSMSSender", "tool_description": "The Bulk SMS Sender API empowers developers and businesses to efficiently send SMS messages in bulk to multiple recipients. This API is designed for backend applications and integrates seamlessly with Twilio, a leading SMS messaging platform, to ensure reliable and secure message delivery.", "method": "POST", "url": "https://bulksmssender.p.rapidapi.com/", "endpoint_details": {"required_parameters": [], "optional_parameters": []}}}]
+
+Rules:
+- Use only the provided candidates.
+- Keep workflows sequential.
+- Return exactly one primary plan.
+- Return a machine-readable execution workflow in addition to the human-readable primary plan.
+- The plan must follow the subtask order.
+- Preserve subtask order exactly; do not reorder subtasks.
+- Explain how each API connects to the next step.
+- Do not invent APIs or reorder subtasks.
+- Every step must use a non-empty "api_id" copied exactly from the provided Candidate APIs.
+- For each execution workflow step, copy method, url, required parameters, and optional parameters from the selected candidate's "service" object when available.
+- If endpoint_details.required_parameters or endpoint_details.optional_parameters are present, use them to populate required_parameters and optional_parameters.
+- In required_parameters and optional_parameters, include each parameter name and describe its source, such as "user_goal", "previous_step_output", "constant/default", or "unknown_needed_from_user".
+- Use depends_on to identify previous workflow step numbers needed before a step can run; use [] for the first independent step.
+- Use input_mapping and output_mapping to describe how values flow between steps.
+- execution_workflow.steps[*].input_mapping must always be a string. For the first step, use "none" or an empty string instead of null.
+- execution_workflow.steps[*].output_mapping must always be a string. Use "none" or an empty string if there is no output mapping.
+- Do not return null, objects, arrays, or nested JSON for execution_workflow input_mapping or output_mapping.
+- Never use null, "none", "internal", "local", or invented placeholders for "api_id".
+- Do not create internal-only, UI-only, formatting-only, or local-computation-only steps without an API.
+- If a subtask seems internal, describe the internal transformation inside the "action" of the closest selected API step or choose the closest suitable provided API for that subtask.
+- "input_from_previous_step" and "output_to_next_step" must be strings or null only; do not return objects, arrays, or nested JSON in these fields.
+- The top-level JSON must contain exactly these required fields: "primary_plan", "execution_workflow", "selected_api_ids", and "overall_rationale".
+- Put "plan_id", "summary", "steps", and "subtask_coverage" inside "primary_plan"; do not put "steps" at the top level.
+- Put "type" and "steps" inside "execution_workflow".
+- This is the no-QoS planning mode. Generate the workflow using only functional suitability, subtask coverage, parameter compatibility, and selected API order. Do not optimize using QoS or quality-related attributes. Keep "qos": null for every workflow step.
+
+Return JSON only:
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "...",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "action": "...",
+        "input_from_previous_step": "...",
+        "output_to_next_step": "...",
+        "why": "...",
+        "planner_override_reason": null,
+        "qos": null
+      }
+    ],
+    "subtask_coverage": [
+      {"subtask_id": 1, "description": "...", "steps": [1], "coverage": "full"}
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "method": "GET",
+        "url": "https://...",
+        "required_parameters": [
+          {"name": "...", "source": "user_goal", "value_hint": "..."}
+        ],
+        "optional_parameters": [
+          {"name": "...", "source": "constant/default", "value_hint": "..."}
+        ],
+        "depends_on": [],
+        "input_mapping": "...",
+        "output_mapping": "...",
+        "expected_output": "...",
+        "planner_override_reason": null
+      }
+    ]
+  },
+  "selected_api_ids": ["..."],
+  "overall_rationale": "..."
+}

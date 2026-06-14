@@ -1,0 +1,1082 @@
+[
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C13",
+    "Selected_API": "domain_checker_with_ai_domain_validation",
+    "Functional Match (0/1)": 1,
+    "Comments": "validates domain registration and IP"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C02",
+    "Selected_API": "anything_domain_common_domains",
+    "Functional Match (0/1)": 0,
+    "Comments": "generates domains, does not validate"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C12",
+    "Selected_API": "dns_lookup_api_soa_domain",
+    "Functional Match (0/1)": 1,
+    "Comments": "performs DNS lookup, validates domain"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C03",
+    "Selected_API": "anything_domain_prefix_domains-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "generates prefix domains, not validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C10",
+    "Selected_API": "debounce_email_validation_email",
+    "Functional Match (0/1)": 0,
+    "Comments": "validates emails, not domains"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C05",
+    "Selected_API": "bulk_domain_check_domain_check",
+    "Functional Match (0/1)": 1,
+    "Comments": "checks domain availability, validates existence"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C18",
+    "Selected_API": "email_validator_validate_email",
+    "Functional Match (0/1)": 0,
+    "Comments": "email validity check"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C06",
+    "Selected_API": "certificate_transparency_scan_certificate_transparency_scan",
+    "Functional Match (0/1)": 0,
+    "Comments": "scans certificates, not domain validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C34",
+    "Selected_API": "useful_business_1001_functions_verifyadomain",
+    "Functional Match (0/1)": 1,
+    "Comments": "checks if domain is valid"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C07",
+    "Selected_API": "check_disposable_email_whois",
+    "Functional Match (0/1)": 1,
+    "Comments": "performs WHOIS lookup, can verify domain"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C01",
+    "Selected_API": "address_validation_nl_api_v1_addresses-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides postal address validation, not domain"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C14",
+    "Selected_API": "domain_information_domain_information",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns domain info including availability"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C25",
+    "Selected_API": "mailboxvalidator_mailboxvalidator_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "email validation only"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C36",
+    "Selected_API": "validect_email_verification_v1_verify",
+    "Functional Match (0/1)": 0,
+    "Comments": "email verification, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C35",
+    "Selected_API": "validate_phone_by_api_ninjas_v1_validatephone",
+    "Functional Match (0/1)": 0,
+    "Comments": "phone validation, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C17",
+    "Selected_API": "email_validation_and_verification_email_validation_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "email validation only"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C26",
+    "Selected_API": "minecraft_checkdomaindns",
+    "Functional Match (0/1)": 1,
+    "Comments": "checks DNS of a domain"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C09",
+    "Selected_API": "d7_number_validator_validate_number",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves phone number details, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C08",
+    "Selected_API": "checky_verify_phone_number_verify_batch",
+    "Functional Match (0/1)": 0,
+    "Comments": "verifies phone numbers, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C11",
+    "Selected_API": "disposable_email_detect_domain",
+    "Functional Match (0/1)": 0,
+    "Comments": "detects disposable domains, not validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C38",
+    "Selected_API": "vibrant_dns_get_dns_records",
+    "Functional Match (0/1)": 1,
+    "Comments": "retrieves DNS records for domain"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C40",
+    "Selected_API": "whois_lookup_service_whois_domain_lookup",
+    "Functional Match (0/1)": 1,
+    "Comments": "WHOIS lookup for domain, validates existence"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C19",
+    "Selected_API": "emalidate_validateemailaddresswithtoken",
+    "Functional Match (0/1)": 0,
+    "Comments": "email syntax validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C39",
+    "Selected_API": "whatsapp_number_validators_bulk_validation",
+    "Functional Match (0/1)": 0,
+    "Comments": "WhatsApp number validation, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C29",
+    "Selected_API": "phonenumbervalidate_validate",
+    "Functional Match (0/1)": 0,
+    "Comments": "phone number validation, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C27",
+    "Selected_API": "phone_verification_login_to_accuratecheckr",
+    "Functional Match (0/1)": 0,
+    "Comments": "auth token retrieval, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C04",
+    "Selected_API": "appraiser_validatelicense",
+    "Functional Match (0/1)": 0,
+    "Comments": "validates appraiser licenses, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C33",
+    "Selected_API": "testing_v3_validateemail",
+    "Functional Match (0/1)": 0,
+    "Comments": "email validation, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C31",
+    "Selected_API": "pk_domain_information_lookup_pk_domain",
+    "Functional Match (0/1)": 1,
+    "Comments": "whois info for .pk domain, can validate existence"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C28",
+    "Selected_API": "phonenumber_validator_health",
+    "Functional Match (0/1)": 0,
+    "Comments": "phone validator status, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C32",
+    "Selected_API": "ssl_certificate_issuer",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves SSL issuer, not domain validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C15",
+    "Selected_API": "email_api_check_free_email_providers-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "checks email provider type, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C24",
+    "Selected_API": "mailboxvalidator_com_disposable_email",
+    "Functional Match (0/1)": 0,
+    "Comments": "email disposable check, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C20",
+    "Selected_API": "geofencing_polygon",
+    "Functional Match (0/1)": 0,
+    "Comments": "geofencing coordinates, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C16",
+    "Selected_API": "email_existence_validator_homepage_about_the_api",
+    "Functional Match (0/1)": 0,
+    "Comments": "displays API info, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C21",
+    "Selected_API": "import_export_verification_import_export_verification",
+    "Functional Match (0/1)": 0,
+    "Comments": "business merchant verification, not domain validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C22",
+    "Selected_API": "import_export_verification_import_export_verification-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "business merchant verification, not domain validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C30",
+    "Selected_API": "phonevalication_api_endpoint_1",
+    "Functional Match (0/1)": 0,
+    "Comments": "phone verification, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C37",
+    "Selected_API": "venue_validatecluster",
+    "Functional Match (0/1)": 0,
+    "Comments": "venue cluster validation, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "1",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C23",
+    "Selected_API": "ip_address_location_lookup_ip",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides IP details, not domain validation"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C29",
+    "Selected_API": "sus_guru_malicious_website_ai_detector_api_api_scan-2",
+    "Functional Match (0/1)": 1,
+    "Comments": "initiates URL scan (duplicate)"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C28",
+    "Selected_API": "sus_guru_malicious_website_ai_detector_api_api_scan",
+    "Functional Match (0/1)": 1,
+    "Comments": "initiates URL malware/phishing scan"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C27",
+    "Selected_API": "sus_guru_malicious_website_ai_detector_api_api_report_report_id",
+    "Functional Match (0/1)": 1,
+    "Comments": "provides scan report, essential for risk result"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C13",
+    "Selected_API": "malicious_urls_check_url",
+    "Functional Match (0/1)": 1,
+    "Comments": "checks URL maliciousness directly"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C26",
+    "Selected_API": "sus_guru_malicious_website_ai_detector_api_api_queue",
+    "Functional Match (0/1)": 0,
+    "Comments": "only returns queue status, no scan"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C36",
+    "Selected_API": "weblasso_get_scan_id",
+    "Functional Match (0/1)": 1,
+    "Comments": "starts scan and returns scan ID"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C20",
+    "Selected_API": "phishyscan_api_scan",
+    "Functional Match (0/1)": 0,
+    "Comments": "scans email for phishing, not URL"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C11",
+    "Selected_API": "javascript_vulnerability_scan_analyzeurl",
+    "Functional Match (0/1)": 0,
+    "Comments": "scans JS vulnerabilities, not threat intel"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C35",
+    "Selected_API": "weblasso_get_callback_url_status",
+    "Functional Match (0/1)": 0,
+    "Comments": "checks callback URL, not scanning"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C37",
+    "Selected_API": "weblasso_get_scan_results",
+    "Functional Match (0/1)": 1,
+    "Comments": "retrieves scan results, essential data"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C38",
+    "Selected_API": "weblasso_get_scan_status",
+    "Functional Match (0/1)": 1,
+    "Comments": "checks scan status, supports scanning"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C06",
+    "Selected_API": "exerra_phishing_check_get_stats",
+    "Functional Match (0/1)": 0,
+    "Comments": "stats endpoint, not URL scan"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C05",
+    "Selected_API": "domain_information_domain_information",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides domain registration info"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C16",
+    "Selected_API": "pawscan_scan",
+    "Functional Match (0/1)": 0,
+    "Comments": "domain vulnerability scan, not malware/phishing"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C31",
+    "Selected_API": "tweetfeed_v1",
+    "Functional Match (0/1)": 1,
+    "Comments": "threat feed lookup for malicious URLs"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C01",
+    "Selected_API": "ai_url_shortner_welcome",
+    "Functional Match (0/1)": 0,
+    "Comments": "irrelevant welcome endpoint"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C10",
+    "Selected_API": "ip_threat_lookup_iplookup",
+    "Functional Match (0/1)": 0,
+    "Comments": "IP threat lookup, not URL"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C33",
+    "Selected_API": "urlchecker_decodelink",
+    "Functional Match (0/1)": 0,
+    "Comments": "decodes shortened links, not scanning"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C30",
+    "Selected_API": "the_content_monitoring_api_create_detector",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates content change detector, not threat scan"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C23",
+    "Selected_API": "roco_api_get_rogues_by_name",
+    "Functional Match (0/1)": 0,
+    "Comments": "gaming API, irrelevant"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C19",
+    "Selected_API": "penteston_api_v1_start_scan",
+    "Functional Match (0/1)": 0,
+    "Comments": "starts generic scan, not URL threat"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C25",
+    "Selected_API": "spamspy_comprehend",
+    "Functional Match (0/1)": 0,
+    "Comments": "spam detection for content, not URL risk"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C32",
+    "Selected_API": "url_shortener_track",
+    "Functional Match (0/1)": 0,
+    "Comments": "tracks shortened URL info, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C09",
+    "Selected_API": "ics_cert_advisories_get_all_advisories",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves security advisories"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C40",
+    "Selected_API": "xss_shield_get_detect",
+    "Functional Match (0/1)": 0,
+    "Comments": "detects XSS in input, not URL threat"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C17",
+    "Selected_API": "penteston_api_v1_add_target",
+    "Functional Match (0/1)": 0,
+    "Comments": "adds target, no scanning"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C22",
+    "Selected_API": "quantum_ready_check_checkquantum",
+    "Functional Match (0/1)": 0,
+    "Comments": "checks quantum-safe key exchange, unrelated"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C03",
+    "Selected_API": "corbado_emaillinksend",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates email magic link"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C02",
+    "Selected_API": "amazon_web_services_aws_guardduty_detector_detector_detectorid",
+    "Functional Match (0/1)": 0,
+    "Comments": "updates GuardDuty detector config"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C07",
+    "Selected_API": "greip_asnlookup",
+    "Functional Match (0/1)": 0,
+    "Comments": "ASN lookup, not URL"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C04",
+    "Selected_API": "corbado_webauthnassociatestart",
+    "Functional Match (0/1)": 0,
+    "Comments": "starts passkey association"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C18",
+    "Selected_API": "penteston_api_v1_add_test",
+    "Functional Match (0/1)": 0,
+    "Comments": "adds test, no scanning"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C34",
+    "Selected_API": "vortex_postregister",
+    "Functional Match (0/1)": 0,
+    "Comments": "register endpoint, no scanning function"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C08",
+    "Selected_API": "greip_validateemail",
+    "Functional Match (0/1)": 0,
+    "Comments": "email validation only"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C24",
+    "Selected_API": "seo_automations_extract_sitemap_xml_as_json",
+    "Functional Match (0/1)": 0,
+    "Comments": "parses sitemap, not threat scan"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C15",
+    "Selected_API": "netdetective_query-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "duplicate IP query"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C14",
+    "Selected_API": "netdetective_query",
+    "Functional Match (0/1)": 0,
+    "Comments": "IP info query"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C21",
+    "Selected_API": "porn_filter_filter",
+    "Functional Match (0/1)": 0,
+    "Comments": "checks adult content, not malware"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C39",
+    "Selected_API": "webup_check_keyword",
+    "Functional Match (0/1)": 0,
+    "Comments": "keyword detection, not malware"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "2",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C12",
+    "Selected_API": "loginllama_check_login",
+    "Functional Match (0/1)": 0,
+    "Comments": "checks suspicious logins"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C07",
+    "Selected_API": "reach_interactive_message_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "creates and sends messages"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C17",
+    "Selected_API": "smsapi_com_short_url_links-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates short URLs, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C18",
+    "Selected_API": "smsapi_com_short_url_links_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves short URL, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C39",
+    "Selected_API": "smsway_app_messages_getsent",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves sent messages, not sending"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C38",
+    "Selected_API": "smsway_app_messages_getreceived",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves received messages, not sending"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C21",
+    "Selected_API": "smsapi_com_subusers_id_shares_sendernames",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves sender names, not sending SMS"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C02",
+    "Selected_API": "bulksmssender_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends bulk SMS messages"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C09",
+    "Selected_API": "redtie_info",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves info, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C08",
+    "Selected_API": "redtie_create-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "unclear send function, no description"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C06",
+    "Selected_API": "rapid_sms_api_send_sms",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends a text message"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C04",
+    "Selected_API": "easysendsms_sms_api",
+    "Functional Match (0/1)": 1,
+    "Comments": "provides SMS sending endpoint"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C28",
+    "Selected_API": "smsto_send_campaign_message",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS campaign to recipients"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C29",
+    "Selected_API": "smsto_send_campaign_message-2",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS campaign to recipients"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C26",
+    "Selected_API": "smsto_get_messages",
+    "Functional Match (0/1)": 0,
+    "Comments": "fetches messages, not sending"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C34",
+    "Selected_API": "smsway_app_addressbook_createcontact",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates contact, no sending"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C35",
+    "Selected_API": "smsway_app_addressbook_createcontact-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates contact, no sending"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C36",
+    "Selected_API": "smsway_app_addressbook_creategroup-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates group, no sending"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C25",
+    "Selected_API": "smsto_estimate_campaign_message",
+    "Functional Match (0/1)": 0,
+    "Comments": "estimates cost, does not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C20",
+    "Selected_API": "smsapi_com_subusers",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists subusers, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C05",
+    "Selected_API": "hooksms_send",
+    "Functional Match (0/1)": 1,
+    "Comments": "endpoint for sending SMS"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C30",
+    "Selected_API": "smsto_send_message_to_a_list_or_multiple_list_in_array",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends SMS to list/array"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C31",
+    "Selected_API": "smsto_send_personalized_messages",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends personalized SMS messages"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C01",
+    "Selected_API": "ai_messaging_receive_text",
+    "Functional Match (0/1)": 0,
+    "Comments": "receives messages only"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C03",
+    "Selected_API": "easysendsms_check_balance",
+    "Functional Match (0/1)": 0,
+    "Comments": "only checks account balance"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C37",
+    "Selected_API": "smsway_app_devices_getdevice",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets device info, not sending"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C33",
+    "Selected_API": "smsto_send_viber_message-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "sends Viber, not SMS"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C27",
+    "Selected_API": "smsto_schedule_sending_messages",
+    "Functional Match (0/1)": 1,
+    "Comments": "schedules SMS messages for later delivery"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C22",
+    "Selected_API": "smsguru_test_service_response_time",
+    "Functional Match (0/1)": 0,
+    "Comments": "only tests service latency"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C32",
+    "Selected_API": "smsto_send_single_message",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends single SMS message"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C10",
+    "Selected_API": "rivet_sms_get_sender_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets sender IDs only"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C19",
+    "Selected_API": "smsapi_com_sms_sendernames-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates sender names, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C11",
+    "Selected_API": "sms_receive_getupdates",
+    "Functional Match (0/1)": 0,
+    "Comments": "receives updates of incoming messages"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C12",
+    "Selected_API": "sms_receive_settag",
+    "Functional Match (0/1)": 0,
+    "Comments": "sets tag, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C13",
+    "Selected_API": "sms_receive_settag-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "sets tag, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C23",
+    "Selected_API": "smsjet_send_2fa_token",
+    "Functional Match (0/1)": 0,
+    "Comments": "sends only 2FA tokens, not generic alerts"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C14",
+    "Selected_API": "sms_voice_messages_voicemessage",
+    "Functional Match (0/1)": 0,
+    "Comments": "sends voice, not SMS"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C15",
+    "Selected_API": "smsapi_com_blacklist_phone_numbers-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "manages blacklist, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C16",
+    "Selected_API": "smsapi_com_profile_regional_settings_available_languages",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists languages, not send"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C40",
+    "Selected_API": "tiktok_best_experience_hashtag_s_challenge_feed_by_name",
+    "Functional Match (0/1)": 0,
+    "Comments": "TikTok data, unrelated to SMS"
+  },
+  {
+    "Query_ID": "q03",
+    "Sub Task": "3",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C24",
+    "Selected_API": "smsportal_subscribe_to_replies",
+    "Functional Match (0/1)": 0,
+    "Comments": "registers webhook, does not send SMS"
+  }
+]

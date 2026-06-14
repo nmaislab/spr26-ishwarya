@@ -1,0 +1,2513 @@
+[
+  {
+    "api_id": "malicious_urls_check_url",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 4,
+    "rag_score": 0.5999679565429688,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 13.",
+    "service": {
+      "_file": "malicious_urls.json",
+      "_tool": "malicious_urls",
+      "api_id": "malicious_urls_check_url",
+      "category": "Tools",
+      "description": "Endpoint to check URL is malicious or not",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "google.com",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Check URL",
+      "tool_description": "An API to check whether the given URL is malicious or not",
+      "tool_name": "Malicious Urls",
+      "toolbench_endpoint_description": "Endpoint to check URL is malicious or not",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Endpoint to check URL is malicious or not",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Check URL",
+        "endpoint_url": "https://malicious-urls.p.rapidapi.com/check",
+        "file_name": "malicious_urls.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API to check whether the given URL is malicious or not",
+        "tool_file_found": true,
+        "tool_name": "Malicious Urls",
+        "toolbench_relative_path": "Tools/malicious_urls.json"
+      },
+      "toolbench_tool_description": "An API to check whether the given URL is malicious or not",
+      "toolbench_tool_name": "Malicious Urls",
+      "url": "https://malicious-urls.p.rapidapi.com/check",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.112,
+        "tp_kbps": 26.785,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5461879841136118,
+    "topsis_rank": 13
+  },
+  {
+    "api_id": "tweetfeed_v1",
+    "candidate_id": "",
+    "mode_rank": 2,
+    "llm_reported_rank": null,
+    "retrieved_rank": 15,
+    "rag_score": 0.4607473909854889,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 15.",
+    "service": {
+      "_file": "tweetfeed.json",
+      "_tool": "tweetfeed",
+      "api_id": "tweetfeed_v1",
+      "category": "Cybersecurity",
+      "description": "Version 1 Endpoint.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "phishing",
+            "description": "Can be an specific user, type or tag:\n\nType → **url** / **domain** / **ip** / **sha256** / **md5**\nTag → **phishing** / **ransomware** / **CobaltStrike** ...\nUser → **@malwrhunterteam** / **@1ZRR4H** / **@MBThreatIntel** / ... (don't forget the @)",
+            "name": "filter1",
+            "type": "string"
+          },
+          {
+            "default": "url",
+            "description": "Can be an specific user, type or tag:\n\nType → **url** / **domain** / **ip** / **sha256** / **md5**\nTag → **phishing** / **ransomware** / **CobaltStrike** ...\nUser → **@malwrhunterteam** / **@1ZRR4H** / **@MBThreatIntel** / ... (don't forget the @)",
+            "name": "filter2",
+            "type": "string"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "today",
+            "description": "Select 1 of these timeframes:\n\n**today** - Today starting 00:00 UTC)\n**week** - Last 7 days\n**month** - Last 30 days\n**year** - Last 365 days",
+            "name": "time",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "v1",
+      "tool_description": "Free feed with IOCs - malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]",
+      "tool_name": "TweetFeed",
+      "toolbench_endpoint_description": "Version 1 Endpoint.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Version 1 Endpoint.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "v1",
+        "endpoint_url": "https://tweetfeed.p.rapidapi.com/v1/{time}/{filter1}/{filter2}",
+        "file_name": "tweetfeed.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Free feed with IOCs -  malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]",
+        "tool_file_found": true,
+        "tool_name": "TweetFeed",
+        "toolbench_relative_path": "Cybersecurity/tweetfeed.json"
+      },
+      "toolbench_tool_description": "Free feed with IOCs -  malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]",
+      "toolbench_tool_name": "TweetFeed",
+      "url": "https://tweetfeed.p.rapidapi.com/v1/{time}/{filter1}/{filter2}",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.154,
+        "tp_kbps": 19.48,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5422871428644556,
+    "topsis_rank": 15
+  },
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan-2",
+    "candidate_id": "",
+    "mode_rank": 3,
+    "llm_reported_rank": null,
+    "retrieved_rank": 1,
+    "rag_score": 0.6649187803268433,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 19.",
+    "service": {
+      "_file": "sus_guru_malicious_website_ai_detector_api.json",
+      "_tool": "sus_guru_malicious_website_ai_detector_api",
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan-2",
+      "category": "Cybersecurity",
+      "description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/api/scan",
+      "tool_description": "Check if a website is malicious or safe",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "toolbench_endpoint_description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/api/scan",
+        "endpoint_url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/scan",
+        "file_name": "sus_guru_malicious_website_ai_detector_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if a website is malicious or safe",
+        "tool_file_found": true,
+        "tool_name": "Sus Guru Malicious Website AI Detector API",
+        "toolbench_relative_path": "Cybersecurity/sus_guru_malicious_website_ai_detector_api.json"
+      },
+      "toolbench_tool_description": "Check if a website is malicious or safe",
+      "toolbench_tool_name": "Sus Guru Malicious Website AI Detector API",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/scan",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.36,
+        "tp_kbps": 27.777,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5405999306652539,
+    "topsis_rank": 19
+  },
+  {
+    "api_id": "weblasso_get_scan_status",
+    "candidate_id": "",
+    "mode_rank": 4,
+    "llm_reported_rank": null,
+    "retrieved_rank": 11,
+    "rag_score": 0.5198425054550171,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 24.",
+    "service": {
+      "_file": "weblasso.json",
+      "_tool": "weblasso",
+      "api_id": "weblasso_get_scan_status",
+      "category": "Cybersecurity",
+      "description": "Check the status of a scan (ongoing/completed) using a scan ID.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "e04d3e18-bda7-420b-b240-894fd3d4992d",
+            "description": "",
+            "name": "scan_id",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get Scan Status",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "tool_name": "WebLasso",
+      "toolbench_endpoint_description": "Check the status of a scan (ongoing/completed) using a scan ID.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Check the status of a scan (ongoing/completed) using a scan ID.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Scan Status",
+        "endpoint_url": "https://weblasso.p.rapidapi.com/scan-status",
+        "file_name": "weblasso.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+        "tool_file_found": true,
+        "tool_name": "WebLasso",
+        "toolbench_relative_path": "Cybersecurity/weblasso.json"
+      },
+      "toolbench_tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "toolbench_tool_name": "WebLasso",
+      "url": "https://weblasso.p.rapidapi.com/scan-status",
+      "qos": {
+        "availability": 0.9764,
+        "rt_s": 0.344,
+        "tp_kbps": 11.627,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5339594540214414,
+    "topsis_rank": 24
+  },
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_report_report_id",
+    "candidate_id": "",
+    "mode_rank": 5,
+    "llm_reported_rank": null,
+    "retrieved_rank": 3,
+    "rag_score": 0.6132655739784241,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 28.",
+    "service": {
+      "_file": "sus_guru_malicious_website_ai_detector_api.json",
+      "_tool": "sus_guru_malicious_website_ai_detector_api",
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_report_report_id",
+      "category": "Cybersecurity",
+      "description": "Returns the report details for a given report ID.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": 10858,
+            "description": "",
+            "name": "report_id",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/api/report/{report_id}",
+      "tool_description": "Check if a website is malicious or safe",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "toolbench_endpoint_description": "Returns the report details for a given report ID.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Returns the report details for a given report ID.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/api/report/{report_id}",
+        "endpoint_url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/report/{report_id}",
+        "file_name": "sus_guru_malicious_website_ai_detector_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if a website is malicious or safe",
+        "tool_file_found": true,
+        "tool_name": "Sus Guru Malicious Website AI Detector API",
+        "toolbench_relative_path": "Cybersecurity/sus_guru_malicious_website_ai_detector_api.json"
+      },
+      "toolbench_tool_description": "Check if a website is malicious or safe",
+      "toolbench_tool_name": "Sus Guru Malicious Website AI Detector API",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/report/{report_id}",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.351,
+        "tp_kbps": 8.547,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5325870848144515,
+    "topsis_rank": 28
+  },
+  {
+    "api_id": "weblasso_get_scan_id",
+    "candidate_id": "",
+    "mode_rank": 6,
+    "llm_reported_rank": null,
+    "retrieved_rank": 6,
+    "rag_score": 0.5865952372550964,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 29.",
+    "service": {
+      "_file": "weblasso.json",
+      "_tool": "weblasso",
+      "api_id": "weblasso_get_scan_id",
+      "category": "Cybersecurity",
+      "description": "Run a scan against a target URL and receive a scan ID to obtain scan results or check scan status at a later time.\n\nProvide an optional callback URL to receive scan results automatically once the scan is completed (ensure that the callback URL accepts POST requests)",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "https://my-callback-url.com",
+            "description": "",
+            "name": "callback_url",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "tesla.com",
+            "description": "",
+            "name": "target",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Scan ID",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "tool_name": "WebLasso",
+      "toolbench_endpoint_description": "Run a scan against a target URL and receive a scan ID to obtain scan results or check scan status at a later time.\n\nProvide an optional callback URL to receive scan results automatically once the scan is completed (ensure that the callback URL accepts POST requests)",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Run a scan against a target URL and receive a scan ID to obtain scan results or check scan status at a later time.\n\nProvide an optional callback URL to receive scan results automatically once the scan is completed (ensure that the callback URL accepts POST requests)",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Scan ID",
+        "endpoint_url": "https://weblasso.p.rapidapi.com/scan-id",
+        "file_name": "weblasso.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+        "tool_file_found": true,
+        "tool_name": "WebLasso",
+        "toolbench_relative_path": "Cybersecurity/weblasso.json"
+      },
+      "toolbench_tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "toolbench_tool_name": "WebLasso",
+      "url": "https://weblasso.p.rapidapi.com/scan-id",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.357,
+        "tp_kbps": 8.403,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5325506047195387,
+    "topsis_rank": 29
+  },
+  {
+    "api_id": "weblasso_get_scan_results",
+    "candidate_id": "",
+    "mode_rank": 7,
+    "llm_reported_rank": null,
+    "retrieved_rank": 10,
+    "rag_score": 0.5311983823776245,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 33.",
+    "service": {
+      "_file": "weblasso.json",
+      "_tool": "weblasso",
+      "api_id": "weblasso_get_scan_results",
+      "category": "Cybersecurity",
+      "description": "Obtain the scan results from a given scan ID.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "b12394ad-c804-4b5a-bc20-14f7c8cafdb6",
+            "description": "",
+            "name": "scan_id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Scan Results",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "tool_name": "WebLasso",
+      "toolbench_endpoint_description": "Obtain the scan results from a given scan ID.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Obtain the scan results from a given scan ID.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Scan Results",
+        "endpoint_url": "https://weblasso.p.rapidapi.com/scan",
+        "file_name": "weblasso.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+        "tool_file_found": true,
+        "tool_name": "WebLasso",
+        "toolbench_relative_path": "Cybersecurity/weblasso.json"
+      },
+      "toolbench_tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "toolbench_tool_name": "WebLasso",
+      "url": "https://weblasso.p.rapidapi.com/scan",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.573,
+        "tp_kbps": 15.706,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5299497358700771,
+    "topsis_rank": 33
+  },
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan",
+    "candidate_id": "",
+    "mode_rank": 8,
+    "llm_reported_rank": null,
+    "retrieved_rank": 2,
+    "rag_score": 0.6649187803268433,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 37.",
+    "service": {
+      "_file": "sus_guru_malicious_website_ai_detector_api.json",
+      "_tool": "sus_guru_malicious_website_ai_detector_api",
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan",
+      "category": "Cybersecurity",
+      "description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/api/scan",
+      "tool_description": "Check if a website is malicious or safe",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "toolbench_endpoint_description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/api/scan",
+        "endpoint_url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/scan",
+        "file_name": "sus_guru_malicious_website_ai_detector_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if a website is malicious or safe",
+        "tool_file_found": true,
+        "tool_name": "Sus Guru Malicious Website AI Detector API",
+        "toolbench_relative_path": "Cybersecurity/sus_guru_malicious_website_ai_detector_api.json"
+      },
+      "toolbench_tool_description": "Check if a website is malicious or safe",
+      "toolbench_tool_name": "Sus Guru Malicious Website AI Detector API",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/scan",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.556,
+        "tp_kbps": 5.395,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5260509068794831,
+    "topsis_rank": 37
+  },
+  {
+    "api_id": "porn_filter_filter",
+    "candidate_id": "",
+    "mode_rank": 9,
+    "llm_reported_rank": null,
+    "retrieved_rank": 38,
+    "rag_score": 0.39843857288360596,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 1.",
+    "service": {
+      "_file": "porn_filter.json",
+      "_tool": "porn_filter",
+      "api_id": "porn_filter_filter",
+      "category": "Monitoring",
+      "description": "Check if a website is on our porn blacklist.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "pornhub.com",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "filter",
+      "tool_description": "Check if a website contains adult content.",
+      "tool_name": "Porn Filter",
+      "toolbench_endpoint_description": "Check if a website is on our porn blacklist.",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "Check if a website is on our porn blacklist.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "filter",
+        "endpoint_url": "https://porn-filter2.p.rapidapi.com/",
+        "file_name": "porn_filter.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if a website contains adult content.",
+        "tool_file_found": true,
+        "tool_name": "Porn Filter",
+        "toolbench_relative_path": "Monitoring/porn_filter.json"
+      },
+      "toolbench_tool_description": "Check if a website contains adult content.",
+      "toolbench_tool_name": "Porn Filter",
+      "url": "https://porn-filter2.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.633,
+        "tp_kbps": 614.285,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9613114480690275,
+    "topsis_rank": 1
+  },
+  {
+    "api_id": "amazon_web_services_aws_guardduty_detector_detector_detectorid",
+    "candidate_id": "",
+    "mode_rank": 10,
+    "llm_reported_rank": null,
+    "retrieved_rank": 29,
+    "rag_score": 0.41497546434402466,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 2.",
+    "service": {
+      "_file": "amazon_web_services_aws_guardduty_detector.json",
+      "_tool": "amazon_web_services_aws_guardduty_detector",
+      "api_id": "amazon_web_services_aws_guardduty_detector_detector_detectorid",
+      "category": "Cybersecurity",
+      "description": "This operation enables users to update and modify the configuration of a specific detector identified by its <code>detectorId</code>. By providing the <code>detectorId</code> as a parameter in the request to this endpoint, users can make changes to various properties of the detector, such as alert thresholds, monitoring rules, or other relevant settings.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "ID of the detector",
+            "name": "detectorId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "/detector/{detectorId}",
+      "tool_description": "The AWS GuardDuty API enables real-time threat detection, automated response, and custom integrations to enhance the security of your AWS accounts. <br>",
+      "tool_name": "Amazon Web Services (AWS) GuardDuty Detector",
+      "toolbench_endpoint_description": "This operation enables users to update and modify the configuration of a specific detector identified by its <code>detectorId</code>. By providing the <code>detectorId</code> as a parameter in the request to this endpoint, users can make changes to various properties of the detector, such as alert thresholds, monitoring rules, or other relevant settings.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "This operation enables users to update and modify the configuration of a specific detector identified by its <code>detectorId</code>. By providing the <code>detectorId</code> as a parameter in the request to this endpoint, users can make changes to various properties of the detector, such as alert thresholds, monitoring rules, or other relevant settings.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/detector/{detectorId}",
+        "endpoint_url": "https://amazon-web-services-aws-guardduty-detector.p.rapidapi.com/detector/{detectorId}",
+        "file_name": "amazon_web_services_aws_guardduty_detector.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The AWS GuardDuty API enables real-time threat detection, automated response, and custom integrations to enhance the security of your AWS accounts.\n\n<br>",
+        "tool_file_found": true,
+        "tool_name": "Amazon Web Services (AWS) GuardDuty Detector",
+        "toolbench_relative_path": "Cybersecurity/amazon_web_services_aws_guardduty_detector.json"
+      },
+      "toolbench_tool_description": "The AWS GuardDuty API enables real-time threat detection, automated response, and custom integrations to enhance the security of your AWS accounts.\n\n<br>",
+      "toolbench_tool_name": "Amazon Web Services (AWS) GuardDuty Detector",
+      "url": "https://amazon-web-services-aws-guardduty-detector.p.rapidapi.com/detector/{detectorId}",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.132,
+        "tp_kbps": 520.27,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9031038831350153,
+    "topsis_rank": 2
+  },
+  {
+    "api_id": "domain_information_domain_information",
+    "candidate_id": "",
+    "mode_rank": 11,
+    "llm_reported_rank": null,
+    "retrieved_rank": 13,
+    "rag_score": 0.4665963649749756,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 3.",
+    "service": {
+      "_file": "domain_information.json",
+      "_tool": "domain_information",
+      "api_id": "domain_information_domain_information",
+      "category": "Search",
+      "description": "This endpoint takes a 'GET' request with URL as a parameter and returns the domain's general information.\nDo not write 'https://' or 'http://' in the URL as it will make the API break.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Domain Information",
+      "tool_description": "This API takes a URL and returns its information on GoDaddy (e.g. Availability, Price, etc..).",
+      "tool_name": "Domain Information",
+      "toolbench_endpoint_description": "This endpoint takes a 'GET' request with URL as a parameter and returns the domain's general information.\nDo not write 'https://' or 'http://' in the URL as it will make the API break.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "This endpoint takes a 'GET' request with URL as a parameter and returns the domain's general information.\nDo not write 'https://' or 'http://' in the URL as it will make the API break.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Domain Information",
+        "endpoint_url": "https://domain-information.p.rapidapi.com/domain_api",
+        "file_name": "domain_information.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API takes a URL and returns its information on GoDaddy (e.g. Availability, Price, etc..).",
+        "tool_file_found": true,
+        "tool_name": "Domain Information",
+        "toolbench_relative_path": "Search/domain_information.json"
+      },
+      "toolbench_tool_description": "This API takes a URL and returns its information on GoDaddy (e.g. Availability, Price, etc..).",
+      "toolbench_tool_name": "Domain Information",
+      "url": "https://domain-information.p.rapidapi.com/domain_api",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.105,
+        "tp_kbps": 347.107,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.7468450896596541,
+    "topsis_rank": 3
+  },
+  {
+    "api_id": "spamspy_comprehend",
+    "candidate_id": "",
+    "mode_rank": 12,
+    "llm_reported_rank": null,
+    "retrieved_rank": 22,
+    "rag_score": 0.43077531456947327,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 4.",
+    "service": {
+      "_file": "spamspy.json",
+      "_tool": "spamspy",
+      "api_id": "spamspy_comprehend",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "description": "Comprehend uses the current AI public modals and submits the content (located in the query string) to be identified as spam or not.\n- Fetch Method Get\n- Returns Boolean: **true** / **false**\nExample Response:\n`{\"SpamSpyResult\":true}` (content is spam)\n`{\"SpamSpyResult\":false}`(content is not spam)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "You won $1,000,00 congratulations winner come recieve your prize!",
+            "description": "",
+            "name": "content",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Comprehend",
+      "tool_description": "AI-powered spam detection to secure & streamline communication.",
+      "tool_name": "SpamSpy",
+      "toolbench_endpoint_description": "Comprehend uses the current AI public modals and submits the content (located in the query string) to be identified as spam or not.\n- Fetch Method Get\n- Returns Boolean: **true** / **false**\nExample Response:\n`{\"SpamSpyResult\":true}` (content is spam)\n`{\"SpamSpyResult\":false}`(content is not spam)",
+      "toolbench_enrichment": {
+        "category": "Artificial_Intelligence_Machine_Learning",
+        "endpoint_description": "Comprehend uses the current AI public modals and submits the content (located in the query string) to be identified as spam or not.\n- Fetch Method Get\n- Returns Boolean: **true** / **false**\nExample Response:\n`{\"SpamSpyResult\":true}` (content is spam)\n`{\"SpamSpyResult\":false}`(content is not spam)",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Comprehend",
+        "endpoint_url": "https://spamspy.p.rapidapi.com/Comprehend",
+        "file_name": "spamspy.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "AI-powered spam detection to secure & streamline communication.",
+        "tool_file_found": true,
+        "tool_name": "SpamSpy",
+        "toolbench_relative_path": "Artificial_Intelligence_Machine_Learning/spamspy.json"
+      },
+      "toolbench_tool_description": "AI-powered spam detection to secure & streamline communication.",
+      "toolbench_tool_name": "SpamSpy",
+      "url": "https://spamspy.p.rapidapi.com/Comprehend",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 1.548,
+        "tp_kbps": 389.80449999999996,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.7465179434552631,
+    "topsis_rank": 4
+  },
+  {
+    "api_id": "weblasso_get_callback_url_status",
+    "candidate_id": "",
+    "mode_rank": 13,
+    "llm_reported_rank": null,
+    "retrieved_rank": 9,
+    "rag_score": 0.5436861515045166,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 5.",
+    "service": {
+      "_file": "weblasso.json",
+      "_tool": "weblasso",
+      "api_id": "weblasso_get_callback_url_status",
+      "category": "Cybersecurity",
+      "description": "Check if a callback URL is able to receive scan results (ensure that the callback URL accepts POST requests).",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "https://my-callback-url.com",
+            "description": "",
+            "name": "callback_url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get Callback URL Status",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "tool_name": "WebLasso",
+      "toolbench_endpoint_description": "Check if a callback URL is able to receive scan results (ensure that the callback URL accepts POST requests).",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Check if a callback URL is able to receive scan results (ensure that the callback URL accepts POST requests).",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get Callback URL Status",
+        "endpoint_url": "https://weblasso.p.rapidapi.com/callback-status",
+        "file_name": "weblasso.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+        "tool_file_found": true,
+        "tool_name": "WebLasso",
+        "toolbench_relative_path": "Cybersecurity/weblasso.json"
+      },
+      "toolbench_tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!",
+      "toolbench_tool_name": "WebLasso",
+      "url": "https://weblasso.p.rapidapi.com/callback-status",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.142,
+        "tp_kbps": 112.676,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5874184548994511,
+    "topsis_rank": 5
+  },
+  {
+    "api_id": "penteston_api_v1_add_test",
+    "candidate_id": "",
+    "mode_rank": 14,
+    "llm_reported_rank": null,
+    "retrieved_rank": 32,
+    "rag_score": 0.41187936067581177,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 6.",
+    "service": {
+      "_file": "penteston_api.json",
+      "_tool": "penteston_api",
+      "api_id": "penteston_api_v1_add_test",
+      "category": "Cybersecurity",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "{{target_id}}",
+            "description": "Target ID",
+            "name": "target_id",
+            "type": "STRING"
+          },
+          {
+            "default": "Test Name",
+            "description": "Assessment (Test) display name",
+            "name": "test_name",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "HTTP Password (If restriction on host)",
+            "name": "host_http_pass",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "HTTP User (If restriction on host)",
+            "name": "host_http_user",
+            "type": "STRING"
+          },
+          {
+            "default": "{{tools}}",
+            "description": "Tools by scan_type, seperated by comma (,)\n\tinfo => Information Gathering\n\t\twhois => Whois \n\t\tnmaps => Nmap (Normal Nmap Scan)\n\t\twhat3 => WhatWeb\n\t\tgodns => Gobuster (DNS subdomain enumeration mode)\n\t\tdnsrc => DNSRecon (DNS Enumeration and Scanning Tool)\n\t\tanubs => Anubis (Subdomain enumeration and information gathering tool)\n\t\trusts => RustScan (The Modern Port Scanner)\n\t\tmstcp => TCP Scan by Metasploit\n\t\tmstwb => Pulling urls from Archive.org by Metasploit\n\t\tdataf => Default File Check by DataSploit\n\t\tdatag => Check Google PDF by DataSploit\n\t\tdatad => Find DNS Records by DataSploit\n\t\tcmsmp => CMS scanner that automates the process of detecting security flaws of the most popular CMSs\n\t\tdmitr => DMitry (Deepmagic Information Gathering Tool)\n\t\tdnsen => dnsenum (enumerates DNS information)\n\t\tjooms => OWASP JoomScan (Joomla Vulnerability Scanner)\n\t\tdiggg => DiG\n\t\t\t\n\trcnc => Reconnaissance\n\t\twhat3 => WhatWeb - Additional requests will be made.\n\t\tdnsdp => DNSDumpster (A tool to perform DNS reconnaissance on target networks.)\n\t\tferce => Fierce (A DNS reconnaissance tool for locating non-contiguous IP space)\n\t\t\n\tbrte => Brute-force\n\t\tgodns => Gobuster (DNS subdomain enumeration mode)\n\t\tdnscn => dnscan (DNS subdomain scanner)\n\t\tdirb0 => Dirb (A web content scanner)\n\t\tdnsmp => Dnsmap (Scan for subdomains using bruteforcing techniques)\n\t\t\n\tenum => Enumeration\n\t\tgodns => Gobuster (DNS subdomain enumeration mode)\n\t\tdnsrc => DNSRecon (DNS Enumeration and Scanning Tool)\n\t\tanubs => Anubis (Subdomain enumeration and information gathering tool)\n\t\tlepus => Lepus (Subdomain finder)\n\t\tdnsen => dnsenum (enumerates DNS information)\n\t\t\n\tscan => Scanner\n\t\tnmaps => Nmap (Normal Nmap Scan)\n\t\tnikto => Nikto web server scanner\n\t\tdnsrc => DNSRecon (DNS Enumeration and Scanning Tool)\n\t\tdnscn => dnscan (DNS subdomain scanner)\n\t\tdirb0 => Dirb (A web content scanner)\n\t\trusts => RustScan (The Modern Port Scanner)\n\t\tmstcp => TCP Scan by Metasploit\n\t\tcmsmp => CMS scanner that automates the process of detecting security flaws of the most popular CMSs\n\t\tjooms => OWASP JoomScan (Joomla Vulnerability Scanner)\n\t\t\n\tosnt => OSINT\n\t\twhois => Whois (Obtain Whois information and name server of a website)\n\t\tmstwb => Pulling urls from Archive.org by Metasploit\n\t\tdataf => Default File Check by DataSploit\n\t\tdatag => Check Google PDF by DataSploit\n\t\tdatad => Find DNS Records by DataSploit\n\t\tghsdm => Goohost (Extracts hosts/subdomains for a specific domain with Google search)\n\t\tghsip => Goohost (Extracts IP or emails for a specific domain with Google search)\n\t\t\n\tssls => SSL\n\t\tciphr => Cipherscan (Tests the ordering of the SSL/TLS ciphers on a given target)\n\t\t\t",
+            "name": "tools",
+            "type": "STRING"
+          },
+          {
+            "default": "{{scan_type}}",
+            "description": "Scan type\n\tinfo => Information Gathering\n\trcnc => Reconnaissance\n\tbrte => Brute-force\n\tenum => Enumeration\n\tscan => Scanner\n\tosnt => OSINT\n\tssls => SSL",
+            "name": "scan_type",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/v1/add_test",
+      "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and securi",
+      "tool_name": "PENTESTON - API",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/v1/add_test",
+        "endpoint_url": "https://penteston-api.p.rapidapi.com/v1/add_test",
+        "file_name": "penteston_api.json",
+        "optional_parameter_count": 6,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and security professionals to integrate security features into their applications and infrastructure.",
+        "tool_file_found": true,
+        "tool_name": "PENTESTON - API",
+        "toolbench_relative_path": "Cybersecurity/penteston_api.json"
+      },
+      "toolbench_tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and security professionals to integrate security features into their applications and infrastructure.",
+      "toolbench_tool_name": "PENTESTON - API",
+      "url": "https://penteston-api.p.rapidapi.com/v1/add_test",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.123,
+        "tp_kbps": 48.78,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5560228673591514,
+    "topsis_rank": 6
+  },
+  {
+    "api_id": "vortex_postregister",
+    "candidate_id": "",
+    "mode_rank": 15,
+    "llm_reported_rank": null,
+    "retrieved_rank": 33,
+    "rag_score": 0.4047870337963104,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 7.",
+    "service": {
+      "_file": "vortex.json",
+      "_tool": "vortex",
+      "api_id": "vortex_postregister",
+      "category": "Cybersecurity",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "postRegister",
+      "tool_description": "Vortex threat detection platform API",
+      "tool_name": "Vortex",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "postRegister",
+        "endpoint_url": "https://vortex2.p.rapidapi.com/api/users/register",
+        "file_name": "vortex.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Vortex threat detection platform API",
+        "tool_file_found": true,
+        "tool_name": "Vortex",
+        "toolbench_relative_path": "Cybersecurity/vortex.json"
+      },
+      "toolbench_tool_description": "Vortex threat detection platform API",
+      "toolbench_tool_name": "Vortex",
+      "url": "https://vortex2.p.rapidapi.com/api/users/register",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.191,
+        "tp_kbps": 47.12,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5536416969017866,
+    "topsis_rank": 7
+  },
+  {
+    "api_id": "penteston_api_v1_start_scan",
+    "candidate_id": "",
+    "mode_rank": 16,
+    "llm_reported_rank": null,
+    "retrieved_rank": 21,
+    "rag_score": 0.43499645590782166,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 8.",
+    "service": {
+      "_file": "penteston_api.json",
+      "_tool": "penteston_api",
+      "api_id": "penteston_api_v1_start_scan",
+      "category": "Cybersecurity",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "HTTP User (If restriction on host)",
+            "name": "host_http_user",
+            "type": "STRING"
+          },
+          {
+            "default": "{{scan_type}}",
+            "description": "Scan type\n\tinfo => Information Gathering\n\trcnc => Reconnaissance\n\tbrte => Brute-force\n\tenum => Enumeration\n\tscan => Scanner\n\tosnt => OSINT\n\tssls => SSL",
+            "name": "scan_type",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "HTTP Password (If restriction on host)",
+            "name": "host_http_pass",
+            "type": "STRING"
+          },
+          {
+            "default": "Test target (for scan)",
+            "description": "Target display name",
+            "name": "target_name",
+            "type": "STRING"
+          },
+          {
+            "default": "{{tools}}",
+            "description": "Tools by scan_type, seperated by comma (,)\n\tinfo => Information Gathering\n\t\twhois => Whois \n\t\tnmaps => Nmap (Normal Nmap Scan)\n\t\twhat3 => WhatWeb\n\t\tgodns => Gobuster (DNS subdomain enumeration mode)\n\t\tdnsrc => DNSRecon (DNS Enumeration and Scanning Tool)\n\t\tanubs => Anubis (Subdomain enumeration and information gathering tool)\n\t\trusts => RustScan (The Modern Port Scanner)\n\t\tmstcp => TCP Scan by Metasploit\n\t\tmstwb => Pulling urls from Archive.org by Metasploit\n\t\tdataf => Default File Check by DataSploit\n\t\tdatag => Check Google PDF by DataSploit\n\t\tdatad => Find DNS Records by DataSploit\n\t\tcmsmp => CMS scanner that automates the process of detecting security flaws of the most popular CMSs\n\t\tdmitr => DMitry (Deepmagic Information Gathering Tool)\n\t\tdnsen => dnsenum (enumerates DNS information)\n\t\tjooms => OWASP JoomScan (Joomla Vulnerability Scanner)\n\t\tdiggg => DiG\n\t\t\t\n\trcnc => Reconnaissance\n\t\twhat3 => WhatWeb - Additional requests will be made.\n\t\tdnsdp => DNSDumpster (A tool to perform DNS reconnaissance on target networks.)\n\t\tferce => Fierce (A DNS reconnaissance tool for locating non-contiguous IP space)\n\t\t\n\tbrte => Brute-force\n\t\tgodns => Gobuster (DNS subdomain enumeration mode)\n\t\tdnscn => dnscan (DNS subdomain scanner)\n\t\tdirb0 => Dirb (A web content scanner)\n\t\tdnsmp => Dnsmap (Scan for subdomains using bruteforcing techniques)\n\t\t\n\tenum => Enumeration\n\t\tgodns => Gobuster (DNS subdomain enumeration mode)\n\t\tdnsrc => DNSRecon (DNS Enumeration and Scanning Tool)\n\t\tanubs => Anubis (Subdomain enumeration and information gathering tool)\n\t\tlepus => Lepus (Subdomain finder)\n\t\tdnsen => dnsenum (enumerates DNS information)\n\t\t\n\tscan => Scanner\n\t\tnmaps => Nmap (Normal Nmap Scan)\n\t\tnikto => Nikto web server scanner\n\t\tdnsrc => DNSRecon (DNS Enumeration and Scanning Tool)\n\t\tdnscn => dnscan (DNS subdomain scanner)\n\t\tdirb0 => Dirb (A web content scanner)\n\t\trusts => RustScan (The Modern Port Scanner)\n\t\tmstcp => TCP Scan by Metasploit\n\t\tcmsmp => CMS scanner that automates the process of detecting security flaws of the most popular CMSs\n\t\tjooms => OWASP JoomScan (Joomla Vulnerability Scanner)\n\t\t\n\tosnt => OSINT\n\t\twhois => Whois (Obtain Whois information and name server of a website)\n\t\tmstwb => Pulling urls from Archive.org by Metasploit\n\t\tdataf => Default File Check by DataSploit\n\t\tdatag => Check Google PDF by DataSploit\n\t\tdatad => Find DNS Records by DataSploit\n\t\tghsdm => Goohost (Extracts hosts/subdomains for a specific domain with Google search)\n\t\tghsip => Goohost (Extracts IP or emails for a specific domain with Google search)\n\t\t\n\tssls => SSL\n\t\tciphr => Cipherscan (Tests the ordering of the SSL/TLS ciphers on a given target)\n\t\t\t",
+            "name": "tools",
+            "type": "STRING"
+          },
+          {
+            "default": "Test Name",
+            "description": "Assessment (Test) display name",
+            "name": "test_name",
+            "type": "STRING"
+          },
+          {
+            "default": "http://example.com",
+            "description": "Target host Full URL",
+            "name": "target_host",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/v1/start_scan",
+      "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and securi",
+      "tool_name": "PENTESTON - API",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/v1/start_scan",
+        "endpoint_url": "https://penteston-api.p.rapidapi.com/v1/start_scan",
+        "file_name": "penteston_api.json",
+        "optional_parameter_count": 7,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and security professionals to integrate security features into their applications and infrastructure.",
+        "tool_file_found": true,
+        "tool_name": "PENTESTON - API",
+        "toolbench_relative_path": "Cybersecurity/penteston_api.json"
+      },
+      "toolbench_tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and security professionals to integrate security features into their applications and infrastructure.",
+      "toolbench_tool_name": "PENTESTON - API",
+      "url": "https://penteston-api.p.rapidapi.com/v1/start_scan",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.116,
+        "tp_kbps": 42.3845,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5531850898851769,
+    "topsis_rank": 8
+  },
+  {
+    "api_id": "xss_shield_get_detect",
+    "candidate_id": "",
+    "mode_rank": 17,
+    "llm_reported_rank": null,
+    "retrieved_rank": 25,
+    "rag_score": 0.4205342233181,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 9.",
+    "service": {
+      "_file": "xss_shield.json",
+      "_tool": "xss_shield",
+      "api_id": "xss_shield_get_detect",
+      "category": "Cybersecurity",
+      "description": "This endpoint detects and prevents XSS attacks in input data sent via query parameters.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "John Doe",
+            "description": "The input data to be checked for XSS.",
+            "name": "data",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "GET Detect",
+      "tool_description": "The XSS Shield API provides a realtime cross-site scripting (XSS) detection service that scans input data for suspicious characters and prevents XSS attacks. It offers two endpoints for handling GET and POST requests.",
+      "tool_name": "XSS Shield",
+      "toolbench_endpoint_description": "This endpoint detects and prevents XSS attacks in input data sent via query parameters.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "This endpoint detects and prevents XSS attacks in input data sent via query parameters.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET Detect",
+        "endpoint_url": "https://xss-shield.p.rapidapi.com/detect",
+        "file_name": "xss_shield.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The XSS Shield API provides a realtime cross-site scripting (XSS) detection service that scans input data for suspicious characters and prevents XSS attacks. It offers two endpoints for handling GET and POST requests.",
+        "tool_file_found": true,
+        "tool_name": "XSS Shield",
+        "toolbench_relative_path": "Cybersecurity/xss_shield.json"
+      },
+      "toolbench_tool_description": "The XSS Shield API provides a realtime cross-site scripting (XSS) detection service that scans input data for suspicious characters and prevents XSS attacks. It offers two endpoints for handling GET and POST requests.",
+      "toolbench_tool_name": "XSS Shield",
+      "url": "https://xss-shield.p.rapidapi.com/detect",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1295,
+        "tp_kbps": 38.61,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.551205776821324,
+    "topsis_rank": 9
+  },
+  {
+    "api_id": "ics_cert_advisories_get_all_advisories",
+    "candidate_id": "",
+    "mode_rank": 18,
+    "llm_reported_rank": null,
+    "retrieved_rank": 24,
+    "rag_score": 0.42126479744911194,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 10.",
+    "service": {
+      "_file": "ics_cert_advisories.json",
+      "_tool": "ics_cert_advisories",
+      "api_id": "ics_cert_advisories_get_all_advisories",
+      "category": "Monitoring",
+      "description": "This endpoint will return back all  advisories and provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "true",
+            "description": "",
+            "name": "info",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "2",
+            "description": "",
+            "name": "limit",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Advisories",
+      "tool_description": "An API to retrieve advisories for Industrial Control Systems that provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov.",
+      "tool_name": "ICS-CERT Advisories",
+      "toolbench_endpoint_description": "This endpoint will return back all  advisories and provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "This endpoint will return back all  advisories and provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Advisories",
+        "endpoint_url": "https://ics-cert-advisories.p.rapidapi.com/advisories",
+        "file_name": "ics_cert_advisories.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API to retrieve advisories for Industrial Control Systems that provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov.",
+        "tool_file_found": true,
+        "tool_name": "ICS-CERT Advisories",
+        "toolbench_relative_path": "Monitoring/ics_cert_advisories.json"
+      },
+      "toolbench_tool_description": "An API to retrieve advisories for Industrial Control Systems that provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov.",
+      "toolbench_tool_name": "ICS-CERT Advisories",
+      "url": "https://ics-cert-advisories.p.rapidapi.com/advisories",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.135,
+        "tp_kbps": 36.4975,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5501298334995629,
+    "topsis_rank": 10
+  },
+  {
+    "api_id": "roco_api_get_rogues_by_name",
+    "candidate_id": "",
+    "mode_rank": 19,
+    "llm_reported_rank": null,
+    "retrieved_rank": 20,
+    "rag_score": 0.4413134455680847,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 11.",
+    "service": {
+      "_file": "roco_api.json",
+      "_tool": "roco_api",
+      "api_id": "roco_api_get_rogues_by_name",
+      "category": "Gaming",
+      "description": "takes an array of string names and returns all rogues with names matching each element in the Array.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Get Rogues by name",
+      "tool_description": "This API is a simple ROgue Company API made with info found online on different resources. It started as a personal project, but given that there seems to be no official API, I decided to make a fan based one and make it public.",
+      "tool_name": "RoCO API",
+      "toolbench_endpoint_description": "takes an array of string names and returns all rogues with names matching each element in the Array.",
+      "toolbench_enrichment": {
+        "category": "Gaming",
+        "endpoint_description": "takes an array of string names and returns all rogues with names matching each element in the Array.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Get Rogues by name",
+        "endpoint_url": "https://roco-api.p.rapidapi.com/rogues/name/",
+        "file_name": "roco_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API is a simple ROgue Company API made with info found online on different resources.\nIt started as a personal project, but given that there seems to be no official API, I decided to make a fan based one and make it public.",
+        "tool_file_found": true,
+        "tool_name": "RoCO API",
+        "toolbench_relative_path": "Gaming/roco_api.json"
+      },
+      "toolbench_tool_description": "This API is a simple ROgue Company API made with info found online on different resources.\nIt started as a personal project, but given that there seems to be no official API, I decided to make a fan based one and make it public.",
+      "toolbench_tool_name": "RoCO API",
+      "url": "https://roco-api.p.rapidapi.com/rogues/name/",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1395,
+        "tp_kbps": 35.8425,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5497307315953004,
+    "topsis_rank": 11
+  },
+  {
+    "api_id": "webup_check_keyword",
+    "candidate_id": "",
+    "mode_rank": 20,
+    "llm_reported_rank": null,
+    "retrieved_rank": 39,
+    "rag_score": 0.3962160050868988,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 12.",
+    "service": {
+      "_file": "webup.json",
+      "_tool": "webup",
+      "api_id": "webup_check_keyword",
+      "category": "Monitoring",
+      "description": "It will check if given keyword is on the given URL.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "google",
+            "description": "",
+            "name": "keyword",
+            "type": "STRING"
+          },
+          {
+            "default": "https://google.com",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "check-keyword",
+      "tool_description": "API to check if a web server is up or down & to detect a keyword on a URL.",
+      "tool_name": "WebUp",
+      "toolbench_endpoint_description": "It will check if given keyword is on the given URL.",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "It will check if given keyword is on the given URL.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "check-keyword",
+        "endpoint_url": "https://webup.p.rapidapi.com/check-keyword",
+        "file_name": "webup.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to check if a web server is up or down & to detect a keyword on a URL.",
+        "tool_file_found": true,
+        "tool_name": "WebUp",
+        "toolbench_relative_path": "Monitoring/webup.json"
+      },
+      "toolbench_tool_description": "API to check if a web server is up or down & to detect a keyword on a URL.",
+      "toolbench_tool_name": "WebUp",
+      "url": "https://webup.p.rapidapi.com/check-keyword",
+      "qos": {
+        "availability": 0.8732,
+        "rt_s": 6.682499999999999,
+        "tp_kbps": 504.8795,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5492498754065731,
+    "topsis_rank": 12
+  },
+  {
+    "api_id": "seo_automations_extract_sitemap_xml_as_json",
+    "candidate_id": "",
+    "mode_rank": 21,
+    "llm_reported_rank": null,
+    "retrieved_rank": 35,
+    "rag_score": 0.4009817838668823,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 14.",
+    "service": {
+      "_file": "seo_automations.json",
+      "_tool": "seo_automations",
+      "api_id": "seo_automations_extract_sitemap_xml_as_json",
+      "category": "Advertising",
+      "description": "Are you looking for an API that can quickly and easily download and parse sitemap.xml files into JSON format? Look no further! Our API allows you to make a simple GET request, passing in the URL of a sitemap.xml file as a parameter. The API will handle the rest, downloading the file, parsing it into a JSON object, and returning the result in the response. And if you need a little extra information to help organize and navigate the URLs in the sitemap, we've got you covered there too. By adding a query parameter to the GET request, you can also include category and breadcrumb information for each URL in the parsed sitemap. Give it a try and see how much easier working with sitemaps can be!",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "true",
+            "description": "",
+            "name": "meta",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "true",
+            "description": "",
+            "name": "breadcrumbs",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "true",
+            "description": "",
+            "name": "categories",
+            "type": "BOOLEAN"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "https://www.sitemaps.org/sitemap.xml",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Extract Sitemap XML as JSON",
+      "tool_description": "Optimize your website effortlessly with SEOOptimizeAPI - the powerful tool that provides valuable insights and automates repetitive tasks. With SEOOptimizeAPI, you can take the guesswork out of website optimization. The API utilizes advanced algorithms and technologies to provide in-depth insights i",
+      "tool_name": "SEO Automations",
+      "toolbench_endpoint_description": "Are you looking for an API that can quickly and easily download and parse sitemap.xml files into JSON format? Look no further! Our API allows you to make a simple GET request, passing in the URL of a sitemap.xml file as a parameter. The API will handle the rest, downloading the file, parsing it into a JSON object, and returning the result in the response. And if you need a little extra information to help organize and navigate the URLs in the sitemap, we've got you covered there too. By adding a query parameter to the GET request, you can also include category and breadcrumb information for each URL in the parsed sitemap. Give it a try and see how much easier working with sitemaps can be!",
+      "toolbench_enrichment": {
+        "category": "Advertising",
+        "endpoint_description": "Are you looking for an API that can quickly and easily download and parse sitemap.xml files into JSON format? Look no further! Our API allows you to make a simple GET request, passing in the URL of a sitemap.xml file as a parameter. The API will handle the rest, downloading the file, parsing it into a JSON object, and returning the result in the response. And if you need a little extra information to help organize and navigate the URLs in the sitemap, we've got you covered there too. By adding a query parameter to the GET request, you can also include category and breadcrumb information for each URL in the parsed sitemap. Give it a try and see how much easier working with sitemaps can be!",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Extract Sitemap XML as JSON",
+        "endpoint_url": "https://seo-automations.p.rapidapi.com/v1/seo/fetchsitemap/",
+        "file_name": "seo_automations.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Optimize your website effortlessly with SEOOptimizeAPI - the powerful tool that provides valuable insights and automates repetitive tasks. With SEOOptimizeAPI, you can take the guesswork out of website optimization. The API utilizes advanced algorithms and technologies to provide in-depth insights into your website's performance and help you identify areas for improvement. And with its easy-to-use API endpoints, you can automate repetitive tasks and save time and effort.",
+        "tool_file_found": true,
+        "tool_name": "SEO Automations",
+        "toolbench_relative_path": "Advertising/seo_automations.json"
+      },
+      "toolbench_tool_description": "Optimize your website effortlessly with SEOOptimizeAPI - the powerful tool that provides valuable insights and automates repetitive tasks. With SEOOptimizeAPI, you can take the guesswork out of website optimization. The API utilizes advanced algorithms and technologies to provide in-depth insights into your website's performance and help you identify areas for improvement. And with its easy-to-use API endpoints, you can automate repetitive tasks and save time and effort.",
+      "toolbench_tool_name": "SEO Automations",
+      "url": "https://seo-automations.p.rapidapi.com/v1/seo/fetchsitemap/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.118,
+        "tp_kbps": 25.423,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5456198977315124,
+    "topsis_rank": 14
+  },
+  {
+    "api_id": "ai_url_shortner_welcome",
+    "candidate_id": "",
+    "mode_rank": 22,
+    "llm_reported_rank": null,
+    "retrieved_rank": 16,
+    "rag_score": 0.4533463418483734,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 16.",
+    "service": {
+      "_file": "ai_url_shortner.json",
+      "_tool": "ai_url_shortner",
+      "api_id": "ai_url_shortner_welcome",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "description": "This endpoint just welcomes everyone with Hello World.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "This endpoint is just a simple hello world welcome.",
+            "name": "welcome",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Welcome",
+      "tool_description": "An AI URL shortener is a tool that can make long web addresses (URLs) shorter and easier to remember. It does this by taking a long URL and creating a shorter one that redirects to the original URL when clicked. This can be helpful if you want to share a link on social media or in a text message, bu",
+      "tool_name": "AI URL Shortner",
+      "toolbench_endpoint_description": "This endpoint just welcomes everyone with Hello World.",
+      "toolbench_enrichment": {
+        "category": "Artificial_Intelligence_Machine_Learning",
+        "endpoint_description": "This endpoint just welcomes everyone with Hello World.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Welcome",
+        "endpoint_url": "https://ai-url-shortner.p.rapidapi.com/welcome",
+        "file_name": "ai_url_shortner.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An AI URL shortener is a tool that can make long web addresses (URLs) shorter and easier to remember. It does this by taking a long URL and creating a shorter one that redirects to the original URL when clicked. This can be helpful if you want to share a link on social media or in a text message, but the original URL is too long to fit or looks cluttered. An API, or application programming interface, is a way for different pieces of software to talk to each other and share information. So an ...",
+        "tool_file_found": true,
+        "tool_name": "AI URL Shortner",
+        "toolbench_relative_path": "Artificial_Intelligence_Machine_Learning/ai_url_shortner.json"
+      },
+      "toolbench_tool_description": "An AI URL shortener is a tool that can make long web addresses (URLs) shorter and easier to remember. It does this by taking a long URL and creating a shorter one that redirects to the original URL when clicked. This can be helpful if you want to share a link on social media or in a text message, but the original URL is too long to fit or looks cluttered. An API, or application programming interface, is a way for different pieces of software to talk to each other and share information. So an ...",
+      "toolbench_tool_name": "AI URL Shortner",
+      "url": "https://ai-url-shortner.p.rapidapi.com/welcome",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.321,
+        "tp_kbps": 28.0375,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5418636160616989,
+    "topsis_rank": 16
+  },
+  {
+    "api_id": "exerra_phishing_check_get_stats",
+    "candidate_id": "",
+    "mode_rank": 23,
+    "llm_reported_rank": null,
+    "retrieved_rank": 12,
+    "rag_score": 0.5171516537666321,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 17.",
+    "service": {
+      "_file": "exerra_phishing_check.json",
+      "_tool": "exerra_phishing_check",
+      "api_id": "exerra_phishing_check_get_stats",
+      "category": "Tools",
+      "description": "Get statistics about the Exerra Phishing API",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get stats",
+      "tool_description": "This API checks URLs to see whether they are known phishing attempts.",
+      "tool_name": "Exerra phishing check",
+      "toolbench_endpoint_description": "Get statistics about the Exerra Phishing API",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Get statistics about the Exerra Phishing API",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get stats",
+        "endpoint_url": "https://exerra-phishing-check.p.rapidapi.com/stats",
+        "file_name": "exerra_phishing_check.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API checks URLs to see whether they are known phishing attempts.",
+        "tool_file_found": true,
+        "tool_name": "Exerra phishing check",
+        "toolbench_relative_path": "Tools/exerra_phishing_check.json"
+      },
+      "toolbench_tool_description": "This API checks URLs to see whether they are known phishing attempts.",
+      "toolbench_tool_name": "Exerra phishing check",
+      "url": "https://exerra-phishing-check.p.rapidapi.com/stats",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.173,
+        "tp_kbps": 17.341,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5409199650804287,
+    "topsis_rank": 17
+  },
+  {
+    "api_id": "the_content_monitoring_api_create_detector",
+    "candidate_id": "",
+    "mode_rank": 24,
+    "llm_reported_rank": null,
+    "retrieved_rank": 19,
+    "rag_score": 0.441501259803772,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 18.",
+    "service": {
+      "_file": "the_content_monitoring_api.json",
+      "_tool": "the_content_monitoring_api",
+      "api_id": "the_content_monitoring_api_create_detector",
+      "category": "Tools",
+      "description": "Add a new detector. If added correctly, the scheduler immediately adds the detector as a runable job.\nIn order for the first url snapshot to be taken as fast as possible, detectInterval.startDate should be set to **current datetime - detectInterval + 1 minute**.\n\n**Important!** The price of the API directly depends on the frequency of detector activations (detectInterval) when the provided URL is scraped for the content.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "create_detector",
+      "tool_description": "The Content Monitoring API is a powerful tool designed for developers who need to monitor changes in website content. This API allows developers to register detectors that periodically scrape the provided URL, analyze the change with the help of ChatGPT and notify the API consumer on the significanc",
+      "tool_name": "The Content Monitoring API",
+      "toolbench_endpoint_description": "Add a new detector. If added correctly, the scheduler immediately adds the detector as a runable job.\nIn order for the first url snapshot to be taken as fast as possible, detectInterval.startDate should be set to **current datetime - detectInterval + 1 minute**.\n\n**Important!** The price of the API directly depends on the frequency of detector activations (detectInterval) when the provided URL is scraped for the content.",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Add a new detector. If added correctly, the scheduler immediately adds the detector as a runable job.\nIn order for the first url snapshot to be taken as fast as possible, detectInterval.startDate should be set to **current datetime - detectInterval + 1 minute**.\n\n**Important!** The price of the API directly depends on the frequency of detector activations (detectInterval) when the provided URL is scraped for the content.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "create_detector",
+        "endpoint_url": "https://the-content-monitoring-api.p.rapidapi.com/detector",
+        "file_name": "the_content_monitoring_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The Content Monitoring API is a powerful tool designed for developers who need to monitor changes in website content. This API allows developers to register detectors that periodically scrape the provided URL, analyze the change with the help of ChatGPT and notify the API consumer on the significance of the detected change.  \n**The API reference:** https://apitrends.stoplight.io/docs/changedetector/",
+        "tool_file_found": true,
+        "tool_name": "The Content Monitoring API",
+        "toolbench_relative_path": "Tools/the_content_monitoring_api.json"
+      },
+      "toolbench_tool_description": "The Content Monitoring API is a powerful tool designed for developers who need to monitor changes in website content. This API allows developers to register detectors that periodically scrape the provided URL, analyze the change with the help of ChatGPT and notify the API consumer on the significance of the detected change.  \n**The API reference:** https://apitrends.stoplight.io/docs/changedetector/",
+      "toolbench_tool_name": "The Content Monitoring API",
+      "url": "https://the-content-monitoring-api.p.rapidapi.com/detector",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.173,
+        "tp_kbps": 17.341,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5407525099763661,
+    "topsis_rank": 18
+  },
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_queue",
+    "candidate_id": "",
+    "mode_rank": 25,
+    "llm_reported_rank": null,
+    "retrieved_rank": 5,
+    "rag_score": 0.5870428681373596,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 20.",
+    "service": {
+      "_file": "sus_guru_malicious_website_ai_detector_api.json",
+      "_tool": "sus_guru_malicious_website_ai_detector_api",
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_queue",
+      "category": "Cybersecurity",
+      "description": "Returns whether a site is currently being scanned and the queue size.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "/api/queue",
+      "tool_description": "Check if a website is malicious or safe",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "toolbench_endpoint_description": "Returns whether a site is currently being scanned and the queue size.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Returns whether a site is currently being scanned and the queue size.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/api/queue",
+        "endpoint_url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/queue",
+        "file_name": "sus_guru_malicious_website_ai_detector_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if a website is malicious or safe",
+        "tool_file_found": true,
+        "tool_name": "Sus Guru Malicious Website AI Detector API",
+        "toolbench_relative_path": "Cybersecurity/sus_guru_malicious_website_ai_detector_api.json"
+      },
+      "toolbench_tool_description": "Check if a website is malicious or safe",
+      "toolbench_tool_name": "Sus Guru Malicious Website AI Detector API",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/queue",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.138,
+        "tp_kbps": 14.492,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.540554906491586,
+    "topsis_rank": 20
+  },
+  {
+    "api_id": "corbado_emaillinksend",
+    "candidate_id": "",
+    "mode_rank": 26,
+    "llm_reported_rank": null,
+    "retrieved_rank": 28,
+    "rag_score": 0.41601547598838806,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 21.",
+    "service": {
+      "_file": "corbado.json",
+      "_tool": "corbado",
+      "api_id": "corbado_emaillinksend",
+      "category": "Cybersecurity",
+      "description": "Creates email magic link and sends it to given email address",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "emailLinkSend",
+      "tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security.",
+      "tool_name": "Corbado",
+      "toolbench_endpoint_description": "Creates email magic link and sends it to given email address",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Creates email magic link and sends it to given email address",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "emailLinkSend",
+        "endpoint_url": "https://corbado1.p.rapidapi.com/v1/emailLinks",
+        "file_name": "corbado.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security.",
+        "tool_file_found": true,
+        "tool_name": "Corbado",
+        "toolbench_relative_path": "Cybersecurity/corbado.json"
+      },
+      "toolbench_tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security.",
+      "toolbench_tool_name": "Corbado",
+      "url": "https://corbado1.p.rapidapi.com/v1/emailLinks",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.296,
+        "tp_kbps": 20.27,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.539078278980369,
+    "topsis_rank": 21
+  },
+  {
+    "api_id": "netdetective_query-2",
+    "candidate_id": "",
+    "mode_rank": 27,
+    "llm_reported_rank": null,
+    "retrieved_rank": 36,
+    "rag_score": 0.40070289373397827,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 22.",
+    "service": {
+      "_file": "netdetective.json",
+      "_tool": "netdetective",
+      "api_id": "netdetective_query-2",
+      "category": "Cybersecurity",
+      "description": "Query information about an IP address.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "The IP address to use for the query.\r\nDefaults to the ip address of the connecting client",
+            "name": "ipaddress",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "/query",
+      "tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP ad",
+      "tool_name": "NetDetective",
+      "toolbench_endpoint_description": "Query information about an IP address.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Query information about an IP address.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/query",
+        "endpoint_url": "https://netdetective.p.rapidapi.com/query",
+        "file_name": "netdetective.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP address to help filter requests and avoid potential attacks.",
+        "tool_file_found": true,
+        "tool_name": "NetDetective",
+        "toolbench_relative_path": "Cybersecurity/netdetective.json"
+      },
+      "toolbench_tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP address to help filter requests and avoid potential attacks.",
+      "toolbench_tool_name": "NetDetective",
+      "url": "https://netdetective.p.rapidapi.com/query",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.253,
+        "tp_kbps": 11.857,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5365770306384652,
+    "topsis_rank": 22
+  },
+  {
+    "api_id": "phishyscan_api_scan",
+    "candidate_id": "",
+    "mode_rank": 28,
+    "llm_reported_rank": null,
+    "retrieved_rank": 7,
+    "rag_score": 0.5530424118041992,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 23.",
+    "service": {
+      "_file": "phishyscan_api.json",
+      "_tool": "phishyscan_api",
+      "api_id": "phishyscan_api_scan",
+      "category": "Cybersecurity",
+      "description": "Scan an email message for signs of phishing.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Scan",
+      "tool_description": "(Beta) Public preview of Anti-phishing scam API, PhishyScan, powered by OpenAI.",
+      "tool_name": "PhishyScan API",
+      "toolbench_endpoint_description": "Scan an email message for signs of phishing.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Scan an email message for signs of phishing.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Scan",
+        "endpoint_url": "https://phishyscan-api.p.rapidapi.com/scan",
+        "file_name": "phishyscan_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "(Beta) Public preview of Anti-phishing scam API, PhishyScan, powered by OpenAI.",
+        "tool_file_found": true,
+        "tool_name": "PhishyScan API",
+        "toolbench_relative_path": "Cybersecurity/phishyscan_api.json"
+      },
+      "toolbench_tool_description": "(Beta) Public preview of Anti-phishing scam API, PhishyScan, powered by OpenAI.",
+      "toolbench_tool_name": "PhishyScan API",
+      "url": "https://phishyscan-api.p.rapidapi.com/scan",
+      "qos": {
+        "availability": 0.9794,
+        "rt_s": 0.34,
+        "tp_kbps": 11.764,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.534161742176037,
+    "topsis_rank": 23
+  },
+  {
+    "api_id": "corbado_webauthnassociatestart",
+    "candidate_id": "",
+    "mode_rank": 29,
+    "llm_reported_rank": null,
+    "retrieved_rank": 31,
+    "rag_score": 0.4141657054424286,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 25.",
+    "service": {
+      "_file": "corbado.json",
+      "_tool": "corbado",
+      "api_id": "corbado_webauthnassociatestart",
+      "category": "Cybersecurity",
+      "description": "Starts association token flow for Passkeys (Biometrics)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "webAuthnAssociateStart",
+      "tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security.",
+      "tool_name": "Corbado",
+      "toolbench_endpoint_description": "Starts association token flow for Passkeys (Biometrics)",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Starts association token flow for Passkeys (Biometrics)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "webAuthnAssociateStart",
+        "endpoint_url": "https://corbado1.p.rapidapi.com/v1/webauthn/associate/start",
+        "file_name": "corbado.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security.",
+        "tool_file_found": true,
+        "tool_name": "Corbado",
+        "toolbench_relative_path": "Cybersecurity/corbado.json"
+      },
+      "toolbench_tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security.",
+      "toolbench_tool_name": "Corbado",
+      "url": "https://corbado1.p.rapidapi.com/v1/webauthn/associate/start",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.37,
+        "tp_kbps": 10.810500000000001,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.533269200251333,
+    "topsis_rank": 25
+  },
+  {
+    "api_id": "pawscan_scan",
+    "candidate_id": "",
+    "mode_rank": 30,
+    "llm_reported_rank": null,
+    "retrieved_rank": 14,
+    "rag_score": 0.46250271797180176,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 26.",
+    "service": {
+      "_file": "pawscan.json",
+      "_tool": "pawscan",
+      "api_id": "pawscan_scan",
+      "category": "Cybersecurity",
+      "description": "Initiates a scan targeting either a domain or an email address. When an email address is provided, the system will send a notification to the specified email upon completion of the scan. If a valid URL is supplied as the hook parameter, the completed scan results will be sent as a POST request to the specified URL upon job completion.\n\nIn the resulting model the _id attribute is used to verify the state of the scan or to get the result by using the Retrieve endpoint",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Scan",
+      "tool_description": "PawScan, in BETA, identifies vulnerabilities in domains and emails, offering security recommendations.",
+      "tool_name": "PawScan",
+      "toolbench_endpoint_description": "Initiates a scan targeting either a domain or an email address. When an email address is provided, the system will send a notification to the specified email upon completion of the scan. If a valid URL is supplied as the hook parameter, the completed scan results will be sent as a POST request to the specified URL upon job completion.\n\nIn the resulting model the _id attribute is used to verify the state of the scan or to get the result by using the Retrieve endpoint",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Initiates a scan targeting either a domain or an email address. When an email address is provided, the system will send a notification to the specified email upon completion of the scan. If a valid URL is supplied as the hook parameter, the completed scan results will be sent as a POST request to the specified URL upon job completion.\n\nIn the resulting model the _id attribute is used to verify the state of the scan or to get the result by using the Retrieve endpoint",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Scan",
+        "endpoint_url": "https://pawscan.p.rapidapi.com/queue",
+        "file_name": "pawscan.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "PawScan, in BETA, identifies vulnerabilities in domains and emails, offering security recommendations.",
+        "tool_file_found": true,
+        "tool_name": "PawScan",
+        "toolbench_relative_path": "Cybersecurity/pawscan.json"
+      },
+      "toolbench_tool_description": "PawScan, in BETA, identifies vulnerabilities in domains and emails, offering security recommendations.",
+      "toolbench_tool_name": "PawScan",
+      "url": "https://pawscan.p.rapidapi.com/queue",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3055,
+        "tp_kbps": 6.546,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5329426142563373,
+    "topsis_rank": 26
+  },
+  {
+    "api_id": "greip_validateemail",
+    "candidate_id": "",
+    "mode_rank": 31,
+    "llm_reported_rank": null,
+    "retrieved_rank": 34,
+    "rag_score": 0.4016183614730835,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 27.",
+    "service": {
+      "_file": "greip.json",
+      "_tool": "greip",
+      "api_id": "greip_validateemail",
+      "category": "Cybersecurity",
+      "description": "This method can be used as an extra-layer of your system for validating email addresses.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "JSON",
+            "description": "Sets the format of the API response. JSON is the default format.",
+            "name": "format",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "name@domain.com",
+            "description": "The Email Address you want to validate.",
+            "name": "email",
+            "type": "STRING"
+          },
+          {
+            "default": "2517bc4fc3f790e8f09bc808bb63b899",
+            "description": "Your API Key. Each user has a unique API Key that can be used to access the API functions. If you don't have an account yet, please create new account first.",
+            "name": "key",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/validateEmail",
+      "tool_description": "Deploy AI-Powered modules to prevent payment fraud",
+      "tool_name": "Greip",
+      "toolbench_endpoint_description": "This method can be used as an extra-layer of your system for validating email addresses.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "This method can be used as an extra-layer of your system for validating email addresses.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/validateEmail",
+        "endpoint_url": "https://greip.p.rapidapi.com/validateEmail",
+        "file_name": "greip.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Deploy AI-Powered modules to prevent payment fraud",
+        "tool_file_found": true,
+        "tool_name": "Greip",
+        "toolbench_relative_path": "Cybersecurity/greip.json"
+      },
+      "toolbench_tool_description": "Deploy AI-Powered modules to prevent payment fraud",
+      "toolbench_tool_name": "Greip",
+      "url": "https://greip.p.rapidapi.com/validateEmail",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.317,
+        "tp_kbps": 6.309,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5327731698379533,
+    "topsis_rank": 27
+  },
+  {
+    "api_id": "loginllama_check_login",
+    "candidate_id": "",
+    "mode_rank": 32,
+    "llm_reported_rank": null,
+    "retrieved_rank": 40,
+    "rag_score": 0.39586785435676575,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 30.",
+    "service": {
+      "_file": "loginllama.json",
+      "_tool": "loginllama",
+      "api_id": "loginllama_check_login",
+      "category": "Cybersecurity",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "check.login",
+      "tool_description": "Protect against suspicious logins on your app, powered by AI",
+      "tool_name": "LoginLlama",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "check.login",
+        "endpoint_url": "https://loginllama.p.rapidapi.com/login/check",
+        "file_name": "loginllama.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Protect against suspicious logins on your app, powered by AI",
+        "tool_file_found": true,
+        "tool_name": "LoginLlama",
+        "toolbench_relative_path": "Cybersecurity/loginllama.json"
+      },
+      "toolbench_tool_description": "Protect against suspicious logins on your app, powered by AI",
+      "toolbench_tool_name": "LoginLlama",
+      "url": "https://loginllama.p.rapidapi.com/login/check",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.377,
+        "tp_kbps": 7.957,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5319054804174855,
+    "topsis_rank": 30
+  },
+  {
+    "api_id": "quantum_ready_check_checkquantum",
+    "candidate_id": "",
+    "mode_rank": 33,
+    "llm_reported_rank": null,
+    "retrieved_rank": 27,
+    "rag_score": 0.41799747943878174,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 31.",
+    "service": {
+      "_file": "quantum_ready_check.json",
+      "_tool": "quantum_ready_check",
+      "api_id": "quantum_ready_check_checkquantum",
+      "category": "Cybersecurity",
+      "description": "This endpoint checks if the supplied URL is using quantum-safe key encapsulation mechanisms. For more information, visit our website at https://freenetworkmonitor.click.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "checkQuantum",
+      "tool_description": "Check if a website is using quantum-safe key exchange.",
+      "tool_name": "Quantum Ready Check",
+      "toolbench_endpoint_description": "This endpoint checks if the supplied URL is using quantum-safe key encapsulation mechanisms. For more information, visit our website at https://freenetworkmonitor.click.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "This endpoint checks if the supplied URL is using quantum-safe key encapsulation mechanisms. For more information, visit our website at https://freenetworkmonitor.click.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "checkQuantum",
+        "endpoint_url": "https://quantum-ready-check.p.rapidapi.com/Chat/CheckQuantum",
+        "file_name": "quantum_ready_check.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if a website is using quantum-safe key exchange.",
+        "tool_file_found": true,
+        "tool_name": "Quantum Ready Check",
+        "toolbench_relative_path": "Cybersecurity/quantum_ready_check.json"
+      },
+      "toolbench_tool_description": "Check if a website is using quantum-safe key exchange.",
+      "toolbench_tool_name": "Quantum Ready Check",
+      "url": "https://quantum-ready-check.p.rapidapi.com/Chat/CheckQuantum",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.429,
+        "tp_kbps": 9.324,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5311940880092914,
+    "topsis_rank": 31
+  },
+  {
+    "api_id": "urlchecker_decodelink",
+    "candidate_id": "",
+    "mode_rank": 34,
+    "llm_reported_rank": null,
+    "retrieved_rank": 18,
+    "rag_score": 0.442099392414093,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 32.",
+    "service": {
+      "_file": "urlchecker.json",
+      "_tool": "urlchecker",
+      "api_id": "urlchecker_decodelink",
+      "category": "Tools",
+      "description": "Decode single link only (adf.ly,safelinking.net,bit.ly ...)",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "json",
+            "description": "'xml' ,'txt' or 'json' (default 'xml')",
+            "name": "response_format",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Decode single link only (adf.ly,safelinking.net,bit.ly ...)",
+            "name": "decodelink",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "decodelink",
+      "tool_description": "Urlchecker.net is a website tools to help you find out the link want to download still A Live or Dead,get name size and decode encode links",
+      "tool_name": "Urlchecker",
+      "toolbench_endpoint_description": "Decode single link only (adf.ly,safelinking.net,bit.ly ...)",
+      "toolbench_enrichment": {
+        "category": "Tools",
+        "endpoint_description": "Decode single link only (adf.ly,safelinking.net,bit.ly ...)",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "decodelink",
+        "endpoint_url": "https://urlchecker.p.rapidapi.com/",
+        "file_name": "urlchecker.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Urlchecker.net is a website tools to help you find out the link want to download still A Live or Dead,get name size and decode encode links",
+        "tool_file_found": true,
+        "tool_name": "Urlchecker",
+        "toolbench_relative_path": "Tools/urlchecker.json"
+      },
+      "toolbench_tool_description": "Urlchecker.net is a website tools to help you find out the link want to download still A Live or Dead,get name size and decode encode links",
+      "toolbench_tool_name": "Urlchecker",
+      "url": "https://urlchecker.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.426,
+        "tp_kbps": 9.389,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.531077960501247,
+    "topsis_rank": 32
+  },
+  {
+    "api_id": "penteston_api_v1_add_target",
+    "candidate_id": "",
+    "mode_rank": 35,
+    "llm_reported_rank": null,
+    "retrieved_rank": 26,
+    "rag_score": 0.4204394519329071,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 34.",
+    "service": {
+      "_file": "penteston_api.json",
+      "_tool": "penteston_api",
+      "api_id": "penteston_api_v1_add_target",
+      "category": "Cybersecurity",
+      "description": "API for Add New Target (Host)",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "Test target",
+            "description": "Target display name",
+            "name": "target_name",
+            "type": "STRING"
+          },
+          {
+            "default": "http://example.com",
+            "description": "Target host Full URL",
+            "name": "target_host",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "/v1/add_target",
+      "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and securi",
+      "tool_name": "PENTESTON - API",
+      "toolbench_endpoint_description": "API for Add New Target (Host)",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "API for Add New Target (Host)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/v1/add_target",
+        "endpoint_url": "https://penteston-api.p.rapidapi.com/v1/add_target",
+        "file_name": "penteston_api.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and security professionals to integrate security features into their applications and infrastructure.",
+        "tool_file_found": true,
+        "tool_name": "PENTESTON - API",
+        "toolbench_relative_path": "Cybersecurity/penteston_api.json"
+      },
+      "toolbench_tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and security professionals to integrate security features into their applications and infrastructure.",
+      "toolbench_tool_name": "PENTESTON - API",
+      "url": "https://penteston-api.p.rapidapi.com/v1/add_target",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.409,
+        "tp_kbps": 4.889,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5298711319951468,
+    "topsis_rank": 34
+  },
+  {
+    "api_id": "ip_threat_lookup_iplookup",
+    "candidate_id": "",
+    "mode_rank": 36,
+    "llm_reported_rank": null,
+    "retrieved_rank": 17,
+    "rag_score": 0.44953450560569763,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 35.",
+    "service": {
+      "_file": "ip_threat_lookup.json",
+      "_tool": "ip_threat_lookup",
+      "api_id": "ip_threat_lookup_iplookup",
+      "category": "Cybersecurity",
+      "description": "Get the details of a specific IP address, and whether it poses a threat to your network with a \"Confidence of Abuse\" score and the number of times it has been reported.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "x.x.x.x",
+            "description": "",
+            "name": "ipAddress",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "ipLookup",
+      "tool_description": "Lookup specific IP addresses to see if they are a threat to your network.",
+      "tool_name": "IP Threat Lookup",
+      "toolbench_endpoint_description": "Get the details of a specific IP address, and whether it poses a threat to your network with a \"Confidence of Abuse\" score and the number of times it has been reported.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Get the details of a specific IP address, and whether it poses a threat to your network with a \"Confidence of Abuse\" score and the number of times it has been reported.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "ipLookup",
+        "endpoint_url": "https://ip-threat-lookup.p.rapidapi.com/api/v2/check",
+        "file_name": "ip_threat_lookup.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Lookup specific IP addresses to see if they are a threat to your network.",
+        "tool_file_found": true,
+        "tool_name": "IP Threat Lookup",
+        "toolbench_relative_path": "Cybersecurity/ip_threat_lookup.json"
+      },
+      "toolbench_tool_description": "Lookup specific IP addresses to see if they are a threat to your network.",
+      "toolbench_tool_name": "IP Threat Lookup",
+      "url": "https://ip-threat-lookup.p.rapidapi.com/api/v2/check",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.4395,
+        "tp_kbps": 6.651,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5297744072872691,
+    "topsis_rank": 35
+  },
+  {
+    "api_id": "url_shortener_track",
+    "candidate_id": "",
+    "mode_rank": 37,
+    "llm_reported_rank": null,
+    "retrieved_rank": 23,
+    "rag_score": 0.4228358566761017,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 36.",
+    "service": {
+      "_file": "url_shortener.json",
+      "_tool": "url_shortener",
+      "api_id": "url_shortener_track",
+      "category": "Search",
+      "description": "Endpoint to track basic information of a shortened URL.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "HbAzFX",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Track",
+      "tool_description": "API used on https://anonurl.vercel.app service. Easy-to-use and anonymous.",
+      "tool_name": "URL Shortener",
+      "toolbench_endpoint_description": "Endpoint to track basic information of a shortened URL.",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Endpoint to track basic information of a shortened URL.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Track",
+        "endpoint_url": "https://url-shortener14.p.rapidapi.com/api/track/{id}",
+        "file_name": "url_shortener.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API used on https://anonurl.vercel.app service. Easy-to-use and anonymous.",
+        "tool_file_found": true,
+        "tool_name": "URL Shortener",
+        "toolbench_relative_path": "Search/url_shortener.json"
+      },
+      "toolbench_tool_description": "API used on https://anonurl.vercel.app service. Easy-to-use and anonymous.",
+      "toolbench_tool_name": "URL Shortener",
+      "url": "https://url-shortener14.p.rapidapi.com/api/track/{id}",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.475,
+        "tp_kbps": 4.192,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5277602753037438,
+    "topsis_rank": 36
+  },
+  {
+    "api_id": "javascript_vulnerability_scan_analyzeurl",
+    "candidate_id": "",
+    "mode_rank": 38,
+    "llm_reported_rank": null,
+    "retrieved_rank": 8,
+    "rag_score": 0.5447465181350708,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 38.",
+    "service": {
+      "_file": "javascript_vulnerability_scan.json",
+      "_tool": "javascript_vulnerability_scan",
+      "api_id": "javascript_vulnerability_scan_analyzeurl",
+      "category": "Cybersecurity",
+      "description": "Send POST data with url parameter.\n\nExample: curl -X POST -d \"url=URL_TO_SCAN\"",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "example.com",
+            "description": "",
+            "name": "url",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "analyzeUrl",
+      "tool_description": "Scan your website to detect Javascript files with vulnerabilities.",
+      "tool_name": "Javascript Vulnerability Scan",
+      "toolbench_endpoint_description": "Send POST data with url parameter.\n\nExample: curl -X POST -d \"url=URL_TO_SCAN\"",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Send POST data with url parameter.\n\nExample: curl -X POST -d \"url=URL_TO_SCAN\"",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "analyzeUrl",
+        "endpoint_url": "https://javascript-vulnerability-scan.p.rapidapi.com/analyzeUrl",
+        "file_name": "javascript_vulnerability_scan.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Scan your website to detect Javascript files with vulnerabilities.",
+        "tool_file_found": true,
+        "tool_name": "Javascript Vulnerability Scan",
+        "toolbench_relative_path": "Cybersecurity/javascript_vulnerability_scan.json"
+      },
+      "toolbench_tool_description": "Scan your website to detect Javascript files with vulnerabilities.",
+      "toolbench_tool_name": "Javascript Vulnerability Scan",
+      "url": "https://javascript-vulnerability-scan.p.rapidapi.com/analyzeUrl",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.798,
+        "tp_kbps": 3.759,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.5190791264166872,
+    "topsis_rank": 38
+  },
+  {
+    "api_id": "greip_asnlookup",
+    "candidate_id": "",
+    "mode_rank": 39,
+    "llm_reported_rank": null,
+    "retrieved_rank": 30,
+    "rag_score": 0.41434383392333984,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 39.",
+    "service": {
+      "_file": "greip.json",
+      "_tool": "greip",
+      "api_id": "greip_asnlookup",
+      "category": "Cybersecurity",
+      "description": "ASNLookup endpoint: This method helps you lookup any AS Number. It returns the type, organisation details, routes, etc.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "no",
+            "description": "Set this to true if you want to list all routes of both IPv4 and IPv6.",
+            "name": "isList",
+            "type": "STRING"
+          },
+          {
+            "default": "JSON",
+            "description": "Sets the format of the API response. JSON is the default format.",
+            "name": "format",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "2517bc4fc3f790e8f09bc808bb63b899",
+            "description": "Your API Key. Each user has a unique API Key that can be used to access the API functions. If you don't have an account yet, please create new account first.",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "15169",
+            "description": "The AS Number you want to lookup",
+            "name": "asn",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/ASNLookup",
+      "tool_description": "Deploy AI-Powered modules to prevent payment fraud",
+      "tool_name": "Greip",
+      "toolbench_endpoint_description": "ASNLookup endpoint: This method helps you lookup any AS Number. It returns the type, organisation details, routes, etc.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "ASNLookup endpoint: This method helps you lookup any AS Number. It returns the type, organisation details, routes, etc.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/ASNLookup",
+        "endpoint_url": "https://greip.p.rapidapi.com/ASNLookup",
+        "file_name": "greip.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Deploy AI-Powered modules to prevent payment fraud",
+        "tool_file_found": true,
+        "tool_name": "Greip",
+        "toolbench_relative_path": "Cybersecurity/greip.json"
+      },
+      "toolbench_tool_description": "Deploy AI-Powered modules to prevent payment fraud",
+      "toolbench_tool_name": "Greip",
+      "url": "https://greip.p.rapidapi.com/ASNLookup",
+      "qos": {
+        "availability": 0.3982,
+        "rt_s": 9.899,
+        "tp_kbps": 0.202,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.05181627478281708,
+    "topsis_rank": 39
+  },
+  {
+    "api_id": "netdetective_query",
+    "candidate_id": "",
+    "mode_rank": 40,
+    "llm_reported_rank": null,
+    "retrieved_rank": 37,
+    "rag_score": 0.40070289373397827,
+    "reason": "Functional Candidate Refinement: not a functional match; ordered by TOPSIS rank 40.",
+    "service": {
+      "_file": "netdetective.json",
+      "_tool": "netdetective",
+      "api_id": "netdetective_query",
+      "category": "Cybersecurity",
+      "description": "Query information about an IP address.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "The IP address to use for the query.\r\nDefaults to the ip address of the connecting client",
+            "name": "ipaddress",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "/query",
+      "tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP ad",
+      "tool_name": "NetDetective",
+      "toolbench_endpoint_description": "Query information about an IP address.",
+      "toolbench_enrichment": {
+        "category": "Cybersecurity",
+        "endpoint_description": "Query information about an IP address.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/query",
+        "endpoint_url": "https://netdetective.p.rapidapi.com/query",
+        "file_name": "netdetective.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP address to help filter requests and avoid potential attacks.",
+        "tool_file_found": true,
+        "tool_name": "NetDetective",
+        "toolbench_relative_path": "Cybersecurity/netdetective.json"
+      },
+      "toolbench_tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP address to help filter requests and avoid potential attacks.",
+      "toolbench_tool_name": "NetDetective",
+      "url": "https://netdetective.p.rapidapi.com/query",
+      "qos": {
+        "availability": 0.1239,
+        "rt_s": 10.056000000000001,
+        "tp_kbps": 0.7965,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.0006343079295673929,
+    "topsis_rank": 40
+  }
+]

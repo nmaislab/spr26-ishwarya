@@ -1,0 +1,94 @@
+[
+  {
+    "api_id": "restaurants_reviews",
+    "candidate_id": "C24",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 1,
+    "rag_score": 0.6326276063919067,
+    "reason": "",
+    "service": {
+      "_file": "restaurants.json",
+      "_tool": "restaurants",
+      "api_id": "restaurants_reviews",
+      "category": "Search",
+      "description": "Restaurant Reviews",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "",
+            "name": "offset",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "en_US",
+            "description": "",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "15333482",
+            "description": "",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "",
+            "name": "currency",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, ",
+      "tool_name": "Restaurants",
+      "toolbench_endpoint_description": "Restaurant Reviews",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Restaurant Reviews",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://restaurants222.p.rapidapi.com/reviews",
+        "file_name": "restaurants.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+        "tool_file_found": true,
+        "tool_name": "Restaurants",
+        "toolbench_relative_path": "Search/restaurants.json"
+      },
+      "toolbench_tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+      "toolbench_tool_name": "Restaurants",
+      "url": "https://restaurants222.p.rapidapi.com/reviews"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "2",
+      "api_id": "restaurants_reviews",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

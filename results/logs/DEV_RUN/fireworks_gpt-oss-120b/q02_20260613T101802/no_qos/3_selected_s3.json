@@ -1,0 +1,99 @@
+[
+  {
+    "api_id": "e_mailer_420_mail",
+    "candidate_id": "C15",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 40,
+    "rag_score": 0.3408723473548889,
+    "reason": "",
+    "service": {
+      "_file": "e_mailer_420.json",
+      "_tool": "e_mailer_420",
+      "api_id": "e_mailer_420_mail",
+      "category": "Email",
+      "description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of the recipient\nsubject: Subject of the email\nbody: body of the email",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Hi receiver, go to abcd.com to confirm your email address. Regards, abcd's IT team",
+            "description": "",
+            "name": "body",
+            "type": "string"
+          },
+          {
+            "default": "Hi receiver, please confirm you account",
+            "description": "",
+            "name": "subject",
+            "type": "string"
+          },
+          {
+            "default": "example@gmail.com",
+            "description": "",
+            "name": "sender",
+            "type": "string"
+          },
+          {
+            "default": "example123",
+            "description": "",
+            "name": "password",
+            "type": "string"
+          },
+          {
+            "default": "receiver@gmail.com",
+            "description": "",
+            "name": "receiver",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "mail",
+      "tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go.",
+      "tool_name": "e-mailer-420",
+      "toolbench_endpoint_description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of the recipient\nsubject: Subject of the email\nbody: body of the email",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of the recipient\nsubject: Subject of the email\nbody: body of the email",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "mail",
+        "endpoint_url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}",
+        "file_name": "e_mailer_420.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 5,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go.",
+        "tool_file_found": true,
+        "tool_name": "e-mailer-420",
+        "toolbench_relative_path": "Email/e_mailer_420.json"
+      },
+      "toolbench_tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go.",
+      "toolbench_tool_name": "e-mailer-420",
+      "url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "3",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "3",
+      "api_id": "e_mailer_420_mail",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

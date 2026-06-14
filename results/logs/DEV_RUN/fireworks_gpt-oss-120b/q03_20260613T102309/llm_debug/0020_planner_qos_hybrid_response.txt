@@ -1,0 +1,141 @@
+{
+"primary_plan": {
+"plan_id": 1,
+"summary": "Validate each provided domain, check the corresponding URL for malicious or phishing activity, and send an SMS alert to administrators if a high‑risk URL is detected, using the three selected APIs in the required order.",
+"steps": [
+{
+"step": 1,
+"api_id": "domain_information_domain_information",
+"subtask_id": 1,
+"action": "Retrieve general information for each domain to confirm its validity and availability.",
+"input_from_previous_step": "none",
+"output_to_next_step": "domain_info",
+"why": "The Domain Information API provides domain validation data required for the first subtask.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.105,
+"tp_kbps": 347.107,
+"availability": 1.0,
+"valid_qos": true
+}
+},
+{
+"step": 2,
+"api_id": "malicious_urls_check_url",
+"subtask_id": 2,
+"action": "Check the URL (derived from the validated domain) for malware or phishing risk.",
+"input_from_previous_step": "domain_info",
+"output_to_next_step": "scan_result",
+"why": "The Check URL API evaluates a URL for malicious behavior, satisfying the second subtask.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.112,
+"tp_kbps": 26.785,
+"availability": 0.9823,
+"valid_qos": true
+}
+},
+{
+"step": 3,
+"api_id": "smsto_send_campaign_message-2",
+"subtask_id": 3,
+"action": "If the scan result indicates high risk, send an SMS alert to the administrators with the offending URL.",
+"input_from_previous_step": "scan_result",
+"output_to_next_step": "sms_sent",
+"why": "The SMSto API delivers SMS notifications, fulfilling the third subtask.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.1365,
+"tp_kbps": 36.63,
+"availability": 0.9971,
+"valid_qos": true
+}
+}
+],
+"subtask_coverage": [
+{
+"subtask_id": 1,
+"description": "Validate domains using an external domain validation or DNS lookup API",
+"steps": [1],
+"coverage": "full"
+},
+{
+"subtask_id": 2,
+"description": "Scan URLs for malware or phishing risk using a threat intelligence API",
+"steps": [2],
+"coverage": "full"
+},
+{
+"subtask_id": 3,
+"description": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+"steps": [3],
+"coverage": "full"
+}
+]
+},
+"execution_workflow": {
+"type": "sequential",
+"steps": [
+{
+"step": 1,
+"api_id": "domain_information_domain_information",
+"subtask_id": 1,
+"method": "GET",
+"url": "https://domain-information.p.rapidapi.com/domain_api",
+"required_parameters": [
+{
+"name": "domain",
+"source": "user_goal",
+"value_hint": "Domain string to validate (e.g., example.com)"
+}
+],
+"optional_parameters": [],
+"depends_on": [],
+"input_mapping": "none",
+"output_mapping": "domain_info",
+"expected_output": "Domain information JSON containing availability, registration status, etc.",
+"planner_override_reason": null
+},
+{
+"step": 2,
+"api_id": "malicious_urls_check_url",
+"subtask_id": 2,
+"method": "GET",
+"url": "https://malicious-urls.p.rapidapi.com/check",
+"required_parameters": [
+{
+"name": "url",
+"source": "previous_step_output",
+"value_hint": "Validated domain formatted as a URL (e.g., https://example.com)"
+}
+],
+"optional_parameters": [],
+"depends_on": [1],
+"input_mapping": "domain_info",
+"output_mapping": "scan_result",
+"expected_output": "JSON indicating whether the URL is malicious, with a risk score or boolean flag.",
+"planner_override_reason": null
+},
+{
+"step": 3,
+"api_id": "smsto_send_campaign_message-2",
+"subtask_id": 3,
+"method": "POST",
+"url": "https://smsto.p.rapidapi.com/sms/send",
+"required_parameters": [],
+"optional_parameters": [],
+"depends_on": [2],
+"input_mapping": "scan_result",
+"output_mapping": "sms_sent",
+"expected_output": "Confirmation response from the SMS provider indicating successful delivery.",
+"planner_override_reason": null
+}
+]
+},
+"selected_api_ids": [
+"domain_information_domain_information",
+"malicious_urls_check_url",
+"smsto_send_campaign_message-2"
+],
+"overall_rationale": "The three pre‑selected APIs directly map to the ordered subtasks: the Domain Information API validates each domain, the Malicious Urls Check API assesses the associated URL for threats, and the SMSto API sends SMS alerts when a high‑risk result is returned. Keeping the original subtask order ensures logical data flow—validation precedes threat scanning, which precedes alerting. All QoS metrics are favorable, guaranteeing low latency, high availability, and sufficient throughput for the expected workload."
+}

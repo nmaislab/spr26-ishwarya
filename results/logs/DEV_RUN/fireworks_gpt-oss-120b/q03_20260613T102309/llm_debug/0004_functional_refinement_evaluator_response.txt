@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C01","label":0,"reason":"irrelevant welcome endpoint"},
+{"candidate_id":"C02","label":0,"reason":"updates GuardDuty detector config"},
+{"candidate_id":"C03","label":0,"reason":"creates email magic link"},
+{"candidate_id":"C04","label":0,"reason":"starts passkey association"},
+{"candidate_id":"C05","label":0,"reason":"provides domain registration info"},
+{"candidate_id":"C06","label":0,"reason":"stats endpoint, not URL scan"},
+{"candidate_id":"C07","label":0,"reason":"ASN lookup, not URL"},
+{"candidate_id":"C08","label":0,"reason":"email validation only"},
+{"candidate_id":"C09","label":0,"reason":"retrieves security advisories"},
+{"candidate_id":"C10","label":0,"reason":"IP threat lookup, not URL"},
+{"candidate_id":"C11","label":0,"reason":"scans JS vulnerabilities, not threat intel"},
+{"candidate_id":"C12","label":0,"reason":"checks suspicious logins"},
+{"candidate_id":"C13","label":1,"reason":"checks URL maliciousness directly"},
+{"candidate_id":"C14","label":0,"reason":"IP info query"},
+{"candidate_id":"C15","label":0,"reason":"duplicate IP query"},
+{"candidate_id":"C16","label":0,"reason":"domain vulnerability scan, not malware/phishing"},
+{"candidate_id":"C17","label":0,"reason":"adds target, no scanning"},
+{"candidate_id":"C18","label":0,"reason":"adds test, no scanning"},
+{"candidate_id":"C19","label":0,"reason":"starts generic scan, not URL threat"},
+{"candidate_id":"C20","label":0,"reason":"scans email for phishing, not URL"}
+]
+}

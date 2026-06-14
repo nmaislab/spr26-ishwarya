@@ -1,0 +1,602 @@
+[
+  {
+    "api_id": "reach_interactive_message_send",
+    "rag_score": 0.5926112532615662,
+    "compressed": {
+      "api_id": "reach_interactive_message_send",
+      "name": "Message Send",
+      "description": "Creates a new message object. We return an array of each Id generated. Per request, a max of 50 recipients can be entered.",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://reach-interactive.p.rapidapi.com/sms/message",
+      "tool_name": "Reach Interactive",
+      "tool_description": "Our secure SMS API is the only tool you'll need to schedule, send and receive messages from your existing systems. It's robust too - even the most demanding applications see high message throughputs using our API."
+    },
+    "retrieved_rank": 1
+  },
+  {
+    "api_id": "smsapi_com_short_url_links-2",
+    "rag_score": 0.5432820916175842,
+    "compressed": {
+      "api_id": "smsapi_com_short_url_links-2",
+      "name": "/short_url/links",
+      "description": "Create short URL.",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsapi-com3.p.rapidapi.com/short_url/links",
+      "tool_name": "SMSAPI.com",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!"
+    },
+    "retrieved_rank": 2
+  },
+  {
+    "api_id": "smsapi_com_short_url_links_id",
+    "rag_score": 0.5371658802032471,
+    "compressed": {
+      "api_id": "smsapi_com_short_url_links_id",
+      "name": "/short_url/links/{id}",
+      "description": "Get short URL.",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsapi-com3.p.rapidapi.com/short_url/links/{id}",
+      "tool_name": "SMSAPI.com",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!"
+    },
+    "retrieved_rank": 3
+  },
+  {
+    "api_id": "smsway_app_messages_getsent",
+    "rag_score": 0.5320549607276917,
+    "compressed": {
+      "api_id": "smsway_app_messages_getsent",
+      "name": "Messages-GetSent",
+      "description": "Get the list of sent messages on your account",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsway-app.p.rapidapi.com/api/get/sent?key=",
+      "tool_name": "SMSWAY APP",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)"
+    },
+    "retrieved_rank": 4
+  },
+  {
+    "api_id": "smsway_app_messages_getreceived",
+    "rag_score": 0.5238507986068726,
+    "compressed": {
+      "api_id": "smsway_app_messages_getreceived",
+      "name": "Messages-GetReceived",
+      "description": "Get the list of received messages on your account",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsway-app.p.rapidapi.com/api/get/received?key=",
+      "tool_name": "SMSWAY APP",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)"
+    },
+    "retrieved_rank": 5
+  },
+  {
+    "api_id": "smsapi_com_subusers_id_shares_sendernames",
+    "rag_score": 0.5215386748313904,
+    "compressed": {
+      "api_id": "smsapi_com_subusers_id_shares_sendernames",
+      "name": "/subusers/{id}/shares/sendernames",
+      "description": " ",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsapi-com3.p.rapidapi.com/subusers/{id}/shares/sendernames",
+      "tool_name": "SMSAPI.com",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!"
+    },
+    "retrieved_rank": 6
+  },
+  {
+    "api_id": "bulksmssender_send",
+    "rag_score": 0.5189982652664185,
+    "compressed": {
+      "api_id": "bulksmssender_send",
+      "name": "Send",
+      "description": "Sends bulk SMSes",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://bulksmssender.p.rapidapi.com/",
+      "tool_name": "BulkSMSSender",
+      "tool_description": "The Bulk SMS Sender API empowers developers and businesses to efficiently send SMS messages in bulk to multiple recipients. This API is designed for backend applications and integrates seamlessly with Twilio, a leading SMS messaging platform, to ensure reliable and secure message delivery."
+    },
+    "retrieved_rank": 7
+  },
+  {
+    "api_id": "redtie_info",
+    "rag_score": 0.5167961716651917,
+    "compressed": {
+      "api_id": "redtie_info",
+      "name": "Info",
+      "description": " ",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://redtie.p.rapidapi.com/contacts/info",
+      "tool_name": "Redtie",
+      "tool_description": "The robust and secure text messaging solution for your Business"
+    },
+    "retrieved_rank": 8
+  },
+  {
+    "api_id": "redtie_create-2",
+    "rag_score": 0.5036078095436096,
+    "compressed": {
+      "api_id": "redtie_create-2",
+      "name": "Create",
+      "description": " ",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://redtie.p.rapidapi.com/contacts/create",
+      "tool_name": "Redtie",
+      "tool_description": "The robust and secure text messaging solution for your Business"
+    },
+    "retrieved_rank": 9
+  },
+  {
+    "api_id": "rapid_sms_api_send_sms",
+    "rag_score": 0.49861711263656616,
+    "compressed": {
+      "api_id": "rapid_sms_api_send_sms",
+      "name": "Send SMS",
+      "description": "An endpoint for sending a text message.",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://rapid-sms-api.p.rapidapi.com/sms",
+      "tool_name": "Rapid SMS API",
+      "tool_description": "A simple SMS api for sending messages all over the world. Find out more at www.rapidapisms.com"
+    },
+    "retrieved_rank": 10
+  },
+  {
+    "api_id": "easysendsms_sms_api",
+    "rag_score": 0.4955049455165863,
+    "compressed": {
+      "api_id": "easysendsms_sms_api",
+      "name": "SMS API",
+      "description": "This page provides a reference for all features available to you via the HTTP interface for sending SMS.\r\n\r\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP prot",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://easysendsms.p.rapidapi.com/bulksms",
+      "tool_name": "EasySendSMS",
+      "tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS."
+    },
+    "retrieved_rank": 11
+  },
+  {
+    "api_id": "smsto_send_campaign_message",
+    "rag_score": 0.49062034487724304,
+    "compressed": {
+      "api_id": "smsto_send_campaign_message",
+      "name": "Send campaign message",
+      "description": "Send message to multiple recipients (phone numbers)",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 12
+  },
+  {
+    "api_id": "smsto_send_campaign_message-2",
+    "rag_score": 0.49062034487724304,
+    "compressed": {
+      "api_id": "smsto_send_campaign_message-2",
+      "name": "Send campaign message",
+      "description": "Send message to multiple recipients (phone numbers)",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 13
+  },
+  {
+    "api_id": "smsto_get_messages",
+    "rag_score": 0.48834216594696045,
+    "compressed": {
+      "api_id": "smsto_get_messages",
+      "name": "Get messages",
+      "description": "Fetch paginated messages.\n\nPlease note that the messages will be sorted by the date of creating (sending) - latest first.",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsto.p.rapidapi.com/messages",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 14
+  },
+  {
+    "api_id": "smsway_app_addressbook_createcontact",
+    "rag_score": 0.48651358485221863,
+    "compressed": {
+      "api_id": "smsway_app_addressbook_createcontact",
+      "name": "AddressBook-CreateContact",
+      "description": "Create and save a new contact to your account",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsway-app.p.rapidapi.com/api/create/contact?key=",
+      "tool_name": "SMSWAY APP",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)"
+    },
+    "retrieved_rank": 15
+  },
+  {
+    "api_id": "smsway_app_addressbook_createcontact-2",
+    "rag_score": 0.48651358485221863,
+    "compressed": {
+      "api_id": "smsway_app_addressbook_createcontact-2",
+      "name": "AddressBook-CreateContact",
+      "description": "Create and save a new contact to your account",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsway-app.p.rapidapi.com/api/create/contact?key=",
+      "tool_name": "SMSWAY APP",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)"
+    },
+    "retrieved_rank": 16
+  },
+  {
+    "api_id": "smsway_app_addressbook_creategroup-2",
+    "rag_score": 0.48472192883491516,
+    "compressed": {
+      "api_id": "smsway_app_addressbook_creategroup-2",
+      "name": "AddressBook-CreateGroup",
+      "description": "Create and save a new contact group to your account",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsway-app.p.rapidapi.com/api/create/group?key=",
+      "tool_name": "SMSWAY APP",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)"
+    },
+    "retrieved_rank": 17
+  },
+  {
+    "api_id": "smsto_estimate_campaign_message",
+    "rag_score": 0.4841090440750122,
+    "compressed": {
+      "api_id": "smsto_estimate_campaign_message",
+      "name": "Estimate campaign message",
+      "description": "Estimate the cost of sending message to multiple recipients (phone numbers)",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/sms/estimate",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 18
+  },
+  {
+    "api_id": "smsapi_com_subusers",
+    "rag_score": 0.4838990569114685,
+    "compressed": {
+      "api_id": "smsapi_com_subusers",
+      "name": "/subusers",
+      "description": " ",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsapi-com3.p.rapidapi.com/subusers",
+      "tool_name": "SMSAPI.com",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!"
+    },
+    "retrieved_rank": 19
+  },
+  {
+    "api_id": "hooksms_send",
+    "rag_score": 0.4836779832839966,
+    "compressed": {
+      "api_id": "hooksms_send",
+      "name": "Send",
+      "description": "The only endpoint you'll ever need.",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://hooksms.p.rapidapi.com/send",
+      "tool_name": "HookSMS",
+      "tool_description": "Quickly integrate outbound SMS with a simple post request or our npm package."
+    },
+    "retrieved_rank": 20
+  },
+  {
+    "api_id": "smsto_send_message_to_a_list_or_multiple_list_in_array",
+    "rag_score": 0.48320654034614563,
+    "compressed": {
+      "api_id": "smsto_send_message_to_a_list_or_multiple_list_in_array",
+      "name": "Send Message to a list or multiple list in array",
+      "description": "Send Message to a list or multiple list in array",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 21
+  },
+  {
+    "api_id": "smsto_send_personalized_messages",
+    "rag_score": 0.48274707794189453,
+    "compressed": {
+      "api_id": "smsto_send_personalized_messages",
+      "name": "Send personalized messages",
+      "description": "Send personalized messages",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 22
+  },
+  {
+    "api_id": "ai_messaging_receive_text",
+    "rag_score": 0.48138606548309326,
+    "compressed": {
+      "api_id": "ai_messaging_receive_text",
+      "name": "receive-text",
+      "description": "This endpoint allows users to receive text messages.",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://ai-messaging.p.rapidapi.com/receive-text",
+      "tool_name": "AI Messaging",
+      "tool_description": "This API allows users to send text messages and images from the app to phone numbers."
+    },
+    "retrieved_rank": 23
+  },
+  {
+    "api_id": "easysendsms_check_balance",
+    "rag_score": 0.4791412651538849,
+    "compressed": {
+      "api_id": "easysendsms_check_balance",
+      "name": "Check Balance",
+      "description": "This API available to you via the HTTP interface for Balance query.\n\nThe HTTP-API allows you to integrate your system (client) to EasySendSMS using the HTTP protocol to request and check your account ",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://easysendsms.p.rapidapi.com/balance",
+      "tool_name": "EasySendSMS",
+      "tool_description": "EasySendSMS.com offers a powerful SMS API that allows developers to easily integrate SMS messaging functionality into their applications. With our API, developers can send bulk SMS."
+    },
+    "retrieved_rank": 24
+  },
+  {
+    "api_id": "smsway_app_devices_getdevice",
+    "rag_score": 0.479136198759079,
+    "compressed": {
+      "api_id": "smsway_app_devices_getdevice",
+      "name": "Devices-GetDevice",
+      "description": "Get details about a specific registered device on your account",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsway-app.p.rapidapi.com/api/get/device?key=",
+      "tool_name": "SMSWAY APP",
+      "tool_description": "Thousands of businesses rely on [SMS WAY APP](https://smswayapp.com) to communicate with their audience via text message. With our API, developers can access many of our platform’s features and integrate them with other websites or applications. (https://smswayapp.com)"
+    },
+    "retrieved_rank": 25
+  },
+  {
+    "api_id": "smsto_send_viber_message-2",
+    "rag_score": 0.4748510718345642,
+    "compressed": {
+      "api_id": "smsto_send_viber_message-2",
+      "name": "Send viber message",
+      "description": "Send viber message to a number",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/viber/send",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 26
+  },
+  {
+    "api_id": "smsto_schedule_sending_messages",
+    "rag_score": 0.47347891330718994,
+    "compressed": {
+      "api_id": "smsto_schedule_sending_messages",
+      "name": "Schedule sending messages",
+      "description": "Schedule messages to send later\n\nThis is the same as Send personalized messages, but scheduled_for and timezone parameters are additionally specified.\n\nPlease note that if you do not provide the timez",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 27
+  },
+  {
+    "api_id": "smsguru_test_service_response_time",
+    "rag_score": 0.47209519147872925,
+    "compressed": {
+      "api_id": "smsguru_test_service_response_time",
+      "name": "Test service response time",
+      "description": "Check the service response time.",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsguru1.p.rapidapi.com/check-service",
+      "tool_name": "SmsGuru",
+      "tool_description": "An all around sms API for sending messages all over the world www.smsapiguru.com"
+    },
+    "retrieved_rank": 28
+  },
+  {
+    "api_id": "smsto_send_single_message",
+    "rag_score": 0.47097501158714294,
+    "compressed": {
+      "api_id": "smsto_send_single_message",
+      "name": "Send single message",
+      "description": "Send a single message to a number",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "tool_name": "SMSto",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API."
+    },
+    "retrieved_rank": 29
+  },
+  {
+    "api_id": "rivet_sms_get_sender_id",
+    "rag_score": 0.4699786305427551,
+    "compressed": {
+      "api_id": "rivet_sms_get_sender_id",
+      "name": "Get Sender ID",
+      "description": "Get the list of all Sender ID that are registered for your account to send SMS.",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://rivet-sms.p.rapidapi.com/SenderId",
+      "tool_name": "Rivet SMS",
+      "tool_description": "Rivet SMS API offers programmable SMS APIs, so you can get maximum value from your messages. Use our APIs to send single, bulk messages , schedule broadcasts, configure/ triggers messages and much more."
+    },
+    "retrieved_rank": 30
+  },
+  {
+    "api_id": "smsapi_com_sms_sendernames-2",
+    "rag_score": 0.4636831283569336,
+    "compressed": {
+      "api_id": "smsapi_com_sms_sendernames-2",
+      "name": "/sms/sendernames",
+      "description": " ",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsapi-com3.p.rapidapi.com/sms/sendernames",
+      "tool_name": "SMSAPI.com",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!"
+    },
+    "retrieved_rank": 31
+  },
+  {
+    "api_id": "sms_receive_getupdates",
+    "rag_score": 0.4619830250740051,
+    "compressed": {
+      "api_id": "sms_receive_getupdates",
+      "name": "/GetUpdates",
+      "description": "Get updates about newly received messages.",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://sms-receive.p.rapidapi.com/GetUpdates",
+      "tool_name": "SMS Receive",
+      "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/"
+    },
+    "retrieved_rank": 32
+  },
+  {
+    "api_id": "sms_receive_settag",
+    "rag_score": 0.4534401297569275,
+    "compressed": {
+      "api_id": "sms_receive_settag",
+      "name": "/SetTag",
+      "description": "Change the current tag.",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://sms-receive.p.rapidapi.com/SetTag",
+      "tool_name": "SMS Receive",
+      "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/"
+    },
+    "retrieved_rank": 33
+  },
+  {
+    "api_id": "sms_receive_settag-2",
+    "rag_score": 0.4534401297569275,
+    "compressed": {
+      "api_id": "sms_receive_settag-2",
+      "name": "/SetTag",
+      "description": "Change the current tag.",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://sms-receive.p.rapidapi.com/SetTag",
+      "tool_name": "SMS Receive",
+      "tool_description": "Integrate receiving SMS message into your apps and applications, enabling automation based on incoming text messages.\n\nFor a simple demonstration, see https://www.tomwimmenhove.com/sms/"
+    },
+    "retrieved_rank": 34
+  },
+  {
+    "api_id": "smsjet_send_2fa_token",
+    "rag_score": 0.45102202892303467,
+    "compressed": {
+      "api_id": "smsjet_send_2fa_token",
+      "name": "Send 2FA Token",
+      "description": "Easily send 2FA tokens to your users for sign in purposes.",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsjet.p.rapidapi.com/api/2fa/sms",
+      "tool_name": "SMSjet",
+      "tool_description": "The Affordable SMS API, send 100 SMS for only $1. Receive 100 free credits on signup."
+    },
+    "retrieved_rank": 35
+  },
+  {
+    "api_id": "sms_voice_messages_voicemessage",
+    "rag_score": 0.44399702548980713,
+    "compressed": {
+      "api_id": "sms_voice_messages_voicemessage",
+      "name": "VoiceMessage",
+      "description": "Send voice messages to phone number",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://sms-voice-messages.p.rapidapi.com/call/+12167101101/{to_number}",
+      "tool_name": "SMS & Voice Messages",
+      "tool_description": "Send SMS messages and voice messages using a simple to use API."
+    },
+    "retrieved_rank": 36
+  },
+  {
+    "api_id": "smsapi_com_blacklist_phone_numbers-2",
+    "rag_score": 0.441775918006897,
+    "compressed": {
+      "api_id": "smsapi_com_blacklist_phone_numbers-2",
+      "name": "/blacklist/phone_numbers",
+      "description": " ",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsapi-com3.p.rapidapi.com/blacklist/phone_numbers",
+      "tool_name": "SMSAPI.com",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!"
+    },
+    "retrieved_rank": 37
+  },
+  {
+    "api_id": "smsapi_com_profile_regional_settings_available_languages",
+    "rag_score": 0.4407109022140503,
+    "compressed": {
+      "api_id": "smsapi_com_profile_regional_settings_available_languages",
+      "name": "/profile/regional_settings/available_languages",
+      "description": " ",
+      "category": "SMS",
+      "method": "GET",
+      "url": "https://smsapi-com3.p.rapidapi.com/profile/regional_settings/available_languages",
+      "tool_name": "SMSAPI.com",
+      "tool_description": "Powerful and easy SMS communication at your fingertips!"
+    },
+    "retrieved_rank": 38
+  },
+  {
+    "api_id": "tiktok_best_experience_hashtag_s_challenge_feed_by_name",
+    "rag_score": 0.4396342933177948,
+    "compressed": {
+      "api_id": "tiktok_best_experience_hashtag_s_challenge_feed_by_name",
+      "name": "Hashtag's (Challenge) Feed by Name",
+      "description": "You can GET a hashtag's (challenge) Feed by its Name.",
+      "category": "Social",
+      "method": "GET",
+      "url": "https://tiktok-best-experience.p.rapidapi.com/challenge/{challenge_name}/feed",
+      "tool_name": "TikTok best experience",
+      "tool_description": "Highly available easy-to-use **TikTok** intelligent **proxy** with the best performance. Get any data from Instagram with **99.99% uptime**.  Bigger API plans and **additional functionality** are available on request. Looking forward to hearing you on Telegram: **https://t.me/chilledlobster**. #tikt"
+    },
+    "retrieved_rank": 39
+  },
+  {
+    "api_id": "smsportal_subscribe_to_replies",
+    "rag_score": 0.43866467475891113,
+    "compressed": {
+      "api_id": "smsportal_subscribe_to_replies",
+      "name": "Subscribe to Replies",
+      "description": "Register a reply webhook",
+      "category": "SMS",
+      "method": "POST",
+      "url": "https://smsportal1.p.rapidapi.com/Hooks/Replies",
+      "tool_name": "SMSPortal",
+      "tool_description": "Bulk SMS for maximum reach and genuine customer engagement."
+    },
+    "retrieved_rank": 40
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "api_id": "locationiq_limitbyviewbox",
+    "candidate_id": "C20",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 5,
+    "rag_score": 0.5287230014801025,
+    "reason": "",
+    "service": {
+      "_file": "locationiq.json",
+      "_tool": "locationiq",
+      "api_id": "locationiq_limitbyviewbox",
+      "category": "Mapping",
+      "description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "1",
+            "description": "Restrict result to items contained within the bounds specified in the viewbox parameter [0] [1]",
+            "name": "bounded",
+            "type": "NUMBER"
+          },
+          {
+            "default": "{{Your_API_Key}}",
+            "description": "Your API key",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "-132.84908,47.69382,-70.44674,30.82531",
+            "description": "The preferred area to find search results. Any two corner points of the box - max_lon,max_lat,min_lon,min_lat or min_lon,min_lat,max_lon,max_lat - are accepted in any order as long as they span a real box. Currently, this option in the Autocomplete API only increases weigtage of results inside the viewbox. It does not restrict results to this box.",
+            "name": "viewbox",
+            "type": "STRING"
+          },
+          {
+            "default": "Empire State",
+            "description": "Query string to search for",
+            "name": "q",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "limitByViewbox",
+      "tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+      "tool_name": "LocationIQ",
+      "toolbench_endpoint_description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+      "toolbench_enrichment": {
+        "category": "Mapping",
+        "endpoint_description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "limitByViewbox",
+        "endpoint_url": "https://locationiq2.p.rapidapi.com/v1/autocomplete",
+        "file_name": "locationiq.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+        "tool_file_found": true,
+        "tool_name": "LocationIQ",
+        "toolbench_relative_path": "Mapping/locationiq.json"
+      },
+      "toolbench_tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+      "toolbench_tool_name": "LocationIQ",
+      "url": "https://locationiq2.p.rapidapi.com/v1/autocomplete",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.151,
+        "tp_kbps": 13.245,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.668,
+    "qos_llm_rank": 11,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_pure_llm",
+      "subtask_id": "1",
+      "api_id": "locationiq_limitbyviewbox",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

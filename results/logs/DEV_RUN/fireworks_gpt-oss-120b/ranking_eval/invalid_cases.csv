@@ -1,0 +1,1 @@
+run_dir,report_path,query_id,subtask_id,mode,failure_stage,failure_reason,expected_api_count,actual_api_count,returned_api_count,duplicate_api_ids,missing_api_ids,unknown_api_ids,exclude_from_ranking_eval,failure_flag

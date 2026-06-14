@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":0,"reason":"eCommerce product reviews, not restaurants"},
+{"candidate_id":"C22","label":0,"reason":"product reviews, unrelated to restaurants"},
+{"candidate_id":"C23","label":0,"reason":"weather data, irrelevant"},
+{"candidate_id":"C24","label":1,"reason":"provides restaurant reviews directly"},
+{"candidate_id":"C25","label":0,"reason":"Amazon product details, not restaurants"},
+{"candidate_id":"C26","label":0,"reason":"sentiment analysis, unrelated"},
+{"candidate_id":"C27","label":0,"reason":"news article fetch, irrelevant"},
+{"candidate_id":"C28","label":0,"reason":"steam app info, not restaurants"},
+{"candidate_id":"C29","label":0,"reason":"meal plan generation, unrelated"},
+{"candidate_id":"C30","label":0,"reason":"same as C29"},
+{"candidate_id":"C31","label":0,"reason":"store locations, not restaurant data"},
+{"candidate_id":"C32","label":0,"reason":"recipe listings, not restaurant reviews"},
+{"candidate_id":"C33","label":0,"reason":"SHEIN product reviews, unrelated"},
+{"candidate_id":"C34","label":0,"reason":"consumer detail, not restaurant"},
+{"candidate_id":"C35","label":1,"reason":"fetches business info including restaurants"},
+{"candidate_id":"C36","label":1,"reason":"returns businesses with transaction info, includes restaurants"},
+{"candidate_id":"C37","label":0,"reason":"auto-complete for food items, not reviews"},
+{"candidate_id":"C38","label":0,"reason":"list feeds, unrelated"},
+{"candidate_id":"C39","label":0,"reason":"search recipes, not restaurant data"},
+{"candidate_id":"C40","label":0,"reason":"recipe reviews, not restaurant reviews"}
+]
+}

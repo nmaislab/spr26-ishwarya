@@ -1,0 +1,19 @@
+{
+  "inclusion_policy": "strict_selected_modes",
+  "selected_modes": [
+    "no_qos",
+    "qos_pure_llm",
+    "qos_topsis",
+    "qos_hybrid"
+  ],
+  "included_cases": 11,
+  "invalid_mode_subtask_cases": 0,
+  "discovered_run_dirs": 4,
+  "loaded_reports": [
+    "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q01_20260613T051447/evaluation/query_q01_candidate_api_rankings.xlsx",
+    "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q02_20260613T101802/evaluation/query_q02_candidate_api_rankings.xlsx",
+    "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q03_20260613T102309/evaluation/query_q03_candidate_api_rankings.xlsx",
+    "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q07_20260613T122924/evaluation/query_q07_candidate_api_rankings.xlsx"
+  ],
+  "warnings": 0
+}

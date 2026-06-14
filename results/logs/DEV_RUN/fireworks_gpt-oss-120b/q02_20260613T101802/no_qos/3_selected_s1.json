@@ -1,0 +1,94 @@
+[
+  {
+    "api_id": "worldwide_restaurants_search",
+    "candidate_id": "C40",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 13,
+    "rag_score": 0.4969088137149811,
+    "reason": "",
+    "service": {
+      "_file": "worldwide_restaurants.json",
+      "_tool": "worldwide_restaurants",
+      "api_id": "worldwide_restaurants_search",
+      "category": "Search",
+      "description": "Search Restaurants",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "Pagination",
+            "name": "offset",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "297704",
+            "description": "Location ID based on typeahead results",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "Standard ISO 4217 - https://en.wikipedia.org/wiki/ISO_4217",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "en_US",
+            "description": "Use the format ll_CC, where ll is a two-letter language code, and CC is a two-letter country code. For instance, en_US represents U.S. English",
+            "name": "language",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Search",
+      "tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+      "tool_name": "Worldwide Restaurants",
+      "toolbench_endpoint_description": "Search Restaurants",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Search Restaurants",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Search",
+        "endpoint_url": "https://worldwide-restaurants.p.rapidapi.com/search",
+        "file_name": "worldwide_restaurants.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+        "tool_file_found": true,
+        "tool_name": "Worldwide Restaurants",
+        "toolbench_relative_path": "Search/worldwide_restaurants.json"
+      },
+      "toolbench_tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.",
+      "toolbench_tool_name": "Worldwide Restaurants",
+      "url": "https://worldwide-restaurants.p.rapidapi.com/search"
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "no_qos",
+      "subtask_id": "1",
+      "api_id": "worldwide_restaurants_search",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

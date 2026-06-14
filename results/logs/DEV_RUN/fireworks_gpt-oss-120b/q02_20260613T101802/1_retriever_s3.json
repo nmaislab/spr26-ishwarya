@@ -1,0 +1,602 @@
+[
+  {
+    "api_id": "suggestic_generate_a_simple_meal_plan-2",
+    "rag_score": 0.4828190803527832,
+    "compressed": {
+      "api_id": "suggestic_generate_a_simple_meal_plan-2",
+      "name": "Generate a Simple Meal Plan",
+      "description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these ",
+      "category": "Health_and_Fitness",
+      "method": "POST",
+      "url": "https://suggestic1.p.rapidapi.com/",
+      "tool_name": "Suggestic",
+      "tool_description": "Suggestic Food & Meal Plan API"
+    },
+    "retrieved_rank": 1
+  },
+  {
+    "api_id": "suggestic_generate_a_simple_meal_plan",
+    "rag_score": 0.4828190803527832,
+    "compressed": {
+      "api_id": "suggestic_generate_a_simple_meal_plan",
+      "name": "Generate a Simple Meal Plan",
+      "description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these ",
+      "category": "Health_and_Fitness",
+      "method": "POST",
+      "url": "https://suggestic1.p.rapidapi.com/",
+      "tool_name": "Suggestic",
+      "tool_description": "Suggestic Food & Meal Plan API"
+    },
+    "retrieved_rank": 2
+  },
+  {
+    "api_id": "restaurants_reviews",
+    "rag_score": 0.47574639320373535,
+    "compressed": {
+      "api_id": "restaurants_reviews",
+      "name": "Reviews",
+      "description": "Restaurant Reviews",
+      "category": "Search",
+      "method": "POST",
+      "url": "https://restaurants222.p.rapidapi.com/reviews",
+      "tool_name": "Restaurants",
+      "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, "
+    },
+    "retrieved_rank": 3
+  },
+  {
+    "api_id": "favoritefoodapi_get_all_favorite_food",
+    "rag_score": 0.45724329352378845,
+    "compressed": {
+      "api_id": "favoritefoodapi_get_all_favorite_food",
+      "name": "Get All Favorite Food",
+      "description": "This endpoint will return all my favorite Cameroonian dishes",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://favoritefoodapi.p.rapidapi.com/food/api/v1/favorites",
+      "tool_name": "favoriteFoodApi",
+      "tool_description": "This Api Holds some of the Favorite Dishes I fancy from Cameroon"
+    },
+    "retrieved_rank": 4
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+    "rag_score": 0.4362855553627014,
+    "compressed": {
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+      "name": "GET all {City} names",
+      "description": "GET all City names",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/all-city",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!"
+    },
+    "retrieved_rank": 5
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+    "rag_score": 0.41608625650405884,
+    "compressed": {
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+      "name": "GET all Restaurants by {Chain} & {State}",
+      "description": "**10 results per request. Use page number for Pagination.**",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/{restaurantchainname}/location/state/{state}/{page}",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!"
+    },
+    "retrieved_rank": 6
+  },
+  {
+    "api_id": "cartify_getordersbyemail",
+    "rag_score": 0.40467342734336853,
+    "compressed": {
+      "api_id": "cartify_getordersbyemail",
+      "name": "getOrdersbyEmail",
+      "description": "For a valid response, fill in the email of the user in the path parameter. This is helpful instead of looping from the userId since the users can't have or use the same email. To also verify that it i",
+      "category": "Commerce",
+      "method": "GET",
+      "url": "https://cartify.p.rapidapi.com/users/api/v1/{email}",
+      "tool_name": "Cartify",
+      "tool_description": "Welcome to our e-commerce API! Our API is designed to make it easy for you to build and manage your online store and also build projects you can show on your porfolio. With our API, you can create products, manage orders, track shipments, and more. Our API is built on modern technologies and is easy"
+    },
+    "retrieved_rank": 7
+  },
+  {
+    "api_id": "testing_v3_validateemail",
+    "rag_score": 0.39028817415237427,
+    "compressed": {
+      "api_id": "testing_v3_validateemail",
+      "name": "ValidateEmail",
+      "description": "When inviting a user this will first validate if the email input is valid and is not yet taken. Email must be unique.",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://testing144.p.rapidapi.com/ms-securities/api/auth/validate-email",
+      "tool_name": "Testing_v3",
+      "tool_description": "test api"
+    },
+    "retrieved_rank": 8
+  },
+  {
+    "api_id": "food_calories_get_foods_by_category_name",
+    "rag_score": 0.386273592710495,
+    "compressed": {
+      "api_id": "food_calories_get_foods_by_category_name",
+      "name": "get foods by category name",
+      "description": "simply you can send category name and get all foods in this category",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://food-calories1.p.rapidapi.com/categories/{category_name}/foods",
+      "tool_name": "Food Calories",
+      "tool_description": "Find Calories and KiloJoules in specific food name,\nYou can build amazing apps using this api"
+    },
+    "retrieved_rank": 9
+  },
+  {
+    "api_id": "veggie_me_restaurants",
+    "rag_score": 0.37860482931137085,
+    "compressed": {
+      "api_id": "veggie_me_restaurants",
+      "name": "restaurants",
+      "description": "Aggregates all vegetarian restaurants from Yelp from London,  Amsterdam, Berlin, Stockholm, Barcelona and Paris",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://veggie-me.p.rapidapi.com/restaurants",
+      "tool_name": "Veggie Me",
+      "tool_description": "An API for aggregating vegetarian restaurants from Yelp from London, Amsterdam, Berlin, Stockholm, Barcelona and Paris."
+    },
+    "retrieved_rank": 10
+  },
+  {
+    "api_id": "travel_advisor_restaurant_filters_v2_list",
+    "rag_score": 0.3784710168838501,
+    "compressed": {
+      "api_id": "travel_advisor_restaurant_filters_v2_list",
+      "name": "restaurant-filters/v2/list",
+      "description": "Get available filters for listing restaurants",
+      "category": "Transportation",
+      "method": "POST",
+      "url": "https://travel-advisor.p.rapidapi.com/restaurant-filters/v2/list",
+      "tool_name": "Travel Advisor",
+      "tool_description": "This API helps to query realtime Flights prices, Hotels booking, Restaurants, Attracting locations, etc… to create a travelling site like tripadvisor.com"
+    },
+    "retrieved_rank": 11
+  },
+  {
+    "api_id": "emailjs_send_form",
+    "rag_score": 0.3725569546222687,
+    "compressed": {
+      "api_id": "emailjs_send_form",
+      "name": "/send_form",
+      "description": "Sends an email based on the specified email template and the passed form data. The email will send via the specified email service.",
+      "category": "Email",
+      "method": "POST",
+      "url": "https://emailjs.p.rapidapi.com/api/v1.0/email/send-form",
+      "tool_name": "EmailJS",
+      "tool_description": "Send Email API. No server code needed. Focus on things that matter!"
+    },
+    "retrieved_rank": 12
+  },
+  {
+    "api_id": "venue_deactivatevenue",
+    "rag_score": 0.3709235191345215,
+    "compressed": {
+      "api_id": "venue_deactivatevenue",
+      "name": "deactivateVenue",
+      "description": "Deactivate venue by ID. Inactive venues cannot receive orders.",
+      "category": "Food",
+      "method": "POST",
+      "url": "https://venue1.p.rapidapi.com/venue-api/api/venues/{venue}/deactivate",
+      "tool_name": "Venue",
+      "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc..."
+    },
+    "retrieved_rank": 13
+  },
+  {
+    "api_id": "create_game_rooms_get_rooms_as_response",
+    "rag_score": 0.3693723678588867,
+    "compressed": {
+      "api_id": "create_game_rooms_get_rooms_as_response",
+      "name": "Get Rooms as Response",
+      "description": "You can get the arranged array by sending 'POST' request to '/getRooms' end point.",
+      "category": "Gaming",
+      "method": "POST",
+      "url": "https://create-game-rooms.p.rapidapi.com/getRooms",
+      "tool_name": "Create Game Rooms",
+      "tool_description": "This API generates any kind of room as an array by using your array of objects with your options."
+    },
+    "retrieved_rank": 14
+  },
+  {
+    "api_id": "api2cart_listproductoptions",
+    "rag_score": 0.3691934645175934,
+    "compressed": {
+      "api_id": "api2cart_listproductoptions",
+      "name": "listProductOptions",
+      "description": "Get list of options",
+      "category": "eCommerce",
+      "method": "POST",
+      "url": "https://API2Cartstefan-skliarovV1.p.rapidapi.com/listProductOptions",
+      "tool_name": "API2Cart",
+      "tool_description": "Connect your app with shopping carts."
+    },
+    "retrieved_rank": 15
+  },
+  {
+    "api_id": "ocw_createacustomtoaddress",
+    "rag_score": 0.36818966269493103,
+    "compressed": {
+      "api_id": "ocw_createacustomtoaddress",
+      "name": "Createacustomtoaddress",
+      "description": "Create a custom to address\n\n<b>Payload parameters</b>\n<table>\n <tr>\n  <td><b>name</b></td>\n  <td><b>Required</b>\n     <i>String</i>  \n     <p>Must be no longer than 50 characters.</p>\n  </td>\n</tr>\n\n<",
+      "category": "Financial",
+      "method": "POST",
+      "url": "https://ocw.p.rapidapi.com/customToAddresses",
+      "tool_name": "OCW",
+      "tool_description": "Check Mailing API"
+    },
+    "retrieved_rank": 16
+  },
+  {
+    "api_id": "bbc_good_food_api_collection_recipes",
+    "rag_score": 0.3669211268424988,
+    "compressed": {
+      "api_id": "bbc_good_food_api_collection_recipes",
+      "name": "Collection recipes",
+      "description": "Get collection of recipes by collection name ID",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/collection/{id}/recipes/",
+      "tool_name": "BBC Good Food API",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity "
+    },
+    "retrieved_rank": 17
+  },
+  {
+    "api_id": "mailjet_getcampaignoverviewlist",
+    "rag_score": 0.3651374280452728,
+    "compressed": {
+      "api_id": "mailjet_getcampaignoverviewlist",
+      "name": "getCampaignOverviewList",
+      "description": "List campaign overview  resources available for this apikey.",
+      "category": "Email",
+      "method": "POST",
+      "url": "https://MailjetzakutynskyV1.p.rapidapi.com/getCampaignOverviewList",
+      "tool_name": "Mailjet",
+      "tool_description": "The complete solution to power your transactional email."
+    },
+    "retrieved_rank": 18
+  },
+  {
+    "api_id": "contextio_getallapplicationwebhooks",
+    "rag_score": 0.36329764127731323,
+    "compressed": {
+      "api_id": "contextio_getallapplicationwebhooks",
+      "name": "getAllApplicationWebhooks",
+      "description": "List all application level webhooks.",
+      "category": "Email",
+      "method": "POST",
+      "url": "https://ContextIOraygorodskijV1.p.rapidapi.com/getAllApplicationWebhooks",
+      "tool_name": "ContextIO",
+      "tool_description": "Context.IO is a modern, scalable email API that brings IMAP into the 21st century."
+    },
+    "retrieved_rank": 19
+  },
+  {
+    "api_id": "keyword_suggestion_api_questions",
+    "rag_score": 0.3631330728530884,
+    "compressed": {
+      "api_id": "keyword_suggestion_api_questions",
+      "name": "Questions",
+      "description": "This will give you questions releated to your queried keyword",
+      "category": "Advertising",
+      "method": "GET",
+      "url": "https://keyword-suggestion-api.p.rapidapi.com/questions",
+      "tool_name": "Keyword Suggestion API",
+      "tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria su"
+    },
+    "retrieved_rank": 20
+  },
+  {
+    "api_id": "tasty_recipes_auto_complete",
+    "rag_score": 0.3613220155239105,
+    "compressed": {
+      "api_id": "tasty_recipes_auto_complete",
+      "name": "recipes/auto-complete",
+      "description": "Get auto complete suggestions by name or ingredients",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://tasty.p.rapidapi.com/recipes/auto-complete",
+      "tool_name": "Tasty",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site"
+    },
+    "retrieved_rank": 21
+  },
+  {
+    "api_id": "restaurant_booking_management_restaurantsite",
+    "rag_score": 0.360528826713562,
+    "compressed": {
+      "api_id": "restaurant_booking_management_restaurantsite",
+      "name": "restaurantsite",
+      "description": " ",
+      "category": "Food",
+      "method": "POST",
+      "url": "https://restaurant-booking-management1.p.rapidapi.com/234",
+      "tool_name": "RESTAURANT BOOKING MANAGEMENT",
+      "tool_description": "To Handel Orders , Payments , Menu and Restaurants Registrations"
+    },
+    "retrieved_rank": 22
+  },
+  {
+    "api_id": "smtp_e_mail_sender_send_test_email",
+    "rag_score": 0.3586047291755676,
+    "compressed": {
+      "api_id": "smtp_e_mail_sender_send_test_email",
+      "name": "Send TEST Email",
+      "description": "Send e-mail",
+      "category": "Email",
+      "method": "POST",
+      "url": "https://smtp-e-mail-sender.p.rapidapi.com/test",
+      "tool_name": "SMTP e-Mail Sender",
+      "tool_description": "Send e-mails with an API call"
+    },
+    "retrieved_rank": 23
+  },
+  {
+    "api_id": "the_fork_the_spoon_locations_v2_list",
+    "rag_score": 0.3584717810153961,
+    "compressed": {
+      "api_id": "the_fork_the_spoon_locations_v2_list",
+      "name": "locations/v2/list",
+      "description": "List relating locations by Google place id",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://the-fork-the-spoon.p.rapidapi.com/locations/v2/list",
+      "tool_name": "The Fork The Spoon",
+      "tool_description": "This API helps to query the best restaurant and meal around the world to create a traveling site/application such as thefork.com"
+    },
+    "retrieved_rank": 24
+  },
+  {
+    "api_id": "bbc_good_food_api_recipe_by_name_id",
+    "rag_score": 0.35662394762039185,
+    "compressed": {
+      "api_id": "bbc_good_food_api_recipe_by_name_id",
+      "name": "Recipe by name id",
+      "description": "Get recipe information by recipe name id",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/recipe/{id}",
+      "tool_name": "BBC Good Food API",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity "
+    },
+    "retrieved_rank": 25
+  },
+  {
+    "api_id": "mailjet_getcampaigndraftlist",
+    "rag_score": 0.35455745458602905,
+    "compressed": {
+      "api_id": "mailjet_getcampaigndraftlist",
+      "name": "getCampaignDraftList",
+      "description": "List campaign draft resources available for this apikey.",
+      "category": "Email",
+      "method": "POST",
+      "url": "https://MailjetzakutynskyV1.p.rapidapi.com/getCampaignDraftList",
+      "tool_name": "Mailjet",
+      "tool_description": "The complete solution to power your transactional email."
+    },
+    "retrieved_rank": 26
+  },
+  {
+    "api_id": "venue_validatecluster",
+    "rag_score": 0.3534594178199768,
+    "compressed": {
+      "api_id": "venue_validatecluster",
+      "name": "validateCluster",
+      "description": "Validate venue cluster (batch of venues). Returns information if order can be made to those venues simultaneously. Currently only single venue is allowed.",
+      "category": "Food",
+      "method": "POST",
+      "url": "https://venue1.p.rapidapi.com/venue-api/api/venue/validateCluster",
+      "tool_name": "Venue",
+      "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc..."
+    },
+    "retrieved_rank": 27
+  },
+  {
+    "api_id": "moviehut_random_movie_get_list_of_movies_sorted_by_imdb_rating_with_parameters",
+    "rag_score": 0.3517575263977051,
+    "compressed": {
+      "api_id": "moviehut_random_movie_get_list_of_movies_sorted_by_imdb_rating_with_parameters",
+      "name": "Get List of Movies Sorted by IMDb Rating (With Parameters)",
+      "description": "Gets the list of movies sorted by their IMDb Rating. Query parameters like limiting, pagination and selection can be added.",
+      "category": "Movies",
+      "method": "GET",
+      "url": "https://moviehut-random-movie.p.rapidapi.com/api/movies",
+      "tool_name": "MovieHut -  Random Movie",
+      "tool_description": "MovieHut is a random movie suggestion API with  multiple endpoints and features."
+    },
+    "retrieved_rank": 28
+  },
+  {
+    "api_id": "yummly_feeds_auto_complete",
+    "rag_score": 0.3496478199958801,
+    "compressed": {
+      "api_id": "yummly_feeds_auto_complete",
+      "name": "feeds/auto-complete",
+      "description": "Get auto complete suggestions by name or ingredients, etc...",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://yummly2.p.rapidapi.com/feeds/auto-complete",
+      "tool_name": "Yummly",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site"
+    },
+    "retrieved_rank": 29
+  },
+  {
+    "api_id": "bbc_good_food_api_search_for_recipes",
+    "rag_score": 0.3496282398700714,
+    "compressed": {
+      "api_id": "bbc_good_food_api_search_for_recipes",
+      "name": "Search for recipes",
+      "description": "Search for recipes by keyword or full phrase",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/search",
+      "tool_name": "BBC Good Food API",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity "
+    },
+    "retrieved_rank": 30
+  },
+  {
+    "api_id": "beer_lover_get_the_top_50_beers",
+    "rag_score": 0.347136914730072,
+    "compressed": {
+      "api_id": "beer_lover_get_the_top_50_beers",
+      "name": "GET the top 50 beers",
+      "description": "Retrieve the top 50 beers with the highest score",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://beer-lover.p.rapidapi.com/top50",
+      "tool_name": "Beer Lover",
+      "tool_description": "Beer Lover API list more than 30,000 unique beers with diverse information (score, brewery, country, etc.)"
+    },
+    "retrieved_rank": 31
+  },
+  {
+    "api_id": "category_list_19_register",
+    "rag_score": 0.3465525209903717,
+    "compressed": {
+      "api_id": "category_list_19_register",
+      "name": "19.Register",
+      "description": "https://uatproduct.mypandit.com/wp-json",
+      "category": "eCommerce",
+      "method": "POST",
+      "url": "https://category-list2.p.rapidapi.com/mpastrologerv3/signup-astro",
+      "tool_name": "category-list",
+      "tool_description": "Category Listing API"
+    },
+    "retrieved_rank": 32
+  },
+  {
+    "api_id": "bespoke_diet_generator_get_user_s_diet_for_a_specific_day",
+    "rag_score": 0.34639716148376465,
+    "compressed": {
+      "api_id": "bespoke_diet_generator_get_user_s_diet_for_a_specific_day",
+      "name": "Get user's diet for a specific day",
+      "description": "Get the current diet plan for the specified user for a specific day.",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://bespoke-diet-generator.p.rapidapi.com/user/{userId}/diet/{dayIndex}",
+      "tool_name": "Bespoke Diet Generator",
+      "tool_description": "Our API generates a complete meal plan that is specific to the nutrition counseling world. We create fully detailed, personalized meal plans with specific ingredients / quantities and little cooking skill required. For better flexibility, our ingredient replacement algorithm creates a template where"
+    },
+    "retrieved_rank": 33
+  },
+  {
+    "api_id": "beverages_and_desserts_get_all_the_desserts",
+    "rag_score": 0.3456844091415405,
+    "compressed": {
+      "api_id": "beverages_and_desserts_get_all_the_desserts",
+      "name": "Get all the Desserts",
+      "description": "This endpoint will returns all the** Desserts**",
+      "category": "Food",
+      "method": "GET",
+      "url": "https://beverages-and-desserts.p.rapidapi.com/desserts",
+      "tool_name": "Beverages and Desserts",
+      "tool_description": "This api returns various kinds of Beverages and Desserts"
+    },
+    "retrieved_rank": 34
+  },
+  {
+    "api_id": "auto_suggest_queries_suggestqueries",
+    "rag_score": 0.34556084871292114,
+    "compressed": {
+      "api_id": "auto_suggest_queries_suggestqueries",
+      "name": "suggestqueries",
+      "description": "Use this endpoint to fetch Suggestions",
+      "category": "Search",
+      "method": "GET",
+      "url": "https://auto-suggest-queries.p.rapidapi.com/suggestqueries",
+      "tool_name": "Auto Suggest Queries",
+      "tool_description": "This is a Free Query Suggest API which provides suggestions for search queries based on a given keyword"
+    },
+    "retrieved_rank": 35
+  },
+  {
+    "api_id": "keyword_suggestion_api_comparisons",
+    "rag_score": 0.3454815745353699,
+    "compressed": {
+      "api_id": "keyword_suggestion_api_comparisons",
+      "name": "Comparisons",
+      "description": "This will give you comparisons releated to your queried keyword",
+      "category": "Advertising",
+      "method": "GET",
+      "url": "https://keyword-suggestion-api.p.rapidapi.com/comparisons",
+      "tool_name": "Keyword Suggestion API",
+      "tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria su"
+    },
+    "retrieved_rank": 36
+  },
+  {
+    "api_id": "e_commerce_top_rated_by_category",
+    "rag_score": 0.34513580799102783,
+    "compressed": {
+      "api_id": "e_commerce_top_rated_by_category",
+      "name": "Top rated by category",
+      "description": "This will get the top rated items in the category specified in the query params\nThe default is items that have over 4 ratings  if rating is not specified in the query params",
+      "category": "eCommerce",
+      "method": "GET",
+      "url": "https://e-commerce12.p.rapidapi.com/categories/toprated",
+      "tool_name": "E-Commerce",
+      "tool_description": "If you're looking for an easy to use API for your ecommerce project, this API is for you."
+    },
+    "retrieved_rank": 37
+  },
+  {
+    "api_id": "gmail_updatesendasalias",
+    "rag_score": 0.34225255250930786,
+    "compressed": {
+      "api_id": "gmail_updatesendasalias",
+      "name": "updateSendAsAlias",
+      "description": "Updates a custom \"from\" send-as alias.",
+      "category": "Email",
+      "method": "POST",
+      "url": "https://Gmailstefan-skliarovV1.p.rapidapi.com/updateSendAsAlias",
+      "tool_name": "Gmail",
+      "tool_description": "Create a simple app that makes requests to the Gmail API in just 5 to 10 minutes."
+    },
+    "retrieved_rank": 38
+  },
+  {
+    "api_id": "abir82_bollywood_recommendations_fetch_movies",
+    "rag_score": 0.3409286141395569,
+    "compressed": {
+      "api_id": "abir82_bollywood_recommendations_fetch_movies",
+      "name": "Fetch Movies",
+      "description": "This Endpoint allows to get a list of movies from 2000 to 2019 based on the genre selected by the user.",
+      "category": "Movies",
+      "method": "GET",
+      "url": "https://abir82-bollywood-recommendations.p.rapidapi.com/",
+      "tool_name": "Abir82 Bollywood Recommendations",
+      "tool_description": "This API recommends a list of Bollywood movies from 2000 to 2019 based on the genre and year selected by the user"
+    },
+    "retrieved_rank": 39
+  },
+  {
+    "api_id": "e_mailer_420_mail",
+    "rag_score": 0.3408723473548889,
+    "compressed": {
+      "api_id": "e_mailer_420_mail",
+      "name": "mail",
+      "description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of th",
+      "category": "Email",
+      "method": "GET",
+      "url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}",
+      "tool_name": "e-mailer-420",
+      "tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go."
+    },
+    "retrieved_rank": 40
+  }
+]

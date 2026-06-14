@@ -1,0 +1,602 @@
+{
+  "q02_1_address_autosuggest_address_autosuggest": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "provides address suggestions, not restaurant data"
+  },
+  "q02_1_airbnb_v2_get_category": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "returns Airbnb categories, unrelated to restaurants"
+  },
+  "q02_1_airbnb_v2_get_property_type_filters": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "property type filters for Airbnb, not restaurant search"
+  },
+  "q02_1_airbnb_v2_get_type_of_place_filters": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "type of place filters for Airbnb, not restaurants"
+  },
+  "q02_1_airbnb_v2_search_property": {
+    "candidate_id": "C05",
+    "functional_match": 0,
+    "comment": "searches accommodations, not restaurants"
+  },
+  "q02_1_apartments_com_media": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "retrieves apartment media, unrelated"
+  },
+  "q02_1_apartments_com_reviews": {
+    "candidate_id": "C07",
+    "functional_match": 0,
+    "comment": "apartment reviews, unrelated"
+  },
+  "q02_1_apartments_com_walk_score": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "apartment walk scores, unrelated"
+  },
+  "q02_1_bbc_good_food_api_collection_recipes": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "recipes collection, not restaurant discovery"
+  },
+  "q02_1_bbc_good_food_api_search_for_recipes": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "searches recipes, not restaurants"
+  },
+  "q02_1_cannafinder_shops_in_radius_around_coordinates": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "finds cannabis shops, not restaurants"
+  },
+  "q02_1_city_and_state_search_api_cities_search": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "searches cities, not restaurants"
+  },
+  "q02_1_fast_food_restaurants_usa_top_50_chains_get_all_city_names": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "lists city names, not restaurant search"
+  },
+  "q02_1_fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state": {
+    "candidate_id": "C14",
+    "functional_match": 0,
+    "comment": "gets restaurants by chain/state, not location-based search"
+  },
+  "q02_1_foursquare_getsuggestedcompletion": {
+    "candidate_id": "C15",
+    "functional_match": 1,
+    "comment": "returns nearby venues matching query, suitable for restaurants"
+  },
+  "q02_1_hotel_search_default": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "searches hotels, not restaurants"
+  },
+  "q02_1_hotelapi_hotelsearch": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "hotel search, not restaurants"
+  },
+  "q02_1_hotelgeo_default": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "hotel geo search, not restaurants"
+  },
+  "q02_1_hotels_locations_v2_search_deprecated": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "hotel location search, not restaurants"
+  },
+  "q02_1_locationiq_limitbyviewbox": {
+    "candidate_id": "C20",
+    "functional_match": 1,
+    "comment": "autocomplete returns businesses including restaurants, suitable"
+  },
+  "q02_1_priceline_com_hotel_city_nearby": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "searches hotels, not restaurants"
+  },
+  "q02_1_priceline_com_provider_download_cities_clusters": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "provides hotel city clusters"
+  },
+  "q02_1_priceline_com_provider_search_flights_locations": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "searches flight locations only"
+  },
+  "q02_1_quick_geo_location_get_directions_coordinates_by_lat_lan": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "returns directions, not restaurant data"
+  },
+  "q02_1_quick_geo_location_search_location_by_name": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "finds location info, not restaurants"
+  },
+  "q02_1_recipe_finder_diet_ingredient": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "recipe search, unrelated"
+  },
+  "q02_1_reinspitpor_default": {
+    "candidate_id": "C27",
+    "functional_match": 0,
+    "comment": "real estate listings, unrelated"
+  },
+  "q02_1_restaurants_reviews": {
+    "candidate_id": "C28",
+    "functional_match": 0,
+    "comment": "only returns reviews, no search"
+  },
+  "q02_1_skyscanner_v2_get_things_to_do": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "gets activities, not restaurant search"
+  },
+  "q02_1_stores_and_brands_api_get_stores_by_city": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "store locations, not restaurants"
+  },
+  "q02_1_target_com_store_product_reviews_locations_data_target_store_location_search": {
+    "candidate_id": "C31",
+    "functional_match": 0,
+    "comment": "target store locations, not restaurants"
+  },
+  "q02_1_the_fork_the_spoon_locations_v2_list": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "lists locations by place id, not search"
+  },
+  "q02_1_travel_advisor_restaurant_filters_v2_list": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "provides filters, not restaurant results"
+  },
+  "q02_1_tripadvisor_search_restaurant_location": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "searches by query string, not location-based"
+  },
+  "q02_1_veggie_me_restaurants": {
+    "candidate_id": "C35",
+    "functional_match": 0,
+    "comment": "vegetarian restaurants limited to cities, no location param"
+  },
+  "q02_1_venue_deactivatevenue": {
+    "candidate_id": "C36",
+    "functional_match": 0,
+    "comment": "deactivates venue, unrelated"
+  },
+  "q02_1_world_cities_and_countries_searchcountries": {
+    "candidate_id": "C37",
+    "functional_match": 0,
+    "comment": "searches countries, unrelated"
+  },
+  "q02_1_worldwide_hotels_reviews": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "hotel reviews, unrelated"
+  },
+  "q02_1_worldwide_restaurants_detail": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "restaurant detail, not search"
+  },
+  "q02_1_worldwide_restaurants_search": {
+    "candidate_id": "C40",
+    "functional_match": 1,
+    "comment": "searches restaurants using location_id"
+  },
+  "q02_2_amazon_data_scapper_get_product_reviews": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "Amazon product reviews"
+  },
+  "q02_2_amazon_data_scraper_by_kgaur_get_amazon_product_reviews": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "Amazon product reviews"
+  },
+  "q02_2_amazon_data_scraper_v2_get_product_s_reviews": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "Amazon product reviews"
+  },
+  "q02_2_amazon_india_web_scraper_get_product_reviews": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "Amazon product reviews"
+  },
+  "q02_2_amazon_product_data_get_search_data": {
+    "candidate_id": "C05",
+    "functional_match": 0,
+    "comment": "Amazon product search"
+  },
+  "q02_2_amazon_store_scraper_get_amazon_product_reviews": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "Amazon product reviews"
+  },
+  "q02_2_apartments_com_reviews": {
+    "candidate_id": "C07",
+    "functional_match": 0,
+    "comment": "Apartment reviews"
+  },
+  "q02_2_bbc_good_food_api_recipe_by_name_id": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "Recipe information"
+  },
+  "q02_2_bbs_amazon_data_scraper_get_amazon_search_results": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "Amazon search results"
+  },
+  "q02_2_beer_lover_get_the_top_50_beers": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "Beer list data"
+  },
+  "q02_2_bespoke_diet_generator_get_user_s_information": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "User info retrieval"
+  },
+  "q02_2_bigoven_getreviewreplies": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "Recipe review replies"
+  },
+  "q02_2_burgers_hub_get_specific_burger": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "Burger details"
+  },
+  "q02_2_catalogapi_remove_item": {
+    "candidate_id": "C14",
+    "functional_match": 0,
+    "comment": "Cart item removal"
+  },
+  "q02_2_edamam_food_and_grocery_database_api_food_database_v2_nutrients-2": {
+    "candidate_id": "C15",
+    "functional_match": 0,
+    "comment": "Food nutrient data"
+  },
+  "q02_2_fast_food_restaurants_usa_top_50_chains_get_all_city_names": {
+    "candidate_id": "C16",
+    "functional_match": 0,
+    "comment": "City names only"
+  },
+  "q02_2_fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state": {
+    "candidate_id": "C17",
+    "functional_match": 1,
+    "comment": "Provides restaurant details"
+  },
+  "q02_2_favoritefoodapi_get_all_favorite_food": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "Favorite dishes list"
+  },
+  "q02_2_guardian_searchcontent": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "News content search"
+  },
+  "q02_2_ind_nutrient_api_view_food_items_by_type": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "Indian food nutrients"
+  },
+  "q02_2_jingdong_data_service_item_reviews_detailed": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "eCommerce product reviews, not restaurants"
+  },
+  "q02_2_jumia_service_get_product_reviews": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "product reviews, unrelated to restaurants"
+  },
+  "q02_2_meteo_data_api_get_info": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "weather data, irrelevant"
+  },
+  "q02_2_restaurants_reviews": {
+    "candidate_id": "C24",
+    "functional_match": 1,
+    "comment": "provides restaurant reviews directly"
+  },
+  "q02_2_shubhankar_amazon_data_scraper_get_product_details_related_amazon_com": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "Amazon product details, not restaurants"
+  },
+  "q02_2_specrom_news_api_document_sentiments_score": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "sentiment analysis, unrelated"
+  },
+  "q02_2_specrom_news_api_fetch_parsed_news_article_by_url_id": {
+    "candidate_id": "C27",
+    "functional_match": 0,
+    "comment": "news article fetch, irrelevant"
+  },
+  "q02_2_steam_app_detail": {
+    "candidate_id": "C28",
+    "functional_match": 0,
+    "comment": "steam app info, not restaurants"
+  },
+  "q02_2_suggestic_generate_a_simple_meal_plan": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "meal plan generation, unrelated"
+  },
+  "q02_2_suggestic_generate_a_simple_meal_plan-2": {
+    "candidate_id": "C30",
+    "functional_match": 0,
+    "comment": "same as C29"
+  },
+  "q02_2_target_com_store_product_reviews_locations_data_target_store_location_search": {
+    "candidate_id": "C31",
+    "functional_match": 0,
+    "comment": "store locations, not restaurant data"
+  },
+  "q02_2_the_recipes_search_by_website_or_blog": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "recipe listings, not restaurant reviews"
+  },
+  "q02_2_unofficial_shein_reviews_list": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "SHEIN product reviews, unrelated"
+  },
+  "q02_2_unofficial_trust_pilot_consumers_detail": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "consumer detail, not restaurant"
+  },
+  "q02_2_yelpapi_getbusinesses": {
+    "candidate_id": "C35",
+    "functional_match": 1,
+    "comment": "fetches business info including restaurants"
+  },
+  "q02_2_yelpapi_getbusinessesbytransaction": {
+    "candidate_id": "C36",
+    "functional_match": 1,
+    "comment": "returns businesses with transaction info, includes restaurants"
+  },
+  "q02_2_yummly_feeds_auto_complete": {
+    "candidate_id": "C37",
+    "functional_match": 0,
+    "comment": "auto-complete for food items, not reviews"
+  },
+  "q02_2_yummly_feeds_list": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "list feeds, unrelated"
+  },
+  "q02_2_yummly_feeds_search-2": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "search recipes, not restaurant data"
+  },
+  "q02_2_yummly_reviews_list": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "recipe reviews, not restaurant reviews"
+  },
+  "q02_3_abir82_bollywood_recommendations_fetch_movies": {
+    "candidate_id": "C01",
+    "functional_match": 0,
+    "comment": "irrelevant domain (movies)"
+  },
+  "q02_3_api2cart_listproductoptions": {
+    "candidate_id": "C02",
+    "functional_match": 0,
+    "comment": "eCommerce product options, not email"
+  },
+  "q02_3_auto_suggest_queries_suggestqueries": {
+    "candidate_id": "C03",
+    "functional_match": 0,
+    "comment": "search query suggestions, unrelated"
+  },
+  "q02_3_bbc_good_food_api_collection_recipes": {
+    "candidate_id": "C04",
+    "functional_match": 0,
+    "comment": "recipes data, not email"
+  },
+  "q02_3_bbc_good_food_api_recipe_by_name_id": {
+    "candidate_id": "C05",
+    "functional_match": 0,
+    "comment": "recipe details, not email"
+  },
+  "q02_3_bbc_good_food_api_search_for_recipes": {
+    "candidate_id": "C06",
+    "functional_match": 0,
+    "comment": "recipe search, unrelated"
+  },
+  "q02_3_beer_lover_get_the_top_50_beers": {
+    "candidate_id": "C07",
+    "functional_match": 0,
+    "comment": "beer data, not email"
+  },
+  "q02_3_bespoke_diet_generator_get_user_s_diet_for_a_specific_day": {
+    "candidate_id": "C08",
+    "functional_match": 0,
+    "comment": "diet plan, unrelated"
+  },
+  "q02_3_beverages_and_desserts_get_all_the_desserts": {
+    "candidate_id": "C09",
+    "functional_match": 0,
+    "comment": "desserts list, not email"
+  },
+  "q02_3_cartify_getordersbyemail": {
+    "candidate_id": "C10",
+    "functional_match": 0,
+    "comment": "retrieves orders, not sending"
+  },
+  "q02_3_category_list_19_register": {
+    "candidate_id": "C11",
+    "functional_match": 0,
+    "comment": "category register, unrelated"
+  },
+  "q02_3_contextio_getallapplicationwebhooks": {
+    "candidate_id": "C12",
+    "functional_match": 0,
+    "comment": "lists webhooks, not email"
+  },
+  "q02_3_create_game_rooms_get_rooms_as_response": {
+    "candidate_id": "C13",
+    "functional_match": 0,
+    "comment": "game rooms generation, unrelated"
+  },
+  "q02_3_e_commerce_top_rated_by_category": {
+    "candidate_id": "C14",
+    "functional_match": 0,
+    "comment": "eCommerce top items, not email"
+  },
+  "q02_3_e_mailer_420_mail": {
+    "candidate_id": "C15",
+    "functional_match": 1,
+    "comment": "sends email directly"
+  },
+  "q02_3_emailjs_send_form": {
+    "candidate_id": "C16",
+    "functional_match": 1,
+    "comment": "email sending via template"
+  },
+  "q02_3_fast_food_restaurants_usa_top_50_chains_get_all_city_names": {
+    "candidate_id": "C17",
+    "functional_match": 0,
+    "comment": "city names list, unrelated"
+  },
+  "q02_3_fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state": {
+    "candidate_id": "C18",
+    "functional_match": 0,
+    "comment": "restaurants list, not email"
+  },
+  "q02_3_favoritefoodapi_get_all_favorite_food": {
+    "candidate_id": "C19",
+    "functional_match": 0,
+    "comment": "favorite food list, unrelated"
+  },
+  "q02_3_food_calories_get_foods_by_category_name": {
+    "candidate_id": "C20",
+    "functional_match": 0,
+    "comment": "food calories, unrelated"
+  },
+  "q02_3_gmail_updatesendasalias": {
+    "candidate_id": "C21",
+    "functional_match": 0,
+    "comment": "updates alias, not sending email"
+  },
+  "q02_3_keyword_suggestion_api_comparisons": {
+    "candidate_id": "C22",
+    "functional_match": 0,
+    "comment": "keyword suggestions unrelated"
+  },
+  "q02_3_keyword_suggestion_api_questions": {
+    "candidate_id": "C23",
+    "functional_match": 0,
+    "comment": "keyword suggestions unrelated"
+  },
+  "q02_3_mailjet_getcampaigndraftlist": {
+    "candidate_id": "C24",
+    "functional_match": 0,
+    "comment": "lists drafts, does not send email"
+  },
+  "q02_3_mailjet_getcampaignoverviewlist": {
+    "candidate_id": "C25",
+    "functional_match": 0,
+    "comment": "lists campaign overviews, not send"
+  },
+  "q02_3_moviehut_random_movie_get_list_of_movies_sorted_by_imdb_rating_with_parameters": {
+    "candidate_id": "C26",
+    "functional_match": 0,
+    "comment": "movie data unrelated"
+  },
+  "q02_3_ocw_createacustomtoaddress": {
+    "candidate_id": "C27",
+    "functional_match": 0,
+    "comment": "creates mailing address, not email"
+  },
+  "q02_3_restaurant_booking_management_restaurantsite": {
+    "candidate_id": "C28",
+    "functional_match": 0,
+    "comment": "restaurant management, no email send"
+  },
+  "q02_3_restaurants_reviews": {
+    "candidate_id": "C29",
+    "functional_match": 0,
+    "comment": "retrieves reviews, not email"
+  },
+  "q02_3_smtp_e_mail_sender_send_test_email": {
+    "candidate_id": "C30",
+    "functional_match": 1,
+    "comment": "sends email directly"
+  },
+  "q02_3_suggestic_generate_a_simple_meal_plan": {
+    "candidate_id": "C31",
+    "functional_match": 0,
+    "comment": "meal plan generation unrelated"
+  },
+  "q02_3_suggestic_generate_a_simple_meal_plan-2": {
+    "candidate_id": "C32",
+    "functional_match": 0,
+    "comment": "meal plan generation unrelated"
+  },
+  "q02_3_tasty_recipes_auto_complete": {
+    "candidate_id": "C33",
+    "functional_match": 0,
+    "comment": "recipe autocomplete unrelated"
+  },
+  "q02_3_testing_v3_validateemail": {
+    "candidate_id": "C34",
+    "functional_match": 0,
+    "comment": "email validation only"
+  },
+  "q02_3_the_fork_the_spoon_locations_v2_list": {
+    "candidate_id": "C35",
+    "functional_match": 0,
+    "comment": "location list unrelated"
+  },
+  "q02_3_travel_advisor_restaurant_filters_v2_list": {
+    "candidate_id": "C36",
+    "functional_match": 0,
+    "comment": "restaurant filters unrelated"
+  },
+  "q02_3_veggie_me_restaurants": {
+    "candidate_id": "C37",
+    "functional_match": 0,
+    "comment": "vegetarian restaurant list unrelated"
+  },
+  "q02_3_venue_deactivatevenue": {
+    "candidate_id": "C38",
+    "functional_match": 0,
+    "comment": "deactivates venue, not email"
+  },
+  "q02_3_venue_validatecluster": {
+    "candidate_id": "C39",
+    "functional_match": 0,
+    "comment": "validates venue cluster, not email"
+  },
+  "q02_3_yummly_feeds_auto_complete": {
+    "candidate_id": "C40",
+    "functional_match": 0,
+    "comment": "auto-complete suggestions unrelated"
+  }
+}

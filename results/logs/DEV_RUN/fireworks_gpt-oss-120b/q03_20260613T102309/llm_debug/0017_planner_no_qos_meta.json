@@ -1,0 +1,23 @@
+{
+  "call_id": "0017_planner_no_qos",
+  "started_at": "2026-06-13T10:27:30-07:00",
+  "status": "completed",
+  "role_name": "planner_no_qos",
+  "provider": "fireworks",
+  "model": "accounts/fireworks/models/gpt-oss-120b",
+  "temperature": 0.0,
+  "force_json": true,
+  "max_tokens": null,
+  "timeout_seconds": 180,
+  "system_chars": 161,
+  "prompt_chars": 7629,
+  "metadata": {
+    "source": "run_autogen_pipeline",
+    "gateway": "autogen_gateway",
+    "provider": "fireworks",
+    "model": "accounts/fireworks/models/gpt-oss-120b"
+  },
+  "response_chars": 4092,
+  "ended_at": "2026-06-13T10:27:41-07:00",
+  "duration_seconds": 11.58
+}

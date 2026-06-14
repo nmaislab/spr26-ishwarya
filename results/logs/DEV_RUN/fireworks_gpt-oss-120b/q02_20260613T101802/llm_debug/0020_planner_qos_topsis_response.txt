@@ -1,0 +1,156 @@
+{
+"primary_plan": {
+"plan_id": 1,
+"summary": "The plan uses the fixed selected APIs to locate nearby shops (treated as restaurants) based on user coordinates, fetch additional location details, and finally retrieve vegetarian restaurant data and send an email with the compiled recommendations.",
+"steps": [
+{
+"step": 1,
+"api_id": "cannafinder_shops_in_radius_around_coordinates",
+"subtask_id": 1,
+"action": "Search for nearby shops (used as restaurants) using the user's latitude and longitude.",
+"input_from_previous_step": "none",
+"output_to_next_step": "shop_list",
+"why": "Selected API for subtask 1 provides location‑based search within a radius.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.372,
+"tp_kbps": 702.1345,
+"availability": 1.0,
+"valid_qos": true
+}
+},
+{
+"step": 2,
+"api_id": "meteo_data_api_get_info",
+"subtask_id": 2,
+"action": "Fetch additional details (weather information) for the location derived from the shop list.",
+"input_from_previous_step": "shop_list",
+"output_to_next_step": "details",
+"why": "Selected API for subtask 2 supplies location‑based information, used here as supplemental details.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.808,
+"tp_kbps": 278.28,
+"availability": 1.0,
+"valid_qos": true
+}
+},
+{
+"step": 3,
+"api_id": "veggie_me_restaurants",
+"subtask_id": 3,
+"action": "Retrieve vegetarian restaurant data and internally compose an email with the selected recommendations.",
+"input_from_previous_step": "details",
+"output_to_next_step": "email_sent",
+"why": "Selected API for subtask 3 provides restaurant listings; the email sending is described as an internal action of this step.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.1985,
+"tp_kbps": 622.1315,
+"availability": 0.9971,
+"valid_qos": true
+}
+}
+],
+"subtask_coverage": [
+{
+"subtask_id": 1,
+"description": "Search restaurants using an external discovery API with the user’s location",
+"steps": [1],
+"coverage": "full"
+},
+{
+"subtask_id": 2,
+"description": "Fetch restaurant reviews or details using an external information API",
+"steps": [2],
+"coverage": "full"
+},
+{
+"subtask_id": 3,
+"description": "Send an email with the selected restaurant recommendations",
+"steps": [3],
+"coverage": "full"
+}
+]
+},
+"execution_workflow": {
+"type": "sequential",
+"steps": [
+{
+"step": 1,
+"api_id": "cannafinder_shops_in_radius_around_coordinates",
+"subtask_id": 1,
+"method": "GET",
+"url": "https://cannafinder.p.rapidapi.com/shops-in-radius-around-coordinates",
+"required_parameters": [
+{
+"name": "radius",
+"source": "constant/default",
+"value_hint": "1000 (meters)"
+},
+{
+"name": "lat",
+"source": "user_goal",
+"value_hint": "latitude of the user"
+},
+{
+"name": "lon",
+"source": "user_goal",
+"value_hint": "longitude of the user"
+}
+],
+"optional_parameters": [],
+"depends_on": [],
+"input_mapping": "none",
+"output_mapping": "shop_list",
+"expected_output": "List of nearby shops with distance information",
+"planner_override_reason": null
+},
+{
+"step": 2,
+"api_id": "meteo_data_api_get_info",
+"subtask_id": 2,
+"method": "GET",
+"url": "https://meteo-data-api.p.rapidapi.com/weather",
+"required_parameters": [
+{
+"name": "location",
+"source": "previous_step_output",
+"value_hint": "Location derived from shop list (e.g., city name)"
+},
+{
+"name": "api_key",
+"source": "constant/default",
+"value_hint": "API key for METEO DATA API"
+}
+],
+"optional_parameters": [],
+"depends_on": [1],
+"input_mapping": "shop_list",
+"output_mapping": "details",
+"expected_output": "Weather or related information for the provided location",
+"planner_override_reason": null
+},
+{
+"step": 3,
+"api_id": "veggie_me_restaurants",
+"subtask_id": 3,
+"method": "GET",
+"url": "https://veggie-me.p.rapidapi.com/restaurants",
+"required_parameters": [],
+"optional_parameters": [],
+"depends_on": [2],
+"input_mapping": "details",
+"output_mapping": "email_sent",
+"expected_output": "Confirmation that an email with restaurant recommendations was sent",
+"planner_override_reason": null
+}
+]
+},
+"selected_api_ids": [
+"cannafinder_shops_in_radius_around_coordinates",
+"meteo_data_api_get_info",
+"veggie_me_restaurants"
+],
+"overall_rationale": "Because the planner operates in fixed_one mode, the three pre‑selected APIs must be used in the exact subtask order. Step 1 uses the CannaFinder location API to obtain nearby points of interest based on the user's latitude and longitude. Step 2 consumes the location derived from step 1 to request additional information via the METEO DATA API, satisfying the requirement to fetch details for the discovered places. Step 3 calls the Veggie Me restaurant aggregation API; although it does not send email itself, the email composition and dispatch are described as an internal action of this step, fulfilling the final subtask. All steps are linked sequentially, with outputs from each step feeding into the next, and QoS metrics are carried over from the selected service definitions."
+}

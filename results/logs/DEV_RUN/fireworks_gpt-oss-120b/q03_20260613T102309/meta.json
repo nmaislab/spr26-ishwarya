@@ -1,0 +1,645 @@
+{
+  "query_id": "q03",
+  "query_title": "Cybersecurity Domain Alert System",
+  "user_goal": "Given a set of domains or URLs, validate each domain, scan the URL for malware or phishing risk using threat intelligence APIs, and send high-risk alerts to admins via SMS.",
+  "provider": "fireworks",
+  "model_tag": "fireworks:accounts/fireworks/models/gpt-oss-120b",
+  "active_model": "accounts/fireworks/models/gpt-oss-120b",
+  "multi_model_mode": false,
+  "model_pool": [
+    "accounts/fireworks/models/gpt-oss-120b"
+  ],
+  "model_switches": [],
+  "num_subtasks": 3,
+  "evaluation_triggered": true,
+  "evaluation_dir": "evaluation",
+  "planner_enabled": true,
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "composition_qos_eval_enabled": true,
+  "modes": [
+    "no_qos",
+    "qos_pure_llm",
+    "qos_topsis",
+    "qos_hybrid"
+  ],
+  "llm_validation_policy": {
+    "max_validation_retries": 2,
+    "max_attempts": 3,
+    "purpose": "bounded recovery for structurally invalid LLM outputs"
+  },
+  "log_file": "run.log",
+  "model_usage_file": "model_usage.json",
+  "ranking_failures": [],
+  "status": "completed",
+  "timing": {
+    "run": {
+      "started_at": "2026-06-13T10:23:09-07:00",
+      "ended_at": "2026-06-13T10:28:23-07:00",
+      "duration_seconds": 313.952
+    },
+    "stages": {
+      "decomposer": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:23:09-07:00",
+        "ended_at": "2026-06-13T10:23:11-07:00",
+        "duration_seconds": 2.435,
+        "subtask_count": 3
+      },
+      "retrieval": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:23:11-07:00",
+        "ended_at": "2026-06-13T10:23:19-07:00",
+        "duration_seconds": 7.373,
+        "subtask_count": 3,
+        "retrieved_candidate_count": 120,
+        "retrieval_agent": "RagRetrieverAgent",
+        "retrieval_agent_mode": "deterministic_faiss"
+      },
+      "functional_refinement": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:23:19-07:00",
+        "ended_at": "2026-06-13T10:24:05-07:00",
+        "duration_seconds": 45.866,
+        "rows_json": "evaluation/query_q03_retrieval_functional_match_rows.json",
+        "summary_json": "evaluation/query_q03_functional_refinement_summary.json",
+        "functional_refiner_agent": "FunctionalRefinerAgent",
+        "functional_refiner_agent_mode": "llm_binary_functional_labeling",
+        "functional_refinement_status": "completed",
+        "zero_functional_retrieval_retry_count": 0,
+        "zero_functional_retrieval_retry_status": "not_needed",
+        "zero_functional_retrieval_retry_scope": "qos_hybrid"
+      },
+      "ranking": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:24:05-07:00",
+        "ended_at": "2026-06-13T10:27:29-07:00",
+        "duration_seconds": 204.401,
+        "subtask_count": 3,
+        "ranking_failure_count": 0,
+        "retry_summary": {
+          "total_events": 0,
+          "successes": 0,
+          "failures": 0,
+          "by_stage": {},
+          "by_role": {},
+          "max_attempts": 3,
+          "max_validation_retries": 2,
+          "log_file": null
+        }
+      },
+      "ranker_no_qos": {
+        "invocations": 3,
+        "duration_seconds": 49.013,
+        "started_at": "2026-06-13T10:24:05-07:00",
+        "ended_at": "2026-06-13T10:26:47-07:00",
+        "status": "completed"
+      },
+      "qos_scorer": {
+        "invocations": 3,
+        "duration_seconds": 77.214,
+        "started_at": "2026-06-13T10:24:28-07:00",
+        "ended_at": "2026-06-13T10:27:08-07:00",
+        "status": "completed"
+      },
+      "ranker_qos_pure_llm": {
+        "invocations": 3,
+        "duration_seconds": 78.094,
+        "started_at": "2026-06-13T10:25:03-07:00",
+        "ended_at": "2026-06-13T10:27:29-07:00",
+        "status": "completed"
+      },
+      "qos_topsis": {
+        "invocations": 3,
+        "duration_seconds": 0.003,
+        "started_at": "2026-06-13T10:25:24-07:00",
+        "ended_at": "2026-06-13T10:27:29-07:00",
+        "status": "completed"
+      },
+      "qos_hybrid": {
+        "invocations": 3,
+        "duration_seconds": 0.0,
+        "started_at": "2026-06-13T10:25:24-07:00",
+        "ended_at": "2026-06-13T10:27:29-07:00",
+        "status": "completed"
+      },
+      "evaluation_outputs": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:27:29-07:00",
+        "ended_at": "2026-06-13T10:27:30-07:00",
+        "duration_seconds": 0.753,
+        "evaluation_agent": "EvaluationAgent",
+        "evaluation_agent_mode": "deterministic_adapter"
+      },
+      "planner": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:27:30-07:00",
+        "ended_at": "2026-06-13T10:28:23-07:00",
+        "duration_seconds": 53.072,
+        "planner_selection_k_summary_json": "evaluation/query_q03_planner_selection_k_summary.json",
+        "planner_selection_k_by_mode_subtask": {
+          "no_qos": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "domain_checker_with_ai_domain_validation"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "domain_checker_with_ai_domain_validation"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "domain_checker_with_ai_domain_validation"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "malicious_urls_check_url"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "malicious_urls_check_url"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "malicious_urls_check_url"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "bulksmssender_send"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "bulksmssender_send"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "bulksmssender_send"
+            }
+          },
+          "qos_pure_llm": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "domain_checker_with_ai_domain_validation"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "domain_checker_with_ai_domain_validation"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "domain_checker_with_ai_domain_validation"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "tweetfeed_v1"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "tweetfeed_v1"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "tweetfeed_v1"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "smsto_send_campaign_message-2"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "smsto_send_campaign_message-2"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "smsto_send_campaign_message-2"
+            }
+          },
+          "qos_topsis": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "domain_checker_with_ai_domain_validation"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "domain_checker_with_ai_domain_validation"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "domain_checker_with_ai_domain_validation"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "porn_filter_filter"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "porn_filter_filter"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "porn_filter_filter"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "redtie_create-2"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "redtie_create-2"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "redtie_create-2"
+            }
+          },
+          "qos_hybrid": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "workflow_hybrid_selector",
+              "hybrid_workflow_selector": "relative_to_best",
+              "candidate_cap_per_subtask": 5,
+              "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+              "hybrid_no_functional_match_fallback": false,
+              "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+              "hybrid_pool_size_before_expansion": 10,
+              "hybrid_pool_size_after_expansion": 7,
+              "hybrid_pool_size_after_pareto": 2,
+              "pareto_filtered_count": 5,
+              "pareto_filter_fallback_used": false,
+              "available_ranked": 40,
+              "functional_candidate_count": 10,
+              "workflow_candidate_pool_count": 2,
+              "selected_count": 1,
+              "invalid_ranked_rows": 0,
+              "hybrid_total_combinations_before_cap": 24,
+              "hybrid_total_combinations_after_cap": 24,
+              "hybrid_max_workflow_combinations": 5000,
+              "hybrid_pool_trimmed": false,
+              "hybrid_pool_sizes_before_cap": {
+                "1": 2,
+                "2": 3,
+                "3": 4
+              },
+              "hybrid_pool_sizes_after_cap": {
+                "1": 2,
+                "2": 3,
+                "3": 4
+              },
+              "planner_candidates_per_subtask": 1,
+              "selected_api_id": "domain_information_domain_information",
+              "selected_api_ids": [
+                "domain_information_domain_information"
+              ],
+              "selected_by": "workflow_hybrid_selector",
+              "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+              "balanced_relative_qos_score": 0.870517,
+              "projected_composition_score": 0.995742,
+              "projected_normalized_qos_score": 0.985807,
+              "workflow_total_response_time": 0.3535,
+              "workflow_bottleneck_throughput": 26.785,
+              "workflow_average_availability": 0.9931333333333333,
+              "workflow_qos_score": 0.985807,
+              "workflow_topsis_score": null,
+              "workflow_topsis_weights": {
+                "response_time": 0.3333333333333333,
+                "throughput": 0.3333333333333333,
+                "availability": 0.3333333333333333
+              },
+              "workflow_topsis_rank": null,
+              "workflow_selector_fallback_used": false,
+              "planner_candidate_api_ids": [
+                "domain_information_domain_information"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "domain_information_domain_information"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "workflow_hybrid_selector",
+              "hybrid_workflow_selector": "relative_to_best",
+              "candidate_cap_per_subtask": 5,
+              "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+              "hybrid_no_functional_match_fallback": false,
+              "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+              "hybrid_pool_size_before_expansion": 8,
+              "hybrid_pool_size_after_expansion": 8,
+              "hybrid_pool_size_after_pareto": 3,
+              "pareto_filtered_count": 5,
+              "pareto_filter_fallback_used": false,
+              "available_ranked": 40,
+              "functional_candidate_count": 8,
+              "workflow_candidate_pool_count": 3,
+              "selected_count": 1,
+              "invalid_ranked_rows": 0,
+              "hybrid_total_combinations_before_cap": 24,
+              "hybrid_total_combinations_after_cap": 24,
+              "hybrid_max_workflow_combinations": 5000,
+              "hybrid_pool_trimmed": false,
+              "hybrid_pool_sizes_before_cap": {
+                "1": 2,
+                "2": 3,
+                "3": 4
+              },
+              "hybrid_pool_sizes_after_cap": {
+                "1": 2,
+                "2": 3,
+                "3": 4
+              },
+              "planner_candidates_per_subtask": 1,
+              "selected_api_id": "malicious_urls_check_url",
+              "selected_api_ids": [
+                "malicious_urls_check_url"
+              ],
+              "selected_by": "workflow_hybrid_selector",
+              "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+              "balanced_relative_qos_score": 0.982196,
+              "projected_composition_score": 0.995742,
+              "projected_normalized_qos_score": 0.985807,
+              "workflow_total_response_time": 0.3535,
+              "workflow_bottleneck_throughput": 26.785,
+              "workflow_average_availability": 0.9931333333333333,
+              "workflow_qos_score": 0.985807,
+              "workflow_topsis_score": null,
+              "workflow_topsis_weights": {
+                "response_time": 0.3333333333333333,
+                "throughput": 0.3333333333333333,
+                "availability": 0.3333333333333333
+              },
+              "workflow_topsis_rank": null,
+              "workflow_selector_fallback_used": false,
+              "planner_candidate_api_ids": [
+                "malicious_urls_check_url"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "malicious_urls_check_url"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "workflow_hybrid_selector",
+              "hybrid_workflow_selector": "relative_to_best",
+              "candidate_cap_per_subtask": 5,
+              "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+              "hybrid_no_functional_match_fallback": false,
+              "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+              "hybrid_pool_size_before_expansion": 11,
+              "hybrid_pool_size_after_expansion": 8,
+              "hybrid_pool_size_after_pareto": 4,
+              "pareto_filtered_count": 4,
+              "pareto_filter_fallback_used": false,
+              "available_ranked": 40,
+              "functional_candidate_count": 11,
+              "workflow_candidate_pool_count": 4,
+              "selected_count": 1,
+              "invalid_ranked_rows": 0,
+              "hybrid_total_combinations_before_cap": 24,
+              "hybrid_total_combinations_after_cap": 24,
+              "hybrid_max_workflow_combinations": 5000,
+              "hybrid_pool_trimmed": false,
+              "hybrid_pool_sizes_before_cap": {
+                "1": 2,
+                "2": 3,
+                "3": 4
+              },
+              "hybrid_pool_sizes_after_cap": {
+                "1": 2,
+                "2": 3,
+                "3": 4
+              },
+              "planner_candidates_per_subtask": 1,
+              "selected_api_id": "smsto_send_campaign_message-2",
+              "selected_api_ids": [
+                "smsto_send_campaign_message-2"
+              ],
+              "selected_by": "workflow_hybrid_selector",
+              "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+              "balanced_relative_qos_score": 0.716361,
+              "projected_composition_score": 0.995742,
+              "projected_normalized_qos_score": 0.985807,
+              "workflow_total_response_time": 0.3535,
+              "workflow_bottleneck_throughput": 26.785,
+              "workflow_average_availability": 0.9931333333333333,
+              "workflow_qos_score": 0.985807,
+              "workflow_topsis_score": null,
+              "workflow_topsis_weights": {
+                "response_time": 0.3333333333333333,
+                "throughput": 0.3333333333333333,
+                "availability": 0.3333333333333333
+              },
+              "workflow_topsis_rank": null,
+              "workflow_selector_fallback_used": false,
+              "planner_candidate_api_ids": [
+                "smsto_send_campaign_message-2"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "smsto_send_campaign_message-2"
+            }
+          }
+        }
+      },
+      "composition_qos_evaluation": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:28:23-07:00",
+        "ended_at": "2026-06-13T10:28:23-07:00",
+        "duration_seconds": 0.045,
+        "rows_json": "evaluation/query_q03_composition_qos_eval_rows.json",
+        "summary_json": "evaluation/query_q03_composition_qos_eval_summary.json",
+        "excel": "evaluation/query_q03_composition_qos_eval.xlsx",
+        "issues_json": "evaluation/query_q03_composition_validity_issues.json",
+        "issues_log": "evaluation/query_q03_composition_validity_issues.log",
+        "composition_validity_summary": {
+          "valid_mode_count": 4,
+          "complete_mode_count": 4,
+          "invalid_mode_count": 0,
+          "invalid_modes": [],
+          "invalid_reason_counts": {},
+          "by_mode": {
+            "no_qos": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 1.0
+            },
+            "qos_pure_llm": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 1.0
+            },
+            "qos_topsis": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 0.3333333333333333
+            },
+            "qos_hybrid": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 1.0
+            }
+          }
+        },
+        "evaluation_agent": "EvaluationAgent",
+        "evaluation_agent_mode": "deterministic_adapter"
+      }
+    }
+  },
+  "functional_refinement_status": "completed",
+  "functional_refinement_rows_json": "evaluation/query_q03_retrieval_functional_match_rows.json",
+  "hybrid_functional_refinement_rows_json": null,
+  "functional_refinement_summary_json": "evaluation/query_q03_functional_refinement_summary.json",
+  "zero_functional_retrieval_retry_count": 0,
+  "zero_functional_retrieval_retry_status": "not_needed",
+  "zero_functional_retrieval_retry_scope": "qos_hybrid",
+  "zero_functional_retrieval_retries": [],
+  "retry_summary": {
+    "total_events": 0,
+    "successes": 0,
+    "failures": 0,
+    "by_stage": {},
+    "by_role": {},
+    "max_attempts": 3,
+    "max_validation_retries": 2,
+    "log_file": null
+  },
+  "summary": {
+    "planner_enabled": true,
+    "planner_candidate_mode": "fixed_one",
+    "planner_top_n_cap": 5,
+    "no_qos_selected": 3,
+    "qos_pure_llm_selected": 3,
+    "qos_topsis_selected": 3,
+    "qos_hybrid_selected": 3,
+    "planner_selection_k_summary_json": "evaluation/query_q03_planner_selection_k_summary.json"
+  }
+}

@@ -1,0 +1,2887 @@
+[
+  {
+    "api_id": "e_mailer_420_mail",
+    "candidate_id": "C15",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 40,
+    "rag_score": 0.3408723473548889,
+    "reason": "",
+    "service": {
+      "_file": "e_mailer_420.json",
+      "_tool": "e_mailer_420",
+      "api_id": "e_mailer_420_mail",
+      "category": "Email",
+      "description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of the recipient\nsubject: Subject of the email\nbody: body of the email",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Hi receiver, go to abcd.com to confirm your email address. Regards, abcd's IT team",
+            "description": "",
+            "name": "body",
+            "type": "string"
+          },
+          {
+            "default": "Hi receiver, please confirm you account",
+            "description": "",
+            "name": "subject",
+            "type": "string"
+          },
+          {
+            "default": "example@gmail.com",
+            "description": "",
+            "name": "sender",
+            "type": "string"
+          },
+          {
+            "default": "example123",
+            "description": "",
+            "name": "password",
+            "type": "string"
+          },
+          {
+            "default": "receiver@gmail.com",
+            "description": "",
+            "name": "receiver",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "mail",
+      "tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go.",
+      "tool_name": "e-mailer-420",
+      "toolbench_endpoint_description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of the recipient\nsubject: Subject of the email\nbody: body of the email",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of the recipient\nsubject: Subject of the email\nbody: body of the email",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "mail",
+        "endpoint_url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}",
+        "file_name": "e_mailer_420.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 5,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go.",
+        "tool_file_found": true,
+        "tool_name": "e-mailer-420",
+        "toolbench_relative_path": "Email/e_mailer_420.json"
+      },
+      "toolbench_tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go.",
+      "toolbench_tool_name": "e-mailer-420",
+      "url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1335,
+        "tp_kbps": 37.453,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 6
+  },
+  {
+    "api_id": "emailjs_send_form",
+    "candidate_id": "C16",
+    "mode_rank": 2,
+    "llm_reported_rank": 2,
+    "retrieved_rank": 12,
+    "rag_score": 0.3725569546222687,
+    "reason": "",
+    "service": {
+      "_file": "emailjs.json",
+      "_tool": "emailjs",
+      "api_id": "emailjs_send_form",
+      "category": "Email",
+      "description": "Sends an email based on the specified email template and the passed form data. The email will send via the specified email service.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "YOUR_ACCESS_TOKEN",
+            "description": "",
+            "name": "accessToken",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "YOUR_SERVICE_ID",
+            "description": "",
+            "name": "service_id",
+            "type": "STRING"
+          },
+          {
+            "default": "YOUR_USER_ID",
+            "description": "",
+            "name": "user_id",
+            "type": "STRING"
+          },
+          {
+            "default": "YOUR_TEMPLATE_ID",
+            "description": "",
+            "name": "template_id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "/send_form",
+      "tool_description": "Send Email API. No server code needed. Focus on things that matter!",
+      "tool_name": "EmailJS",
+      "toolbench_endpoint_description": "Sends an email based on the specified email template and the passed form data. The email will send via the specified email service.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Sends an email based on the specified email template and the passed form data. The email will send via the specified email service.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "/send_form",
+        "endpoint_url": "https://emailjs.p.rapidapi.com/api/v1.0/email/send-form",
+        "file_name": "emailjs.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send Email API. No server code needed. Focus on things that matter!",
+        "tool_file_found": true,
+        "tool_name": "EmailJS",
+        "toolbench_relative_path": "Email/emailjs.json"
+      },
+      "toolbench_tool_description": "Send Email API. No server code needed. Focus on things that matter!",
+      "toolbench_tool_name": "EmailJS",
+      "url": "https://emailjs.p.rapidapi.com/api/v1.0/email/send-form",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.312,
+        "tp_kbps": 25.641,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 21
+  },
+  {
+    "api_id": "smtp_e_mail_sender_send_test_email",
+    "candidate_id": "C30",
+    "mode_rank": 3,
+    "llm_reported_rank": 3,
+    "retrieved_rank": 23,
+    "rag_score": 0.3586047291755676,
+    "reason": "",
+    "service": {
+      "_file": "smtp_e_mail_sender.json",
+      "_tool": "smtp_e_mail_sender",
+      "api_id": "smtp_e_mail_sender_send_test_email",
+      "category": "Email",
+      "description": "Send e-mail",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "another@domain.com",
+            "description": "",
+            "name": "cc",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "yourmail@domain.com",
+            "description": "",
+            "name": "to",
+            "type": "STRING"
+          },
+          {
+            "default": "Testing the API",
+            "description": "",
+            "name": "subject",
+            "type": "STRING"
+          },
+          {
+            "default": "some message",
+            "description": "",
+            "name": "message",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Send TEST Email",
+      "tool_description": "Send e-mails with an API call",
+      "tool_name": "SMTP e-Mail Sender",
+      "toolbench_endpoint_description": "Send e-mail",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Send e-mail",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send TEST Email",
+        "endpoint_url": "https://smtp-e-mail-sender.p.rapidapi.com/test",
+        "file_name": "smtp_e_mail_sender.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Send e-mails with an API call",
+        "tool_file_found": true,
+        "tool_name": "SMTP e-Mail Sender",
+        "toolbench_relative_path": "Email/smtp_e_mail_sender.json"
+      },
+      "toolbench_tool_description": "Send e-mails with an API call",
+      "toolbench_tool_name": "SMTP e-Mail Sender",
+      "url": "https://smtp-e-mail-sender.p.rapidapi.com/test",
+      "qos": {
+        "availability": 0.1298,
+        "rt_s": 0.6094999999999999,
+        "tp_kbps": 13.125,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.17,
+    "qos_llm_rank": 40
+  },
+  {
+    "api_id": "testing_v3_validateemail",
+    "candidate_id": "C34",
+    "mode_rank": 4,
+    "llm_reported_rank": 4,
+    "retrieved_rank": 8,
+    "rag_score": 0.39028817415237427,
+    "reason": "",
+    "service": {
+      "_file": "testing_v3.json",
+      "_tool": "testing_v3",
+      "api_id": "testing_v3_validateemail",
+      "category": "Food",
+      "description": "When inviting a user this will first validate if the email input is valid and is not yet taken. Email must be unique.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "5f6e05f6fa6ba2260568f7e0",
+            "description": "",
+            "name": "account",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "mctangpuz%40startechup.com",
+            "description": "",
+            "name": "email",
+            "type": "STRING"
+          },
+          {
+            "default": "5e9570b894e3cf5486194fbb",
+            "description": "",
+            "name": "organization",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "ValidateEmail",
+      "tool_description": "test api",
+      "tool_name": "Testing_v3",
+      "toolbench_endpoint_description": "When inviting a user this will first validate if the email input is valid and is not yet taken. Email must be unique.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "When inviting a user this will first validate if the email input is valid and is not yet taken. Email must be unique.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "ValidateEmail",
+        "endpoint_url": "https://testing144.p.rapidapi.com/ms-securities/api/auth/validate-email",
+        "file_name": "testing_v3.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "test api",
+        "tool_file_found": true,
+        "tool_name": "Testing_v3",
+        "toolbench_relative_path": "Food/testing_v3.json"
+      },
+      "toolbench_tool_description": "test api",
+      "toolbench_tool_name": "Testing_v3",
+      "url": "https://testing144.p.rapidapi.com/ms-securities/api/auth/validate-email",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.1125,
+        "tp_kbps": 17.778,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 11
+  },
+  {
+    "api_id": "contextio_getallapplicationwebhooks",
+    "candidate_id": "C12",
+    "mode_rank": 5,
+    "llm_reported_rank": 5,
+    "retrieved_rank": 19,
+    "rag_score": 0.36329764127731323,
+    "reason": "",
+    "service": {
+      "_file": "contextio.json",
+      "_tool": "contextio",
+      "api_id": "contextio_getallapplicationwebhooks",
+      "category": "Email",
+      "description": "List all application level webhooks.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The consumer key from your account.",
+            "name": "consumerKey",
+            "type": "CREDENTIALS"
+          },
+          {
+            "default": "",
+            "description": "The consumer secret from your account.",
+            "name": "consumerSecret",
+            "type": "CREDENTIALS"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "getAllApplicationWebhooks",
+      "tool_description": "Context.IO is a modern, scalable email API that brings IMAP into the 21st century.",
+      "tool_name": "ContextIO",
+      "toolbench_endpoint_description": "List all application level webhooks.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "List all application level webhooks.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "getAllApplicationWebhooks",
+        "endpoint_url": "https://ContextIOraygorodskijV1.p.rapidapi.com/getAllApplicationWebhooks",
+        "file_name": "contextio.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Context.IO is a modern, scalable email API that brings IMAP into the 21st century.",
+        "tool_file_found": true,
+        "tool_name": "ContextIO",
+        "toolbench_relative_path": "Email/contextio.json"
+      },
+      "toolbench_tool_description": "Context.IO is a modern, scalable email API that brings IMAP into the 21st century.",
+      "toolbench_tool_name": "ContextIO",
+      "url": "https://ContextIOraygorodskijV1.p.rapidapi.com/getAllApplicationWebhooks",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.1695,
+        "tp_kbps": 41.298,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 14
+  },
+  {
+    "api_id": "gmail_updatesendasalias",
+    "candidate_id": "C21",
+    "mode_rank": 6,
+    "llm_reported_rank": 6,
+    "retrieved_rank": 38,
+    "rag_score": 0.34225255250930786,
+    "reason": "",
+    "service": {
+      "_file": "gmail.json",
+      "_tool": "gmail",
+      "api_id": "gmail_updatesendasalias",
+      "category": "Email",
+      "description": "Updates a custom \"from\" send-as alias.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "An optional email address that is included in a \"Reply-To:\" header for mail sent using this alias. If this is empty, Gmail will not generate a \"Reply-To:\" header.",
+            "name": "replyToAddress",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The username that will be used for authentication with the SMTP service. ",
+            "name": "username",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "A name that appears in the \"From:\" header for mail sent using this alias. For custom \"from\" addresses, when this is empty, Gmail will populate the \"From:\" header with the name that is used for the primary address associated with the account.",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The email of the user. The special value me can be used to indicate the authenticated user.",
+            "name": "email",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Whether this address is selected as the default",
+            "name": "isDefault",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "The password that will be used for authentication with the SMTP service.",
+            "name": "password",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "An optional HTML signature that is included in messages composed with this alias in the Gmail web UI.",
+            "name": "signature",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The port of the SMTP service.",
+            "name": "port",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "The hostname of the SMTP service.",
+            "name": "host",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Whether Gmail should treat this address as an alias for the user's primary email address. This setting only applies to custom \"from\" aliases.",
+            "name": "treatAsAlias",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "",
+            "description": "The protocol that will be used to secure communication with the SMTP service.",
+            "name": "securityMode",
+            "type": "SELECT"
+          },
+          {
+            "default": "",
+            "description": "An optional email address that is included in a \"Reply-To:\" header for mail sent using this alias. If this is empty, Gmail will not generate a \"Reply-To:\" header.",
+            "name": "sendAsEmail",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Token received from Gmail",
+            "name": "accessToken",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "updateSendAsAlias",
+      "tool_description": "Create a simple app that makes requests to the Gmail API in just 5 to 10 minutes.",
+      "tool_name": "Gmail",
+      "toolbench_endpoint_description": "Updates a custom \"from\" send-as alias.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "Updates a custom \"from\" send-as alias.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "updateSendAsAlias",
+        "endpoint_url": "https://Gmailstefan-skliarovV1.p.rapidapi.com/updateSendAsAlias",
+        "file_name": "gmail.json",
+        "optional_parameter_count": 7,
+        "required_parameter_count": 6,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Create a simple app that makes requests to the Gmail API in just 5 to 10 minutes.",
+        "tool_file_found": true,
+        "tool_name": "Gmail",
+        "toolbench_relative_path": "Email/gmail.json"
+      },
+      "toolbench_tool_description": "Create a simple app that makes requests to the Gmail API in just 5 to 10 minutes.",
+      "toolbench_tool_name": "Gmail",
+      "url": "https://Gmailstefan-skliarovV1.p.rapidapi.com/updateSendAsAlias",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.142,
+        "tp_kbps": 14.084,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 15
+  },
+  {
+    "api_id": "mailjet_getcampaignoverviewlist",
+    "candidate_id": "C25",
+    "mode_rank": 7,
+    "llm_reported_rank": 7,
+    "retrieved_rank": 18,
+    "rag_score": 0.3651374280452728,
+    "reason": "",
+    "service": {
+      "_file": "mailjet.json",
+      "_tool": "mailjet",
+      "api_id": "mailjet_getcampaignoverviewlist",
+      "category": "Email",
+      "description": "List campaign overview  resources available for this apikey.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Your public mailjet API key",
+            "name": "apiKeyPublic",
+            "type": "CREDENTIALS"
+          },
+          {
+            "default": "",
+            "description": "Your private mailjet API key",
+            "name": "apiKeyPrivate",
+            "type": "CREDENTIALS"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "getCampaignOverviewList",
+      "tool_description": "The complete solution to power your transactional email.",
+      "tool_name": "Mailjet",
+      "toolbench_endpoint_description": "List campaign overview  resources available for this apikey.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "List campaign overview  resources available for this apikey.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "getCampaignOverviewList",
+        "endpoint_url": "https://MailjetzakutynskyV1.p.rapidapi.com/getCampaignOverviewList",
+        "file_name": "mailjet.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The complete solution to power your transactional email.",
+        "tool_file_found": true,
+        "tool_name": "Mailjet",
+        "toolbench_relative_path": "Email/mailjet.json"
+      },
+      "toolbench_tool_description": "The complete solution to power your transactional email.",
+      "toolbench_tool_name": "Mailjet",
+      "url": "https://MailjetzakutynskyV1.p.rapidapi.com/getCampaignOverviewList",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.3075,
+        "tp_kbps": 13.008,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 22
+  },
+  {
+    "api_id": "mailjet_getcampaigndraftlist",
+    "candidate_id": "C24",
+    "mode_rank": 8,
+    "llm_reported_rank": 8,
+    "retrieved_rank": 26,
+    "rag_score": 0.35455745458602905,
+    "reason": "",
+    "service": {
+      "_file": "mailjet.json",
+      "_tool": "mailjet",
+      "api_id": "mailjet_getcampaigndraftlist",
+      "category": "Email",
+      "description": "List campaign draft resources available for this apikey.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Your public mailjet API key",
+            "name": "apiKeyPublic",
+            "type": "CREDENTIALS"
+          },
+          {
+            "default": "",
+            "description": "Your private mailjet API key",
+            "name": "apiKeyPrivate",
+            "type": "CREDENTIALS"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "getCampaignDraftList",
+      "tool_description": "The complete solution to power your transactional email.",
+      "tool_name": "Mailjet",
+      "toolbench_endpoint_description": "List campaign draft resources available for this apikey.",
+      "toolbench_enrichment": {
+        "category": "Email",
+        "endpoint_description": "List campaign draft resources available for this apikey.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "getCampaignDraftList",
+        "endpoint_url": "https://MailjetzakutynskyV1.p.rapidapi.com/getCampaignDraftList",
+        "file_name": "mailjet.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The complete solution to power your transactional email.",
+        "tool_file_found": true,
+        "tool_name": "Mailjet",
+        "toolbench_relative_path": "Email/mailjet.json"
+      },
+      "toolbench_tool_description": "The complete solution to power your transactional email.",
+      "toolbench_tool_name": "Mailjet",
+      "url": "https://MailjetzakutynskyV1.p.rapidapi.com/getCampaignDraftList",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 1.025,
+        "tp_kbps": 2.926,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.36,
+    "qos_llm_rank": 37
+  },
+  {
+    "api_id": "veggie_me_restaurants",
+    "candidate_id": "C37",
+    "mode_rank": 9,
+    "llm_reported_rank": 9,
+    "retrieved_rank": 10,
+    "rag_score": 0.37860482931137085,
+    "reason": "",
+    "service": {
+      "_file": "veggie_me.json",
+      "_tool": "veggie_me",
+      "api_id": "veggie_me_restaurants",
+      "category": "Food",
+      "description": "Aggregates all vegetarian restaurants from Yelp from London,  Amsterdam, Berlin, Stockholm, Barcelona and Paris",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "restaurants",
+      "tool_description": "An API for aggregating vegetarian restaurants from Yelp from London, Amsterdam, Berlin, Stockholm, Barcelona and Paris.",
+      "tool_name": "Veggie Me",
+      "toolbench_endpoint_description": "Aggregates all vegetarian restaurants from Yelp from London,  Amsterdam, Berlin, Stockholm, Barcelona and Paris",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Aggregates all vegetarian restaurants from Yelp from London,  Amsterdam, Berlin, Stockholm, Barcelona and Paris",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "restaurants",
+        "endpoint_url": "https://veggie-me.p.rapidapi.com/restaurants",
+        "file_name": "veggie_me.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "An API for aggregating vegetarian restaurants from Yelp from London, Amsterdam, Berlin, Stockholm, Barcelona and Paris.",
+        "tool_file_found": true,
+        "tool_name": "Veggie Me",
+        "toolbench_relative_path": "Food/veggie_me.json"
+      },
+      "toolbench_tool_description": "An API for aggregating vegetarian restaurants from Yelp from London, Amsterdam, Berlin, Stockholm, Barcelona and Paris.",
+      "toolbench_tool_name": "Veggie Me",
+      "url": "https://veggie-me.p.rapidapi.com/restaurants",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1985,
+        "tp_kbps": 622.1315,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.97,
+    "qos_llm_rank": 1
+  },
+  {
+    "api_id": "bbc_good_food_api_collection_recipes",
+    "candidate_id": "C04",
+    "mode_rank": 10,
+    "llm_reported_rank": 10,
+    "retrieved_rank": 17,
+    "rag_score": 0.3669211268424988,
+    "reason": "",
+    "service": {
+      "_file": "bbc_good_food_api.json",
+      "_tool": "bbc_good_food_api",
+      "api_id": "bbc_good_food_api_collection_recipes",
+      "category": "Food",
+      "description": "Get collection of recipes by collection name ID",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Page number depending of results number 30 per page MAX result",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "breakfast-recipes",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Collection recipes",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes.. Note: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity s",
+      "tool_name": "BBC Good Food API",
+      "toolbench_endpoint_description": "Get collection of recipes by collection name ID",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get collection of recipes by collection name ID",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Collection recipes",
+        "endpoint_url": "https://bbc-good-food-api.p.rapidapi.com/collection/{id}/recipes/",
+        "file_name": "bbc_good_food_api.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+        "tool_file_found": true,
+        "tool_name": "BBC Good Food API",
+        "toolbench_relative_path": "Food/bbc_good_food_api.json"
+      },
+      "toolbench_tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+      "toolbench_tool_name": "BBC Good Food API",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/collection/{id}/recipes/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.18,
+        "tp_kbps": 564.971,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.94,
+    "qos_llm_rank": 2
+  },
+  {
+    "api_id": "auto_suggest_queries_suggestqueries",
+    "candidate_id": "C03",
+    "mode_rank": 11,
+    "llm_reported_rank": 11,
+    "retrieved_rank": 35,
+    "rag_score": 0.34556084871292114,
+    "reason": "",
+    "service": {
+      "_file": "auto_suggest_queries.json",
+      "_tool": "auto_suggest_queries",
+      "api_id": "auto_suggest_queries_suggestqueries",
+      "category": "Search",
+      "description": "Use this endpoint to fetch Suggestions",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "How to",
+            "description": "",
+            "name": "query",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "suggestqueries",
+      "tool_description": "This is a Free Query Suggest API which provides suggestions for search queries based on a given keyword",
+      "tool_name": "Auto Suggest Queries",
+      "toolbench_endpoint_description": "Use this endpoint to fetch Suggestions",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Use this endpoint to fetch Suggestions",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "suggestqueries",
+        "endpoint_url": "https://auto-suggest-queries.p.rapidapi.com/suggestqueries",
+        "file_name": "auto_suggest_queries.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This is a Free Query Suggest API which provides suggestions for search queries based on a given keyword",
+        "tool_file_found": true,
+        "tool_name": "Auto Suggest Queries",
+        "toolbench_relative_path": "Search/auto_suggest_queries.json"
+      },
+      "toolbench_tool_description": "This is a Free Query Suggest API which provides suggestions for search queries based on a given keyword",
+      "toolbench_tool_name": "Auto Suggest Queries",
+      "url": "https://auto-suggest-queries.p.rapidapi.com/suggestqueries",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.151,
+        "tp_kbps": 466.666,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.9,
+    "qos_llm_rank": 3
+  },
+  {
+    "api_id": "bbc_good_food_api_recipe_by_name_id",
+    "candidate_id": "C05",
+    "mode_rank": 12,
+    "llm_reported_rank": 12,
+    "retrieved_rank": 25,
+    "rag_score": 0.35662394762039185,
+    "reason": "",
+    "service": {
+      "_file": "bbc_good_food_api.json",
+      "_tool": "bbc_good_food_api",
+      "api_id": "bbc_good_food_api_recipe_by_name_id",
+      "category": "Food",
+      "description": "Get recipe information by recipe name id",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "samphire-crab-salad",
+            "description": "",
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Recipe by name id",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes.. Note: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity s",
+      "tool_name": "BBC Good Food API",
+      "toolbench_endpoint_description": "Get recipe information by recipe name id",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get recipe information by recipe name id",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Recipe by name id",
+        "endpoint_url": "https://bbc-good-food-api.p.rapidapi.com/recipe/{id}",
+        "file_name": "bbc_good_food_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+        "tool_file_found": true,
+        "tool_name": "BBC Good Food API",
+        "toolbench_relative_path": "Food/bbc_good_food_api.json"
+      },
+      "toolbench_tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+      "toolbench_tool_name": "BBC Good Food API",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/recipe/{id}",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.122,
+        "tp_kbps": 32.786,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 4
+  },
+  {
+    "api_id": "category_list_19_register",
+    "candidate_id": "C11",
+    "mode_rank": 13,
+    "llm_reported_rank": 13,
+    "retrieved_rank": 32,
+    "rag_score": 0.3465525209903717,
+    "reason": "",
+    "service": {
+      "_file": "category_list.json",
+      "_tool": "category_list",
+      "api_id": "category_list_19_register",
+      "category": "eCommerce",
+      "description": "https://uatproduct.mypandit.com/wp-json",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "dLUZXU-hSDWsUIgeAbtBiM%3AAPA91bEAu4TWIkGrkT_l6fqY-UaG8K2oAapB94IBKLuku97J-sIjSeCAHIVjszyCJH1kv10pIb7BBvy1F4EXqnb59nH8DUMYBIEkCyxKpcsx3xWeENUTkAcF3cWZNxWHAZaxZXTe-JR4",
+            "description": "",
+            "name": "device_id",
+            "type": "STRING"
+          },
+          {
+            "default": "Saumil",
+            "description": "",
+            "name": "user_first_name",
+            "type": "STRING"
+          },
+          {
+            "default": "android",
+            "description": "",
+            "name": "device_type",
+            "type": "STRING"
+          },
+          {
+            "default": "Vaghela",
+            "description": "",
+            "name": "user_last_name",
+            "type": "STRING"
+          },
+          {
+            "default": "saumil.vaghela@ganeshaspeaks.com",
+            "description": "",
+            "name": "user_email",
+            "type": "STRING"
+          },
+          {
+            "default": "GM191123456",
+            "description": "",
+            "name": "device_model_no",
+            "type": "STRING"
+          },
+          {
+            "default": "+91",
+            "description": "",
+            "name": "country_code",
+            "type": "STRING"
+          },
+          {
+            "default": "Ganesha@123",
+            "description": "",
+            "name": "password",
+            "type": "STRING"
+          },
+          {
+            "default": "152",
+            "description": "",
+            "name": "app_version",
+            "type": "STRING"
+          },
+          {
+            "default": "dLUZXU-hSDWsUIgeAbtBiM%3AAPA91bEAu4TWIkGrkT_l6fqY-UaG8K2oAapB94IBKLuku97J-sIjSeCAHIVjszyCJH1kv10pIb7BBvy1F4EXqnb59nH8DUMYBIEkCyxKpcsx3xWeENUTkAcF3cWZNxWHAZaxZXTe-JR4",
+            "description": "",
+            "name": "device_player_id",
+            "type": "STRING"
+          },
+          {
+            "default": "8866672676",
+            "description": "",
+            "name": "mobile_no",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "19.Register",
+      "tool_description": "Category Listing API",
+      "tool_name": "category-list",
+      "toolbench_endpoint_description": "https://uatproduct.mypandit.com/wp-json",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "https://uatproduct.mypandit.com/wp-json",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "19.Register",
+        "endpoint_url": "https://category-list2.p.rapidapi.com/mpastrologerv3/signup-astro",
+        "file_name": "category_list.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 11,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Category Listing API",
+        "tool_file_found": true,
+        "tool_name": "category-list",
+        "toolbench_relative_path": "eCommerce/category_list.json"
+      },
+      "toolbench_tool_description": "Category Listing API",
+      "toolbench_tool_name": "category-list",
+      "url": "https://category-list2.p.rapidapi.com/mpastrologerv3/signup-astro",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1205,
+        "tp_kbps": 24.8965,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 5
+  },
+  {
+    "api_id": "restaurants_reviews",
+    "candidate_id": "C29",
+    "mode_rank": 14,
+    "llm_reported_rank": 14,
+    "retrieved_rank": 3,
+    "rag_score": 0.47574639320373535,
+    "reason": "",
+    "service": {
+      "_file": "restaurants.json",
+      "_tool": "restaurants",
+      "api_id": "restaurants_reviews",
+      "category": "Search",
+      "description": "Restaurant Reviews",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "",
+            "name": "offset",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "en_US",
+            "description": "",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "15333482",
+            "description": "",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "",
+            "name": "currency",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, ",
+      "tool_name": "Restaurants",
+      "toolbench_endpoint_description": "Restaurant Reviews",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Restaurant Reviews",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://restaurants222.p.rapidapi.com/reviews",
+        "file_name": "restaurants.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+        "tool_file_found": true,
+        "tool_name": "Restaurants",
+        "toolbench_relative_path": "Search/restaurants.json"
+      },
+      "toolbench_tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+      "toolbench_tool_name": "Restaurants",
+      "url": "https://restaurants222.p.rapidapi.com/reviews",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.121,
+        "tp_kbps": 24.793,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 7
+  },
+  {
+    "api_id": "suggestic_generate_a_simple_meal_plan",
+    "candidate_id": "C31",
+    "mode_rank": 15,
+    "llm_reported_rank": 15,
+    "retrieved_rank": 2,
+    "rag_score": 0.4828190803527832,
+    "reason": "",
+    "service": {
+      "_file": "suggestic.json",
+      "_tool": "suggestic",
+      "api_id": "suggestic_generate_a_simple_meal_plan",
+      "category": "Health_and_Fitness",
+      "description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Bearer",
+            "description": "",
+            "name": "Authorization",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Generate a Simple Meal Plan",
+      "tool_description": "Suggestic Food & Meal Plan API",
+      "tool_name": "Suggestic",
+      "toolbench_endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "toolbench_enrichment": {
+        "category": "Health_and_Fitness",
+        "endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Generate a Simple Meal Plan",
+        "endpoint_url": "https://suggestic1.p.rapidapi.com/",
+        "file_name": "suggestic.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Suggestic Food & Meal Plan API",
+        "tool_file_found": true,
+        "tool_name": "Suggestic",
+        "toolbench_relative_path": "Health_and_Fitness/suggestic.json"
+      },
+      "toolbench_tool_description": "Suggestic Food & Meal Plan API",
+      "toolbench_tool_name": "Suggestic",
+      "url": "https://suggestic1.p.rapidapi.com/",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.12,
+        "tp_kbps": 25.0,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 8
+  },
+  {
+    "api_id": "beverages_and_desserts_get_all_the_desserts",
+    "candidate_id": "C09",
+    "mode_rank": 16,
+    "llm_reported_rank": 16,
+    "retrieved_rank": 34,
+    "rag_score": 0.3456844091415405,
+    "reason": "",
+    "service": {
+      "_file": "beverages_and_desserts.json",
+      "_tool": "beverages_and_desserts",
+      "api_id": "beverages_and_desserts_get_all_the_desserts",
+      "category": "Food",
+      "description": "This endpoint will returns all the** Desserts**",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get all the Desserts",
+      "tool_description": "This api returns various kinds of Beverages and Desserts",
+      "tool_name": "Beverages and Desserts",
+      "toolbench_endpoint_description": "This endpoint will returns all the** Desserts**",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "This endpoint will returns all the** Desserts**",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get all the Desserts",
+        "endpoint_url": "https://beverages-and-desserts.p.rapidapi.com/desserts",
+        "file_name": "beverages_and_desserts.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This api returns various kinds of Beverages and Desserts",
+        "tool_file_found": true,
+        "tool_name": "Beverages and Desserts",
+        "toolbench_relative_path": "Food/beverages_and_desserts.json"
+      },
+      "toolbench_tool_description": "This api returns various kinds of Beverages and Desserts",
+      "toolbench_tool_name": "Beverages and Desserts",
+      "url": "https://beverages-and-desserts.p.rapidapi.com/desserts",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.131,
+        "tp_kbps": 22.9,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 9
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+    "candidate_id": "C17",
+    "mode_rank": 17,
+    "llm_reported_rank": 17,
+    "retrieved_rank": 5,
+    "rag_score": 0.4362855553627014,
+    "reason": "",
+    "service": {
+      "_file": "fast_food_restaurants_usa_top_50_chains.json",
+      "_tool": "fast_food_restaurants_usa_top_50_chains",
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+      "category": "Food",
+      "description": "GET all City names",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GET all {City} names",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence. Sign up now to get access!",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "toolbench_endpoint_description": "GET all City names",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "GET all City names",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET all {City} names",
+        "endpoint_url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/all-city",
+        "file_name": "fast_food_restaurants_usa_top_50_chains.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+        "tool_file_found": true,
+        "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+        "toolbench_relative_path": "Food/fast_food_restaurants_usa_top_50_chains.json"
+      },
+      "toolbench_tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+      "toolbench_tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/all-city",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1295,
+        "tp_kbps": 23.1655,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 10
+  },
+  {
+    "api_id": "api2cart_listproductoptions",
+    "candidate_id": "C02",
+    "mode_rank": 18,
+    "llm_reported_rank": 18,
+    "retrieved_rank": 15,
+    "rag_score": 0.3691934645175934,
+    "reason": "",
+    "service": {
+      "_file": "api2cart.json",
+      "_tool": "api2cart",
+      "api_id": "api2cart_listproductoptions",
+      "category": "eCommerce",
+      "description": "Get list of options",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "This parameter sets the entity amount that has to be retrieved",
+            "name": "count",
+            "type": "NUMBER"
+          },
+          {
+            "default": "",
+            "description": "Set this parameter in order to choose which entity fields you want to ignore. Works only if parameter `params` equal force_all",
+            "name": "exclude",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Id of the product",
+            "name": "productId",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "Set this parameter in order to choose which entity fields you want to retrieve",
+            "name": "params",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "This parameter sets the number from which you want to get entities",
+            "name": "start",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "Your API key",
+            "name": "apiKey",
+            "type": "CREDENTIALS"
+          },
+          {
+            "default": "",
+            "description": "API2Cart store key",
+            "name": "storeKey",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "listProductOptions",
+      "tool_description": "Connect your app with shopping carts.",
+      "tool_name": "API2Cart",
+      "toolbench_endpoint_description": "Get list of options",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "Get list of options",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "listProductOptions",
+        "endpoint_url": "https://API2Cartstefan-skliarovV1.p.rapidapi.com/listProductOptions",
+        "file_name": "api2cart.json",
+        "optional_parameter_count": 5,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Connect your app with shopping carts.",
+        "tool_file_found": true,
+        "tool_name": "API2Cart",
+        "toolbench_relative_path": "eCommerce/api2cart.json"
+      },
+      "toolbench_tool_description": "Connect your app with shopping carts.",
+      "toolbench_tool_name": "API2Cart",
+      "url": "https://API2Cartstefan-skliarovV1.p.rapidapi.com/listProductOptions",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.169,
+        "tp_kbps": 41.42,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 12
+  },
+  {
+    "api_id": "beer_lover_get_the_top_50_beers",
+    "candidate_id": "C07",
+    "mode_rank": 19,
+    "llm_reported_rank": 19,
+    "retrieved_rank": 31,
+    "rag_score": 0.347136914730072,
+    "reason": "",
+    "service": {
+      "_file": "beer_lover.json",
+      "_tool": "beer_lover",
+      "api_id": "beer_lover_get_the_top_50_beers",
+      "category": "Food",
+      "description": "Retrieve the top 50 beers with the highest score",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "GET the top 50 beers",
+      "tool_description": "Beer Lover API list more than 30,000 unique beers with diverse information (score, brewery, country, etc.)",
+      "tool_name": "Beer Lover",
+      "toolbench_endpoint_description": "Retrieve the top 50 beers with the highest score",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Retrieve the top 50 beers with the highest score",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET the top 50 beers",
+        "endpoint_url": "https://beer-lover.p.rapidapi.com/top50",
+        "file_name": "beer_lover.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Beer Lover API list more than 30,000 unique beers with diverse information (score, brewery, country, etc.)",
+        "tool_file_found": true,
+        "tool_name": "Beer Lover",
+        "toolbench_relative_path": "Food/beer_lover.json"
+      },
+      "toolbench_tool_description": "Beer Lover API list more than 30,000 unique beers with diverse information (score, brewery, country, etc.)",
+      "toolbench_tool_name": "Beer Lover",
+      "url": "https://beer-lover.p.rapidapi.com/top50",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.1665,
+        "tp_kbps": 42.042,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 13
+  },
+  {
+    "api_id": "keyword_suggestion_api_comparisons",
+    "candidate_id": "C22",
+    "mode_rank": 20,
+    "llm_reported_rank": 20,
+    "retrieved_rank": 36,
+    "rag_score": 0.3454815745353699,
+    "reason": "",
+    "service": {
+      "_file": "keyword_suggestion_api.json",
+      "_tool": "keyword_suggestion_api",
+      "api_id": "keyword_suggestion_api_comparisons",
+      "category": "Advertising",
+      "description": "This will give you comparisons releated to your queried keyword",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "us",
+            "description": "",
+            "name": "country_code",
+            "type": "STRING"
+          },
+          {
+            "default": "en",
+            "description": "",
+            "name": "language_code",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "api",
+            "description": "",
+            "name": "keyword",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Comparisons",
+      "tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria su",
+      "tool_name": "Keyword Suggestion API",
+      "toolbench_endpoint_description": "This will give you comparisons releated to your queried keyword",
+      "toolbench_enrichment": {
+        "category": "Advertising",
+        "endpoint_description": "This will give you comparisons releated to your queried keyword",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Comparisons",
+        "endpoint_url": "https://keyword-suggestion-api.p.rapidapi.com/comparisons",
+        "file_name": "keyword_suggestion_api.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria such as search volume, competition, and relevance. It can also provide data on the search trends for a keyword over time. This API can be integrated into content management systems, SEO platforms, or...",
+        "tool_file_found": true,
+        "tool_name": "Keyword Suggestion API",
+        "toolbench_relative_path": "Advertising/keyword_suggestion_api.json"
+      },
+      "toolbench_tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria such as search volume, competition, and relevance. It can also provide data on the search trends for a keyword over time. This API can be integrated into content management systems, SEO platforms, or...",
+      "toolbench_tool_name": "Keyword Suggestion API",
+      "url": "https://keyword-suggestion-api.p.rapidapi.com/comparisons",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.132,
+        "tp_kbps": 7.575,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 16
+  },
+  {
+    "api_id": "venue_deactivatevenue",
+    "candidate_id": "C38",
+    "mode_rank": 21,
+    "llm_reported_rank": 21,
+    "retrieved_rank": 13,
+    "rag_score": 0.3709235191345215,
+    "reason": "",
+    "service": {
+      "_file": "venue.json",
+      "_tool": "venue",
+      "api_id": "venue_deactivatevenue",
+      "category": "Food",
+      "description": "Deactivate venue by ID. Inactive venues cannot receive orders.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "venue",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "deactivateVenue",
+      "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "tool_name": "Venue",
+      "toolbench_endpoint_description": "Deactivate venue by ID. Inactive venues cannot receive orders.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Deactivate venue by ID. Inactive venues cannot receive orders.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "deactivateVenue",
+        "endpoint_url": "https://venue1.p.rapidapi.com/venue-api/api/venues/{venue}/deactivate",
+        "file_name": "venue.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+        "tool_file_found": true,
+        "tool_name": "Venue",
+        "toolbench_relative_path": "Food/venue.json"
+      },
+      "toolbench_tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "toolbench_tool_name": "Venue",
+      "url": "https://venue1.p.rapidapi.com/venue-api/api/venues/{venue}/deactivate",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.155,
+        "tp_kbps": 19.354,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 17
+  },
+  {
+    "api_id": "venue_validatecluster",
+    "candidate_id": "C39",
+    "mode_rank": 22,
+    "llm_reported_rank": 22,
+    "retrieved_rank": 27,
+    "rag_score": 0.3534594178199768,
+    "reason": "",
+    "service": {
+      "_file": "venue.json",
+      "_tool": "venue",
+      "api_id": "venue_validatecluster",
+      "category": "Food",
+      "description": "Validate venue cluster (batch of venues). Returns information if order can be made to those venues simultaneously. Currently only single venue is allowed.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "validateCluster",
+      "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "tool_name": "Venue",
+      "toolbench_endpoint_description": "Validate venue cluster (batch of venues). Returns information if order can be made to those venues simultaneously. Currently only single venue is allowed.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Validate venue cluster (batch of venues). Returns information if order can be made to those venues simultaneously. Currently only single venue is allowed.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "validateCluster",
+        "endpoint_url": "https://venue1.p.rapidapi.com/venue-api/api/venue/validateCluster",
+        "file_name": "venue.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+        "tool_file_found": true,
+        "tool_name": "Venue",
+        "toolbench_relative_path": "Food/venue.json"
+      },
+      "toolbench_tool_description": "Ordering Stack Venue API. Manages all aspects of venue (restaurant or store). Create and edit venues, set attributes, etc...",
+      "toolbench_tool_name": "Venue",
+      "url": "https://venue1.p.rapidapi.com/venue-api/api/venue/validateCluster",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.167,
+        "tp_kbps": 41.916,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 18
+  },
+  {
+    "api_id": "yummly_feeds_auto_complete",
+    "candidate_id": "C40",
+    "mode_rank": 23,
+    "llm_reported_rank": 23,
+    "retrieved_rank": 29,
+    "rag_score": 0.3496478199958801,
+    "reason": "",
+    "service": {
+      "_file": "yummly.json",
+      "_tool": "yummly",
+      "api_id": "yummly_feeds_auto_complete",
+      "category": "Food",
+      "description": "Get auto complete suggestions by name or ingredients, etc...",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "chicken soup",
+            "description": "Food name or ingredient",
+            "name": "q",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "feeds/auto-complete",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "tool_name": "Yummly",
+      "toolbench_endpoint_description": "Get auto complete suggestions by name or ingredients, etc...",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get auto complete suggestions by name or ingredients, etc...",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "feeds/auto-complete",
+        "endpoint_url": "https://yummly2.p.rapidapi.com/feeds/auto-complete",
+        "file_name": "yummly.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+        "tool_file_found": true,
+        "tool_name": "Yummly",
+        "toolbench_relative_path": "Food/yummly.json"
+      },
+      "toolbench_tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "toolbench_tool_name": "Yummly",
+      "url": "https://yummly2.p.rapidapi.com/feeds/auto-complete",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.167,
+        "tp_kbps": 41.916,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 19
+  },
+  {
+    "api_id": "bespoke_diet_generator_get_user_s_diet_for_a_specific_day",
+    "candidate_id": "C08",
+    "mode_rank": 24,
+    "llm_reported_rank": 24,
+    "retrieved_rank": 33,
+    "rag_score": 0.34639716148376465,
+    "reason": "",
+    "service": {
+      "_file": "bespoke_diet_generator.json",
+      "_tool": "bespoke_diet_generator",
+      "api_id": "bespoke_diet_generator_get_user_s_diet_for_a_specific_day",
+      "category": "Food",
+      "description": "Get the current diet plan for the specified user for a specific day.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "The day index of the diet.",
+            "name": "dayIndex",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "The user id.",
+            "name": "userId",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Get user's diet for a specific day",
+      "tool_description": "Our API generates a complete meal plan that is specific to the nutrition counseling world. We create fully detailed, personalized meal plans with specific ingredients / quantities and little cooking skill required. For better flexibility, our ingredient replacement algorithm creates a template where",
+      "tool_name": "Bespoke Diet Generator",
+      "toolbench_endpoint_description": "Get the current diet plan for the specified user for a specific day.",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get the current diet plan for the specified user for a specific day.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get user's diet for a specific day",
+        "endpoint_url": "https://bespoke-diet-generator.p.rapidapi.com/user/{userId}/diet/{dayIndex}",
+        "file_name": "bespoke_diet_generator.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our API generates a complete meal plan that is specific to the nutrition counseling world. We create fully detailed, personalized meal plans with specific ingredients / quantities and little cooking skill required. For better flexibility, our ingredient replacement algorithm creates a template where users can adapt their menu even more to fit their desires.",
+        "tool_file_found": true,
+        "tool_name": "Bespoke Diet Generator",
+        "toolbench_relative_path": "Food/bespoke_diet_generator.json"
+      },
+      "toolbench_tool_description": "Our API generates a complete meal plan that is specific to the nutrition counseling world. We create fully detailed, personalized meal plans with specific ingredients / quantities and little cooking skill required. For better flexibility, our ingredient replacement algorithm creates a template where users can adapt their menu even more to fit their desires.",
+      "toolbench_tool_name": "Bespoke Diet Generator",
+      "url": "https://bespoke-diet-generator.p.rapidapi.com/user/{userId}/diet/{dayIndex}",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.305,
+        "tp_kbps": 9.8355,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 20
+  },
+  {
+    "api_id": "bbc_good_food_api_search_for_recipes",
+    "candidate_id": "C06",
+    "mode_rank": 25,
+    "llm_reported_rank": 25,
+    "retrieved_rank": 30,
+    "rag_score": 0.3496282398700714,
+    "reason": "",
+    "service": {
+      "_file": "bbc_good_food_api.json",
+      "_tool": "bbc_good_food_api",
+      "api_id": "bbc_good_food_api_search_for_recipes",
+      "category": "Food",
+      "description": "Search for recipes by keyword or full phrase",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "",
+            "description": "Page number depend of the result number 30 result MAX per search",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "crab salad",
+            "description": "Search query for recipes",
+            "name": "query",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Search for recipes",
+      "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes.. Note: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity s",
+      "tool_name": "BBC Good Food API",
+      "toolbench_endpoint_description": "Search for recipes by keyword or full phrase",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Search for recipes by keyword or full phrase",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Search for recipes",
+        "endpoint_url": "https://bbc-good-food-api.p.rapidapi.com/search",
+        "file_name": "bbc_good_food_api.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+        "tool_file_found": true,
+        "tool_name": "BBC Good Food API",
+        "toolbench_relative_path": "Food/bbc_good_food_api.json"
+      },
+      "toolbench_tool_description": "Fetch recipies from search keyword, Author profile + recipes, collections recipes..\n\nNote: The API is deployed on basic plan server after the first subscriber I will upgrade the plan currently server go to sleep and first request wake up the server it takes 3 to 5 minutes.After 30 min of inactivity server go to sleep.",
+      "toolbench_tool_name": "BBC Good Food API",
+      "url": "https://bbc-good-food-api.p.rapidapi.com/search",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.322,
+        "tp_kbps": 9.316,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 23
+  },
+  {
+    "api_id": "create_game_rooms_get_rooms_as_response",
+    "candidate_id": "C13",
+    "mode_rank": 26,
+    "llm_reported_rank": 26,
+    "retrieved_rank": 14,
+    "rag_score": 0.3693723678588867,
+    "reason": "",
+    "service": {
+      "_file": "create_game_rooms.json",
+      "_tool": "create_game_rooms",
+      "api_id": "create_game_rooms_get_rooms_as_response",
+      "category": "Gaming",
+      "description": "You can get the arranged array by sending 'POST' request to '/getRooms' end point.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Get Rooms as Response",
+      "tool_description": "This API generates any kind of room as an array by using your array of objects with your options.",
+      "tool_name": "Create Game Rooms",
+      "toolbench_endpoint_description": "You can get the arranged array by sending 'POST' request to '/getRooms' end point.",
+      "toolbench_enrichment": {
+        "category": "Gaming",
+        "endpoint_description": "You can get the arranged array by sending 'POST' request to '/getRooms' end point.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Get Rooms as Response",
+        "endpoint_url": "https://create-game-rooms.p.rapidapi.com/getRooms",
+        "file_name": "create_game_rooms.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API generates any kind of room as an array by using your array of objects with your options.",
+        "tool_file_found": true,
+        "tool_name": "Create Game Rooms",
+        "toolbench_relative_path": "Gaming/create_game_rooms.json"
+      },
+      "toolbench_tool_description": "This API generates any kind of room as an array by using your array of objects with your options.",
+      "toolbench_tool_name": "Create Game Rooms",
+      "url": "https://create-game-rooms.p.rapidapi.com/getRooms",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.2935,
+        "tp_kbps": 10.221,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 24
+  },
+  {
+    "api_id": "ocw_createacustomtoaddress",
+    "candidate_id": "C27",
+    "mode_rank": 27,
+    "llm_reported_rank": 27,
+    "retrieved_rank": 16,
+    "rag_score": 0.36818966269493103,
+    "reason": "",
+    "service": {
+      "_file": "ocw.json",
+      "_tool": "ocw",
+      "api_id": "ocw_createacustomtoaddress",
+      "category": "Financial",
+      "description": "Create a custom to address\n\n<b>Payload parameters</b>\n<table>\n <tr>\n  <td><b>name</b></td>\n  <td><b>Required</b>\n     <i>String</i>  \n     <p>Must be no longer than 50 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>companyName</b></td>\n  <td><b>Optional</b>    \n  <i>String</i>\n   <p>Must be no longer than 50 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>addressLine1</b></td>\n  <td><b>Required</b>\n  <i>String</i>\n   <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>addressLine2</b></td>\n  <td><b>Required</b>    \n  <i>String</i>\n   <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>city</b></td>\n  <td><b>Required</b>  \n  <i>String</i>\n  <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>state</b></td>\n  <td><b>Required</b>   \n  <i>String</i>\n   <p>Must be a 2 letter state short-name code </p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>zip</b></td>\n  <td><b>Required</b> \n  <i>String</i>\n   <p>Must be no longer than 15 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>phone</b></td>\n  <td><b>Optional</b>     \n  <i>String</i>\n   <p>Must be no longer than 15 characters. </p>\n  </td>\n</tr>\n\n\n<tr>\n  <td><b>email</b></td>\n  <td><b>Optional</b>   \n  <i>String</i>\n   <p>Must be no longer than 15 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>note</b></td>\n  <td><b>Optional</b>   \n  <i>String</i>\n   <p>An internal note that identifies this address,Must be no longer than 200 characters.</p>\n  </td>\n</tr>\n\n</tbody>\n</table>",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "Bearer {{AUTH_TOKEN}} ",
+            "description": "",
+            "name": "Authorization",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "application/json",
+            "description": "",
+            "name": "Content-Type",
+            "type": "STRING"
+          },
+          {
+            "default": "application/json",
+            "description": "",
+            "name": "Accept",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Createacustomtoaddress",
+      "tool_description": "Check Mailing API",
+      "tool_name": "OCW",
+      "toolbench_endpoint_description": "Create a custom to address\n\n<b>Payload parameters</b>\n<table>\n <tr>\n  <td><b>name</b></td>\n  <td><b>Required</b>\n     <i>String</i>  \n     <p>Must be no longer than 50 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>companyName</b></td>\n  <td><b>Optional</b>    \n  <i>String</i>\n   <p>Must be no longer than 50 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>addressLine1</b></td>\n  <td><b>Required</b>\n  <i>String</i>\n   <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>addressLine2</b></td>\n  <td><b>Required</b>    \n  <i>String</i>\n   <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>city</b></td>\n  <td><b>Required</b>  \n  <i>String</i>\n  <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>state</b></td>\n  <td><b>Required</b>   \n  <i>String</i>\n   <p>Must be a 2 letter state short-name code </p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>zip</b></td>\n  <td><b>Required</b> \n  <i>String</i>\n   <p>Must be no longer than 15 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>phone</b></td>\n  <td><b>Optional</b>     \n  <i>String</i>\n   <p>Must be no longer than 15 characters. </p>\n  </td>\n</tr>\n\n\n<tr>\n  <td><b>email</b></td>\n  <td><b>Optional</b>   \n  <i>String</i>\n   <p>Must be no longer than 15 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>note</b></td>\n  <td><b>Optional</b>   \n  <i>String</i>\n   <p>An internal note that identifies this address,Must be no longer than 200 characters.</p>\n  </td>\n</tr>\n\n</tbody>\n</table>",
+      "toolbench_enrichment": {
+        "category": "Financial",
+        "endpoint_description": "Create a custom to address\n\n<b>Payload parameters</b>\n<table>\n <tr>\n  <td><b>name</b></td>\n  <td><b>Required</b>\n     <i>String</i>  \n     <p>Must be no longer than 50 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>companyName</b></td>\n  <td><b>Optional</b>    \n  <i>String</i>\n   <p>Must be no longer than 50 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>addressLine1</b></td>\n  <td><b>Required</b>\n  <i>String</i>\n   <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>addressLine2</b></td>\n  <td><b>Required</b>    \n  <i>String</i>\n   <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>city</b></td>\n  <td><b>Required</b>  \n  <i>String</i>\n  <p>Must be no longer than 100 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>state</b></td>\n  <td><b>Required</b>   \n  <i>String</i>\n   <p>Must be a 2 letter state short-name code </p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>zip</b></td>\n  <td><b>Required</b> \n  <i>String</i>\n   <p>Must be no longer than 15 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>phone</b></td>\n  <td><b>Optional</b>     \n  <i>String</i>\n   <p>Must be no longer than 15 characters. </p>\n  </td>\n</tr>\n\n\n<tr>\n  <td><b>email</b></td>\n  <td><b>Optional</b>   \n  <i>String</i>\n   <p>Must be no longer than 15 characters.</p>\n  </td>\n</tr>\n\n<tr>\n  <td><b>note</b></td>\n  <td><b>Optional</b>   \n  <i>String</i>\n   <p>An internal note that identifies this address,Must be no longer than 200 characters.</p>\n  </td>\n</tr>\n\n</tbody>\n</table>",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Createacustomtoaddress",
+        "endpoint_url": "https://ocw.p.rapidapi.com/customToAddresses",
+        "file_name": "ocw.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check Mailing API",
+        "tool_file_found": true,
+        "tool_name": "OCW",
+        "toolbench_relative_path": "Financial/ocw.json"
+      },
+      "toolbench_tool_description": "Check Mailing API",
+      "toolbench_tool_name": "OCW",
+      "url": "https://ocw.p.rapidapi.com/customToAddresses",
+      "qos": {
+        "availability": 0.9882,
+        "rt_s": 0.295,
+        "tp_kbps": 3.389,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 25
+  },
+  {
+    "api_id": "food_calories_get_foods_by_category_name",
+    "candidate_id": "C20",
+    "mode_rank": 28,
+    "llm_reported_rank": 28,
+    "retrieved_rank": 9,
+    "rag_score": 0.386273592710495,
+    "reason": "",
+    "service": {
+      "_file": "food_calories.json",
+      "_tool": "food_calories",
+      "api_id": "food_calories_get_foods_by_category_name",
+      "category": "Food",
+      "description": "simply you can send category name and get all foods in this category",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Pork",
+            "description": "",
+            "name": "category_name",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "get foods by category name",
+      "tool_description": "Find Calories and KiloJoules in specific food name, You can build amazing apps using this api",
+      "tool_name": "Food Calories",
+      "toolbench_endpoint_description": "simply you can send category name and get all foods in this category",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "simply you can send category name and get all foods in this category",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "get foods by category name",
+        "endpoint_url": "https://food-calories1.p.rapidapi.com/categories/{category_name}/foods",
+        "file_name": "food_calories.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Find Calories and KiloJoules in specific food name,\nYou can build amazing apps using this api",
+        "tool_file_found": true,
+        "tool_name": "Food Calories",
+        "toolbench_relative_path": "Food/food_calories.json"
+      },
+      "toolbench_tool_description": "Find Calories and KiloJoules in specific food name,\nYou can build amazing apps using this api",
+      "toolbench_tool_name": "Food Calories",
+      "url": "https://food-calories1.p.rapidapi.com/categories/{category_name}/foods",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.352,
+        "tp_kbps": 11.363,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 26
+  },
+  {
+    "api_id": "keyword_suggestion_api_questions",
+    "candidate_id": "C23",
+    "mode_rank": 29,
+    "llm_reported_rank": 29,
+    "retrieved_rank": 20,
+    "rag_score": 0.3631330728530884,
+    "reason": "",
+    "service": {
+      "_file": "keyword_suggestion_api.json",
+      "_tool": "keyword_suggestion_api",
+      "api_id": "keyword_suggestion_api_questions",
+      "category": "Advertising",
+      "description": "This will give you questions releated to your queried keyword",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "us",
+            "description": "",
+            "name": "country_code",
+            "type": "STRING"
+          },
+          {
+            "default": "en",
+            "description": "",
+            "name": "language_code",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "API",
+            "description": "",
+            "name": "keyword",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Questions",
+      "tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria su",
+      "tool_name": "Keyword Suggestion API",
+      "toolbench_endpoint_description": "This will give you questions releated to your queried keyword",
+      "toolbench_enrichment": {
+        "category": "Advertising",
+        "endpoint_description": "This will give you questions releated to your queried keyword",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Questions",
+        "endpoint_url": "https://keyword-suggestion-api.p.rapidapi.com/questions",
+        "file_name": "keyword_suggestion_api.json",
+        "optional_parameter_count": 2,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria such as search volume, competition, and relevance. It can also provide data on the search trends for a keyword over time. This API can be integrated into content management systems, SEO platforms, or...",
+        "tool_file_found": true,
+        "tool_name": "Keyword Suggestion API",
+        "toolbench_relative_path": "Advertising/keyword_suggestion_api.json"
+      },
+      "toolbench_tool_description": "A Keyword Suggestion API allows developers to retrieve a list of suggested keywords related to a specific topic or phrase. It can be used to help optimize website content, improve search engine rankings, and generate ideas for new content. The API can provide suggestions based on various criteria such as search volume, competition, and relevance. It can also provide data on the search trends for a keyword over time. This API can be integrated into content management systems, SEO platforms, or...",
+      "toolbench_tool_name": "Keyword Suggestion API",
+      "url": "https://keyword-suggestion-api.p.rapidapi.com/questions",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.344,
+        "tp_kbps": 8.721499999999999,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 27
+  },
+  {
+    "api_id": "suggestic_generate_a_simple_meal_plan-2",
+    "candidate_id": "C32",
+    "mode_rank": 30,
+    "llm_reported_rank": 30,
+    "retrieved_rank": 1,
+    "rag_score": 0.4828190803527832,
+    "reason": "",
+    "service": {
+      "_file": "suggestic.json",
+      "_tool": "suggestic",
+      "api_id": "suggestic_generate_a_simple_meal_plan-2",
+      "category": "Health_and_Fitness",
+      "description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "Bearer",
+            "description": "",
+            "name": "Authorization",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Generate a Simple Meal Plan",
+      "tool_description": "Suggestic Food & Meal Plan API",
+      "tool_name": "Suggestic",
+      "toolbench_endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+      "toolbench_enrichment": {
+        "category": "Health_and_Fitness",
+        "endpoint_description": "Suggestic meal plan API finds the best recipes for your user's dietary plan according to their food preferences and goals. The API has different services and parameters that let you specify how these meal plans are generated.",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Generate a Simple Meal Plan",
+        "endpoint_url": "https://suggestic1.p.rapidapi.com/",
+        "file_name": "suggestic.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Suggestic Food & Meal Plan API",
+        "tool_file_found": true,
+        "tool_name": "Suggestic",
+        "toolbench_relative_path": "Health_and_Fitness/suggestic.json"
+      },
+      "toolbench_tool_description": "Suggestic Food & Meal Plan API",
+      "toolbench_tool_name": "Suggestic",
+      "url": "https://suggestic1.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.3665,
+        "tp_kbps": 8.184999999999999,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 28
+  },
+  {
+    "api_id": "tasty_recipes_auto_complete",
+    "candidate_id": "C33",
+    "mode_rank": 31,
+    "llm_reported_rank": 31,
+    "retrieved_rank": 21,
+    "rag_score": 0.3613220155239105,
+    "reason": "",
+    "service": {
+      "_file": "tasty.json",
+      "_tool": "tasty",
+      "api_id": "tasty_recipes_auto_complete",
+      "category": "Food",
+      "description": "Get auto complete suggestions by name or ingredients",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "chicken soup",
+            "description": "Food name or ingredient",
+            "name": "prefix",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "recipes/auto-complete",
+      "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "tool_name": "Tasty",
+      "toolbench_endpoint_description": "Get auto complete suggestions by name or ingredients",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "Get auto complete suggestions by name or ingredients",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "recipes/auto-complete",
+        "endpoint_url": "https://tasty.p.rapidapi.com/recipes/auto-complete",
+        "file_name": "tasty.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+        "tool_file_found": true,
+        "tool_name": "Tasty",
+        "toolbench_relative_path": "Food/tasty.json"
+      },
+      "toolbench_tool_description": "API to query data about recipe, plan, ingredients, etc... as on official site",
+      "toolbench_tool_name": "Tasty",
+      "url": "https://tasty.p.rapidapi.com/recipes/auto-complete",
+      "qos": {
+        "availability": 0.9853,
+        "rt_s": 0.385,
+        "tp_kbps": 7.792,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.57,
+    "qos_llm_rank": 29
+  },
+  {
+    "api_id": "the_fork_the_spoon_locations_v2_list",
+    "candidate_id": "C35",
+    "mode_rank": 32,
+    "llm_reported_rank": 32,
+    "retrieved_rank": 24,
+    "rag_score": 0.3584717810153961,
+    "reason": "",
+    "service": {
+      "_file": "the_fork_the_spoon.json",
+      "_tool": "the_fork_the_spoon",
+      "api_id": "the_fork_the_spoon_locations_v2_list",
+      "category": "Food",
+      "description": "List relating locations by Google place id",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "Roma, Metropolitan City of Rome, Italy",
+            "description": "The value of 'text' fields returned in .../locations/v2/auto-complete endpoint",
+            "name": "geo_text",
+            "type": "STRING"
+          },
+          {
+            "default": "false",
+            "description": "",
+            "name": "geo_ref",
+            "type": "BOOLEAN"
+          },
+          {
+            "default": "locality",
+            "description": "The value of 'type' fields returned in .../locations/v2/auto-complete",
+            "name": "geo_type",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "ChIJu46S-ZZhLxMROG5lkwZ3D7k",
+            "description": "The value of data/geolocation/id/id fields returned in …/locations/auto-complete endpoint",
+            "name": "google_place_id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "locations/v2/list",
+      "tool_description": "This API helps to query the best restaurant and meal around the world to create a traveling site/application such as thefork.com",
+      "tool_name": "The Fork The Spoon",
+      "toolbench_endpoint_description": "List relating locations by Google place id",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "List relating locations by Google place id",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "locations/v2/list",
+        "endpoint_url": "https://the-fork-the-spoon.p.rapidapi.com/locations/v2/list",
+        "file_name": "the_fork_the_spoon.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API helps to query the best restaurant and meal around the world to create a traveling site/application such as thefork.com",
+        "tool_file_found": true,
+        "tool_name": "The Fork The Spoon",
+        "toolbench_relative_path": "Food/the_fork_the_spoon.json"
+      },
+      "toolbench_tool_description": "This API helps to query the best restaurant and meal around the world to create a traveling site/application such as thefork.com",
+      "toolbench_tool_name": "The Fork The Spoon",
+      "url": "https://the-fork-the-spoon.p.rapidapi.com/locations/v2/list",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.433,
+        "tp_kbps": 27.713,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.57,
+    "qos_llm_rank": 30
+  },
+  {
+    "api_id": "e_commerce_top_rated_by_category",
+    "candidate_id": "C14",
+    "mode_rank": 33,
+    "llm_reported_rank": 33,
+    "retrieved_rank": 37,
+    "rag_score": 0.34513580799102783,
+    "reason": "",
+    "service": {
+      "_file": "e_commerce.json",
+      "_tool": "e_commerce",
+      "api_id": "e_commerce_top_rated_by_category",
+      "category": "eCommerce",
+      "description": "This will get the top rated items in the category specified in the query params\nThe default is items that have over 4 ratings  if rating is not specified in the query params",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "4",
+            "description": "",
+            "name": "rating",
+            "type": "NUMBER"
+          },
+          {
+            "default": "100",
+            "description": "",
+            "name": "limit",
+            "type": "NUMBER"
+          },
+          {
+            "default": "1",
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "homepetappliance",
+            "description": "",
+            "name": "category",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Top rated by category",
+      "tool_description": "If you're looking for an easy to use API for your ecommerce project, this API is for you.",
+      "tool_name": "E-Commerce",
+      "toolbench_endpoint_description": "This will get the top rated items in the category specified in the query params\nThe default is items that have over 4 ratings  if rating is not specified in the query params",
+      "toolbench_enrichment": {
+        "category": "eCommerce",
+        "endpoint_description": "This will get the top rated items in the category specified in the query params\nThe default is items that have over 4 ratings  if rating is not specified in the query params",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Top rated by category",
+        "endpoint_url": "https://e-commerce12.p.rapidapi.com/categories/toprated",
+        "file_name": "e_commerce.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "If you're looking for an easy to use API for your ecommerce project, this API is for you.",
+        "tool_file_found": true,
+        "tool_name": "E-Commerce",
+        "toolbench_relative_path": "eCommerce/e_commerce.json"
+      },
+      "toolbench_tool_description": "If you're looking for an easy to use API for your ecommerce project, this API is for you.",
+      "toolbench_tool_name": "E-Commerce",
+      "url": "https://e-commerce12.p.rapidapi.com/categories/toprated",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.44,
+        "tp_kbps": 4.545,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 31
+  },
+  {
+    "api_id": "cartify_getordersbyemail",
+    "candidate_id": "C10",
+    "mode_rank": 34,
+    "llm_reported_rank": 34,
+    "retrieved_rank": 7,
+    "rag_score": 0.40467342734336853,
+    "reason": "",
+    "service": {
+      "_file": "cartify.json",
+      "_tool": "cartify",
+      "api_id": "cartify_getordersbyemail",
+      "category": "Commerce",
+      "description": "For a valid response, fill in the email of the user in the path parameter. This is helpful instead of looping from the userId since the users can't have or use the same email. To also verify that it is an authenticated user trying to get his/her order, fill in an authorization header that takes the token of the user.....\nFor example, \n\"Bearer <access_token>",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "",
+            "description": "",
+            "name": "email",
+            "type": "string"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "getOrdersbyEmail",
+      "tool_description": "Welcome to our e-commerce API! Our API is designed to make it easy for you to build and manage your online store and also build projects you can show on your porfolio. With our API, you can create products, manage orders, track shipments, and more. Our API is built on modern technologies and is easy",
+      "tool_name": "Cartify",
+      "toolbench_endpoint_description": "For a valid response, fill in the email of the user in the path parameter. This is helpful instead of looping from the userId since the users can't have or use the same email. To also verify that it is an authenticated user trying to get his/her order, fill in an authorization header that takes the token of the user.....\nFor example, \n\"Bearer <access_token>",
+      "toolbench_enrichment": {
+        "category": "Commerce",
+        "endpoint_description": "For a valid response, fill in the email of the user in the path parameter. This is helpful instead of looping from the userId since the users can't have or use the same email. To also verify that it is an authenticated user trying to get his/her order, fill in an authorization header that takes the token of the user.....\nFor example, \n\"Bearer <access_token>",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "getOrdersbyEmail",
+        "endpoint_url": "https://cartify.p.rapidapi.com/users/api/v1/{email}",
+        "file_name": "cartify.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Welcome to our e-commerce API! Our API is designed to make it easy for you to build and manage your online store and also build projects you can show on your porfolio. With our API, you can create products, manage orders, track shipments, and more. Our API is built on modern technologies and is easy to integrate with your existing systems.  Our API provides a secure and reliable platform for your e-commerce needs. You can trust us to keep your data safe and secure. We also provide a range of ...",
+        "tool_file_found": true,
+        "tool_name": "Cartify",
+        "toolbench_relative_path": "Commerce/cartify.json"
+      },
+      "toolbench_tool_description": "Welcome to our e-commerce API! Our API is designed to make it easy for you to build and manage your online store and also build projects you can show on your porfolio. With our API, you can create products, manage orders, track shipments, and more. Our API is built on modern technologies and is easy to integrate with your existing systems.  Our API provides a secure and reliable platform for your e-commerce needs. You can trust us to keep your data safe and secure. We also provide a range of ...",
+      "toolbench_tool_name": "Cartify",
+      "url": "https://cartify.p.rapidapi.com/users/api/v1/{email}",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.622,
+        "tp_kbps": 103.503,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.55,
+    "qos_llm_rank": 32
+  },
+  {
+    "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+    "candidate_id": "C18",
+    "mode_rank": 35,
+    "llm_reported_rank": 35,
+    "retrieved_rank": 6,
+    "rag_score": 0.41608625650405884,
+    "reason": "",
+    "service": {
+      "_file": "fast_food_restaurants_usa_top_50_chains.json",
+      "_tool": "fast_food_restaurants_usa_top_50_chains",
+      "api_id": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+      "category": "Food",
+      "description": "**10 results per request. Use page number for Pagination.**",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "AZ",
+            "description": "",
+            "name": "state",
+            "type": "string"
+          },
+          {
+            "default": "Subway",
+            "description": "",
+            "name": "restaurantChainName",
+            "type": "string"
+          },
+          {
+            "default": "0",
+            "description": "",
+            "name": "page",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "GET all Restaurants by {Chain} & {State}",
+      "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence. Sign up now to get access!",
+      "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "toolbench_endpoint_description": "**10 results per request. Use page number for Pagination.**",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "**10 results per request. Use page number for Pagination.**",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET all Restaurants by {Chain} & {State}",
+        "endpoint_url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/{restaurantchainname}/location/state/{state}/{page}",
+        "file_name": "fast_food_restaurants_usa_top_50_chains.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+        "tool_file_found": true,
+        "tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+        "toolbench_relative_path": "Food/fast_food_restaurants_usa_top_50_chains.json"
+      },
+      "toolbench_tool_description": "Our Fast Food Restaurants API provides you with a comprehensive database of the most popular fast food chains, allowing you to access vital information about their locations, hours and web presence.\n\nSign up now to get access!",
+      "toolbench_tool_name": "Fast Food Restaurants USA - TOP 50 Chains",
+      "url": "https://fast-food-restaurants-usa-top-50-chains.p.rapidapi.com/restaurants-top/{restaurantchainname}/location/state/{state}/{page}",
+      "qos": {
+        "availability": 0.9912,
+        "rt_s": 0.46699999999999997,
+        "tp_kbps": 8.565000000000001,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.55,
+    "qos_llm_rank": 33
+  },
+  {
+    "api_id": "travel_advisor_restaurant_filters_v2_list",
+    "candidate_id": "C36",
+    "mode_rank": 36,
+    "llm_reported_rank": 36,
+    "retrieved_rank": 11,
+    "rag_score": 0.3784710168838501,
+    "reason": "",
+    "service": {
+      "_file": "travel_advisor.json",
+      "_tool": "travel_advisor",
+      "api_id": "travel_advisor_restaurant_filters_v2_list",
+      "category": "Transportation",
+      "description": "Get available filters for listing restaurants",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "USD",
+            "description": "The currency code",
+            "name": "currency",
+            "type": "STRING"
+          },
+          {
+            "default": "km",
+            "description": "One of the followings : km|mi",
+            "name": "units",
+            "type": "STRING"
+          },
+          {
+            "default": "en_US",
+            "description": "The language code",
+            "name": "lang",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "restaurant-filters/v2/list",
+      "tool_description": "This API helps to query realtime Flights prices, Hotels booking, Restaurants, Attracting locations, etc… to create a travelling site like tripadvisor.com",
+      "tool_name": "Travel Advisor",
+      "toolbench_endpoint_description": "Get available filters for listing restaurants",
+      "toolbench_enrichment": {
+        "category": "Transportation",
+        "endpoint_description": "Get available filters for listing restaurants",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "restaurant-filters/v2/list",
+        "endpoint_url": "https://travel-advisor.p.rapidapi.com/restaurant-filters/v2/list",
+        "file_name": "travel_advisor.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API helps to query realtime Flights prices, Hotels booking, Restaurants, Attracting locations, etc… to create a travelling site like tripadvisor.com",
+        "tool_file_found": true,
+        "tool_name": "Travel Advisor",
+        "toolbench_relative_path": "Transportation/travel_advisor.json"
+      },
+      "toolbench_tool_description": "This API helps to query realtime Flights prices, Hotels booking, Restaurants, Attracting locations, etc… to create a travelling site like tripadvisor.com",
+      "toolbench_tool_name": "Travel Advisor",
+      "url": "https://travel-advisor.p.rapidapi.com/restaurant-filters/v2/list",
+      "qos": {
+        "availability": 0.9823,
+        "rt_s": 0.515,
+        "tp_kbps": 11.65,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.53,
+    "qos_llm_rank": 34
+  },
+  {
+    "api_id": "restaurant_booking_management_restaurantsite",
+    "candidate_id": "C28",
+    "mode_rank": 37,
+    "llm_reported_rank": 37,
+    "retrieved_rank": 22,
+    "rag_score": 0.360528826713562,
+    "reason": "",
+    "service": {
+      "_file": "restaurant_booking_management.json",
+      "_tool": "restaurant_booking_management",
+      "api_id": "restaurant_booking_management_restaurantsite",
+      "category": "Food",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "restaurantsite",
+      "tool_description": "To Handel Orders , Payments , Menu and Restaurants Registrations",
+      "tool_name": "RESTAURANT BOOKING MANAGEMENT",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "restaurantsite",
+        "endpoint_url": "https://restaurant-booking-management1.p.rapidapi.com/234",
+        "file_name": "restaurant_booking_management.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "To Handel Orders , Payments , Menu and Restaurants Registrations",
+        "tool_file_found": true,
+        "tool_name": "RESTAURANT BOOKING MANAGEMENT",
+        "toolbench_relative_path": "Food/restaurant_booking_management.json"
+      },
+      "toolbench_tool_description": "To Handel Orders , Payments , Menu and Restaurants Registrations",
+      "toolbench_tool_name": "RESTAURANT BOOKING MANAGEMENT",
+      "url": "https://restaurant-booking-management1.p.rapidapi.com/234",
+      "qos": {
+        "availability": 0.9587,
+        "rt_s": 0.595,
+        "tp_kbps": 11.764,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.49,
+    "qos_llm_rank": 35
+  },
+  {
+    "api_id": "favoritefoodapi_get_all_favorite_food",
+    "candidate_id": "C19",
+    "mode_rank": 38,
+    "llm_reported_rank": 38,
+    "retrieved_rank": 4,
+    "rag_score": 0.45724329352378845,
+    "reason": "",
+    "service": {
+      "_file": "favoritefoodapi.json",
+      "_tool": "favoritefoodapi",
+      "api_id": "favoritefoodapi_get_all_favorite_food",
+      "category": "Food",
+      "description": "This endpoint will return all my favorite Cameroonian dishes",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get All Favorite Food",
+      "tool_description": "This Api Holds some of the Favorite Dishes I fancy from Cameroon",
+      "tool_name": "favoriteFoodApi",
+      "toolbench_endpoint_description": "This endpoint will return all my favorite Cameroonian dishes",
+      "toolbench_enrichment": {
+        "category": "Food",
+        "endpoint_description": "This endpoint will return all my favorite Cameroonian dishes",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get All Favorite Food",
+        "endpoint_url": "https://favoritefoodapi.p.rapidapi.com/food/api/v1/favorites",
+        "file_name": "favoritefoodapi.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This Api Holds some of the Favorite Dishes I fancy from Cameroon",
+        "tool_file_found": true,
+        "tool_name": "favoriteFoodApi",
+        "toolbench_relative_path": "Food/favoritefoodapi.json"
+      },
+      "toolbench_tool_description": "This Api Holds some of the Favorite Dishes I fancy from Cameroon",
+      "toolbench_tool_name": "favoriteFoodApi",
+      "url": "https://favoritefoodapi.p.rapidapi.com/food/api/v1/favorites",
+      "qos": {
+        "availability": 0.7404,
+        "rt_s": 0.722,
+        "tp_kbps": 4.143,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.36,
+    "qos_llm_rank": 36
+  },
+  {
+    "api_id": "moviehut_random_movie_get_list_of_movies_sorted_by_imdb_rating_with_parameters",
+    "candidate_id": "C26",
+    "mode_rank": 39,
+    "llm_reported_rank": 39,
+    "retrieved_rank": 28,
+    "rag_score": 0.3517575263977051,
+    "reason": "",
+    "service": {
+      "_file": "moviehut_random_movie.json",
+      "_tool": "moviehut_random_movie",
+      "api_id": "moviehut_random_movie_get_list_of_movies_sorted_by_imdb_rating_with_parameters",
+      "category": "Movies",
+      "description": "Gets the list of movies sorted by their IMDb Rating. Query parameters like limiting, pagination and selection can be added.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "8",
+            "description": "",
+            "name": "limit",
+            "type": "STRING"
+          },
+          {
+            "default": "name",
+            "description": "",
+            "name": "select",
+            "type": "STRING"
+          },
+          {
+            "default": "5",
+            "description": "",
+            "name": "page",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "Get List of Movies Sorted by IMDb Rating (With Parameters)",
+      "tool_description": "MovieHut is a random movie suggestion API with multiple endpoints and features.",
+      "tool_name": "MovieHut - Random Movie",
+      "toolbench_endpoint_description": "Gets the list of movies sorted by their IMDb Rating. Query parameters like limiting, pagination and selection can be added.",
+      "toolbench_enrichment": {
+        "category": "Movies",
+        "endpoint_description": "Gets the list of movies sorted by their IMDb Rating. Query parameters like limiting, pagination and selection can be added.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Get List of Movies Sorted by IMDb Rating (With Parameters)",
+        "endpoint_url": "https://moviehut-random-movie.p.rapidapi.com/api/movies",
+        "file_name": "moviehut_random_movie.json",
+        "optional_parameter_count": 3,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "MovieHut is a random movie suggestion API with  multiple endpoints and features.",
+        "tool_file_found": true,
+        "tool_name": "MovieHut -  Random Movie",
+        "toolbench_relative_path": "Movies/moviehut_random_movie.json"
+      },
+      "toolbench_tool_description": "MovieHut is a random movie suggestion API with  multiple endpoints and features.",
+      "toolbench_tool_name": "MovieHut -  Random Movie",
+      "url": "https://moviehut-random-movie.p.rapidapi.com/api/movies",
+      "qos": {
+        "availability": 0.1681,
+        "rt_s": 0.243,
+        "tp_kbps": 12.345,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.31,
+    "qos_llm_rank": 38
+  },
+  {
+    "api_id": "abir82_bollywood_recommendations_fetch_movies",
+    "candidate_id": "C01",
+    "mode_rank": 40,
+    "llm_reported_rank": 40,
+    "retrieved_rank": 39,
+    "rag_score": 0.3409286141395569,
+    "reason": "",
+    "service": {
+      "_file": "abir82_bollywood_recommendations.json",
+      "_tool": "abir82_bollywood_recommendations",
+      "api_id": "abir82_bollywood_recommendations_fetch_movies",
+      "category": "Movies",
+      "description": "This Endpoint allows to get a list of movies from 2000 to 2019 based on the genre selected by the user.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "2018",
+            "description": "",
+            "name": "year",
+            "type": "STRING"
+          },
+          {
+            "default": "Comedy",
+            "description": "",
+            "name": "genre",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "Fetch Movies",
+      "tool_description": "This API recommends a list of Bollywood movies from 2000 to 2019 based on the genre and year selected by the user",
+      "tool_name": "Abir82 Bollywood Recommendations",
+      "toolbench_endpoint_description": "This Endpoint allows to get a list of movies from 2000 to 2019 based on the genre selected by the user.",
+      "toolbench_enrichment": {
+        "category": "Movies",
+        "endpoint_description": "This Endpoint allows to get a list of movies from 2000 to 2019 based on the genre selected by the user.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "Fetch Movies",
+        "endpoint_url": "https://abir82-bollywood-recommendations.p.rapidapi.com/",
+        "file_name": "abir82_bollywood_recommendations.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "This API recommends a list of Bollywood movies from 2000 to 2019 based on the genre and year selected by the user",
+        "tool_file_found": true,
+        "tool_name": "Abir82 Bollywood Recommendations",
+        "toolbench_relative_path": "Movies/abir82_bollywood_recommendations.json"
+      },
+      "toolbench_tool_description": "This API recommends a list of Bollywood movies from 2000 to 2019 based on the genre and year selected by the user",
+      "toolbench_tool_name": "Abir82 Bollywood Recommendations",
+      "url": "https://abir82-bollywood-recommendations.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.8407,
+        "rt_s": 1.103,
+        "tp_kbps": 1.813,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.27,
+    "qos_llm_rank": 39
+  }
+]

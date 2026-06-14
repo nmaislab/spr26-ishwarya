@@ -25,6 +25,43 @@ python -m pip install -r requirements.txt
 The scripts require the project dependencies used by the repository, including
 `pandas`, `scipy`, `openpyxl`, and `matplotlib`.
 
+## Run Everything
+
+To run the complete documented post-processing workflow with one command:
+
+```bash
+python scripts/run_all_postprocessing.py "$RUN_DIR"
+```
+
+For your local development run:
+
+```bash
+python scripts/run_all_postprocessing.py results/logs/DEV_RUN/fireworks_gpt-oss-120b
+```
+
+This wrapper runs the standalone analysis entry points in the recommended
+order:
+
+1. `consolidate_composition_results.py`
+2. `run_ranking_eval.py`
+3. `generate_weight_sensitivity_tables.py`
+4. `generate_research_figures.py`
+
+Helper modules such as `figure_data.py`, `path_utils.py`, and
+`ranking_metrics.py` are imported by those entry points. The individual
+`plot_*.py` scripts are covered by `generate_research_figures.py`.
+
+Useful options:
+
+```bash
+python scripts/run_all_postprocessing.py "$RUN_DIR" --dry-run
+python scripts/run_all_postprocessing.py "$RUN_DIR" --path-query q02
+python scripts/run_all_postprocessing.py "$RUN_DIR" \
+  --panel-queries q01,q02,q03,q04,q05 \
+  --panel-queries q06,q07,q08,q09,q10 \
+  --panel-queries q11,q12,q13,q14,q15
+```
+
 ## Recommended Post-Run Order
 
 Run the analysis in this order after the experiment completes:

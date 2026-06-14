@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":0,"reason":"searches hotels, not restaurants"},
+{"candidate_id":"C22","label":0,"reason":"provides hotel city clusters"},
+{"candidate_id":"C23","label":0,"reason":"searches flight locations only"},
+{"candidate_id":"C24","label":0,"reason":"returns directions, not restaurant data"},
+{"candidate_id":"C25","label":0,"reason":"finds location info, not restaurants"},
+{"candidate_id":"C26","label":0,"reason":"recipe search, unrelated"},
+{"candidate_id":"C27","label":0,"reason":"real estate listings, unrelated"},
+{"candidate_id":"C28","label":0,"reason":"only returns reviews, no search"},
+{"candidate_id":"C29","label":0,"reason":"gets activities, not restaurant search"},
+{"candidate_id":"C30","label":0,"reason":"store locations, not restaurants"},
+{"candidate_id":"C31","label":0,"reason":"target store locations, not restaurants"},
+{"candidate_id":"C32","label":0,"reason":"lists locations by place id, not search"},
+{"candidate_id":"C33","label":0,"reason":"provides filters, not restaurant results"},
+{"candidate_id":"C34","label":0,"reason":"searches by query string, not location-based"},
+{"candidate_id":"C35","label":0,"reason":"vegetarian restaurants limited to cities, no location param"},
+{"candidate_id":"C36","label":0,"reason":"deactivates venue, unrelated"},
+{"candidate_id":"C37","label":0,"reason":"searches countries, unrelated"},
+{"candidate_id":"C38","label":0,"reason":"hotel reviews, unrelated"},
+{"candidate_id":"C39","label":0,"reason":"restaurant detail, not search"},
+{"candidate_id":"C40","label":1,"reason":"searches restaurants using location_id"}
+]
+}

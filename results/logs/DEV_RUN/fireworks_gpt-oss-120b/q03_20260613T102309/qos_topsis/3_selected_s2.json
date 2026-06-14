@@ -1,0 +1,83 @@
+[
+  {
+    "api_id": "porn_filter_filter",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 38,
+    "rag_score": 0.39843857288360596,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "porn_filter.json",
+      "_tool": "porn_filter",
+      "api_id": "porn_filter_filter",
+      "category": "Monitoring",
+      "description": "Check if a website is on our porn blacklist.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "pornhub.com",
+            "description": "",
+            "name": "domain",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "filter",
+      "tool_description": "Check if a website contains adult content.",
+      "tool_name": "Porn Filter",
+      "toolbench_endpoint_description": "Check if a website is on our porn blacklist.",
+      "toolbench_enrichment": {
+        "category": "Monitoring",
+        "endpoint_description": "Check if a website is on our porn blacklist.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "filter",
+        "endpoint_url": "https://porn-filter2.p.rapidapi.com/",
+        "file_name": "porn_filter.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 1,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Check if a website contains adult content.",
+        "tool_file_found": true,
+        "tool_name": "Porn Filter",
+        "toolbench_relative_path": "Monitoring/porn_filter.json"
+      },
+      "toolbench_tool_description": "Check if a website contains adult content.",
+      "toolbench_tool_name": "Porn Filter",
+      "url": "https://porn-filter2.p.rapidapi.com/",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.633,
+        "tp_kbps": 614.285,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9613114480690275,
+    "topsis_rank": 1,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_topsis",
+      "subtask_id": "2",
+      "api_id": "porn_filter_filter",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9613114480690275
+    }
+  }
+]

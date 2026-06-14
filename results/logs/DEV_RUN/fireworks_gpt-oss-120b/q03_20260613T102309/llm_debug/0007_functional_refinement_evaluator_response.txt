@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C21","label":0,"reason":"retrieves sender names, not sending SMS"},
+{"candidate_id":"C22","label":0,"reason":"only tests service latency"},
+{"candidate_id":"C23","label":0,"reason":"sends only 2FA tokens, not generic alerts"},
+{"candidate_id":"C24","label":0,"reason":"registers webhook, does not send SMS"},
+{"candidate_id":"C25","label":0,"reason":"estimates cost, does not send"},
+{"candidate_id":"C26","label":0,"reason":"fetches messages, not sending"},
+{"candidate_id":"C27","label":1,"reason":"schedules SMS messages for later delivery"},
+{"candidate_id":"C28","label":1,"reason":"sends SMS campaign to recipients"},
+{"candidate_id":"C29","label":1,"reason":"sends SMS campaign to recipients"},
+{"candidate_id":"C30","label":1,"reason":"sends SMS to list/array"},
+{"candidate_id":"C31","label":1,"reason":"sends personalized SMS messages"},
+{"candidate_id":"C32","label":1,"reason":"sends single SMS message"},
+{"candidate_id":"C33","label":0,"reason":"sends Viber, not SMS"},
+{"candidate_id":"C34","label":0,"reason":"creates contact, no sending"},
+{"candidate_id":"C35","label":0,"reason":"creates contact, no sending"},
+{"candidate_id":"C36","label":0,"reason":"creates group, no sending"},
+{"candidate_id":"C37","label":0,"reason":"gets device info, not sending"},
+{"candidate_id":"C38","label":0,"reason":"retrieves received messages, not sending"},
+{"candidate_id":"C39","label":0,"reason":"retrieves sent messages, not sending"},
+{"candidate_id":"C40","label":0,"reason":"TikTok data, unrelated to SMS"}
+]
+}

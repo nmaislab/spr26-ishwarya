@@ -1,0 +1,7 @@
+{
+  "query_id": "q02",
+  "excel": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q02_20260613T101802/evaluation/query_q02_candidate_api_rankings.xlsx",
+  "rows_json": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q02_20260613T101802/evaluation/query_q02_candidate_api_rankings_rows.json",
+  "source": "retrieval_stage_functional_refinement",
+  "cache": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q02_20260613T101802/evaluation/functional_match_cache.json"
+}

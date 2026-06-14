@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C01","label":0,"reason":"Amazon product reviews"},
+{"candidate_id":"C02","label":0,"reason":"Amazon product reviews"},
+{"candidate_id":"C03","label":0,"reason":"Amazon product reviews"},
+{"candidate_id":"C04","label":0,"reason":"Amazon product reviews"},
+{"candidate_id":"C05","label":0,"reason":"Amazon product search"},
+{"candidate_id":"C06","label":0,"reason":"Amazon product reviews"},
+{"candidate_id":"C07","label":0,"reason":"Apartment reviews"},
+{"candidate_id":"C08","label":0,"reason":"Recipe information"},
+{"candidate_id":"C09","label":0,"reason":"Amazon search results"},
+{"candidate_id":"C10","label":0,"reason":"Beer list data"},
+{"candidate_id":"C11","label":0,"reason":"User info retrieval"},
+{"candidate_id":"C12","label":0,"reason":"Recipe review replies"},
+{"candidate_id":"C13","label":0,"reason":"Burger details"},
+{"candidate_id":"C14","label":0,"reason":"Cart item removal"},
+{"candidate_id":"C15","label":0,"reason":"Food nutrient data"},
+{"candidate_id":"C16","label":0,"reason":"City names only"},
+{"candidate_id":"C17","label":1,"reason":"Provides restaurant details"},
+{"candidate_id":"C18","label":0,"reason":"Favorite dishes list"},
+{"candidate_id":"C19","label":0,"reason":"News content search"},
+{"candidate_id":"C20","label":0,"reason":"Indian food nutrients"}
+]
+}

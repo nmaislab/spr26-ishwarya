@@ -1,0 +1,34 @@
+{
+  "run_folder": "/Users/ishwaryapns/Documents/AutoLLMCompose/spr26-ishwarya/results/logs/DEV_RUN/fireworks_gpt-oss-120b",
+  "output_dir": "/Users/ishwaryapns/Documents/AutoLLMCompose/spr26-ishwarya/results/logs/DEV_RUN/fireworks_gpt-oss-120b/summary",
+  "all_15_query_composition_results_csv": "/Users/ishwaryapns/Documents/AutoLLMCompose/spr26-ishwarya/results/logs/DEV_RUN/fireworks_gpt-oss-120b/summary/all_15_query_composition_results.csv",
+  "aggregate_mode_scores_csv": "/Users/ishwaryapns/Documents/AutoLLMCompose/spr26-ishwarya/results/logs/DEV_RUN/fireworks_gpt-oss-120b/summary/aggregate_mode_scores.csv",
+  "total_query_runs_available_in_input": 4,
+  "total_query_runs_found": 4,
+  "total_metric_rows_written": 16,
+  "query_ids_found": [
+    "q01",
+    "q02",
+    "q03",
+    "q07"
+  ],
+  "modes_found": [
+    "no_qos",
+    "qos_hybrid",
+    "qos_pure_llm",
+    "qos_topsis"
+  ],
+  "expected_modes_missing_by_query": {},
+  "tied_best_queries": [
+    {
+      "Query_ID": "q02",
+      "Best_Modes": [
+        "qos_hybrid",
+        "qos_pure_llm"
+      ],
+      "Best_Score": "1"
+    }
+  ],
+  "query_ids_excluded_by_filter": [],
+  "aggregate_rows_written": 4
+}

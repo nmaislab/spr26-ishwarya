@@ -1,0 +1,162 @@
+{
+  "veggie_me_restaurants": {
+    "qos_llm_score": 0.97,
+    "qos_llm_rank": 1
+  },
+  "bbc_good_food_api_collection_recipes": {
+    "qos_llm_score": 0.94,
+    "qos_llm_rank": 2
+  },
+  "auto_suggest_queries_suggestqueries": {
+    "qos_llm_score": 0.9,
+    "qos_llm_rank": 3
+  },
+  "bbc_good_food_api_recipe_by_name_id": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 4
+  },
+  "category_list_19_register": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 5
+  },
+  "e_mailer_420_mail": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 6
+  },
+  "restaurants_reviews": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 7
+  },
+  "suggestic_generate_a_simple_meal_plan": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 8
+  },
+  "beverages_and_desserts_get_all_the_desserts": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 9
+  },
+  "fast_food_restaurants_usa_top_50_chains_get_all_city_names": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 10
+  },
+  "testing_v3_validateemail": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 11
+  },
+  "api2cart_listproductoptions": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 12
+  },
+  "beer_lover_get_the_top_50_beers": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 13
+  },
+  "contextio_getallapplicationwebhooks": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 14
+  },
+  "gmail_updatesendasalias": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 15
+  },
+  "keyword_suggestion_api_comparisons": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 16
+  },
+  "venue_deactivatevenue": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 17
+  },
+  "venue_validatecluster": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 18
+  },
+  "yummly_feeds_auto_complete": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 19
+  },
+  "bespoke_diet_generator_get_user_s_diet_for_a_specific_day": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 20
+  },
+  "emailjs_send_form": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 21
+  },
+  "mailjet_getcampaignoverviewlist": {
+    "qos_llm_score": 0.61,
+    "qos_llm_rank": 22
+  },
+  "bbc_good_food_api_search_for_recipes": {
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 23
+  },
+  "create_game_rooms_get_rooms_as_response": {
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 24
+  },
+  "ocw_createacustomtoaddress": {
+    "qos_llm_score": 0.6,
+    "qos_llm_rank": 25
+  },
+  "food_calories_get_foods_by_category_name": {
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 26
+  },
+  "keyword_suggestion_api_questions": {
+    "qos_llm_score": 0.59,
+    "qos_llm_rank": 27
+  },
+  "suggestic_generate_a_simple_meal_plan-2": {
+    "qos_llm_score": 0.58,
+    "qos_llm_rank": 28
+  },
+  "tasty_recipes_auto_complete": {
+    "qos_llm_score": 0.57,
+    "qos_llm_rank": 29
+  },
+  "the_fork_the_spoon_locations_v2_list": {
+    "qos_llm_score": 0.57,
+    "qos_llm_rank": 30
+  },
+  "e_commerce_top_rated_by_category": {
+    "qos_llm_score": 0.56,
+    "qos_llm_rank": 31
+  },
+  "cartify_getordersbyemail": {
+    "qos_llm_score": 0.55,
+    "qos_llm_rank": 32
+  },
+  "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state": {
+    "qos_llm_score": 0.55,
+    "qos_llm_rank": 33
+  },
+  "travel_advisor_restaurant_filters_v2_list": {
+    "qos_llm_score": 0.53,
+    "qos_llm_rank": 34
+  },
+  "restaurant_booking_management_restaurantsite": {
+    "qos_llm_score": 0.49,
+    "qos_llm_rank": 35
+  },
+  "favoritefoodapi_get_all_favorite_food": {
+    "qos_llm_score": 0.36,
+    "qos_llm_rank": 36
+  },
+  "mailjet_getcampaigndraftlist": {
+    "qos_llm_score": 0.36,
+    "qos_llm_rank": 37
+  },
+  "moviehut_random_movie_get_list_of_movies_sorted_by_imdb_rating_with_parameters": {
+    "qos_llm_score": 0.31,
+    "qos_llm_rank": 38
+  },
+  "abir82_bollywood_recommendations_fetch_movies": {
+    "qos_llm_score": 0.27,
+    "qos_llm_rank": 39
+  },
+  "smtp_e_mail_sender_send_test_email": {
+    "qos_llm_score": 0.17,
+    "qos_llm_rank": 40
+  }
+}

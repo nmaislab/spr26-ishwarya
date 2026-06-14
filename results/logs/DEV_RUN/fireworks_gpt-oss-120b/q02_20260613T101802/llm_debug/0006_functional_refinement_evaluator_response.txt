@@ -1,0 +1,24 @@
+{
+"matches": [
+{"candidate_id":"C01","label":0,"reason":"irrelevant domain (movies)"},
+{"candidate_id":"C02","label":0,"reason":"eCommerce product options, not email"},
+{"candidate_id":"C03","label":0,"reason":"search query suggestions, unrelated"},
+{"candidate_id":"C04","label":0,"reason":"recipes data, not email"},
+{"candidate_id":"C05","label":0,"reason":"recipe details, not email"},
+{"candidate_id":"C06","label":0,"reason":"recipe search, unrelated"},
+{"candidate_id":"C07","label":0,"reason":"beer data, not email"},
+{"candidate_id":"C08","label":0,"reason":"diet plan, unrelated"},
+{"candidate_id":"C09","label":0,"reason":"desserts list, not email"},
+{"candidate_id":"C10","label":0,"reason":"retrieves orders, not sending"},
+{"candidate_id":"C11","label":0,"reason":"category register, unrelated"},
+{"candidate_id":"C12","label":0,"reason":"lists webhooks, not email"},
+{"candidate_id":"C13","label":0,"reason":"game rooms generation, unrelated"},
+{"candidate_id":"C14","label":0,"reason":"eCommerce top items, not email"},
+{"candidate_id":"C15","label":1,"reason":"sends email directly"},
+{"candidate_id":"C16","label":1,"reason":"email sending via template"},
+{"candidate_id":"C17","label":0,"reason":"city names list, unrelated"},
+{"candidate_id":"C18","label":0,"reason":"restaurants list, not email"},
+{"candidate_id":"C19","label":0,"reason":"favorite food list, unrelated"},
+{"candidate_id":"C20","label":0,"reason":"food calories, unrelated"}
+]
+}

@@ -1,0 +1,16 @@
+{
+  "query_id": "q02",
+  "rows_json": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q02_20260613T101802/evaluation/query_q02_retrieval_functional_match_rows.json",
+  "cache": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q02_20260613T101802/evaluation/functional_match_cache.json",
+  "total_rows": 120,
+  "total_subtasks": 3,
+  "total_candidates_labeled": 120,
+  "functional_match_count": 10,
+  "functional_mismatch_count": 110,
+  "functional_match_rate": 0.083333,
+  "agent": "FunctionalRefinerAgent",
+  "agent_name": "functional_refiner_agent",
+  "stage": "functional_refinement",
+  "legacy_stage": "retrieval_functional_match",
+  "agent_mode": "llm_binary_functional_labeling"
+}

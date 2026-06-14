@@ -1,0 +1,65 @@
+{
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "planner_top_k": 1,
+  "planner_requested_top_k": 1,
+  "planner_top_k_source": "workflow_hybrid_selector",
+  "hybrid_workflow_selector": "relative_to_best",
+  "candidate_cap_per_subtask": 5,
+  "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+  "hybrid_no_functional_match_fallback": false,
+  "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+  "hybrid_pool_size_before_expansion": 3,
+  "hybrid_pool_size_after_expansion": 3,
+  "hybrid_pool_size_after_pareto": 1,
+  "pareto_filtered_count": 2,
+  "pareto_filter_fallback_used": false,
+  "available_ranked": 40,
+  "functional_candidate_count": 3,
+  "workflow_candidate_pool_count": 1,
+  "selected_count": 1,
+  "invalid_ranked_rows": 0,
+  "hybrid_total_combinations_before_cap": 2,
+  "hybrid_total_combinations_after_cap": 2,
+  "hybrid_max_workflow_combinations": 5000,
+  "hybrid_pool_trimmed": false,
+  "hybrid_pool_sizes_before_cap": {
+    "1": 1,
+    "2": 2,
+    "3": 1
+  },
+  "hybrid_pool_sizes_after_cap": {
+    "1": 1,
+    "2": 2,
+    "3": 1
+  },
+  "planner_candidates_per_subtask": 1,
+  "selected_api_id": "locationiq_limitbyviewbox",
+  "selected_api_ids": [
+    "locationiq_limitbyviewbox"
+  ],
+  "selected_by": "workflow_hybrid_selector",
+  "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+  "balanced_relative_qos_score": 1.0,
+  "projected_composition_score": 1.0,
+  "projected_normalized_qos_score": 1.0,
+  "workflow_total_response_time": 0.4055,
+  "workflow_bottleneck_throughput": 13.245,
+  "workflow_average_availability": 0.9990333333333333,
+  "workflow_qos_score": 1.0,
+  "workflow_topsis_score": null,
+  "workflow_topsis_weights": {
+    "response_time": 0.3333333333333333,
+    "throughput": 0.3333333333333333,
+    "availability": 0.3333333333333333
+  },
+  "workflow_topsis_rank": null,
+  "workflow_selector_fallback_used": false,
+  "planner_candidate_api_ids": [
+    "locationiq_limitbyviewbox"
+  ],
+  "planner_selected_rank": 1,
+  "planner_override_rank1": false,
+  "planner_override_reason": null,
+  "planner_selected_api_id": "locationiq_limitbyviewbox"
+}

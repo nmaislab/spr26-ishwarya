@@ -1,0 +1,162 @@
+{
+  "porn_filter_filter": {
+    "qos_llm_score": 0.98,
+    "qos_llm_rank": 1
+  },
+  "amazon_web_services_aws_guardduty_detector_detector_detectorid": {
+    "qos_llm_score": 0.945,
+    "qos_llm_rank": 2
+  },
+  "domain_information_domain_information": {
+    "qos_llm_score": 0.855,
+    "qos_llm_rank": 3
+  },
+  "spamspy_comprehend": {
+    "qos_llm_score": 0.826,
+    "qos_llm_rank": 4
+  },
+  "weblasso_get_callback_url_status": {
+    "qos_llm_score": 0.727,
+    "qos_llm_rank": 5
+  },
+  "penteston_api_v1_add_test": {
+    "qos_llm_score": 0.692,
+    "qos_llm_rank": 6
+  },
+  "vortex_postregister": {
+    "qos_llm_score": 0.689,
+    "qos_llm_rank": 7
+  },
+  "penteston_api_v1_start_scan": {
+    "qos_llm_score": 0.687,
+    "qos_llm_rank": 8
+  },
+  "xss_shield_get_detect": {
+    "qos_llm_score": 0.686,
+    "qos_llm_rank": 9
+  },
+  "ics_cert_advisories_get_all_advisories": {
+    "qos_llm_score": 0.684,
+    "qos_llm_rank": 10
+  },
+  "roco_api_get_rogues_by_name": {
+    "qos_llm_score": 0.684,
+    "qos_llm_rank": 11
+  },
+  "seo_automations_extract_sitemap_xml_as_json": {
+    "qos_llm_score": 0.678,
+    "qos_llm_rank": 12
+  },
+  "tweetfeed_v1": {
+    "qos_llm_score": 0.676,
+    "qos_llm_rank": 13
+  },
+  "ai_url_shortner_welcome": {
+    "qos_llm_score": 0.674,
+    "qos_llm_rank": 14
+  },
+  "exerra_phishing_check_get_stats": {
+    "qos_llm_score": 0.674,
+    "qos_llm_rank": 15
+  },
+  "malicious_urls_check_url": {
+    "qos_llm_score": 0.674,
+    "qos_llm_rank": 16
+  },
+  "sus_guru_malicious_website_ai_detector_api_api_queue": {
+    "qos_llm_score": 0.673,
+    "qos_llm_rank": 17
+  },
+  "webup_check_keyword": {
+    "qos_llm_score": 0.672,
+    "qos_llm_rank": 18
+  },
+  "corbado_emaillinksend": {
+    "qos_llm_score": 0.669,
+    "qos_llm_rank": 19
+  },
+  "the_content_monitoring_api_create_detector": {
+    "qos_llm_score": 0.669,
+    "qos_llm_rank": 20
+  },
+  "sus_guru_malicious_website_ai_detector_api_api_scan-2": {
+    "qos_llm_score": 0.667,
+    "qos_llm_rank": 21
+  },
+  "netdetective_query-2": {
+    "qos_llm_score": 0.666,
+    "qos_llm_rank": 22
+  },
+  "corbado_webauthnassociatestart": {
+    "qos_llm_score": 0.663,
+    "qos_llm_rank": 23
+  },
+  "greip_validateemail": {
+    "qos_llm_score": 0.663,
+    "qos_llm_rank": 24
+  },
+  "loginllama_check_login": {
+    "qos_llm_score": 0.661,
+    "qos_llm_rank": 25
+  },
+  "quantum_ready_check_checkquantum": {
+    "qos_llm_score": 0.661,
+    "qos_llm_rank": 26
+  },
+  "weblasso_get_scan_id": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 27
+  },
+  "penteston_api_v1_add_target": {
+    "qos_llm_score": 0.659,
+    "qos_llm_rank": 28
+  },
+  "ip_threat_lookup_iplookup": {
+    "qos_llm_score": 0.658,
+    "qos_llm_rank": 29
+  },
+  "pawscan_scan": {
+    "qos_llm_score": 0.658,
+    "qos_llm_rank": 30
+  },
+  "phishyscan_api_scan": {
+    "qos_llm_score": 0.657,
+    "qos_llm_rank": 31
+  },
+  "sus_guru_malicious_website_ai_detector_api_api_report_report_id": {
+    "qos_llm_score": 0.656,
+    "qos_llm_rank": 32
+  },
+  "weblasso_get_scan_status": {
+    "qos_llm_score": 0.656,
+    "qos_llm_rank": 33
+  },
+  "urlchecker_decodelink": {
+    "qos_llm_score": 0.655,
+    "qos_llm_rank": 34
+  },
+  "weblasso_get_scan_results": {
+    "qos_llm_score": 0.655,
+    "qos_llm_rank": 35
+  },
+  "url_shortener_track": {
+    "qos_llm_score": 0.653,
+    "qos_llm_rank": 36
+  },
+  "sus_guru_malicious_website_ai_detector_api_api_scan": {
+    "qos_llm_score": 0.649,
+    "qos_llm_rank": 37
+  },
+  "javascript_vulnerability_scan_analyzeurl": {
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 38
+  },
+  "greip_asnlookup": {
+    "qos_llm_score": 0.11,
+    "qos_llm_rank": 39
+  },
+  "netdetective_query": {
+    "qos_llm_score": 0.0,
+    "qos_llm_rank": 40
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "meteo_data_api_get_info": {
+    "qos_llm_score": 0.98,
+    "qos_llm_rank": 1
+  },
+  "ind_nutrient_api_view_food_items_by_type": {
+    "qos_llm_score": 0.72,
+    "qos_llm_rank": 2
+  },
+  "amazon_store_scraper_get_amazon_product_reviews": {
+    "qos_llm_score": 0.71,
+    "qos_llm_rank": 3
+  },
+  "bbc_good_food_api_recipe_by_name_id": {
+    "qos_llm_score": 0.71,
+    "qos_llm_rank": 4
+  },
+  "beer_lover_get_the_top_50_beers": {
+    "qos_llm_score": 0.71,
+    "qos_llm_rank": 5
+  },
+  "specrom_news_api_fetch_parsed_news_article_by_url_id": {
+    "qos_llm_score": 0.71,
+    "qos_llm_rank": 6
+  },
+  "yummly_feeds_auto_complete": {
+    "qos_llm_score": 0.71,
+    "qos_llm_rank": 7
+  },
+  "amazon_data_scapper_get_product_reviews": {
+    "qos_llm_score": 0.7,
+    "qos_llm_rank": 8
+  },
+  "restaurants_reviews": {
+    "qos_llm_score": 0.7,
+    "qos_llm_rank": 9
+  },
+  "suggestic_generate_a_simple_meal_plan": {
+    "qos_llm_score": 0.7,
+    "qos_llm_rank": 10
+  },
+  "target_com_store_product_reviews_locations_data_target_store_location_search": {
+    "qos_llm_score": 0.7,
+    "qos_llm_rank": 11
+  },
+  "yelpapi_getbusinesses": {
+    "qos_llm_score": 0.7,
+    "qos_llm_rank": 12
+  },
+  "bigoven_getreviewreplies": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 13
+  },
+  "burgers_hub_get_specific_burger": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 14
+  },
+  "fast_food_restaurants_usa_top_50_chains_get_all_city_names": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 15
+  },
+  "jumia_service_get_product_reviews": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 16
+  },
+  "unofficial_shein_reviews_list": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 17
+  },
+  "yummly_feeds_search-2": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 18
+  },
+  "apartments_com_reviews": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 19
+  },
+  "bbs_amazon_data_scraper_get_amazon_search_results": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 20
+  },
+  "bespoke_diet_generator_get_user_s_information": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 21
+  },
+  "specrom_news_api_document_sentiments_score": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 22
+  },
+  "steam_app_detail": {
+    "qos_llm_score": 0.68,
+    "qos_llm_rank": 23
+  },
+  "amazon_data_scraper_v2_get_product_s_reviews": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 24
+  },
+  "amazon_india_web_scraper_get_product_reviews": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 25
+  },
+  "catalogapi_remove_item": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 26
+  },
+  "edamam_food_and_grocery_database_api_food_database_v2_nutrients-2": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 27
+  },
+  "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 28
+  },
+  "suggestic_generate_a_simple_meal_plan-2": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 29
+  },
+  "the_recipes_search_by_website_or_blog": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 30
+  },
+  "yelpapi_getbusinessesbytransaction": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 31
+  },
+  "yummly_reviews_list": {
+    "qos_llm_score": 0.67,
+    "qos_llm_rank": 32
+  },
+  "amazon_product_data_get_search_data": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 33
+  },
+  "guardian_searchcontent": {
+    "qos_llm_score": 0.66,
+    "qos_llm_rank": 34
+  },
+  "amazon_data_scraper_by_kgaur_get_amazon_product_reviews": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 35
+  },
+  "unofficial_trust_pilot_consumers_detail": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 36
+  },
+  "yummly_feeds_list": {
+    "qos_llm_score": 0.65,
+    "qos_llm_rank": 37
+  },
+  "favoritefoodapi_get_all_favorite_food": {
+    "qos_llm_score": 0.57,
+    "qos_llm_rank": 38
+  },
+  "jingdong_data_service_item_reviews_detailed": {
+    "qos_llm_score": 0.31,
+    "qos_llm_rank": 39
+  },
+  "shubhankar_amazon_data_scraper_get_product_details_related_amazon_com": {
+    "qos_llm_score": 0.14,
+    "qos_llm_rank": 40
+  }
+}

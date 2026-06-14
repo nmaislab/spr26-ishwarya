@@ -1,0 +1,89 @@
+[
+  {
+    "api_id": "meteo_data_api_get_info",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 36,
+    "rag_score": 0.46623605489730835,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "meteo_data_api.json",
+      "_tool": "meteo_data_api",
+      "api_id": "meteo_data_api_get_info",
+      "category": "Advertising",
+      "description": "GET INFO DATA with location",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "RABAT",
+            "description": "",
+            "name": "location",
+            "type": "STRING"
+          },
+          {
+            "default": "",
+            "description": "",
+            "name": "api_key",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "GET INFO",
+      "tool_description": "API RETURN DATA METEO",
+      "tool_name": "METEO DATA API",
+      "toolbench_endpoint_description": "GET INFO DATA with location",
+      "toolbench_enrichment": {
+        "category": "Advertising",
+        "endpoint_description": "GET INFO DATA with location",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "GET INFO",
+        "endpoint_url": "https://meteo-data-api.p.rapidapi.com/weather",
+        "file_name": "meteo_data_api.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 2,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "API RETURN DATA METEO",
+        "tool_file_found": true,
+        "tool_name": "METEO DATA API",
+        "toolbench_relative_path": "Advertising/meteo_data_api.json"
+      },
+      "toolbench_tool_description": "API RETURN DATA METEO",
+      "toolbench_tool_name": "METEO DATA API",
+      "url": "https://meteo-data-api.p.rapidapi.com/weather",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.808,
+        "tp_kbps": 278.28,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9660568924463658,
+    "topsis_rank": 1,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_topsis",
+      "subtask_id": "2",
+      "api_id": "meteo_data_api_get_info",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9660568924463658
+    }
+  }
+]

@@ -1,0 +1,5 @@
+Mode,Query_Count,Average_QoS_Adjusted_Composition_Score,Std_QoS_Adjusted_Composition_Score,Average_Composition_Validity,Average_Composition_Completeness,Average_Functional_Coverage,Average_Normalized_QoS_Score,Average_Total_Response_Time_s,Average_Bottleneck_Throughput_kbps,Average_Average_Workflow_Availability,Complete_Composition_Count,Invalid_Composition_Count,Best_Query_Count
+no_qos,4,0.87439575,0.0417605225332,1,1,1,0.58132075,0.910875,7.607375,0.94642925,4,0,0
+qos_hybrid,4,0.97835875,0.0430195696505,1,1,1,0.92786325,0.379875,21.370875,0.99572075,4,0,4
+qos_pure_llm,4,0.92344725,0.0668823662828,1,1,1,0.744824,0.679,18.8135,0.99178325,4,0,1
+qos_topsis,4,0.504271,0.268214936781,1,1,0.416666666667,0.70868175,1.8285,330.969,0.88434575,4,0,0

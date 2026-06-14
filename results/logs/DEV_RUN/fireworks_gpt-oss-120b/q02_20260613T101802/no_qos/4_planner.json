@@ -1,0 +1,289 @@
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "The workflow searches for restaurants near the user's location, retrieves detailed reviews for those restaurants, and emails the selected recommendations to the user.",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "worldwide_restaurants_search",
+        "subtask_id": "1",
+        "action": "Search for restaurants using the user's location ID.",
+        "input_from_previous_step": "none",
+        "output_to_next_step": "restaurant_search_results",
+        "why": "Provides a list of nearby restaurants needed for the next subtask.",
+        "planner_override_reason": null,
+        "qos": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 2,
+        "api_id": "restaurants_reviews",
+        "subtask_id": "2",
+        "action": "Fetch reviews and details for the restaurants returned in step 1.",
+        "input_from_previous_step": "restaurant_search_results",
+        "output_to_next_step": "restaurant_reviews",
+        "why": "Enriches the restaurant list with reviews so the email can contain meaningful recommendations.",
+        "planner_override_reason": null,
+        "qos": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 3,
+        "api_id": "e_mailer_420_mail",
+        "subtask_id": "3",
+        "action": "Send an email containing the selected restaurant recommendations.",
+        "input_from_previous_step": "restaurant_reviews",
+        "output_to_next_step": "email_status",
+        "why": "Delivers the final recommendations to the user via email.",
+        "planner_override_reason": null,
+        "qos": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      }
+    ],
+    "subtask_coverage": [
+      {
+        "subtask_id": 1,
+        "description": "Search restaurants using an external discovery API with the user’s location",
+        "steps": [
+          1
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 2,
+        "description": "Fetch restaurant reviews or details using an external information API",
+        "steps": [
+          2
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 3,
+        "description": "Send an email with the selected restaurant recommendations",
+        "steps": [
+          3
+        ],
+        "coverage": "full"
+      }
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "worldwide_restaurants_search",
+        "subtask_id": "1",
+        "method": "POST",
+        "url": "https://worldwide-restaurants.p.rapidapi.com/search",
+        "required_parameters": [
+          {
+            "name": "location_id",
+            "source": "user_goal",
+            "value_hint": "e.g., 297704 (derived from user's location input)"
+          },
+          {
+            "name": "currency",
+            "source": "constant/default",
+            "value_hint": "USD"
+          },
+          {
+            "name": "language",
+            "source": "constant/default",
+            "value_hint": "en_US"
+          }
+        ],
+        "optional_parameters": [
+          {
+            "name": "offset",
+            "source": "constant/default",
+            "value_hint": "0"
+          }
+        ],
+        "depends_on": [],
+        "input_mapping": "none",
+        "output_mapping": "restaurant_search_results",
+        "expected_output": "A list of nearby restaurants with IDs and basic info.",
+        "planner_override_reason": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 2,
+        "api_id": "restaurants_reviews",
+        "subtask_id": "2",
+        "method": "POST",
+        "url": "https://restaurants222.p.rapidapi.com/reviews",
+        "required_parameters": [
+          {
+            "name": "location_id",
+            "source": "previous_step_output",
+            "value_hint": "Location ID from step 1 results"
+          },
+          {
+            "name": "currency",
+            "source": "constant/default",
+            "value_hint": "USD"
+          },
+          {
+            "name": "language",
+            "source": "constant/default",
+            "value_hint": "en_US"
+          }
+        ],
+        "optional_parameters": [
+          {
+            "name": "offset",
+            "source": "constant/default",
+            "value_hint": "0"
+          }
+        ],
+        "depends_on": [
+          1
+        ],
+        "input_mapping": "restaurant_search_results",
+        "output_mapping": "restaurant_reviews",
+        "expected_output": "Detailed reviews and ratings for the restaurants identified in step 1.",
+        "planner_override_reason": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      },
+      {
+        "step": 3,
+        "api_id": "e_mailer_420_mail",
+        "subtask_id": "3",
+        "method": "GET",
+        "url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}",
+        "required_parameters": [
+          {
+            "name": "sender",
+            "source": "user_goal",
+            "value_hint": "example@gmail.com"
+          },
+          {
+            "name": "password",
+            "source": "user_goal",
+            "value_hint": "example123"
+          },
+          {
+            "name": "receiver",
+            "source": "user_goal",
+            "value_hint": "receiver@gmail.com"
+          },
+          {
+            "name": "subject",
+            "source": "constant/default",
+            "value_hint": "Restaurant Recommendations"
+          },
+          {
+            "name": "body",
+            "source": "previous_step_output",
+            "value_hint": "Formatted list of restaurant names and reviews from step 2"
+          }
+        ],
+        "optional_parameters": [],
+        "depends_on": [
+          2
+        ],
+        "input_mapping": "restaurant_reviews",
+        "output_mapping": "email_status",
+        "expected_output": "Confirmation that the email was sent successfully.",
+        "planner_override_reason": null,
+        "mode": "no_qos",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false
+      }
+    ]
+  },
+  "selected_api_ids": [
+    "worldwide_restaurants_search",
+    "restaurants_reviews",
+    "e_mailer_420_mail"
+  ],
+  "overall_rationale": "The selected APIs directly map to each ordered subtask: the Worldwide Restaurants Search API locates nearby eateries using the user's location, the Restaurants Reviews API enriches those results with detailed reviews, and the e-mailer-420 API delivers the curated recommendations via email. Parameter sources are aligned so that outputs from one step feed into the next, ensuring a seamless end‑to‑end workflow without any missing data or reordering of subtasks.",
+  "planner_provenance": [
+    {
+      "mode": "no_qos",
+      "subtask_id": "1",
+      "api_id": "worldwide_restaurants_search",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    },
+    {
+      "mode": "no_qos",
+      "subtask_id": "2",
+      "api_id": "restaurants_reviews",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    },
+    {
+      "mode": "no_qos",
+      "subtask_id": "3",
+      "api_id": "e_mailer_420_mail",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  ],
+  "planner_override_attempted": false,
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "planner_candidates_per_subtask": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+  },
+  "planner_selected_api_ids": [
+    "worldwide_restaurants_search",
+    "restaurants_reviews",
+    "e_mailer_420_mail"
+  ],
+  "planner_selection_diagnostics": [
+    {
+      "subtask_id": "1",
+      "api_id": "worldwide_restaurants_search",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "worldwide_restaurants_search"
+      ]
+    },
+    {
+      "subtask_id": "2",
+      "api_id": "restaurants_reviews",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "restaurants_reviews"
+      ]
+    },
+    {
+      "subtask_id": "3",
+      "api_id": "e_mailer_420_mail",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "e_mailer_420_mail"
+      ]
+    }
+  ]
+}

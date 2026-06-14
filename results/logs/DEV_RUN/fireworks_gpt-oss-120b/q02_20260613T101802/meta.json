@@ -1,0 +1,673 @@
+{
+  "query_id": "q02",
+  "query_title": "Nearby Restaurant Finder with Email Summary",
+  "user_goal": "Build a service that uses a user’s location to discover nearby restaurants, fetch restaurant reviews or details, and send selected restaurant recommendations by email.",
+  "provider": "fireworks",
+  "model_tag": "fireworks:accounts/fireworks/models/gpt-oss-120b",
+  "active_model": "accounts/fireworks/models/gpt-oss-120b",
+  "multi_model_mode": false,
+  "model_pool": [
+    "accounts/fireworks/models/gpt-oss-120b"
+  ],
+  "model_switches": [],
+  "num_subtasks": 3,
+  "evaluation_triggered": true,
+  "evaluation_dir": "evaluation",
+  "planner_enabled": true,
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "composition_qos_eval_enabled": true,
+  "modes": [
+    "no_qos",
+    "qos_pure_llm",
+    "qos_topsis",
+    "qos_hybrid"
+  ],
+  "llm_validation_policy": {
+    "max_validation_retries": 2,
+    "max_attempts": 3,
+    "purpose": "bounded recovery for structurally invalid LLM outputs"
+  },
+  "log_file": "run.log",
+  "model_usage_file": "model_usage.json",
+  "ranking_failures": [],
+  "status": "completed",
+  "timing": {
+    "run": {
+      "started_at": "2026-06-13T10:18:02-07:00",
+      "ended_at": "2026-06-13T10:23:09-07:00",
+      "duration_seconds": 307.309
+    },
+    "stages": {
+      "decomposer": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:18:02-07:00",
+        "ended_at": "2026-06-13T10:18:03-07:00",
+        "duration_seconds": 1.833,
+        "subtask_count": 3
+      },
+      "retrieval": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:18:03-07:00",
+        "ended_at": "2026-06-13T10:18:11-07:00",
+        "duration_seconds": 7.917,
+        "subtask_count": 3,
+        "retrieved_candidate_count": 120,
+        "retrieval_agent": "RagRetrieverAgent",
+        "retrieval_agent_mode": "deterministic_faiss"
+      },
+      "functional_refinement": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:18:11-07:00",
+        "ended_at": "2026-06-13T10:18:55-07:00",
+        "duration_seconds": 43.493,
+        "rows_json": "evaluation/query_q02_retrieval_functional_match_rows.json",
+        "summary_json": "evaluation/query_q02_functional_refinement_summary.json",
+        "functional_refiner_agent": "FunctionalRefinerAgent",
+        "functional_refiner_agent_mode": "llm_binary_functional_labeling",
+        "functional_refinement_status": "completed",
+        "zero_functional_retrieval_retry_count": 0,
+        "zero_functional_retrieval_retry_status": "not_needed",
+        "zero_functional_retrieval_retry_scope": "qos_hybrid"
+      },
+      "ranking": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:18:55-07:00",
+        "ended_at": "2026-06-13T10:22:19-07:00",
+        "duration_seconds": 203.864,
+        "subtask_count": 3,
+        "ranking_failure_count": 0,
+        "retry_summary": {
+          "total_events": 1,
+          "successes": 1,
+          "failures": 0,
+          "by_stage": {
+            "llm_ranking": {
+              "successes": 1,
+              "failures": 0,
+              "total_events": 1
+            }
+          },
+          "by_role": {
+            "ranker_no_qos": {
+              "successes": 1,
+              "failures": 0,
+              "total_events": 1
+            }
+          },
+          "max_attempts": 3,
+          "max_validation_retries": 2,
+          "log_file": "retry_outcomes.log",
+          "success_rate": 1.0,
+          "failure_rate": 0.0
+        }
+      },
+      "ranker_no_qos": {
+        "invocations": 3,
+        "duration_seconds": 52.698,
+        "started_at": "2026-06-13T10:18:55-07:00",
+        "ended_at": "2026-06-13T10:21:39-07:00",
+        "status": "completed"
+      },
+      "qos_scorer": {
+        "invocations": 3,
+        "duration_seconds": 80.218,
+        "started_at": "2026-06-13T10:19:26-07:00",
+        "ended_at": "2026-06-13T10:22:03-07:00",
+        "status": "completed"
+      },
+      "ranker_qos_pure_llm": {
+        "invocations": 3,
+        "duration_seconds": 70.848,
+        "started_at": "2026-06-13T10:19:58-07:00",
+        "ended_at": "2026-06-13T10:22:19-07:00",
+        "status": "completed"
+      },
+      "qos_topsis": {
+        "invocations": 3,
+        "duration_seconds": 0.005,
+        "started_at": "2026-06-13T10:20:40-07:00",
+        "ended_at": "2026-06-13T10:22:19-07:00",
+        "status": "completed"
+      },
+      "qos_hybrid": {
+        "invocations": 3,
+        "duration_seconds": 0.0,
+        "started_at": "2026-06-13T10:20:40-07:00",
+        "ended_at": "2026-06-13T10:22:19-07:00",
+        "status": "completed"
+      },
+      "evaluation_outputs": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:22:19-07:00",
+        "ended_at": "2026-06-13T10:22:19-07:00",
+        "duration_seconds": 0.769,
+        "evaluation_agent": "EvaluationAgent",
+        "evaluation_agent_mode": "deterministic_adapter"
+      },
+      "planner": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:22:19-07:00",
+        "ended_at": "2026-06-13T10:23:09-07:00",
+        "duration_seconds": 49.39,
+        "planner_selection_k_summary_json": "evaluation/query_q02_planner_selection_k_summary.json",
+        "planner_selection_k_by_mode_subtask": {
+          "no_qos": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "worldwide_restaurants_search"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "worldwide_restaurants_search"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "worldwide_restaurants_search"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "restaurants_reviews"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "restaurants_reviews"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "restaurants_reviews"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "e_mailer_420_mail"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "e_mailer_420_mail"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "e_mailer_420_mail"
+            }
+          },
+          "qos_pure_llm": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "locationiq_limitbyviewbox"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "locationiq_limitbyviewbox"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "locationiq_limitbyviewbox"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "restaurants_reviews"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "restaurants_reviews"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "restaurants_reviews"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "e_mailer_420_mail"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "e_mailer_420_mail"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "e_mailer_420_mail"
+            }
+          },
+          "qos_topsis": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "cannafinder_shops_in_radius_around_coordinates"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "cannafinder_shops_in_radius_around_coordinates"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "cannafinder_shops_in_radius_around_coordinates"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "meteo_data_api_get_info"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "meteo_data_api_get_info"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "meteo_data_api_get_info"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "fixed_primary_api",
+              "retrieval_functional_match_k": null,
+              "fallback_used": false,
+              "available_ranked": 40,
+              "selected_count": 1,
+              "planner_candidates_per_subtask": 1,
+              "selected_api_ids": [
+                "veggie_me_restaurants"
+              ],
+              "invalid_ranked_rows": 0,
+              "planner_candidate_api_ids": [
+                "veggie_me_restaurants"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "veggie_me_restaurants"
+            }
+          },
+          "qos_hybrid": {
+            "1": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "workflow_hybrid_selector",
+              "hybrid_workflow_selector": "relative_to_best",
+              "candidate_cap_per_subtask": 5,
+              "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+              "hybrid_no_functional_match_fallback": false,
+              "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+              "hybrid_pool_size_before_expansion": 3,
+              "hybrid_pool_size_after_expansion": 3,
+              "hybrid_pool_size_after_pareto": 1,
+              "pareto_filtered_count": 2,
+              "pareto_filter_fallback_used": false,
+              "available_ranked": 40,
+              "functional_candidate_count": 3,
+              "workflow_candidate_pool_count": 1,
+              "selected_count": 1,
+              "invalid_ranked_rows": 0,
+              "hybrid_total_combinations_before_cap": 2,
+              "hybrid_total_combinations_after_cap": 2,
+              "hybrid_max_workflow_combinations": 5000,
+              "hybrid_pool_trimmed": false,
+              "hybrid_pool_sizes_before_cap": {
+                "1": 1,
+                "2": 2,
+                "3": 1
+              },
+              "hybrid_pool_sizes_after_cap": {
+                "1": 1,
+                "2": 2,
+                "3": 1
+              },
+              "planner_candidates_per_subtask": 1,
+              "selected_api_id": "locationiq_limitbyviewbox",
+              "selected_api_ids": [
+                "locationiq_limitbyviewbox"
+              ],
+              "selected_by": "workflow_hybrid_selector",
+              "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+              "balanced_relative_qos_score": 1.0,
+              "projected_composition_score": 1.0,
+              "projected_normalized_qos_score": 1.0,
+              "workflow_total_response_time": 0.4055,
+              "workflow_bottleneck_throughput": 13.245,
+              "workflow_average_availability": 0.9990333333333333,
+              "workflow_qos_score": 1.0,
+              "workflow_topsis_score": null,
+              "workflow_topsis_weights": {
+                "response_time": 0.3333333333333333,
+                "throughput": 0.3333333333333333,
+                "availability": 0.3333333333333333
+              },
+              "workflow_topsis_rank": null,
+              "workflow_selector_fallback_used": false,
+              "planner_candidate_api_ids": [
+                "locationiq_limitbyviewbox"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "locationiq_limitbyviewbox"
+            },
+            "2": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "workflow_hybrid_selector",
+              "hybrid_workflow_selector": "relative_to_best",
+              "candidate_cap_per_subtask": 5,
+              "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+              "hybrid_no_functional_match_fallback": false,
+              "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+              "hybrid_pool_size_before_expansion": 4,
+              "hybrid_pool_size_after_expansion": 4,
+              "hybrid_pool_size_after_pareto": 2,
+              "pareto_filtered_count": 2,
+              "pareto_filter_fallback_used": false,
+              "available_ranked": 40,
+              "functional_candidate_count": 4,
+              "workflow_candidate_pool_count": 2,
+              "selected_count": 1,
+              "invalid_ranked_rows": 0,
+              "hybrid_total_combinations_before_cap": 2,
+              "hybrid_total_combinations_after_cap": 2,
+              "hybrid_max_workflow_combinations": 5000,
+              "hybrid_pool_trimmed": false,
+              "hybrid_pool_sizes_before_cap": {
+                "1": 1,
+                "2": 2,
+                "3": 1
+              },
+              "hybrid_pool_sizes_after_cap": {
+                "1": 1,
+                "2": 2,
+                "3": 1
+              },
+              "planner_candidates_per_subtask": 1,
+              "selected_api_id": "restaurants_reviews",
+              "selected_api_ids": [
+                "restaurants_reviews"
+              ],
+              "selected_by": "workflow_hybrid_selector",
+              "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+              "balanced_relative_qos_score": 0.865014,
+              "projected_composition_score": 1.0,
+              "projected_normalized_qos_score": 1.0,
+              "workflow_total_response_time": 0.4055,
+              "workflow_bottleneck_throughput": 13.245,
+              "workflow_average_availability": 0.9990333333333333,
+              "workflow_qos_score": 1.0,
+              "workflow_topsis_score": null,
+              "workflow_topsis_weights": {
+                "response_time": 0.3333333333333333,
+                "throughput": 0.3333333333333333,
+                "availability": 0.3333333333333333
+              },
+              "workflow_topsis_rank": null,
+              "workflow_selector_fallback_used": false,
+              "planner_candidate_api_ids": [
+                "restaurants_reviews"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "restaurants_reviews"
+            },
+            "3": {
+              "planner_candidate_mode": "fixed_one",
+              "planner_top_n_cap": 5,
+              "planner_top_k": 1,
+              "planner_requested_top_k": 1,
+              "planner_top_k_source": "workflow_hybrid_selector",
+              "hybrid_workflow_selector": "relative_to_best",
+              "candidate_cap_per_subtask": 5,
+              "workflow_candidate_pool_source": "functional_match_pareto_expanded_multi_qos_view",
+              "hybrid_no_functional_match_fallback": false,
+              "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+              "hybrid_pool_size_before_expansion": 3,
+              "hybrid_pool_size_after_expansion": 3,
+              "hybrid_pool_size_after_pareto": 1,
+              "pareto_filtered_count": 2,
+              "pareto_filter_fallback_used": false,
+              "available_ranked": 40,
+              "functional_candidate_count": 3,
+              "workflow_candidate_pool_count": 1,
+              "selected_count": 1,
+              "invalid_ranked_rows": 0,
+              "hybrid_total_combinations_before_cap": 2,
+              "hybrid_total_combinations_after_cap": 2,
+              "hybrid_max_workflow_combinations": 5000,
+              "hybrid_pool_trimmed": false,
+              "hybrid_pool_sizes_before_cap": {
+                "1": 1,
+                "2": 2,
+                "3": 1
+              },
+              "hybrid_pool_sizes_after_cap": {
+                "1": 1,
+                "2": 2,
+                "3": 1
+              },
+              "planner_candidates_per_subtask": 1,
+              "selected_api_id": "e_mailer_420_mail",
+              "selected_api_ids": [
+                "e_mailer_420_mail"
+              ],
+              "selected_by": "workflow_hybrid_selector",
+              "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+              "balanced_relative_qos_score": 1.0,
+              "projected_composition_score": 1.0,
+              "projected_normalized_qos_score": 1.0,
+              "workflow_total_response_time": 0.4055,
+              "workflow_bottleneck_throughput": 13.245,
+              "workflow_average_availability": 0.9990333333333333,
+              "workflow_qos_score": 1.0,
+              "workflow_topsis_score": null,
+              "workflow_topsis_weights": {
+                "response_time": 0.3333333333333333,
+                "throughput": 0.3333333333333333,
+                "availability": 0.3333333333333333
+              },
+              "workflow_topsis_rank": null,
+              "workflow_selector_fallback_used": false,
+              "planner_candidate_api_ids": [
+                "e_mailer_420_mail"
+              ],
+              "planner_selected_rank": 1,
+              "planner_override_rank1": false,
+              "planner_override_reason": null,
+              "planner_selected_api_id": "e_mailer_420_mail"
+            }
+          }
+        }
+      },
+      "composition_qos_evaluation": {
+        "status": "completed",
+        "started_at": "2026-06-13T10:23:09-07:00",
+        "ended_at": "2026-06-13T10:23:09-07:00",
+        "duration_seconds": 0.034,
+        "rows_json": "evaluation/query_q02_composition_qos_eval_rows.json",
+        "summary_json": "evaluation/query_q02_composition_qos_eval_summary.json",
+        "excel": "evaluation/query_q02_composition_qos_eval.xlsx",
+        "issues_json": "evaluation/query_q02_composition_validity_issues.json",
+        "issues_log": "evaluation/query_q02_composition_validity_issues.log",
+        "composition_validity_summary": {
+          "valid_mode_count": 4,
+          "complete_mode_count": 4,
+          "invalid_mode_count": 0,
+          "invalid_modes": [],
+          "invalid_reason_counts": {},
+          "by_mode": {
+            "no_qos": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 1.0
+            },
+            "qos_pure_llm": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 1.0
+            },
+            "qos_topsis": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 0.0
+            },
+            "qos_hybrid": {
+              "composition_validity": 1,
+              "invalid_reasons": [],
+              "planned_api_count": 3,
+              "covered_subtask_count": 3,
+              "total_subtask_count": 3,
+              "composition_completeness": 1.0,
+              "composition_completeness_gate": 1.0,
+              "functional_coverage": 1.0
+            }
+          }
+        },
+        "evaluation_agent": "EvaluationAgent",
+        "evaluation_agent_mode": "deterministic_adapter"
+      }
+    }
+  },
+  "functional_refinement_status": "completed",
+  "functional_refinement_rows_json": "evaluation/query_q02_retrieval_functional_match_rows.json",
+  "hybrid_functional_refinement_rows_json": null,
+  "functional_refinement_summary_json": "evaluation/query_q02_functional_refinement_summary.json",
+  "zero_functional_retrieval_retry_count": 0,
+  "zero_functional_retrieval_retry_status": "not_needed",
+  "zero_functional_retrieval_retry_scope": "qos_hybrid",
+  "zero_functional_retrieval_retries": [],
+  "retry_summary": {
+    "total_events": 1,
+    "successes": 1,
+    "failures": 0,
+    "by_stage": {
+      "llm_ranking": {
+        "successes": 1,
+        "failures": 0,
+        "total_events": 1
+      }
+    },
+    "by_role": {
+      "ranker_no_qos": {
+        "successes": 1,
+        "failures": 0,
+        "total_events": 1
+      }
+    },
+    "max_attempts": 3,
+    "max_validation_retries": 2,
+    "log_file": "retry_outcomes.log",
+    "success_rate": 1.0,
+    "failure_rate": 0.0
+  },
+  "summary": {
+    "planner_enabled": true,
+    "planner_candidate_mode": "fixed_one",
+    "planner_top_n_cap": 5,
+    "no_qos_selected": 3,
+    "qos_pure_llm_selected": 3,
+    "qos_topsis_selected": 3,
+    "qos_hybrid_selected": 3,
+    "planner_selection_k_summary_json": "evaluation/query_q02_planner_selection_k_summary.json"
+  }
+}

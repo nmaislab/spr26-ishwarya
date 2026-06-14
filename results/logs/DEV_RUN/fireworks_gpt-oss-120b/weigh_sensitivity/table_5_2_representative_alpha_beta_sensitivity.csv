@@ -1,0 +1,7 @@
+Weight Setting,Purpose,Mean Selected Score,Mean Selected Functional Coverage,Minimum Selected Functional Coverage,Mean Selected Normalized QoS,Unique Best Queries,Tied-Best Queries
+0/100,QoS-only extreme,0.927863,1.000000,1.000000,0.927863,3,1
+25/75,QoS-dominant setting,0.945897,1.000000,1.000000,0.927863,3,1
+50/50,Balanced setting,0.963932,1.000000,1.000000,0.927863,3,1
+70/30,Selected primary setting,0.978359,1.000000,1.000000,0.927863,3,1
+75/25,Conservative robustness setting,0.981966,1.000000,1.000000,0.927863,3,1
+100/0,Functional-only extreme,1.000000,1.000000,1.000000,0.754145,0,4

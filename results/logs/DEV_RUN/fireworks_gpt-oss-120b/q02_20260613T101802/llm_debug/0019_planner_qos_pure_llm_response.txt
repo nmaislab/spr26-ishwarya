@@ -1,0 +1,194 @@
+{
+"primary_plan": {
+"plan_id": 1,
+"summary": "The plan searches for restaurants near the user's location using the LocationIQ autocomplete API, retrieves detailed reviews for the selected restaurants via the Restaurants API, and then emails the curated recommendations using the e‑mailer‑420 service.",
+"steps": [
+{
+"step": 1,
+"api_id": "locationiq_limitbyviewbox",
+"subtask_id": 1,
+"action": "Search for nearby restaurants based on the user's geographic location and a generic restaurant query.",
+"input_from_previous_step": "none",
+"output_to_next_step": "restaurant_search_results",
+"why": "Provides a list of place predictions (restaurants) within the user's viewbox, satisfying subtask 1.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.151,
+"tp_kbps": 13.245,
+"availability": 1.0,
+"valid_qos": true
+}
+},
+{
+"step": 2,
+"api_id": "restaurants_reviews",
+"subtask_id": 2,
+"action": "Fetch detailed reviews and rating information for the restaurants identified in step 1.",
+"input_from_previous_step": "restaurant_search_results",
+"output_to_next_step": "restaurant_reviews",
+"why": "Uses the Restaurants API to obtain reviews for each restaurant ID returned by the search, fulfilling subtask 2.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.121,
+"tp_kbps": 24.793,
+"availability": 1.0,
+"valid_qos": true
+}
+},
+{
+"step": 3,
+"api_id": "e_mailer_420_mail",
+"subtask_id": 3,
+"action": "Compose an email containing the selected restaurant recommendations and send it to the user.",
+"input_from_previous_step": "restaurant_reviews",
+"output_to_next_step": "email_sent_status",
+"why": "Delivers the final recommendation list to the user via email, completing subtask 3.",
+"planner_override_reason": null,
+"qos": {
+"rt_s": 0.1335,
+"tp_kbps": 37.453,
+"availability": 0.9971,
+"valid_qos": true
+}
+}
+],
+"subtask_coverage": [
+{
+"subtask_id": 1,
+"description": "Search restaurants using an external discovery API with the user’s location",
+"steps": [1],
+"coverage": "full"
+},
+{
+"subtask_id": 2,
+"description": "Fetch restaurant reviews or details using an external information API",
+"steps": [2],
+"coverage": "full"
+},
+{
+"subtask_id": 3,
+"description": "Send an email with the selected restaurant recommendations",
+"steps": [3],
+"coverage": "full"
+}
+]
+},
+"execution_workflow": {
+"type": "sequential",
+"steps": [
+{
+"step": 1,
+"api_id": "locationiq_limitbyviewbox",
+"subtask_id": 1,
+"method": "GET",
+"url": "https://locationiq2.p.rapidapi.com/v1/autocomplete",
+"required_parameters": [],
+"optional_parameters": [
+{
+"name": "bounded",
+"source": "constant/default",
+"value_hint": "1 (restrict results to viewbox area)"
+},
+{
+"name": "key",
+"source": "constant/default",
+"value_hint": "{{Your_API_Key}}"
+},
+{
+"name": "viewbox",
+"source": "user_goal",
+"value_hint": "min_lon,min_lat,max_lon,max_lat derived from user's location"
+},
+{
+"name": "q",
+"source": "user_goal",
+"value_hint": "restaurant"
+}
+],
+"depends_on": [],
+"input_mapping": "none",
+"output_mapping": "restaurant_search_results",
+"expected_output": "A list of place predictions (restaurant names, IDs, and basic location data).",
+"planner_override_reason": null
+},
+{
+"step": 2,
+"api_id": "restaurants_reviews",
+"subtask_id": 2,
+"method": "POST",
+"url": "https://restaurants222.p.rapidapi.com/reviews",
+"required_parameters": [
+{
+"name": "language",
+"source": "constant/default",
+"value_hint": "en_US"
+},
+{
+"name": "location_id",
+"source": "previous_step_output",
+"value_hint": "Restaurant ID(s) from step 1"
+},
+{
+"name": "currency",
+"source": "constant/default",
+"value_hint": "USD"
+}
+],
+"optional_parameters": [
+{
+"name": "offset",
+"source": "constant/default",
+"value_hint": "0"
+}
+],
+"depends_on": [1],
+"input_mapping": "restaurant_search_results",
+"output_mapping": "restaurant_reviews",
+"expected_output": "Detailed reviews, ratings, and additional metadata for each restaurant.",
+"planner_override_reason": null
+},
+{
+"step": 3,
+"api_id": "e_mailer_420_mail",
+"subtask_id": 3,
+"method": "GET",
+"url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}",
+"required_parameters": [
+{
+"name": "sender",
+"source": "user_goal",
+"value_hint": "example@gmail.com (user's email address)"
+},
+{
+"name": "password",
+"source": "user_goal",
+"value_hint": "example123 (email password, less‑secure apps enabled)"
+},
+{
+"name": "receiver",
+"source": "user_goal",
+"value_hint": "receiver@gmail.com (recipient address)"
+},
+{
+"name": "subject",
+"source": "constant/default",
+"value_hint": "Restaurant Recommendations"
+},
+{
+"name": "body",
+"source": "previous_step_output",
+"value_hint": "Formatted list of restaurant names, addresses, and top reviews from step 2"
+}
+],
+"optional_parameters": [],
+"depends_on": [2],
+"input_mapping": "restaurant_reviews",
+"output_mapping": "email_sent_status",
+"expected_output": "Confirmation that the email was sent (e.g., status code or message).",
+"planner_override_reason": null
+}
+]
+},
+"selected_api_ids": ["locationiq_limitbyviewbox", "restaurants_reviews", "e_mailer_420_mail"],
+"overall_rationale": "The three selected APIs directly map to the ordered subtasks: LocationIQ provides geographic autocomplete to locate nearby restaurants, the Restaurants API supplies the necessary review details for those venues, and e‑mailer‑420 enables sending the curated recommendations via email. All steps are chained so that outputs from one API become inputs to the next, preserving the required sequence and ensuring functional completeness."
+}

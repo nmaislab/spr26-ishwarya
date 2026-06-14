@@ -1,0 +1,119 @@
+[
+  {
+    "api_id": "redtie_create-2",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 9,
+    "rag_score": 0.5036078095436096,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "redtie.json",
+      "_tool": "redtie",
+      "api_id": "redtie_create-2",
+      "category": "SMS",
+      "description": " ",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "jhon",
+            "description": "",
+            "name": "first_name",
+            "type": "STRING"
+          },
+          {
+            "default": "8QEVLZ325wBaNzzE2uDpSwsKI5fvE8HjbQdVYhNzseufQbZKRP4QjAfusl7S",
+            "description": "",
+            "name": "apikey",
+            "type": "STRING"
+          },
+          {
+            "default": "634e6f1069c33f6dff9118fc",
+            "description": "",
+            "name": "tags",
+            "type": "STRING"
+          },
+          {
+            "default": "619372af1d5fd532af1310fc",
+            "description": "",
+            "name": "user_id",
+            "type": "STRING"
+          },
+          {
+            "default": "d9jpnpucgOCy",
+            "description": "",
+            "name": "secret",
+            "type": "STRING"
+          },
+          {
+            "default": "16173802436",
+            "description": "",
+            "name": "phone_number",
+            "type": "STRING"
+          },
+          {
+            "default": "62d2c2da7c732832c16b5abf",
+            "description": "",
+            "name": "business_id",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Create",
+      "tool_description": "The robust and secure text messaging solution for your Business",
+      "tool_name": "Redtie",
+      "toolbench_endpoint_description": "",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Create",
+        "endpoint_url": "https://redtie.p.rapidapi.com/contacts/create",
+        "file_name": "redtie.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 7,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "The robust and secure text messaging solution for your Business",
+        "tool_file_found": true,
+        "tool_name": "Redtie",
+        "toolbench_relative_path": "SMS/redtie.json"
+      },
+      "toolbench_tool_description": "The robust and secure text messaging solution for your Business",
+      "toolbench_tool_name": "Redtie",
+      "url": "https://redtie.p.rapidapi.com/contacts/create",
+      "qos": {
+        "availability": 0.9941,
+        "rt_s": 0.175,
+        "tp_kbps": 320.0,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9762718189931717,
+    "topsis_rank": 1,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "3",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_topsis",
+      "subtask_id": "3",
+      "api_id": "redtie_create-2",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9762718189931717
+    }
+  }
+]

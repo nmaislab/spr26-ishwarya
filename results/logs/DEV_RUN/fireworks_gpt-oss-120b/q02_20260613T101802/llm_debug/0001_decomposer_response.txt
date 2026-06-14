@@ -1,0 +1,16 @@
+{
+"subtasks": [
+{
+"id": 1,
+"description": "Search restaurants using an external discovery API with the user’s location"
+},
+{
+"id": 2,
+"description": "Fetch restaurant reviews or details using an external information API"
+},
+{
+"id": 3,
+"description": "Send an email with the selected restaurant recommendations"
+}
+]
+}

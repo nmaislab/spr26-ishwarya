@@ -1,0 +1,293 @@
+{
+  "overall": {
+    "root_dir": "results/logs/DEV_RUN/fireworks_gpt-oss-120b/q03_20260613T102309",
+    "catalog_path": "data/processed/api_catalog_sample_balanced/api_repo.enriched.jsonl",
+    "run_count": 1,
+    "retrieval_groups_checked": 3,
+    "retrieval_groups_with_hallucinations": 0,
+    "retrieved_api_not_in_catalog_count": 0,
+    "mode_groups_checked": 12,
+    "mode_groups_with_hallucinations": 0,
+    "mode_hallucination_row_count": 0,
+    "selected_not_in_retrieved_count": 0,
+    "selected_not_in_catalog_count": 0,
+    "selected_from_retrieved_but_catalog_missing_count": 0,
+    "missing_runs": []
+  },
+  "retrieval_summary_rows": [
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "1",
+      "Subtask_Purpose": "Validate domains using an external domain validation or DNS lookup API",
+      "Retrieved_Count": 40,
+      "Unique_Retrieved_Count": 40,
+      "Retrieved_Not_In_Catalog_Count": 0,
+      "Has_Retrieval_Hallucination": "N",
+      "Missing_API_IDs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "2",
+      "Subtask_Purpose": "Scan URLs for malware or phishing risk using a threat intelligence API",
+      "Retrieved_Count": 40,
+      "Unique_Retrieved_Count": 40,
+      "Retrieved_Not_In_Catalog_Count": 0,
+      "Has_Retrieval_Hallucination": "N",
+      "Missing_API_IDs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "3",
+      "Subtask_Purpose": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+      "Retrieved_Count": 40,
+      "Unique_Retrieved_Count": 40,
+      "Retrieved_Not_In_Catalog_Count": 0,
+      "Has_Retrieval_Hallucination": "N",
+      "Missing_API_IDs": ""
+    }
+  ],
+  "retrieval_detail_rows": [],
+  "mode_summary_rows": [
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "1",
+      "Mode": "no_qos",
+      "Subtask_Purpose": "Validate domains using an external domain validation or DNS lookup API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "1",
+      "Mode": "qos_pure_llm",
+      "Subtask_Purpose": "Validate domains using an external domain validation or DNS lookup API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "1",
+      "Mode": "qos_topsis",
+      "Subtask_Purpose": "Validate domains using an external domain validation or DNS lookup API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "1",
+      "Mode": "qos_hybrid",
+      "Subtask_Purpose": "Validate domains using an external domain validation or DNS lookup API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "2",
+      "Mode": "no_qos",
+      "Subtask_Purpose": "Scan URLs for malware or phishing risk using a threat intelligence API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "2",
+      "Mode": "qos_pure_llm",
+      "Subtask_Purpose": "Scan URLs for malware or phishing risk using a threat intelligence API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "2",
+      "Mode": "qos_topsis",
+      "Subtask_Purpose": "Scan URLs for malware or phishing risk using a threat intelligence API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "2",
+      "Mode": "qos_hybrid",
+      "Subtask_Purpose": "Scan URLs for malware or phishing risk using a threat intelligence API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "3",
+      "Mode": "no_qos",
+      "Subtask_Purpose": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "3",
+      "Mode": "qos_pure_llm",
+      "Subtask_Purpose": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "3",
+      "Mode": "qos_topsis",
+      "Subtask_Purpose": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    },
+    {
+      "Provider_Dir": ".",
+      "Run_Dir": "q03_20260613T102309",
+      "Query_ID": "q03",
+      "Sub_Task": "3",
+      "Mode": "qos_hybrid",
+      "Subtask_Purpose": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+      "Retrieved_Candidate_Count": 40,
+      "Selected_Count": 40,
+      "Hallucination_Row_Count": 0,
+      "Selected_Not_In_Retrieved_Count": 0,
+      "Selected_Not_In_Catalog_Count": 0,
+      "Selected_From_Retrieved_But_Catalog_Missing_Count": 0,
+      "Has_Mode_Hallucination": "N",
+      "Hallucinated_APIs": ""
+    }
+  ],
+  "mode_detail_rows": [],
+  "query_overview": [
+    {
+      "Key": "q03",
+      "Groups_Checked": 12,
+      "Groups_With_Hallucinations": 0,
+      "Hallucinated_API_Count": 0
+    }
+  ],
+  "mode_overview": [
+    {
+      "Key": "no_qos",
+      "Groups_Checked": 3,
+      "Groups_With_Hallucinations": 0,
+      "Hallucinated_API_Count": 0
+    },
+    {
+      "Key": "qos_pure_llm",
+      "Groups_Checked": 3,
+      "Groups_With_Hallucinations": 0,
+      "Hallucinated_API_Count": 0
+    },
+    {
+      "Key": "qos_topsis",
+      "Groups_Checked": 3,
+      "Groups_With_Hallucinations": 0,
+      "Hallucinated_API_Count": 0
+    },
+    {
+      "Key": "qos_hybrid",
+      "Groups_Checked": 3,
+      "Groups_With_Hallucinations": 0,
+      "Hallucinated_API_Count": 0
+    }
+  ],
+  "retrieval_query_overview": [
+    {
+      "Key": "q03",
+      "Groups_Checked": 3,
+      "Groups_With_Hallucinations": 0,
+      "Hallucinated_API_Count": 0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+"subtasks": [
+{
+"id": 1,
+"description": "Validate domains using an external domain validation or DNS lookup API"
+},
+{
+"id": 2,
+"description": "Scan URLs for malware or phishing risk using a threat intelligence API"
+},
+{
+"id": 3,
+"description": "Send SMS alerts to admins for high‑risk URLs using an external messaging API"
+}
+]
+}

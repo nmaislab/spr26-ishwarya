@@ -1,0 +1,300 @@
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "Validate each domain, assess risk using a threat intelligence check, and send SMS alerts for high‑risk domains.",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "domain_checker_with_ai_domain_validation",
+        "subtask_id": "1",
+        "action": "Validate the domain to ensure it is registered and retrieve its IP address.",
+        "input_from_previous_step": "none",
+        "output_to_next_step": "domain_validation_result",
+        "why": "Ensures the domain exists before any risk assessment.",
+        "planner_override_reason": null,
+        "qos": {
+          "rt_s": 0.233,
+          "tp_kbps": 567.586,
+          "availability": 0.9941,
+          "valid_qos": true
+        },
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.9929999904557758
+      },
+      {
+        "step": 2,
+        "api_id": "porn_filter_filter",
+        "subtask_id": "2",
+        "action": "Check the validated domain against a blacklist to assess malware/phishing risk.",
+        "input_from_previous_step": "domain_validation_result",
+        "output_to_next_step": "risk_assessment",
+        "why": "Uses a threat intelligence API to flag high‑risk domains.",
+        "planner_override_reason": null,
+        "qos": {
+          "rt_s": 0.633,
+          "tp_kbps": 614.285,
+          "availability": 0.9941,
+          "valid_qos": true
+        },
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.9613114480690275
+      },
+      {
+        "step": 3,
+        "api_id": "redtie_create-2",
+        "subtask_id": "3",
+        "action": "Send an SMS alert to admins if the domain is flagged as high risk.",
+        "input_from_previous_step": "risk_assessment",
+        "output_to_next_step": "none",
+        "why": "Notifies administrators promptly about dangerous URLs.",
+        "planner_override_reason": null,
+        "qos": {
+          "rt_s": 0.175,
+          "tp_kbps": 320.0,
+          "availability": 0.9941,
+          "valid_qos": true
+        },
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.9762718189931717
+      }
+    ],
+    "subtask_coverage": [
+      {
+        "subtask_id": 1,
+        "description": "Validate domains using an external domain validation or DNS lookup API",
+        "steps": [
+          1
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 2,
+        "description": "Scan URLs for malware or phishing risk using a threat intelligence API",
+        "steps": [
+          2
+        ],
+        "coverage": "full"
+      },
+      {
+        "subtask_id": 3,
+        "description": "Send SMS alerts to admins for high‑risk URLs using an external messaging API",
+        "steps": [
+          3
+        ],
+        "coverage": "full"
+      }
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "domain_checker_with_ai_domain_validation",
+        "subtask_id": "1",
+        "method": "GET",
+        "url": "https://domain-checker-with-ai.p.rapidapi.com/domain/validate",
+        "required_parameters": [
+          {
+            "name": "domain",
+            "source": "user_goal",
+            "value_hint": "Domain to validate (e.g., example.com)"
+          }
+        ],
+        "optional_parameters": [],
+        "depends_on": [],
+        "input_mapping": "none",
+        "output_mapping": "domain_validation_result",
+        "expected_output": "JSON with status='valid' and ip-address if the domain exists.",
+        "planner_override_reason": null,
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.9929999904557758
+      },
+      {
+        "step": 2,
+        "api_id": "porn_filter_filter",
+        "subtask_id": "2",
+        "method": "GET",
+        "url": "https://porn-filter2.p.rapidapi.com/",
+        "required_parameters": [
+          {
+            "name": "domain",
+            "source": "previous_step_output",
+            "value_hint": "Domain validated from step 1"
+          }
+        ],
+        "optional_parameters": [],
+        "depends_on": [
+          1
+        ],
+        "input_mapping": "domain from step 1",
+        "output_mapping": "risk_assessment",
+        "expected_output": "JSON indicating whether the domain is on the blacklist (risk flag).",
+        "planner_override_reason": null,
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.9613114480690275
+      },
+      {
+        "step": 3,
+        "api_id": "redtie_create-2",
+        "subtask_id": "3",
+        "method": "POST",
+        "url": "https://redtie.p.rapidapi.com/contacts/create",
+        "required_parameters": [
+          {
+            "name": "first_name",
+            "source": "constant/default",
+            "value_hint": "jhon"
+          },
+          {
+            "name": "apikey",
+            "source": "constant/default",
+            "value_hint": "8QEVLZ325wBaNzzE2uDpSwsKI5fvE8HjbQdVYhNzseufQbZKRP4QjAfusl7S"
+          },
+          {
+            "name": "tags",
+            "source": "constant/default",
+            "value_hint": "634e6f1069c33f6dff9118fc"
+          },
+          {
+            "name": "user_id",
+            "source": "constant/default",
+            "value_hint": "619372af1d5fd532af1310fc"
+          },
+          {
+            "name": "secret",
+            "source": "constant/default",
+            "value_hint": "d9jpnpucgOCy"
+          },
+          {
+            "name": "phone_number",
+            "source": "user_goal",
+            "value_hint": "Admin phone number to receive SMS"
+          },
+          {
+            "name": "business_id",
+            "source": "constant/default",
+            "value_hint": "62d2c2da7c732832c16b5abf"
+          }
+        ],
+        "optional_parameters": [],
+        "depends_on": [
+          2
+        ],
+        "input_mapping": "risk flag from step 2 and admin phone number",
+        "output_mapping": "none",
+        "expected_output": "Confirmation that an SMS alert was sent to the admin.",
+        "planner_override_reason": null,
+        "mode": "qos_topsis",
+        "selection_order": 1,
+        "selected_by": "ranking_mode",
+        "planner_override_attempted": false,
+        "topsis_rank": 1,
+        "topsis_score": 0.9762718189931717
+      }
+    ]
+  },
+  "selected_api_ids": [
+    "domain_checker_with_ai_domain_validation",
+    "porn_filter_filter",
+    "redtie_create-2"
+  ],
+  "overall_rationale": "The fixed selection provides one API per subtask, preserving the required order. Step 1 validates each domain, ensuring only legitimate domains proceed. Step 2 uses the provided threat‑intelligence endpoint (porn filter) to flag risky domains, acting as a risk assessment. Step 3 sends an SMS via the Redtie service when a high‑risk flag is returned, completing the alert workflow. All QoS metrics are acceptable, and the workflow respects the subtask sequence without any substitution.",
+  "planner_provenance": [
+    {
+      "mode": "qos_topsis",
+      "subtask_id": "1",
+      "api_id": "domain_checker_with_ai_domain_validation",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9929999904557758
+    },
+    {
+      "mode": "qos_topsis",
+      "subtask_id": "2",
+      "api_id": "porn_filter_filter",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9613114480690275
+    },
+    {
+      "mode": "qos_topsis",
+      "subtask_id": "3",
+      "api_id": "redtie_create-2",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9762718189931717
+    }
+  ],
+  "planner_override_attempted": false,
+  "planner_candidate_mode": "fixed_one",
+  "planner_top_n_cap": 5,
+  "planner_candidates_per_subtask": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+  },
+  "planner_selected_api_ids": [
+    "domain_checker_with_ai_domain_validation",
+    "porn_filter_filter",
+    "redtie_create-2"
+  ],
+  "planner_selection_diagnostics": [
+    {
+      "subtask_id": "1",
+      "api_id": "domain_checker_with_ai_domain_validation",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "domain_checker_with_ai_domain_validation"
+      ]
+    },
+    {
+      "subtask_id": "2",
+      "api_id": "porn_filter_filter",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "porn_filter_filter"
+      ]
+    },
+    {
+      "subtask_id": "3",
+      "api_id": "redtie_create-2",
+      "planner_selected_rank": 1,
+      "planner_override_rank1": false,
+      "planner_override_reason": null,
+      "selected_api_ids": [
+        "redtie_create-2"
+      ]
+    }
+  ]
+}

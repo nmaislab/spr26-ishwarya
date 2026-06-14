@@ -1,0 +1,51 @@
+You are given a list of candidate IDs with only QoS metrics.
+
+Each candidate has:
+- candidate_id: short ID used only for your output
+
+The real api_id is intentionally not provided for QoS scoring.
+
+QoS meanings:
+- rt_s = response time in seconds, lower is better
+- tp_kbps = throughput in kilobits per second (kbps), higher is better
+- availability = value out of 1 (0.0-1.0), higher is better
+
+QoS preference:
+{"weights_provided": false, "preference": "Treat response time, throughput, and availability as equally important.", "weights": null, "fixed_formula": null}
+
+Task:
+- Assign a QoS score from 0.0 to 1.0 for each candidate.
+- Use the provided QoS metrics to judge overall operational quality.
+- Candidates with stronger QoS should receive higher scores.
+- Lower rt_s should improve the score.
+- Higher tp_kbps should improve the score.
+- Higher availability should improve the score.
+- If no special QoS preference weights are provided, treat response time, throughput, and availability as equally important.
+- If QoS preference weights are provided, follow those weights when assigning scores.
+- Do not calculate or reproduce a fixed normalization formula unless the preference context explicitly provides one.
+- If any QoS metric is missing, treat that candidate as weak or uncertain from an operational perspective and assign a low score.
+- Return every candidate exactly once.
+- Use candidate_id in your output.
+- Do not output api_id.
+- Do not include explanations unless explicitly requested.
+- Do not return only the best candidate.
+- Do not return a single candidate object. Always return one JSON object with a "scores" list.
+
+Candidates:
+[{"candidate_id": "C01", "rt_s": 1.103, "tp_kbps": 1.813, "availability": 0.8407}, {"candidate_id": "C02", "rt_s": 0.169, "tp_kbps": 41.42, "availability": 0.9882}, {"candidate_id": "C03", "rt_s": 0.151, "tp_kbps": 466.666, "availability": 0.9941}, {"candidate_id": "C04", "rt_s": 0.18, "tp_kbps": 564.971, "availability": 0.9941}, {"candidate_id": "C05", "rt_s": 0.122, "tp_kbps": 32.786, "availability": 1.0}, {"candidate_id": "C06", "rt_s": 0.322, "tp_kbps": 9.316, "availability": 1.0}, {"candidate_id": "C07", "rt_s": 0.1665, "tp_kbps": 42.042, "availability": 0.9853}, {"candidate_id": "C08", "rt_s": 0.305, "tp_kbps": 9.8355, "availability": 0.9971}, {"candidate_id": "C09", "rt_s": 0.131, "tp_kbps": 22.9, "availability": 0.9941}, {"candidate_id": "C10", "rt_s": 0.622, "tp_kbps": 103.503, "availability": 0.9941}, {"candidate_id": "C11", "rt_s": 0.1205, "tp_kbps": 24.8965, "availability": 0.9971}, {"candidate_id": "C12", "rt_s": 0.1695, "tp_kbps": 41.298, "availability": 0.9853}, {"candidate_id": "C13", "rt_s": 0.2935, "tp_kbps": 10.221, "availability": 0.9853}, {"candidate_id": "C14", "rt_s": 0.44, "tp_kbps": 4.545, "availability": 1.0}, {"candidate_id": "C15", "rt_s": 0.1335, "tp_kbps": 37.453, "availability": 0.9971}, {"candidate_id": "C16", "rt_s": 0.312, "tp_kbps": 25.641, "availability": 0.9971}, {"candidate_id": "C17", "rt_s": 0.1295, "tp_kbps": 23.1655, "availability": 0.9971}, {"candidate_id": "C18", "rt_s": 0.46699999999999997, "tp_kbps": 8.565000000000001, "availability": 0.9912}, {"candidate_id": "C19", "rt_s": 0.722, "tp_kbps": 4.143, "availability": 0.7404}, {"candidate_id": "C20", "rt_s": 0.352, "tp_kbps": 11.363, "availability": 1.0}, {"candidate_id": "C21", "rt_s": 0.142, "tp_kbps": 14.084, "availability": 1.0}, {"candidate_id": "C22", "rt_s": 0.132, "tp_kbps": 7.575, "availability": 0.9971}, {"candidate_id": "C23", "rt_s": 0.344, "tp_kbps": 8.721499999999999, "availability": 0.9912}, {"candidate_id": "C24", "rt_s": 1.025, "tp_kbps": 2.926, "availability": 1.0}, {"candidate_id": "C25", "rt_s": 0.3075, "tp_kbps": 13.008, "availability": 0.9971}, {"candidate_id": "C26", "rt_s": 0.243, "tp_kbps": 12.345, "availability": 0.1681}, {"candidate_id": "C27", "rt_s": 0.295, "tp_kbps": 3.389, "availability": 0.9882}, {"candidate_id": "C28", "rt_s": 0.595, "tp_kbps": 11.764, "availability": 0.9587}, {"candidate_id": "C29", "rt_s": 0.121, "tp_kbps": 24.793, "availability": 1.0}, {"candidate_id": "C30", "rt_s": 0.6094999999999999, "tp_kbps": 13.125, "availability": 0.1298}, {"candidate_id": "C31", "rt_s": 0.12, "tp_kbps": 25.0, "availability": 1.0}, {"candidate_id": "C32", "rt_s": 0.3665, "tp_kbps": 8.184999999999999, "availability": 0.9853}, {"candidate_id": "C33", "rt_s": 0.385, "tp_kbps": 7.792, "availability": 0.9853}, {"candidate_id": "C34", "rt_s": 0.1125, "tp_kbps": 17.778, "availability": 0.9912}, {"candidate_id": "C35", "rt_s": 0.433, "tp_kbps": 27.713, "availability": 0.9941}, {"candidate_id": "C36", "rt_s": 0.515, "tp_kbps": 11.65, "availability": 0.9823}, {"candidate_id": "C37", "rt_s": 0.1985, "tp_kbps": 622.1315, "availability": 0.9971}, {"candidate_id": "C38", "rt_s": 0.155, "tp_kbps": 19.354, "availability": 0.9941}, {"candidate_id": "C39", "rt_s": 0.167, "tp_kbps": 41.916, "availability": 0.9853}, {"candidate_id": "C40", "rt_s": 0.167, "tp_kbps": 41.916, "availability": 0.9853}]
+
+Return JSON only in this exact shape:
+{
+  "scores": [
+    {"candidate_id": "C01", "score": 0.75}
+  ]
+}
+
+LLM output contract:
+- Return one compact JSON object only, with exactly one top-level key: "scores".
+- Preferred compact schema: {"scores": [{"candidate_id": "C01", "score": 0.75}]}.
+- Never return a bare candidate object like {"candidate_id": "C01", "score": 0.75}.
+- score must be a finite number from 0.0 to 1.0.
+- Return one item for every input candidate_id exactly once.
+- Use candidate_id in output and do not output api_id.
+- Do not include reason, explanation, comments, or any prose.

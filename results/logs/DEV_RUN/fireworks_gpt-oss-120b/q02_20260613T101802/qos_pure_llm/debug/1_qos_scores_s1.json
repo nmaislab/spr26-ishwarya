@@ -1,0 +1,162 @@
+{
+  "cannafinder_shops_in_radius_around_coordinates": {
+    "qos_llm_score": 0.966,
+    "qos_llm_rank": 1
+  },
+  "veggie_me_restaurants": {
+    "qos_llm_score": 0.951,
+    "qos_llm_rank": 2
+  },
+  "bbc_good_food_api_collection_recipes": {
+    "qos_llm_score": 0.925,
+    "qos_llm_rank": 3
+  },
+  "priceline_com_provider_search_flights_locations": {
+    "qos_llm_score": 0.69,
+    "qos_llm_rank": 4
+  },
+  "restaurants_reviews": {
+    "qos_llm_score": 0.678,
+    "qos_llm_rank": 5
+  },
+  "airbnb_v2_get_type_of_place_filters": {
+    "qos_llm_score": 0.675,
+    "qos_llm_rank": 6
+  },
+  "city_and_state_search_api_cities_search": {
+    "qos_llm_score": 0.675,
+    "qos_llm_rank": 7
+  },
+  "fast_food_restaurants_usa_top_50_chains_get_all_city_names": {
+    "qos_llm_score": 0.675,
+    "qos_llm_rank": 8
+  },
+  "hotel_search_default": {
+    "qos_llm_score": 0.669,
+    "qos_llm_rank": 9
+  },
+  "venue_deactivatevenue": {
+    "qos_llm_score": 0.669,
+    "qos_llm_rank": 10
+  },
+  "locationiq_limitbyviewbox": {
+    "qos_llm_score": 0.668,
+    "qos_llm_rank": 11
+  },
+  "priceline_com_provider_download_cities_clusters": {
+    "qos_llm_score": 0.666,
+    "qos_llm_rank": 12
+  },
+  "foursquare_getsuggestedcompletion": {
+    "qos_llm_score": 0.651,
+    "qos_llm_rank": 13
+  },
+  "apartments_com_reviews": {
+    "qos_llm_score": 0.647,
+    "qos_llm_rank": 14
+  },
+  "hotelapi_hotelsearch": {
+    "qos_llm_score": 0.647,
+    "qos_llm_rank": 15
+  },
+  "airbnb_v2_get_category": {
+    "qos_llm_score": 0.646,
+    "qos_llm_rank": 16
+  },
+  "skyscanner_v2_get_things_to_do": {
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 17
+  },
+  "world_cities_and_countries_searchcountries": {
+    "qos_llm_score": 0.645,
+    "qos_llm_rank": 18
+  },
+  "bbc_good_food_api_search_for_recipes": {
+    "qos_llm_score": 0.643,
+    "qos_llm_rank": 19
+  },
+  "stores_and_brands_api_get_stores_by_city": {
+    "qos_llm_score": 0.641,
+    "qos_llm_rank": 20
+  },
+  "hotels_locations_v2_search_deprecated": {
+    "qos_llm_score": 0.636,
+    "qos_llm_rank": 21
+  },
+  "airbnb_v2_get_property_type_filters": {
+    "qos_llm_score": 0.635,
+    "qos_llm_rank": 22
+  },
+  "the_fork_the_spoon_locations_v2_list": {
+    "qos_llm_score": 0.635,
+    "qos_llm_rank": 23
+  },
+  "hotelgeo_default": {
+    "qos_llm_score": 0.631,
+    "qos_llm_rank": 24
+  },
+  "apartments_com_media": {
+    "qos_llm_score": 0.622,
+    "qos_llm_rank": 25
+  },
+  "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state": {
+    "qos_llm_score": 0.621,
+    "qos_llm_rank": 26
+  },
+  "apartments_com_walk_score": {
+    "qos_llm_score": 0.62,
+    "qos_llm_rank": 27
+  },
+  "worldwide_restaurants_search": {
+    "qos_llm_score": 0.614,
+    "qos_llm_rank": 28
+  },
+  "travel_advisor_restaurant_filters_v2_list": {
+    "qos_llm_score": 0.613,
+    "qos_llm_rank": 29
+  },
+  "target_com_store_product_reviews_locations_data_target_store_location_search": {
+    "qos_llm_score": 0.612,
+    "qos_llm_rank": 30
+  },
+  "priceline_com_hotel_city_nearby": {
+    "qos_llm_score": 0.603,
+    "qos_llm_rank": 31
+  },
+  "tripadvisor_search_restaurant_location": {
+    "qos_llm_score": 0.595,
+    "qos_llm_rank": 32
+  },
+  "quick_geo_location_get_directions_coordinates_by_lat_lan": {
+    "qos_llm_score": 0.577,
+    "qos_llm_rank": 33
+  },
+  "quick_geo_location_search_location_by_name": {
+    "qos_llm_score": 0.577,
+    "qos_llm_rank": 34
+  },
+  "worldwide_restaurants_detail": {
+    "qos_llm_score": 0.577,
+    "qos_llm_rank": 35
+  },
+  "reinspitpor_default": {
+    "qos_llm_score": 0.573,
+    "qos_llm_rank": 36
+  },
+  "recipe_finder_diet_ingredient": {
+    "qos_llm_score": 0.535,
+    "qos_llm_rank": 37
+  },
+  "airbnb_v2_search_property": {
+    "qos_llm_score": 0.529,
+    "qos_llm_rank": 38
+  },
+  "address_autosuggest_address_autosuggest": {
+    "qos_llm_score": 0.332,
+    "qos_llm_rank": 39
+  },
+  "worldwide_hotels_reviews": {
+    "qos_llm_score": 0.182,
+    "qos_llm_rank": 40
+  }
+}

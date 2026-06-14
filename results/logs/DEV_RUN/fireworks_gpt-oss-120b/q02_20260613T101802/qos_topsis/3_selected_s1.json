@@ -1,0 +1,95 @@
+[
+  {
+    "api_id": "cannafinder_shops_in_radius_around_coordinates",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 22,
+    "rag_score": 0.4833466112613678,
+    "reason": "Deterministic QoS ordering.",
+    "service": {
+      "_file": "cannafinder.json",
+      "_tool": "cannafinder",
+      "api_id": "cannafinder_shops_in_radius_around_coordinates",
+      "category": "Location",
+      "description": "Find shops in input radius and coordinates. Returns multiple tags for every entry and distance in km.",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": [
+          {
+            "default": "1000",
+            "description": "in meter. ",
+            "name": "radius",
+            "type": "NUMBER"
+          },
+          {
+            "default": "52.377075",
+            "description": "",
+            "name": "lat",
+            "type": "NUMBER"
+          },
+          {
+            "default": "4.902427",
+            "description": "",
+            "name": "lon",
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "method": "GET",
+      "name": "/shops-in-radius-around-coordinates",
+      "tool_description": "Find cannabis, marijuana, dispensaries shop locations with additional data around you or the world. Try for free.",
+      "tool_name": "CannaFinder",
+      "toolbench_endpoint_description": "Find shops in input radius and coordinates. Returns multiple tags for every entry and distance in km.",
+      "toolbench_enrichment": {
+        "category": "Location",
+        "endpoint_description": "Find shops in input radius and coordinates. Returns multiple tags for every entry and distance in km.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "/shops-in-radius-around-coordinates",
+        "endpoint_url": "https://cannafinder.p.rapidapi.com/shops-in-radius-around-coordinates",
+        "file_name": "cannafinder.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Find cannabis, marijuana, dispensaries shop locations with additional data around you or the world.  Try for free.",
+        "tool_file_found": true,
+        "tool_name": "CannaFinder",
+        "toolbench_relative_path": "Location/cannafinder.json"
+      },
+      "toolbench_tool_description": "Find cannabis, marijuana, dispensaries shop locations with additional data around you or the world.  Try for free.",
+      "toolbench_tool_name": "CannaFinder",
+      "url": "https://cannafinder.p.rapidapi.com/shops-in-radius-around-coordinates",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.372,
+        "tp_kbps": 702.1345,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.9338713724452131,
+    "topsis_rank": 1,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_topsis",
+      "subtask_id": "1",
+      "api_id": "cannafinder_shops_in_radius_around_coordinates",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false,
+      "topsis_rank": 1,
+      "topsis_score": 0.9338713724452131
+    }
+  }
+]

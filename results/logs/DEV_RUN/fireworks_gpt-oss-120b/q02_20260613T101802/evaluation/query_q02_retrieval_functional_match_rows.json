@@ -1,0 +1,1082 @@
+[
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C28",
+    "Selected_API": "restaurants_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "only returns reviews, no search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C14",
+    "Selected_API": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets restaurants by chain/state, not location-based search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C13",
+    "Selected_API": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists city names, not restaurant search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C32",
+    "Selected_API": "the_fork_the_spoon_locations_v2_list",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists locations by place id, not search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C20",
+    "Selected_API": "locationiq_limitbyviewbox",
+    "Functional Match (0/1)": 1,
+    "Comments": "autocomplete returns businesses including restaurants, suitable"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C16",
+    "Selected_API": "hotel_search_default",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches hotels, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C05",
+    "Selected_API": "airbnb_v2_search_property",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches accommodations, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C04",
+    "Selected_API": "airbnb_v2_get_type_of_place_filters",
+    "Functional Match (0/1)": 0,
+    "Comments": "type of place filters for Airbnb, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C15",
+    "Selected_API": "foursquare_getsuggestedcompletion",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns nearby venues matching query, suitable for restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C18",
+    "Selected_API": "hotelgeo_default",
+    "Functional Match (0/1)": 0,
+    "Comments": "hotel geo search, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C01",
+    "Selected_API": "address_autosuggest_address_autosuggest",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides address suggestions, not restaurant data"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C34",
+    "Selected_API": "tripadvisor_search_restaurant_location",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches by query string, not location-based"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C40",
+    "Selected_API": "worldwide_restaurants_search",
+    "Functional Match (0/1)": 1,
+    "Comments": "searches restaurants using location_id"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C39",
+    "Selected_API": "worldwide_restaurants_detail",
+    "Functional Match (0/1)": 0,
+    "Comments": "restaurant detail, not search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C33",
+    "Selected_API": "travel_advisor_restaurant_filters_v2_list",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides filters, not restaurant results"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C30",
+    "Selected_API": "stores_and_brands_api_get_stores_by_city",
+    "Functional Match (0/1)": 0,
+    "Comments": "store locations, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C23",
+    "Selected_API": "priceline_com_provider_search_flights_locations",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches flight locations only"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C03",
+    "Selected_API": "airbnb_v2_get_property_type_filters",
+    "Functional Match (0/1)": 0,
+    "Comments": "property type filters for Airbnb, not restaurant search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C02",
+    "Selected_API": "airbnb_v2_get_category",
+    "Functional Match (0/1)": 0,
+    "Comments": "returns Airbnb categories, unrelated to restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C10",
+    "Selected_API": "bbc_good_food_api_search_for_recipes",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches recipes, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C25",
+    "Selected_API": "quick_geo_location_search_location_by_name",
+    "Functional Match (0/1)": 0,
+    "Comments": "finds location info, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C11",
+    "Selected_API": "cannafinder_shops_in_radius_around_coordinates",
+    "Functional Match (0/1)": 0,
+    "Comments": "finds cannabis shops, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C38",
+    "Selected_API": "worldwide_hotels_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "hotel reviews, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C31",
+    "Selected_API": "target_com_store_product_reviews_locations_data_target_store_location_search",
+    "Functional Match (0/1)": 0,
+    "Comments": "target store locations, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C19",
+    "Selected_API": "hotels_locations_v2_search_deprecated",
+    "Functional Match (0/1)": 0,
+    "Comments": "hotel location search, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C35",
+    "Selected_API": "veggie_me_restaurants",
+    "Functional Match (0/1)": 0,
+    "Comments": "vegetarian restaurants limited to cities, no location param"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C37",
+    "Selected_API": "world_cities_and_countries_searchcountries",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches countries, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C08",
+    "Selected_API": "apartments_com_walk_score",
+    "Functional Match (0/1)": 0,
+    "Comments": "apartment walk scores, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C29",
+    "Selected_API": "skyscanner_v2_get_things_to_do",
+    "Functional Match (0/1)": 0,
+    "Comments": "gets activities, not restaurant search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C27",
+    "Selected_API": "reinspitpor_default",
+    "Functional Match (0/1)": 0,
+    "Comments": "real estate listings, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C09",
+    "Selected_API": "bbc_good_food_api_collection_recipes",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipes collection, not restaurant discovery"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C17",
+    "Selected_API": "hotelapi_hotelsearch",
+    "Functional Match (0/1)": 0,
+    "Comments": "hotel search, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C12",
+    "Selected_API": "city_and_state_search_api_cities_search",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches cities, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C06",
+    "Selected_API": "apartments_com_media",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves apartment media, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C24",
+    "Selected_API": "quick_geo_location_get_directions_coordinates_by_lat_lan",
+    "Functional Match (0/1)": 0,
+    "Comments": "returns directions, not restaurant data"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C21",
+    "Selected_API": "priceline_com_hotel_city_nearby",
+    "Functional Match (0/1)": 0,
+    "Comments": "searches hotels, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C36",
+    "Selected_API": "venue_deactivatevenue",
+    "Functional Match (0/1)": 0,
+    "Comments": "deactivates venue, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C22",
+    "Selected_API": "priceline_com_provider_download_cities_clusters",
+    "Functional Match (0/1)": 0,
+    "Comments": "provides hotel city clusters"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C07",
+    "Selected_API": "apartments_com_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "apartment reviews, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "1",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C26",
+    "Selected_API": "recipe_finder_diet_ingredient",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipe search, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C24",
+    "Selected_API": "restaurants_reviews",
+    "Functional Match (0/1)": 1,
+    "Comments": "provides restaurant reviews directly"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C40",
+    "Selected_API": "yummly_reviews_list",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipe reviews, not restaurant reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C02",
+    "Selected_API": "amazon_data_scraper_by_kgaur_get_amazon_product_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon product reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C17",
+    "Selected_API": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+    "Functional Match (0/1)": 1,
+    "Comments": "Provides restaurant details"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C16",
+    "Selected_API": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+    "Functional Match (0/1)": 0,
+    "Comments": "City names only"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C05",
+    "Selected_API": "amazon_product_data_get_search_data",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon product search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C03",
+    "Selected_API": "amazon_data_scraper_v2_get_product_s_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon product reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C34",
+    "Selected_API": "unofficial_trust_pilot_consumers_detail",
+    "Functional Match (0/1)": 0,
+    "Comments": "consumer detail, not restaurant"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C12",
+    "Selected_API": "bigoven_getreviewreplies",
+    "Functional Match (0/1)": 0,
+    "Comments": "Recipe review replies"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C15",
+    "Selected_API": "edamam_food_and_grocery_database_api_food_database_v2_nutrients-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "Food nutrient data"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C28",
+    "Selected_API": "steam_app_detail",
+    "Functional Match (0/1)": 0,
+    "Comments": "steam app info, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C38",
+    "Selected_API": "yummly_feeds_list",
+    "Functional Match (0/1)": 0,
+    "Comments": "list feeds, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C33",
+    "Selected_API": "unofficial_shein_reviews_list",
+    "Functional Match (0/1)": 0,
+    "Comments": "SHEIN product reviews, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C06",
+    "Selected_API": "amazon_store_scraper_get_amazon_product_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon product reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C13",
+    "Selected_API": "burgers_hub_get_specific_burger",
+    "Functional Match (0/1)": 0,
+    "Comments": "Burger details"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C37",
+    "Selected_API": "yummly_feeds_auto_complete",
+    "Functional Match (0/1)": 0,
+    "Comments": "auto-complete for food items, not reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C22",
+    "Selected_API": "jumia_service_get_product_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "product reviews, unrelated to restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C26",
+    "Selected_API": "specrom_news_api_document_sentiments_score",
+    "Functional Match (0/1)": 0,
+    "Comments": "sentiment analysis, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C18",
+    "Selected_API": "favoritefoodapi_get_all_favorite_food",
+    "Functional Match (0/1)": 0,
+    "Comments": "Favorite dishes list"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C35",
+    "Selected_API": "yelpapi_getbusinesses",
+    "Functional Match (0/1)": 1,
+    "Comments": "fetches business info including restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C10",
+    "Selected_API": "beer_lover_get_the_top_50_beers",
+    "Functional Match (0/1)": 0,
+    "Comments": "Beer list data"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C32",
+    "Selected_API": "the_recipes_search_by_website_or_blog",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipe listings, not restaurant reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C36",
+    "Selected_API": "yelpapi_getbusinessesbytransaction",
+    "Functional Match (0/1)": 1,
+    "Comments": "returns businesses with transaction info, includes restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C25",
+    "Selected_API": "shubhankar_amazon_data_scraper_get_product_details_related_amazon_com",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon product details, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C09",
+    "Selected_API": "bbs_amazon_data_scraper_get_amazon_search_results",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon search results"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C01",
+    "Selected_API": "amazon_data_scapper_get_product_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon product reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C07",
+    "Selected_API": "apartments_com_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "Apartment reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C11",
+    "Selected_API": "bespoke_diet_generator_get_user_s_information",
+    "Functional Match (0/1)": 0,
+    "Comments": "User info retrieval"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C21",
+    "Selected_API": "jingdong_data_service_item_reviews_detailed",
+    "Functional Match (0/1)": 0,
+    "Comments": "eCommerce product reviews, not restaurants"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C04",
+    "Selected_API": "amazon_india_web_scraper_get_product_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "Amazon product reviews"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C30",
+    "Selected_API": "suggestic_generate_a_simple_meal_plan-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "same as C29"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C29",
+    "Selected_API": "suggestic_generate_a_simple_meal_plan",
+    "Functional Match (0/1)": 0,
+    "Comments": "meal plan generation, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C31",
+    "Selected_API": "target_com_store_product_reviews_locations_data_target_store_location_search",
+    "Functional Match (0/1)": 0,
+    "Comments": "store locations, not restaurant data"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C19",
+    "Selected_API": "guardian_searchcontent",
+    "Functional Match (0/1)": 0,
+    "Comments": "News content search"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C27",
+    "Selected_API": "specrom_news_api_fetch_parsed_news_article_by_url_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "news article fetch, irrelevant"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C23",
+    "Selected_API": "meteo_data_api_get_info",
+    "Functional Match (0/1)": 0,
+    "Comments": "weather data, irrelevant"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C08",
+    "Selected_API": "bbc_good_food_api_recipe_by_name_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "Recipe information"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C39",
+    "Selected_API": "yummly_feeds_search-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "search recipes, not restaurant data"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C20",
+    "Selected_API": "ind_nutrient_api_view_food_items_by_type",
+    "Functional Match (0/1)": 0,
+    "Comments": "Indian food nutrients"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "2",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C14",
+    "Selected_API": "catalogapi_remove_item",
+    "Functional Match (0/1)": 0,
+    "Comments": "Cart item removal"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 1,
+    "Candidate_ID": "C32",
+    "Selected_API": "suggestic_generate_a_simple_meal_plan-2",
+    "Functional Match (0/1)": 0,
+    "Comments": "meal plan generation unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 2,
+    "Candidate_ID": "C31",
+    "Selected_API": "suggestic_generate_a_simple_meal_plan",
+    "Functional Match (0/1)": 0,
+    "Comments": "meal plan generation unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 3,
+    "Candidate_ID": "C29",
+    "Selected_API": "restaurants_reviews",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves reviews, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 4,
+    "Candidate_ID": "C19",
+    "Selected_API": "favoritefoodapi_get_all_favorite_food",
+    "Functional Match (0/1)": 0,
+    "Comments": "favorite food list, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 5,
+    "Candidate_ID": "C17",
+    "Selected_API": "fast_food_restaurants_usa_top_50_chains_get_all_city_names",
+    "Functional Match (0/1)": 0,
+    "Comments": "city names list, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 6,
+    "Candidate_ID": "C18",
+    "Selected_API": "fast_food_restaurants_usa_top_50_chains_get_all_restaurants_by_chain_state",
+    "Functional Match (0/1)": 0,
+    "Comments": "restaurants list, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 7,
+    "Candidate_ID": "C10",
+    "Selected_API": "cartify_getordersbyemail",
+    "Functional Match (0/1)": 0,
+    "Comments": "retrieves orders, not sending"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 8,
+    "Candidate_ID": "C34",
+    "Selected_API": "testing_v3_validateemail",
+    "Functional Match (0/1)": 0,
+    "Comments": "email validation only"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 9,
+    "Candidate_ID": "C20",
+    "Selected_API": "food_calories_get_foods_by_category_name",
+    "Functional Match (0/1)": 0,
+    "Comments": "food calories, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 10,
+    "Candidate_ID": "C37",
+    "Selected_API": "veggie_me_restaurants",
+    "Functional Match (0/1)": 0,
+    "Comments": "vegetarian restaurant list unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 11,
+    "Candidate_ID": "C36",
+    "Selected_API": "travel_advisor_restaurant_filters_v2_list",
+    "Functional Match (0/1)": 0,
+    "Comments": "restaurant filters unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 12,
+    "Candidate_ID": "C16",
+    "Selected_API": "emailjs_send_form",
+    "Functional Match (0/1)": 1,
+    "Comments": "email sending via template"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 13,
+    "Candidate_ID": "C38",
+    "Selected_API": "venue_deactivatevenue",
+    "Functional Match (0/1)": 0,
+    "Comments": "deactivates venue, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 14,
+    "Candidate_ID": "C13",
+    "Selected_API": "create_game_rooms_get_rooms_as_response",
+    "Functional Match (0/1)": 0,
+    "Comments": "game rooms generation, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 15,
+    "Candidate_ID": "C02",
+    "Selected_API": "api2cart_listproductoptions",
+    "Functional Match (0/1)": 0,
+    "Comments": "eCommerce product options, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 16,
+    "Candidate_ID": "C27",
+    "Selected_API": "ocw_createacustomtoaddress",
+    "Functional Match (0/1)": 0,
+    "Comments": "creates mailing address, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 17,
+    "Candidate_ID": "C04",
+    "Selected_API": "bbc_good_food_api_collection_recipes",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipes data, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 18,
+    "Candidate_ID": "C25",
+    "Selected_API": "mailjet_getcampaignoverviewlist",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists campaign overviews, not send"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 19,
+    "Candidate_ID": "C12",
+    "Selected_API": "contextio_getallapplicationwebhooks",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists webhooks, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 20,
+    "Candidate_ID": "C23",
+    "Selected_API": "keyword_suggestion_api_questions",
+    "Functional Match (0/1)": 0,
+    "Comments": "keyword suggestions unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 21,
+    "Candidate_ID": "C33",
+    "Selected_API": "tasty_recipes_auto_complete",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipe autocomplete unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 22,
+    "Candidate_ID": "C28",
+    "Selected_API": "restaurant_booking_management_restaurantsite",
+    "Functional Match (0/1)": 0,
+    "Comments": "restaurant management, no email send"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 23,
+    "Candidate_ID": "C30",
+    "Selected_API": "smtp_e_mail_sender_send_test_email",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends email directly"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 24,
+    "Candidate_ID": "C35",
+    "Selected_API": "the_fork_the_spoon_locations_v2_list",
+    "Functional Match (0/1)": 0,
+    "Comments": "location list unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 25,
+    "Candidate_ID": "C05",
+    "Selected_API": "bbc_good_food_api_recipe_by_name_id",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipe details, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 26,
+    "Candidate_ID": "C24",
+    "Selected_API": "mailjet_getcampaigndraftlist",
+    "Functional Match (0/1)": 0,
+    "Comments": "lists drafts, does not send email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 27,
+    "Candidate_ID": "C39",
+    "Selected_API": "venue_validatecluster",
+    "Functional Match (0/1)": 0,
+    "Comments": "validates venue cluster, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 28,
+    "Candidate_ID": "C26",
+    "Selected_API": "moviehut_random_movie_get_list_of_movies_sorted_by_imdb_rating_with_parameters",
+    "Functional Match (0/1)": 0,
+    "Comments": "movie data unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 29,
+    "Candidate_ID": "C40",
+    "Selected_API": "yummly_feeds_auto_complete",
+    "Functional Match (0/1)": 0,
+    "Comments": "auto-complete suggestions unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 30,
+    "Candidate_ID": "C06",
+    "Selected_API": "bbc_good_food_api_search_for_recipes",
+    "Functional Match (0/1)": 0,
+    "Comments": "recipe search, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 31,
+    "Candidate_ID": "C07",
+    "Selected_API": "beer_lover_get_the_top_50_beers",
+    "Functional Match (0/1)": 0,
+    "Comments": "beer data, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 32,
+    "Candidate_ID": "C11",
+    "Selected_API": "category_list_19_register",
+    "Functional Match (0/1)": 0,
+    "Comments": "category register, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 33,
+    "Candidate_ID": "C08",
+    "Selected_API": "bespoke_diet_generator_get_user_s_diet_for_a_specific_day",
+    "Functional Match (0/1)": 0,
+    "Comments": "diet plan, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 34,
+    "Candidate_ID": "C09",
+    "Selected_API": "beverages_and_desserts_get_all_the_desserts",
+    "Functional Match (0/1)": 0,
+    "Comments": "desserts list, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 35,
+    "Candidate_ID": "C03",
+    "Selected_API": "auto_suggest_queries_suggestqueries",
+    "Functional Match (0/1)": 0,
+    "Comments": "search query suggestions, unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 36,
+    "Candidate_ID": "C22",
+    "Selected_API": "keyword_suggestion_api_comparisons",
+    "Functional Match (0/1)": 0,
+    "Comments": "keyword suggestions unrelated"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 37,
+    "Candidate_ID": "C14",
+    "Selected_API": "e_commerce_top_rated_by_category",
+    "Functional Match (0/1)": 0,
+    "Comments": "eCommerce top items, not email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 38,
+    "Candidate_ID": "C21",
+    "Selected_API": "gmail_updatesendasalias",
+    "Functional Match (0/1)": 0,
+    "Comments": "updates alias, not sending email"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 39,
+    "Candidate_ID": "C01",
+    "Selected_API": "abir82_bollywood_recommendations_fetch_movies",
+    "Functional Match (0/1)": 0,
+    "Comments": "irrelevant domain (movies)"
+  },
+  {
+    "Query_ID": "q02",
+    "Sub Task": "3",
+    "Retrieved Rank": 40,
+    "Candidate_ID": "C15",
+    "Selected_API": "e_mailer_420_mail",
+    "Functional Match (0/1)": 1,
+    "Comments": "sends email directly"
+  }
+]

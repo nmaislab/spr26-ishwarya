@@ -1,0 +1,602 @@
+[
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan-2",
+    "rag_score": 0.6649187803268433,
+    "compressed": {
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan-2",
+      "name": "/api/scan",
+      "description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/scan",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "tool_description": "Check if a website is malicious or safe"
+    },
+    "retrieved_rank": 1
+  },
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan",
+    "rag_score": 0.6649187803268433,
+    "compressed": {
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_scan",
+      "name": "/api/scan",
+      "description": "Takes a URL parameter and returns if the scan started or if the URL has already been scanned.",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/scan",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "tool_description": "Check if a website is malicious or safe"
+    },
+    "retrieved_rank": 2
+  },
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_report_report_id",
+    "rag_score": 0.6132655739784241,
+    "compressed": {
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_report_report_id",
+      "name": "/api/report/{report_id}",
+      "description": "Returns the report details for a given report ID.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/report/{report_id}",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "tool_description": "Check if a website is malicious or safe"
+    },
+    "retrieved_rank": 3
+  },
+  {
+    "api_id": "malicious_urls_check_url",
+    "rag_score": 0.5999679565429688,
+    "compressed": {
+      "api_id": "malicious_urls_check_url",
+      "name": "Check URL",
+      "description": "Endpoint to check URL is malicious or not",
+      "category": "Tools",
+      "method": "GET",
+      "url": "https://malicious-urls.p.rapidapi.com/check",
+      "tool_name": "Malicious Urls",
+      "tool_description": "An API to check whether the given URL is malicious or not"
+    },
+    "retrieved_rank": 4
+  },
+  {
+    "api_id": "sus_guru_malicious_website_ai_detector_api_api_queue",
+    "rag_score": 0.5870428681373596,
+    "compressed": {
+      "api_id": "sus_guru_malicious_website_ai_detector_api_api_queue",
+      "name": "/api/queue",
+      "description": "Returns whether a site is currently being scanned and the queue size.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://sus-guru-malicious-website-ai-detector-api.p.rapidapi.com/api/queue",
+      "tool_name": "Sus Guru Malicious Website AI Detector API",
+      "tool_description": "Check if a website is malicious or safe"
+    },
+    "retrieved_rank": 5
+  },
+  {
+    "api_id": "weblasso_get_scan_id",
+    "rag_score": 0.5865952372550964,
+    "compressed": {
+      "api_id": "weblasso_get_scan_id",
+      "name": "Get Scan ID",
+      "description": "Run a scan against a target URL and receive a scan ID to obtain scan results or check scan status at a later time.\n\nProvide an optional callback URL to receive scan results automatically once the scan",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://weblasso.p.rapidapi.com/scan-id",
+      "tool_name": "WebLasso",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!"
+    },
+    "retrieved_rank": 6
+  },
+  {
+    "api_id": "phishyscan_api_scan",
+    "rag_score": 0.5530424118041992,
+    "compressed": {
+      "api_id": "phishyscan_api_scan",
+      "name": "Scan",
+      "description": "Scan an email message for signs of phishing.",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://phishyscan-api.p.rapidapi.com/scan",
+      "tool_name": "PhishyScan API",
+      "tool_description": "(Beta) Public preview of Anti-phishing scam API, PhishyScan, powered by OpenAI."
+    },
+    "retrieved_rank": 7
+  },
+  {
+    "api_id": "javascript_vulnerability_scan_analyzeurl",
+    "rag_score": 0.5447465181350708,
+    "compressed": {
+      "api_id": "javascript_vulnerability_scan_analyzeurl",
+      "name": "analyzeUrl",
+      "description": "Send POST data with url parameter.\n\nExample: curl -X POST -d \"url=URL_TO_SCAN\"",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://javascript-vulnerability-scan.p.rapidapi.com/analyzeUrl",
+      "tool_name": "Javascript Vulnerability Scan",
+      "tool_description": "Scan your website to detect Javascript files with vulnerabilities."
+    },
+    "retrieved_rank": 8
+  },
+  {
+    "api_id": "weblasso_get_callback_url_status",
+    "rag_score": 0.5436861515045166,
+    "compressed": {
+      "api_id": "weblasso_get_callback_url_status",
+      "name": "Get Callback URL Status",
+      "description": "Check if a callback URL is able to receive scan results (ensure that the callback URL accepts POST requests).",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://weblasso.p.rapidapi.com/callback-status",
+      "tool_name": "WebLasso",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!"
+    },
+    "retrieved_rank": 9
+  },
+  {
+    "api_id": "weblasso_get_scan_results",
+    "rag_score": 0.5311983823776245,
+    "compressed": {
+      "api_id": "weblasso_get_scan_results",
+      "name": "Get Scan Results",
+      "description": "Obtain the scan results from a given scan ID.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://weblasso.p.rapidapi.com/scan",
+      "tool_name": "WebLasso",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!"
+    },
+    "retrieved_rank": 10
+  },
+  {
+    "api_id": "weblasso_get_scan_status",
+    "rag_score": 0.5198425054550171,
+    "compressed": {
+      "api_id": "weblasso_get_scan_status",
+      "name": "Get Scan Status",
+      "description": "Check the status of a scan (ongoing/completed) using a scan ID.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://weblasso.p.rapidapi.com/scan-status",
+      "tool_name": "WebLasso",
+      "tool_description": "Scan the web for a diverse range of data including subdomains, IP Addresses, web technologies and emails!"
+    },
+    "retrieved_rank": 11
+  },
+  {
+    "api_id": "exerra_phishing_check_get_stats",
+    "rag_score": 0.5171516537666321,
+    "compressed": {
+      "api_id": "exerra_phishing_check_get_stats",
+      "name": "Get stats",
+      "description": "Get statistics about the Exerra Phishing API",
+      "category": "Tools",
+      "method": "GET",
+      "url": "https://exerra-phishing-check.p.rapidapi.com/stats",
+      "tool_name": "Exerra phishing check",
+      "tool_description": "This API checks URLs to see whether they are known phishing attempts."
+    },
+    "retrieved_rank": 12
+  },
+  {
+    "api_id": "domain_information_domain_information",
+    "rag_score": 0.4665963649749756,
+    "compressed": {
+      "api_id": "domain_information_domain_information",
+      "name": "Domain Information",
+      "description": "This endpoint takes a 'GET' request with URL as a parameter and returns the domain's general information.\nDo not write 'https://' or 'http://' in the URL as it will make the API break.",
+      "category": "Search",
+      "method": "GET",
+      "url": "https://domain-information.p.rapidapi.com/domain_api",
+      "tool_name": "Domain Information",
+      "tool_description": "This API takes a URL and returns its information on GoDaddy (e.g. Availability, Price, etc..)."
+    },
+    "retrieved_rank": 13
+  },
+  {
+    "api_id": "pawscan_scan",
+    "rag_score": 0.46250271797180176,
+    "compressed": {
+      "api_id": "pawscan_scan",
+      "name": "Scan",
+      "description": "Initiates a scan targeting either a domain or an email address. When an email address is provided, the system will send a notification to the specified email upon completion of the scan. If a valid UR",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://pawscan.p.rapidapi.com/queue",
+      "tool_name": "PawScan",
+      "tool_description": "PawScan, in BETA, identifies vulnerabilities in domains and emails, offering security recommendations."
+    },
+    "retrieved_rank": 14
+  },
+  {
+    "api_id": "tweetfeed_v1",
+    "rag_score": 0.4607473909854889,
+    "compressed": {
+      "api_id": "tweetfeed_v1",
+      "name": "v1",
+      "description": "Version 1 Endpoint.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://tweetfeed.p.rapidapi.com/v1/{time}/{filter1}/{filter2}",
+      "tool_name": "TweetFeed",
+      "tool_description": "Free feed with IOCs -  malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]"
+    },
+    "retrieved_rank": 15
+  },
+  {
+    "api_id": "ai_url_shortner_welcome",
+    "rag_score": 0.4533463418483734,
+    "compressed": {
+      "api_id": "ai_url_shortner_welcome",
+      "name": "Welcome",
+      "description": "This endpoint just welcomes everyone with Hello World.",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "method": "GET",
+      "url": "https://ai-url-shortner.p.rapidapi.com/welcome",
+      "tool_name": "AI URL Shortner",
+      "tool_description": "An AI URL shortener is a tool that can make long web addresses (URLs) shorter and easier to remember. It does this by taking a long URL and creating a shorter one that redirects to the original URL when clicked. This can be helpful if you want to share a link on social media or in a text message, bu"
+    },
+    "retrieved_rank": 16
+  },
+  {
+    "api_id": "ip_threat_lookup_iplookup",
+    "rag_score": 0.44953450560569763,
+    "compressed": {
+      "api_id": "ip_threat_lookup_iplookup",
+      "name": "ipLookup",
+      "description": "Get the details of a specific IP address, and whether it poses a threat to your network with a \"Confidence of Abuse\" score and the number of times it has been reported.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://ip-threat-lookup.p.rapidapi.com/api/v2/check",
+      "tool_name": "IP Threat Lookup",
+      "tool_description": "Lookup specific IP addresses to see if they are a threat to your network."
+    },
+    "retrieved_rank": 17
+  },
+  {
+    "api_id": "urlchecker_decodelink",
+    "rag_score": 0.442099392414093,
+    "compressed": {
+      "api_id": "urlchecker_decodelink",
+      "name": "decodelink",
+      "description": "Decode single link only (adf.ly,safelinking.net,bit.ly ...)",
+      "category": "Tools",
+      "method": "GET",
+      "url": "https://urlchecker.p.rapidapi.com/",
+      "tool_name": "Urlchecker",
+      "tool_description": "Urlchecker.net is a website tools to help you find out the link want to download still A Live or Dead,get name size and decode encode links"
+    },
+    "retrieved_rank": 18
+  },
+  {
+    "api_id": "the_content_monitoring_api_create_detector",
+    "rag_score": 0.441501259803772,
+    "compressed": {
+      "api_id": "the_content_monitoring_api_create_detector",
+      "name": "create_detector",
+      "description": "Add a new detector. If added correctly, the scheduler immediately adds the detector as a runable job.\nIn order for the first url snapshot to be taken as fast as possible, detectInterval.startDate shou",
+      "category": "Tools",
+      "method": "POST",
+      "url": "https://the-content-monitoring-api.p.rapidapi.com/detector",
+      "tool_name": "The Content Monitoring API",
+      "tool_description": "The Content Monitoring API is a powerful tool designed for developers who need to monitor changes in website content. This API allows developers to register detectors that periodically scrape the provided URL, analyze the change with the help of ChatGPT and notify the API consumer on the significanc"
+    },
+    "retrieved_rank": 19
+  },
+  {
+    "api_id": "roco_api_get_rogues_by_name",
+    "rag_score": 0.4413134455680847,
+    "compressed": {
+      "api_id": "roco_api_get_rogues_by_name",
+      "name": "Get Rogues by name",
+      "description": "takes an array of string names and returns all rogues with names matching each element in the Array.",
+      "category": "Gaming",
+      "method": "POST",
+      "url": "https://roco-api.p.rapidapi.com/rogues/name/",
+      "tool_name": "RoCO API",
+      "tool_description": "This API is a simple ROgue Company API made with info found online on different resources.\nIt started as a personal project, but given that there seems to be no official API, I decided to make a fan based one and make it public."
+    },
+    "retrieved_rank": 20
+  },
+  {
+    "api_id": "penteston_api_v1_start_scan",
+    "rag_score": 0.43499645590782166,
+    "compressed": {
+      "api_id": "penteston_api_v1_start_scan",
+      "name": "/v1/start_scan",
+      "description": " ",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://penteston-api.p.rapidapi.com/v1/start_scan",
+      "tool_name": "PENTESTON - API",
+      "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and securi"
+    },
+    "retrieved_rank": 21
+  },
+  {
+    "api_id": "spamspy_comprehend",
+    "rag_score": 0.43077531456947327,
+    "compressed": {
+      "api_id": "spamspy_comprehend",
+      "name": "Comprehend",
+      "description": "Comprehend uses the current AI public modals and submits the content (located in the query string) to be identified as spam or not.\n- Fetch Method Get\n- Returns Boolean: **true** / **false**\nExample R",
+      "category": "Artificial_Intelligence_Machine_Learning",
+      "method": "GET",
+      "url": "https://spamspy.p.rapidapi.com/Comprehend",
+      "tool_name": "SpamSpy",
+      "tool_description": "AI-powered spam detection to secure & streamline communication."
+    },
+    "retrieved_rank": 22
+  },
+  {
+    "api_id": "url_shortener_track",
+    "rag_score": 0.4228358566761017,
+    "compressed": {
+      "api_id": "url_shortener_track",
+      "name": "Track",
+      "description": "Endpoint to track basic information of a shortened URL.",
+      "category": "Search",
+      "method": "GET",
+      "url": "https://url-shortener14.p.rapidapi.com/api/track/{id}",
+      "tool_name": "URL Shortener",
+      "tool_description": "API used on https://anonurl.vercel.app service. Easy-to-use and anonymous."
+    },
+    "retrieved_rank": 23
+  },
+  {
+    "api_id": "ics_cert_advisories_get_all_advisories",
+    "rag_score": 0.42126479744911194,
+    "compressed": {
+      "api_id": "ics_cert_advisories_get_all_advisories",
+      "name": "Get All Advisories",
+      "description": "This endpoint will return back all  advisories and provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov",
+      "category": "Monitoring",
+      "method": "GET",
+      "url": "https://ics-cert-advisories.p.rapidapi.com/advisories",
+      "tool_name": "ICS-CERT Advisories",
+      "tool_description": "An API to retrieve advisories for Industrial Control Systems that provide timely information about current security issues, vulnerabilities, and exploits from CISA.gov."
+    },
+    "retrieved_rank": 24
+  },
+  {
+    "api_id": "xss_shield_get_detect",
+    "rag_score": 0.4205342233181,
+    "compressed": {
+      "api_id": "xss_shield_get_detect",
+      "name": "GET Detect",
+      "description": "This endpoint detects and prevents XSS attacks in input data sent via query parameters.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://xss-shield.p.rapidapi.com/detect",
+      "tool_name": "XSS Shield",
+      "tool_description": "The XSS Shield API provides a realtime cross-site scripting (XSS) detection service that scans input data for suspicious characters and prevents XSS attacks. It offers two endpoints for handling GET and POST requests."
+    },
+    "retrieved_rank": 25
+  },
+  {
+    "api_id": "penteston_api_v1_add_target",
+    "rag_score": 0.4204394519329071,
+    "compressed": {
+      "api_id": "penteston_api_v1_add_target",
+      "name": "/v1/add_target",
+      "description": "API for Add New Target (Host)",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://penteston-api.p.rapidapi.com/v1/add_target",
+      "tool_name": "PENTESTON - API",
+      "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and securi"
+    },
+    "retrieved_rank": 26
+  },
+  {
+    "api_id": "quantum_ready_check_checkquantum",
+    "rag_score": 0.41799747943878174,
+    "compressed": {
+      "api_id": "quantum_ready_check_checkquantum",
+      "name": "checkQuantum",
+      "description": "This endpoint checks if the supplied URL is using quantum-safe key encapsulation mechanisms. For more information, visit our website at https://freenetworkmonitor.click.",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://quantum-ready-check.p.rapidapi.com/Chat/CheckQuantum",
+      "tool_name": "Quantum Ready Check",
+      "tool_description": "Check if a website is using quantum-safe key exchange."
+    },
+    "retrieved_rank": 27
+  },
+  {
+    "api_id": "corbado_emaillinksend",
+    "rag_score": 0.41601547598838806,
+    "compressed": {
+      "api_id": "corbado_emaillinksend",
+      "name": "emailLinkSend",
+      "description": "Creates email magic link and sends it to given email address",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://corbado1.p.rapidapi.com/v1/emailLinks",
+      "tool_name": "Corbado",
+      "tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security."
+    },
+    "retrieved_rank": 28
+  },
+  {
+    "api_id": "amazon_web_services_aws_guardduty_detector_detector_detectorid",
+    "rag_score": 0.41497546434402466,
+    "compressed": {
+      "api_id": "amazon_web_services_aws_guardduty_detector_detector_detectorid",
+      "name": "/detector/{detectorId}",
+      "description": "This operation enables users to update and modify the configuration of a specific detector identified by its <code>detectorId</code>. By providing the <code>detectorId</code> as a parameter in the req",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://amazon-web-services-aws-guardduty-detector.p.rapidapi.com/detector/{detectorId}",
+      "tool_name": "Amazon Web Services (AWS) GuardDuty Detector",
+      "tool_description": "The AWS GuardDuty API enables real-time threat detection, automated response, and custom integrations to enhance the security of your AWS accounts.\n\n<br>"
+    },
+    "retrieved_rank": 29
+  },
+  {
+    "api_id": "greip_asnlookup",
+    "rag_score": 0.41434383392333984,
+    "compressed": {
+      "api_id": "greip_asnlookup",
+      "name": "/ASNLookup",
+      "description": "ASNLookup endpoint: This method helps you lookup any AS Number. It returns the type, organisation details, routes, etc.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://greip.p.rapidapi.com/ASNLookup",
+      "tool_name": "Greip",
+      "tool_description": "Deploy AI-Powered modules to prevent payment fraud"
+    },
+    "retrieved_rank": 30
+  },
+  {
+    "api_id": "corbado_webauthnassociatestart",
+    "rag_score": 0.4141657054424286,
+    "compressed": {
+      "api_id": "corbado_webauthnassociatestart",
+      "name": "webAuthnAssociateStart",
+      "description": "Starts association token flow for Passkeys (Biometrics)",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://corbado1.p.rapidapi.com/v1/webauthn/associate/start",
+      "tool_name": "Corbado",
+      "tool_description": "Let your users log in with passkeys via Face ID or Touch ID to boost conversion, improve UX and increase security."
+    },
+    "retrieved_rank": 31
+  },
+  {
+    "api_id": "penteston_api_v1_add_test",
+    "rag_score": 0.41187936067581177,
+    "compressed": {
+      "api_id": "penteston_api_v1_add_test",
+      "name": "/v1/add_test",
+      "description": " ",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://penteston-api.p.rapidapi.com/v1/add_test",
+      "tool_name": "PENTESTON - API",
+      "tool_description": "PENTESTON - API Requests, are software interfaces and protocols designed to enhance the security posture tools for check computer systems, networks, and applications. These APIs play a crucial role in the field of cybersecurity by providing tools and functionalities that enable developers and securi"
+    },
+    "retrieved_rank": 32
+  },
+  {
+    "api_id": "vortex_postregister",
+    "rag_score": 0.4047870337963104,
+    "compressed": {
+      "api_id": "vortex_postregister",
+      "name": "postRegister",
+      "description": " ",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://vortex2.p.rapidapi.com/api/users/register",
+      "tool_name": "Vortex",
+      "tool_description": "Vortex threat detection platform API"
+    },
+    "retrieved_rank": 33
+  },
+  {
+    "api_id": "greip_validateemail",
+    "rag_score": 0.4016183614730835,
+    "compressed": {
+      "api_id": "greip_validateemail",
+      "name": "/validateEmail",
+      "description": "This method can be used as an extra-layer of your system for validating email addresses.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://greip.p.rapidapi.com/validateEmail",
+      "tool_name": "Greip",
+      "tool_description": "Deploy AI-Powered modules to prevent payment fraud"
+    },
+    "retrieved_rank": 34
+  },
+  {
+    "api_id": "seo_automations_extract_sitemap_xml_as_json",
+    "rag_score": 0.4009817838668823,
+    "compressed": {
+      "api_id": "seo_automations_extract_sitemap_xml_as_json",
+      "name": "Extract Sitemap XML as JSON",
+      "description": "Are you looking for an API that can quickly and easily download and parse sitemap.xml files into JSON format? Look no further! Our API allows you to make a simple GET request, passing in the URL of a ",
+      "category": "Advertising",
+      "method": "GET",
+      "url": "https://seo-automations.p.rapidapi.com/v1/seo/fetchsitemap/",
+      "tool_name": "SEO Automations",
+      "tool_description": "Optimize your website effortlessly with SEOOptimizeAPI - the powerful tool that provides valuable insights and automates repetitive tasks. With SEOOptimizeAPI, you can take the guesswork out of website optimization. The API utilizes advanced algorithms and technologies to provide in-depth insights i"
+    },
+    "retrieved_rank": 35
+  },
+  {
+    "api_id": "netdetective_query-2",
+    "rag_score": 0.40070289373397827,
+    "compressed": {
+      "api_id": "netdetective_query-2",
+      "name": "/query",
+      "description": "Query information about an IP address.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://netdetective.p.rapidapi.com/query",
+      "tool_name": "NetDetective",
+      "tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP ad"
+    },
+    "retrieved_rank": 36
+  },
+  {
+    "api_id": "netdetective_query",
+    "rag_score": 0.40070289373397827,
+    "compressed": {
+      "api_id": "netdetective_query",
+      "name": "/query",
+      "description": "Query information about an IP address.",
+      "category": "Cybersecurity",
+      "method": "GET",
+      "url": "https://netdetective.p.rapidapi.com/query",
+      "tool_name": "NetDetective",
+      "tool_description": "NetDetective is an easy-to-use API that provides information about an IP address, including, but not limited to, whether it's known for spam, brute-force attacks, bot-nets, VPN endpoints, data center endpoints, and more. With DetectiveIP, you can quickly and easily gather information about any IP ad"
+    },
+    "retrieved_rank": 37
+  },
+  {
+    "api_id": "porn_filter_filter",
+    "rag_score": 0.39843857288360596,
+    "compressed": {
+      "api_id": "porn_filter_filter",
+      "name": "filter",
+      "description": "Check if a website is on our porn blacklist.",
+      "category": "Monitoring",
+      "method": "GET",
+      "url": "https://porn-filter2.p.rapidapi.com/",
+      "tool_name": "Porn Filter",
+      "tool_description": "Check if a website contains adult content."
+    },
+    "retrieved_rank": 38
+  },
+  {
+    "api_id": "webup_check_keyword",
+    "rag_score": 0.3962160050868988,
+    "compressed": {
+      "api_id": "webup_check_keyword",
+      "name": "check-keyword",
+      "description": "It will check if given keyword is on the given URL.",
+      "category": "Monitoring",
+      "method": "GET",
+      "url": "https://webup.p.rapidapi.com/check-keyword",
+      "tool_name": "WebUp",
+      "tool_description": "API to check if a web server is up or down & to detect a keyword on a URL."
+    },
+    "retrieved_rank": 39
+  },
+  {
+    "api_id": "loginllama_check_login",
+    "rag_score": 0.39586785435676575,
+    "compressed": {
+      "api_id": "loginllama_check_login",
+      "name": "check.login",
+      "description": " ",
+      "category": "Cybersecurity",
+      "method": "POST",
+      "url": "https://loginllama.p.rapidapi.com/login/check",
+      "tool_name": "LoginLlama",
+      "tool_description": "Protect against suspicious logins on your app, powered by AI"
+    },
+    "retrieved_rank": 40
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "api_id": "restaurants_reviews",
+    "candidate_id": "",
+    "mode_rank": 2,
+    "llm_reported_rank": null,
+    "retrieved_rank": 1,
+    "rag_score": 0.6326276063919067,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 13.",
+    "service": {
+      "_file": "restaurants.json",
+      "_tool": "restaurants",
+      "api_id": "restaurants_reviews",
+      "category": "Search",
+      "description": "Restaurant Reviews",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "0",
+            "description": "",
+            "name": "offset",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": [
+          {
+            "default": "en_US",
+            "description": "",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "default": "15333482",
+            "description": "",
+            "name": "location_id",
+            "type": "STRING"
+          },
+          {
+            "default": "USD",
+            "description": "",
+            "name": "currency",
+            "type": "STRING"
+          }
+        ]
+      },
+      "method": "POST",
+      "name": "Reviews",
+      "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, ",
+      "tool_name": "Restaurants",
+      "toolbench_endpoint_description": "Restaurant Reviews",
+      "toolbench_enrichment": {
+        "category": "Search",
+        "endpoint_description": "Restaurant Reviews",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Reviews",
+        "endpoint_url": "https://restaurants222.p.rapidapi.com/reviews",
+        "file_name": "restaurants.json",
+        "optional_parameter_count": 1,
+        "required_parameter_count": 3,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+        "tool_file_found": true,
+        "tool_name": "Restaurants",
+        "toolbench_relative_path": "Search/restaurants.json"
+      },
+      "toolbench_tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, and savor unforgettable dining experiences. With our Restaurants API, delight your audience with a taste of convenience and innovation.",
+      "toolbench_tool_name": "Restaurants",
+      "url": "https://restaurants222.p.rapidapi.com/reviews",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.121,
+        "tp_kbps": 24.793,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.552223557616979,
+    "topsis_rank": 13,
+    "balanced_relative_qos_score": 0.865014,
+    "selected_by_view": "pareto",
+    "hybrid_candidate_views": [
+      "topsis",
+      "response_time",
+      "throughput",
+      "availability",
+      "balanced_qos"
+    ],
+    "pareto_status": "pareto",
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "2",
+    "selector_reason": "Workflow-level hybrid selector chose this fixed API from functionally matched candidates using projected final-score-aligned relative QoS.",
+    "selected_by": "workflow_hybrid_selector",
+    "planner_override_attempted": false,
+    "functional_match_label": 1,
+    "functional_refiner_reason": "provides restaurant reviews directly",
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "workflow_hybrid_selector",
+    "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+    "hybrid_workflow_selector": "relative_to_best",
+    "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+    "hybrid_pool_size_before_expansion": 4,
+    "hybrid_pool_size_after_expansion": 4,
+    "hybrid_pool_size_after_pareto": 2,
+    "pareto_filtered_count": 2,
+    "pareto_filter_fallback_used": false,
+    "hybrid_total_combinations_before_cap": 2,
+    "hybrid_total_combinations_after_cap": 2,
+    "hybrid_max_workflow_combinations": 5000,
+    "hybrid_pool_trimmed": false,
+    "hybrid_pool_sizes_before_cap": {
+      "1": 1,
+      "2": 2,
+      "3": 1
+    },
+    "hybrid_pool_sizes_after_cap": {
+      "1": 1,
+      "2": 2,
+      "3": 1
+    },
+    "workflow_qos_score": 1.0,
+    "projected_composition_score": 1.0,
+    "projected_normalized_qos_score": 1.0,
+    "workflow_total_response_time": 0.4055,
+    "workflow_bottleneck_throughput": 13.245,
+    "workflow_average_availability": 0.9990333333333333,
+    "workflow_topsis_score": null,
+    "workflow_topsis_weights": {
+      "response_time": 0.3333333333333333,
+      "throughput": 0.3333333333333333,
+      "availability": 0.3333333333333333
+    },
+    "workflow_topsis_rank": null,
+    "workflow_selector_fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_hybrid",
+      "subtask_id": "2",
+      "api_id": "restaurants_reviews",
+      "selection_order": 1,
+      "selected_by": "workflow_hybrid_selector",
+      "planner_override_attempted": false,
+      "topsis_rank": 13,
+      "topsis_score": 0.552223557616979,
+      "functional_match_label": 1,
+      "functional_refiner_reason": "provides restaurant reviews directly",
+      "selected_by_view": "pareto",
+      "pareto_status": "pareto",
+      "hybrid_candidate_views": [
+        "topsis",
+        "response_time",
+        "throughput",
+        "availability",
+        "balanced_qos"
+      ],
+      "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+      "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+      "hybrid_pool_size_before_expansion": 4,
+      "hybrid_pool_size_after_expansion": 4,
+      "hybrid_pool_size_after_pareto": 2,
+      "pareto_filtered_count": 2,
+      "pareto_filter_fallback_used": false,
+      "balanced_relative_qos_score": 0.865014,
+      "hybrid_total_combinations_before_cap": 2,
+      "hybrid_total_combinations_after_cap": 2,
+      "hybrid_max_workflow_combinations": 5000,
+      "hybrid_pool_trimmed": false,
+      "hybrid_pool_sizes_before_cap": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "hybrid_pool_sizes_after_cap": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "projected_composition_score": 1.0,
+      "projected_normalized_qos_score": 1.0,
+      "workflow_total_response_time": 0.4055,
+      "workflow_bottleneck_throughput": 13.245,
+      "workflow_average_availability": 0.9990333333333333,
+      "hybrid_workflow_selector": "relative_to_best",
+      "workflow_topsis_score": null,
+      "workflow_topsis_weights": {
+        "response_time": 0.3333333333333333,
+        "throughput": 0.3333333333333333,
+        "availability": 0.3333333333333333
+      },
+      "workflow_topsis_rank": null,
+      "workflow_selector_fallback_used": false
+    }
+  }
+]

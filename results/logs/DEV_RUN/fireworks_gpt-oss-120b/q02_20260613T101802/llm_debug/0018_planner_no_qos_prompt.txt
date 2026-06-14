@@ -1,0 +1,97 @@
+You create sequential API workflows using only the provided candidates.
+
+Priority order:
+1) Respect the given subtask order.
+2) Functional correctness and step-to-step compatibility come first.
+
+Input user goal:
+Build a service that uses a user’s location to discover nearby restaurants, fetch restaurant reviews or details, and send selected restaurant recommendations by email.
+
+Ordered subtasks:
+[{"id": 1, "description": "Search restaurants using an external discovery API with the user’s location"}, {"id": 2, "description": "Fetch restaurant reviews or details using an external information API"}, {"id": 3, "description": "Send an email with the selected restaurant recommendations"}]
+
+Planner candidate mode: fixed_one.
+- The selected APIs are fixed by the selection stage.
+- There is exactly one selected API per subtask.
+- Use that API for its subtask and preserve subtask order.
+- Do not replace, re-rank, or substitute APIs.
+- The planner only composes the fixed APIs into a coherent workflow.
+
+Candidate APIs:
+[{"api_id": "worldwide_restaurants_search", "subtask_id": "1", "selection_order": 1, "service": {"api_id": "worldwide_restaurants_search", "name": "Search", "category": "Search", "description": "Search Restaurants", "tool_name": "Worldwide Restaurants", "tool_description": "#1 Worldwide Restaurants Database! Complete and Robust.", "method": "POST", "url": "https://worldwide-restaurants.p.rapidapi.com/search", "endpoint_details": {"required_parameters": [{"default": "297704", "description": "Location ID based on typeahead results", "name": "location_id", "type": "STRING"}, {"default": "USD", "description": "Standard ISO 4217 - https://en.wikipedia.org/wiki/ISO_4217", "name": "currency", "type": "STRING"}, {"default": "en_US", "description": "Use the format ll_CC, where ll is a two-letter language code, and CC is a two-letter country code. For instance, en_US represents U.S. English", "name": "language", "type": "STRING"}], "optional_parameters": [{"default": "0", "description": "Pagination", "name": "offset", "type": "NUMBER"}]}}}, {"api_id": "restaurants_reviews", "subtask_id": "2", "selection_order": 1, "service": {"api_id": "restaurants_reviews", "name": "Reviews", "category": "Search", "description": "Restaurant Reviews", "tool_name": "Restaurants", "tool_description": "Introducing our Restaurants API – Your gateway to a world of culinary delights. Seamlessly access an extensive database of restaurants, complete with menus, locations, ratings, and reviews. Elevate your app, website, or platform with real-time restaurant data, empowering users to discover, explore, ", "method": "POST", "url": "https://restaurants222.p.rapidapi.com/reviews", "endpoint_details": {"required_parameters": [{"default": "en_US", "description": "", "name": "language", "type": "STRING"}, {"default": "15333482", "description": "", "name": "location_id", "type": "STRING"}, {"default": "USD", "description": "", "name": "currency", "type": "STRING"}], "optional_parameters": [{"default": "0", "description": "", "name": "offset", "type": "STRING"}]}}}, {"api_id": "e_mailer_420_mail", "subtask_id": "3", "selection_order": 1, "service": {"api_id": "e_mailer_420_mail", "name": "mail", "category": "Email", "description": "This is the main endpoint where you have to set the query parameters as follows:\nsender: Your email address(with less secure apps enabled)\npassword: Your email's password\nreceiver: Email address of the recipient\nsubject: Subject of the email\nbody: body of the email", "tool_name": "e-mailer-420", "tool_description": "e-mailer-420 gives you the remarkable ability to send emails dynamically. You need to enable \"less secure apps\" on your sender email and you'll be good to go.", "method": "GET", "url": "https://e-mailer-420.p.rapidapi.com/mail/{sender}/{password}/{receiver}/{subject}/{body}", "endpoint_details": {"required_parameters": [{"default": "Hi receiver, go to abcd.com to confirm your email address. Regards, abcd's IT team", "description": "", "name": "body", "type": "string"}, {"default": "Hi receiver, please confirm you account", "description": "", "name": "subject", "type": "string"}, {"default": "example@gmail.com", "description": "", "name": "sender", "type": "string"}, {"default": "example123", "description": "", "name": "password", "type": "string"}, {"default": "receiver@gmail.com", "description": "", "name": "receiver", "type": "string"}], "optional_parameters": []}}}]
+
+Rules:
+- Use only the provided candidates.
+- Keep workflows sequential.
+- Return exactly one primary plan.
+- Return a machine-readable execution workflow in addition to the human-readable primary plan.
+- The plan must follow the subtask order.
+- Preserve subtask order exactly; do not reorder subtasks.
+- Explain how each API connects to the next step.
+- Do not invent APIs or reorder subtasks.
+- Every step must use a non-empty "api_id" copied exactly from the provided Candidate APIs.
+- For each execution workflow step, copy method, url, required parameters, and optional parameters from the selected candidate's "service" object when available.
+- If endpoint_details.required_parameters or endpoint_details.optional_parameters are present, use them to populate required_parameters and optional_parameters.
+- In required_parameters and optional_parameters, include each parameter name and describe its source, such as "user_goal", "previous_step_output", "constant/default", or "unknown_needed_from_user".
+- Use depends_on to identify previous workflow step numbers needed before a step can run; use [] for the first independent step.
+- Use input_mapping and output_mapping to describe how values flow between steps.
+- execution_workflow.steps[*].input_mapping must always be a string. For the first step, use "none" or an empty string instead of null.
+- execution_workflow.steps[*].output_mapping must always be a string. Use "none" or an empty string if there is no output mapping.
+- Do not return null, objects, arrays, or nested JSON for execution_workflow input_mapping or output_mapping.
+- Never use null, "none", "internal", "local", or invented placeholders for "api_id".
+- Do not create internal-only, UI-only, formatting-only, or local-computation-only steps without an API.
+- If a subtask seems internal, describe the internal transformation inside the "action" of the closest selected API step or choose the closest suitable provided API for that subtask.
+- "input_from_previous_step" and "output_to_next_step" must be strings or null only; do not return objects, arrays, or nested JSON in these fields.
+- The top-level JSON must contain exactly these required fields: "primary_plan", "execution_workflow", "selected_api_ids", and "overall_rationale".
+- Put "plan_id", "summary", "steps", and "subtask_coverage" inside "primary_plan"; do not put "steps" at the top level.
+- Put "type" and "steps" inside "execution_workflow".
+- This is the no-QoS planning mode. Generate the workflow using only functional suitability, subtask coverage, parameter compatibility, and selected API order. Do not optimize using QoS or quality-related attributes. Keep "qos": null for every workflow step.
+
+Return JSON only:
+{
+  "primary_plan": {
+    "plan_id": 1,
+    "summary": "...",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "action": "...",
+        "input_from_previous_step": "...",
+        "output_to_next_step": "...",
+        "why": "...",
+        "planner_override_reason": null,
+        "qos": null
+      }
+    ],
+    "subtask_coverage": [
+      {"subtask_id": 1, "description": "...", "steps": [1], "coverage": "full"}
+    ]
+  },
+  "execution_workflow": {
+    "type": "sequential",
+    "steps": [
+      {
+        "step": 1,
+        "api_id": "...",
+        "subtask_id": 1,
+        "method": "GET",
+        "url": "https://...",
+        "required_parameters": [
+          {"name": "...", "source": "user_goal", "value_hint": "..."}
+        ],
+        "optional_parameters": [
+          {"name": "...", "source": "constant/default", "value_hint": "..."}
+        ],
+        "depends_on": [],
+        "input_mapping": "...",
+        "output_mapping": "...",
+        "expected_output": "...",
+        "planner_override_reason": null
+      }
+    ]
+  },
+  "selected_api_ids": ["..."],
+  "overall_rationale": "..."
+}

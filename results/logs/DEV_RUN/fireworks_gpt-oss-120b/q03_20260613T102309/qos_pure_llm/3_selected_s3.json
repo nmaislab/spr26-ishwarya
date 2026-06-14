@@ -1,0 +1,76 @@
+[
+  {
+    "api_id": "smsto_send_campaign_message-2",
+    "candidate_id": "C29",
+    "mode_rank": 1,
+    "llm_reported_rank": 1,
+    "retrieved_rank": 13,
+    "rag_score": 0.49062034487724304,
+    "reason": "",
+    "service": {
+      "_file": "smsto.json",
+      "_tool": "smsto",
+      "api_id": "smsto_send_campaign_message-2",
+      "category": "SMS",
+      "description": "Send message to multiple recipients (phone numbers)",
+      "endpoint_details": {
+        "optional_parameters": [],
+        "required_parameters": []
+      },
+      "method": "POST",
+      "name": "Send campaign message",
+      "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "tool_name": "SMSto",
+      "toolbench_endpoint_description": "Send message to multiple recipients (phone numbers)",
+      "toolbench_enrichment": {
+        "category": "SMS",
+        "endpoint_description": "Send message to multiple recipients (phone numbers)",
+        "endpoint_found": true,
+        "endpoint_method": "POST",
+        "endpoint_name": "Send campaign message",
+        "endpoint_url": "https://smsto.p.rapidapi.com/sms/send",
+        "file_name": "smsto.json",
+        "optional_parameter_count": 0,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+        "tool_file_found": true,
+        "tool_name": "SMSto",
+        "toolbench_relative_path": "SMS/smsto.json"
+      },
+      "toolbench_tool_description": "Implement SMS notifications, OTP, reminders, etc. into your workflow and build apps that send SMS with our redundant SSL SMS API.",
+      "toolbench_tool_name": "SMSto",
+      "url": "https://smsto.p.rapidapi.com/sms/send",
+      "qos": {
+        "availability": 0.9971,
+        "rt_s": 0.1365,
+        "tp_kbps": 36.63,
+        "valid_qos": true
+      }
+    },
+    "is_unknown_api_id": false,
+    "is_unknown_candidate_id": false,
+    "qos_llm_score": 0.696,
+    "qos_llm_rank": 7,
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "3",
+    "selector_reason": "Fixed primary API selected by ranking mode. The planner may compose this API but may not replace or re-rank it.",
+    "selected_by": "ranking_mode",
+    "planner_override_attempted": false,
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "fixed_primary_api",
+    "fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_pure_llm",
+      "subtask_id": "3",
+      "api_id": "smsto_send_campaign_message-2",
+      "selection_order": 1,
+      "selected_by": "ranking_mode",
+      "planner_override_attempted": false
+    }
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "api_id": "locationiq_limitbyviewbox",
+    "candidate_id": "",
+    "mode_rank": 1,
+    "llm_reported_rank": null,
+    "retrieved_rank": 5,
+    "rag_score": 0.5287230014801025,
+    "reason": "Functional Candidate Refinement: functional match; ordered by TOPSIS rank 11.",
+    "service": {
+      "_file": "locationiq.json",
+      "_tool": "locationiq",
+      "api_id": "locationiq_limitbyviewbox",
+      "category": "Mapping",
+      "description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+      "endpoint_details": {
+        "optional_parameters": [
+          {
+            "default": "1",
+            "description": "Restrict result to items contained within the bounds specified in the viewbox parameter [0] [1]",
+            "name": "bounded",
+            "type": "NUMBER"
+          },
+          {
+            "default": "{{Your_API_Key}}",
+            "description": "Your API key",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "default": "-132.84908,47.69382,-70.44674,30.82531",
+            "description": "The preferred area to find search results. Any two corner points of the box - max_lon,max_lat,min_lon,min_lat or min_lon,min_lat,max_lon,max_lat - are accepted in any order as long as they span a real box. Currently, this option in the Autocomplete API only increases weigtage of results inside the viewbox. It does not restrict results to this box.",
+            "name": "viewbox",
+            "type": "STRING"
+          },
+          {
+            "default": "Empire State",
+            "description": "Query string to search for",
+            "name": "q",
+            "type": "STRING"
+          }
+        ],
+        "required_parameters": []
+      },
+      "method": "GET",
+      "name": "limitByViewbox",
+      "tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+      "tool_name": "LocationIQ",
+      "toolbench_endpoint_description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+      "toolbench_enrichment": {
+        "category": "Mapping",
+        "endpoint_description": "Specify the preferred area to find search results.\r\n\r\n> The Autocomplete API is a variant of the Search API that returns place predictions in response to an HTTP request. The request specifies a textual search string and optional geographic bounds. The service can be used to provide autocomplete functionality for text-based geographic searches, by returning places such as businesses, addresses and points of interest as a user types.\r\n\r\n> The Autocomplete API can match on full words as well as substrings. Applications can therefore send queries as the user types, to provide on-the-fly place predictions.",
+        "endpoint_found": true,
+        "endpoint_method": "GET",
+        "endpoint_name": "limitByViewbox",
+        "endpoint_url": "https://locationiq2.p.rapidapi.com/v1/autocomplete",
+        "file_name": "locationiq.json",
+        "optional_parameter_count": 4,
+        "required_parameter_count": 0,
+        "schema_version": 1,
+        "source": "toolbench_toolenv",
+        "status": "matched",
+        "tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+        "tool_file_found": true,
+        "tool_name": "LocationIQ",
+        "toolbench_relative_path": "Mapping/locationiq.json"
+      },
+      "toolbench_tool_description": "Affordable forward geocoding, reverse geocoding, routing and map tile APIs. Provides accurate and scalable APIs.",
+      "toolbench_tool_name": "LocationIQ",
+      "url": "https://locationiq2.p.rapidapi.com/v1/autocomplete",
+      "qos": {
+        "availability": 1.0,
+        "rt_s": 0.151,
+        "tp_kbps": 13.245,
+        "valid_qos": true
+      }
+    },
+    "topsis_score": 0.4957084526457615,
+    "topsis_rank": 11,
+    "balanced_relative_qos_score": 1.0,
+    "selected_by_view": "pareto",
+    "hybrid_candidate_views": [
+      "topsis",
+      "response_time",
+      "throughput",
+      "availability",
+      "balanced_qos"
+    ],
+    "pareto_status": "pareto",
+    "selected_rank": 1,
+    "selection_order": 1,
+    "subtask_id": "1",
+    "selector_reason": "Workflow-level hybrid selector chose this fixed API from functionally matched candidates using projected final-score-aligned relative QoS.",
+    "selected_by": "workflow_hybrid_selector",
+    "planner_override_attempted": false,
+    "functional_match_label": 1,
+    "functional_refiner_reason": "autocomplete returns businesses including restaurants, suitable",
+    "planner_top_n": 1,
+    "planner_requested_top_n": 1,
+    "planner_top_n_source": "workflow_hybrid_selector",
+    "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+    "hybrid_workflow_selector": "relative_to_best",
+    "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+    "hybrid_pool_size_before_expansion": 3,
+    "hybrid_pool_size_after_expansion": 3,
+    "hybrid_pool_size_after_pareto": 1,
+    "pareto_filtered_count": 2,
+    "pareto_filter_fallback_used": false,
+    "hybrid_total_combinations_before_cap": 2,
+    "hybrid_total_combinations_after_cap": 2,
+    "hybrid_max_workflow_combinations": 5000,
+    "hybrid_pool_trimmed": false,
+    "hybrid_pool_sizes_before_cap": {
+      "1": 1,
+      "2": 2,
+      "3": 1
+    },
+    "hybrid_pool_sizes_after_cap": {
+      "1": 1,
+      "2": 2,
+      "3": 1
+    },
+    "workflow_qos_score": 1.0,
+    "projected_composition_score": 1.0,
+    "projected_normalized_qos_score": 1.0,
+    "workflow_total_response_time": 0.4055,
+    "workflow_bottleneck_throughput": 13.245,
+    "workflow_average_availability": 0.9990333333333333,
+    "workflow_topsis_score": null,
+    "workflow_topsis_weights": {
+      "response_time": 0.3333333333333333,
+      "throughput": 0.3333333333333333,
+      "availability": 0.3333333333333333
+    },
+    "workflow_topsis_rank": null,
+    "workflow_selector_fallback_used": false,
+    "selection_provenance": {
+      "mode": "qos_hybrid",
+      "subtask_id": "1",
+      "api_id": "locationiq_limitbyviewbox",
+      "selection_order": 1,
+      "selected_by": "workflow_hybrid_selector",
+      "planner_override_attempted": false,
+      "topsis_rank": 11,
+      "topsis_score": 0.4957084526457615,
+      "functional_match_label": 1,
+      "functional_refiner_reason": "autocomplete returns businesses including restaurants, suitable",
+      "selected_by_view": "pareto",
+      "pareto_status": "pareto",
+      "hybrid_candidate_views": [
+        "topsis",
+        "response_time",
+        "throughput",
+        "availability",
+        "balanced_qos"
+      ],
+      "hybrid_selector_objective": "final_score_aligned_relative_to_best",
+      "hybrid_pool_strategy": "pareto_expanded_multi_qos_view",
+      "hybrid_pool_size_before_expansion": 3,
+      "hybrid_pool_size_after_expansion": 3,
+      "hybrid_pool_size_after_pareto": 1,
+      "pareto_filtered_count": 2,
+      "pareto_filter_fallback_used": false,
+      "balanced_relative_qos_score": 1.0,
+      "hybrid_total_combinations_before_cap": 2,
+      "hybrid_total_combinations_after_cap": 2,
+      "hybrid_max_workflow_combinations": 5000,
+      "hybrid_pool_trimmed": false,
+      "hybrid_pool_sizes_before_cap": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "hybrid_pool_sizes_after_cap": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "projected_composition_score": 1.0,
+      "projected_normalized_qos_score": 1.0,
+      "workflow_total_response_time": 0.4055,
+      "workflow_bottleneck_throughput": 13.245,
+      "workflow_average_availability": 0.9990333333333333,
+      "hybrid_workflow_selector": "relative_to_best",
+      "workflow_topsis_score": null,
+      "workflow_topsis_weights": {
+        "response_time": 0.3333333333333333,
+        "throughput": 0.3333333333333333,
+        "availability": 0.3333333333333333
+      },
+      "workflow_topsis_rank": null,
+      "workflow_selector_fallback_used": false
+    }
+  }
+]
